@@ -7,11 +7,9 @@ Website of Developers Conference 2019 in Mauritius
 ### Requirements
 
 1. node/npm
-2. Vue Cli 3
+2. Vue Cli 3 `$ npm install -g @vue/cli`
 
 ### Usage
-
-`$ npm install -g @vue/cli`
 
 `$ cd /web/app`
 

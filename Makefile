@@ -6,5 +6,5 @@ BUILD_FLAGS := "-X=main.appVersion=$(VERSION) -X=main.appCommit=$(COMMIT) -X=mai
 
 netlify:
 	@echo "Compiling for NETLIFY..."
-	@cd web/app && npm run build && cd ../..
+	@cd web/app && npm install && npm run build && cd ../..
 	@echo "Done!"

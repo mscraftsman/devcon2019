@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <div class="logo"><img alt="MSCC Logo" src="../assets/logo.svg"></div>
+    <!-- <div class="logo"><img alt="MSCC Logo" src="../assets/logo.svg"></div> -->
     <HelloWorld msg="DevCon2019" />
   </div>
 </template>

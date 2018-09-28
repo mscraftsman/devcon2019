@@ -1,7 +1,31 @@
 {
   "name": "devcon2019",
   "version": "0.1.2",
+  "description": "Website of Developers Conference 2019 in Mauritius",
+  "keywords": [
+    "vue",
+    "conference",
+    "event"
+  ],
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mscraftsman/devcon2019/"
+  },
+  "bugs": {
+    "url": "https://github.com/mscraftsman/devcon2019/issues",
+    "email": "conference@mscc.mu"
+  },
+  "author": {
+    "name": "Mauritius Software Craftsmanship Community",
+    "email": "conference@mscc.mu",
+    "url": "https://www.mscc.mu/"
+  },
+  "contributors": [
+    "Jochen Kirstaetter <joki@mscc.mu> (https://jochen.kirstaetter.name/)",
+    "Sandeep Ramgolam",
+    "Cedric Poilly"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",

@@ -1,5 +1,5 @@
 <template>
-      <section class="fdb-block team-7" data-block-type="teams" data-id="5">
+  <section class="fdb-block team-7" data-block-type="teams" data-id="5">
     <div class="container">
       <div class="row text-center justify-content-center">
         <div class="col-8">

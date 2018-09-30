@@ -1,14 +1,16 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <SharedNavigation />
     <router-view/>
   </div>
 </template>
 <script>
-export default {};
+import SharedNavigation from "@/components/shared/SharedNavigation.vue";
+export default {
+  components: {
+    SharedNavigation
+  }
+};
 </script>
 
 

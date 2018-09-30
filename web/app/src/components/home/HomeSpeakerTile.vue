@@ -1,158 +1,63 @@
 <template>
-  <section class="fdb-block team-7" data-block-type="teams" data-id="5">
-    <div class="container">
-      <div class="row text-center justify-content-center">
-        <div class="col-8">
-          <h1>Team</h1>
+  <section class="section-speaker">
+    {{ speakerlist }}
+    <div class="speaker-tile-wrapper">
+      <div class="speaker-block" v-for="speaker in speakers" :key="speaker.name">
+        <div class="speaker-avatar">
+          <img :src="speaker.avatar" :alt="speaker.name">
         </div>
-      </div>
-
-      <div class="row-70"></div>
-
-      <div class="row justify-content-center">
-        <div class="col-sm-3 m-sm-auto">
-          <div class="row align-items-center">
-            <div class="col-4">
-              <img alt="image" class="img-fluid" src="https://picsum.photos/150/150/?random">
-            </div>
-
-            <div class="col-8">
-              <h3>Speaker Name</h3>
-              <p>Twitter</p>
-              <p>Occupation</p>
-              <p>Website</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-3 m-sm-auto">
-          <div class="row align-items-center">
-            <div class="col-4">
-              <img alt="image" class="img-fluid" src="https://picsum.photos/150/150/?random">
-            </div>
-
-            <div class="col-8">
-              <h3>Speaker Name</h3>
-              <p>Twitter</p>
-              <p>Occupation</p>
-              <p>Website</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-3 m-sm-auto">
-          <div class="row align-items-center">
-            <div class="col-4">
-              <img alt="image" class="img-fluid" src="https://picsum.photos/150/150/?random">
-            </div>
-
-            <div class="col-8">
-              <h3>Speaker Name</h3>
-              <p>Twitter</p>
-              <p>Occupation</p>
-              <p>Website</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row-50"></div>
-
-      <div class="row justify-content-center">
-        <div class="col-sm-3 m-sm-auto">
-          <div class="row align-items-center">
-            <div class="col-4">
-              <img alt="image" class="img-fluid" src="https://picsum.photos/150/150/?random">
-            </div>
-
-            <div class="col-8">
-              <h3>Speaker Name</h3>
-              <p>Twitter</p>
-              <p>Occupation</p>
-              <p>Website</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-3 m-sm-auto">
-          <div class="row align-items-center">
-            <div class="col-4">
-              <img alt="image" class="img-fluid" src="https://picsum.photos/150/150/?random">
-            </div>
-
-            <div class="col-8">
-              <h3>Speaker Name</h3>
-              <p>Twitter</p>
-              <p>Occupation</p>
-              <p>Website</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-3 m-sm-auto">
-          <div class="row align-items-center">
-            <div class="col-4">
-              <img alt="image" class="img-fluid" src="https://picsum.photos/150/150/?random">
-            </div>
-
-            <div class="col-8">
-              <h3>Speaker Name</h3>
-              <p>Twitter</p>
-              <p>Occupation</p>
-              <p>Website</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row-50"></div>
-
-      <div class="row justify-content-center">
-        <div class="col-sm-3 m-sm-auto">
-          <div class="row align-items-center">
-            <div class="col-4">
-              <img alt="image" class="img-fluid" src="https://picsum.photos/150/150/?random">
-            </div>
-
-            <div class="col-8">
-              <h3>Speaker Name</h3>
-              <p>Twitter</p>
-              <p>Occupation</p>
-              <p>Website</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-3 m-sm-auto">
-          <div class="row align-items-center">
-            <div class="col-4">
-              <img alt="image" class="img-fluid" src="https://picsum.photos/150/150/?random">
-            </div>
-
-            <div class="col-8">
-              <h3>Speaker Name</h3>
-              <p>Twitter</p>
-              <p>Occupation</p>
-              <p>Website</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-3 m-sm-auto">
-          <div class="row align-items-center">
-            <div class="col-4">
-              <img alt="image" class="img-fluid" src="https://picsum.photos/150/150/?random">
-            </div>
-
-            <div class="col-8">
-              <h3>Speaker Name</h3>
-              <p>Twitter</p>
-              <p>Occupation</p>
-              <p>Website</p>
-            </div>
-          </div>
-        </div>
+        <div class="speaker-name">{{ speaker.name }}</div>
       </div>
     </div>
   </section>
 </template>
+
+<script>
+import { mapGetters, mapActions } from "vuex";
+import { FETCH_SPEAKER_CONTENT } from "@/constants/action-types";
+
+export default {
+  data() {
+    return {
+      speakers: [
+        {
+          name: "Jochen Kickstarter", //sorry too hard to write
+          avatar: "https://picsum.photos/300/300"
+        }
+      ]
+    };
+  },
+  created() {
+    this.$store.dispatch(FETCH_SPEAKER_CONTENT);
+  },
+  computed: {
+    ...mapGetters({ speakerlist: "getSpeakers" })
+  }
+};
+</script>
+
+
+
+<style lang="scss" scoped>
+.section-speaker {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.speaker-tile-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 20px;
+}
+
+.speaker-block {
+  .speaker-avatar {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .speaker-name {
+    text-align: center;
+  }
+}
+</style>

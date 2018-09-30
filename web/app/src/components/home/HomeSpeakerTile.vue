@@ -17,21 +17,11 @@ import { mapGetters, mapActions } from "vuex";
 import { FETCH_SPEAKER_CONTENT } from "@/constants/action-types";
 
 export default {
-  data() {
-    return {
-      speakers: [
-        {
-          name: "Jochen Kickstarter", //sorry too hard to write
-          avatar: "https://picsum.photos/300/300"
-        }
-      ]
-    };
-  },
   created() {
     this.$store.dispatch(FETCH_SPEAKER_CONTENT);
   },
   computed: {
-    ...mapGetters({ speakerlist: "getSpeakers" })
+    ...mapGetters({ speakers: "getSpeakers" })
   }
 };
 </script>

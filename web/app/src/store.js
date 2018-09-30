@@ -46,7 +46,7 @@ export default new Vuex.Store({
       console.log("Fetching Speaker Data");
       return fetch(URL)
         .then(response => response.json())
-        .then(speaker => commit(SET_SPEAKER_CONTENT, speaker))
+        .then(data => commit(SET_SPEAKER_CONTENT, data.speakers))
         .catch(error => console.error("Error :", error));
     }
   }

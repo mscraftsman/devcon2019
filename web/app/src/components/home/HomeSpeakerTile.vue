@@ -1,6 +1,5 @@
 <template>
   <section class="section-speaker">
-    {{ speakerlist }}
     <div class="speaker-tile-wrapper">
       <div class="speaker-block" v-for="speaker in speakers" :key="speaker.name">
         <div class="speaker-avatar">

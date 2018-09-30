@@ -30,3 +30,18 @@
         </div>
   </section>
 </template>
+
+
+<script>
+import { mapGetters, mapActions } from "vuex";
+import { FETCH_SPONSOR_CONTENT } from "@/constants/action-types";
+
+export default {
+  created() {
+    this.$store.dispatch(FETCH_SPONSOR_CONTENT);
+  },
+  computed: {
+    ...mapGetters({ sponsors: "getSponsors" })
+  }
+};
+</script>

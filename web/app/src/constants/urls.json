@@ -1,4 +1,5 @@
 {
   "home-text-content": "https://raw.githubusercontent.com/mscraftsman/devcon2019/master/web/app/package.json",
-  "speaker-content": "https://raw.githubusercontent.com/mscraftsman/devcon2019/master/content/speakers.json"
+  "speaker-content": "https://raw.githubusercontent.com/mscraftsman/devcon2019/master/content/speakers.json",
+  "sponsor-content": "https://raw.githubusercontent.com/mscraftsman/devcon2019/master/content/sponsors.json"
 }

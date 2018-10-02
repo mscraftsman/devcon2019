@@ -1,9 +1,11 @@
 <template>
   <div class="hello">
-    <a href="https://github.com/mscraftsman/devcon2019/raw/master/assets/DevCon2019-SponsorshipProposal.pdf"
-      download class="sponsor-button">Sponsorship Proposal <p>click to
-        download</p></a>
-  </div>
+    <div class="announcement">
+      <img src="@/assets/not-text.png" alt="">
+    </div>
+      <a href="https://github.com/mscraftsman/devcon2019/raw/master/assets/DevCon2019-SponsorshipProposal.pdf"
+        download class="sponsor-button"><img src="@/assets/btn_download-brochure.png" alt=""></a>
+    </div>
 </template>
 
 <script>
@@ -17,13 +19,21 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+.announcement {
+  img {
+    display: block;
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 10vh;
+  }
+}
 .sponsor-button {
   position: absolute;
   bottom: 10vh;
   left: 50%;
   transform: translateX(-50%);
-  background: white;
-  padding: 20px;
+  padding: 20px 30px;
   font-size: 20px;
   border-radius: 10px;
   text-transform: uppercase;

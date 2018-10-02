@@ -26,6 +26,9 @@ html,
 body {
   width: 100%;
   height: 100%;
+}
+
+html {
   background-image: url("./assets/concept.svg");
   background-size: cover;
   background-position: center center;

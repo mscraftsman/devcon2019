@@ -1,5 +1,6 @@
 {
   "home-text-content": "https://raw.githubusercontent.com/mscraftsman/devcon2019/master/web/app/package.json",
-  "speaker-content": "https://raw.githubusercontent.com/mscraftsman/devcon2019/master/content/speakers.json",
-  "sponsor-content": "https://raw.githubusercontent.com/mscraftsman/devcon2019/master/content/sponsors.json"
+  "speaker-content": "https://spreadsheets.google.com/feeds/list/1pZ0yFpNWXlGv8806xt_XiiDEBfCFXLyR9dz_Dm1bdk4/1/public/values?alt=json",
+  "sponsor-content": "https://spreadsheets.google.com/feeds/list/1FaDG6ZhATdmTcGHodg3E2B6iUC8Kn2Jh63DTPnH2WS4/1/public/values?alt=json",
+  "past-events-content": "https://spreadsheets.google.com/feeds/list/1IOjVVzveO5bSGpPY4CK3buyhUyb09o4U2wZ2nYp8ZpU/1/public/values?alt=json"
 }

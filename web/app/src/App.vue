@@ -32,6 +32,7 @@ html {
   background-image: url("./assets/concept.svg");
   background-size: cover;
   background-position: center center;
+  background-repeat: no-repeat;
 }
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;

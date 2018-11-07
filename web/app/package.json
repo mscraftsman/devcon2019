@@ -1,7 +1,30 @@
 {
   "name": "devcon2019",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "private": true,
+  "description": "Developers Conference 2019 Official Website",
+  "contributors": [
+    {
+      "name": "Cedric Poilly",
+      "email": "cedricpoilly@outlook.com",
+      "url": "https://www.linkedin.com/in/cedpoilly/"
+    },
+    {
+      "name": "Jochen Kirstätter",
+      "email": "joki@mscc.mu",
+      "url": "https://jochen.kirstaetter.name/"
+    },
+    {
+      "name": "Sandeep Ramgolam",
+      "email": "sandeep@lsl.digital",
+      "url": "https://barfii.net"
+    },
+    {
+      "name": "Vanessa Chellen",
+      "email": "vanessa@extension-interactive.com",
+      "url": "https://www.extension-interactive.com/"
+    }
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",

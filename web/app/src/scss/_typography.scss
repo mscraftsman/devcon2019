@@ -3,3 +3,42 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+// Links
+
+a {
+  color: white; // please i can't look at that ugly blue
+  text-decoration: none;
+  &:visited {
+    color: white;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Headings
+
+h2 {
+  font-size: 60px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.mega-rainbow {
+  color: $color-main;
+  background: linear-gradient(
+    to right,
+    rgb(255, 255, 255) 0%,
+    rgb(252, 218, 159) 10%,
+    rgb(255, 95, 56) 42%,
+    rgb(192, 37, 51) 70%
+  );
+  -webkit-text-stroke: 3px rgba(255, 255, 255, 0.01);
+  text-stroke: 3px rgba(255, 255, 255, 0.01);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  // text-shadow: 0 0 2px #000;
+}

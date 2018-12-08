@@ -5,10 +5,11 @@ module.exports = {
     loaderOptions: {
       sass: {
         data: `
-          @import "@/assets/scss/_setup.scss";
-          @import "@/assets/scss/_typography.scss";
-          @import "@/assets/scss/_generic.scss";
-          @import "@/assets/scss/_animations.scss";
+          @import "@/scss/_normalize.scss";
+          @import "@/scss/_setup.scss";
+          @import "@/scss/_typography.scss";
+          @import "@/scss/_generic.scss";
+          @import "@/scss/_animations.scss";
         `
       }
     }

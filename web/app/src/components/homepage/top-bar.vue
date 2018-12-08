@@ -6,10 +6,10 @@
         <div class="links-wrapper">
           <ul>
             <li>
-              <a href="/about">About</a>
+              <a href="#about">About</a>
             </li>
             <li>
-              <a href="sponsors">Sponsors</a>
+              <a href="#sponsors">Sponsors</a>
             </li>
           </ul>
         </div>

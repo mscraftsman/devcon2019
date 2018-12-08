@@ -7,3 +7,71 @@
   max-width: 100%;
   margin: 0 auto;
 }
+
+@media screen and (max-width: $desktop) {
+  .container {
+    width: 80%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .container {
+    width: 80%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: $tablet-portrait) {
+  .container {
+    width: 80%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .container {
+    width: 80%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+// Links
+
+a {
+  color: white; // please i can't look at that ugly blue
+  text-decoration: none;
+  &:visited {
+    color: white;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+//  Buttons
+
+.button {
+  text-transform: uppercase;
+  a {
+    text-decoration: none;
+  }
+}
+
+.button-orange {
+  border-width: 1px;
+  border-style: solid;
+  border-color: $color-red-light;
+  border-radius: 10px;
+
+  a {
+    display: block;
+    padding: 15px 30px;
+    color: $color-red-light;
+  }
+}

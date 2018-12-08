@@ -1,31 +1,43 @@
 <template>
   <div class="home">
-    <HelloWorld msg="DevCon2019" />
+    <TopBar/>
+    <HeaderStripe/>
+    <IntroSlider/>
+    <FiveYears/>
+    <DevconStats/>
+    <FeaturedSpeakers/>
+    <BecomeSpeaker/>
+    <SponsorSection/>
+    <SocialStripe/>
+    <FooterSection/>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import TopBar from '@/components/homepage/top-bar.vue'
+import HeaderStripe from '@/components/homepage/header-stripe.vue'
+import IntroSlider from '@/components/homepage/intro-slider.vue'
+import FiveYears from '@/components/homepage/five-years.vue'
+import DevconStats from '@/components/homepage/devcon-stats.vue'
+import FeaturedSpeakers from '@/components/homepage/featured-speakers.vue'
+import BecomeSpeaker from '@/components/homepage/become-speaker.vue'
+import SponsorSection from '@/components/homepage/sponsor-section.vue'
+import SocialStripe from '@/components/homepage/social-stripe.vue'
+import FooterSection from '@/components/homepage/footer-section.vue'
 
 export default {
   name: "home",
   components: {
-    HelloWorld
+    TopBar,
+    HeaderStripe,
+    IntroSlider,
+    FiveYears,
+    DevconStats,
+    FeaturedSpeakers,
+    BecomeSpeaker,
+    SponsorSection,
+    SocialStripe,
+    FooterSection,
   }
 };
 </script>
-
-<style lang="scss" scoped>
-.logo {
-  width: 30vw;
-  height: auto;
-  margin: 0 auto;
-
-  img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-}
-</style>

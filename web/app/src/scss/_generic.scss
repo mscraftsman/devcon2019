@@ -40,20 +40,6 @@
   }
 }
 
-// Links
-
-a {
-  color: white; // please i can't look at that ugly blue
-  text-decoration: none;
-  &:visited {
-    color: white;
-  }
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
 //  Buttons
 
 .button {
@@ -61,6 +47,13 @@ a {
   a {
     text-decoration: none;
   }
+}
+
+.button-center {
+  display: block;
+  text-align: center;
+  width: 200px;
+  margin: 0 auto;
 }
 
 .button-orange {
@@ -74,4 +67,29 @@ a {
     padding: 15px 30px;
     color: $color-red-light;
   }
+}
+
+.button-blue {
+  border-width: 1px;
+  border-style: solid;
+  border-color: $color-blue-light;
+  border-radius: 10px;
+
+  a {
+    display: block;
+    padding: 15px 30px;
+    color: $color-blue-light;
+  }
+}
+
+// View More
+
+.view-more {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
 }

@@ -19,13 +19,5 @@
   text-align: center;
   padding: 100px 0 50px;
 }
-
-.tribute-text {
-  width: 640px;
-  max-width: 80%;
-  margin: 0 auto;
-  text-align: center;
-  line-height: 36px;
-}
 </style>
 

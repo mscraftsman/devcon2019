@@ -27,6 +27,7 @@ h2 {
 
 .mega-rainbow {
   color: $color-main;
+  text-align: center;
   background: linear-gradient(
     to right,
     rgb(255, 255, 255) 0%,
@@ -41,4 +42,22 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 2px;
   // text-shadow: 0 0 2px #000;
+}
+
+h3 {
+  font-size: 16px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 100;
+}
+
+// Tribute Text
+
+.tribute-text {
+  width: 640px;
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 28px;
 }

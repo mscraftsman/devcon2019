@@ -53,6 +53,13 @@ h2 {
   text-align: center;
 }
 
+.home-component {
+  padding: $section-spacer 0;
+}
+
+.featured-speakers-wrapper {
+  overflow: hidden;
+}
 .featured-speakers-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

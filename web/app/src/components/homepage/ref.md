@@ -1,6 +1,6 @@
 Homepage
 
-# Top Bar
+### Top Bar
 
     component: top-bar
     create: touch top-bar.vue
@@ -8,7 +8,7 @@ Homepage
     name: TopBar
     tag: <TopBar />
 
-# Header Stripe
+### Header Stripe
 
     component: header-stripe
     create: touch header-stripe.vue
@@ -16,7 +16,7 @@ Homepage
     name: HeaderStripe
     tag: <HeaderStripe />
 
-# Intro Slider
+### Intro Slider
 
     component: intro-slider
     create: touch intro-slider.vue
@@ -24,7 +24,7 @@ Homepage
     name: IntroSlider
     tag: <IntroSlider />
 
-# Five Years
+### Five Years
 
     component: five-years
     create: touch five-years.vue
@@ -32,7 +32,7 @@ Homepage
     name: FiveYears
     tag: <FiveYears />
 
-# DevCon Stats
+### DevCon Stats
 
     component: devcon-stats
     create: touch devcon-stats.vue
@@ -40,7 +40,7 @@ Homepage
     name: DevconStats
     tag: <DevconStats />
 
-# Featured Speakers
+### Featured Speakers
 
     component: featured-speakers
     create: touch featured-speakers.vue
@@ -48,7 +48,7 @@ Homepage
     name: FeaturedSpeakers
     tag: <FeaturedSpeakers />
 
-# Become Speaker
+### Become Speaker
 
     component: become-speaker
     create: touch become-speaker.vue
@@ -56,7 +56,7 @@ Homepage
     name: BecomeSpeaker
     tag: <BecomeSpeaker />
 
-# Sponsor Section
+### Sponsor Section
 
     component: sponsor-section
     create: touch sponsor-section.vue
@@ -64,7 +64,7 @@ Homepage
     name: SponsorSection
     tag: <SponsorSection />
 
-# Social Stripe
+### Social Stripe
 
     component: social-stripe
     create: touch social-stripe.vue
@@ -72,7 +72,7 @@ Homepage
     name: SocialStripe
     tag: <SocialStripe />
 
-# Footer Section
+### Footer Section
 
     component: footer-section
     create: touch footer-section.vue

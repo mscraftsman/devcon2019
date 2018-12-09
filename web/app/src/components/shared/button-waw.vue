@@ -37,7 +37,7 @@ export default {
   text-decoration: none;
   line-height: var(--size, 45px);
   text-transform: uppercase;
-  width: 100%;
+  // width: 100%;
   text-align: center;
 
   border: 0 solid;

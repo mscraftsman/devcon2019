@@ -50,36 +50,9 @@
 }
 
 .button-center {
-  display: block;
-  text-align: center;
-  width: 250px;
-  margin: 0 auto;
-}
-
-.button-orange {
-  border-width: 1px;
-  border-style: solid;
-  border-color: $color-red-light;
-  border-radius: 10px;
-
-  a {
-    display: block;
-    padding: 15px 30px;
-    color: $color-red-light;
-  }
-}
-
-.button-blue {
-  border-width: 1px;
-  border-style: solid;
-  border-color: $color-blue-light;
-  border-radius: 10px;
-
-  a {
-    display: block;
-    padding: 20px 35px;
-    color: $color-blue-light;
-  }
+  display: flex;
+  // width: 200px;
+  justify-content: space-around;
 }
 
 // View More

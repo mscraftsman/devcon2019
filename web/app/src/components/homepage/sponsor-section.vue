@@ -57,7 +57,7 @@
 }
 
 .button-center {
-  width: 300px;
+  // width: 300px;
   margin: $gutter auto;
 }
 </style>

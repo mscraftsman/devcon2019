@@ -23,6 +23,10 @@ a {
 h2 {
   font-size: 60px;
   font-family: "Open Sans", sans-serif;
+
+  @media screen and (max-width: $tablet) {
+    font-size: 30px;
+  }
 }
 
 .mega-rainbow {

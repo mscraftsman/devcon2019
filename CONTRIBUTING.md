@@ -1,4 +1,4 @@
-# Contributing to the Developers Conference 2018 website
+# Contributing to the Developers Conference 2019 website
 
 👍🎉 First off, thanks for taking the time to contribute! 🎉👍
 

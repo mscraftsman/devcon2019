@@ -8,24 +8,23 @@
         <MainMenu/>
       </div>
       <div class="register-button">
-        <div class="button button-orange">
-          <a href="#">Register</a>
-        </div>
+        <button-waw :theme="'#ff4932'" :link="'#'">Register</button-waw>
       </div>
     </div>
   </div>
 </template>
 
-
 <script>
 import LogoSvg from '@/components/shared/logo-svg.vue'
 import MainMenu from '@/components/shared/main-menu.vue'
+// import ButtonWaw from '@/components/shared/button-waw.vue'
 
 export default {
   name: "home",
   components: {
     LogoSvg,
     MainMenu,
+    // ButtonWaw
   }
 };
 </script>

@@ -19,8 +19,8 @@
       >Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ea itaque magni, omnis cum reprehenderit possimus laudantium, doloribus veritatis dolorem repellat explicabo odio quas architecto nobis error nisi. Molestiae, sunt.</div>
     </div>
 
-    <div class="button button-blue button-center">
-      <a href="#">Become a Sponsor</a>
+    <div class="button-center">
+      <button-waw :theme="'#97d0e1'" :size="'80px'" :link="'#'">Become a Sponsor</button-waw>
     </div>
   </div>
 </template>
@@ -44,14 +44,19 @@
   }
 }
 .platinum-wrapper {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
+
+  @media screen and (max-width: $tablet) {
+    grid-template-columns: 1fr;
+    grid-row-gap: 40px;
+  }
 }
 
 .view-more {
   padding: $gutter * 2 0;
 }
 
-.button {
+.button-center {
   width: 300px;
   margin: $gutter auto;
 }

@@ -23,15 +23,17 @@
 <style lang="scss" scoped>
 .top-bar-wrapper {
   height: 40px;
-  border-width: 1px;
-  border-style: solid;
-  border-image: linear-gradient(
+  background:linear-gradient(
     to right,
     rgb(252, 218, 159) 0%,
     rgb(255, 95, 56) 52%,
     rgb(192, 37, 51) 100%
-  );
-  border-image-slice: 1;
+  )
+  bottom
+  transparent    
+  no-repeat; 
+
+  background-size:100% 1px ;
   box-sizing: border-box;
   line-height: 40px;
 
@@ -45,9 +47,11 @@
   .rendez-vous-wrapper {
     justify-content: flex-start;
     flex-grow: 1;
+    font-weight: 900;
   }
   .links-wrapper {
     justify-content: flex-end;
+    font-weight: 500;
     ul {
       margin: 0;
       padding: 0;

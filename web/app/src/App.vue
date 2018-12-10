@@ -1,17 +1,28 @@
 <template>
   <div id="app">
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
 <script>
+import { mapActions } from "vuex";
+
+import { FETCH_SESSIONIZE_DATA } from "@/store";
+
 export default {
   created() {
-    fetch(
-      "https://raw.githubusercontent.com/mscraftsman/devcon2019/master/web/app/package.json"
-    )
-      .then(response => response.json())
-      .then(data => console.log(data));
+    // * We can add other requests in the array as long as they can all be ran in parallel.
+    const promises = [this.FETCH_SESSIONIZE_DATA()];
+    promises.all(promises).then(this.handleDataFetched);
+  },
+
+  methods: {
+    ...mapActions(FETCH_SESSIONIZE_DATA),
+
+    handleDataFetched() {
+      // * This can be changed to something more useful when required.
+      console.log("Data fetched!");
+    }
   }
 };
 </script>

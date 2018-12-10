@@ -13,11 +13,11 @@ export default {
   created() {
     // * We can add other requests in the array as long as they can all be ran in parallel.
     const promises = [this.FETCH_SESSIONIZE_DATA()];
-    promises.all(promises).then(this.handleDataFetched);
+    Promise.all(promises).then(this.handleDataFetched);
   },
 
   methods: {
-    ...mapActions(FETCH_SESSIONIZE_DATA),
+    ...mapActions([FETCH_SESSIONIZE_DATA]),
 
     handleDataFetched() {
       // * This can be changed to something more useful when required.

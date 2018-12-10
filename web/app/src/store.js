@@ -6,7 +6,7 @@ Vue.use(Vuex);
 const sessionizeURL = "https://sessionize.com/api/v2/351ijy5v/view/all";
 
 export const SET_SPEAKERS = "SET_SPEAKERS";
-export const SET_SPEAKERS = "SET_SPEAKERS";
+export const SET_SESSIONS = "SET_SESSIONS";
 
 export const FETCH_SESSIONIZE_DATA = "FETCH_SESSIONIZE_DATA";
 
@@ -40,7 +40,9 @@ export default new Vuex.Store({
           commit(SET_SESSIONS, sessions);
         })
         .catch(error => {
-          throw new Error("Error should be caught by Vue global error handler." + error);
+          throw new Error(
+            "Error should be caught by Vue global error handler." + error
+          );
         });
     }
   }

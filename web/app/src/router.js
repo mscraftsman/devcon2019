@@ -52,9 +52,20 @@ export default new Router({
       component: () => import("./views/PageSessions.vue")
     },
     {
+      path: "/session/:id",
+      name: "session",
+      props: true,
+      component: () => import("./views/PageSession.vue")
+    },
+    {
       path: "/speakers",
       name: "speakers",
       component: () => import("./views/PageSpeakers.vue")
+    },
+    {
+      path: "/speaker/:id",
+      name: "speaker",
+      component: () => import("./views/PageSpeaker.vue")
     },
     {
       path: "/sponsors",

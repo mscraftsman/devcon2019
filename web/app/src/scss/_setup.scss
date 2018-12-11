@@ -11,6 +11,16 @@ $color-blue-light: #97d0e1;
 :root {
   --color-white: #ffffff;
   --color-black: #000000;
+  --color-blue: #3f4cd7;
+  --color-blue-light: $color-blue-light;
+  --color-red: $color-red;
+  --color-red-light: $color-red-light;
+
+  --color-green: #31e8b7;
+  --font-glacial: "Century Gothic", sans-serif;
+  --font-shentox: "Century Gothic", sans-serif;
+  --font-shentox-size-default: 18px;
+  --gutter: 20px;
 }
 
 /*-------------------------------*/

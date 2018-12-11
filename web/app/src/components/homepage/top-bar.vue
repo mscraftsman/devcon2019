@@ -3,14 +3,13 @@
     <div class="container">
       <div class="top-bar-container">
         <div class="rendez-vous-wrapper">14th of june at Voila Bagatelle</div>
+        <div class="construction-wrapper">
+          ⚠️ Website under construction. Showing last year's data temporarily
+        </div>
         <div class="links-wrapper">
           <ul>
-            <li>
-              <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="#sponsors">Sponsors</a>
-            </li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#sponsors">Sponsors</a></li>
           </ul>
         </div>
       </div>
@@ -18,22 +17,18 @@
   </div>
 </template>
 
-
-
 <style lang="scss" scoped>
 .top-bar-wrapper {
-  height: 40px;
-  background:linear-gradient(
-    to right,
-    rgb(252, 218, 159) 0%,
-    rgb(255, 95, 56) 52%,
-    rgb(192, 37, 51) 100%
-  )
-  bottom
-  transparent    
-  no-repeat; 
+  // height: 40px;
+  background: linear-gradient(
+      to right,
+      rgb(252, 218, 159) 0%,
+      rgb(255, 95, 56) 52%,
+      rgb(192, 37, 51) 100%
+    )
+    bottom transparent no-repeat;
 
-  background-size:100% 1px ;
+  background-size: 100% 1px;
   box-sizing: border-box;
   line-height: 40px;
 
@@ -44,6 +39,13 @@
 .top-bar-container {
   display: flex;
   width: 100%;
+  .construction-wrapper {
+    flex-grow: 1;
+    // text-align: center;
+    color: yellow;
+    font-size: 9px;
+    font-weight: bold;
+  }
   .rendez-vous-wrapper {
     justify-content: flex-start;
     flex-grow: 1;
@@ -76,6 +78,11 @@
   }
 }
 
+@media screen and (max-width: $tablet) {
+  .construction-wrapper {
+    display: none;
+  }
+}
 @media screen and (max-width: $tablet-portrait) {
   .rendez-vous-wrapper {
     text-align: center;

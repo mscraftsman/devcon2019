@@ -1,43 +1,41 @@
 <template>
   <div id="app">
-    <TopBar/>
-    <HeaderStripe/>
+    <TopBar />
+    <HeaderStripe />
 
     <div class="page-wrapper">
-      <transition name="fade" mode="out-in">
-        <router-view/>
-      </transition>
+      <transition name="fade" mode="out-in"> <router-view /> </transition>
     </div>
 
-    <SocialStripe/>
-    <FooterSection/>
+    <SocialStripe />
+    <FooterSection />
   </div>
 </template>
 
 <script>
-import TopBar from '@/components/homepage/top-bar.vue'
-import HeaderStripe from '@/components/homepage/header-stripe.vue'
-import SocialStripe from '@/components/homepage/social-stripe.vue'
-import FooterSection from '@/components/homepage/footer-section.vue'
+import TopBar from "@/components/homepage/top-bar.vue";
+import HeaderStripe from "@/components/homepage/header-stripe.vue";
+import SocialStripe from "@/components/homepage/social-stripe.vue";
+import FooterSection from "@/components/homepage/footer-section.vue";
 import { mapActions } from "vuex";
 
-import { FETCH_SESSIONIZE_DATA } from "@/store";
+import { FETCH_SESSIONS, FETCH_SPEAKERS } from "@/store";
 
 export default {
   components: {
     TopBar,
     HeaderStripe,
     SocialStripe,
-    FooterSection,
+    FooterSection
   },
   created() {
     // * We can add other requests in the array as long as they can all be ran in parallel.
-    const promises = [this.FETCH_SESSIONIZE_DATA()];
+    const promises = [this.FETCH_SESSIONS(), this.FETCH_SPEAKERS()];
     Promise.all(promises).then(this.handleDataFetched);
   },
 
   methods: {
-    ...mapActions([FETCH_SESSIONIZE_DATA]),
+    ...mapActions([FETCH_SESSIONS, FETCH_SPEAKERS]),
 
     handleDataFetched() {
       // * This can be changed to something more useful when required.
@@ -46,7 +44,6 @@ export default {
   }
 };
 </script>
-
 
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css?family=Bungee+Outline");

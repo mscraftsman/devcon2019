@@ -1,6 +1,8 @@
 <template>
   <div class="logo-wrapper">
-    <img src="@/assets/logo.svg" alt>
+    <router-link :to="{name:'home'}">
+      <img src="@/assets/logo.svg" alt>
+    </router-link>
   </div>
 </template>
 

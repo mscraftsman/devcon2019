@@ -2,13 +2,13 @@
   <div class="main-menu-wrapper">
     <ul>
       <li>
-        <a href="#">Sessions</a>
+        <router-link :to="{name: 'sessions'}">Sessions</router-link>
       </li>
       <li>
-        <a href="#">Extras</a>
+        <router-link :to="{name: 'extras'}">Extras</router-link>
       </li>
       <li>
-        <a href="#">Life at devcon</a>
+        <router-link :to="{ name : 'lifeatdevcon'}">Life at devcon</router-link>
       </li>
       <li>
         <a href="#">MCB Innovapp</a>

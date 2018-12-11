@@ -51,7 +51,6 @@ export default {
     font-weight: 900;
     text-transform: uppercase;
     display: block;
-    text-decoration: none;
     line-height:40px;
   }
   .social-stripe-wrapper {
@@ -76,8 +75,8 @@ export default {
     .social-stripe-container {
       flex-direction: column;
     }
-  .icon-wrapper{
-      display: flex;
-  }
+    .icon-wrapper{
+        display: flex;
+    }
   }
 </style>

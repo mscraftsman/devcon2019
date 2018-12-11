@@ -18,6 +18,11 @@ a {
   }
 }
 
+// External links
+.external:after {
+  content: " ⇲";
+}
+
 // Headings
 
 h2 {

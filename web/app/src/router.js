@@ -57,6 +57,11 @@ export default new Router({
       component: () => import("./views/PageSpeakers.vue")
     },
     {
+      path: "/sponsors",
+      name: "sponsors",
+      component: () => import("./views/PageSponsors.vue")
+    },
+    {
       path: "/vote",
       name: "vote",
       component: () => import("./views/PageVote.vue")

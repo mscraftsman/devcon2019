@@ -1,15 +1,11 @@
 <template>
   <div class="home">
-    <TopBar/>
-    <HeaderStripe/>
     <IntroSlider/>
     <FiveYears/>
     <DevconStats/>
     <FeaturedSpeakers/>
     <BecomeSpeaker/>
     <SponsorSection/>
-    <SocialStripe/>
-    <FooterSection/>
   </div>
 </template>
 

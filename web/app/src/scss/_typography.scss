@@ -30,7 +30,8 @@ h2 {
 }
 
 .mega-rainbow {
-  color: $color-main;
+  font-family: $font-headings;
+  // color: $color-main;
   text-align: center;
   background: linear-gradient(
     to right,
@@ -39,10 +40,13 @@ h2 {
     rgb(255, 95, 56) 42%,
     rgb(192, 37, 51) 70%
   );
-  -webkit-text-stroke: 3px rgba(255, 255, 255, 0.01);
-  text-stroke: 3px rgba(255, 255, 255, 0.01);
+  // -webkit-text-stroke: 3px rgba(255, 255, 255, 0.01);
+  // text-stroke: 3px rgba(255, 255, 255, 0.01);
   -webkit-background-clip: text;
   background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+
   text-transform: uppercase;
   letter-spacing: 2px;
   // text-shadow: 0 0 2px #000;

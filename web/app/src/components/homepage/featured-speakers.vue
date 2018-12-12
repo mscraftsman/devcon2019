@@ -5,20 +5,23 @@
       <div class="featured-speakers-container">
         <div class="speaker-box">
           <div class="speaker-image">
-            <img src="../../assets/sample-speakers/cedric.jpg" alt>
+            <img src="../../assets/sample-speakers/cedric.jpg"
+                 alt>
           </div>
           <div class="bizin-trouv-bien"></div>
           <div class="speaker-meta">
             <div class="name">Cedric Poily</div>
             <div class="occupation">Cheif Freelance Egineer</div>
             <div class="alias">Gotta code them all</div>
-            <a href="#" class="talk-count">2 Talks</a>
+            <a href="#"
+               class="talk-count">2 Talks</a>
             <div class="social-media-wrapper"></div>
           </div>
         </div>
         <div class="speaker-box">
           <div class="speaker-image">
-            <img src="../../assets/sample-speakers/jochen.jpg" alt>
+            <img src="../../assets/sample-speakers/jochen.jpg"
+                 alt>
           </div>
           <div class="bizin-trouv-bien"></div>
           <div class="speaker-meta">
@@ -31,7 +34,8 @@
         </div>
         <div class="speaker-box">
           <div class="speaker-image">
-            <img src="../../assets/sample-speakers/sandeep.jpg" alt>
+            <img src="../../assets/sample-speakers/sandeep.jpg"
+                 alt>
           </div>
           <div class="bizin-trouv-bien"></div>
           <div class="speaker-meta">
@@ -61,6 +65,8 @@ h2 {
   overflow: hidden;
 }
 .featured-speakers-container {
+  --size: 215px;
+
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-row-gap: 100px;
@@ -68,7 +74,7 @@ h2 {
   .speaker-box {
     width: 300px;
     z-index: 10;
-    height: 500px;
+    height: 485px;
     position: relative;
 
     .speaker-image {
@@ -78,28 +84,32 @@ h2 {
         content: " ";
       }
 
+      transform-origin: left bottom;
+      transform: skew(-18deg);
+      border-radius: 30px;
+      overflow: hidden;
+      width: var(--size);
+      left: 0;
+
       img {
         display: block;
         width: auto;
         height: 100%;
-
-        mask: url("../../assets/speaker-mask.svg");
-        mask-repeat: no-repeat;
-        position: relative;
+        transform: skew(18deg);
+        margin-left: calc(var(--size) * -1 / 2);
       }
     }
 
     .bizin-trouv-bien {
       position: absolute;
       background: linear-gradient(transparent, transparent, #000);
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
 
-      mask: url("../../assets/speaker-mask.svg");
-      mask-repeat: no-repeat;
-      position: relative;
+      width: var(--size);
+      height: 100%;
+      border-radius: 30px;
+
+      transform-origin: left bottom;
+      transform: skew(-18deg);
     }
     .speaker-meta {
       --spacing: 10px;

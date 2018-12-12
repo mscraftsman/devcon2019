@@ -1,23 +1,15 @@
 <template>
   <div class="main-menu-wrapper">
     <ul>
+      <li><router-link :to="{ name: 'sessions' }">Sessions</router-link></li>
+      <li><router-link :to="{ name: 'extras' }">Extras</router-link></li>
       <li>
-        <a href="#">Sessions</a>
+        <router-link :to="{ name: 'lifeatdevcon' }">Life at devcon</router-link>
       </li>
-      <li>
-        <a href="#">Extras</a>
-      </li>
-      <li>
-        <a href="#">Life at devcon</a>
-      </li>
-      <li>
-        <a href="#">MCB Innovapp</a>
-      </li>
+      <li><a href="#">MCB Innovapp</a></li>
     </ul>
   </div>
 </template>
-
-
 
 <style lang="scss">
 .main-menu-wrapper {
@@ -53,7 +45,8 @@
         }
 
         &:hover,
-        &:active {
+        &:active,
+        &.router-link-exact-active {
           color: $color-red-light;
           transition: color 0.2s ease-in-out;
 
@@ -68,4 +61,3 @@
   }
 }
 </style>
-

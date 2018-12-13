@@ -2,37 +2,23 @@
   <div class="home-component footer-section-wrapper">
     <div class="container footer-section-container">
       <div class="link-wrapper">
-        <router-link class="link" :to="{ name: 'pastevents' }"
-          >past events</router-link
-        >
+        <router-link class="link" :to="{ name: 'pastevents' }">past events</router-link>
 
-        <router-link class="link" :to="{ name: 'sponsors' }"
-          >sponsors</router-link
-        >
+        <router-link class="link" :to="{ name: 'sponsors' }">sponsors</router-link>
 
         <a class="link" href="#">become a sponsor</a>
+        
+        <a class="link external" target="_blank" href="#">mcb inovapp challenge</a>
 
-        <a class="link external" target="_blank" href="#"
-          >mcb inovapp challenge</a
-        >
+        <router-link class="link" :to="{ name: 'press' }">press material</router-link>
 
-        <router-link class="link" :to="{ name: 'press' }"
-          >press material</router-link
-        >
-
-        <router-link class="link" :to="{ name: 'speakers' }"
-          >speakers</router-link
-        >
+        <router-link class="link" :to="{ name: 'speakers' }">speakers</router-link>
 
         <a class="link" href="#">become a speaker</a>
 
-        <router-link class="link" :to="{ name: 'contact' }"
-          >contact us</router-link
-        >
+        <router-link class="link" :to="{ name: 'contact' }">contact us</router-link>
 
-        <router-link class="link" :to="{ name: 'coc' }"
-          >code of conduct</router-link
-        >
+        <a class="link external" target="_blank" href="#">code of conduct</a>
 
         <router-link class="link" :to="{ name: 'jobs' }">jobs</router-link>
 

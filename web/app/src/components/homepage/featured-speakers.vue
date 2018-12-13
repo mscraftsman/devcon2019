@@ -3,54 +3,11 @@
     <div class="container">
       <h2 class="mega-rainbow">Featured Speakers</h2>
       <div class="featured-speakers-container">
-        <div class="speaker-box">
-          <div class="speaker-image">
-            <img src="../../assets/sample-speakers/cedric.jpg"
-                 alt>
-          </div>
-          <div class="bizin-trouv-bien"></div>
-          <div class="speaker-meta">
-            <div class="name">Cedric Poily</div>
-            <div class="occupation">Cheif Freelance Egineer</div>
-            <div class="alias">Gotta code them all</div>
-            <a href="#"
-               class="talk-count">2 Talks</a>
-            <div class="social-media-wrapper"></div>
-          </div>
-        </div>
-        <div class="speaker-box">
-          <div class="speaker-image">
-            <img src="../../assets/sample-speakers/jochen.jpg"
-                 alt>
-          </div>
-          <div class="bizin-trouv-bien"></div>
-          <div class="speaker-meta">
-            <div class="name">Jochen Kickstarter</div>
-            <div class="occupation">Cheif Freelance Egineer</div>
-            <div class="alias">Gotta code them all</div>
-            <div class="talk-count">2 Talks</div>
-            <div class="social-media-wrapper"></div>
-          </div>
-        </div>
-        <div class="speaker-box">
-          <div class="speaker-image">
-            <img src="../../assets/sample-speakers/sandeep.jpg"
-                 alt>
-          </div>
-          <div class="bizin-trouv-bien"></div>
-          <div class="speaker-meta">
-            <div class="name">Sandeep Ramgolam</div>
-            <div class="occupation">Cheif Freelance Egineer</div>
-            <div class="alias">Gotta code them all</div>
-            <div class="talk-count">2 Talks</div>
-            <div class="social-media-wrapper"></div>
-          </div>
-        </div>
+        <SpeakerBox v-for="speaker in speakers" :key="speaker.id" :speaker="speaker"/>
       </div>
     </div>
   </div>
 </template>
-
 
 <style lang="scss" scoped>
 h2 {
@@ -65,134 +22,29 @@ h2 {
   overflow: hidden;
 }
 .featured-speakers-container {
-  --size: 215px;
+  // --size: 215px;
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-row-gap: 100px;
-
-  .speaker-box {
-    width: 300px;
-    z-index: 10;
-    height: 485px;
-    position: relative;
-
-    .speaker-image {
-      height: 100%;
-      position: absolute;
-      &:after {
-        content: " ";
-      }
-
-      transform-origin: left bottom;
-      transform: skew(-18deg);
-      border-radius: 30px;
-      overflow: hidden;
-      width: var(--size);
-      left: 0;
-
-      img {
-        display: block;
-        width: auto;
-        height: 100%;
-        transform: skew(18deg);
-        margin-left: calc(var(--size) * -1 / 2);
-      }
-    }
-
-    .bizin-trouv-bien {
-      position: absolute;
-      background: linear-gradient(transparent, transparent, #000);
-
-      width: var(--size);
-      height: 100%;
-      border-radius: 30px;
-
-      transform-origin: left bottom;
-      transform: skew(-18deg);
-    }
-    .speaker-meta {
-      --spacing: 10px;
-      letter-spacing: 2px;
-      text-shadow: 0 1px 2px #000;
-      position: absolute;
-      bottom: 5%;
-      left: 20%;
-
-      .name {
-        font-size: 36px;
-        font-weight: 800;
-        padding-bottom: var(--spacing);
-        text-align: right;
-      }
-      .occupation {
-        font-size: 16px;
-        padding-bottom: var(--spacing);
-      }
-      .alias {
-        font-size: 16px;
-        text-transform: uppercase;
-        padding-bottom: var(--spacing);
-        font-weight: 500;
-      }
-      .talk-count {
-        display: inline-block;
-        padding: 10px 13px 5px;
-        font-size: 12px;
-        border-radius: 7px;
-        text-shadow: none;
-        padding-bottom: var(--spacing);
-        text-transform: uppercase;
-        background: linear-gradient(
-          to right,
-          rgb(252, 218, 159) 0%,
-          rgb(255, 95, 56) 0%,
-          rgb(192, 37, 51) 100%
-        );
-      }
-      .social-media-wrapper {
-      }
-    }
-
-    &:before {
-      --width: 200px;
-      content: " ";
-      width: var(--width);
-      height: 500px;
-      // left: 50%;
-      top: 0px;
-      left: 0;
-      margin-left: -calc(var(--width) / 2);
-
-      position: absolute;
-      background-image: url("../../assets/menu-hover.svg");
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: contain;
-      transform: translate(0px, 10px);
-      opacity: 0.5;
-      transition: all 0.5s ease-out;
-    }
-    &:after {
-      content: " ";
-      z-index: -1;
-      --width: 200px;
-      width: var(--width);
-      height: 150px;
-      left: calc(var(--width) * 1.2);
-      top: 0px;
-      // left: 0;
-      // margin-left: -calc(var(--width) / 2);
-
-      position: absolute;
-      background-image: url("../../assets/menu-hover.svg");
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: contain;
-      transform: translate(0px, 10px);
-      opacity: 0.5;
-      transition: all 0.5s ease-out;
-    }
-  }
 }
 </style>
+
+<script>
+import SpeakerBox from "@/components/shared/speaker-box.vue";
+
+export default {
+  data() {
+    return {
+      speakers: [
+        { "id": "56985eb6-8db1-4657-bc0d-3e925cdf4e60", "firstName": "Akshay", "lastName": "Gopaul", "fullName": "Akshay Gopaul", "bio": "Name : Akshay Gopaul\r\nSoftware Developer at ASTEK Mauritius\r\nAddress: Riviere du rempart\r\nNickname: Wolf Of Ebene\r\nAge: 25\r\nSkills: Creativity and Ideation \r\nPreferred technology and Programming language: Unity, Construct2 and Visual Studio \r\n\r\n\r\n", "tagLine": "ASTEK MAURITIUS", "profilePicture": "https://sessionize.com/image?f=d00626b306bc2d1ccf1747608451b7de,400,400,True,False,b6-8db1-4657-bc0d-3e925cdf4e60.549afc75-b816-4241-88ca-6763dc13bc40.jpg", "sessions": [{ "id": 40381, "name": "Game Development with construct 2 (game engine)" }, { "id": 40386, "name": "Augmented Reality with Unity 3D (Game Engine)" }], "isTopSpeaker": false, "links": [{ "title": "Blog", "url": "https://game-development.talentscloud.net/", "linkType": "Blog" }] },
+        { "id": "dd1aaf3b-c86a-4758-aa38-aaad2d7dd9e8", "firstName": "Alexandre", "lastName": "Bazile", "fullName": "Alexandre Bazile", "bio": "Alexandre Bazile is an hyperactive technology enthusiast who always like to feed his technology adventure thrills. From mobile apps to desktop apps to cloud scale apps, he never misses an opportunity to breathe into a new technology. MVVM, design patterns and app architecture are his hot topic, but when he is not talking about coding, he's wondering what would be the next great SaaS solution.", "tagLine": "Technology Enthusiast", "profilePicture": "https://sessionize.com/image?f=cd02345041c3a631023c5187a42482ab,400,400,True,False,cb-7ae8-4b4d-9ddf-11c19a02b813.fe775c05-bf65-456c-a879-935b7bbe2a99.png", "sessions": [{ "id": 39499, "name": "Building Enterprise APIs using .NET Web API 2" }], "isTopSpeaker": false, "links": [] },
+        { "id": "ab15357e-3099-4822-8476-ba522cf5ae86", "firstName": "Cedric", "lastName": "Poilly", "fullName": "Cedric Poilly", "bio": "Freelance Front-End Developer: working with private companies, NGOs as well as contributing open-source work |\r\nExpert Mentor at CodeMentor.io: hire me for a 1:1 online session for help with Front-end development: Angular, Vue.js or other technologies", "tagLine": "Freelance Front-End Developer | Expert Mentor at CodeMentor.io", "profilePicture": "https://sessionize.com/image?f=fa830efbe76fcb996550804bb36985d3,400,400,True,False,3dbeeea3-6711-4da5-bec0-515bb5ff621e.jpg", "sessions": [{ "id": 38354, "name": "Web Workers: Multithreading in the Browser" }, { "id": 43249, "name": "Angular: Struggles and Advice" }], "isTopSpeaker": false, "links": [{ "title": "Twitter", "url": "https://twitter.com/cedpoilly", "linkType": "Twitter" }, { "title": "LinkedIn", "url": "https://www.linkedin.com/in/cedric-poilly/", "linkType": "LinkedIn" }] }
+      ]
+    }
+  },
+  components: {
+    SpeakerBox
+  }
+}
+</script>

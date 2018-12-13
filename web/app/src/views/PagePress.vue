@@ -139,10 +139,6 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-$tablet: 1024px;
-$tablet-portrait: 768px;
-$mobile: 540px;
-
 .full-section-container {
   display: grid;
   grid-template-columns:
@@ -158,75 +154,6 @@ $mobile: 540px;
 
   &[data-bg="grey"] {
     background: rgba(0, 0, 0, 0.05);
-  }
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.page-title-wrapper {
-  padding: calc(var(--gutter) * 2.5) 0;
-  grid-column: container;
-  margin-top: 80px;
-
-  small {
-    margin: 0 auto 10px;
-    text-transform: uppercase;
-    color: $color-red-light;
-    font-family: var(--font-shentox);
-    font-size: 18px;
-    display: block;
-    text-align: center;
-  }
-
-  h1 {
-    margin: 0 0 calc(var(--gutter) / 2) 0;
-    text-transform: uppercase;
-    font-size: 65px;
-    line-height: 55px;
-    font-family: var(--font-shentox);
-  }
-
-  p {
-    line-height: 27px;
-    font-size: 20px;
-    font-family: var(--font-glacial);
-    font-weight: 300;
-    color: white;
-  }
-}
-
-.section-title-wrapper {
-  margin-bottom: calc(var(--gutter) * 3);
-  grid-column: container;
-
-  small {
-    margin: 0 auto 10px;
-    text-transform: uppercase;
-    color: $color-red-light;
-    font-family: var(--font-shentox);
-    font-size: 18px;
-    text-align: center;
-    display: block;
-  }
-
-  h3 {
-    margin: 0;
-    text-transform: uppercase;
-    font-size: 53px;
-    line-height: 55px;
-    font-family: var(--font-glacial);
-    color: white;
-    font-weight: 900;
-  }
-
-  p {
-    line-height: 25px;
-    font-size: 18px;
-    font-family: var(--font-glacial);
-    font-weight: 300;
-    color: white;
   }
 }
 

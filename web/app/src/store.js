@@ -5,7 +5,6 @@ import { extractData } from "@/helpers/spreadsheet-helper";
 
 Vue.use(Vuex);
 
-const sessionizeURL = "https://sessionize.com/api/v2/351ijy5v/view/all";
 const sessionizeSessions =
   "https://sessionize.com/api/v2/m1l86vhf/view/Sessions";
 const sessionizeSpeakers =
@@ -16,7 +15,6 @@ export const SET_SPONSORS = "SET_SPONSORS";
 export const SET_STATS = "SET_STATS";
 export const SET_SESSIONS = "SET_SESSIONS";
 
-export const FETCH_SESSIONIZE_DATA = "FETCH_SESSIONIZE_DATA";
 export const FETCH_SESSIONS = "FETCH_SESSIONS";
 export const FETCH_SPEAKERS = "FETCH_SPEAKERS";
 
@@ -71,19 +69,6 @@ export default new Vuex.Store({
     }
   },
   actions: {
-    [FETCH_SESSIONIZE_DATA]({ commit }) {
-      return fetch(sessionizeURL)
-        .then(response => response.json())
-        .then(({ speakers, sessions }) => {
-          // commit(SET_SPEAKERS, speakers);
-          // commit(SET_SESSIONS, sessions);
-        })
-        .catch(error => {
-          throw new Error(
-            "Error should be caught by Vue global error handler." + error
-          );
-        });
-    },
     [FETCH_SESSIONS]({ commit }) {
       return fetch(sessionizeSessions)
         .then(response => response.json())

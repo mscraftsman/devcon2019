@@ -15,10 +15,11 @@
             :key="speaker.id"
             :to="{ name: 'speaker',  params: { id: speaker.id }}"
           >
-            <div class="avatar">
+            <SpeakerBox :speaker="speaker"/>
+            <!-- <div class="avatar">
               <img :src="getSpeaker(speaker.id)" alt>
             </div>
-            <p class="name">{{ speaker.fullName }}</p>
+            <p class="name">{{ speaker.fullName }}</p>-->
           </router-link>
         </div>
       </div>
@@ -27,6 +28,8 @@
 </template>
 
 <script>
+import SpeakerBox from "@/components/shared/speaker-box.vue";
+
 import { mapActions, mapGetters } from "vuex";
 import moment from "moment";
 export default {
@@ -59,6 +62,9 @@ export default {
   },
   mounted: function () {
     this.fetchSessions();
+  },
+  components: {
+    SpeakerBox
   }
 };
 </script>
@@ -160,8 +166,9 @@ a.back {
 .speakers-wrapper {
   //   display: flex;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 40px;
+  grid-row-gap: 100px;
+
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   //   align-items: center;
   //   justify-content: center;
   margin-bottom: 20px;

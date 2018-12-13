@@ -20,7 +20,7 @@ a {
 
 // External links
 .external:after {
-  content: " ⇲";
+  content: " 🌐";
 }
 
 // Headings
@@ -36,34 +36,63 @@ h2 {
 
 .mega-rainbow {
   font-family: $font-headings;
-  // color: $color-main;
   color: rgb(255, 95, 56);
   text-align: center;
-  // background: linear-gradient(
-  //   to right,
-  //   rgb(255, 255, 255) 0%,
-  //   rgb(252, 218, 159) 10%,
-  //   rgb(255, 95, 56) 42%,
-  //   rgb(192, 37, 51) 70%
-  // );
-  // -webkit-text-stroke: 3px rgba(255, 255, 255, 0.01);
-  // text-stroke: 3px rgba(255, 255, 255, 0.01);
-  // -webkit-background-clip: text;
-  // background-clip: text;
-  // -webkit-text-fill-color: transparent;
   font-weight: 600;
 
   text-transform: uppercase;
   letter-spacing: 2px;
-  // text-shadow: 0 0 2px #000;
+}
+
+h1,
+.home h2 {
+  margin: 0 0 calc(var(--gutter) / 2) 0;
+  text-transform: uppercase;
+  font-size: 65px;
+  line-height: 55px;
+}
+
+h1 {
+  padding: $gutter 0;
+}
+
+h2 {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 55px;
+  font-family: var(--font-glacial);
+  color: white;
+  font-weight: 900;
+  text-align: center;
 }
 
 h3 {
+  font-size: 40px;
+  text-transform: uppercase;
+  // text-align: center;
+  font-weight: 900;
+  color: white;
+  margin: 0;
+}
+
+h4.subtitle {
   font-size: 16px;
   letter-spacing: 5px;
   text-transform: uppercase;
   text-align: center;
-  font-weight: 100;
+  font-weight: 900;
+  color: white;
+  margin: 0;
+}
+
+small {
+  margin: 0;
+  text-transform: uppercase;
+  font-family: var(--font-shentox);
+  font-size: 18px;
+  color: $color-blue-light;
+  display: block;
 }
 
 // Tribute Text
@@ -74,4 +103,62 @@ h3 {
   margin: 0 auto;
   text-align: center;
   line-height: 28px;
+  padding: $gutter 0;
+}
+
+.page-title-wrapper {
+  padding: calc(var(--gutter) * 2.5) 0;
+  grid-column: container;
+  // margin-top: 80px;
+
+  small {
+    margin: 0 auto 10px;
+    text-transform: uppercase;
+    font-family: var(--font-shentox);
+    font-size: 18px;
+    display: block;
+    text-align: center;
+  }
+
+  p {
+    line-height: 27px;
+    font-size: 20px;
+    font-family: var(--font-glacial);
+    font-weight: 300;
+    color: white;
+  }
+}
+
+.full-section-container {
+  margin-bottom: 50px;
+}
+
+.section-title-wrapper {
+  // margin-bottom: calc(var(--gutter) * 1);
+  grid-column: container;
+
+  h2 {
+    text-align: initial;
+  }
+
+  p {
+    line-height: 25px;
+    font-size: 18px;
+    font-family: var(--font-glacial);
+    font-weight: 300;
+    color: white;
+  }
+}
+.section-description-wrapper,
+.content-wrapper {
+  grid-column: container;
+
+  p {
+    font-family: var(--font-glacial);
+    color: var(--color-white);
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 28px;
+    margin-bottom: var(--gutter);
+  }
 }

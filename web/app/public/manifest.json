@@ -1,6 +1,10 @@
 {
-  "name": "app",
-  "short_name": "app",
+  "name": "Developers Conference 2019",
+  "short_name": "DevCon 2019",
+  "start_url": "/index.html?utm_source=manifest",
+  "display": "standalone",
+  "background_color": "#F54923",
+  "theme_color": "#4DBA87",
   "icons": [
     {
       "src": "/img/icons/android-chrome-192x192.png",
@@ -12,9 +16,5 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ],
-  "start_url": "/index.html",
-  "display": "standalone",
-  "background_color": "#F54923",
-  "theme_color": "#4DBA87"
+  ]
 }

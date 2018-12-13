@@ -1,5 +1,5 @@
 <template>
   <div>
-    <h2 class="mega-rainbow">Contact</h2>
+    <h1 class="mega-rainbow">Contact</h1>
   </div>
 </template>

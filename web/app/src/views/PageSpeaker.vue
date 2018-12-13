@@ -2,7 +2,7 @@
   <div class="page page-session">
     <div class="back-button-wrapper">
       <a @click="$router.go(-1);" class="back">
-        <img src="../assets/back.svg" alt="" /> Back
+        <img src="../assets/back.svg" alt> Back
       </a>
     </div>
     <div class="page-content">{{ speaker }}</div>
@@ -12,7 +12,9 @@
 
       <div class="speakers-wrapper" v-if="speakers">
         <div class="speaker-wrapper">
-          <div class="avatar"><img :src="speaker.profilePicture" alt="" /></div>
+          <div class="avatar">
+            <img :src="speaker.profilePicture" alt>
+          </div>
         </div>
       </div>
 
@@ -27,17 +29,13 @@
       </div>
 
       <div class="descriptions-row">
-        <div class="des-wrap"><p>Speaking about :</p></div>
+        <div class="des-wrap">
+          <p>Speaking about :</p>
+        </div>
       </div>
 
-      <div
-        class="session-title"
-        v-for="session in speaker.sessions"
-        :key="session.name"
-      >
-        <router-link :to="{ name: 'session', params: { id: session.id } }">
-          {{ session.name }}
-        </router-link>
+      <div class="session-title" v-for="session in speaker.sessions" :key="session.name">
+        <router-link :to="{ name: 'session', params: { id: session.id } }">{{ session.name }}</router-link>
       </div>
     </div>
     <div class="page-content" v-else>finding speaker details..</div>
@@ -52,10 +50,10 @@ import { FETCH_SESSIONS, FETCH_SPEAKERS } from "@/store";
 export default {
   methods: {
     ...mapActions([FETCH_SESSIONS, FETCH_SPEAKERS]),
-    time: function(date) {
+    time: function (date) {
       return moment(date).format("LT");
     },
-    getDay: function(str) {
+    getDay: function (str) {
       return moment(str).format("ddd");
     }
   },
@@ -64,10 +62,10 @@ export default {
       sessions: "getSessions",
       speakers: "getSpeakers"
     }),
-    id: function() {
+    id: function () {
       return this.$route.params.id;
     },
-    speaker: function() {
+    speaker: function () {
       if (this.speakers.length === 0) {
         this.FETCH_SPEAKERS();
       }
@@ -75,10 +73,10 @@ export default {
       let theSpeaker = this.speakers.filter(speaker => speaker.id === this.id);
       return theSpeaker[0];
     },
-    session: function() {
+    session: function () {
       let sessions = this.sessions
         .map(groups => groups.sessions)
-        .reduce(function(acc, curr) {
+        .reduce(function (acc, curr) {
           return [...acc, ...curr];
         }, []);
       console.log(sessions);
@@ -99,10 +97,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-* {
-  box-sizing: border-box;
-}
-
 .page-session {
   display: grid;
   grid-template-areas:

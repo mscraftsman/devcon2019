@@ -2,14 +2,22 @@
   <div class="home-component top-bar-wrapper">
     <div class="container">
       <div class="top-bar-container">
-        <div class="rendez-vous-wrapper">14th of june at Voila Bagatelle</div>
-        <div class="construction-wrapper">
-          ⚠️ Website under construction. Showing last year's data temporarily
+        <div class="rendez-vous-wrapper">
+          11
+          <sup>th</sup> - 13
+          <sup>th</sup> of april at Voila Bagatelle
         </div>
+        <div
+          class="construction-wrapper"
+        >⚠️ Website under construction. Showing last year's data temporarily</div>
         <div class="links-wrapper">
           <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#sponsors">Sponsors</a></li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#sponsors">Sponsors</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -50,6 +58,10 @@
     justify-content: flex-start;
     flex-grow: 1;
     font-weight: 900;
+
+    sup {
+      text-transform: lowercase;
+    }
   }
   .links-wrapper {
     justify-content: flex-end;

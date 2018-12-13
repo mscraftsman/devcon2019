@@ -46,9 +46,5 @@ export default {
     grid-column: container;
     padding: calc(var(--gutter) * 2) calc(var(--gutter) / 2);
   }
-
-  &[data-bg="grey"] {
-    background: rgba(0, 0, 0, 0.05);
-  }
 }
 </style>

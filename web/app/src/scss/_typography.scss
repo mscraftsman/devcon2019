@@ -86,6 +86,15 @@ h4.subtitle {
   margin: 0;
 }
 
+small {
+  margin: 0;
+  text-transform: uppercase;
+  font-family: var(--font-shentox);
+  font-size: 18px;
+  color: $color-blue-light;
+  display: block;
+}
+
 // Tribute Text
 
 .tribute-text {
@@ -125,20 +134,11 @@ h4.subtitle {
 }
 
 .section-title-wrapper {
-  margin-bottom: calc(var(--gutter) * 1);
+  // margin-bottom: calc(var(--gutter) * 1);
   grid-column: container;
 
   h2 {
     text-align: initial;
-  }
-
-  small {
-    margin: 0;
-    text-transform: uppercase;
-    font-family: var(--font-shentox);
-    font-size: 18px;
-    color: $color-blue-light;
-    display: block;
   }
 
   p {

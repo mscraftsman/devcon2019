@@ -18,7 +18,11 @@
 
         <router-link class="link" :to="{ name: 'contact' }">contact us</router-link>
 
-        <a class="link external" target="_blank" href="#">code of conduct</a>
+        <a
+          class="link external"
+          target="_blank"
+          href="https://www.mscc.mu/code-of-conduct"
+        >code of conduct</a>
 
         <router-link class="link" :to="{ name: 'jobs' }">jobs</router-link>
 

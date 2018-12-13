@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h2 class="mega-rainbow">Speakers</h2>
+    <h1 class="mega-rainbow">Speakers</h1>
     <div class="page-all-speakers page-session">
       <!--
         <div class="back-button-wrapper">
@@ -17,7 +17,7 @@
             :key="speaker.id"
             :to="{ name: 'speaker', params: { id: speaker.id } }"
           >
-            <SpeakerBox :speaker="speaker" />
+            <SpeakerBox :speaker="speaker"/>
             <!--
               <div class="avatar">
                 <img :src="getSpeaker(speaker.id)" alt>
@@ -42,7 +42,7 @@ export default {
   },
   methods: {
     ...mapActions(["fetchSessions", "fetchSpeakers"]),
-    getSpeaker: function(id) {
+    getSpeaker: function (id) {
       if (this.speakers.length === 0) {
         this.fetchSpeakers();
       }
@@ -51,10 +51,10 @@ export default {
         return theSpeaker[0].profilePicture;
       }
     },
-    time: function(date) {
+    time: function (date) {
       return moment(date).format("LT");
     },
-    getDay: function(str) {
+    getDay: function (str) {
       return str.split(",")[0];
     }
   },
@@ -64,7 +64,7 @@ export default {
       speakers: "getSpeakers"
     })
   },
-  mounted: function() {
+  mounted: function () {
     this.fetchSessions();
   },
   components: {
@@ -74,10 +74,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-* {
-  box-sizing: border-box;
-}
-
 .page-session {
   display: grid;
   grid-template-areas:

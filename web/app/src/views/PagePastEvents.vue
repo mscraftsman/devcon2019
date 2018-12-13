@@ -1,5 +1,5 @@
 <template>
   <div>
-    <h2 class="mega-rainbow">Past Events</h2>
+    <h1 class="mega-rainbow">Past Events</h1>
   </div>
 </template>

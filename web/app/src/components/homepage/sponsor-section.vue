@@ -2,7 +2,7 @@
   <div class="home-component sponsor-section-wrapper">
     <div class="container">
       <h2 class="mega-rainbow">Sponsors</h2>
-      <h3 class="subtitle">Platinum</h3>
+      <h4 class="subtitle">Platinum</h4>
       <div class="sponsors-wrapper platinum-wrapper">
         <a href="#" class="sponsor-logo">
           <img src="../../assets/sample-sponsors/mcb.png" alt>

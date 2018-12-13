@@ -27,6 +27,8 @@ h2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-row-gap: 100px;
+  padding-top: $gutter * 2;
+  padding-bottom: $gutter * 2;
 }
 </style>
 

@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h2 class="mega-rainbow">Extra Activities</h2>
+    <h1 class="mega-rainbow">Extra Activities</h1>
 
     <extra-community></extra-community>
     <extra-gdg></extra-gdg>
@@ -30,7 +30,7 @@ export default {
   },
   methods: {},
   computed: {},
-  mounted() {}
+  mounted() { }
 };
 </script>
 <style lang="scss">

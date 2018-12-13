@@ -2,7 +2,8 @@
   <div class="home-component top-bar-wrapper">
     <div class="container">
       <div class="top-bar-container">
-        <div class="rendez-vous-wrapper">11
+        <div class="rendez-vous-wrapper">
+          11
           <sup>th</sup> - 13
           <sup>th</sup> of april at Voila Bagatelle
         </div>
@@ -57,6 +58,10 @@
     justify-content: flex-start;
     flex-grow: 1;
     font-weight: 900;
+
+    sup {
+      text-transform: lowercase;
+    }
   }
   .links-wrapper {
     justify-content: flex-end;

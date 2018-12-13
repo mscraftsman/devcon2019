@@ -2,7 +2,7 @@
   <div class="page page-session">
     <div class="back-button-wrapper">
       <a @click="$router.go(-1);" class="back">
-        <img src="../assets/back.svg" alt="" /> Back
+        <img src="../assets/back.svg" alt> Back
       </a>
     </div>
     <div class="page-content" v-if="session">
@@ -16,29 +16,39 @@
           :key="speaker.id"
           :to="{ name: 'speaker', params: { id: speaker.id } }"
         >
-          <div class="avatar"><img :src="getSpeaker(speaker.id)" alt="" /></div>
+          <div class="avatar">
+            <img :src="getSpeaker(speaker.id)" alt>
+          </div>
           <p class="name">{{ speaker.name }}</p>
         </router-link>
       </div>
 
       <div class="descriptions-row">
         <div class="des-wrap" v-if="session.format">
-          <label> <img src="../assets/icons/language.svg" alt="" /> </label>
+          <label>
+            <img src="../assets/icons/language.svg" alt>
+          </label>
           <p>{{ session.format }}</p>
         </div>
 
         <div class="des-wrap" v-if="session.language">
-          <label> <img src="../assets/icons/language.svg" alt="" /> </label>
+          <label>
+            <img src="../assets/icons/language.svg" alt>
+          </label>
           <p>{{ session.language }}</p>
         </div>
 
         <div class="des-wrap">
-          <label> <img src="../assets/icons/location.svg" alt="" /> </label>
+          <label>
+            <img src="../assets/icons/location.svg" alt>
+          </label>
           <p>{{ session.room }}</p>
         </div>
 
         <div class="des-wrap">
-          <label> <img src="../assets/icons/time.svg" alt="" /> </label>
+          <label>
+            <img src="../assets/icons/time.svg" alt>
+          </label>
           <p>
             {{ getDay(session.startsAt) }} {{ time(session.startsAt) }} -
             {{ time(session.endsAt) }}
@@ -46,7 +56,9 @@
         </div>
 
         <div class="des-wrap" v-if="session.level">
-          <label> <img src="../assets/icons/level.svg" alt="" /> </label>
+          <label>
+            <img src="../assets/icons/level.svg" alt>
+          </label>
           <p>{{ session.level }}</p>
         </div>
 
@@ -56,24 +68,14 @@
               v-if="voted"
               :to="{ name: 'feedback', params: { id: id } }"
               class="rate rated"
-            >
-              ✅ Rated. Thanks!
-            </router-link>
-            <router-link
-              v-else
-              :to="{ name: 'feedback', params: { id: id } }"
-              class="rate"
-            >
-              Rate
-            </router-link>
+            >✅ Rated. Thanks!</router-link>
+            <router-link v-else :to="{ name: 'feedback', params: { id: id } }" class="rate">Rate</router-link>
           </template>
-          <template v-else>
-            🚫 Session not started yet
-          </template>
+          <template v-else>🚫 Session not started yet</template>
         </div>
 
         <div class="des-wrap rate meetup" v-else>
-          <a href="/b/login" class="rate"> Login with meetup to rate </a>
+          <a href="/b/login" class="rate">Login with meetup to rate</a>
         </div>
       </div>
 
@@ -86,8 +88,7 @@
       <a
         href="javascript:location.reload()"
         title="i'm not proud of this code. please send PR"
-        >is this taking too long? click here</a
-      >
+      >is this taking too long? click here</a>
     </div>
   </div>
 </template>
@@ -99,7 +100,7 @@ export default {
   props: ["id"],
   methods: {
     ...mapActions(["fetchSessions", "fetchSpeakers", "fetchVotes"]),
-    getSpeaker: function(id) {
+    getSpeaker: function (id) {
       if (this.speakers.length === 0) {
         // this.fetchSpeakers();
       }
@@ -108,10 +109,10 @@ export default {
         return theSpeaker[0].profilePicture;
       }
     },
-    time: function(date) {
+    time: function (date) {
       return moment(date).format("LT");
     },
-    getDay: function(str) {
+    getDay: function (str) {
       return moment(str).format("ddd");
     }
   },
@@ -122,19 +123,19 @@ export default {
       user: "getUser",
       getVotes: "getVotes"
     }),
-    session: function() {
+    session: function () {
       if (typeof this.sessions == "undefined") {
         this.fetchSessions();
       }
       let sessions = this.sessions
         .map(groups => groups.sessions)
-        .reduce(function(acc, curr) {
+        .reduce(function (acc, curr) {
           return [...acc, ...curr];
         }, []);
       let session = _.filter(sessions, { id: this.id })[0];
       return session;
     },
-    voted: function() {
+    voted: function () {
       //   let allVoted = _.map(this.getVotes, "session_id");
       //   if (allVoted.indexOf(this.id) !== -1) {
       //     return true;
@@ -172,9 +173,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-* {
-  box-sizing: border-box;
-}
 .page-session {
   display: grid;
   grid-template-areas:

@@ -49,7 +49,10 @@ export default new Vuex.Store({
     getStats: function(state) {
       return state.stats;
     },
-
+    getFeaturedSpeakers: function(state) {
+      let featured = state.speakers.filter(speaker => speaker.isTopSpeaker);
+      return featured;
+    },
     getUser: function(state) {
       return state.user;
     }

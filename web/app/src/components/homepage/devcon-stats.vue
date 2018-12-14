@@ -2,37 +2,9 @@
   <div class="home-component devcon-stats-wrapper">
     <div class="container">
       <div class="devcon-stats-container">
-        <div class="stat-wrapper">
-          <div class="number">195</div>
-          <div class="label">Speakers</div>
-        </div>
-        <div class="stat-wrapper">
-          <div class="number">195</div>
-          <div class="label">Speakers</div>
-        </div>
-        <div class="stat-wrapper">
-          <div class="number">+570</div>
-          <div class="label">Sponsors</div>
-        </div>
-        <div class="stat-wrapper">
-          <div class="number">+195</div>
-          <div class="label">Speakers</div>
-        </div>
-        <div class="stat-wrapper">
-          <div class="number">195</div>
-          <div class="label">Speakers</div>
-        </div>
-        <div class="stat-wrapper">
-          <div class="number">195</div>
-          <div class="label">Speakers</div>
-        </div>
-        <div class="stat-wrapper">
-          <div class="number">+570</div>
-          <div class="label">Sponsors</div>
-        </div>
-        <div class="stat-wrapper">
-          <div class="number">+195</div>
-          <div class="label">Speakers</div>
+        <div class="stat-wrapper" v-if="getStats" v-for="(stats, index) in getStats" :key="index">
+          <div class="number">{{ stats.number }}</div>
+          <div class="label">{{ stats.name }}</div>
         </div>
       </div>
     </div>
@@ -45,10 +17,17 @@ import { mapGetters, mapActions } from "vuex";
 import { FETCH_STATS } from "@/store";
 
 export default {
+  data() {
+    return {
+      sampleStats: [
+        { "name": "Event One", "number": "1" },
+        { "name": "Event Two Edited", "number": "2" }
+      ]
+    }
+  },
   created() {
     this.FETCH_STATS();
   },
-
   computed: {
     ...mapGetters(["getStats"])
   },
@@ -117,6 +96,7 @@ export default {
       font-size: 60px;
       font-weight: 900;
       text-align: center;
+      overflow-wrap: break-word;
     }
     .label {
       text-align: center;

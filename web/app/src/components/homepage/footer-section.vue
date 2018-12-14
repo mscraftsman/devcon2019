@@ -6,21 +6,31 @@
 
         <router-link class="link" :to="{ name: 'sponsors' }">sponsors</router-link>
 
-        <a class="link" href="#">become a sponsor</a>
+        <a class="link external" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          href="https://github.com/mscraftsman/devcon2019/raw/master/assets/DevCon2019-SponsorshipProposal.pdf">become a sponsor</a>
         
-        <a class="link external" target="_blank" href="#">mcb inovapp challenge</a>
+        <a class="link external" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          href="#">mcb inovapp challenge</a>
 
         <router-link class="link" :to="{ name: 'press' }">press material</router-link>
 
         <router-link class="link" :to="{ name: 'speakers' }">speakers</router-link>
 
-        <a class="link" href="#">become a speaker</a>
+        <a class="link external"
+          target="_blank" 
+          rel="noopener noreferrer" 
+          href="https://sessionize.com/devcon-mauritius-2019/">become a speaker</a>
 
-        <router-link class="link" :to="{ name: 'contact' }">contact us</router-link>
+        <a class="link" 
+          href="mailto:conference@mscc.mu?subject=Inquiry re. Developers Conference 2019">contact us</a>
 
-        <a
-          class="link external"
+        <a class="link external"
           target="_blank"
+          rel="noopener noreferrer" 
           href="https://www.mscc.mu/code-of-conduct"
         >code of conduct</a>
 

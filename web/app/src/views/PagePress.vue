@@ -37,7 +37,7 @@
                   <span>{{ logo.style }}</span>
                 </div>
                 <div class="download-button">
-                  <a :href="logo.path" target="_blank" class="download">Download</a>
+                  <a :href="logo.path" target="_blank" rel="noopener noreferrer" class="download">Download</a>
                 </div>
               </div>
             </div>

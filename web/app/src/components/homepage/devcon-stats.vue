@@ -39,6 +39,25 @@
   </div>
 </template>
 
+<script>
+import { mapGetters, mapActions } from "vuex";
+
+import { FETCH_STATS } from "@/store";
+
+export default {
+  created() {
+    this.FETCH_STATS();
+  },
+
+  computed: {
+    ...mapGetters(["getStats"])
+  },
+
+  methods: {
+    ...mapActions([FETCH_STATS])
+  }
+};
+</script>
 
 <style lang="scss" scoped>
 .devcon-stats-wrapper {

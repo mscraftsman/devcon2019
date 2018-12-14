@@ -4,19 +4,22 @@
       <h2 class="mega-rainbow">Sponsors</h2>
       <h4 class="subtitle">Platinum</h4>
       <div class="sponsors-wrapper platinum-wrapper">
-        <a href="#" class="sponsor-logo">
-          <img src="../../assets/sample-sponsors/mcb.png" alt>
+        <a href="#"
+           class="sponsor-logo">
+          <img src="../../assets/sample-sponsors/mcb.png"
+               alt>
         </a>
-        <a href="#" class="sponsor-logo">
-          <img src="../../assets/sample-sponsors/sdworx.png" alt>
+        <a href="#"
+           class="sponsor-logo">
+          <img src="../../assets/sample-sponsors/sdworx.png"
+               alt>
         </a>
       </div>
 
-      <a href="#" class="view-more">View all sponsors</a>
+      <a href="#"
+         class="view-more">View all sponsors</a>
 
-      <div
-        class="tribute-text"
-      >Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ea itaque magni, omnis cum reprehenderit possimus laudantium, doloribus veritatis dolorem repellat explicabo odio quas architecto nobis error nisi. Molestiae, sunt.</div>
+      <div class="tribute-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ea itaque magni, omnis cum reprehenderit possimus laudantium, doloribus veritatis dolorem repellat explicabo odio quas architecto nobis error nisi. Molestiae, sunt.</div>
     </div>
 
     <div class="button-center">
@@ -24,6 +27,26 @@
     </div>
   </div>
 </template>
+<script>
+import { mapGetters, mapActions } from "vuex";
+
+import { FETCH_SPONSORS } from "@/store";
+
+export default {
+  created() {
+    this.FETCH_SPONSORS();
+  },
+
+  computed: {
+    ...mapGetters(["getSponsors"])
+  },
+
+  methods: {
+    ...mapActions([FETCH_SPONSORS])
+  }
+};
+</script>
+
 
 <style lang="scss" scoped>
 .home-component {

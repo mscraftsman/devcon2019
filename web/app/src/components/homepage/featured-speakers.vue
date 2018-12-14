@@ -34,6 +34,7 @@ h2 {
 
 <script>
 import SpeakerBox from "@/components/shared/speaker-box.vue";
+import { mapGetters } from 'vuex';
 
 export default {
   data() {
@@ -44,6 +45,9 @@ export default {
         { "id": "ab15357e-3099-4822-8476-ba522cf5ae86", "firstName": "Cedric", "lastName": "Poilly", "fullName": "Cedric Poilly", "bio": "Freelance Front-End Developer: working with private companies, NGOs as well as contributing open-source work |\r\nExpert Mentor at CodeMentor.io: hire me for a 1:1 online session for help with Front-end development: Angular, Vue.js or other technologies", "tagLine": "Freelance Front-End Developer | Expert Mentor at CodeMentor.io", "profilePicture": "https://sessionize.com/image?f=fa830efbe76fcb996550804bb36985d3,400,400,True,False,3dbeeea3-6711-4da5-bec0-515bb5ff621e.jpg", "sessions": [{ "id": 38354, "name": "Web Workers: Multithreading in the Browser" }, { "id": 43249, "name": "Angular: Struggles and Advice" }], "isTopSpeaker": false, "links": [{ "title": "Twitter", "url": "https://twitter.com/cedpoilly", "linkType": "Twitter" }, { "title": "LinkedIn", "url": "https://www.linkedin.com/in/cedric-poilly/", "linkType": "LinkedIn" }] }
       ]
     }
+  },
+  computed: {
+    ...mapGetters(['getFeaturedSpeakers'])
   },
   components: {
     SpeakerBox

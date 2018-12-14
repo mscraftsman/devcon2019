@@ -1,5 +1,5 @@
 <template>
   <div>
-    <h2 class="mega-rainbow">Sponsors</h2>
+    <h1 class="mega-rainbow">Sponsors</h1>
   </div>
 </template>

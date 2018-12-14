@@ -4,7 +4,7 @@
       <div class="container">
         <div class="page-title-wrapper">
           <small>Free to use! Create Awareness.</small>
-          <h2 class="mega-rainbow">Press Material</h2>
+          <h1 class="mega-rainbow">Press Material</h1>
           <p>
             In order to create more awareness for the Developers Conference we
             prepared a variety of media files at your disposal. Please feel free
@@ -23,23 +23,21 @@
         </div>
         <div class="content-wrapper">
           <div class="logos-container">
-            <div
-              class="logo-wrapper"
-              v-for="(logo, index) in logos"
-              :key="index"
-            >
-              <div class="image"><img :src="logo.path" :alt="logo.name" /></div>
+            <div class="logo-wrapper" v-for="(logo, index) in logos" :key="index">
+              <div class="image">
+                <img :src="logo.path" :alt="logo.name">
+              </div>
               <div class="details">
                 <div class="row">
-                  <label>Format</label> <span>{{ logo.format }}</span>
+                  <label>Format</label>
+                  <span>{{ logo.format }}</span>
                 </div>
                 <div class="row">
-                  <label>Style</label> <span>{{ logo.style }}</span>
+                  <label>Style</label>
+                  <span>{{ logo.style }}</span>
                 </div>
                 <div class="download-button">
-                  <a :href="logo.path" target="_blank" class="download"
-                    >Download</a
-                  >
+                  <a :href="logo.path" target="_blank" rel="noopener noreferrer" class="download">Download</a>
                 </div>
               </div>
             </div>
@@ -60,24 +58,21 @@
         </div>
         <div class="content-wrapper">
           <div class="banners-container">
-            <div
-              class="banner-wrapper"
-              v-for="(banner, index) in banners"
-              :key="index"
-            >
+            <div class="banner-wrapper" v-for="(banner, index) in banners" :key="index">
               <div class="image">
-                <img :src="banner.path" :alt="banner.name" />
+                <img :src="banner.path" :alt="banner.name">
               </div>
               <div class="details">
                 <div class="row">
-                  <label>Dimension</label> <span>{{ banner.size }}</span>
+                  <label>Dimension</label>
+                  <span>{{ banner.size }}</span>
                 </div>
                 <div class="code">
                   <code>
                     &lt;a href="https://www.conference.mscc.mu"
                     title="Developers Conference 2019 - The Biggest Tech Event
                     in Mauritius!"&gt;&lt;img src="https://conference.mscc.mu{{
-                      banner.path
+                    banner.path
                     }}" alt="Developers Conference 2019 - The Biggest Tech Event
                     in Mauritius!"&gt;&lt;/a&gt;
                   </code>
@@ -150,10 +145,6 @@ export default {
   .container {
     grid-column: container;
     padding: calc(var(--gutter) * 2) calc(var(--gutter) / 2);
-  }
-
-  &[data-bg="grey"] {
-    background: rgba(0, 0, 0, 0.05);
   }
 }
 
@@ -234,11 +225,12 @@ export default {
     background: transparent;
     transition: all 0.3s ease-in-out;
     width: 100%;
-    margin-bottom: var(--gutter);
+    margin-bottom: $gutter * 2;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.4);
 
     .image {
       padding: var(--gutter);
-      background: rgba(0, 0, 0, 0.1);
       text-align: center;
 
       img {

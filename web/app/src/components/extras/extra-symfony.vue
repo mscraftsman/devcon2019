@@ -23,7 +23,7 @@
           Symfony talks and have a chat with us during the devcon. If you wish
           to know more about the framework, our philosophy and our community,
           please get in touch with us via our website:
-          <a href="http://symfony.mu" target="_blank" rel="noopener"
+          <a href="http://symfony.mu" target="_blank" rel="noopener noreferrer"
             >http://symfony.mu</a
           >
         </p>

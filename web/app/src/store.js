@@ -11,6 +11,8 @@ const sessionizeSpeakers =
 
 export const SET_SPEAKERS = "SET_SPEAKERS";
 export const SET_SESSIONS = "SET_SESSIONS";
+export const SET_PAGESESSIONS_ACTIVE = "SET_PAGESESSIONS_ACTIVE"
+export const SET_PAGESESSIONS_SCROLL_POSITION = "SET_PAGESESSIONS_SCROLL_POSITION"
 
 export const FETCH_SESSIONIZE_DATA = "FETCH_SESSIONIZE_DATA";
 export const FETCH_SESSIONS = "FETCH_SESSIONS";
@@ -18,6 +20,10 @@ export const FETCH_SPEAKERS = "FETCH_SPEAKERS";
 
 export default new Vuex.Store({
   state: {
+    pageSessions:{
+      scrollPosition: 0,
+      active: "Thursday"
+    },
     speakers: [],
     sessions: [],
     user: {
@@ -38,6 +44,12 @@ export default new Vuex.Store({
     },
     getUser: function(state) {
       return state.user;
+    },
+    getPageSessionsActive: function(state){
+      return state.pageSessions.active
+    },
+    getPageSessionsScrollPosition: function(state){
+      return state.pageSessions.scrollPosition
     }
   },
   mutations: {
@@ -46,6 +58,12 @@ export default new Vuex.Store({
     },
     [SET_SESSIONS](state, sessions) {
       state.sessions = sessions;
+    },
+    [SET_PAGESESSIONS_ACTIVE](state,active) {
+      state.pageSessions.active = active;
+    },
+    [SET_PAGESESSIONS_SCROLL_POSITION](state,scrollPosition) {
+      state.pageSessions.scrollPosition = scrollPosition;
     }
   },
   actions: {

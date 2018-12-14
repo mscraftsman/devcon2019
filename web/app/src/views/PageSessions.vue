@@ -7,7 +7,7 @@
           <div
             class="tab-items"
             :class="{active : getDay(group.groupName) === active}"
-            @click="active = getDay(group.groupName)"
+            @click="setActive(group.groupName)"
             v-for="group in sessions"
             :key="group.groupId"
             :label="getDay(group.groupName)"
@@ -19,12 +19,14 @@
           <div
             class="tabs-panel-content"
             v-if="getDay(group.groupName) === active"
+            ref = "content"
             v-for="group in sessions"
             :key="group.groupId"
           >
             <div class="session-panes" v-for="session in group.sessions" :key="session.id">
               <router-link
                 class="session-row"
+                @click.native = "setScrollPosition()"
                 :to="{ name: 'session',  params: { id: session.id }}"
               >
                 <div class="date-time">{{ time(session.startsAt) }} - {{ time(session.endsAt) }}</div>
@@ -46,9 +48,12 @@ export default {
   data() {
     return {
       tabs: ["Thursday", "Friday", "Saturday"],
-      active: "Thursday"
     };
   },
+  mounted(){
+    // Keep Track of Scroll Position
+      this.$refs["content"][0].scrollTop = this.scrollPosition
+    },
   methods: {
     time: function (date) {
       // console.log()
@@ -58,11 +63,21 @@ export default {
     getDay: function (str) {
       console.log(str);
       return str.split(",")[0];
-    }
+    },
+    setActive: function(str){
+      // Keep Track of previous Page Sessions activity in current Session
+      this.$store.commit("SET_PAGESESSIONS_ACTIVE",str.split(",")[0]);
+    },
+    setScrollPosition: function(){
+      // Keep Track of previous scroll position
+      this.$store.commit("SET_PAGESESSIONS_SCROLL_POSITION",this.$refs["content"][0].scrollTop)
+    },
   },
   computed: {
     ...mapGetters({
-      sessions: "getSessions"
+      sessions: "getSessions",
+      active: "getPageSessionsActive",
+      scrollPosition: "getPageSessionsScrollPosition"
     })
   }
 };

@@ -52,7 +52,7 @@ automatically trigger a new build pipeline and after a few minutes the changes w
 
 # 5. Questions?
 
-You can reach the maintainers on twitter or MSCC Slack !
+You can reach the maintainers on [Twitter](https://twitter.com/MSCraftsman) or [MSCC Slack](https://msccmu.slack.com/) !
 
 - Sandeep Ramgolam: 🐦 `@__sun__`
 

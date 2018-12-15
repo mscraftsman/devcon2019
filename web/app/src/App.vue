@@ -1,14 +1,16 @@
 <template>
   <div id="app">
-    <TopBar />
-    <HeaderStripe />
+    <TopBar/>
+    <HeaderStripe/>
 
     <div class="page-wrapper">
-      <transition name="fade" mode="out-in"> <router-view /> </transition>
+      <transition name="fade" mode="out-in">
+        <router-view/>
+      </transition>
     </div>
 
-    <SocialStripe />
-    <FooterSection />
+    <SocialStripe/>
+    <FooterSection/>
   </div>
 </template>
 
@@ -56,6 +58,30 @@ body {
 html {
   overflow-y: scroll;
   background-color: $color-main;
+}
+
+body {
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+    display: block;
+    background: url("../src/assets/bg/bg-blue-light.svg") no-repeat,
+      url("../src/assets/bg/bg-red.svg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+  }
 }
 
 .fade-enter-active,

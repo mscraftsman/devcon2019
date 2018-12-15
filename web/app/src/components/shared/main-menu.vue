@@ -6,7 +6,7 @@
       <li>
         <router-link :to="{ name: 'lifeatdevcon' }">Life at devcon</router-link>
       </li>
-      <li><a href="#">MCB Innovapp</a></li>
+      <li><a href="#">MCB Inovapp</a></li>
     </ul>
   </div>
 </template>

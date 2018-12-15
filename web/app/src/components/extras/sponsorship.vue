@@ -16,6 +16,7 @@
         <a
           href="/DevCon2018-SponsorshipProposal.pdf"
           target="_blank"
+          rel="noopener noreferrer"
           class="button"
           >Become a sponsor</a
         >

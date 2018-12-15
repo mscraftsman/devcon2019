@@ -76,11 +76,7 @@ body {
     width: 100%;
     height: 100%;
 
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-    filter: blur(5px);
+    // filter: blur(5px);
   }
 }
 

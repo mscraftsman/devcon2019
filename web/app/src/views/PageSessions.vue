@@ -51,7 +51,9 @@ export default {
   },
   mounted() {
     // Keep Track of Scroll Position
-    this.$refs["content"][0].scrollTop = this.scrollPosition;
+    if (this.sessions.length !== 0) {
+      this.$refs["content"][0].scrollTop = this.scrollPosition;
+    }  
   },
   methods: {
     time: function(date) {

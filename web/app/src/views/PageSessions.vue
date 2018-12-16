@@ -43,7 +43,6 @@
 
 <script>
 import { mapActions, mapGetters } from "vuex";
-import moment from "moment";
 export default {
   data() {
     return {
@@ -54,16 +53,19 @@ export default {
     // Keep Track of Scroll Position
     if (this.sessions.length !== 0) {
       this.$refs["content"][0].scrollTop = this.scrollPosition;
-    }
+    }  
   },
   methods: {
     time: function(date) {
-      // console.log()
-      // return new Date(date).toDateString();
-      return moment(date).format("LT");
+      let time = new Date(date);
+      let hours = time.getHours();
+      hours = (hours + 24) % 24;
+      let period = hours < 12 ? "AM" : "PM";
+      hours = hours % 12 || hours;
+      let minutes = (time.getMinutes() < 10 ? "0" : "") + time.getMinutes();
+      return hours + ":" + minutes + " " + period;
     },
     getDay: function(str) {
-      console.log(str);
       return str.split(",")[0];
     },
     setActive: function(str) {

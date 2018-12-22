@@ -3,7 +3,7 @@
     <div class="container">
       <h2 class="mega-rainbow">Featured Speakers</h2>
       <div class="featured-speakers-container">
-        <SpeakerBox v-for="speaker in speakers" :key="speaker.id" :speaker="speaker"/>
+        <SpeakerBox v-for="speaker in getFeaturedSpeakers" :key="speaker.id" :speaker="speaker"/>
       </div>
     </div>
   </div>

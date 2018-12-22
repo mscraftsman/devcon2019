@@ -35,7 +35,7 @@
 import SpeakerBox from "@/components/shared/speaker-box.vue";
 
 import { mapActions, mapGetters } from "vuex";
-import moment from "moment";
+// import moment from "moment";
 export default {
   data() {
     return {};
@@ -52,10 +52,12 @@ export default {
       }
     },
     time: function (date) {
-      return moment(date).format("LT");
+      // return moment(date).format("LT");
+      return date;
     },
     getDay: function (str) {
-      return str.split(",")[0];
+      // return str.split(",")[0];
+      return str;
     }
   },
   computed: {

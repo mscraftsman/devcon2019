@@ -72,7 +72,7 @@
 }
 
 @media screen and (max-width: $tablet) {
-  .link-wrapper {
+    .link-wrapper {
     margin-left: 0px;
     align-items: center;
     display: grid;
@@ -86,7 +86,7 @@
   }
   .footer-section-container {
     display: flex;
-    align-items: center;
+    justify-content: center;
   }
 }
 </style>

@@ -44,17 +44,19 @@
 
 <script>
 import { mapGetters, mapActions } from "vuex";
-import moment from "moment";
+// import moment from "moment";
 import { FETCH_SESSIONS, FETCH_SPEAKERS } from "@/store";
 
 export default {
   methods: {
     ...mapActions([FETCH_SESSIONS, FETCH_SPEAKERS]),
     time: function (date) {
-      return moment(date).format("LT");
+      // return moment(date).format("LT");
+      return date
     },
     getDay: function (str) {
-      return moment(str).format("ddd");
+      // return moment(str).format("ddd");
+      return str;
     }
   },
   computed: {

@@ -50,6 +50,10 @@ h1,
   text-transform: uppercase;
   font-size: 65px;
   line-height: 55px;
+
+  @media screen and (max-width: $tablet) {
+    font-size: 35px;
+  }
 }
 
 h1 {

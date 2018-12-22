@@ -57,7 +57,10 @@ body {
 
 html {
   overflow-y: scroll;
-  background-color: $color-main;
+  // background-color: $color-main;
+  background: $color-main url("/img/bg/texture.png");
+  background-size: 100% auto;
+  // background-attachment: fixed;
 }
 
 body {
@@ -69,10 +72,10 @@ body {
     z-index: -1;
 
     display: block;
-    background: url("../src/assets/bg/bg-blue-light.svg") no-repeat,
-      url("../src/assets/bg/bg-red.svg") no-repeat;
-    background-size: cover;
-    background-position: center center;
+    background: no-repeat right top/auto 100%
+        url("../src/assets/bg/bg-blue-light.svg"),
+      no-repeat left top/auto 100% url("../src/assets/bg/bg-red.svg"),
+      no-repeat center center/contain url("/img/bg/team2018.jpg");
     width: 100%;
     height: 100%;
 

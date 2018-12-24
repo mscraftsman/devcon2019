@@ -87,6 +87,8 @@
 
 <script>
 import { mapGetters, mapActions } from "vuex";
+import { time as timeHelper, getDay as getDayHelper } from "@/helpers";
+
 export default {
   props: ["id"],
   methods: {
@@ -100,20 +102,8 @@ export default {
         return theSpeaker[0].profilePicture;
       }
     },
-    time: function(date) {
-      let time = new Date(date);
-      let hours = time.getHours();
-      hours = (hours + 24) % 24;
-      let period = hours < 12 ? "AM" : "PM";
-      hours = hours % 12 || hours;
-      let minutes = (time.getMinutes() < 10 ? "0" : "") + time.getMinutes();
-      return hours + ":" + minutes + " " + period;
-    },
-    getDay: function(str) {
-      const days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
-      let day = new Date(str);
-      return days[day.getDay()];
-    }
+    time: timeHelper,
+    getDay: getDayHelper
   },
   computed: {
     ...mapGetters({

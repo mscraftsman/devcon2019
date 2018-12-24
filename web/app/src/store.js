@@ -1,7 +1,7 @@
 import Vue from "vue";
 import Vuex from "vuex";
 
-import { extractData } from "@/helpers/spreadsheet-helper";
+import { extractData } from "@/helpers";
 
 Vue.use(Vuex);
 

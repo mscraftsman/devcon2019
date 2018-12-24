@@ -43,6 +43,8 @@
 
 <script>
 import { mapActions, mapGetters } from "vuex";
+import { time as timeHelper } from "@/helpers";
+
 export default {
   data() {
     return {
@@ -56,15 +58,7 @@ export default {
     }  
   },
   methods: {
-    time: function(date) {
-      let time = new Date(date);
-      let hours = time.getHours();
-      hours = (hours + 24) % 24;
-      let period = hours < 12 ? "AM" : "PM";
-      hours = hours % 12 || hours;
-      let minutes = (time.getMinutes() < 10 ? "0" : "") + time.getMinutes();
-      return hours + ":" + minutes + " " + period;
-    },
+    time: timeHelper,
     getDay: function(str) {
       return str.split(",")[0];
     },

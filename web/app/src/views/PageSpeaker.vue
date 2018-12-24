@@ -35,7 +35,8 @@
       </div>
 
       <div class="session-title" v-for="session in speaker.sessions" :key="session.name">
-        <router-link :to="{ name: 'session', params: { id: session.id } }">{{ session.name }}</router-link>
+        <router-link :to="{ name: 'session', params: { id: session.id } }">{{
+          session.name }}</router-link>
       </div>
     </div>
     <div class="page-content" v-else>finding speaker details..</div>
@@ -50,11 +51,11 @@ import { FETCH_SESSIONS, FETCH_SPEAKERS } from "@/store";
 export default {
   methods: {
     ...mapActions([FETCH_SESSIONS, FETCH_SPEAKERS]),
-    time: function (date) {
+    time: function(date) {
       // return moment(date).format("LT");
-      return date
+      return date;
     },
-    getDay: function (str) {
+    getDay: function(str) {
       // return moment(str).format("ddd");
       return str;
     }
@@ -64,10 +65,10 @@ export default {
       sessions: "getSessions",
       speakers: "getSpeakers"
     }),
-    id: function () {
+    id: function() {
       return this.$route.params.id;
     },
-    speaker: function () {
+    speaker: function() {
       if (this.speakers.length === 0) {
         this.FETCH_SPEAKERS();
       }
@@ -75,14 +76,13 @@ export default {
       let theSpeaker = this.speakers.filter(speaker => speaker.id === this.id);
       return theSpeaker[0];
     },
-    session: function () {
+    session: function() {
       let sessions = this.sessions
         .map(groups => groups.sessions)
-        .reduce(function (acc, curr) {
+        .reduce(function(acc, curr) {
           return [...acc, ...curr];
         }, []);
-      console.log(sessions);
-      let session = _.filter(sessions, { id: this.id })[0];
+      let session = sessions.find(sess => (sess.id = this.id));
       return session;
     }
   },

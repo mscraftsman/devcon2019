@@ -34,6 +34,7 @@
     "register-service-worker": "^1.0.0",
     "vue": "^2.5.17",
     "vue-carousel": "^0.16.2",
+    "vue-progressbar": "^0.7.5",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
   },

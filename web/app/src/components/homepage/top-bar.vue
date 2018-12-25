@@ -5,9 +5,8 @@
         <div class="rendez-vous-wrapper">
           11<sup>th</sup> - 13<sup>th</sup> April at Voila Bagatelle
         </div>
-        <div
-          class="construction-wrapper"
-        >⚠️ Website under construction. Showing last year's data temporarily</div>
+        <div class="construction-wrapper">⚠️ Website under construction.
+          Showing last year's data temporarily</div>
         <div class="links-wrapper">
           <ul>
             <li>
@@ -21,7 +20,7 @@
       </div>
     </div>
     <!-- set progressbar -->
-    <vue-progress-bar></vue-progress-bar>
+    <vue-progress-bar class="page-progressbar" v-in-viewport></vue-progress-bar>
   </div>
 </template>
 
@@ -42,6 +41,18 @@
 
   text-transform: uppercase;
   font-size: 12px;
+
+  .page-progressbar {
+    position: fixed !important;
+
+    &.above-viewport {
+      position: fixed !important;
+    }
+
+    &.in-viewport {
+      position: relative !important;
+    }
+  }
 }
 
 .top-bar-container {

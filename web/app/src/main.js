@@ -1,5 +1,6 @@
 import Vue from "vue";
 import VueProgressBar from "vue-progressbar";
+import inViewportDirective from "vue-in-viewport-directive";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
@@ -14,9 +15,10 @@ Vue.config.productionTip = false;
 Vue.use(VueProgressBar, {
   color: "#97D0E1",
   failedColor: "red",
-  position: "relative",
   height: "2px"
 });
+
+Vue.directive("in-viewport", inViewportDirective);
 
 new Vue({
   router,

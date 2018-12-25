@@ -20,6 +20,8 @@
         </div>
       </div>
     </div>
+    <!-- set progressbar -->
+    <vue-progress-bar></vue-progress-bar>
   </div>
 </template>
 

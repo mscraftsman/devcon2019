@@ -25,6 +25,9 @@ a {
 
 // Headings
 
+.decovar {
+}
+
 h2 {
   font-size: 60px;
   font-family: "Open Sans", sans-serif;
@@ -38,21 +41,32 @@ h2 {
   font-family: $font-headings;
   color: rgb(255, 95, 56);
   text-align: center;
-  font-weight: 600;
+  font-weight: 500;
 
+  transition: all 3s ease;
+  font-variation-settings: "BLDA" 800, "TRMD" 0, "TRMC" 0, "SKLD" 0, "TRML" 0,
+    "SKLA" 0, "TRMF" 0, "TRMK" 0, "BLDB" 0, "WMX2" 0, "TRMB" 0, "TRMA" 0,
+    "SKLB" 0, "TRMG" 0, "TRME" 0;
   text-transform: uppercase;
   letter-spacing: 2px;
+
+  &:hover {
+    transition: all 1s ease-out;
+    font-variation-settings: "BLDA" 800, "TRMD" 0, "TRMC" 0, "SKLD" 0, "TRML" 0,
+      "SKLA" 0, "TRMF" 0, "TRMK" 0, "BLDB" 0, "WMX2" 0, "TRMB" 0, "TRMA" 0,
+      "SKLB" 1000, "TRMG" 0, "TRME" 0;
+  }
 }
 
 h1,
 .home h2 {
   margin: 0 0 calc(var(--gutter) / 2) 0;
   text-transform: uppercase;
-  font-size: 65px;
+  font-size: 75px;
   line-height: 55px;
 
   @media screen and (max-width: $tablet) {
-    font-size: 35px;
+    font-size: 55px;
   }
 }
 

@@ -1,5 +1,6 @@
 import Vue from "vue";
 import VueProgressBar from "vue-progressbar";
+import checkView from "vue-check-view";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
@@ -17,6 +18,8 @@ Vue.use(VueProgressBar, {
   position: "relative",
   height: "2px"
 });
+
+Vue.use(checkView);
 
 new Vue({
   router,

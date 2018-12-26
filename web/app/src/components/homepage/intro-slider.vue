@@ -80,7 +80,7 @@
       font-weight: 900;
 
       span {
-        font-size: 150%;
+        font-size: 200%;
         font-family: $font-headings;
       }
     }

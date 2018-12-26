@@ -33,9 +33,15 @@
   "dependencies": {
     "register-service-worker": "^1.0.0",
     "vue": "^2.5.21",
+<<<<<<< HEAD
     "vue-carousel": "^0.16.2",
     "vue-check-view": "0.2.3",
     "vue-progressbar": "0.7.5",
+=======
+    "vue-babylonjs": "^1.0.0-beta.6",
+    "vue-carousel": "^0.16.2",
+    "vue-lodash": "^2.0.0",
+>>>>>>> bca026f6ddc9901287a37e4323bd88ba6d8b3ed4
     "vue-router": "^3.0.2",
     "vuex": "^3.0.1"
   },

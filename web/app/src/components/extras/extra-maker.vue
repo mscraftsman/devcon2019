@@ -17,7 +17,7 @@
           Things, Robotics, 3D Printing, Embedded Software, Hardware, Arduino,
           Small Board Computers, SBC like the Raspbery PI, Printed Circuit Board
           design, DIY, Wood Work, Metal Work, Computer Aided Designing,
-          Wearables(can be extended to Cosplayers).
+          Wearables.
         </p>
 
         <p>
@@ -34,7 +34,7 @@
         </p>
 
         <p>
-          Come join us at Developers Conference 2018 in the Conference hall of
+          Come join us at Developers Conference 2019 in the Conference hall of
           the Flying Dodo.
         </p>
       </div>

@@ -11,13 +11,9 @@
       -->
       <div class="page-content">
         <div class="speakers-wrapper" v-if="speakers">
-          <router-link
-            class="speaker-wrapper"
-            v-for="speaker in speakers"
-            :key="speaker.id"
-            :to="{ name: 'speaker', params: { id: speaker.id } }"
-          >
-            <SpeakerBox :speaker="speaker"/>
+          <router-link class="speaker-wrapper" v-for="speaker in speakers" :key="speaker.id"
+            :to="{ name: 'speaker', params: { id: speaker.id } }">
+            <SpeakerBox :speaker="speaker" />
             <!--
               <div class="avatar">
                 <img :src="getSpeaker(speaker.id)" alt>
@@ -33,16 +29,16 @@
 
 <script>
 import SpeakerBox from "@/components/shared/speaker-box.vue";
-
 import { mapActions, mapGetters } from "vuex";
-import moment from "moment";
+import { time as timeHelper, getDay as getDayHelper } from "@/helpers";
+
 export default {
   data() {
     return {};
   },
   methods: {
     ...mapActions(["fetchSessions", "fetchSpeakers"]),
-    getSpeaker: function (id) {
+    getSpeaker: function(id) {
       if (this.speakers.length === 0) {
         this.fetchSpeakers();
       }
@@ -51,12 +47,8 @@ export default {
         return theSpeaker[0].profilePicture;
       }
     },
-    time: function (date) {
-      return moment(date).format("LT");
-    },
-    getDay: function (str) {
-      return str.split(",")[0];
-    }
+    time: timeHelper,
+    getDay: getDayHelper
   },
   computed: {
     ...mapGetters({
@@ -64,7 +56,7 @@ export default {
       speakers: "getSpeakers"
     })
   },
-  mounted: function () {
+  mounted: function() {
     this.fetchSessions();
   },
   components: {

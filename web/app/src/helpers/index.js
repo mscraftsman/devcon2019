@@ -20,3 +20,20 @@ function extractObject(entry) {
 
   return formattedObjet;
 }
+
+export const time = function(date) {
+  let time = new Date(date);
+  let hours = time.getHours();
+  hours = (hours + 24) % 24;
+  let period = hours < 12 ? "AM" : "PM";
+  hours = hours % 12 || hours;
+  let minutes = (time.getMinutes() < 10 ? "0" : "") + time.getMinutes();
+  return hours + ":" + minutes + " " + period;
+};
+
+export const getDay = function(str) {
+  const days = [ "SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT" ];
+  let day = new Date(str);
+  return days[day.getDay()];
+};
+

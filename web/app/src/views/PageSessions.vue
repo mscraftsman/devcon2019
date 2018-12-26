@@ -19,14 +19,14 @@
           <div
             class="tabs-panel-content"
             v-if="getDay(group.groupName) === active"
-            ref = "content"
+            ref="content"
             v-for="group in sessions"
             :key="group.groupId"
           >
             <div class="session-panes" v-for="session in group.sessions" :key="session.id">
               <router-link
                 class="session-row"
-                @click.native = "setScrollPosition()"
+                @click.native="setScrollPosition()"
                 :to="{ name: 'session',  params: { id: session.id }}"
               >
                 <div class="date-time">{{ time(session.startsAt) }} - {{ time(session.endsAt) }}</div>
@@ -43,35 +43,36 @@
 
 <script>
 import { mapActions, mapGetters } from "vuex";
-import moment from "moment";
+import { time as timeHelper } from "@/helpers";
+
 export default {
   data() {
     return {
-      tabs: ["Thursday", "Friday", "Saturday"],
+      tabs: ["Thursday", "Friday", "Saturday"]
     };
   },
-  mounted(){
+  mounted() {
     // Keep Track of Scroll Position
-      this.$refs["content"][0].scrollTop = this.scrollPosition
-    },
+    if (this.sessions.length !== 0) {
+      this.$refs["content"][0].scrollTop = this.scrollPosition;
+    }  
+  },
   methods: {
-    time: function (date) {
-      // console.log()
-      // return new Date(date).toDateString();
-      return moment(date).format("LT");
-    },
-    getDay: function (str) {
-      console.log(str);
+    time: timeHelper,
+    getDay: function(str) {
       return str.split(",")[0];
     },
-    setActive: function(str){
+    setActive: function(str) {
       // Keep Track of previous Page Sessions activity in current Session
-      this.$store.commit("SET_PAGESESSIONS_ACTIVE",str.split(",")[0]);
+      this.$store.commit("SET_PAGESESSIONS_ACTIVE", str.split(",")[0]);
     },
-    setScrollPosition: function(){
+    setScrollPosition: function() {
       // Keep Track of previous scroll position
-      this.$store.commit("SET_PAGESESSIONS_SCROLL_POSITION",this.$refs["content"][0].scrollTop)
-    },
+      this.$store.commit(
+        "SET_PAGESESSIONS_SCROLL_POSITION",
+        this.$refs["content"][0].scrollTop
+      );
+    }
   },
   computed: {
     ...mapGetters({

@@ -10,12 +10,8 @@
       <div class="session-title">{{ session.title }}</div>
 
       <div class="speakers-wrapper" v-if="session.speakers">
-        <router-link
-          class="speaker-wrapper"
-          v-for="speaker in session.speakers"
-          :key="speaker.id"
-          :to="{ name: 'speaker', params: { id: speaker.id } }"
-        >
+        <router-link class="speaker-wrapper" v-for="speaker in session.speakers"
+          :key="speaker.id" :to="{ name: 'speaker', params: { id: speaker.id } }">
           <div class="avatar">
             <img :src="getSpeaker(speaker.id)" alt>
           </div>
@@ -64,12 +60,10 @@
 
         <div class="des-wrap rate" v-if="user.status">
           <template v-if="checkSessionStatus">
-            <router-link
-              v-if="voted"
-              :to="{ name: 'feedback', params: { id: id } }"
-              class="rate rated"
-            >✅ Rated. Thanks!</router-link>
-            <router-link v-else :to="{ name: 'feedback', params: { id: id } }" class="rate">Rate</router-link>
+            <router-link v-if="voted" :to="{ name: 'feedback', params: { id: id } }"
+              class="rate rated">✅ Rated. Thanks!</router-link>
+            <router-link v-else :to="{ name: 'feedback', params: { id: id } }"
+              class="rate">Rate</router-link>
           </template>
           <template v-else>🚫 Session not started yet</template>
         </div>
@@ -85,22 +79,21 @@
     </div>
     <div class="page-content" v-else>
       <p>loading session...</p>
-      <a
-        href="javascript:location.reload()"
-        title="i'm not proud of this code. please send PR"
-      >is this taking too long? click here</a>
+      <a href="javascript:location.reload()" title="i'm not proud of this code. please send PR">is
+        this taking too long? click here</a>
     </div>
   </div>
 </template>
 
 <script>
 import { mapGetters, mapActions } from "vuex";
-import moment from "moment";
+import { time as timeHelper, getDay as getDayHelper } from "@/helpers";
+
 export default {
   props: ["id"],
   methods: {
     ...mapActions(["fetchSessions", "fetchSpeakers", "fetchVotes"]),
-    getSpeaker: function (id) {
+    getSpeaker: function(id) {
       if (this.speakers.length === 0) {
         // this.fetchSpeakers();
       }
@@ -109,12 +102,8 @@ export default {
         return theSpeaker[0].profilePicture;
       }
     },
-    time: function (date) {
-      return moment(date).format("LT");
-    },
-    getDay: function (str) {
-      return moment(str).format("ddd");
-    }
+    time: timeHelper,
+    getDay: getDayHelper
   },
   computed: {
     ...mapGetters({
@@ -123,19 +112,19 @@ export default {
       user: "getUser",
       getVotes: "getVotes"
     }),
-    session: function () {
+    session: function() {
       if (typeof this.sessions == "undefined") {
         this.fetchSessions();
       }
       let sessions = this.sessions
         .map(groups => groups.sessions)
-        .reduce(function (acc, curr) {
+        .reduce(function(acc, curr) {
           return [...acc, ...curr];
         }, []);
-      let session = _.filter(sessions, { id: this.id })[0];
+      let session = sessions.find(sess => (sess.id = this.id));
       return session;
     },
-    voted: function () {
+    voted: function() {
       //   let allVoted = _.map(this.getVotes, "session_id");
       //   if (allVoted.indexOf(this.id) !== -1) {
       //     return true;
@@ -143,19 +132,25 @@ export default {
       return false;
     },
     checkSessionStatus() {
-      let timeNow = moment()
-        .format()
-        .substr(0, 19);
-      let timeStart = this.session.startsAt;
-      let difference = moment(timeNow).diff(moment(timeStart), "minutes");
-      console.log(timeNow);
-      console.log(timeStart);
-      console.log(difference);
-      if (difference && difference > 0) {
-        return true;
-      } else {
-        return false;
-      }
+      /**
+       * @TODO
+       * Alternative to moment
+       */
+
+      // let timeNow = moment()
+      //   .format()
+      //   .substr(0, 19);
+      // let timeStart = this.session.startsAt;
+      // let difference = moment(timeNow).diff(moment(timeStart), "minutes");
+      // console.log(timeNow);
+      // console.log(timeStart);
+      // console.log(difference);
+      // if (difference && difference > 0) {
+      //   return true;
+      // } else {
+      //   return false;
+      // }
+      return false;
     }
   },
   watch: {},

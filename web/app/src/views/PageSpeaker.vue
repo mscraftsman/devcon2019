@@ -73,8 +73,8 @@ export default {
         this.FETCH_SPEAKERS();
       }
       console.log(this.id);
-      let theSpeaker = this.speakers.filter(speaker => speaker.id === this.id);
-      return theSpeaker[0];
+      let theSpeaker = this.speakers.find(speaker => speaker.id === this.id);
+      return theSpeaker;
     },
     session: function() {
       let sessions = this.sessions

@@ -97,10 +97,8 @@ export default {
       if (this.speakers.length === 0) {
         // this.fetchSpeakers();
       }
-      let theSpeaker = this.speakers.filter(speaker => speaker.id === id);
-      if (theSpeaker.length > 0) {
-        return theSpeaker[0].profilePicture;
-      }
+      let theSpeaker = this.speakers.find(speaker => speaker.id === id);
+      return theSpeaker.profilePicture;
     },
     time: timeHelper,
     getDay: getDayHelper

@@ -6,7 +6,9 @@
       </div>
 
       <div class="tribute-text">
-        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</p>
+        <p>Far far away, behind the word mountains, far from the countries
+          Vokalia and Consonantia, there live the blind texts. Separated they
+          live in Bookmarksgrove</p>
       </div>
     </div>
   </div>

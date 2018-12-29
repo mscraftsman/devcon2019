@@ -12,16 +12,16 @@
 export default {
   props: {
     link: {
-      default: '/'
+      default: "/"
     },
     theme: {
-      default: '#fff'
+      default: "#fff"
     },
     size: {
-      default: '45px'
+      default: "45px"
     }
   }
-}
+};
 </script>
 
 

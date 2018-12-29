@@ -33,9 +33,6 @@ import { mapActions, mapGetters } from "vuex";
 import { time as timeHelper, getDay as getDayHelper } from "@/helpers";
 
 export default {
-  data() {
-    return {};
-  },
   methods: {
     ...mapActions(["fetchSessions", "fetchSpeakers"]),
     getSpeaker: function(id) {

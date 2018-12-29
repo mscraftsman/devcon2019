@@ -4,34 +4,23 @@
     <div class="page-all-sessions">
       <div class="tabs-container">
         <div class="right-wrapper">
-          <div
-            class="tab-items"
-            :class="{active : getDay(group.groupName) === active}"
-            @click="setActive(group.groupName)"
-            v-for="group in sessions"
-            :key="group.groupId"
-            :label="getDay(group.groupName)"
-          >{{getDay(group.groupName)}}</div>
+          <div class="tab-items" :class="{active : getDay(group.groupName) === active}"
+            @click="setActive(group.groupName)" v-for="group in sessions" :key="group.groupId"
+            :label="getDay(group.groupName)">{{getDay(group.groupName)}}</div>
         </div>
       </div>
       <div class="tabs-content">
         <transition name="fade" mode="out-in">
-          <div
-            class="tabs-panel-content"
-            v-if="getDay(group.groupName) === active"
-            ref="content"
-            v-for="group in sessions"
-            :key="group.groupId"
-          >
+          <div class="tabs-panel-content" v-if="getDay(group.groupName) === active"
+            ref="content" v-for="group in sessions" :key="group.groupId">
             <div class="session-panes" v-for="session in group.sessions" :key="session.id">
-              <router-link
-                class="session-row"
-                @click.native="setScrollPosition()"
-                :to="{ name: 'session',  params: { id: session.id }}"
-              >
-                <div class="date-time">{{ time(session.startsAt) }} - {{ time(session.endsAt) }}</div>
+              <router-link class="session-row" @click.native="setScrollPosition()"
+                :to="{ name: 'session',  params: { id: session.id }}">
+                <div class="date-time">{{ time(session.startsAt) }} - {{
+                  time(session.endsAt) }}</div>
                 <div class="session-title">{{ session.title }}</div>
-                <div class="session-author">{{ session.speakers[0].name }} - {{ session.room }}</div>
+                <div class="session-author">{{ session.speakers[0].name }} - {{
+                  session.room }}</div>
               </router-link>
             </div>
           </div>
@@ -55,7 +44,7 @@ export default {
     // Keep Track of Scroll Position
     if (this.sessions.length !== 0) {
       this.$refs["content"][0].scrollTop = this.scrollPosition;
-    }  
+    }
   },
   methods: {
     time: timeHelper,

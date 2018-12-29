@@ -1,8 +1,12 @@
 <template>
   <div class="home-component header-stripe-wrapper">
     <div class="container header-stripe-container">
-      <div class="logo-wrapper"><LogoSvg /></div>
-      <div class="menu-wrapper"><MainMenu /></div>
+      <div class="logo-wrapper">
+        <LogoSvg />
+      </div>
+      <div class="menu-wrapper">
+        <MainMenu />
+      </div>
       <div class="register-button">
         <button-waw :theme="'#ff4932'" :link="'#'">Register</button-waw>
       </div>

@@ -2,7 +2,8 @@
   <div class="home-component devcon-stats-wrapper">
     <div class="container">
       <div class="devcon-stats-container">
-        <div class="stat-wrapper" v-if="getStats" v-for="(stats, index) in getStats" :key="index">
+        <div class="stat-wrapper" v-if="getStats" v-for="(stats, index) in getStats"
+          :key="index">
           <div class="number">{{ stats.number }}</div>
           <div class="label">{{ stats.name }}</div>
         </div>
@@ -20,10 +21,10 @@ export default {
   data() {
     return {
       sampleStats: [
-        { "name": "Event One", "number": "1" },
-        { "name": "Event Two Edited", "number": "2" }
+        { name: "Event One", number: "1" },
+        { name: "Event Two Edited", number: "2" }
       ]
-    }
+    };
   },
   created() {
     this.FETCH_STATS();

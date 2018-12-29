@@ -10,6 +10,7 @@
     <sponsorship></sponsorship>
   </div>
 </template>
+
 <script>
 import extraGdg from "@/components/extras/extra-gdg.vue";
 import extraLugm from "@/components/extras/extra-lugm.vue";
@@ -24,15 +25,10 @@ export default {
     extraMaker,
     extraCommunity,
     sponsorship
-  },
-  data() {
-    return {};
-  },
-  methods: {},
-  computed: {},
-  mounted() { }
+  }
 };
 </script>
+
 <style lang="scss">
 .full-section-container {
   display: grid;

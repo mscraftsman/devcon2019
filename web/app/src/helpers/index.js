@@ -32,8 +32,7 @@ export const time = function(date) {
 };
 
 export const getDay = function(str) {
-  const days = [ "SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT" ];
+  const days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
   let day = new Date(str);
   return days[day.getDay()];
 };
-

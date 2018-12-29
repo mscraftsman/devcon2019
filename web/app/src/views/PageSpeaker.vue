@@ -50,15 +50,7 @@ import { FETCH_SESSIONS, FETCH_SPEAKERS } from "@/store";
 
 export default {
   methods: {
-    ...mapActions([FETCH_SESSIONS, FETCH_SPEAKERS]),
-    time: function(date) {
-      // return moment(date).format("LT");
-      return date;
-    },
-    getDay: function(str) {
-      // return moment(str).format("ddd");
-      return str;
-    }
+    ...mapActions([FETCH_SESSIONS, FETCH_SPEAKERS])
   },
   computed: {
     ...mapGetters({
@@ -72,7 +64,6 @@ export default {
       if (this.speakers.length === 0) {
         this.FETCH_SPEAKERS();
       }
-      console.log(this.id);
       let theSpeaker = this.speakers.find(speaker => speaker.id === this.id);
       return theSpeaker;
     },

@@ -1,8 +1,12 @@
 <template>
   <div class="main-menu-wrapper">
     <ul>
-      <li><router-link :to="{ name: 'sessions' }">Sessions</router-link></li>
-      <li><router-link :to="{ name: 'extras' }">Extras</router-link></li>
+      <li>
+        <router-link :to="{ name: 'sessions' }">Sessions</router-link>
+      </li>
+      <li>
+        <router-link :to="{ name: 'extras' }">Extras</router-link>
+      </li>
       <li>
         <router-link :to="{ name: 'lifeatdevcon' }">Life at devcon</router-link>
       </li>

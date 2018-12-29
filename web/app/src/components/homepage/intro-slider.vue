@@ -1,29 +1,18 @@
 <template>
   <div class="home-component intro-slider-wrapper">
-    <carousel
-      class="slider-wrapper"
-      :per-page="1"
-      :loop="true"
-      :autoplay="true"
-      :autoplayTimeout="3000"
-      :paginationActiveColor="'#ff4932'"
-      :autoplayHoverPause="true"
-      :mouse-drag="false"
-      :navigationEnabled="true"
-      :paginationColor="'#fff'"
-      :paginationPadding="5"
-      :paginationSize="20"
-      :centerMode="true"
-      :navigationNextLabel="'›'"
-      :navigationPrevLabel="'‹'"
-    >
+    <carousel class="slider-wrapper" :per-page="1" :loop="true" :autoplay="true"
+      :autoplayTimeout="3000" :paginationActiveColor="'#ff4932'"
+      :autoplayHoverPause="true" :mouse-drag="false" :navigationEnabled="true"
+      :paginationColor="'#fff'" :paginationPadding="5" :paginationSize="20"
+      :centerMode="true" :navigationNextLabel="'›'" :navigationPrevLabel="'‹'">
       <slide class="slide">
         <div class="slide-item slide-quote">
           The
           <span class="mega-rainbow">greatest</span> conference in the air.
         </div>
         <div class="slide-item slide-button button">
-          <button-waw :theme="'#97d0e1'" :size="'80px'" :link="'#'">Register now</button-waw>
+          <button-waw :theme="'#97d0e1'" :size="'80px'" :link="'#'">Register
+            now</button-waw>
         </div>
       </slide>
       <slide class="slide">
@@ -38,7 +27,8 @@
           <span class="mega-rainbow">most woke</span> conference on ice.
         </div>
         <div class="slide-item slide-button button">
-          <button-waw :theme="'#97d0e1'" :size="'80px'" :link="'#'">Register now</button-waw>
+          <button-waw :theme="'#97d0e1'" :size="'80px'" :link="'#'">Register
+            now</button-waw>
         </div>
       </slide>
       <slide class="slide">
@@ -48,7 +38,8 @@
           <span class="mega-rainbow">Inclusive</span> are just the beginnings.
         </div>
         <div class="slide-item slide-button button">
-          <button-waw :theme="'#97d0e1'" :size="'80px'" :link="'#'">Register now</button-waw>
+          <button-waw :theme="'#97d0e1'" :size="'80px'" :link="'#'">Register
+            now</button-waw>
         </div>
       </slide>
     </carousel>
@@ -158,12 +149,12 @@
 </style>
 
 <script>
-import { Carousel, Slide } from 'vue-carousel';
+import { Carousel, Slide } from "vue-carousel";
 
 export default {
   components: {
     Carousel,
     Slide
   }
-}
+};
 </script>

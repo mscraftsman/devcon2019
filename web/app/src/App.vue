@@ -49,7 +49,7 @@ export default {
         // parse meta tags
         this.$Progress.parseMeta(meta);
       }
-      
+
       //  start the progress bar
       this.$Progress.start();
       //  continue to next page

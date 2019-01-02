@@ -99,7 +99,7 @@
       </div>
 
       <div class="tribute-text">
-        Lorem ipsum dolor sit amet consectetur
+        ipsum dolor sit amet consectetur
         adipisicing elit. Aliquam ea itaque magni, omnis cum reprehenderit
         possimus laudantium, doloribus veritatis dolorem repellat explicabo
         odio quas architecto nobis error nisi. Molestiae, sunt.

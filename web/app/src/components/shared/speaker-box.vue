@@ -18,40 +18,7 @@
 
 <script>
 export default {
-  props: ["speaker"],
-  data() {
-    return {
-      defaultSpeaker: {
-        id: "56985eb6-8db1-4657-bc0d-3e925cdf4e60",
-        firstName: "Akshay",
-        lastName: "Gopaul",
-        fullName: "Akshay Gopaul",
-        bio:
-          "Name : Akshay Gopaul\r\nSoftware Developer at ASTEK Mauritius\r\nAddress: Riviere du rempart\r\nNickname: Wolf Of Ebene\r\nAge: 25\r\nSkills: Creativity and Ideation \r\nPreferred technology and Programming language: Unity, Construct2 and Visual Studio \r\n\r\n\r\n",
-        tagLine: "ASTEK MAURITIUS",
-        profilePicture:
-          "https://sessionize.com/image?f=d00626b306bc2d1ccf1747608451b7de,400,400,True,False,b6-8db1-4657-bc0d-3e925cdf4e60.549afc75-b816-4241-88ca-6763dc13bc40.jpg",
-        sessions: [
-          {
-            id: 40381,
-            name: "Game Development with construct 2 (game engine)"
-          },
-          {
-            id: 40386,
-            name: "Augmented Reality with Unity 3D (Game Engine)"
-          }
-        ],
-        isTopSpeaker: false,
-        links: [
-          {
-            title: "Blog",
-            url: "https://game-development.talentscloud.net/",
-            linkType: "Blog"
-          }
-        ]
-      }
-    };
-  }
+  props: ["speaker"]
 };
 </script>
 

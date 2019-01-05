@@ -91,46 +91,44 @@
 
 <script>
 export default {
-  data() {
-    return {
-      logos: [
-        {
-          name: "MSCC-logo-coloured",
-          path: "/img/banners/MSCC-logo-coloured.svg",
-          format: "SVG",
-          style: "Coloured"
-        },
-        {
-          name: "MSCC-logo-inverted",
-          path: "/img/banners/MSCC-logo-inverted.svg",
-          format: "SVG",
-          style: "Inverted"
-        },
-        {
-          name: "MSCC-logo-coloured",
-          path: "/img/banners/MSCC-logo-coloured.png",
-          format: "PNG",
-          style: "Inverted"
-        }
-      ],
-      banners: [
-        {
-          name: "720x200",
-          path: "/img/banners/720x200.png",
-          size: "720x200"
-        },
-        {
-          name: "970x90",
-          path: "/img/banners/970x90.png",
-          size: "970x90"
-        },
-        {
-          name: "409x280",
-          path: "/img/banners/409x280.png",
-          size: "409x280"
-        }
-      ]
-    };
+  created() {
+    this.logos = [
+      {
+        name: "MSCC-logo-coloured",
+        path: "/img/banners/MSCC-logo-coloured.svg",
+        format: "SVG",
+        style: "Coloured"
+      },
+      {
+        name: "MSCC-logo-inverted",
+        path: "/img/banners/MSCC-logo-inverted.svg",
+        format: "SVG",
+        style: "Inverted"
+      },
+      {
+        name: "MSCC-logo-coloured",
+        path: "/img/banners/MSCC-logo-coloured.png",
+        format: "PNG",
+        style: "Inverted"
+      }
+    ];
+    this.banners = [
+      {
+        name: "720x200",
+        path: "/img/banners/720x200.png",
+        size: "720x200"
+      },
+      {
+        name: "970x90",
+        path: "/img/banners/970x90.png",
+        size: "970x90"
+      },
+      {
+        name: "409x280",
+        path: "/img/banners/409x280.png",
+        size: "409x280"
+      }
+    ];
   }
 };
 </script>

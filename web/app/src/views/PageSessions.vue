@@ -35,11 +35,6 @@ import { mapActions, mapGetters } from "vuex";
 import { time as timeHelper } from "@/helpers";
 
 export default {
-  data() {
-    return {
-      tabs: ["Thursday", "Friday", "Saturday"]
-    };
-  },
   mounted() {
     // Keep Track of Scroll Position
     if (this.sessions.length !== 0) {

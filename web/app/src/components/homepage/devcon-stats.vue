@@ -18,14 +18,6 @@ import { mapGetters, mapActions } from "vuex";
 import { FETCH_STATS } from "@/store";
 
 export default {
-  data() {
-    return {
-      sampleStats: [
-        { name: "Event One", number: "1" },
-        { name: "Event Two Edited", number: "2" }
-      ]
-    };
-  },
   created() {
     this.FETCH_STATS();
   },

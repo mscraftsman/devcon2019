@@ -11,7 +11,7 @@
           <span class="mega-rainbow">greatest</span> conference in the air.
         </div>
         <div class="slide-item slide-button button">
-          <button-waw :theme="'#97d0e1'" :size="'80px'" :link="'#'">Register
+          <button-waw :theme="'#97d0e1'" :size="'70px'" :link="'#'">Register
             now</button-waw>
         </div>
       </slide>
@@ -27,7 +27,7 @@
           <span class="mega-rainbow">most woke</span> conference on ice.
         </div>
         <div class="slide-item slide-button button">
-          <button-waw :theme="'#97d0e1'" :size="'80px'" :link="'#'">Register
+          <button-waw :theme="'#97d0e1'" :size="'70px'" :link="'#'">Register
             now</button-waw>
         </div>
       </slide>
@@ -38,7 +38,7 @@
           <span class="mega-rainbow">Inclusive</span> are just the beginnings.
         </div>
         <div class="slide-item slide-button button">
-          <button-waw :theme="'#97d0e1'" :size="'80px'" :link="'#'">Register
+          <button-waw :theme="'#97d0e1'" :size="'70px'" :link="'#'">Register
             now</button-waw>
         </div>
       </slide>

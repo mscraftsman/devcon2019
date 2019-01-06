@@ -10,7 +10,7 @@
       </div>
 
       <div class="button-center">
-        <button-waw :theme="'#97d0e1'" :size="'80px'" :link="'#'">Call for
+        <button-waw :theme="'#97d0e1'" :size="'70px'" :link="'#'">Call for
           Paper</button-waw>
       </div>
     </div>

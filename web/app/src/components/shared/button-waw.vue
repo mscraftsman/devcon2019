@@ -40,6 +40,7 @@ export default {
   border-radius: 15px;
   border: 1px solid var(--theme);
   transition: 0.25s;
+  letter-spacing: 1px;
 
   &:hover {
     text-decoration: none;

@@ -109,7 +109,7 @@
     <div class="button-center">
       <button-waw
         :theme="'#97d0e1'"
-        :size="'80px'"
+        :size="'70px'"
         :link="'https://github.com/mscraftsman/devcon2019/raw/master/assets/DevCon2019-SponsorshipProposal.pdf'"
       >
         Become

@@ -26,6 +26,8 @@ The following is a set of guidelines for contributing to DevCon2019. These are m
 
 - Download the Desktop PSD [here](https://drive.google.com/drive/folders/14yEFxL-sYgp3TxDfLz5_khvm35856jpl?usp=sharing)
 - Download the Mobile PSD [here](https://drive.google.com/open?id=1IYo5jyR9RBM3pCqej2qh3FH0VRqTvcX4)
+- Download the Page Extras PSD [here](https://drive.google.com/drive/u/1/folders/14yEFxL-sYgp3TxDfLz5_khvm35856jpl)
+- Download the Schedule Page PSD [here](https://drive.google.com/drive/u/1/folders/14yEFxL-sYgp3TxDfLz5_khvm35856jpl)
 
 # 2. Where to begin
 

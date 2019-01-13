@@ -10,6 +10,9 @@
       <li>
         <router-link :to="{ name: 'lifeatdevcon' }">Life at devcon</router-link>
       </li>
+      <li>
+        <router-link :to="{ name: 'pastevents' }">Past Events</router-link>
+      </li>
       <li><a href="#">MCB Inovapp</a></li>
     </ul>
   </div>

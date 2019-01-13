@@ -26,87 +26,69 @@ export default {
     return {
       past_events: [
         {
-          title: "global azure bootcamps ",
-          year: "2015 in Mauritius",
-          image: "lexp.jpg",
-          logo: "logo-lexp.png",
+          title: "global azure bootcamps",
+          year: "25 April 2015",
+          image: "",
+          logo: "",
           link: "http://gwabmauritius.azurewebsites.net/",
           description:
             "In April of 2013 we held the first Global Windows Azure Bootcamp at more than 90 locations around the globe! In March 2014 we topped that with 136 locations! This year we are again doing a one day deep dive class to help thousands of people get up to speed on developing Cloud Computing Applications for Azure. In addition to this great learning opportunity we will have another set of hands on labs."
         },
         {
-          id: 2,
-          title: "Essentielle Subscription ",
-          year: "2011 - 2013",
-          image: "essentielle10.jpg",
-          logo: "logo-essentielle.png",
-          link: "",
+          title: "Developers Conference 2015",
+          year: "23 - 25 April 2015",
+          image: "",
+          logo: "",
+          link: "https://2015.mscc.mu/#/",
           description:
-            "My first employer. All the stuff Ive learned and projects Ive been working on."
+            'The Developers Conference 2015 is the first event in Mauritius, maybe even in the Indian Ocean which is organised as a "classic" conference. Yes, there have been various vendor-specific bootcamps in the past but never anything like this.'
         },
         {
-          id: 3,
-          title: "Objectif santé",
-          year: "2013 - present",
-          image: "objsante.jpg",
-          logo: "logo-obj.png",
-          link: "http://www.objectifsante.mu/",
+          title: "global azure bootcamps",
+          year: "16 April 2016",
+          image: "",
+          logo: "",
+          link:
+            "https://www.meetup.com/MauritiusSoftwareCraftsmanshipCommunity/events/226532196/",
           description:
-            "Lexpress is a French-language daily newspaper, published in Mauritius since 1963 and owned by La Sentinelle, Ltd. Lexpress endeavours to cover Mauritian news in an independent and impartial manner, as described in its Code of Conduct for Journalists. It is the most widely read daily of Mauritius and constantly changes to keep up with the latest trends in journalism and newspaper business. The Sunday version of Lexpress is called Lexpress Dimanche."
+            "Microsoft Azure provides key benefits for your business. Similar to previous years the MSCC would like to invite you to a full-day event of information on cloud technology provided by Microsoft."
         },
         {
-          title: "id.lasentinelle.mu",
-          year: "2007 - 2008",
-          image: "id.jpg",
-          logo: "logo-id.png",
-          link: "https://id.lasentinelle.mu/",
+          title: "Developers Conference 2016",
+          year: "20 - 22 May 2016",
+          image: "",
+          logo: "",
+          link: "https://2016.mscc.mu/",
           description:
-            "We are a family. A group of people with a common goal : advance tommorrow. Whilst the world around us is changing, and as we adapt to serve it. One thing remains : our commitment to innovation and editorial independance."
+            "After last year's success the Mauritius Software Craftsmanship Community (MSCC) is organising the next annual event in partnership with a number of local and international companies. Although the MSCC was founded back in 2013 it quickly became clear that our tropical island has a certain lack of informational and technical events. During some monthly meetups we spoke about this situation and that it would be very interesting and delightful to organise such an event."
         },
         {
-          title: "media.lasentinelle.mu",
-          year: "2005 - 2007",
-          image: "media.jpg",
-          logo: "logo-media.png",
-          link: "http://media.lasentinelle.mu/",
+          title: "Xamarin Dev Days",
+          year: "29 October 2016",
+          image: "",
+          logo: "",
+          link:
+            "https://www.meetup.com/MauritiusSoftwareCraftsmanshipCommunity/events/233937043/",
           description:
-            "We are a family. A group of people with a common goal : advance tommorrow. Whilst the world around us is changing, and as we adapt to serve it. One thing remains : our commitment to innovation and editorial independance."
+            "Xamarin Dev Days provide attendees with an intense, hands-on learning experience. Spend the morning exploring mobile development with sessions from Xamarin, our technology partners, and members of your local developer community, then roll up your sleeves for an afternoon dedicated to diving into code."
         },
         {
-          title: "Lexpress Turf",
-          year: "2005 - 2007",
-          image: "lexpress-turf.png",
-          logo: "logo-turf.png",
-          link: "",
+          title: "DEVELOPERS CONFERENCE 2017",
+          year: "30 MARCH - 1 APRIL 2017",
+          image: "",
+          logo: "",
+          link: "https://2017.mscc.mu/",
           description:
-            "L’express Turf is the leading equestrian weekly magazine of la Sentinelle group, since its inception in the late 90's. It is definitely the punter’s best ally throughout the whole racing season, Turf is a must if you want to be close to your target."
+            "After the success of previous years the Mauritius Software Craftsmanship Community (MSCC) is organising the third edition of the Developers Conference in partnership with a number of local and international companies. Although the MSCC was founded back in 2013 it quickly became clear that our tropical island has a certain lack of informational and technical events. During some monthly meetups we spoke about this situation and that it would be very interesting and delightful to organise such an event."
         },
         {
-          title: "The artist",
-          year: "2005 - 2007",
-          image: "theartist.jpg",
-          logo: "logo-theartist.png",
-          link: "",
+          title: "DEVELOPERS CONFERENCE 2018",
+          year: "17 - 19 May 2018",
+          image: "",
+          logo: "",
+          link: "https://2018.mscc.mu/",
           description:
-            "We are a family. A group of people with a common goal : advance tommorrow. Whilst the world around us is changing, and as we adapt to serve it. One thing remains : our commitment to innovation and editorial independance."
-        },
-        {
-          title: "5-plus",
-          year: "2005 - 2007",
-          image: "5Plus.png",
-          logo: "logo-5plus.png",
-          link: "http://www.5plus.mu/",
-          description:
-            "We are a family. A group of people with a common goal : advance tommorrow. Whilst the world around us is changing, and as we adapt to serve it. One thing remains : our commitment to innovation and editorial independance."
-        },
-        {
-          title: "La Sentinelle",
-          year: "2005 - 2007",
-          image: "sentinelle.png",
-          logo: "sentinelle.png",
-          link: "http://www.lasentinelle.mu/",
-          description:
-            "La Sentinelle is the first media group in Mauritius. Created in 1963, it employs 635 people grouped around four areas of activity: print, online (La Sentinelle EXPRESSIONS), printing and prepress (La Sentinelle PRINT), publishing and distribution (La Sentinelle EDITION ), and the advertising network (La Sentinelle COMMUNICATION). Located in Madagascar, it is also present in Reunion and Rodrigues. The editorial independence of the group is its strength, the innovation its motto."
+            "After the success of previous years the Mauritius Software Craftsmanship Community (MSCC) is organising the fourth edition of the Developers Conference in partnership with a number of local and international companies. Although the MSCC was founded back in 2013 it quickly became clear that our tropical island has a certain lack of informational and technical events. During some monthly meetups we spoke about this situation and that it would be very interesting and delightful to organise such an event."
         }
       ]
     };
@@ -170,6 +152,8 @@ header h1 {
 
 .cd-date {
   color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .cd-timeline-content {
@@ -348,7 +332,7 @@ header h1 {
   /*background: #fff;*/
   border-radius: 0.25em;
   padding: 1px 0;
-  box-shadow: 0 3px 0 #004a8f;
+  box-shadow: 0 3px 0 #ff5f38;
   background: #f4f4f4;
 }
 .cd-timeline-content::after {
@@ -391,13 +375,15 @@ header h1 {
   padding: 0.8em 1em;
   margin: 0 1em 1em 1em;
   background: #ffffff;
-  color: #004a8f;
-  border: 1px solid;
+  color: var(--color-main);
+  border: 1px solid var(--color-main);
   border-radius: 0.25em;
+  transition: all 0.08s ease-in-out;
 
   &:hover {
-    background: #004a8f;
+    background: var(--color-main);
     color: #ffffff;
+    text-decoration: none;
   }
 }
 .no-touch .cd-timeline-content .cd-read-more:hover {
@@ -478,7 +464,7 @@ header h1 {
     border-right-color: #fff;
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
-    float: right;
+    float: left;
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
     left: auto;

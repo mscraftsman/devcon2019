@@ -74,7 +74,7 @@ export default {
         },
         {
           title: "DEVELOPERS CONFERENCE 2017",
-          year: "30 MARCH - 1 APRIL 2017",
+          year: "30 March - 1 APRIL 2017",
           image: "",
           logo: "",
           link: "https://2017.mscc.mu/",
@@ -244,6 +244,7 @@ header h1 {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  padding: 10px;
 }
 .cd-timeline-img.cd-picture {
   background: black;
@@ -414,6 +415,7 @@ header h1 {
 @media only screen and (max-width: 768px) {
   .cd-timeline-content h2 {
     font-size: 25px !important;
+    line-height: 34px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -479,6 +481,22 @@ header h1 {
     -webkit-animation: cd-bounce-2 0.6s;
     -moz-animation: cd-bounce-2 0.6s;
     animation: cd-bounce-2 0.6s;
+  }
+}
+@media (max-width: 1170px) {
+  .cd-date {
+    color: #000;
+  }
+  .cd-timeline-content {
+    display: flex;
+    flex-direction: column;
+
+    .cd-read-more {
+      text-align: center;
+    }
+    .cd-date {
+      padding: 1rem;
+    }
   }
 }
 @media only screen and (min-width: 1170px) {

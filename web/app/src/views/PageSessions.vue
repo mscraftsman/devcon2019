@@ -23,25 +23,42 @@
             class="tabs-panel-content"
             v-if="getDay(group.groupName) === active"
             ref="content"
-            v-for="group in sessions"
+            v-for="(group, index, key) in sessions"
             :key="group.groupId"
           >
-            <div class="session-panes" v-for="session in group.sessions" :key="session.id">
-              <router-link
-                class="session-row"
-                @click.native="setScrollPosition()"
-                :to="{ name: 'session',  params: { id: session.id }}"
+            <div class="room-container">
+              <div
+                class="session-panesroom-wrapper educator-one"
+                v-for="room in rooms"
+                :key="'room_'+ room"
               >
-                <div class="date-time">
-                  {{ time(session.startsAt) }} - {{
-                  time(session.endsAt) }}
+                <!-- {{ sessionInRoom_Educator }} -->
+                <div class="room-wrapper educatorone">
+                  <div
+                    class="session-card"
+                    v-for="session in getSessionsFor(index, room)"
+                    :key="room + session.id"
+                  >
+                    <router-link
+                      @click.native="setScrollPosition()"
+                      :to="{ name: 'session',  params: { id: session.id }}"
+                    >
+                      <!-- <div class="date-time">
+                        {{ time(session.startsAt) }} - {{
+                        time(session.endsAt) }}
+                      </div>-->
+                      <div class="session-title">{{ session.title }}</div>
+                      <div
+                        class="session-description"
+                      >{{ session.description | truncate(120, '...') }}</div>
+                      <div class="session-author">
+                        <div class="name">{{ session.speakers[0].name }}</div>
+                        <!-- <div class="alias">{{ session.speakers[0].name }}</div> -->
+                      </div>
+                    </router-link>
+                  </div>
                 </div>
-                <div class="session-title">{{ session.title }}</div>
-                <div class="session-author">
-                  {{ session.speakers[0].name }} - {{
-                  session.room }}
-                </div>
-              </router-link>
+              </div>
             </div>
           </div>
         </transition>
@@ -61,6 +78,16 @@ export default {
       this.$refs["content"][0].scrollTop = this.scrollPosition;
     }
   },
+  data() {
+    return {
+      rooms: ["Educator 1", "Educator 2", "Accelerator", "Flying Dodo"]
+    }
+  },
+  filters: {
+    truncate: function (text, length, suffix) {
+      return text.substring(0, length) + suffix;
+    },
+  },
   methods: {
     time: timeHelper,
     getDay: function (str) {
@@ -76,14 +103,34 @@ export default {
         "SET_PAGESESSIONS_SCROLL_POSITION",
         this.$refs["content"][0].scrollTop
       );
+    },
+    getSessionsFor: function (day, room) {
+      console.log(day + room);
+      return this.sessions[day].sessions.filter(session => {
+        if (session.room === room) {
+          return session
+        }
+      })
     }
   },
   computed: {
     ...mapGetters({
-      sessions: "getSessions",
+      sessions: "getSessionsByRoom",
       active: "getPageSessionsActive",
       scrollPosition: "getPageSessionsScrollPosition"
-    })
+    }),
+    sessionInRoom_Educator() {
+      let educatorSessions = this.sessions.map(day => {
+        return day.sessions.filter(session => {
+          if (session.room === 'Educator 1') {
+            return session
+          }
+        })
+      })
+
+      console.log(educatorSessions);
+      return this.sessions
+    }
   }
 };
 </script>
@@ -116,24 +163,28 @@ export default {
 }
 .page-all-sessions {
   display: grid;
-  grid-template-rows: 60px calc(100vh - 50px - 66px);
+  // grid-template-rows: 60px calc(100vh - 50px - 66px);
 }
 .tabs-container,
 .tabs-content {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   width: 100%;
   //   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.session-row {
+  color: black;
 }
 .tabs-container {
   --skew-angle: 15deg;
   display: flex;
   justify-content: center;
-  background: white;
   border: 1px solid white;
   border-radius: 10px;
   overflow: hidden;
   transform: skewX(calc(-1 * var(--skew-angle)));
+  text-transform: uppercase;
 
   .right-wrapper {
     width: 100%;
@@ -152,6 +203,17 @@ export default {
         rgba(255, 255, 255, 0.2)
       );
       transition: all 0.2s ease-in;
+      background: transparent;
+      border: 0;
+      color: var(--color-white);
+      font-family: var(--font-shentox);
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .cursor {
+        background: transparent;
+      }
       &:hover {
         transition: all 0.2s ease-out;
         opacity: 1;
@@ -182,88 +244,68 @@ export default {
   margin-top: 30px;
   .tabs-panel-content {
     // display: none
-    color: white;
-    height: 100%;
-    overflow-y: scroll;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    // color: white;
+    // height: 100%;
+    // overflow-y: scroll;
+    // box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   }
 }
 .tabs-container {
-  text-transform: uppercase;
-  // background: linear-gradient(
-  //   135deg,
-  //   rgba(49, 232, 183, 1) 0%,
-  //   rgba(40, 71, 217, 1) 70%
-  // );
-  background: transparent;
   .tab-items {
-    background: transparent;
-    border: 0;
-    color: var(--color-white);
-    font-family: var(--font-shentox);
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    .cursor {
-      background: transparent;
-    }
   }
 }
 .tabs-panel-content {
-  background: var(--color-white);
-  padding: 10px 20px;
+  // background: var(--color-white);
+  // padding: 10px 20px;
   font-family: var(--font-glacial);
-  .session-panes {
-    font-size: 14px;
-    list-style: none;
-    margin: 0;
-    border-bottom: 1px solid lightgrey;
-    text-align: left;
-    a {
-      display: block;
-      padding: 8px 0;
-      text-decoration: none;
-      color: white;
-      transition: transform 0.2s;
-      display: grid;
-      grid-template-areas:
-        "title  time"
-        "author time";
-      grid-template-columns: 1fr 0.25fr;
-      grid-auto-rows: auto;
-      grid-column-gap: 10px;
-      &:hover {
-        transition: transform 0.2s;
-        transform: translateX(5px);
-      }
-      .date-time {
-        text-transform: uppercase;
-        font-size: 13px;
-        font-family: var(--font-shentox);
-        font-weight: 700;
-        color: var(--color-blue);
-        grid-area: time;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-      }
-      .session-title {
-        padding: 5px 0;
-        font-size: 20px;
-        color: #333;
-        font-weight: 500;
-        //   text-transform: uppercase;
-        grid-area: title;
-      }
-      .session-author {
-        font-size: 14px;
-        color: #333;
-        text-transform: uppercase;
-        font-weight: 300;
-        grid-area: author;
-      }
+}
+
+.room-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 20px;
+}
+.room-wrapper {
+  color: black;
+  display: grid;
+  grid-auto-rows: 200px;
+  grid-row-gap: 20px;
+  margin-right: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.session-card {
+  display: flex;
+  a {
+    display: grid;
+    background: white;
+    color: black;
+    border-radius: 20px;
+    padding: 20px;
+
+    grid-template-rows: 1fr 1.5fr 1fr;
+    // height: 100%;
+  }
+  .session-title {
+    color: var(--color-main);
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    grid-row: 1/2;
+  }
+  .session-description {
+    grid-row: 2/3;
+  }
+  .session-author {
+    .name {
+      color: #ff6a45;
     }
+    .alias {
+    }
+    grid-row: 3/4;
   }
 }
 @media (max-width: 1000px) {

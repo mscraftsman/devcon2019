@@ -47,7 +47,7 @@
                         {{ time(session.startsAt) }} - {{
                         time(session.endsAt) }}
                       </div>-->
-                      <div class="session-title">{{ session.title }}</div>
+                      <div class="session-title">{{ session.title | truncate(80, '...') }}</div>
                       <div
                         class="session-description"
                       >{{ session.description | truncate(120, '...') }}</div>
@@ -81,36 +81,37 @@ export default {
   data() {
     return {
       rooms: ["Educator 1", "Educator 2", "Accelerator", "Flying Dodo"]
-    }
+    };
   },
   filters: {
-    truncate: function (text, length, suffix) {
-      return text.substring(0, length) + suffix;
-    },
+    truncate: function(text, length, suffix) {
+      return text.substring(0, length);
+      // return text.substring(0, length) + suffix;
+    }
   },
   methods: {
     time: timeHelper,
-    getDay: function (str) {
+    getDay: function(str) {
       return str.split(",")[0];
     },
-    setActive: function (str) {
+    setActive: function(str) {
       // Keep Track of previous Page Sessions activity in current Session
       this.$store.commit("SET_PAGESESSIONS_ACTIVE", str.split(",")[0]);
     },
-    setScrollPosition: function () {
+    setScrollPosition: function() {
       // Keep Track of previous scroll position
       this.$store.commit(
         "SET_PAGESESSIONS_SCROLL_POSITION",
         this.$refs["content"][0].scrollTop
       );
     },
-    getSessionsFor: function (day, room) {
+    getSessionsFor: function(day, room) {
       console.log(day + room);
       return this.sessions[day].sessions.filter(session => {
         if (session.room === room) {
-          return session
+          return session;
         }
-      })
+      });
     }
   },
   computed: {
@@ -122,14 +123,14 @@ export default {
     sessionInRoom_Educator() {
       let educatorSessions = this.sessions.map(day => {
         return day.sessions.filter(session => {
-          if (session.room === 'Educator 1') {
-            return session
+          if (session.room === "Educator 1") {
+            return session;
           }
-        })
-      })
+        });
+      });
 
       console.log(educatorSessions);
-      return this.sessions
+      return this.sessions;
     }
   }
 };
@@ -286,7 +287,7 @@ export default {
     border-radius: 20px;
     padding: 20px;
 
-    grid-template-rows: 1fr 1.5fr 1fr;
+    grid-template-rows: 50px 100px 50px;
     // height: 100%;
   }
   .session-title {
@@ -302,6 +303,9 @@ export default {
   .session-author {
     .name {
       color: #ff6a45;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: bold;
     }
     .alias {
     }

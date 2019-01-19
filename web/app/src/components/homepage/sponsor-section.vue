@@ -2,100 +2,91 @@
   <div class="home-component sponsor-section-wrapper">
     <div class="container">
       <h2 class="mega-rainbow">Sponsors</h2>
-      <h4 class="subtitle">Platinum</h4>
-      <div class="sponsors-wrapper platinum-wrapper">
-        <a href="#" class="sponsor-logo">
-          <img src="../../assets/sample-sponsors/mcb.png" alt>
-        </a>
-        <a href="#" class="sponsor-logo">
-          <img src="../../assets/sample-sponsors/sdworx.png" alt>
-        </a>
+      <div class="sponsor-level-wrapper titanium">
+        <h4 class="subtitle">Titanium</h4>
+        <div class="sponsors-wrapper platinum-wrapper">
+          <a href="#" class="sponsor-logo">
+            <img src="../../assets/sample-sponsors/mcb.png" alt>
+          </a>
+        </div>
+      </div>
+      <div class="sponsor-level-wrapper platinum">
+        <h4 class="subtitle">Platinum</h4>
+        <div class="sponsors-wrapper platinum-wrapper">
+          <a href="#" class="sponsor-logo">
+            <img src="../../assets/sample-sponsors/sdworx.png" alt>
+          </a>
+        </div>
       </div>
 
-      <h4 class="subtitle">Gold</h4>
-      <div class="sponsors-wrapper gold-wrapper">
-        <a href="#" class="sponsor-logo">
-          <img src="../../assets/sample-sponsors/mcb.png" alt>
-        </a>
-        <a href="#" class="sponsor-logo">
-          <img src="../../assets/sample-sponsors/sdworx.png" alt>
-        </a>
+      <div class="sponsor-level-wrapper gold">
+        <h4 class="subtitle">Gold</h4>
+        <div class="sponsors-wrapper gold-wrapper">
+          <a href="#" class="sponsor-logo">
+            <img src="../../assets/sample-sponsors/sdworx.png" alt>
+          </a>
+        </div>
       </div>
 
-      <h4 class="subtitle">Speaker Sponsor</h4>
-      <div class="sponsors-wrapper medium-wrapper">
-        <a href="#" class="sponsor-logo">
-          <img src="../../assets/sample-sponsors/mcb.png" alt>
-        </a>
-        <a href="#" class="sponsor-logo">
-          <img src="../../assets/sample-sponsors/sdworx.png" alt>
-        </a>
+      <div class="sponsor-level-wrapper speaker">
+        <h4 class="subtitle">Speaker Sponsor</h4>
+        <div class="sponsors-wrapper medium-wrapper">
+          <a href="#" class="sponsor-logo">
+            <img src="../../assets/sample-sponsors/sdworx.png" alt>
+          </a>
+        </div>
       </div>
-      <h4 class="subtitle">Silver</h4>
-      <div class="sponsors-wrapper medium-wrapper">
-        <a href="#" class="sponsor-logo">
-          <img src="../../assets/sample-sponsors/mcb.png" alt>
-        </a>
-        <a href="#" class="sponsor-logo">
-          <img src="../../assets/sample-sponsors/sdworx.png" alt>
-        </a>
+      <div class="sponsor-level-wrapper silver">
+        <h4 class="subtitle">Silver</h4>
+        <div class="sponsors-wrapper medium-wrapper">
+          <a href="#" class="sponsor-logo">
+            <img src="../../assets/sample-sponsors/sdworx.png" alt>
+          </a>
+        </div>
       </div>
-      <h4 class="subtitle">Bronze</h4>
-      <div class="sponsors-wrapper small-wrapper">
-        <a href="#" class="sponsor-logo">
-          <img src="../../assets/sample-sponsors/mcb.png" alt>
-        </a>
-        <a href="#" class="sponsor-logo">
-          <img src="../../assets/sample-sponsors/sdworx.png" alt>
-        </a>
-        <a href="#" class="sponsor-logo">
-          <img src="../../assets/sample-sponsors/mcb.png" alt>
-        </a>
-        <a href="#" class="sponsor-logo">
-          <img src="../../assets/sample-sponsors/sdworx.png" alt>
-        </a>
-        <a href="#" class="sponsor-logo">
-          <img src="../../assets/sample-sponsors/mcb.png" alt>
-        </a>
-        <a href="#" class="sponsor-logo">
-          <img src="../../assets/sample-sponsors/sdworx.png" alt>
-        </a>
-        <a href="#" class="sponsor-logo">
-          <img src="../../assets/sample-sponsors/mcb.png" alt>
-        </a>
-        <a href="#" class="sponsor-logo">
-          <img src="../../assets/sample-sponsors/sdworx.png" alt>
-        </a>
+      <div class="sponsor-level-wrapper bronze">
+        <h4 class="subtitle">Bronze</h4>
+        <div class="sponsors-wrapper small-wrapper">
+          <a href="#" class="sponsor-logo">
+            <img src="../../assets/sample-sponsors/sdworx.png" alt>
+          </a>
+          
+          <a href="#" class="sponsor-logo">
+            <img src="../../assets/sample-sponsors/sdworx.png" alt>
+          </a>
+          
+          <a href="#" class="sponsor-logo">
+            <img src="../../assets/sample-sponsors/sdworx.png" alt>
+          </a>
+          
+          <a href="#" class="sponsor-logo">
+            <img src="../../assets/sample-sponsors/sdworx.png" alt>
+          </a>
+        </div>
       </div>
-      <h4 class="subtitle">Media Partner</h4>
-      <div class="sponsors-wrapper small-wrapper">
-        <a href="#" class="sponsor-logo">
-          <img src="../../assets/sample-sponsors/mcb.png" alt>
-        </a>
-        <a href="#" class="sponsor-logo">
-          <img src="../../assets/sample-sponsors/sdworx.png" alt>
-        </a>
+      <div class="sponsor-level-wrapper media">
+        <h4 class="subtitle">Media Partner</h4>
+        <div class="sponsors-wrapper small-wrapper">
+          <a href="#" class="sponsor-logo">
+            <img src="../../assets/sample-sponsors/sdworx.png" alt>
+          </a>
+        </div>
       </div>
-      <h4 class="subtitle">Happy Hour</h4>
-      <div class="sponsors-wrapper small-wrapper">
-        <a href="#" class="sponsor-logo">
-          <img src="../../assets/sample-sponsors/mcb.png" alt>
-        </a>
-        <a href="#" class="sponsor-logo">
-          <img src="../../assets/sample-sponsors/sdworx.png" alt>
-        </a>
-        <a href="#" class="sponsor-logo">
-          <img src="../../assets/sample-sponsors/mcb.png" alt>
-        </a>
-        <a href="#" class="sponsor-logo">
-          <img src="../../assets/sample-sponsors/sdworx.png" alt>
-        </a>
-        <a href="#" class="sponsor-logo">
-          <img src="../../assets/sample-sponsors/mcb.png" alt>
-        </a>
-        <a href="#" class="sponsor-logo">
-          <img src="../../assets/sample-sponsors/sdworx.png" alt>
-        </a>
+      <div class="sponsor-level-wrapper happy">
+        <h4 class="subtitle">Happy Hour</h4>
+        <div class="sponsors-wrapper small-wrapper">
+          <a href="#" class="sponsor-logo">
+            <img src="../../assets/sample-sponsors/sdworx.png" alt>
+          </a>
+          
+          <a href="#" class="sponsor-logo">
+            <img src="../../assets/sample-sponsors/sdworx.png" alt>
+          </a>
+          
+          <a href="#" class="sponsor-logo">
+            <img src="../../assets/sample-sponsors/sdworx.png" alt>
+          </a>
+        </div>
       </div>
 
       <div class="tribute-text">
@@ -148,6 +139,41 @@ export default {
   padding-bottom: 30px;
 }
 
+.sponsor-level-wrapper {
+  &.titanium {
+    --color-start: #aae3f6;
+    --color-end: #4f90a2;
+  }
+  &.platinum {
+    --color-start: #eff5f9;
+    --color-end: #686d91;
+  }
+  &.gold {
+    --color-start: #fdcc77;
+    --color-end: #aa8541;
+  }
+  &.speaker {
+    --color-start: rgb(5, 154, 97);
+    --color-end: rgb(2, 130, 6);
+  }
+  &.silver {
+    --color-start: #fdfbf9;
+    --color-end: #79807b;
+  }
+  &.bronze {
+    --color-start: #a27a42;
+    --color-end: #75390b;
+  }
+  &.media {
+    --color-start: #009687;
+    --color-end: #005b7f;
+  }
+  &.happy {
+    --color-start: #c2ba81;
+    --color-end: #a54e5f;
+  }
+}
+
 .sponsors-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -156,7 +182,7 @@ export default {
   align-items: center;
 
   &:last-child {
-    border-bottom: 1px solid rgba(#fff, 0.3);
+    // border-bottom: 1px solid rgba(#fff, 0.3);
   }
 
   .sponsor-logo {
@@ -231,6 +257,12 @@ export default {
 .sponsor-section-wrapper {
   .subtitle {
     padding-top: 20px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+
+    background: linear-gradient(90deg, var(--color-start), var(--color-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 

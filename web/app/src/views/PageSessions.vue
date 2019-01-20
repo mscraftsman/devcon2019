@@ -28,25 +28,23 @@
           >
             <div class="room-container">
               <div
-                class="session-panesroom-wrapper educator-one"
+                :class="'session-panes room-wrapper  ' + room.className"
                 v-for="room in rooms"
-                :key="'room_'+ room"
+                :key="'room_'+ room.className"
               >
-                <!-- {{ sessionInRoom_Educator }} -->
-                <div class="room-wrapper educatorone">
+                <div :class="'room-wrapper ' + room.className">
+                  <div class="room-title">{{ room.label }}</div>
                   <div
                     class="session-card"
-                    v-for="session in getSessionsFor(index, room)"
+                    v-for="session in getSessionsFor(index, room.label)"
                     :key="room + session.id"
+                    v-bind:style="{gridRow: timeToText(session.startsAt) + ' / span 2' }"
                   >
                     <router-link
                       @click.native="setScrollPosition()"
                       :to="{ name: 'session',  params: { id: session.id }}"
                     >
-                      <!-- <div class="date-time">
-                        {{ time(session.startsAt) }} - {{
-                        time(session.endsAt) }}
-                      </div>-->
+                      <div class="date-time">{{ timeToText(session.startsAt) }}</div>
                       <div class="session-title">{{ session.title | truncate(80, '...') }}</div>
                       <div
                         class="session-description"
@@ -69,7 +67,7 @@
 
 <script>
 import { mapActions, mapGetters } from "vuex";
-import { time as timeHelper } from "@/helpers";
+import { time as timeHelper, timeSafe as timeToText } from "@/helpers";
 
 export default {
   mounted() {
@@ -80,7 +78,12 @@ export default {
   },
   data() {
     return {
-      rooms: ["Educator 1", "Educator 2", "Accelerator", "Flying Dodo"]
+      // rooms: ["Educator 1", "Educator 2", "Accelerator", "Flying Dodo"]
+      rooms: [
+        { label: "Educator 1", className: "educatorone" },
+        { label: "Educator 2", className: "educatortwo" },
+        { label: "Accelerator", className: "accelerator" }
+      ]
     };
   },
   filters: {
@@ -91,6 +94,10 @@ export default {
   },
   methods: {
     time: timeHelper,
+    timeToText: timeToText,
+    sampleTime: function() {
+      return "900AM";
+    },
     getDay: function(str) {
       return str.split(",")[0];
     },
@@ -263,33 +270,76 @@ export default {
 
 .room-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 20px;
 }
 .room-wrapper {
   color: black;
   display: grid;
-  grid-auto-rows: 200px;
-  grid-row-gap: 20px;
-  margin-right: 20px;
+  grid-template-rows: 50px 100px;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 100px;
+  grid-row-gap: 30px;
+
+  grid-template-areas:
+    "title"
+    "AM930"
+    "AM1000"
+    "AM1030"
+    "AM1100"
+    "AM1130"
+    "AM1200"
+    "AM1230"
+    "PM100"
+    "PM130"
+    "PM200"
+    "PM230"
+    "PM300"
+    "PM330"
+    "PM400"
+    "PM430"
+    "PM500";
+
+  // grid-template-rows: [title-start] 50px [title-end AM900-start] 50px [AM900-end AM930-start] 50px [AM930-end AM1000-start] 50px [AM1000-end AM1030-start] 50px [AM1030-end AM1100-start] 50px [AM1100-end AM1130-start] 50px [AM1130-end AM1200-start] 50px [AM1200-end AM1230-start] 50px [AM1230-end PM100-start] 50px [PM100-end PM130-start] 50px [PM130-end PM200-start] 50px [PM200-end PM230-start] 50px [PM230-end PM300-start] 50px [PM300-end PM330-start] 50px [PM330-end PM400-start] 50px [PM400-end PM430-start] 50px [PM430-end PM500-start] 50px [PM500-end];
+  .room-title {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    border-right: 1px solid white;
+    padding: 20px 0;
+    grid-row: title;
+  }
 
   &:last-child {
     margin-right: 0;
+
+    .room-title {
+      border-right: 0;
+    }
   }
 }
 
 .session-card {
   display: flex;
+  row-span: 2;
   a {
     display: grid;
     background: white;
     color: black;
     border-radius: 20px;
     padding: 20px;
+    text-decoration: none;
+    // grid-template-rows: 50px 100px 50px;
+    transition: all 0.1s ease-in;
 
-    grid-template-rows: 50px 100px 50px;
-    // height: 100%;
+    &:hover {
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+      transform: scale(1.2);
+      transition: all 0.1s ease-out;
+    }
   }
+
   .session-title {
     color: var(--color-main);
     font-size: 16px;
@@ -297,19 +347,24 @@ export default {
     padding-bottom: 10px;
     grid-row: 1/2;
   }
+
   .session-description {
     grid-row: 2/3;
+    font-size: 14px;
   }
+
   .session-author {
+    grid-row: 3/4;
+    align-self: end;
+
     .name {
       color: #ff6a45;
       text-transform: uppercase;
-      font-size: 13px;
+      font-size: 12px;
       font-weight: bold;
     }
     .alias {
     }
-    grid-row: 3/4;
   }
 }
 @media (max-width: 1000px) {

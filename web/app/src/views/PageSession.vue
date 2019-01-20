@@ -10,8 +10,12 @@
       <div class="session-title">{{ session.title }}</div>
 
       <div class="speakers-wrapper" v-if="session.speakers">
-        <router-link class="speaker-wrapper" v-for="speaker in session.speakers"
-          :key="speaker.id" :to="{ name: 'speaker', params: { id: speaker.id } }">
+        <router-link
+          class="speaker-wrapper"
+          v-for="speaker in session.speakers"
+          :key="speaker.id"
+          :to="{ name: 'speaker', params: { id: speaker.id } }"
+        >
           <div class="avatar">
             <img :src="getSpeaker(speaker.id)" alt>
           </div>
@@ -60,10 +64,12 @@
 
         <div class="des-wrap rate" v-if="user.status">
           <template v-if="checkSessionStatus">
-            <router-link v-if="voted" :to="{ name: 'feedback', params: { id: id } }"
-              class="rate rated">✅ Rated. Thanks!</router-link>
-            <router-link v-else :to="{ name: 'feedback', params: { id: id } }"
-              class="rate">Rate</router-link>
+            <router-link
+              v-if="voted"
+              :to="{ name: 'feedback', params: { id: id } }"
+              class="rate rated"
+            >✅ Rated. Thanks!</router-link>
+            <router-link v-else :to="{ name: 'feedback', params: { id: id } }" class="rate">Rate</router-link>
           </template>
           <template v-else>🚫 Session not started yet</template>
         </div>
@@ -79,8 +85,10 @@
     </div>
     <div class="page-content" v-else>
       <p>loading session...</p>
-      <a href="javascript:location.reload()" title="i'm not proud of this code. please send PR">is
-        this taking too long? click here</a>
+      <a href="javascript:location.reload()" title="i'm not proud of this code. please send PR">
+        is
+        this taking too long? click here
+      </a>
     </div>
   </div>
 </template>
@@ -119,6 +127,8 @@ export default {
         .reduce(function(acc, curr) {
           return [...acc, ...curr];
         }, []);
+
+      console.log(this.id);
       let session = sessions.find(sess => (sess.id = this.id));
       return session;
     },

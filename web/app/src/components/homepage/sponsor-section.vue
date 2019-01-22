@@ -90,10 +90,11 @@
       </div>
 
       <div class="tribute-text">
-        Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Aliquam ea itaque magni, omnis cum reprehenderit
-        possimus laudantium, doloribus veritatis dolorem repellat explicabo
-        odio quas architecto nobis error nisi. Molestiae, sunt.
+        Reach out and engage with a community of IT professionals and students in IT.<br/>
+        Sponsors of the Developers Conference are exposed to skilled tech
+        people in Mauritius and in the region. Unlike other events, participants of
+        the Developers Conference are generally people who craft software using a
+        wide variety of skills that help make the lives of people easier
       </div>
     </div>
 

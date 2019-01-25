@@ -26,7 +26,7 @@ export default {
     return {
       past_events: [
         {
-          title: "global hello azure bootcamps",
+          title: "global azure bootcamps",
           year: "25 April 2015",
           image: "",
           logo: "",

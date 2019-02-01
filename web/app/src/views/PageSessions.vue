@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h1 class="mega-rainbow">Sessions</h1>
+    <h1 class="mega-rainbow">Sessions - soon...</h1>
     <div class="page-all-sessions">
-      <div class="tabs-container">
+      <!-- <div class="tabs-container">
         <div class="right-wrapper">
           <div class="tab-items" :class="{active : getDay(group.groupName) === active}"
             @click="setActive(group.groupName)" v-for="group in sessions" :key="group.groupId"
@@ -25,7 +25,7 @@
             </div>
           </div>
         </transition>
-      </div>
+      </div>-->
     </div>
   </div>
 </template>
@@ -43,14 +43,14 @@ export default {
   },
   methods: {
     time: timeHelper,
-    getDay: function(str) {
+    getDay: function (str) {
       return str.split(",")[0];
     },
-    setActive: function(str) {
+    setActive: function (str) {
       // Keep Track of previous Page Sessions activity in current Session
       this.$store.commit("SET_PAGESESSIONS_ACTIVE", str.split(",")[0]);
     },
-    setScrollPosition: function() {
+    setScrollPosition: function () {
       // Keep Track of previous scroll position
       this.$store.commit(
         "SET_PAGESESSIONS_SCROLL_POSITION",

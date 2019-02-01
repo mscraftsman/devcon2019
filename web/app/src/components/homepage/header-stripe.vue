@@ -2,13 +2,17 @@
   <div class="home-component header-stripe-wrapper">
     <div class="container header-stripe-container">
       <div class="logo-wrapper">
-        <LogoSvg />
+        <LogoSvg/>
       </div>
       <div class="menu-wrapper">
-        <MainMenu />
+        <MainMenu/>
       </div>
       <div class="register-button">
-        <button-waw :theme="'#ff4932'" :link="'#'">Register</button-waw>
+        <button-waw
+          :theme="'#ff4932'"
+          :target="'_blank'"
+          :link="'https://www.meetup.com/MauritiusSoftwareCraftsmanshipCommunity/'"
+        >Register</button-waw>
       </div>
     </div>
   </div>

@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "e76afb54cf4b06c36781",
+    "revision": "77f9aa9b00093796384d",
     "url": "/css/app.d3ed174f.css"
   },
   {
-    "revision": "e76afb54cf4b06c36781",
-    "url": "/js/app.3ce2fad8.js"
+    "revision": "77f9aa9b00093796384d",
+    "url": "/js/app.6af36f4e.js"
   },
   {
     "revision": "05963027f662851950c4",
@@ -132,20 +132,20 @@ self.__precacheManifest = [
     "url": "/img/level.895cd7e8.svg"
   },
   {
-    "revision": "7dc2a1446ded3b10c6de7d0f6aeed7d2",
+    "revision": "515081a1cc60d0a440dfeac99d960e13",
     "url": "/index.html"
   },
   {
-    "revision": "0e77d90a4afeaf4f6a3c6076701d7e86",
-    "url": "/crossdomain.xml"
+    "revision": "bd15a7b055463007de9b58c89d5740aa",
+    "url": "/BingSiteAuth.xml"
   },
   {
     "revision": "5a7b3cf9c6a0d896cb102a726efb7f71",
     "url": "/browserconfig.xml"
   },
   {
-    "revision": "bd15a7b055463007de9b58c89d5740aa",
-    "url": "/BingSiteAuth.xml"
+    "revision": "0e77d90a4afeaf4f6a3c6076701d7e86",
+    "url": "/crossdomain.xml"
   },
   {
     "revision": "47ee867ad1fcfc2fc6471d43774cdc9e",
@@ -172,12 +172,12 @@ self.__precacheManifest = [
     "url": "/img/sponsors/Ceridian_rgb.png"
   },
   {
-    "revision": "b7b4e77608dd5e3ef75febffc97f0fd0",
-    "url": "/img/sponsors/Checkout_Large.png"
-  },
-  {
     "revision": "9b3834344dee03ae4e4259d9c1fb1c92",
     "url": "/img/sponsors/Ceridian.jpg"
+  },
+  {
+    "revision": "b7b4e77608dd5e3ef75febffc97f0fd0",
+    "url": "/img/sponsors/Checkout_Large.png"
   },
   {
     "revision": "462020c6dd8f8f6c31930a777ed9e86a",
@@ -224,12 +224,12 @@ self.__precacheManifest = [
     "url": "/img/sponsors/Graphics_Temple.jpg"
   },
   {
-    "revision": "c9c2604633030f3010ec57ecf500975f",
-    "url": "/img/sponsors/jetbrains.png"
-  },
-  {
     "revision": "c8aee2e84a557295937825ab1552df41",
     "url": "/img/sponsors/ios.jpg"
+  },
+  {
+    "revision": "c9c2604633030f3010ec57ecf500975f",
+    "url": "/img/sponsors/jetbrains.png"
   },
   {
     "revision": "604d9bc1ec9668097beb479b672ee67b",
@@ -268,12 +268,16 @@ self.__precacheManifest = [
     "url": "/img/sponsors/dsogroup.jpg"
   },
   {
-    "revision": "44f4aaa33815c2d3abe0d93121f4b7e6",
-    "url": "/img/sponsors/placeholder.png"
-  },
-  {
     "revision": "537eec35726b015db7c9b07bffb5c720",
     "url": "/img/sponsors/logoNvision.jpg"
+  },
+  {
+    "revision": "ad6fc18369f64d2b1194434afe7e9370",
+    "url": "/img/sponsors/ndepend.png"
+  },
+  {
+    "revision": "44f4aaa33815c2d3abe0d93121f4b7e6",
+    "url": "/img/sponsors/placeholder.png"
   },
   {
     "revision": "6eba10f91366e038072d5d29f46a12a3",
@@ -288,8 +292,8 @@ self.__precacheManifest = [
     "url": "/img/sponsors/SIL-logo_takes-you-to-new-heights.png"
   },
   {
-    "revision": "ad6fc18369f64d2b1194434afe7e9370",
-    "url": "/img/sponsors/ndepend.png"
+    "revision": "f35d41df64d2ffdbc1cae792a29b6abe",
+    "url": "/robots.txt"
   },
   {
     "revision": "eac1362969217a4952e8f4b0969d0823",
@@ -304,10 +308,6 @@ self.__precacheManifest = [
     "url": "/img/past-events/xamarin-2016.jpeg"
   },
   {
-    "revision": "f35d41df64d2ffdbc1cae792a29b6abe",
-    "url": "/robots.txt"
-  },
-  {
     "revision": "e83a8f9df18d48611b0e27c3b7aa3120",
     "url": "/img/sponsors/OReilly.jpg"
   },
@@ -320,12 +320,12 @@ self.__precacheManifest = [
     "url": "/img/sponsors/RossConsultingLogo.png"
   },
   {
-    "revision": "d79eb25fde6def43f402466e62adc66e",
-    "url": "/img/sponsors/Turbine_logo_quad.jpg"
-  },
-  {
     "revision": "e83600dc63f37bce1995b5bdad5d0315",
     "url": "/img/sponsors/SpoonLogov4_0.png"
+  },
+  {
+    "revision": "d79eb25fde6def43f402466e62adc66e",
+    "url": "/img/sponsors/Turbine_logo_quad.jpg"
   },
   {
     "revision": "93f04600c09b1b4b480b5075c6b5d28c",
@@ -380,12 +380,12 @@ self.__precacheManifest = [
     "url": "/img/banners/facebook-cover.jpg"
   },
   {
-    "revision": "f3a2b3bfedab513766bf53d3ea888da8",
-    "url": "/img/sponsors/Ceridian-Lockup-Large.jpg"
-  },
-  {
     "revision": "932ef1a6b215e387c9f06ef8d1abe491",
     "url": "/img/past-events/devcon_2018.jpg"
+  },
+  {
+    "revision": "f3a2b3bfedab513766bf53d3ea888da8",
+    "url": "/img/sponsors/Ceridian-Lockup-Large.jpg"
   },
   {
     "revision": "03aa3347e87123a2dd85064f0640d079",

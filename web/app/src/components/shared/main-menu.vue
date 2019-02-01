@@ -8,6 +8,9 @@
         <router-link :to="{ name: 'extras' }">Extras</router-link>
       </li>
       <li>
+        <router-link :to="{ name: 'press' }">Press</router-link>
+      </li>
+      <li>
         <router-link :to="{ name: 'lifeatdevcon' }">Life at devcon</router-link>
       </li>
       <!-- <li>

@@ -2,7 +2,7 @@
   <div class="home-component footer-section-wrapper">
     <div class="container footer-section-container">
       <div class="link-wrapper">
-        <router-link class="link" :to="{ name: 'pastevents' }">past events</router-link>
+        <router-link class="link" :to="{ name: 'lifeatdevcon' }">past events</router-link>
 
         <router-link class="link" :to="{ name: 'sponsors' }">sponsors</router-link>
 

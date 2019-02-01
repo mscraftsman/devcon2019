@@ -11,10 +11,10 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox-sw.js");
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.85a52443adee2c16ae66d4c7e90413ec.js"
+  "/precache-manifest.59b57daa09c7902825bef553cd5961e6.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "devcon2019"});

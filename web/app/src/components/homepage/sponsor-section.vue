@@ -2,98 +2,162 @@
   <div class="home-component sponsor-section-wrapper">
     <div class="container">
       <h2 class="mega-rainbow">Sponsors</h2>
-      <div class="sponsor-level-wrapper titanium">
-        <h4 class="subtitle">Titanium</h4>
-        <div class="sponsors-wrapper platinum-wrapper">
-          <a href="#" class="sponsor-logo">
-            <img src="../../assets/sample-sponsors/mcb.png" alt>
-          </a>
+      <template v-if="getSponsors">
+        <div class="sponsor-level-wrapper titanium">
+          <h4 class="subtitle">Titanium</h4>
+          <div class="sponsors-wrapper platinum-wrapper">
+            <a
+              :href="sponsor.url"
+              class="sponsor-logo"
+              :title="sponsor.partner + sponsor.slogan"
+              v-for="(sponsor, index, key) in sponsorsGroupedByLevel('Titanium')"
+              :key="sponsor.level + sponsor.name + index + key"
+            >
+              <img
+                :src="imageResolve(sponsor.image)"
+                :title="sponsor.partner + sponsor.slogan"
+                :alt="sponsor.partner"
+              >
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="sponsor-level-wrapper platinum">
-        <h4 class="subtitle">Platinum</h4>
-        <div class="sponsors-wrapper platinum-wrapper">
-          <a href="#" class="sponsor-logo">
-            <img src="../../assets/sample-sponsors/sdworx.png" alt>
-          </a>
+        <div class="sponsor-level-wrapper platinum">
+          <h4 class="subtitle">Platinum</h4>
+          <div class="sponsors-wrapper platinum-wrapper">
+            <a
+              :href="sponsor.url"
+              class="sponsor-logo"
+              :title="sponsor.partner + sponsor.slogan"
+              v-for="(sponsor, index, key) in sponsorsGroupedByLevel('Platinum')"
+              :key="sponsor.level + sponsor.name + index + key"
+            >
+              <img
+                :src="imageResolve(sponsor.image)"
+                :title="sponsor.partner + sponsor.slogan"
+                :alt="sponsor.partner"
+              >
+            </a>
+          </div>
         </div>
-      </div>
 
-      <div class="sponsor-level-wrapper gold">
-        <h4 class="subtitle">Gold</h4>
-        <div class="sponsors-wrapper gold-wrapper">
-          <a href="#" class="sponsor-logo">
-            <img src="../../assets/sample-sponsors/sdworx.png" alt>
-          </a>
+        <div class="sponsor-level-wrapper gold" v-if="sponsorsGroupedByLevel('Gold') > 0">
+          <h4 class="subtitle">Gold</h4>
+          <div class="sponsors-wrapper gold-wrapper">
+            <a
+              :href="sponsor.url"
+              class="sponsor-logo"
+              :title="sponsor.partner + sponsor.slogan"
+              v-for="(sponsor, index, key) in sponsorsGroupedByLevel('Gold')"
+              :key="sponsor.level + sponsor.name + index + key"
+            >
+              <img
+                :src="imageResolve(sponsor.image)"
+                :title="sponsor.partner + sponsor.slogan"
+                :alt="sponsor.partner"
+              >
+            </a>
+          </div>
         </div>
-      </div>
 
-      <div class="sponsor-level-wrapper speaker">
-        <h4 class="subtitle">Speaker Sponsor</h4>
-        <div class="sponsors-wrapper medium-wrapper">
-          <a href="#" class="sponsor-logo">
-            <img src="../../assets/sample-sponsors/sdworx.png" alt>
-          </a>
+        <div class="sponsor-level-wrapper speaker">
+          <h4 class="subtitle">Speaker Sponsor</h4>
+          <div class="sponsors-wrapper medium-wrapper">
+            <a
+              :href="sponsor.url"
+              class="sponsor-logo"
+              :title="sponsor.partner + sponsor.slogan"
+              v-for="(sponsor, index, key) in sponsorsGroupedByLevel('Speaker')"
+              :key="sponsor.level + sponsor.name + index + key"
+            >
+              <img
+                :src="imageResolve(sponsor.image)"
+                :title="sponsor.partner + sponsor.slogan"
+                :alt="sponsor.partner"
+              >
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="sponsor-level-wrapper silver">
-        <h4 class="subtitle">Silver</h4>
-        <div class="sponsors-wrapper medium-wrapper">
-          <a href="#" class="sponsor-logo">
-            <img src="../../assets/sample-sponsors/sdworx.png" alt>
-          </a>
+        <div class="sponsor-level-wrapper silver" v-if="sponsorsGroupedByLevel('Silver') > 0">
+          <h4 class="subtitle">Silver</h4>
+          <div class="sponsors-wrapper medium-wrapper">
+            <a
+              :href="sponsor.url"
+              class="sponsor-logo"
+              :title="sponsor.partner + sponsor.slogan"
+              v-for="(sponsor, index, key) in sponsorsGroupedByLevel('Silver')"
+              :key="sponsor.level + sponsor.name + index + key"
+            >
+              <img
+                :src="imageResolve(sponsor.image)"
+                :title="sponsor.partner + sponsor.slogan"
+                :alt="sponsor.partner"
+              >
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="sponsor-level-wrapper bronze">
-        <h4 class="subtitle">Bronze</h4>
-        <div class="sponsors-wrapper small-wrapper">
-          <a href="#" class="sponsor-logo">
-            <img src="../../assets/sample-sponsors/sdworx.png" alt>
-          </a>
-          
-          <a href="#" class="sponsor-logo">
-            <img src="../../assets/sample-sponsors/sdworx.png" alt>
-          </a>
-          
-          <a href="#" class="sponsor-logo">
-            <img src="../../assets/sample-sponsors/sdworx.png" alt>
-          </a>
-          
-          <a href="#" class="sponsor-logo">
-            <img src="../../assets/sample-sponsors/sdworx.png" alt>
-          </a>
+        <div class="sponsor-level-wrapper bronze">
+          <h4 class="subtitle">Bronze</h4>
+          <div class="sponsors-wrapper small-wrapper">
+            <a
+              :href="sponsor.url"
+              class="sponsor-logo"
+              :title="sponsor.partner + sponsor.slogan"
+              v-for="(sponsor, index, key) in sponsorsGroupedByLevel('Bronze')"
+              :key="sponsor.level + sponsor.name + index + key"
+            >
+              <img
+                :src="imageResolve(sponsor.image)"
+                :title="sponsor.partner + sponsor.slogan"
+                :alt="sponsor.partner"
+              >
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="sponsor-level-wrapper media">
-        <h4 class="subtitle">Media Partner</h4>
-        <div class="sponsors-wrapper small-wrapper">
-          <a href="#" class="sponsor-logo">
-            <img src="../../assets/sample-sponsors/sdworx.png" alt>
-          </a>
+        <div class="sponsor-level-wrapper media">
+          <h4 class="subtitle">Media Partner</h4>
+          <div class="sponsors-wrapper small-wrapper">
+            <a
+              :href="sponsor.url"
+              class="sponsor-logo"
+              :title="sponsor.partner + sponsor.slogan"
+              v-for="(sponsor, index, key) in sponsorsGroupedByLevel('Media Partner')"
+              :key="sponsor.level + sponsor.name + index + key"
+            >
+              <img
+                :src="imageResolve(sponsor.image)"
+                :title="sponsor.partner + sponsor.slogan"
+                :alt="sponsor.partner"
+              >
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="sponsor-level-wrapper happy">
-        <h4 class="subtitle">Happy Hour</h4>
-        <div class="sponsors-wrapper small-wrapper">
-          <a href="#" class="sponsor-logo">
-            <img src="../../assets/sample-sponsors/sdworx.png" alt>
-          </a>
-          
-          <a href="#" class="sponsor-logo">
-            <img src="../../assets/sample-sponsors/sdworx.png" alt>
-          </a>
-          
-          <a href="#" class="sponsor-logo">
-            <img src="../../assets/sample-sponsors/sdworx.png" alt>
-          </a>
+        <div class="sponsor-level-wrapper happy" v-if="sponsorsGroupedByLevel('Happy Hour') > 0">
+          <h4 class="subtitle">Happy Hour</h4>
+          <div class="sponsors-wrapper small-wrapper">
+            <a
+              :href="sponsor.url"
+              class="sponsor-logo"
+              :title="sponsor.partner + sponsor.slogan"
+              v-for="(sponsor, index, key) in sponsorsGroupedByLevel('Happy Hour')"
+              :key="sponsor.level + sponsor.name + index + key"
+            >
+              <img
+                :src="imageResolve(sponsor.image)"
+                :title="sponsor.partner + sponsor.slogan"
+                :alt="sponsor.partner"
+              >
+            </a>
+          </div>
         </div>
-      </div>
+      </template>
+      <div v-else>loading sponsors...</div>
 
       <div class="tribute-text">
-        Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Aliquam ea itaque magni, omnis cum reprehenderit
-        possimus laudantium, doloribus veritatis dolorem repellat explicabo
-        odio quas architecto nobis error nisi. Molestiae, sunt.
+        Reach out and engage with a community of IT professionals and students in IT.
+        <br>Sponsors of the Developers Conference are exposed to skilled tech
+        people in Mauritius and in the region. Unlike other events, participants of
+        the Developers Conference are generally people who craft software using a
+        wide variety of skills that help make the lives of people easier
       </div>
     </div>
 
@@ -120,11 +184,38 @@ export default {
   },
 
   computed: {
-    ...mapGetters(["getSponsors"])
+    ...mapGetters(["getSponsors"]),
+
   },
 
   methods: {
-    ...mapActions([FETCH_SPONSORS])
+    ...mapActions([FETCH_SPONSORS]),
+    groupBy(objectArray, property) {
+      return objectArray.reduce(function (acc, obj) {
+        var key = obj[property];
+        if (!acc[key]) {
+          acc[key] = [];
+        }
+
+        acc[key].push(obj);
+        return acc;
+      }, {});
+    },
+    sponsorsGroupedByLevel: function (level) {
+      const activatedSponsors = this.getSponsors.filter(sponsor => {
+        if (sponsor.support === '1') {
+          return sponsor;
+        }
+      })
+      return this.groupBy(activatedSponsors, 'level')[level];
+    },
+    imageResolve: function (filename) {
+      if (filename === "") {
+        return '/img/sponsors/placeholder.png';
+      } else {
+        return '/img/sponsors/' + filename;
+      }
+    }
   }
 };
 </script>
@@ -177,7 +268,7 @@ export default {
 .sponsors-wrapper {
   display: flex;
   flex-wrap: wrap;
-  padding: 20px 0 50px;
+  padding: 10px 0 30px;
   justify-content: center;
   align-items: center;
 

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="mega-rainbow">Sessions</h1>
+    <h1 class="mega-rainbow">Sessions - soon...</h1>
     <div class="page-all-sessions">
       <div class="tabs-container">
         <div class="right-wrapper">
@@ -87,7 +87,7 @@ export default {
     };
   },
   filters: {
-    truncate: function(text, length, suffix) {
+    truncate: function (text, length, suffix) {
       return text.substring(0, length);
       // return text.substring(0, length) + suffix;
     }
@@ -95,24 +95,24 @@ export default {
   methods: {
     time: timeHelper,
     timeToText: timeToText,
-    sampleTime: function() {
+    sampleTime: function () {
       return "900AM";
     },
-    getDay: function(str) {
+    getDay: function (str) {
       return str.split(",")[0];
     },
-    setActive: function(str) {
+    setActive: function (str) {
       // Keep Track of previous Page Sessions activity in current Session
       this.$store.commit("SET_PAGESESSIONS_ACTIVE", str.split(",")[0]);
     },
-    setScrollPosition: function() {
+    setScrollPosition: function () {
       // Keep Track of previous scroll position
       this.$store.commit(
         "SET_PAGESESSIONS_SCROLL_POSITION",
         this.$refs["content"][0].scrollTop
       );
     },
-    getSessionsFor: function(day, room) {
+    getSessionsFor: function (day, room) {
       console.log(day + room);
       return this.sessions[day].sessions.filter(session => {
         if (session.room === room) {

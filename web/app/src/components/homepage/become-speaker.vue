@@ -3,10 +3,10 @@
     <div class="container">
       <h2 class="mega-rainbow">Become a speaker</h2>
       <div class="tribute-text">
-        <p>Far far away, behind the word mountains, far from the countries
-          Vokalia and Consonantia, there live the blind texts. Separated they
-          live in Bookmarksgrove right at the coast of the Semantics, a large
-          language ocean. A small river named</p>
+        <p>Got an interesting topic you would like to talk about and share your experience with the audience?<br/>
+        Take the opportunity to speak the annual Developers Conference, demonstrate your knowledge and share your passion with others. 
+        We look for contributors who are willing to share their expertise without expectation of payment 
+        in the spirit of networking, a purpose for which the Mauritius Software Craftsmanship Community was founded.</p>
       </div>
 
       <div class="button-center">

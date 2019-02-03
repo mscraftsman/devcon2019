@@ -39,11 +39,6 @@ export default new Router({
       component: () => import("./views/PageLifeAtDevcon.vue")
     },
     {
-      path: "/past-events",
-      name: "pastevents",
-      component: () => import("./views/PagePastEvents.vue")
-    },
-    {
       path: "/press",
       name: "press",
       component: () => import("./views/PagePress.vue")

@@ -23,7 +23,7 @@
           <span class="mega-rainbow">most important</span> tech conference in Mauritius.
         </div>
         <div class="slide-item slide-button button">
-          <button-waw :theme="'#97d0e1'" :size="'70px'" :link="'#'">
+          <button-waw :theme="'#97d0e1'" :size="'70px'" :link="'https://www.meetup.com/MauritiusSoftwareCraftsmanshipCommunity/events/258586831/'">
             Register
             now
           </button-waw>
@@ -44,7 +44,7 @@
           <span class="mega-rainbow">Networking</span> with Renown Speakers
         </div>
         <div class="slide-item slide-button button">
-          <button-waw :theme="'#97d0e1'" :size="'70px'" :link="'#'">
+          <button-waw :theme="'#97d0e1'" :size="'70px'" :link="'https://www.meetup.com/MauritiusSoftwareCraftsmanshipCommunity/events/258586831/'">
             Register
             now
           </button-waw>
@@ -57,7 +57,7 @@
           of Charge
         </div>
         <div class="slide-item slide-button button">
-          <button-waw :theme="'#97d0e1'" :size="'70px'" :link="'#'">
+          <button-waw :theme="'#97d0e1'" :size="'70px'" :link="'https://www.meetup.com/MauritiusSoftwareCraftsmanshipCommunity/events/258586831/'">
             Register
             now
           </button-waw>

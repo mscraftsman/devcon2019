@@ -11,7 +11,7 @@
         <button-waw
           :theme="'#ff4932'"
           :target="'_blank'"
-          :link="'https://www.meetup.com/MauritiusSoftwareCraftsmanshipCommunity/'"
+          :link="'https://www.meetup.com/MauritiusSoftwareCraftsmanshipCommunity/events/258586831/'"
         >Register</button-waw>
       </div>
     </div>

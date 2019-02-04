@@ -13,7 +13,7 @@ https://conference.mscc.mu/
 ### Usage
 
 ```
-$ cd /web/app
+$ cd ./web/app
 $ npm install
 $ npm run serve // devmode with livereload
 ```

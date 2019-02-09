@@ -3,17 +3,15 @@
     <div class="container" v-view="viewHandler">
       <div class="top-bar-container">
         <div class="rendez-vous-wrapper">
-          11<sup>th</sup> - 13<sup>th</sup> April at Voila Bagatelle
+          11
+          <sup>th</sup> - 13
+          <sup>th</sup> April at Voila Bagatelle
         </div>
-        <div class="construction-wrapper">⚠️ Website under construction.
-          Showing last year's data temporarily</div>
+
         <div class="links-wrapper">
           <ul>
             <li>
-              <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="#sponsors">Sponsors</a>
+              <router-link :to="{ name: 'lifeatdevcon' }">About</router-link>
             </li>
           </ul>
         </div>

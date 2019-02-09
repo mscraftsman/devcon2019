@@ -1,11 +1,11 @@
 <template>
   <div class="home">
-    <IntroSlider />
-    <FiveYears />
-    <DevconStats />
-    <FeaturedSpeakers />
-    <BecomeSpeaker />
-    <SponsorSection />
+    <IntroSlider/>
+    <FiveYears/>
+    <DevconStats/>
+    <FeaturedSpeakers/>
+    <!-- <BecomeSpeaker/> -->
+    <SponsorSection/>
   </div>
 </template>
 
@@ -16,7 +16,7 @@ import IntroSlider from "@/components/homepage/intro-slider.vue";
 import FiveYears from "@/components/homepage/five-years.vue";
 import DevconStats from "@/components/homepage/devcon-stats.vue";
 import FeaturedSpeakers from "@/components/homepage/featured-speakers.vue";
-import BecomeSpeaker from "@/components/homepage/become-speaker.vue";
+// import BecomeSpeaker from "@/components/homepage/become-speaker.vue";
 import SponsorSection from "@/components/homepage/sponsor-section.vue";
 import SocialStripe from "@/components/homepage/social-stripe.vue";
 import FooterSection from "@/components/homepage/footer-section.vue";
@@ -30,7 +30,7 @@ export default {
     FiveYears,
     DevconStats,
     FeaturedSpeakers,
-    BecomeSpeaker,
+    // BecomeSpeaker,
     SponsorSection,
     SocialStripe,
     FooterSection

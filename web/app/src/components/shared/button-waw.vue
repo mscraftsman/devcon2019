@@ -1,6 +1,6 @@
 <template>
   <div class="btn effect-hover click" :style="'--theme:' + theme + '; --size:' + size">
-    <a :href="link">
+    <a :href="link" :target="target">
       <span>
         <slot></slot>
       </span>
@@ -14,6 +14,9 @@ export default {
     link: {
       default: "/"
     },
+    target: {
+      default: ""
+    },
     theme: {
       default: "#fff"
     },
@@ -25,9 +28,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 .btn {
- --theme: #ff4932;
+  --theme: #ff4932;
   color: var(--theme);
   cursor: pointer;
   font-size: 18px;
@@ -85,17 +87,17 @@ export default {
   /////////////////////////////
   // Click
   ///////////////////////////
- 
+
   &.click:active,
-  &.click:focus{
+  &.click:focus {
+    animation: pulse 0.3s;
+    box-shadow: 0 0 0 1em rgba(black, 0);
 
-  animation: pulse 0.3s;
-  box-shadow: 0 0 0 1em rgba(black,0);
-
-  @keyframes pulse {
-  0% { box-shadow: 0 0 0 0 var(--theme); }
-  }
-  
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 0 0 var(--theme);
+      }
+    }
   }
 }
 </style>

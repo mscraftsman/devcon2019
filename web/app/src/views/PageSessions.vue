@@ -27,6 +27,73 @@
             :key="group.groupId"
           >
             <div class="room-container">
+              <div class="time-bar">
+                <div class="time-value">&nbsp;</div>
+                <div class="time-value">
+                  9:30
+                  <span>AM</span>
+                </div>
+                <div class="time-value">
+                  10:00
+                  <span>AM</span>
+                </div>
+                <div class="time-value">
+                  10:30
+                  <span>AM</span>
+                </div>
+                <div class="time-value">
+                  11:00
+                  <span>AM</span>
+                </div>
+                <div class="time-value">
+                  11:30
+                  <span>AM</span>
+                </div>
+                <div class="time-value">
+                  12:00
+                  <span>PM</span>
+                </div>
+                <div class="time-value">
+                  12:30
+                  <span>PM</span>
+                </div>
+                <div class="time-value">
+                  1:00
+                  <span>PM</span>
+                </div>
+                <div class="time-value">
+                  1:30
+                  <span>PM</span>
+                </div>
+                <div class="time-value">
+                  2:00
+                  <span>PM</span>
+                </div>
+                <div class="time-value">
+                  2:30
+                  <span>PM</span>
+                </div>
+                <div class="time-value">
+                  3:00
+                  <span>PM</span>
+                </div>
+                <div class="time-value">
+                  3:30
+                  <span>PM</span>
+                </div>
+                <div class="time-value">
+                  4:00
+                  <span>PM</span>
+                </div>
+                <div class="time-value">
+                  4:30
+                  <span>PM</span>
+                </div>
+                <div class="time-value">
+                  5:00
+                  <span>PM</span>
+                </div>
+              </div>
               <div
                 :class="'session-panes room-wrapper  ' + room.className"
                 v-for="room in rooms"
@@ -65,6 +132,9 @@ export default {
     if (this.sessions.length !== 0) {
       this.$refs["content"][0].scrollTop = this.scrollPosition;
     }
+
+    this.FETCH_SPEAKERS();
+
   },
   data() {
     return {
@@ -83,6 +153,8 @@ export default {
     }
   },
   methods: {
+    ...mapActions(["fetchSessions", "FETCH_SPEAKERS"]),
+
     time: timeHelper,
     timeToText: timeToText,
     sampleTime: function () {
@@ -255,10 +327,28 @@ export default {
 
 .room-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 100px repeat(3, 1fr);
   grid-column-gap: 20px;
 }
-.room-wrapper {
+
+.time-bar {
+  .time-value {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-top: 1px solid #4d56a4;
+
+    &:first-child {
+      border-top: none;
+    }
+    &:nth-child(odd) {
+      // border-top: none;
+      opacity: 0.3;
+    }
+  }
+}
+.room-wrapper,
+.time-bar {
   color: black;
   display: grid;
   grid-template-rows: 50px 100px;

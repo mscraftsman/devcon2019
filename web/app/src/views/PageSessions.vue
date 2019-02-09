@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="mega-rainbow">Sessions - soon...</h1>
+    <h1 class="mega-rainbow">Sessions</h1>
     <div class="page-all-sessions">
       <div class="tabs-container">
         <div class="right-wrapper">
@@ -205,11 +205,7 @@ export default {
       opacity: 0.7;
 
       border-radius: 5px;
-      background: linear-gradient(
-        90deg,
-        rgba(255, 255, 255, 0.2),
-        rgba(255, 255, 255, 0.2)
-      );
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
       transition: all 0.2s ease-in;
       background: transparent;
       border: 0;
@@ -225,11 +221,7 @@ export default {
       &:hover {
         transition: all 0.2s ease-out;
         opacity: 1;
-        background: linear-gradient(
-          90deg,
-          rgba(255, 255, 255, 0.2),
-          rgba(255, 255, 255, 0.2)
-        );
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
       }
       &.active {
         opacity: 1;

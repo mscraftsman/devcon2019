@@ -34,27 +34,16 @@
               >
                 <div :class="'room-wrapper ' + room.className">
                   <div class="room-title">{{ room.label }}</div>
-                  <div
-                    class="session-card"
+                  <router-link
+                    @click.native="setScrollPosition()"
+                    :to="{ name: 'session',  params: { id: session.id }}"
                     v-for="session in getSessionsFor(index, room.label)"
                     :key="room + session.id"
                     v-bind:style="{gridRow: timeToText(session.startsAt) + ' / span 2' }"
+                    class="session-card-wrapper"
                   >
-                    <router-link
-                      @click.native="setScrollPosition()"
-                      :to="{ name: 'session',  params: { id: session.id }}"
-                    >
-                      <div class="date-time">{{ timeToText(session.startsAt) }}</div>
-                      <div class="session-title">{{ session.title | truncate(80, '...') }}</div>
-                      <div
-                        class="session-description"
-                      >{{ session.description | truncate(120, '...') }}</div>
-                      <div class="session-author">
-                        <div class="name">{{ session.speakers[0].name }}</div>
-                        <!-- <div class="alias">{{ session.speakers[0].name }}</div> -->
-                      </div>
-                    </router-link>
-                  </div>
+                    <session-card :session="session"/>
+                  </router-link>
                 </div>
               </div>
             </div>
@@ -68,6 +57,7 @@
 <script>
 import { mapActions, mapGetters } from "vuex";
 import { time as timeHelper, timeSafe as timeToText } from "@/helpers";
+import SessionCard from "@/components/shared/session-card.vue"
 
 export default {
   mounted() {
@@ -139,6 +129,9 @@ export default {
       console.log(educatorSessions);
       return this.sessions;
     }
+  },
+  components: {
+    SessionCard
   }
 };
 </script>
@@ -280,8 +273,8 @@ export default {
     "AM1030"
     "AM1100"
     "AM1130"
-    "AM1200"
-    "AM1230"
+    "PM1200"
+    "PM1230"
     "PM100"
     "PM130"
     "PM200"
@@ -312,52 +305,9 @@ export default {
   }
 }
 
-.session-card {
+.session-card-wrapper {
   display: flex;
   row-span: 2;
-  a {
-    display: grid;
-    background: white;
-    color: black;
-    border-radius: 20px;
-    padding: 20px;
-    text-decoration: none;
-    // grid-template-rows: 50px 100px 50px;
-    transition: all 0.1s ease-in;
-
-    &:hover {
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-      transform: scale(1.2);
-      transition: all 0.1s ease-out;
-    }
-  }
-
-  .session-title {
-    color: var(--color-main);
-    font-size: 16px;
-    font-weight: bold;
-    padding-bottom: 10px;
-    grid-row: 1/2;
-  }
-
-  .session-description {
-    grid-row: 2/3;
-    font-size: 14px;
-  }
-
-  .session-author {
-    grid-row: 3/4;
-    align-self: end;
-
-    .name {
-      color: #ff6a45;
-      text-transform: uppercase;
-      font-size: 12px;
-      font-weight: bold;
-    }
-    .alias {
-    }
-  }
 }
 @media (max-width: 1000px) {
   .tabs-container {

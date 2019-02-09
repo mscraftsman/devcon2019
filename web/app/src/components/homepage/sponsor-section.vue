@@ -9,6 +9,7 @@
             <a
               :href="sponsor.url"
               class="sponsor-logo"
+              target="_blank"
               :title="sponsor.partner + sponsor.slogan"
               v-for="(sponsor, index, key) in sponsorsGroupedByLevel('Titanium')"
               :key="sponsor.level + sponsor.name + index + key"
@@ -27,6 +28,7 @@
             <a
               :href="sponsor.url"
               class="sponsor-logo"
+              target="_blank"
               :title="sponsor.partner + sponsor.slogan"
               v-for="(sponsor, index, key) in sponsorsGroupedByLevel('Platinum')"
               :key="sponsor.level + sponsor.name + index + key"
@@ -40,12 +42,13 @@
           </div>
         </div>
 
-        <div class="sponsor-level-wrapper gold" v-if="sponsorsGroupedByLevel('Gold') > 0">
+        <div class="sponsor-level-wrapper gold" v-if="sponsorsGroupedByLevel('Gold')">
           <h4 class="subtitle">Gold</h4>
           <div class="sponsors-wrapper gold-wrapper">
             <a
               :href="sponsor.url"
               class="sponsor-logo"
+              target="_blank"
               :title="sponsor.partner + sponsor.slogan"
               v-for="(sponsor, index, key) in sponsorsGroupedByLevel('Gold')"
               :key="sponsor.level + sponsor.name + index + key"
@@ -65,6 +68,7 @@
             <a
               :href="sponsor.url"
               class="sponsor-logo"
+              target="_blank"
               :title="sponsor.partner + sponsor.slogan"
               v-for="(sponsor, index, key) in sponsorsGroupedByLevel('Speaker')"
               :key="sponsor.level + sponsor.name + index + key"
@@ -77,12 +81,13 @@
             </a>
           </div>
         </div>
-        <div class="sponsor-level-wrapper silver" v-if="sponsorsGroupedByLevel('Silver') > 0">
+        <div class="sponsor-level-wrapper silver" v-if="sponsorsGroupedByLevel('Silver')">
           <h4 class="subtitle">Silver</h4>
           <div class="sponsors-wrapper medium-wrapper">
             <a
               :href="sponsor.url"
               class="sponsor-logo"
+              target="_blank"
               :title="sponsor.partner + sponsor.slogan"
               v-for="(sponsor, index, key) in sponsorsGroupedByLevel('Silver')"
               :key="sponsor.level + sponsor.name + index + key"
@@ -101,6 +106,7 @@
             <a
               :href="sponsor.url"
               class="sponsor-logo"
+              target="_blank"
               :title="sponsor.partner + sponsor.slogan"
               v-for="(sponsor, index, key) in sponsorsGroupedByLevel('Bronze')"
               :key="sponsor.level + sponsor.name + index + key"
@@ -119,6 +125,7 @@
             <a
               :href="sponsor.url"
               class="sponsor-logo"
+              target="_blank"
               :title="sponsor.partner + sponsor.slogan"
               v-for="(sponsor, index, key) in sponsorsGroupedByLevel('Media Partner')"
               :key="sponsor.level + sponsor.name + index + key"
@@ -131,14 +138,34 @@
             </a>
           </div>
         </div>
-        <div class="sponsor-level-wrapper happy" v-if="sponsorsGroupedByLevel('Happy Hour') > 0">
+        <div class="sponsor-level-wrapper happy" v-if="sponsorsGroupedByLevel('Happy Hour')">
           <h4 class="subtitle">Happy Hour</h4>
           <div class="sponsors-wrapper small-wrapper">
             <a
               :href="sponsor.url"
               class="sponsor-logo"
+              target="_blank"
               :title="sponsor.partner + sponsor.slogan"
               v-for="(sponsor, index, key) in sponsorsGroupedByLevel('Happy Hour')"
+              :key="sponsor.level + sponsor.name + index + key"
+            >
+              <img
+                :src="imageResolve(sponsor.image)"
+                :title="sponsor.partner + sponsor.slogan"
+                :alt="sponsor.partner"
+              >
+            </a>
+          </div>
+        </div>
+        <div class="sponsor-level-wrapper internet" v-if="sponsorsGroupedByLevel('Internet')">
+          <h4 class="subtitle">Internet</h4>
+          <div class="sponsors-wrapper small-wrapper">
+            <a
+              :href="sponsor.url"
+              class="sponsor-logo"
+              target="_blank"
+              :title="sponsor.partner + sponsor.slogan"
+              v-for="(sponsor, index, key) in sponsorsGroupedByLevel('Internet')"
               :key="sponsor.level + sponsor.name + index + key"
             >
               <img
@@ -184,14 +211,13 @@ export default {
   },
 
   computed: {
-    ...mapGetters(["getSponsors"]),
-
+    ...mapGetters(["getSponsors"])
   },
 
   methods: {
     ...mapActions([FETCH_SPONSORS]),
     groupBy(objectArray, property) {
-      return objectArray.reduce(function (acc, obj) {
+      return objectArray.reduce(function(acc, obj) {
         var key = obj[property];
         if (!acc[key]) {
           acc[key] = [];
@@ -201,19 +227,19 @@ export default {
         return acc;
       }, {});
     },
-    sponsorsGroupedByLevel: function (level) {
+    sponsorsGroupedByLevel: function(level) {
       const activatedSponsors = this.getSponsors.filter(sponsor => {
-        if (sponsor.support === '1') {
+        if (sponsor.support === "1") {
           return sponsor;
         }
-      })
-      return this.groupBy(activatedSponsors, 'level')[level];
+      });
+      return this.groupBy(activatedSponsors, "level")[level];
     },
-    imageResolve: function (filename) {
+    imageResolve: function(filename) {
       if (filename === "") {
-        return '/img/sponsors/placeholder.png';
+        return "/img/sponsors/placeholder.png";
       } else {
-        return '/img/sponsors/' + filename;
+        return "/img/sponsors/" + filename;
       }
     }
   }
@@ -262,6 +288,10 @@ export default {
   &.happy {
     --color-start: #c2ba81;
     --color-end: #a54e5f;
+  }
+  &.internet {
+    --color-start: #06d8cd;
+    --color-end: #006685;
   }
 }
 

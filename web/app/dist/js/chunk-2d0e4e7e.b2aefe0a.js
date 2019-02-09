@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0e4e7e"],{"91e5":function(e,n,o){"use strict";o.r(n);var t=function(){var e=this,n=e.$createElement,o=e._self._c||n;return o("div",[o("SponsorSection")],1)},c=[],s=(o("cadf"),o("551c"),o("097d"),o("dd77")),i={components:{SponsorSection:s["a"]}},p=i,r=o("2877"),u=Object(r["a"])(p,t,c,!1,null,null,null);u.options.__file="PageSponsors.vue";n["default"]=u.exports}}]);
-//# sourceMappingURL=chunk-2d0e4e7e.b2aefe0a.js.map

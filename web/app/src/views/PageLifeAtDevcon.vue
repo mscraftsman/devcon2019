@@ -35,6 +35,16 @@ export default {
             "After the success of previous years the Mauritius Software Craftsmanship Community (MSCC) is organising the fourth edition of the Developers Conference in partnership with a number of local and international companies. Although the MSCC was founded back in 2013 it quickly became clear that our tropical island has a certain lack of informational and technical events. During some monthly meetups we spoke about this situation and that it would be very interesting and delightful to organise such an event."
         },
         {
+          title: "Global Azure Bootcamp 2018",
+          year: "21 April 2016",
+          image: "gwab2018.png",
+          logo: "",
+          link:
+            "https://www.meetup.com/MauritiusSoftwareCraftsmanshipCommunity/events/243849627/",
+          description:
+            "Microsoft Azure provides key benefits for your business. Similar to previous years the MSCC would like to invite you to a full-day event of information on cloud technology provided by Microsoft."
+        },
+        {
           title: "DEVELOPERS CONFERENCE 2017",
           year: "30 March - 1 APRIL 2017",
           image: "devcon_2017.jpg",
@@ -44,7 +54,7 @@ export default {
             "After the success of previous years the Mauritius Software Craftsmanship Community (MSCC) is organising the third edition of the Developers Conference in partnership with a number of local and international companies. Although the MSCC was founded back in 2013 it quickly became clear that our tropical island has a certain lack of informational and technical events. During some monthly meetups we spoke about this situation and that it would be very interesting and delightful to organise such an event."
         },
         {
-          title: "global azure bootcamps",
+          title: "Global Azure Bootcamp 2016",
           year: "16 April 2016",
           image: "gwab2016.jpeg",
           logo: "",
@@ -77,12 +87,12 @@ export default {
           year: "23 - 25 April 2015",
           image: "devcon_2015.jpg",
           logo: "",
-          link: "https://2015.mscc.mu/#/",
+          link: "https://2015.mscc.mu/",
           description:
             'The Developers Conference 2015 is the first event in Mauritius, maybe even in the Indian Ocean which is organised as a "classic" conference. Yes, there have been various vendor-specific bootcamps in the past but never anything like this.'
         },
         {
-          title: "global azure bootcamps",
+          title: "Global Azure Bootcamp 2015",
           year: "25 April 2015",
           image: "gwab2015.jpeg",
           logo: "",

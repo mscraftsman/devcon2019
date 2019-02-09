@@ -2,7 +2,24 @@
   <div class="home-component footer-section-wrapper">
     <div class="container footer-section-container">
       <div class="link-wrapper">
-        <router-link class="link" :to="{ name: 'lifeatdevcon' }">past events</router-link>
+        <a
+          class="link external"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.meetup.com/MauritiusSoftwareCraftsmanshipCommunity/events/258586831/"
+        >
+          register
+        </a>
+
+        <a
+          class="link external"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.mscc.mu/code-of-conduct"
+        >
+          code
+          of conduct
+        </a>
 
         <router-link class="link" :to="{ name: 'sponsors' }">sponsors</router-link>
 
@@ -20,6 +37,7 @@
           mcb
           inovapp challenge
         </a>-->
+        
         <router-link class="link" :to="{ name: 'press' }">press material</router-link>
 
         <!-- <router-link class="link" :to="{ name: 'speakers' }">speakers</router-link> -->
@@ -32,6 +50,9 @@
           become
           a speaker
         </a>-->
+
+        <router-link class="link" :to="{ name: 'lifeatdevcon' }">past events</router-link>
+
         <a
           class="link"
           href="mailto:conference@mscc.mu?subject=Inquiry re. Developers Conference 2019"
@@ -40,16 +61,6 @@
           us ✉
         </a>
         
-        <a
-          class="link external"
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.mscc.mu/code-of-conduct"
-        >
-          code
-          of conduct
-        </a>
-
         <!-- <router-link class="link" :to="{ name: 'jobs' }">jobs</router-link> -->
         <!-- <router-link class="link" :to="{ name: 'vote' }">vote</router-link> -->
       </div>

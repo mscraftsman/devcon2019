@@ -21,7 +21,7 @@ import { mapActions, mapGetters } from "vuex";
 export default {
   props: ["session"],
   mounted() {
-    console.log(this.session);
+    // console.log(this.session);
   },
   computed: {
     ...mapGetters({

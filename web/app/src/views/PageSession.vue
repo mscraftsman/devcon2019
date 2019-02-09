@@ -17,7 +17,7 @@
           :to="{ name: 'speaker', params: { id: speaker.id } }"
         >
           <div class="avatar">
-            <img :src="getSpeaker(speaker.id)" alt>
+            <img :src="getSpeakerPhoto(speaker.id)" alt>
           </div>
           <p class="name">{{ speaker.name }}</p>
         </router-link>
@@ -99,14 +99,23 @@ import { time as timeHelper, getDay as getDayHelper } from "@/helpers";
 
 export default {
   props: ["id"],
+  mounted() {
+  },
   methods: {
-    ...mapActions(["fetchSessions", "fetchSpeakers", "fetchVotes"]),
-    getSpeaker: function(id) {
+    ...mapActions(["FETCH_SESSIONS", "FETCH_SPEAKERS", "fetchVotes"]),
+    getSpeakerPhoto: function (id) {
       if (this.speakers.length === 0) {
-        // this.fetchSpeakers();
+        this.FETCH_SPEAKERS();
       }
-      let theSpeaker = this.speakers.find(speaker => speaker.id === id);
+      let theSpeaker = this.speakers.find(speaker => speaker.id === id)
+
+      console.log(theSpeaker);
       return theSpeaker.profilePicture;
+      // if (typeof this.theSpeaker !== 'undefined') {
+      // } else {
+      //   return '/img/sponsors/placeholder.png'
+      // }
+
     },
     time: timeHelper,
     getDay: getDayHelper
@@ -118,21 +127,22 @@ export default {
       user: "getUser",
       getVotes: "getVotes"
     }),
-    session: function() {
+    session: function () {
       if (typeof this.sessions == "undefined") {
         this.fetchSessions();
       }
       let sessions = this.sessions
         .map(groups => groups.sessions)
-        .reduce(function(acc, curr) {
+        .reduce(function (acc, curr) {
           return [...acc, ...curr];
         }, []);
 
       console.log(this.id);
-      let session = sessions.find(sess => (sess.id = this.id));
+      console.log(sessions);
+      let session = sessions.find(sess => (sess.id === this.id));
       return session;
     },
-    voted: function() {
+    voted: function () {
       //   let allVoted = _.map(this.getVotes, "session_id");
       //   if (allVoted.indexOf(this.id) !== -1) {
       //     return true;
@@ -196,12 +206,11 @@ a.back {
 }
 .back-button-wrapper {
   cursor: pointer;
-  --backsize: 70px;
+  --backsize: 60px;
   // grid-area: back;
   text-align: left;
   // margin-top: 5px;
-  transform: translateX(calc(var(--backsize) / 2 * -1))
-    translateY(var(--backsize));
+  transform: translateX(calc(var(--backsize) * -2)) translateY(calc(var(--backsize)));
   position: absolute;
   a {
     display: flex;
@@ -210,16 +219,18 @@ a.back {
     width: var(--backsize);
     padding: calc(var(--backsize) / 4);
     // background: var(--color-blue);
-    color: var(--color-blue);
-    background: white;
-    border-radius: var(--backsize) 0 0 var(--backsize);
+    // color: var(--color-red);
+    color: white;
+    background: rgba($color-main, 0.5);
+    border-radius: 100%;
+    border: 3px solid #ff4932;
     padding-left: calc(var(--backsize) / 3.5);
     text-align: center;
     transition: transform 0.2s ease-in-out;
     // box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     img {
       height: 100%;
-      margin-right: 15px;
+      // margin-right: 15px;
     }
   }
   &:hover {
@@ -239,13 +250,17 @@ a.back {
       width: auto;
       border-radius: unset;
       // padding-left: ;
+      border: none;
+      background: white;
+      color: var(--color-blue);
     }
   }
 }
 .page-content {
   grid-area: session;
-  background: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+  border-radius: 15px;
 }
 .session-title {
   color: #333333;
@@ -256,6 +271,8 @@ a.back {
   margin: 0 auto;
   padding: 30px 5vw;
   text-align: center;
+  // background: var(--color-blue);
+  // color: white;
 }
 .speakers-wrapper {
   display: flex;
@@ -338,7 +355,7 @@ a.back {
     }
     &.meetup {
       a {
-        background: #f64060;
+        background: var(--color-red-light);
         font-size: 14px;
         color: white;
       }

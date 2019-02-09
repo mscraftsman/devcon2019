@@ -175,7 +175,7 @@ export default {
       );
     },
     getSessionsFor: function (day, room) {
-      console.log(day + room);
+      // console.log(day + room);
       return this.sessions[day].sessions.filter(session => {
         if (session.room === room) {
           return session;

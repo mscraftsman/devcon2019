@@ -1,0 +1,73 @@
+.home-component {
+  color: white;
+}
+
+.container {
+  width: 1120px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+::selection {
+  background-color: $color-red-light;
+  color: white;
+}
+
+@media screen and (max-width: $desktop) {
+  .container {
+    width: 80%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .container {
+    width: 80%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: $tablet-portrait) {
+  .container {
+    width: 80%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .container {
+    width: 80%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+//  Buttons
+
+.button {
+  text-transform: uppercase;
+  a {
+    text-decoration: none;
+  }
+}
+
+.button-center {
+  display: flex;
+  // width: 200px;
+  justify-content: space-around;
+}
+
+// View More
+
+.view-more {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+}

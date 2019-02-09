@@ -1,0 +1,61 @@
+/*-----------------------------------------------*/
+/*				Colours						     */
+/*-----------------------------------------------*/
+
+$color-main: #181844;
+$color-red: #6d182e;
+$color-red-light: #ff4932;
+$color-blue: #3f4cd7;
+$color-blue-light: #97d0e1;
+
+:root {
+  --color-main: #181844;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-blue: #4d56a4;
+  --color-blue-light: $color-blue-light;
+  --color-red: $color-red;
+  --color-red-light: #ff4932;
+
+  --color-green: #31e8b7;
+  --font-glacial: "Century Gothic", sans-serif;
+  --font-shentox: "Century Gothic", sans-serif;
+  --font-shentox-size-default: 18px;
+  --gutter: 20px;
+}
+
+/*-------------------------------*/
+/*				Z-index			 */
+/*-------------------------------*/
+
+$z-index: (
+  very-high: 10012,
+  high: 10010,
+  top: 999,
+  middle: 800,
+  lower: 100
+);
+
+/*-----------------------------------------------*/
+/*				Fonts						                       */
+/*-----------------------------------------------*/
+
+$font-primary: "Century Gothic", Helvetica, Arial, sans-serif;
+$font-headings: "Bungee Outline", cursive;
+
+/*-----------------------------------------------*/
+/*					Dimensions           		 */
+/*-----------------------------------------------*/
+$max-width: 1300px;
+$gutter: 40px;
+$section-spacer: 100px;
+
+/*-----------------------------------------------*/
+/*					Grid Definition     		 */
+/*-----------------------------------------------*/
+
+$screen-4k: 2560px;
+$desktop: 1300px;
+$tablet: 1024px;
+$tablet-portrait: 768px;
+$mobile: 480px;

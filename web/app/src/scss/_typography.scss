@@ -1,0 +1,169 @@
+html {
+  font-family: $font-primary;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Links
+
+a {
+  color: white; // please i can't look at that ugly blue
+  text-decoration: none;
+  &:visited {
+    color: white;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// External links
+.external:after {
+  content: " 🌐";
+}
+
+// Headings
+
+h2 {
+  font-size: 60px;
+  font-family: "Open Sans", sans-serif;
+
+  @media screen and (max-width: $tablet) {
+    font-size: 30px;
+  }
+}
+
+.mega-rainbow {
+  font-family: $font-headings;
+  color: rgb(255, 95, 56);
+  text-align: center;
+  font-weight: 600;
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h1,
+.home h2 {
+  margin: 0 0 calc(var(--gutter) / 2) 0;
+  text-transform: uppercase;
+  font-size: 65px;
+  line-height: 55px;
+
+  @media screen and (max-width: $tablet) {
+    font-size: 35px;
+  }
+}
+
+h1 {
+  padding: $gutter 0;
+}
+
+h2 {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 55px;
+  font-family: var(--font-glacial);
+  color: white;
+  font-weight: 900;
+  text-align: center;
+}
+
+h3 {
+  font-size: 40px;
+  text-transform: uppercase;
+  // text-align: center;
+  font-weight: 900;
+  color: white;
+  margin: 0;
+}
+
+h4.subtitle {
+  font-size: 16px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+  color: white;
+  margin: 0;
+}
+
+small {
+  margin: 0;
+  text-transform: uppercase;
+  font-family: var(--font-shentox);
+  font-size: 18px;
+  color: $color-blue-light;
+  display: block;
+}
+
+// Tribute Text
+
+.tribute-text {
+  width: 640px;
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 32px;
+  padding: $gutter 0;
+  font-size: 18px;
+}
+
+.page-title-wrapper {
+  padding: calc(var(--gutter) * 2.5) 0;
+  grid-column: container;
+  // margin-top: 80px;
+
+  small {
+    margin: 0 auto 10px;
+    text-transform: uppercase;
+    font-family: var(--font-shentox);
+    font-size: 18px;
+    display: block;
+    text-align: center;
+  }
+
+  p {
+    line-height: 27px;
+    font-size: 20px;
+    font-family: var(--font-glacial);
+    font-weight: 300;
+    color: white;
+  }
+}
+
+.full-section-container {
+  margin-bottom: 50px;
+}
+
+.section-title-wrapper {
+  // margin-bottom: calc(var(--gutter) * 1);
+  grid-column: container;
+
+  h2 {
+    text-align: initial;
+  }
+
+  p {
+    line-height: 25px;
+    font-size: 18px;
+    font-family: var(--font-glacial);
+    font-weight: 300;
+    color: white;
+  }
+}
+.section-description-wrapper,
+.content-wrapper {
+  grid-column: container;
+
+  p {
+    font-family: var(--font-glacial);
+    color: var(--color-white);
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 28px;
+    margin-bottom: var(--gutter);
+  }
+}

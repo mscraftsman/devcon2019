@@ -8,8 +8,10 @@
       <div class="name">{{ speaker.fullName }}</div>
       <div class="occupation">{{ speaker.tagLine }}</div>
       <div class="alias"></div>
-      <div class="talk-count" v-if="speaker.sessions.length > 1">{{
-        speaker.sessions.length }} talks</div>
+      <div class="talk-count" v-if="speaker.sessions.length > 1">
+        {{
+        speaker.sessions.length }} talks
+      </div>
       <div class="talk-count" v-else>{{ speaker.sessions.length }} talk</div>
       <div class="social-media-wrapper"></div>
     </div>
@@ -24,7 +26,7 @@ export default {
 
 <style lang="scss" scoped>
 .speaker-box {
-  --width: 215px;
+  --width: 200px;
   //   --size: 215px;
   --spacing: 10px;
 
@@ -44,7 +46,7 @@ export default {
     transform: skew(-18deg);
     border-radius: 30px;
     overflow: hidden;
-    width: var(--width);
+    width: calc(var(--width));
     left: 0;
 
     img {
@@ -75,7 +77,7 @@ export default {
     left: 20%;
 
     .name {
-      font-size: 36px;
+      font-size: 25px;
       font-weight: 800;
       padding-bottom: var(--spacing);
       text-align: right;
@@ -99,12 +101,7 @@ export default {
       text-shadow: none;
       padding-bottom: var(--spacing);
       text-transform: uppercase;
-      background: linear-gradient(
-        to right,
-        rgb(252, 218, 159) 0%,
-        rgb(255, 95, 56) 0%,
-        rgb(192, 37, 51) 100%
-      );
+      background: linear-gradient(to right, rgb(252, 218, 159) 0%, rgb(255, 95, 56) 0%, rgb(192, 37, 51) 100%);
     }
     .social-media-wrapper {
     }

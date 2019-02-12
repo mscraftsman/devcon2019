@@ -39,7 +39,7 @@ import { time as timeHelper, getDay as getDayHelper } from "@/helpers";
 export default {
   methods: {
     ...mapActions(["fetchSessions", "fetchSpeakers"]),
-    getSpeaker: function(id) {
+    getSpeaker: function (id) {
       if (this.speakers.length === 0) {
         this.fetchSpeakers();
       }
@@ -55,7 +55,7 @@ export default {
       speakers: "getSpeakers"
     })
   },
-  mounted: function() {
+  mounted: function () {
     this.fetchSessions();
   },
   components: {
@@ -89,8 +89,7 @@ a.back {
   // grid-area: back;
   text-align: left;
   // margin-top: 5px;
-  transform: translateX(calc(var(--backsize) / 2 * -1))
-    translateY(var(--backsize));
+  transform: translateX(calc(var(--backsize) / 2 * -1)) translateY(var(--backsize));
   position: absolute;
 
   a {
@@ -171,6 +170,8 @@ a.back {
     grid-template-areas: "avatar name";
     grid-template-columns: var(--width) 1fr;
     align-items: center;
+    justify-self: center;
+
     grid-gap: 10px;
     margin-bottom: 10px;
     margin-right: 20px;

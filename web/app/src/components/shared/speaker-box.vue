@@ -1,5 +1,5 @@
 <template>
-  <div class="speaker-box">
+  <div class="speaker-box" :id="speaker.fullName">
     <div class="speaker-image">
       <img :src="speaker.profilePicture" alt>
     </div>

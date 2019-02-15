@@ -153,7 +153,7 @@ export default {
     }
   },
   methods: {
-    ...mapActions(["fetchSessions", "FETCH_SPEAKERS"]),
+    ...mapActions(["FETCH_SESSIONS", "FETCH_SPEAKERS"]),
 
     time: timeHelper,
     timeToText: timeToText,

@@ -38,10 +38,10 @@ import { time as timeHelper, getDay as getDayHelper } from "@/helpers";
 
 export default {
   methods: {
-    ...mapActions(["fetchSessions", "fetchSpeakers"]),
+    ...mapActions(["FETCH_SESSIONS", "FETCH_SPEAKERS"]),
     getSpeaker: function (id) {
       if (this.speakers.length === 0) {
-        this.fetchSpeakers();
+        this.FETCH_SPEAKERS();
       }
       let theSpeaker = this.speakers.find(speaker => speaker.id === id);
       return theSpeaker.profilePicture;
@@ -56,7 +56,7 @@ export default {
     })
   },
   mounted: function () {
-    this.fetchSessions();
+    this.FETCH_SESSIONS();
   },
   components: {
     SpeakerBox
@@ -170,7 +170,7 @@ a.back {
     grid-template-areas: "avatar name";
     grid-template-columns: var(--width) 1fr;
     align-items: center;
-    justify-self: center;
+    // justify-self: center;
 
     grid-gap: 10px;
     margin-bottom: 10px;

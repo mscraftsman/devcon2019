@@ -129,7 +129,7 @@ export default {
     }),
     session: function () {
       if (typeof this.sessions == "undefined") {
-        this.fetchSessions();
+        this.FETCH_SESSIONS();
       }
       let sessions = this.sessions
         .map(groups => groups.sessions)

@@ -37,9 +37,9 @@ export default {
 }
 .devcon-stats-container {
   display: grid;
-  // justify-content: space-around;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-row-gap: 100px;
+  justify-items:center;
 
   .stat-wrapper {
     position: relative;

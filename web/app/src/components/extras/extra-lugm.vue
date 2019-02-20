@@ -34,7 +34,7 @@
         </p>
 
         <p>
-          Come join us at Developers Conference 2018 in the Conference hall of
+          Come join us at Developers Conference 2019 in the Conference hall of
           the Flying Dodo.
         </p>
       </div>

@@ -11,9 +11,13 @@
       -->
       <div class="page-content">
         <div class="speakers-wrapper" v-if="speakers">
-          <router-link class="speaker-wrapper" v-for="speaker in speakers" :key="speaker.id"
-            :to="{ name: 'speaker', params: { id: speaker.id } }">
-            <SpeakerBox :speaker="speaker" />
+          <router-link
+            class="speaker-wrapper"
+            v-for="speaker in speakers"
+            :key="speaker.id"
+            :to="{ name: 'speaker', params: { id: speaker.id } }"
+          >
+            <SpeakerBox :speaker="speaker"/>
             <!--
               <div class="avatar">
                 <img :src="getSpeaker(speaker.id)" alt>

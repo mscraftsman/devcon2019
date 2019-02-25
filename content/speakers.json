@@ -1,0 +1,24 @@
+{
+  "speakers": [
+    {
+      "name": "Jochen Kirstätter",
+      "avatar": "https://picsum.photos/300/300"
+    },
+    {
+      "name": "Sandeep R",
+      "avatar": "https://picsum.photos/300/300"
+    },
+    {
+      "name": "Cedric Poilly",
+      "avatar": "https://picsum.photos/300/300"
+    },
+    {
+      "name": "Ish Sookun",
+      "avatar": "https://picsum.photos/300/300"
+    },
+    {
+      "name": "Chervine B",
+      "avatar": "https://picsum.photos/300/300"
+    }
+  ]
+}

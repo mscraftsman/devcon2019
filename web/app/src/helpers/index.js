@@ -31,6 +31,16 @@ export const time = function(date) {
   return hours + ":" + minutes + " " + period;
 };
 
+export const timeSafe = function(date) {
+  let time = new Date(date);
+  let hours = time.getHours();
+  hours = (hours + 24) % 24;
+  let period = hours < 12 ? "AM" : "PM";
+  hours = hours % 12 || hours;
+  let minutes = (time.getMinutes() < 10 ? "0" : "") + time.getMinutes();
+  return period + hours + minutes;
+};
+
 export const getDay = function(str) {
   const days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
   let day = new Date(str);

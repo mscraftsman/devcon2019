@@ -12,9 +12,10 @@
         <p>
           The Mauritius Makers community is a group of enthusiasts and
           passionate Makers, Hackers, Artists, Hardware Developers, Inventors,
-          Designers and Tinkerers geared primarily toward technological
-          innovation such as Electronics, Open Source Hardware, Internet Of
-          Things, Robotics, 3D Printing, Embedded Software, Hardware, Arduino,
+          Designers and Tinkerers geared primarily towards sustainable 
+          development, emerging technologies and technological innovation
+          such as Electronics, Open Source Hardware, Internet Of Things,
+          Robotics, 3D Printing, Embedded Software, Hardware, Arduino,
           Small Board Computers, SBC like the Raspbery PI, Printed Circuit Board
           design, DIY, Wood Work, Metal Work, Computer Aided Designing,
           Wearables(can be extended to Cosplayers).
@@ -34,7 +35,7 @@
         </p>
 
         <p>
-          Come join us at Developers Conference 2018 in the Conference hall of
+          Come join us at Developers Conference 2019 in the Conference hall of
           the Flying Dodo.
         </p>
       </div>

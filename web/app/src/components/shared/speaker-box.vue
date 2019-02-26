@@ -1,5 +1,5 @@
 <template>
-  <div class="speaker-box">
+  <div class="speaker-box" :id="speaker.fullName">
     <div class="speaker-image">
       <img :src="speaker.profilePicture" alt>
     </div>
@@ -8,8 +8,10 @@
       <div class="name">{{ speaker.fullName }}</div>
       <div class="occupation">{{ speaker.tagLine }}</div>
       <div class="alias"></div>
-      <div class="talk-count" v-if="speaker.sessions.length > 1">{{
-        speaker.sessions.length }} talks</div>
+      <div class="talk-count" v-if="speaker.sessions.length > 1">
+        {{
+        speaker.sessions.length }} talks
+      </div>
       <div class="talk-count" v-else>{{ speaker.sessions.length }} talk</div>
       <div class="social-media-wrapper"></div>
     </div>
@@ -24,11 +26,11 @@ export default {
 
 <style lang="scss" scoped>
 .speaker-box {
-  --width: 215px;
+  --width: 170px;
   //   --size: 215px;
   --spacing: 10px;
 
-  width: calc(var(--width) * 1.5);
+  width: calc(var(--width) * 1.7);
   z-index: 10;
   height: calc(var(--width) * 2.5);
   position: relative;
@@ -36,6 +38,7 @@ export default {
   .speaker-image {
     height: 100%;
     position: absolute;
+    background: black;
     &:after {
       content: " ";
     }
@@ -44,8 +47,9 @@ export default {
     transform: skew(-18deg);
     border-radius: 30px;
     overflow: hidden;
-    width: var(--width);
+    width: calc(var(--width) * 1.2);
     left: 0;
+    transition: all 0.3s ease-out;
 
     img {
       display: block;
@@ -60,13 +64,15 @@ export default {
     position: absolute;
     background: linear-gradient(transparent, transparent, #000);
 
-    width: var(--width);
+    width: calc(var(--width) * 1.2);
     height: 100%;
     border-radius: 30px;
 
     transform-origin: left bottom;
     transform: skew(-18deg);
+    transition: all 0.3s ease-out;
   }
+
   .speaker-meta {
     letter-spacing: 2px;
     text-shadow: 0 1px 2px #000;
@@ -75,7 +81,7 @@ export default {
     left: 20%;
 
     .name {
-      font-size: 36px;
+      font-size: 25px;
       font-weight: 800;
       padding-bottom: var(--spacing);
       text-align: right;
@@ -99,12 +105,7 @@ export default {
       text-shadow: none;
       padding-bottom: var(--spacing);
       text-transform: uppercase;
-      background: linear-gradient(
-        to right,
-        rgb(252, 218, 159) 0%,
-        rgb(255, 95, 56) 0%,
-        rgb(192, 37, 51) 100%
-      );
+      background: linear-gradient(to right, rgb(252, 218, 159) 0%, rgb(255, 95, 56) 0%, rgb(192, 37, 51) 100%);
     }
     .social-media-wrapper {
     }
@@ -126,14 +127,14 @@ export default {
     background-size: contain;
     transform: translate(0px, 10px);
     opacity: 0.5;
-    transition: all 0.5s ease-out;
+    transition: all 0.2s ease-in;
   }
   &:after {
     content: " ";
     z-index: -1;
     width: var(--width);
     height: calc(var(--width) * 0.75);
-    left: calc(var(--width) * 1.2);
+    left: calc(var(--width) * 1.35);
     top: 0px;
     // left: 0;
     // margin-left: -calc(var(--width) / 2);
@@ -145,7 +146,36 @@ export default {
     background-size: contain;
     transform: translate(0px, 10px);
     opacity: 0.5;
-    transition: all 0.5s ease-out;
+    transition: all 0.2s ease-in;
+  }
+
+  &:hover {
+    &:before {
+      // width: var(--width);
+      // height: calc(var(--width) * 1.9);
+      // left: 50%;
+      // top: calc(var(--width) / 2);
+      // left: 0;
+      // margin-left: -calc(var(--width) / 2);
+
+      transform: translate(-15px, 10px);
+      opacity: 1;
+      transition: all 0.3s ease-out;
+    }
+    &:after {
+      // width: var(--width);
+      // height: calc(var(--width) * 0.75);
+      // left: calc(var(--width) * 1.2);
+      // top: 0px;
+
+      transform: translate(15px, 10px);
+      opacity: 1;
+      transition: all 0.3s ease-out;
+    }
+  }
+
+  @media screen and (max-width: $tablet-portrait) {
+    --width: 100px;
   }
 }
 </style>

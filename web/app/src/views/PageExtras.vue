@@ -4,8 +4,8 @@
 
     <extra-community></extra-community>
     <extra-gdg></extra-gdg>
-    <!-- <extra-lugm></extra-lugm> -->
-    <!-- <extra-maker></extra-maker> -->
+    <extra-lugm></extra-lugm>
+    <extra-maker></extra-maker>
     <!-- <extra-symfony></extra-symfony> -->
     <sponsorship></sponsorship>
   </div>

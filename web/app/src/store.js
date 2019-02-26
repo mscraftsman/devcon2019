@@ -5,9 +5,9 @@ import { extractData } from "@/helpers";
 
 Vue.use(Vuex);
 
-const sessionizeSessions = "https://sessionize.com/api/v2/m1l86vhf/view/Sessions";
-const sessionizeSpeakers = "https://sessionize.com/api/v2/m1l86vhf/view/Speakers";
-
+const sessionizeSessions = "https://sessionize.com/api/v2/rn3ak6vi/view/Sessions";
+const sessionizeSpeakers = "https://sessionize.com/api/v2/rn3ak6vi/view/Speakers";
+// https://sessionize.com/api/v2/rn3ak6vi/view/sessions
 export const SET_SPEAKERS = "SET_SPEAKERS";
 export const SET_SPONSORS = "SET_SPONSORS";
 export const SET_STATS = "SET_STATS";
@@ -25,7 +25,7 @@ export default new Vuex.Store({
   state: {
     pageSessions: {
       scrollPosition: 0,
-      active: "Thursday"
+      active: "Thursday",
     },
     speakers: [],
     sponsors: [],
@@ -36,9 +36,9 @@ export default new Vuex.Store({
       data: {
         id: "1234",
         name: "Dummy Name",
-        photo: ""
-      }
-    }
+        photo: "",
+      },
+    },
   },
   getters: {
     getSpeakers: function(state) {
@@ -68,7 +68,7 @@ export default new Vuex.Store({
     },
     getPageSessionsScrollPosition: function(state) {
       return state.pageSessions.scrollPosition;
-    }
+    },
   },
   mutations: {
     [SET_SPEAKERS](state, speakers) {
@@ -88,7 +88,7 @@ export default new Vuex.Store({
     },
     [SET_STATS](state, stats) {
       state.stats = stats;
-    }
+    },
   },
   actions: {
     [FETCH_SESSIONS]({ commit }) {
@@ -137,6 +137,6 @@ export default new Vuex.Store({
         .catch(error => {
           throw new Error("Error should be caught by Vue global error handler." + error);
         });
-    }
-  }
+    },
+  },
 });

@@ -136,24 +136,24 @@ self.__precacheManifest = [
     "url": "/index.html"
   },
   {
-    "revision": "bd15a7b055463007de9b58c89d5740aa",
-    "url": "/BingSiteAuth.xml"
-  },
-  {
     "revision": "5a7b3cf9c6a0d896cb102a726efb7f71",
     "url": "/browserconfig.xml"
   },
   {
-    "revision": "47ee867ad1fcfc2fc6471d43774cdc9e",
-    "url": "/googlefffaff65ccc044f0.html"
+    "revision": "bd15a7b055463007de9b58c89d5740aa",
+    "url": "/BingSiteAuth.xml"
+  },
+  {
+    "revision": "0e77d90a4afeaf4f6a3c6076701d7e86",
+    "url": "/crossdomain.xml"
   },
   {
     "revision": "9e89f96748c1aefc2d394e31f88fd9e1",
     "url": "/humans.txt"
   },
   {
-    "revision": "0e77d90a4afeaf4f6a3c6076701d7e86",
-    "url": "/crossdomain.xml"
+    "revision": "47ee867ad1fcfc2fc6471d43774cdc9e",
+    "url": "/googlefffaff65ccc044f0.html"
   },
   {
     "revision": "46fbe06b1dbdf67f8b051dec38e2c8ae",
@@ -164,12 +164,12 @@ self.__precacheManifest = [
     "url": "/img/banners/MSCC-logo-inverted.svg"
   },
   {
-    "revision": "eebc8c2da043bfbe96b3238260fe0c64",
-    "url": "/img/sponsors/aerow.png"
-  },
-  {
     "revision": "075c6e0e929f528f86311f6fe721c90a",
     "url": "/img/sponsors/BrandMark_Telerik_Horizontal_Big_Color.png"
+  },
+  {
+    "revision": "eebc8c2da043bfbe96b3238260fe0c64",
+    "url": "/img/sponsors/aerow.png"
   },
   {
     "revision": "f92b91fa50e604e3097f688889412415",
@@ -184,16 +184,16 @@ self.__precacheManifest = [
     "url": "/img/sponsors/Ceridian_rgb.png"
   },
   {
-    "revision": "b7b4e77608dd5e3ef75febffc97f0fd0",
-    "url": "/img/sponsors/Checkout_Large.png"
-  },
-  {
     "revision": "9b3834344dee03ae4e4259d9c1fb1c92",
     "url": "/img/sponsors/Ceridian.jpg"
   },
   {
     "revision": "462020c6dd8f8f6c31930a777ed9e86a",
     "url": "/img/sponsors/CsharpCornerSiteLogo.png"
+  },
+  {
+    "revision": "b7b4e77608dd5e3ef75febffc97f0fd0",
+    "url": "/img/sponsors/Checkout_Large.png"
   },
   {
     "revision": "9a9e7be6cdac8e4cc646e1f7aabb1c0e",
@@ -204,16 +204,12 @@ self.__precacheManifest = [
     "url": "/img/sponsors/eventstore.svg"
   },
   {
-    "revision": "1ead179be0e9c3aab744119ec84655ca",
-    "url": "/img/sponsors/ictio.png"
-  },
-  {
     "revision": "758572d5ecd4dbf67773deaebacdcfcd",
     "url": "/img/sponsors/iame.svg"
   },
   {
-    "revision": "856cab912ded136de723e526c8ab5f04",
-    "url": "/img/sponsors/jetbrains.svg"
+    "revision": "1ead179be0e9c3aab744119ec84655ca",
+    "url": "/img/sponsors/ictio.png"
   },
   {
     "revision": "42e9acfa2ed9fd3cceaadd93e37a01c1",
@@ -224,12 +220,12 @@ self.__precacheManifest = [
     "url": "/img/sponsors/bookeu.png"
   },
   {
-    "revision": "10d8c759a251ab11bfdf55a9d4fb35f8",
-    "url": "/img/sponsors/expatblog-logo-flat-vert-web.png"
+    "revision": "62be14544bd67743ddcf341d0b6e2ef9",
+    "url": "/img/sponsors/elastic.png"
   },
   {
-    "revision": "33d073a28b17dd56e7e3d8a18936f91b",
-    "url": "/img/sponsors/extension_interactive.png"
+    "revision": "10d8c759a251ab11bfdf55a9d4fb35f8",
+    "url": "/img/sponsors/expatblog-logo-flat-vert-web.png"
   },
   {
     "revision": "b94eeb67ea739ef4778d35d9b36319cd",
@@ -240,12 +236,16 @@ self.__precacheManifest = [
     "url": "/img/sponsors/Graphics_Temple.jpg"
   },
   {
-    "revision": "c8aee2e84a557295937825ab1552df41",
-    "url": "/img/sponsors/ios.jpg"
+    "revision": "33d073a28b17dd56e7e3d8a18936f91b",
+    "url": "/img/sponsors/extension_interactive.png"
   },
   {
     "revision": "c9c2604633030f3010ec57ecf500975f",
     "url": "/img/sponsors/jetbrains.png"
+  },
+  {
+    "revision": "c8aee2e84a557295937825ab1552df41",
+    "url": "/img/sponsors/ios.jpg"
   },
   {
     "revision": "7d29af3d140a6c26edb20f665d510317",
@@ -256,12 +256,16 @@ self.__precacheManifest = [
     "url": "/img/sponsors/dsogroup.jpg"
   },
   {
+    "revision": "b546fc0fe685d41cebf2b781dc87125b",
+    "url": "/img/sponsors/logo-ceridian.png"
+  },
+  {
     "revision": "bd3bdbee59672c09d387f7c2d77edaa8",
     "url": "/img/sponsors/Graphics_Temple.png"
   },
   {
-    "revision": "b546fc0fe685d41cebf2b781dc87125b",
-    "url": "/img/sponsors/logo-ceridian.png"
+    "revision": "856cab912ded136de723e526c8ab5f04",
+    "url": "/img/sponsors/jetbrains.svg"
   },
   {
     "revision": "fcd324449f71f0aefc6622c1cfd1b4de",
@@ -284,64 +288,68 @@ self.__precacheManifest = [
     "url": "/img/sponsors/pluralsight-logo-black-500x155-v1.png"
   },
   {
-    "revision": "a8d11a246cf9350f9c4487903d5d399a",
-    "url": "/img/sponsors/SIL-logo_takes-you-to-new-heights.png"
-  },
-  {
     "revision": "e3611487ea2f36226fbe09c867b364f4",
     "url": "/img/sponsors/SpoonLogov4_0.png"
   },
   {
-    "revision": "81285897fc73dd499deed699180d8845",
-    "url": "/img/sponsors/white_aerow.png"
+    "revision": "a8d11a246cf9350f9c4487903d5d399a",
+    "url": "/img/sponsors/SIL-logo_takes-you-to-new-heights.png"
   },
   {
     "revision": "eceb95e926d94b15cb09107ac9d6c53d",
     "url": "/img/sponsors/white_castille.png"
   },
   {
-    "revision": "d62406053623d977469e892f2942c5da",
-    "url": "/img/sponsors/white_dsogroup.png"
+    "revision": "7ac22e872db615ef11199e26d548796b",
+    "url": "/img/sponsors/white_elastic.png"
   },
   {
     "revision": "f43613442c085f16694c537b60919800",
     "url": "/img/sponsors/white_Esokia_logo_RGB.png"
   },
   {
+    "revision": "81285897fc73dd499deed699180d8845",
+    "url": "/img/sponsors/white_aerow.png"
+  },
+  {
     "revision": "50941e74bbe481b23667856416faaf95",
     "url": "/img/sponsors/white_eventstore.svg"
+  },
+  {
+    "revision": "d62406053623d977469e892f2942c5da",
+    "url": "/img/sponsors/white_dsogroup.png"
   },
   {
     "revision": "d4bb8794afb0a27b9d621cb6b1d44c27",
     "url": "/img/sponsors/white_extension_interactive.png"
   },
   {
-    "revision": "23dcfa70400c86c175b5f0baeed28fb1",
-    "url": "/img/sponsors/white_Graphics_Temple.png"
+    "revision": "cc68c423c48ecb44df779f77952258fa",
+    "url": "/img/sponsors/white_ictio.png"
   },
   {
     "revision": "005491f99dac320ac0a710db6557f8a2",
     "url": "/img/sponsors/white_lsldigital.png"
   },
   {
-    "revision": "cc68c423c48ecb44df779f77952258fa",
-    "url": "/img/sponsors/white_ictio.png"
+    "revision": "23dcfa70400c86c175b5f0baeed28fb1",
+    "url": "/img/sponsors/white_Graphics_Temple.png"
   },
   {
-    "revision": "dbfb702157cad8fd1512f00fb3207186",
-    "url": "/img/sponsors/white_MCB-Logo.png"
-  },
-  {
-    "revision": "f35d41df64d2ffdbc1cae792a29b6abe",
-    "url": "/robots.txt"
+    "revision": "cd6dfec27da2b776a8aef25b1e0b9f42",
+    "url": "/img/sponsors/white_SpoonLogov4_0.png"
   },
   {
     "revision": "25fad3605e005ef0d760ae9f67ce1849",
     "url": "/img/sponsors/white_SDWLogo.png"
   },
   {
-    "revision": "cd6dfec27da2b776a8aef25b1e0b9f42",
-    "url": "/img/sponsors/white_SpoonLogov4_0.png"
+    "revision": "dbfb702157cad8fd1512f00fb3207186",
+    "url": "/img/sponsors/white_MCB-Logo.png"
+  },
+  {
+    "revision": "8ca05b80b0bd3bf68540f7087b0d6435",
+    "url": "/img/past-events/gwab2016.jpeg"
   },
   {
     "revision": "eac1362969217a4952e8f4b0969d0823",
@@ -352,20 +360,20 @@ self.__precacheManifest = [
     "url": "/img/past-events/xamarin-2016.jpeg"
   },
   {
-    "revision": "8ca05b80b0bd3bf68540f7087b0d6435",
-    "url": "/img/past-events/gwab2016.jpeg"
+    "revision": "f35d41df64d2ffdbc1cae792a29b6abe",
+    "url": "/robots.txt"
   },
   {
     "revision": "75df37330bc10b7000914b3d0a35cd47",
     "url": "/img/sponsors/logo_lio.jpg"
   },
   {
-    "revision": "87acc4d2615f190810a5e3b856738aa5",
-    "url": "/img/sponsors/MariaDB.png"
-  },
-  {
     "revision": "604d9bc1ec9668097beb479b672ee67b",
     "url": "/img/sponsors/lexpress.jpg"
+  },
+  {
+    "revision": "87acc4d2615f190810a5e3b856738aa5",
+    "url": "/img/sponsors/MariaDB.png"
   },
   {
     "revision": "c2c87d02f9a68383835f98af934a8a5c",
@@ -376,6 +384,10 @@ self.__precacheManifest = [
     "url": "/img/sponsors/OReilly.jpg"
   },
   {
+    "revision": "88b35a29f7f6f7d0a665839aac743c27",
+    "url": "/img/sponsors/SDWLogo.png"
+  },
+  {
     "revision": "5f1b3a3bd6af7cd4a7bc83c8e04124cf",
     "url": "/img/sponsors/redgate_logo_2016.png"
   },
@@ -384,20 +396,16 @@ self.__precacheManifest = [
     "url": "/img/sponsors/Turbine_logo_quad.jpg"
   },
   {
-    "revision": "88b35a29f7f6f7d0a665839aac743c27",
-    "url": "/img/sponsors/SDWLogo.png"
-  },
-  {
     "revision": "5ba8ce3871f928b59e7d1254ccb0bfdd",
     "url": "/img/sponsors/RossConsultingLogo.png"
   },
   {
-    "revision": "93f04600c09b1b4b480b5075c6b5d28c",
-    "url": "/img/sponsors/nVisionIT.png"
-  },
-  {
     "revision": "4dfb0dc4864c50c5a1bd5c13206306b2",
     "url": "/img/sponsors/MaurevaBleu.png"
+  },
+  {
+    "revision": "93f04600c09b1b4b480b5075c6b5d28c",
+    "url": "/img/sponsors/nVisionIT.png"
   },
   {
     "revision": "9ef33939c45d4e9b0ec2eae42c645210",
@@ -460,16 +468,16 @@ self.__precacheManifest = [
     "url": "/img/banners/facebook-cover.jpg"
   },
   {
-    "revision": "f3a2b3bfedab513766bf53d3ea888da8",
-    "url": "/img/sponsors/Ceridian-Lockup-Large.jpg"
-  },
-  {
     "revision": "932ef1a6b215e387c9f06ef8d1abe491",
     "url": "/img/past-events/devcon_2018.jpg"
   },
   {
     "revision": "599ecf430f7fff51a3f54ab7157e6e1d",
     "url": "/img/landing-bg.jpg"
+  },
+  {
+    "revision": "f3a2b3bfedab513766bf53d3ea888da8",
+    "url": "/img/sponsors/Ceridian-Lockup-Large.jpg"
   },
   {
     "revision": "03aa3347e87123a2dd85064f0640d079",
@@ -484,12 +492,12 @@ self.__precacheManifest = [
     "url": "/img/sponsors/PDF_Print_LogoBigBangERP_500x500.pdf"
   },
   {
-    "revision": "68397be335500b867fcb5a375c5df5b0",
-    "url": "/img/sponsors/EPS_Web_LogoBigBangERP_500x500.eps"
-  },
-  {
     "revision": "3b77c38b2ffceaebcf72801f3086e035",
     "url": "/img/intro.jpg"
+  },
+  {
+    "revision": "68397be335500b867fcb5a375c5df5b0",
+    "url": "/img/sponsors/EPS_Web_LogoBigBangERP_500x500.eps"
   },
   {
     "revision": "b666c43e843061a8f6e760bf627971a6",

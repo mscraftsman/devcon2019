@@ -1,12 +1,21 @@
 <template>
   <div class="main-menu-wrapper">
     <ul>
-      <li><router-link :to="{ name: 'sessions' }">Sessions</router-link></li>
-      <li><router-link :to="{ name: 'extras' }">Extras</router-link></li>
+      <li>
+        <router-link :to="{ name: 'speakers' }">Speakers</router-link>
+      </li>
+      <li>
+        <router-link :to="{ name: 'extras' }">Extras</router-link>
+      </li>
+      <li>
+        <router-link :to="{ name: 'press' }">Press</router-link>
+      </li>
       <li>
         <router-link :to="{ name: 'lifeatdevcon' }">Life at devcon</router-link>
       </li>
-      <li><a href="#">MCB Inovapp</a></li>
+      <!-- <li>
+        <a href="#">MCB Inovapp</a>
+      </li>-->
     </ul>
   </div>
 </template>

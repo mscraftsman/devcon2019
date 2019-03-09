@@ -33,11 +33,16 @@
           <p>Speaking about :</p>
         </div>
       </div>
-
-      <div class="session-title" v-for="session in speaker.sessions" :key="session.name">
-        <router-link :to="{ name: 'session', params: { id: session.id } }">{{
-          session.name }}</router-link>
+      <div class="session-title">
+        <a href="#">To be revealed soon... !</a>
       </div>
+
+      <!-- <div class="session-title" v-for="session in speaker.sessions" :key="session.name">
+        <router-link :to="{ name: 'session', params: { id: session.id } }">
+          {{
+          session.name }}
+        </router-link>
+      </div>-->
     </div>
     <div class="page-content" v-else>finding speaker details..</div>
   </div>
@@ -50,36 +55,27 @@ import { FETCH_SESSIONS, FETCH_SPEAKERS } from "@/store";
 
 export default {
   methods: {
-    ...mapActions([FETCH_SESSIONS, FETCH_SPEAKERS]),
-    time: function(date) {
-      // return moment(date).format("LT");
-      return date;
-    },
-    getDay: function(str) {
-      // return moment(str).format("ddd");
-      return str;
-    }
+    ...mapActions([FETCH_SESSIONS, FETCH_SPEAKERS])
   },
   computed: {
     ...mapGetters({
       sessions: "getSessions",
       speakers: "getSpeakers"
     }),
-    id: function() {
+    id: function () {
       return this.$route.params.id;
     },
-    speaker: function() {
+    speaker: function () {
       if (this.speakers.length === 0) {
         this.FETCH_SPEAKERS();
       }
-      console.log(this.id);
-      let theSpeaker = this.speakers.filter(speaker => speaker.id === this.id);
-      return theSpeaker[0];
+      let theSpeaker = this.speakers.find(speaker => speaker.id === this.id);
+      return theSpeaker;
     },
-    session: function() {
+    session: function () {
       let sessions = this.sessions
         .map(groups => groups.sessions)
-        .reduce(function(acc, curr) {
+        .reduce(function (acc, curr) {
           return [...acc, ...curr];
         }, []);
       let session = sessions.find(sess => (sess.id = this.id));
@@ -124,8 +120,7 @@ a.back {
   // grid-area: back;
   text-align: left;
   // margin-top: 5px;
-  transform: translateX(calc(var(--backsize) / 2 * -1))
-    translateY(var(--backsize));
+  transform: translateX(calc(var(--backsize) / 2 * -1)) translateY(var(--backsize));
   position: absolute;
   cursor: pointer;
 

@@ -11,9 +11,13 @@
       -->
       <div class="page-content">
         <div class="speakers-wrapper" v-if="speakers">
-          <router-link class="speaker-wrapper" v-for="speaker in speakers" :key="speaker.id"
-            :to="{ name: 'speaker', params: { id: speaker.id } }">
-            <SpeakerBox :speaker="speaker" />
+          <router-link
+            class="speaker-wrapper"
+            v-for="speaker in speakers"
+            :key="speaker.id"
+            :to="{ name: 'speaker', params: { id: speaker.id } }"
+          >
+            <SpeakerBox :speaker="speaker"/>
             <!--
               <div class="avatar">
                 <img :src="getSpeaker(speaker.id)" alt>
@@ -33,19 +37,14 @@ import { mapActions, mapGetters } from "vuex";
 import { time as timeHelper, getDay as getDayHelper } from "@/helpers";
 
 export default {
-  data() {
-    return {};
-  },
   methods: {
-    ...mapActions(["fetchSessions", "fetchSpeakers"]),
-    getSpeaker: function(id) {
+    ...mapActions(["FETCH_SESSIONS", "FETCH_SPEAKERS"]),
+    getSpeaker: function (id) {
       if (this.speakers.length === 0) {
-        this.fetchSpeakers();
+        this.FETCH_SPEAKERS();
       }
-      let theSpeaker = this.speakers.filter(speaker => speaker.id === id);
-      if (theSpeaker.length > 0) {
-        return theSpeaker[0].profilePicture;
-      }
+      let theSpeaker = this.speakers.find(speaker => speaker.id === id);
+      return theSpeaker.profilePicture;
     },
     time: timeHelper,
     getDay: getDayHelper
@@ -56,8 +55,8 @@ export default {
       speakers: "getSpeakers"
     })
   },
-  mounted: function() {
-    this.fetchSessions();
+  mounted: function () {
+    this.FETCH_SESSIONS();
   },
   components: {
     SpeakerBox
@@ -90,8 +89,7 @@ a.back {
   // grid-area: back;
   text-align: left;
   // margin-top: 5px;
-  transform: translateX(calc(var(--backsize) / 2 * -1))
-    translateY(var(--backsize));
+  transform: translateX(calc(var(--backsize) / 2 * -1)) translateY(var(--backsize));
   position: absolute;
 
   a {
@@ -172,6 +170,8 @@ a.back {
     grid-template-areas: "avatar name";
     grid-template-columns: var(--width) 1fr;
     align-items: center;
+    // justify-self: center;
+
     grid-gap: 10px;
     margin-bottom: 10px;
     margin-right: 20px;

@@ -5,17 +5,15 @@ import { extractData } from "@/helpers";
 
 Vue.use(Vuex);
 
-const sessionizeSessions =
-  "https://sessionize.com/api/v2/m1l86vhf/view/Sessions";
-const sessionizeSpeakers =
-  "https://sessionize.com/api/v2/m1l86vhf/view/Speakers";
-
+const sessionizeSessions = "https://sessionize.com/api/v2/rn3ak6vi/view/Sessions";
+const sessionizeSpeakers = "https://sessionize.com/api/v2/rn3ak6vi/view/Speakers";
+// https://sessionize.com/api/v2/rn3ak6vi/view/sessions
 export const SET_SPEAKERS = "SET_SPEAKERS";
 export const SET_SPONSORS = "SET_SPONSORS";
 export const SET_STATS = "SET_STATS";
 export const SET_SESSIONS = "SET_SESSIONS";
-export const SET_PAGESESSIONS_ACTIVE = "SET_PAGESESSIONS_ACTIVE"
-export const SET_PAGESESSIONS_SCROLL_POSITION = "SET_PAGESESSIONS_SCROLL_POSITION"
+export const SET_PAGESESSIONS_ACTIVE = "SET_PAGESESSIONS_ACTIVE";
+export const SET_PAGESESSIONS_SCROLL_POSITION = "SET_PAGESESSIONS_SCROLL_POSITION";
 
 export const FETCH_SESSIONS = "FETCH_SESSIONS";
 export const FETCH_SPEAKERS = "FETCH_SPEAKERS";
@@ -25,9 +23,9 @@ export const FETCH_STATS = "FETCH_STATS";
 
 export default new Vuex.Store({
   state: {
-    pageSessions:{
+    pageSessions: {
       scrollPosition: 0,
-      active: "Thursday"
+      active: "Thursday",
     },
     speakers: [],
     sponsors: [],
@@ -38,9 +36,9 @@ export default new Vuex.Store({
       data: {
         id: "1234",
         name: "Dummy Name",
-        photo: ""
-      }
-    }
+        photo: "",
+      },
+    },
   },
   getters: {
     getSpeakers: function(state) {
@@ -50,6 +48,9 @@ export default new Vuex.Store({
       return state.sponsors;
     },
     getSessions: function(state) {
+      return state.sessions;
+    },
+    getSessionsByRoom: function(state) {
       return state.sessions;
     },
     getStats: function(state) {
@@ -62,12 +63,12 @@ export default new Vuex.Store({
     getUser: function(state) {
       return state.user;
     },
-    getPageSessionsActive: function(state){
-      return state.pageSessions.active
+    getPageSessionsActive: function(state) {
+      return state.pageSessions.active;
     },
-    getPageSessionsScrollPosition: function(state){
-      return state.pageSessions.scrollPosition
-    }
+    getPageSessionsScrollPosition: function(state) {
+      return state.pageSessions.scrollPosition;
+    },
   },
   mutations: {
     [SET_SPEAKERS](state, speakers) {
@@ -79,15 +80,15 @@ export default new Vuex.Store({
     [SET_SESSIONS](state, sessions) {
       state.sessions = sessions;
     },
-    [SET_PAGESESSIONS_ACTIVE](state,active) {
+    [SET_PAGESESSIONS_ACTIVE](state, active) {
       state.pageSessions.active = active;
     },
-    [SET_PAGESESSIONS_SCROLL_POSITION](state,scrollPosition) {
+    [SET_PAGESESSIONS_SCROLL_POSITION](state, scrollPosition) {
       state.pageSessions.scrollPosition = scrollPosition;
     },
     [SET_STATS](state, stats) {
       state.stats = stats;
-    }
+    },
   },
   actions: {
     [FETCH_SESSIONS]({ commit }) {
@@ -97,9 +98,7 @@ export default new Vuex.Store({
           commit(SET_SESSIONS, payload);
         })
         .catch(error => {
-          throw new Error(
-            "Error should be caught by Vue global error handler." + error
-          );
+          throw new Error("Error should be caught by Vue global error handler." + error);
         });
     },
     [FETCH_SPEAKERS]({ commit }) {
@@ -109,9 +108,7 @@ export default new Vuex.Store({
           commit(SET_SPEAKERS, payload);
         })
         .catch(error => {
-          throw new Error(
-            "Error should be caught by Vue global error handler." + error
-          );
+          throw new Error("Error should be caught by Vue global error handler." + error);
         });
     },
 
@@ -127,9 +124,7 @@ export default new Vuex.Store({
           return sponsors;
         })
         .catch(error => {
-          throw new Error(
-            "Error should be caught by Vue global error handler." + error
-          );
+          throw new Error("Error should be caught by Vue global error handler." + error);
         });
     },
 
@@ -140,10 +135,8 @@ export default new Vuex.Store({
         .then(({ feed }) => extractData(feed.entry))
         .then(stats => commit(SET_STATS, stats))
         .catch(error => {
-          throw new Error(
-            "Error should be caught by Vue global error handler." + error
-          );
+          throw new Error("Error should be caught by Vue global error handler." + error);
         });
-    }
-  }
+    },
+  },
 });

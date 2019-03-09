@@ -20,35 +20,47 @@
       <slide class="slide">
         <div class="slide-item slide-quote">
           The
-          <span class="mega-rainbow">greatest</span> conference in the air.
+          <span class="mega-rainbow">most important</span> tech conference in Mauritius.
         </div>
         <div class="slide-item slide-button button">
-          <button-waw :theme="'#97d0e1'" :size="'80px'" :link="'#'">Register now</button-waw>
+          <button-waw :theme="'#97d0e1'" :size="'70px'" :link="'https://www.meetup.com/MauritiusSoftwareCraftsmanshipCommunity/events/258586831/'">
+            Register
+            now
+          </button-waw>
         </div>
       </slide>
       <slide class="slide">
         <div class="slide-item slide-quote">
-          The
-          <span class="mega-rainbow">Best</span> conference in the water.
+          <span class="mega-rainbow">For</span> Developers
+          <br>
+          <span class="mega-rainbow">by</span> Developers
+        </div>
+        <div class="slide-item slide-button button">
+          <button-waw :theme="'#97d0e1'" :size="'70px'" :link="'/life-at-devcon'">View past events</button-waw>
         </div>
       </slide>
       <slide class="slide">
         <div class="slide-item slide-quote">
-          The
-          <span class="mega-rainbow">most woke</span> conference on ice.
+          <span class="mega-rainbow">Networking</span> with Renown Speakers
         </div>
         <div class="slide-item slide-button button">
-          <button-waw :theme="'#97d0e1'" :size="'80px'" :link="'#'">Register now</button-waw>
+          <button-waw :theme="'#97d0e1'" :size="'70px'" :link="'https://www.meetup.com/MauritiusSoftwareCraftsmanshipCommunity/events/258586831/'">
+            Register
+            now
+          </button-waw>
         </div>
       </slide>
       <slide class="slide">
         <div class="slide-item slide-quote">
-          Innovative
-          <span class="mega-rainbow">Diverse</span> and
-          <span class="mega-rainbow">Inclusive</span> are just the beginnings.
+          <span class="mega-rainbow">3 Days</span> of Knowledge Transfer
+          <span class="mega-rainbow">Free</span>
+          of Charge
         </div>
         <div class="slide-item slide-button button">
-          <button-waw :theme="'#97d0e1'" :size="'80px'" :link="'#'">Register now</button-waw>
+          <button-waw :theme="'#97d0e1'" :size="'70px'" :link="'https://www.meetup.com/MauritiusSoftwareCraftsmanshipCommunity/events/258586831/'">
+            Register
+            now
+          </button-waw>
         </div>
       </slide>
     </carousel>
@@ -158,12 +170,12 @@
 </style>
 
 <script>
-import { Carousel, Slide } from 'vue-carousel';
+import { Carousel, Slide } from "vue-carousel";
 
 export default {
   components: {
     Carousel,
     Slide
   }
-}
+};
 </script>

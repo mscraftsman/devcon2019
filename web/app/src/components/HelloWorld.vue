@@ -5,9 +5,10 @@
     </div>
     <div class="btnCont">
       <a href="https://github.com/mscraftsman/devcon2019/raw/master/assets/DevCon2019-SponsorshipProposal.pdf"
-         download class="sponsor-button"><img src="@/assets/btn_download-brochure.png" alt=""></a>
-      <a href="https://sessionize.com/devcon-mauritius-2019/"
-         download class="cfp-button"><img src="@/assets/btn_callforpaper.png" alt=""></a>
+        download class="sponsor-button"><img src="@/assets/btn_download-brochure.png"
+          alt=""></a>
+      <a href="https://sessionize.com/devcon-mauritius-2019/" download class="cfp-button"><img
+          src="@/assets/btn_callforpaper.png" alt=""></a>
     </div>
   </div>
 </template>
@@ -38,7 +39,8 @@ export default {
   position: absolute;
   bottom: 9vh;
 }
-.sponsor-button, .cfp-button {
+.sponsor-button,
+.cfp-button {
   padding: 20px 30px;
   font-size: 20px;
   border-radius: 10px;
@@ -59,7 +61,8 @@ export default {
 }
 
 @media screen and (max-width: 728px) {
-  .sponsor-button, .cfp-button {
+  .sponsor-button,
+  .cfp-button {
     left: 50%;
     padding: 15px;
     font-size: 15px;

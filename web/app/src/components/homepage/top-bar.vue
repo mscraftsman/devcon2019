@@ -1,27 +1,41 @@
 <template>
   <div class="home-component top-bar-wrapper">
-    <div class="container">
+    <div class="container" v-view="viewHandler">
       <div class="top-bar-container">
         <div class="rendez-vous-wrapper">
-          11<sup>th</sup> - 13<sup>th</sup> April at Voila Bagatelle
+          11
+          <sup>th</sup> - 13
+          <sup>th</sup> April at Voila Bagatelle
         </div>
-        <div
-          class="construction-wrapper"
-        >⚠️ Website under construction. Showing last year's data temporarily</div>
+
         <div class="links-wrapper">
           <ul>
             <li>
-              <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="#sponsors">Sponsors</a>
+              <router-link :to="{ name: 'lifeatdevcon' }">About</router-link>
             </li>
           </ul>
         </div>
       </div>
     </div>
+    <!-- set progressbar -->
+    <vue-progress-bar ref="pageloader"></vue-progress-bar>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    viewHandler(e) {
+      let el = this.$refs.pageloader.$el;
+      if (e.type == "enter") {
+        el.style.position = "relative";
+      } else if (e.type == "exit") {
+        el.style.position = "fixed";
+      }
+    }
+  }
+};
+</script>
 
 <style lang="scss" scoped>
 .top-bar-wrapper {

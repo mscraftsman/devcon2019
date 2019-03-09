@@ -2,7 +2,8 @@
   <div class="home-component devcon-stats-wrapper">
     <div class="container">
       <div class="devcon-stats-container">
-        <div class="stat-wrapper" v-if="getStats" v-for="(stats, index) in getStats" :key="index">
+        <div class="stat-wrapper" v-if="getStats" v-for="(stats, index) in getStats"
+          :key="index">
           <div class="number">{{ stats.number }}</div>
           <div class="label">{{ stats.name }}</div>
         </div>
@@ -17,14 +18,6 @@ import { mapGetters, mapActions } from "vuex";
 import { FETCH_STATS } from "@/store";
 
 export default {
-  data() {
-    return {
-      sampleStats: [
-        { "name": "Event One", "number": "1" },
-        { "name": "Event Two Edited", "number": "2" }
-      ]
-    }
-  },
   created() {
     this.FETCH_STATS();
   },
@@ -44,9 +37,9 @@ export default {
 }
 .devcon-stats-container {
   display: grid;
-  // justify-content: space-around;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-row-gap: 100px;
+  justify-items:center;
 
   .stat-wrapper {
     position: relative;

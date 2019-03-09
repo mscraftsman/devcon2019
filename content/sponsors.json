@@ -1,0 +1,28 @@
+{
+  "sponsors": {
+    "gold": [
+      {
+        "name": "Jochen Kirstätter",
+        "website": "https://google.com"
+      },
+      {
+        "name": "Chervine B",
+        "website": "https://google.com"
+      }
+    ],
+    "silver": [
+      {
+        "name": "Sandeep R",
+        "website": "https://google.com"
+      },
+      {
+        "name": "Cedric Poilly",
+        "website": "https://google.com"
+      },
+      {
+        "name": "Ish Sookun",
+        "website": "https://google.com"
+      }
+    ]
+  }
+}

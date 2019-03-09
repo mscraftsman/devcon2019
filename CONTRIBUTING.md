@@ -17,8 +17,7 @@ The following is a set of guidelines for contributing to DevCon2019. These are m
 - HTML/CSS 😜
 - Vuejs + Vuex
 - Golang 1.11
-- Netlify CI (for dev)
-- Google Spreadsheet as a CMS
+- Google Spreadsheet as a CMS(sponsors and stats)
 
 ## 1.2 Theme : Ice & Fire
 
@@ -26,6 +25,8 @@ The following is a set of guidelines for contributing to DevCon2019. These are m
 
 - Download the Desktop PSD [here](https://drive.google.com/drive/folders/14yEFxL-sYgp3TxDfLz5_khvm35856jpl?usp=sharing)
 - Download the Mobile PSD [here](https://drive.google.com/open?id=1IYo5jyR9RBM3pCqej2qh3FH0VRqTvcX4)
+- Download the Page Extras PSD [here](https://drive.google.com/drive/u/1/folders/14yEFxL-sYgp3TxDfLz5_khvm35856jpl)
+- Download the Schedule Page PSD [here](https://drive.google.com/drive/u/1/folders/14yEFxL-sYgp3TxDfLz5_khvm35856jpl)
 
 # 2. Where to begin
 
@@ -37,15 +38,15 @@ The following is a set of guidelines for contributing to DevCon2019. These are m
 
 1. [Pick an Issue](https://github.com/mscraftsman/devcon2019/issues) or Create an issue to help with
 2. Comment on the issue and let everyone know you'll be helping on this. (to avoid duplicates)
-3. Clone the `dev` branch and resolve the issue locally.
-4. Make a merge request to the `dev` branch
+3. Clone the `master` branch and resolve the issue locally.
+4. Make a merge request to the `master` branch
 5. One of the maintainers will review the PR and merge, else there will be comments if adjustments are required.
 
 # 4. Deployment to Staging
 
 We're using Netlify as a our 'continuous integration' thing during development.
 
-Once a maintainer merges new changes in the branch `dev-deploy`, netlify will
+Once a maintainer merges new changes in the branch `deploy`, netlify will
 automatically trigger a new build pipeline and after a few minutes the changes will be shown on the staging website.
 
 [Click here to view the staging website &raquo; ](https://youthful-panini-25fb9a.netlify.com/)

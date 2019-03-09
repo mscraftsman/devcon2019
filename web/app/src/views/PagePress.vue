@@ -7,7 +7,8 @@
           <h1 class="mega-rainbow">Press Material</h1>
           <p>
             In order to create more awareness for the Developers Conference we
-            prepared a variety of media files at your disposal. Please feel free
+            prepared a variety of media files at your disposal. Please feel
+            free
             to use the material to your liking and help us to make this an
             outstanding and remarkable developers conference.
           </p>
@@ -37,7 +38,12 @@
                   <span>{{ logo.style }}</span>
                 </div>
                 <div class="download-button">
-                  <a :href="logo.path" target="_blank" rel="noopener noreferrer" class="download">Download</a>
+                  <a
+                    :href="logo.path"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="download"
+                  >Download</a>
                 </div>
               </div>
             </div>
@@ -73,7 +79,8 @@
                     title="Developers Conference 2019 - The Biggest Tech Event
                     in Mauritius!"&gt;&lt;img src="https://conference.mscc.mu{{
                     banner.path
-                    }}" alt="Developers Conference 2019 - The Biggest Tech Event
+                    }}" alt="Developers Conference 2019 - The Biggest Tech
+                    Event
                     in Mauritius!"&gt;&lt;/a&gt;
                   </code>
                 </div>
@@ -85,54 +92,66 @@
     </div>
   </div>
 </template>
+
 <script>
 export default {
-  components: {},
-  data() {
-    return {
-      logos: [
-        {
-          name: "MSCC-logo-coloured",
-          path: "/img/banners/MSCC-logo-coloured.svg",
-          format: "SVG",
-          style: "Coloured"
-        },
-        {
-          name: "MSCC-logo-inverted",
-          path: "/img/banners/MSCC-logo-inverted.svg",
-          format: "SVG",
-          style: "Inverted"
-        },
-        {
-          name: "MSCC-logo-coloured",
-          path: "/img/banners/MSCC-logo-coloured.png",
-          format: "PNG",
-          style: "Inverted"
-        }
-      ],
-      banners: [
-        {
-          name: "720x200",
-          path: "/img/banners/720x200.png",
-          size: "720x200"
-        },
-        {
-          name: "970x90",
-          path: "/img/banners/970x90.png",
-          size: "970x90"
-        },
-        {
-          name: "409x280",
-          path: "/img/banners/409x280.png",
-          size: "409x280"
-        }
-      ]
-    };
-  },
-  computed: {},
-  methods: {}
+  created() {
+    this.logos = [
+      {
+        name: "MSCC-logo-coloured",
+        path: "/img/banners/MSCC-logo-coloured.svg",
+        format: "SVG",
+        style: "Coloured"
+      },
+      {
+        name: "MSCC-logo-inverted",
+        path: "/img/banners/MSCC-logo-inverted.svg",
+        format: "SVG",
+        style: "Inverted"
+      },
+      {
+        name: "MSCC-logo-coloured",
+        path: "/img/banners/MSCC-logo-coloured.png",
+        format: "PNG",
+        style: "Inverted"
+      }
+    ];
+    this.banners = [
+      {
+        name: "facebook-cover",
+        path: "/img/banners/facebook-cover.jpg",
+        size: "820x462"
+      },
+      {
+        name: "twitter-cover",
+        path: "/img/banners/twitter-cover.jpg",
+        size: "1500x500"
+      },
+      {
+        name: "sticker",
+        path: "/img/banners/sticker.png",
+        size: "vector"
+      },
+      // {
+      //   name: "720x200",
+      //   path: "/img/banners/720x200.png",
+      //   size: "720x200"
+      // },
+      // {
+      //   name: "970x90",
+      //   path: "/img/banners/970x90.png",
+      //   size: "970x90"
+      // },
+      // {
+      //   name: "409x280",
+      //   path: "/img/banners/409x280.png",
+      //   size: "409x280"
+      // }
+    ];
+  }
 };
 </script>
+
 <style lang="scss" scoped>
 .full-section-container {
   display: grid;

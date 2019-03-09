@@ -5,6 +5,8 @@ import Home from "./views/Home.vue";
 Vue.use(Router);
 
 export default new Router({
+  mode: "history",
+  base: process.env.BASE_URL,
   routes: [
     {
       path: "/",
@@ -35,11 +37,6 @@ export default new Router({
       path: "/life-at-devcon",
       name: "lifeatdevcon",
       component: () => import("./views/PageLifeAtDevcon.vue")
-    },
-    {
-      path: "/past-events",
-      name: "pastevents",
-      component: () => import("./views/PagePastEvents.vue")
     },
     {
       path: "/press",

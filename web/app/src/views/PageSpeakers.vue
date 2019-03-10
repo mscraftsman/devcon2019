@@ -145,7 +145,7 @@ a.back {
 .session-title {
   color: #333333;
   text-transform: uppercase;
-  font-family: var(--font-glacial);
+  font-family: var(--font);
   font-size: 40px;
   font-weight: 700;
   margin: 0 auto;
@@ -175,7 +175,7 @@ a.back {
     grid-gap: 10px;
     margin-bottom: 10px;
     margin-right: 20px;
-    font-family: var(--font-shentox);
+    font-family: var(--font);
     font-weight: 500;
     text-transform: uppercase;
     text-decoration: none;

@@ -275,7 +275,7 @@ export default {
       background: transparent;
       border: 0;
       color: var(--color-white);
-      font-family: var(--font-shentox);
+      font-family: var(--font);
       padding: 0;
       display: flex;
       align-items: center;
@@ -322,7 +322,7 @@ export default {
 .tabs-panel-content {
   // background: var(--color-white);
   // padding: 10px 20px;
-  font-family: var(--font-glacial);
+  font-family: var(--font);
 }
 
 .room-container {

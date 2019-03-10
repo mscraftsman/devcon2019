@@ -195,7 +195,7 @@ export default {
     .details {
       background: var(--color-main);
       padding: calc(var(--gutter) / 2);
-      font-family: var(--font-glacial);
+      font-family: var(--font);
       font-size: 17px;
       text-transform: uppercase;
 
@@ -261,7 +261,7 @@ export default {
     .details {
       background: $color-blue;
       padding: calc(var(--gutter) / 2);
-      font-family: var(--font-glacial);
+      font-family: var(--font);
       font-size: 17px;
       text-transform: uppercase;
 

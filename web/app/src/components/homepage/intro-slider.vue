@@ -92,8 +92,8 @@
       font-weight: 900;
 
       span {
-        font-size: 200%;
-        font-family: $font-headings;
+        font-size: 150%;
+        font-family: $font;
       }
     }
     .slide-button {

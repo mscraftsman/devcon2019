@@ -1,5 +1,5 @@
 html {
-  font-family: $font-primary;
+  font-family: $font;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -13,6 +13,8 @@ a {
     color: white;
   }
 
+  letter-spacing: 1px;
+  font-family: $font;
   &:hover {
     text-decoration: underline;
   }
@@ -25,12 +27,9 @@ a {
 
 // Headings
 
-.decovar {
-}
-
 h2 {
   font-size: 60px;
-  font-family: "Open Sans", sans-serif;
+  font-family: $font;
 
   @media screen and (max-width: $tablet) {
     font-size: 30px;
@@ -38,35 +37,23 @@ h2 {
 }
 
 .mega-rainbow {
-  font-family: $font-headings;
+  font-family: $font;
   color: rgb(255, 95, 56);
   text-align: center;
-  font-weight: 500;
-
-  transition: all 3s ease;
-  font-variation-settings: "BLDA" 800, "TRMD" 0, "TRMC" 0, "SKLD" 0, "TRML" 0,
-    "SKLA" 0, "TRMF" 0, "TRMK" 0, "BLDB" 0, "WMX2" 0, "TRMB" 0, "TRMA" 0,
-    "SKLB" 0, "TRMG" 0, "TRME" 0;
+  font-variation-settings: "wght" 200, "wdth" 200;
   text-transform: uppercase;
   letter-spacing: 2px;
-
-  &:hover {
-    transition: all 1s ease-out;
-    font-variation-settings: "BLDA" 800, "TRMD" 0, "TRMC" 0, "SKLD" 0, "TRML" 0,
-      "SKLA" 0, "TRMF" 0, "TRMK" 0, "BLDB" 0, "WMX2" 0, "TRMB" 0, "TRMA" 0,
-      "SKLB" 1000, "TRMG" 0, "TRME" 0;
-  }
 }
 
 h1,
 .home h2 {
   margin: 0 0 calc(var(--gutter) / 2) 0;
   text-transform: uppercase;
-  font-size: 75px;
+  font-size: 55px;
   line-height: 55px;
 
   @media screen and (max-width: $tablet) {
-    font-size: 55px;
+    font-size: 35px;
   }
 }
 
@@ -79,7 +66,7 @@ h2 {
   text-transform: uppercase;
   font-size: 40px;
   line-height: 55px;
-  font-family: var(--font-glacial);
+  font-family: var(--font);
   color: white;
   font-weight: 900;
   text-align: center;
@@ -107,7 +94,7 @@ h4.subtitle {
 small {
   margin: 0;
   text-transform: uppercase;
-  font-family: var(--font-shentox);
+  font-family: var(--font);
   font-size: 18px;
   color: $color-blue-light;
   display: block;
@@ -133,7 +120,7 @@ small {
   small {
     margin: 0 auto 10px;
     text-transform: uppercase;
-    font-family: var(--font-shentox);
+    font-family: var(--font);
     font-size: 18px;
     display: block;
     text-align: center;
@@ -142,7 +129,7 @@ small {
   p {
     line-height: 27px;
     font-size: 20px;
-    font-family: var(--font-glacial);
+    font-family: var(--font);
     font-weight: 300;
     color: white;
   }
@@ -158,12 +145,14 @@ small {
 
   h2 {
     text-align: initial;
+    font-family: $font;
+    font-variation-settings: "wght" 300, "wdth" 150;
   }
 
   p {
     line-height: 25px;
     font-size: 18px;
-    font-family: var(--font-glacial);
+    font-family: var(--font);
     font-weight: 300;
     color: white;
   }
@@ -173,7 +162,7 @@ small {
   grid-column: container;
 
   p {
-    font-family: var(--font-glacial);
+    font-family: var(--font);
     color: var(--color-white);
     font-weight: 300;
     font-size: 19px;

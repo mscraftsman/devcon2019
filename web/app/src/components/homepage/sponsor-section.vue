@@ -464,7 +464,7 @@ export default {
 .sponsor-section-wrapper {
   .subtitle {
     padding-top: 20px;
-    font-family: var(--font);
+    font-family: $font;
     font-weight: 900;
 
     background: linear-gradient(90deg, var(--color-start), var(--color-end));

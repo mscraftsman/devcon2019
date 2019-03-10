@@ -18,9 +18,11 @@ $color-blue-light: #97d0e1;
   --color-red-light: #ff4932;
 
   --color-green: #31e8b7;
-  --font-glacial: "Century Gothic", sans-serif;
-  --font-shentox: "Century Gothic", sans-serif;
-  --font-shentox-size-default: 18px;
+  --font: "Gingham";
+  --font-size-default: 18px;
+ // --font-glacial: "Century Gothic", sans-serif;
+ // --font-shentox: "Century Gothic", sans-serif;
+ // --font-shentox-size-default: 18px;
   --gutter: 20px;
 }
 
@@ -40,8 +42,7 @@ $z-index: (
 /*				Fonts						                       */
 /*-----------------------------------------------*/
 
-$font-primary: "Century Gothic", Helvetica, Arial, sans-serif;
-$font-headings: "Decovar", sans-serif;
+$font: "Gingham";
 
 /*-----------------------------------------------*/
 /*					Dimensions           		 */

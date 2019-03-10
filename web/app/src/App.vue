@@ -76,8 +76,8 @@ export default {
 @import url("https://fonts.googleapis.com/css?family=Bungee+Outline");
 
 @font-face {
-  font-family: "Decovar";
-  src: url("./font/DecovarAlpha-VF.ttf") format("truetype");
+  font-family: "Gingham";
+  src: url("./font/Gingham.ttf") format("truetype");
 }
 
 html,

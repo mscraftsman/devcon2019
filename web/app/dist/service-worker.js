@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.76882b1539b59af888763c2050513319.js"
+  "/precache-manifest.97e520ba95823698b169cb2737228aa5.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "devcon2019"});

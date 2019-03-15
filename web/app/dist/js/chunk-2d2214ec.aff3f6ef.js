@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d2214ec"],{ca91:function(e,n,t){"use strict";t.r(n);var s=function(){var e=this,n=e.$createElement;e._self._c;return e._m(0)},a=[function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("div",[t("h1",{staticClass:"mega-rainbow"},[e._v("Jobs")])])}],c=t("2877"),i={},l=Object(c["a"])(i,s,a,!1,null,null,null);l.options.__file="PageJobs.vue";n["default"]=l.exports}}]);
-//# sourceMappingURL=chunk-2d2214ec.aff3f6ef.js.map

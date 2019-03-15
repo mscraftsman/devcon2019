@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0b1647"],{"203f":function(e,n,t){"use strict";t.r(n);var s=function(){var e=this,n=e.$createElement;e._self._c;return e._m(0)},a=[function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("div",[t("h1",{staticClass:"mega-rainbow"},[e._v("Sessions Rating")])])}],i=t("2877"),c={},l=Object(i["a"])(c,s,a,!1,null,null,null);l.options.__file="PageVote.vue";n["default"]=l.exports}}]);
-//# sourceMappingURL=chunk-2d0b1647.af211d0a.js.map

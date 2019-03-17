@@ -44,4 +44,13 @@ h2 {
   padding-top: $gutter * 2;
   padding-bottom: $gutter * 2;
 }
+
+@media screen and (max-width: $tablet) {
+  
+  .featured-speakers-container {
+  
+    justify-items: center;
+  }
+
+}
 </style>

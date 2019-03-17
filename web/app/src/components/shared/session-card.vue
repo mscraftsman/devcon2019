@@ -155,10 +155,10 @@ export default {
   padding:  15px;
   }
   .session-title {
-    font-size: 15x;
+    font-size: 12x;
   }
   .session-description {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 </style>

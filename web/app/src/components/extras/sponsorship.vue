@@ -14,7 +14,7 @@
       </p>
       <div class="button-container">
         <a
-          href="/DevCon2018-SponsorshipProposal.pdf"
+          href="https://github.com/mscraftsman/devcon2019/raw/master/assets/DevCon2019-SponsorshipProposal.pdf"
           target="_blank"
           rel="noopener noreferrer"
           class="button"

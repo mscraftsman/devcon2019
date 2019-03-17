@@ -16,118 +16,120 @@
           </div>
         </div>
       </div>
+      <div class="scroll-wrapper">
 
-      <div class="tabs-content">
-        <transition name="fade" mode="out-in">
-          <div
-            class="tabs-panel-content"
-            v-if="getDay(group.groupName) === active"
-            ref="content"
-            v-for="(group, index, key) in sessions"
-            :key="group.groupId"
-          >
-            <div class="room-container">
-              <div class="time-bar">
-                <div class="time-value">&nbsp;</div>
-                <div class="time-value">
-                  9:00
-                  <span>AM</span>
+        <div class="tabs-content">
+          <transition name="fade" mode="out-in">
+            <div
+              class="tabs-panel-content"
+              v-if="getDay(group.groupName) === active"
+              ref="content"
+              v-for="(group, index, key) in sessions"
+              :key="group.groupId"
+            >
+              <div class="room-container">
+                <div class="time-bar">
+                  <div class="time-value">&nbsp;</div>
+                  <div class="time-value">
+                    9:00
+                    <span>AM</span>
+                  </div>
+                  <div class="time-value">
+                    9:30
+                    <span>AM</span>
+                  </div>
+                  <div class="time-value">
+                    10:00
+                    <span>AM</span>
+                  </div>
+                  <div class="time-value">
+                    10:30
+                    <span>AM</span>
+                  </div>
+                  <div class="time-value">
+                    11:00
+                    <span>AM</span>
+                  </div>
+                  <div class="time-value">
+                    11:30
+                    <span>AM</span>
+                  </div>
+                  <div class="time-value">
+                    12:00
+                    <span>PM</span>
+                  </div>
+                  <div class="time-value">
+                    12:30
+                    <span>PM</span>
+                  </div>
+                  <div class="time-value">
+                    1:00
+                    <span>PM</span>
+                  </div>
+                  <div class="time-value">
+                    1:30
+                    <span>PM</span>
+                  </div>
+                  <div class="time-value">
+                    2:00
+                    <span>PM</span>
+                  </div>
+                  <div class="time-value">
+                    2:30
+                    <span>PM</span>
+                  </div>
+                  <div class="time-value">
+                    3:00
+                    <span>PM</span>
+                  </div>
+                  <div class="time-value">
+                    3:30
+                    <span>PM</span>
+                  </div>
+                  <div class="time-value">
+                    4:00
+                    <span>PM</span>
+                  </div>
+                  <div class="time-value">
+                    4:30
+                    <span>PM</span>
+                  </div>
+                  <div class="time-value">
+                    5:00
+                    <span>PM</span>
+                  </div>
+                  <div class="time-value">
+                    5:30
+                    <span>PM</span>
+                  </div>
+                  <div class="time-value">
+                    6:00
+                    <span>PM</span>
+                  </div>
                 </div>
-                <div class="time-value">
-                  9:30
-                  <span>AM</span>
-                </div>
-                <div class="time-value">
-                  10:00
-                  <span>AM</span>
-                </div>
-                <div class="time-value">
-                  10:30
-                  <span>AM</span>
-                </div>
-                <div class="time-value">
-                  11:00
-                  <span>AM</span>
-                </div>
-                <div class="time-value">
-                  11:30
-                  <span>AM</span>
-                </div>
-                <div class="time-value">
-                  12:00
-                  <span>PM</span>
-                </div>
-                <div class="time-value">
-                  12:30
-                  <span>PM</span>
-                </div>
-                <div class="time-value">
-                  1:00
-                  <span>PM</span>
-                </div>
-                <div class="time-value">
-                  1:30
-                  <span>PM</span>
-                </div>
-                <div class="time-value">
-                  2:00
-                  <span>PM</span>
-                </div>
-                <div class="time-value">
-                  2:30
-                  <span>PM</span>
-                </div>
-                <div class="time-value">
-                  3:00
-                  <span>PM</span>
-                </div>
-                <div class="time-value">
-                  3:30
-                  <span>PM</span>
-                </div>
-                <div class="time-value">
-                  4:00
-                  <span>PM</span>
-                </div>
-                <div class="time-value">
-                  4:30
-                  <span>PM</span>
-                </div>
-                <div class="time-value">
-                  5:00
-                  <span>PM</span>
-                </div>
-                <div class="time-value">
-                  5:30
-                  <span>PM</span>
-                </div>
-                <div class="time-value">
-                  6:00
-                  <span>PM</span>
-                </div>
-              </div>
-              <div
-                :class="'session-panes room-wrapper  ' + room.className"
-                v-for="room in rooms"
-                :key="'room_'+ room.className"
-              >
-                <div :class="'room-wrapper ' + room.className">
-                  <div class="room-title">{{ room.label }}</div>
-                  <router-link
-                    @click.native="setScrollPosition()"
-                    :to="{ name: 'session',  params: { id: session.id }}"
-                    v-for="session in getSessionsFor(index, room.label)"
-                    :key="room + session.id"
-                    v-bind:style="{gridRow: timeToText(session.startsAt) + ' / span 2' }"
-                    class="session-card-wrapper"
-                  >
-                    <session-card :session="session"/>
-                  </router-link>
+                <div
+                  :class="'session-panes room-wrapper  ' + room.className"
+                  v-for="room in rooms"
+                  :key="'room_'+ room.className"
+                >
+                  <div :class="'room-wrapper ' + room.className">
+                    <div class="room-title">{{ room.label }}</div>
+                    <router-link
+                      @click.native="setScrollPosition()"
+                      :to="{ name: 'session',  params: { id: session.id }}"
+                      v-for="session in getSessionsFor(index, room.label)"
+                      :key="room + session.id"
+                      v-bind:style="{gridRow: timeToText(session.startsAt) + ' / span 2' }"
+                      class="session-card-wrapper"
+                    >
+                      <session-card :session="session"/>
+                    </router-link>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </transition>
+          </transition>
+        </div>
       </div>
     </div>
   </div>
@@ -228,6 +230,7 @@ export default {
 }
 .page-all-sessions {
   display: grid;
+  overflow: hidden;
   // grid-template-rows: 60px calc(100vh - 50px - 66px);
 }
 .tabs-container,
@@ -319,7 +322,7 @@ export default {
 
 .room-container {
   display: grid;
-  grid-template-columns: 100px repeat(3, 1fr) 100px;
+  grid-template-columns: 100px repeat(4, 1fr) 100px;
   grid-column-gap: 20px;
 }
 
@@ -386,6 +389,7 @@ export default {
 
     .room-title {
       border-right: 0;
+      white-space: nowrap;
     }
   }
 }
@@ -401,9 +405,21 @@ export default {
     }
   }
 }
-@media (max-width: 480px) {
+@media (max-width: $tablet) {
   .tabs-panel-content {
     padding: 0 10px;
+  }
+
+  .time-bar{
+  grid-template-columns: 0.5fr;
+  }
+  .scroll-wrapper{
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  .room-container {
+    grid-template-columns: 40px repeat(4, 240px);
+    grid-column-gap: 20px;
   }
   .tabs-panel-content {
     .session-panes {
@@ -412,6 +428,7 @@ export default {
         grid-template-columns: 1fr;
         .date-time {
           justify-content: flex-start;
+          font-size: 10px;
         }
       }
     }

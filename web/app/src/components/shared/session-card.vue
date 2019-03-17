@@ -148,5 +148,17 @@ export default {
       grid-column: 1 / 2;
     }
   }
+
+}
+@media (max-width: 480px) {
+  .session-card {
+  padding:  15px;
+  }
+  .session-title {
+    font-size: 15x;
+  }
+  .session-description {
+    font-size: 13px;
+  }
 }
 </style>

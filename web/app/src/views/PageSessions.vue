@@ -1,6 +1,9 @@
 <template>
   <div>
     <h1 class="mega-rainbow">Sessions</h1>
+    <pre>
+      {{ sessions }}
+    </pre>
     <div class="page-all-sessions">
       <div class="tabs-container">
         <div class="right-wrapper">
@@ -29,6 +32,10 @@
             <div class="room-container">
               <div class="time-bar">
                 <div class="time-value">&nbsp;</div>
+                <div class="time-value">
+                  9:00
+                  <span>AM</span>
+                </div>
                 <div class="time-value">
                   9:30
                   <span>AM</span>
@@ -93,6 +100,14 @@
                   5:00
                   <span>PM</span>
                 </div>
+                <div class="time-value">
+                  5:30
+                  <span>PM</span>
+                </div>
+                <div class="time-value">
+                  6:00
+                  <span>PM</span>
+                </div>
               </div>
               <div
                 :class="'session-panes room-wrapper  ' + room.className"
@@ -124,7 +139,7 @@
 <script>
 import { mapActions, mapGetters } from "vuex";
 import { time as timeHelper, timeSafe as timeToText } from "@/helpers";
-import SessionCard from "@/components/shared/session-card.vue"
+import SessionCard from "@/components/shared/session-card.vue";
 
 export default {
   mounted() {
@@ -134,77 +149,57 @@ export default {
     }
 
     this.FETCH_SPEAKERS();
-
   },
   data() {
     return {
       // rooms: ["Educator 1", "Educator 2", "Accelerator", "Flying Dodo"]
-      rooms: [
-        { label: "Educator 1", className: "educatorone" },
-        { label: "Educator 2", className: "educatortwo" },
-        { label: "Accelerator", className: "accelerator" }
-      ]
+      rooms: [{ label: "Educator 1", className: "educatorone" }, { label: "Educator 2", className: "educatortwo" }, { label: "Accelarator", className: "accelarator" }],
     };
   },
   filters: {
-    truncate: function (text, length, suffix) {
+    truncate: function(text, length, suffix) {
       return text.substring(0, length);
       // return text.substring(0, length) + suffix;
-    }
+    },
   },
   methods: {
     ...mapActions(["FETCH_SESSIONS", "FETCH_SPEAKERS"]),
 
     time: timeHelper,
     timeToText: timeToText,
-    sampleTime: function () {
+    sampleTime: function() {
       return "900AM";
     },
-    getDay: function (str) {
+    getDay: function(str) {
       return str.split(",")[0];
     },
-    setActive: function (str) {
+    setActive: function(str) {
       // Keep Track of previous Page Sessions activity in current Session
       this.$store.commit("SET_PAGESESSIONS_ACTIVE", str.split(",")[0]);
     },
-    setScrollPosition: function () {
+    setScrollPosition: function() {
       // Keep Track of previous scroll position
-      this.$store.commit(
-        "SET_PAGESESSIONS_SCROLL_POSITION",
-        this.$refs["content"][0].scrollTop
-      );
+      this.$store.commit("SET_PAGESESSIONS_SCROLL_POSITION", this.$refs["content"][0].scrollTop);
     },
-    getSessionsFor: function (day, room) {
+    getSessionsFor: function(day, room) {
       // console.log(day + room);
       return this.sessions[day].sessions.filter(session => {
         if (session.room === room) {
           return session;
         }
       });
-    }
+    },
   },
   computed: {
     ...mapGetters({
       sessions: "getSessionsByRoom",
       active: "getPageSessionsActive",
-      scrollPosition: "getPageSessionsScrollPosition"
+      scrollPosition: "getPageSessionsScrollPosition",
     }),
-    sessionInRoom_Educator() {
-      let educatorSessions = this.sessions.map(day => {
-        return day.sessions.filter(session => {
-          if (session.room === "Educator 1") {
-            return session;
-          }
-        });
-      });
-
-      console.log(educatorSessions);
-      return this.sessions;
-    }
   },
   components: {
-    SessionCard
-  }
+    SessionCard,
+  },
 };
 </script>
 
@@ -358,6 +353,7 @@ export default {
 
   grid-template-areas:
     "title"
+    "AM900"
     "AM930"
     "AM1000"
     "AM1030"
@@ -373,7 +369,9 @@ export default {
     "PM330"
     "PM400"
     "PM430"
-    "PM500";
+    "PM500"
+    "PM530"
+    "PM600";
 
   // grid-template-rows: [title-start] 50px [title-end AM900-start] 50px [AM900-end AM930-start] 50px [AM930-end AM1000-start] 50px [AM1000-end AM1030-start] 50px [AM1030-end AM1100-start] 50px [AM1100-end AM1130-start] 50px [AM1130-end AM1200-start] 50px [AM1200-end AM1230-start] 50px [AM1230-end PM100-start] 50px [PM100-end PM130-start] 50px [PM130-end PM200-start] 50px [PM200-end PM230-start] 50px [PM230-end PM300-start] 50px [PM300-end PM330-start] 50px [PM330-end PM400-start] 50px [PM400-end PM430-start] 50px [PM430-end PM500-start] 50px [PM500-end];
   .room-title {

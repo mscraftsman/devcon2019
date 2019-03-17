@@ -1,9 +1,6 @@
 <template>
   <div>
     <h1 class="mega-rainbow">Sessions</h1>
-    <pre>
-      {{ sessions }}
-    </pre>
     <div class="page-all-sessions">
       <div class="tabs-container">
         <div class="right-wrapper">
@@ -153,7 +150,7 @@ export default {
   data() {
     return {
       // rooms: ["Educator 1", "Educator 2", "Accelerator", "Flying Dodo"]
-      rooms: [{ label: "Educator 1", className: "educatorone" }, { label: "Educator 2", className: "educatortwo" }, { label: "Accelarator", className: "accelarator" }],
+      rooms: [{ label: "Educator 1", className: "educatorone" }, { label: "Educator 2", className: "educatortwo" }, { label: "Accelarator", className: "accelarator" }, { label: "Flying Dodo", className: "flyingdodo" }],
     };
   },
   filters: {
@@ -235,7 +232,7 @@ export default {
 }
 .tabs-container,
 .tabs-content {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   width: 100%;
   //   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
@@ -322,7 +319,7 @@ export default {
 
 .room-container {
   display: grid;
-  grid-template-columns: 100px repeat(3, 1fr);
+  grid-template-columns: 100px repeat(3, 1fr) 100px;
   grid-column-gap: 20px;
 }
 
@@ -346,7 +343,7 @@ export default {
 .time-bar {
   color: black;
   display: grid;
-  grid-template-rows: 50px 100px;
+  grid-template-rows: 80px 100px;
   grid-template-columns: 1fr;
   grid-auto-rows: 100px;
   grid-row-gap: 30px;

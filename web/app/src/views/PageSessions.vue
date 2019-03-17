@@ -2,17 +2,20 @@
   <div>
     <h1 class="mega-rainbow">Sessions</h1>
     <div class="page-all-sessions">
-      <div class="tabs-container">
-        <div class="right-wrapper">
-          <div
-            class="tab-items"
-            :class="{active : getDay(group.groupName) === active}"
-            @click="setActive(group.groupName)"
-            v-for="group in sessions"
-            :key="group.groupId"
-            :label="getDay(group.groupName)"
-          >
-            <div class="tab-label">{{getDay(group.groupName)}}</div>
+
+      <div class="tabs-wrapper"> 
+        <div class="tabs-container">
+          <div class="right-wrapper">
+            <div
+              class="tab-items"
+              :class="{active : getDay(group.groupName) === active}"
+              @click="setActive(group.groupName)"
+              v-for="group in sessions"
+              :key="group.groupId"
+              :label="getDay(group.groupName)"
+            >
+              <div class="tab-label">{{getDay(group.groupName)}}</div>
+            </div>
           </div>
         </div>
       </div>
@@ -398,6 +401,12 @@ export default {
   display: flex;
   row-span: 2;
 }
+
+.tabs-wrapper{
+  display:flex;
+  margin:20px;
+}
+
 @media (max-width: 1000px) {
   .tabs-container {
     .left-wrapper {
@@ -405,6 +414,8 @@ export default {
     }
   }
 }
+
+
 @media (max-width: $tablet) {
   .tabs-panel-content {
     padding: 0 10px;

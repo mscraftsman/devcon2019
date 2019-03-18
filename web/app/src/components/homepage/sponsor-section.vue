@@ -15,12 +15,14 @@
               :key="sponsor.level + sponsor.name + index + key"
             >
               <span class="sponsor-logo-cont">
-                <img class="logo-white"
+                <img
+                  class="logo-white"
                   :src="imageResolve('white_'+sponsor.image)"
                   :title="sponsor.partner + sponsor.slogan"
                   :alt="sponsor.partner"
                 >
-                <img class="logo-col"
+                <img
+                  class="logo-col"
                   :src="imageResolve(sponsor.image)"
                   :title="sponsor.partner + sponsor.slogan"
                   :alt="sponsor.partner"
@@ -41,15 +43,17 @@
               :key="sponsor.level + sponsor.name + index + key"
             >
               <span class="sponsor-logo-cont">
-                <img class="logo-white"
-                     :src="imageResolve('white_'+sponsor.image)"
-                     :title="sponsor.partner + sponsor.slogan"
-                     :alt="sponsor.partner"
+                <img
+                  class="logo-white"
+                  :src="imageResolve('white_'+sponsor.image)"
+                  :title="sponsor.partner + sponsor.slogan"
+                  :alt="sponsor.partner"
                 >
-                <img class="logo-col"
-                     :src="imageResolve(sponsor.image)"
-                     :title="sponsor.partner + sponsor.slogan"
-                     :alt="sponsor.partner"
+                <img
+                  class="logo-col"
+                  :src="imageResolve(sponsor.image)"
+                  :title="sponsor.partner + sponsor.slogan"
+                  :alt="sponsor.partner"
                 >
               </span>
             </a>
@@ -68,15 +72,17 @@
               :key="sponsor.level + sponsor.name + index + key"
             >
               <span class="sponsor-logo-cont">
-                <img class="logo-white"
-                     :src="imageResolve('white_'+sponsor.image)"
-                     :title="sponsor.partner + sponsor.slogan"
-                     :alt="sponsor.partner"
+                <img
+                  class="logo-white"
+                  :src="imageResolve('white_'+sponsor.image)"
+                  :title="sponsor.partner + sponsor.slogan"
+                  :alt="sponsor.partner"
                 >
-                <img class="logo-col"
-                     :src="imageResolve(sponsor.image)"
-                     :title="sponsor.partner + sponsor.slogan"
-                     :alt="sponsor.partner"
+                <img
+                  class="logo-col"
+                  :src="imageResolve(sponsor.image)"
+                  :title="sponsor.partner + sponsor.slogan"
+                  :alt="sponsor.partner"
                 >
               </span>
             </a>
@@ -95,15 +101,17 @@
               :key="sponsor.level + sponsor.name + index + key"
             >
               <span class="sponsor-logo-cont">
-                <img class="logo-white"
-                     :src="imageResolve('white_'+sponsor.image)"
-                     :title="sponsor.partner + sponsor.slogan"
-                     :alt="sponsor.partner"
+                <img
+                  class="logo-white"
+                  :src="imageResolve('white_'+sponsor.image)"
+                  :title="sponsor.partner + sponsor.slogan"
+                  :alt="sponsor.partner"
                 >
-                <img class="logo-col"
-                     :src="imageResolve(sponsor.image)"
-                     :title="sponsor.partner + sponsor.slogan"
-                     :alt="sponsor.partner"
+                <img
+                  class="logo-col"
+                  :src="imageResolve(sponsor.image)"
+                  :title="sponsor.partner + sponsor.slogan"
+                  :alt="sponsor.partner"
                 >
               </span>
             </a>
@@ -121,20 +129,52 @@
               :key="sponsor.level + sponsor.name + index + key"
             >
               <span class="sponsor-logo-cont">
-                <img class="logo-white"
-                     :src="imageResolve('white_'+sponsor.image)"
-                     :title="sponsor.partner + sponsor.slogan"
-                     :alt="sponsor.partner"
+                <img
+                  class="logo-white"
+                  :src="imageResolve('white_'+sponsor.image)"
+                  :title="sponsor.partner + sponsor.slogan"
+                  :alt="sponsor.partner"
                 >
-                <img class="logo-col"
-                     :src="imageResolve(sponsor.image)"
-                     :title="sponsor.partner + sponsor.slogan"
-                     :alt="sponsor.partner"
+                <img
+                  class="logo-col"
+                  :src="imageResolve(sponsor.image)"
+                  :title="sponsor.partner + sponsor.slogan"
+                  :alt="sponsor.partner"
                 >
               </span>
             </a>
           </div>
         </div>
+
+        <div class="sponsor-level-wrapper happy" v-if="sponsorsGroupedByLevel('Happy Hour')">
+          <h4 class="subtitle">Happy Hour</h4>
+          <div class="sponsors-wrapper small-wrapper">
+            <a
+              :href="sponsor.url"
+              class="sponsor-logo"
+              target="_blank"
+              :title="sponsor.partner + sponsor.slogan"
+              v-for="(sponsor, index, key) in sponsorsGroupedByLevel('Happy Hour')"
+              :key="sponsor.level + sponsor.name + index + key"
+            >
+              <span class="sponsor-logo-cont">
+                <img
+                  class="logo-white"
+                  :src="imageResolve('white_'+sponsor.image)"
+                  :title="sponsor.partner + sponsor.slogan"
+                  :alt="sponsor.partner"
+                >
+                <img
+                  class="logo-col"
+                  :src="imageResolve(sponsor.image)"
+                  :title="sponsor.partner + sponsor.slogan"
+                  :alt="sponsor.partner"
+                >
+              </span>
+            </a>
+          </div>
+        </div>
+
         <div class="sponsor-level-wrapper bronze">
           <h4 class="subtitle">Bronze</h4>
           <div class="sponsors-wrapper small-wrapper">
@@ -147,15 +187,17 @@
               :key="sponsor.level + sponsor.name + index + key"
             >
               <span class="sponsor-logo-cont">
-                <img class="logo-white"
-                     :src="imageResolve('white_'+sponsor.image)"
-                     :title="sponsor.partner + sponsor.slogan"
-                     :alt="sponsor.partner"
+                <img
+                  class="logo-white"
+                  :src="imageResolve('white_'+sponsor.image)"
+                  :title="sponsor.partner + sponsor.slogan"
+                  :alt="sponsor.partner"
                 >
-                <img class="logo-col"
-                     :src="imageResolve(sponsor.image)"
-                     :title="sponsor.partner + sponsor.slogan"
-                     :alt="sponsor.partner"
+                <img
+                  class="logo-col"
+                  :src="imageResolve(sponsor.image)"
+                  :title="sponsor.partner + sponsor.slogan"
+                  :alt="sponsor.partner"
                 >
               </span>
             </a>
@@ -173,46 +215,23 @@
               :key="sponsor.level + sponsor.name + index + key"
             >
               <span class="sponsor-logo-cont">
-                <img class="logo-white"
-                     :src="imageResolve('white_'+sponsor.image)"
-                     :title="sponsor.partner + sponsor.slogan"
-                     :alt="sponsor.partner"
+                <img
+                  class="logo-white"
+                  :src="imageResolve('white_'+sponsor.image)"
+                  :title="sponsor.partner + sponsor.slogan"
+                  :alt="sponsor.partner"
                 >
-                <img class="logo-col"
-                     :src="imageResolve(sponsor.image)"
-                     :title="sponsor.partner + sponsor.slogan"
-                     :alt="sponsor.partner"
-                >
-              </span>
-            </a>
-          </div>
-        </div>
-        <div class="sponsor-level-wrapper happy" v-if="sponsorsGroupedByLevel('Happy Hour')">
-          <h4 class="subtitle">Happy Hour</h4>
-          <div class="sponsors-wrapper small-wrapper">
-            <a
-              :href="sponsor.url"
-              class="sponsor-logo"
-              target="_blank"
-              :title="sponsor.partner + sponsor.slogan"
-              v-for="(sponsor, index, key) in sponsorsGroupedByLevel('Happy Hour')"
-              :key="sponsor.level + sponsor.name + index + key"
-            >
-              <span class="sponsor-logo-cont">
-                <img class="logo-white"
-                     :src="imageResolve('white_'+sponsor.image)"
-                     :title="sponsor.partner + sponsor.slogan"
-                     :alt="sponsor.partner"
-                >
-                <img class="logo-col"
-                     :src="imageResolve(sponsor.image)"
-                     :title="sponsor.partner + sponsor.slogan"
-                     :alt="sponsor.partner"
+                <img
+                  class="logo-col"
+                  :src="imageResolve(sponsor.image)"
+                  :title="sponsor.partner + sponsor.slogan"
+                  :alt="sponsor.partner"
                 >
               </span>
             </a>
           </div>
         </div>
+
         <div class="sponsor-level-wrapper internet" v-if="sponsorsGroupedByLevel('Internet')">
           <h4 class="subtitle">Internet</h4>
           <div class="sponsors-wrapper small-wrapper">
@@ -225,15 +244,17 @@
               :key="sponsor.level + sponsor.name + index + key"
             >
               <span class="sponsor-logo-cont">
-                <img class="logo-white"
-                     :src="imageResolve('white_'+sponsor.image)"
-                     :title="sponsor.partner + sponsor.slogan"
-                     :alt="sponsor.partner"
+                <img
+                  class="logo-white"
+                  :src="imageResolve('white_'+sponsor.image)"
+                  :title="sponsor.partner + sponsor.slogan"
+                  :alt="sponsor.partner"
                 >
-                <img class="logo-col"
-                     :src="imageResolve(sponsor.image)"
-                     :title="sponsor.partner + sponsor.slogan"
-                     :alt="sponsor.partner"
+                <img
+                  class="logo-col"
+                  :src="imageResolve(sponsor.image)"
+                  :title="sponsor.partner + sponsor.slogan"
+                  :alt="sponsor.partner"
                 >
               </span>
             </a>
@@ -274,7 +295,7 @@ export default {
   },
 
   computed: {
-    ...mapGetters(["getSponsors"])
+    ...mapGetters(["getSponsors"]),
   },
 
   methods: {
@@ -304,8 +325,8 @@ export default {
       } else {
         return "/img/sponsors/" + filename;
       }
-    }
-  }
+    },
+  },
 };
 </script>
 

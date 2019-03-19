@@ -234,6 +234,7 @@ export default {
 .page-all-sessions {
   display: grid;
   overflow: hidden;
+  padding: 5px;
   // grid-template-rows: 60px calc(100vh - 50px - 66px);
 }
 .tabs-container,
@@ -424,10 +425,32 @@ export default {
   .time-bar{
   grid-template-columns: 0.5fr;
   }
+
   .scroll-wrapper{
     overflow-x: scroll;
     overflow-y: hidden;
   }
+
+  .scroll-wrapper,  .tabs-content{   /*Moves Scroll bar to top! */
+    transform:rotateX(180deg);
+    -ms-transform:rotateX(180deg); /* IE 9 */
+    -webkit-transform:rotateX(180deg); /* Safari and Chrome */
+  }
+
+  .scroll-wrapper::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+
+  }
+
+  .scroll-wrapper::-webkit-scrollbar-track {
+  background-color: black;
+  }
+
+  .scroll-wrapper::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, rgb(253, 201, 144), rgb(201, 43, 51));
+  }
+
   .room-container {
     grid-template-columns: 40px repeat(4, 240px);
     grid-column-gap: 20px;

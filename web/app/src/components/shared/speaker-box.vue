@@ -1,6 +1,6 @@
 <template>
   <div class="speaker-box" :id="speaker.fullName">
-    <div class="speaker-image">
+    <div class="speaker-image" v-if="speaker">
       <img :src="speaker.profilePicture" alt>
     </div>
     <div class="bizin-trouv-bien"></div>
@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  props: ["speaker"]
+  props: ["speaker"],
 };
 </script>
 

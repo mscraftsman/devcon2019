@@ -35,7 +35,6 @@
         </path>
       </svg>
     </div>
-
     <div class="page-all-sessions">
       <div class="tabs-wrapper">
         <div class="tabs-container">
@@ -142,6 +141,8 @@
                     6:00
                     <span>PM</span>
                   </div>
+                  <div class="time-value"></div>
+                  <div class="time-value"></div>
                 </div>
                 <div
                   :class="'session-panes room-wrapper  ' + room.className"
@@ -365,7 +366,7 @@ export default {
 
 .room-container {
   display: grid;
-  grid-template-columns: 100px repeat(4, 1fr) 100px;
+  grid-template-columns: 100px repeat(3, 1fr) 200px;
   grid-column-gap: 20px;
 }
 
@@ -391,7 +392,7 @@ export default {
   display: grid;
   grid-template-rows: 80px 100px;
   grid-template-columns: 1fr;
-  grid-auto-rows: 100px;
+  grid-auto-rows: 110px;
   grid-row-gap: 30px;
 
   grid-template-areas:
@@ -414,7 +415,9 @@ export default {
     "PM430"
     "PM500"
     "PM530"
-    "PM600";
+    "PM600"
+    "-"
+    "-";
 
   // grid-template-rows: [title-start] 50px [title-end AM900-start] 50px [AM900-end AM930-start] 50px [AM930-end AM1000-start] 50px [AM1000-end AM1030-start] 50px [AM1030-end AM1100-start] 50px [AM1100-end AM1130-start] 50px [AM1130-end AM1200-start] 50px [AM1200-end AM1230-start] 50px [AM1230-end PM100-start] 50px [PM100-end PM130-start] 50px [PM130-end PM200-start] 50px [PM200-end PM230-start] 50px [PM230-end PM300-start] 50px [PM300-end PM330-start] 50px [PM330-end PM400-start] 50px [PM400-end PM430-start] 50px [PM430-end PM500-start] 50px [PM500-end];
   .room-title {

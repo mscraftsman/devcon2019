@@ -4,7 +4,7 @@
     <div class="session-description">{{ session.description | truncate(120, '...') }}</div>
     <div class="session-author">
       <div class="name">{{ session.speakers[0].name }}</div>
-      <div class="alias">Cool alias</div>
+      <div class="alias">{{ speakersById[session.speakers[0].id].tagLine }}</div>
       <div class="speaker-photo-wrapper">
         <div class="skewer">
           <img :src="getSpeakerPhoto(session.speakers[0].id)" alt>
@@ -27,6 +27,7 @@ export default {
     ...mapGetters({
       sessions: "getSessions",
       speakers: "getSpeakers",
+      speakersById: "getSpeakersById",
     }),
     isWorkshop() {
       if (this.session.room == "Flying Dodo") {
@@ -36,8 +37,15 @@ export default {
   },
   methods: {
     getSpeakerPhoto: function(id) {
+      if (typeof id === "undefined") {
+        return "";
+      }
       let theSpeaker = this.speakers.find(speaker => speaker.id === id);
-      return theSpeaker.profilePicture;
+      if (typeof theSpeaker === "undefined") {
+        return "";
+      } else {
+        return theSpeaker.profilePicture;
+      }
     },
   },
   filters: {
@@ -56,7 +64,7 @@ export default {
   background: white;
   color: black;
   border-radius: 20px;
-  padding: 20px;
+  padding: 20px 0px 0 20px;
   text-decoration: none;
   // grid-template-rows: 50px 100px 50px;
   transition: all 0.1s ease-in;
@@ -74,18 +82,20 @@ export default {
   font-weight: bold;
   padding-bottom: 10px;
   grid-row: 1/2;
+  padding-right: 10px;
 }
 
 .session-description {
   grid-row: 2/3;
   font-size: 14px;
+  padding-right: 10px;
 }
 
 .session-author {
   grid-row: 3/4;
   align-self: end;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2fr 110px;
   grid-template-rows: 22px 22px;
 
   .name {
@@ -107,17 +117,20 @@ export default {
   .speaker-photo-wrapper {
     grid-column: 2 / 3;
     grid-row: 1 / 3;
+    mask: url("../../assets/card-author-frame.svg");
+    mask-repeat: no-repeat;
+
     .skewer {
-      transform: skewX(-15deg);
+      // transform: skewX(-15deg);
     }
     img {
-      transform: skewX(15deg);
-      border-radius: 10px;
+      // transform: skewX(15deg);
+      // border-radius: 10px;
       overflow: hidden;
       width: 100%;
       height: 44px;
       object-fit: cover;
-      object-position: center center;
+      object-position: center top;
     }
   }
 }
@@ -148,11 +161,10 @@ export default {
       grid-column: 1 / 2;
     }
   }
-
 }
 @media (max-width: 480px) {
   .session-card {
-  padding:  15px;
+    padding: 15px;
   }
   .session-title {
     font-size: 12x;

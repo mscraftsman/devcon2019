@@ -9,6 +9,7 @@ const sessionizeSessions = "https://sessionize.com/api/v2/rn3ak6vi/view/Sessions
 const sessionizeSpeakers = "https://sessionize.com/api/v2/rn3ak6vi/view/Speakers";
 // https://sessionize.com/api/v2/rn3ak6vi/view/sessions
 export const SET_SPEAKERS = "SET_SPEAKERS";
+export const SET_SPEAKERS_BY_ID = "SET_SPEAKERS_BY_ID";
 export const SET_SPONSORS = "SET_SPONSORS";
 export const SET_STATS = "SET_STATS";
 export const SET_SESSIONS = "SET_SESSIONS";
@@ -28,6 +29,7 @@ export default new Vuex.Store({
       active: "Thursday",
     },
     speakers: [],
+    speakersById: [],
     sponsors: [],
     sessions: [],
     stats: [],
@@ -43,6 +45,9 @@ export default new Vuex.Store({
   getters: {
     getSpeakers: function(state) {
       return state.speakers;
+    },
+    getSpeakersById: function(state) {
+      return state.speakersById;
     },
     getSponsors: function(state) {
       return state.sponsors;
@@ -73,6 +78,9 @@ export default new Vuex.Store({
   mutations: {
     [SET_SPEAKERS](state, speakers) {
       state.speakers = speakers;
+    },
+    [SET_SPEAKERS_BY_ID](state, speakers) {
+      state.speakersById = speakers;
     },
     [SET_SPONSORS](state, sponsors) {
       state.sponsors = sponsors;
@@ -106,6 +114,13 @@ export default new Vuex.Store({
         .then(response => response.json())
         .then(payload => {
           commit(SET_SPEAKERS, payload);
+
+          let groupById = payload.reduce(function(r, a) {
+            r[a.id] = r[a.id] || [];
+            r[a.id] = a;
+            return r;
+          }, Object.create(null));
+          commit(SET_SPEAKERS_BY_ID, groupById);
         })
         .catch(error => {
           throw new Error("Error should be caught by Vue global error handler." + error);

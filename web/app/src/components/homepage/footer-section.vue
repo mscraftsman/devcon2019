@@ -7,10 +7,8 @@
           target="_blank"
           rel="noopener noreferrer"
           href="https://www.meetup.com/MauritiusSoftwareCraftsmanshipCommunity/events/258586831/"
-        >
-          register
-        </a>
-
+        >register</a>
+        
         <a
           class="link external"
           target="_blank"
@@ -37,10 +35,10 @@
           mcb
           inovapp challenge
         </a>-->
-        
         <router-link class="link" :to="{ name: 'press' }">press material</router-link>
 
         <router-link class="link" :to="{ name: 'speakers' }">speakers</router-link>
+        <router-link class="link" :to="{ name: 'sessions' }">sessions</router-link>
         <!-- <a
           class="link external"
           target="_blank"
@@ -50,7 +48,6 @@
           become
           a speaker
         </a>-->
-
         <router-link class="link" :to="{ name: 'lifeatdevcon' }">past events</router-link>
 
         <a
@@ -60,7 +57,7 @@
           contact
           us ✉
         </a>
-        
+
         <!-- <router-link class="link" :to="{ name: 'jobs' }">jobs</router-link> -->
         <!-- <router-link class="link" :to="{ name: 'vote' }">vote</router-link> -->
       </div>

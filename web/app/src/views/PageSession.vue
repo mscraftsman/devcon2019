@@ -99,50 +99,52 @@ import { time as timeHelper, getDay as getDayHelper } from "@/helpers";
 
 export default {
   props: ["id"],
-  mounted() {
-  },
+  mounted() {},
   methods: {
     ...mapActions(["FETCH_SESSIONS", "FETCH_SPEAKERS", "fetchVotes"]),
-    getSpeakerPhoto: function (id) {
+    getSpeakerPhoto: function(id) {
       if (this.speakers.length === 0) {
         this.FETCH_SPEAKERS();
-      }
-      let theSpeaker = this.speakers.find(speaker => speaker.id === id)
+      } else {
+        let theSpeaker = this.speakers.find(speaker => speaker.id === id);
 
-      console.log(theSpeaker);
-      return theSpeaker.profilePicture;
+        if (typeof theSpeaker === "undefined") {
+          return "";
+        } else {
+          return theSpeaker.profilePicture;
+        }
+      }
       // if (typeof this.theSpeaker !== 'undefined') {
       // } else {
       //   return '/img/sponsors/placeholder.png'
       // }
-
     },
     time: timeHelper,
-    getDay: getDayHelper
+    getDay: getDayHelper,
   },
   computed: {
     ...mapGetters({
       sessions: "getSessions",
       speakers: "getSpeakers",
       user: "getUser",
-      getVotes: "getVotes"
+      getVotes: "getVotes",
     }),
-    session: function () {
+    session: function() {
       if (typeof this.sessions == "undefined") {
         this.FETCH_SESSIONS();
       }
       let sessions = this.sessions
         .map(groups => groups.sessions)
-        .reduce(function (acc, curr) {
+        .reduce(function(acc, curr) {
           return [...acc, ...curr];
         }, []);
 
       console.log(this.id);
       console.log(sessions);
-      let session = sessions.find(sess => (sess.id === this.id));
+      let session = sessions.find(sess => sess.id === this.id);
       return session;
     },
-    voted: function () {
+    voted: function() {
       //   let allVoted = _.map(this.getVotes, "session_id");
       //   if (allVoted.indexOf(this.id) !== -1) {
       //     return true;
@@ -169,7 +171,7 @@ export default {
       //   return false;
       // }
       return false;
-    }
+    },
   },
   watch: {},
   beforeMount() {
@@ -181,7 +183,7 @@ export default {
     } else {
       // console.info("sessions found !");
     }
-  }
+  },
 };
 </script>
 

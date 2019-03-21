@@ -71,7 +71,7 @@
             >✅ Rated. Thanks!</router-link>
             <router-link v-else :to="{ name: 'feedback', params: { id: id } }" class="rate">Rate</router-link>
           </template>
-          <template v-else>🚫 Session not started yet</template>
+          <template v-else>Session not started yet</template>
         </div>
 
         <div class="des-wrap rate meetup" v-else>
@@ -170,7 +170,7 @@ export default {
       // } else {
       //   return false;
       // }
-      return false;
+      return true;
     },
   },
   watch: {},

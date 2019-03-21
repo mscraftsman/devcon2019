@@ -37,7 +37,7 @@ export default new Vuex.Store({
       status: false, // true or false
       data: {
         id: "1234",
-        name: "Dummy Name",
+        name: "Sandeep Ramgolam",
         photo: "",
       },
     },

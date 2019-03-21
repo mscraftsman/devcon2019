@@ -74,6 +74,12 @@ export default new Router({
       name: "vote",
       component: () => import("./views/PageVote.vue"),
     },
+    {
+      path: "/feedback/:id",
+      props: true,
+      name: "feedback",
+      component: () => import("./views/PageFeedback.vue"),
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
     if (to.name != "sessions") {

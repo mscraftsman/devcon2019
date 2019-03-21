@@ -7,7 +7,8 @@
       <div class="menu-wrapper">
         <MainMenu/>
       </div>
-      <div class="register-button">
+      <div class="user" v-if="user.status">{{ user.data.name }}</div>
+      <div class="register-button" v-else>
         <button-waw
           :theme="'#ff4932'"
           :target="'_blank'"
@@ -21,15 +22,19 @@
 <script>
 import LogoSvg from "@/components/shared/logo-svg.vue";
 import MainMenu from "@/components/shared/main-menu.vue";
+import { mapGetters } from "vuex";
 // import ButtonWaw from '@/components/shared/button-waw.vue'
 
 export default {
   name: "home",
   components: {
     LogoSvg,
-    MainMenu
+    MainMenu,
     // ButtonWaw
-  }
+  },
+  computed: {
+    ...mapGetters({ user: "getUser" }),
+  },
 };
 </script>
 
@@ -49,6 +54,11 @@ export default {
 .register-button {
 }
 
+.user {
+  // border: 1px solid var(--color-red-light);
+  // padding: 5px;
+  // border-radius: 5px;
+}
 @media screen and (max-width: $tablet) {
   .logo-wrapper {
   }

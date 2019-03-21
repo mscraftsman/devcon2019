@@ -367,7 +367,7 @@ export default {
 .room-container {
   display: grid;
   grid-template-columns: 100px repeat(3, 1fr) 200px;
-  grid-column-gap: 20px;
+  grid-column-gap: 40px;
 }
 
 .time-bar {

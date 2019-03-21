@@ -110,7 +110,7 @@ export default {
 .session-description {
   grid-row: 2/3;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 18added px;
   padding-right: 10px;
 }
 

@@ -136,7 +136,7 @@ p {
   --hover: #0077b5;
 }
 .youtube {
-  --hover: #b31217;
+  --hover: #ff0000;
 }
 
 @keyframes spin {

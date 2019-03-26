@@ -69,4 +69,37 @@
     }
   }
 }
+
+@media screen and (max-width: $tablet) {
+  .main-menu-wrapper {
+    ul {
+      display: block;
+      width: 250px;
+      padding: 0;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+      height: 100%;
+      min-height: calc(100vh);
+      background: white;
+
+      li {
+        border-bottom: 1px solid #ccc;
+        a {
+          height: 65px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: var(--color-main);
+          font-weight: 400;
+          &:hover,
+          &:active,
+          &.router-link-exact-active {
+            &:before {
+              opacity: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 </style>

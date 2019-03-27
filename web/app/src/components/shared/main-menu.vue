@@ -2,6 +2,9 @@
   <div class="main-menu-wrapper">
     <ul>
       <li>
+        <router-link :to="{ name: 'speakers' }">Speakers</router-link>
+      </li>
+      <li>
         <router-link :to="{ name: 'sessions' }">Sessions</router-link>
       </li>
       <li>

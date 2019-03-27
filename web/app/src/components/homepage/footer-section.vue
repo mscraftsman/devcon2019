@@ -2,43 +2,37 @@
   <div class="home-component footer-section-wrapper">
     <div class="container footer-section-container">
       <div class="link-wrapper">
-        <a
+        <a class="link external" target="_blank" rel="noopener noreferrer" href="https://www.mscc.mu/code-of-conduct">
+          code of conduct
+        </a>
+
+        <router-link class="link" :to="{ name: 'speakers' }">speakers</router-link>
+
+        <router-link class="link" :to="{ name: 'sessions' }">sessions</router-link>
+
+        <router-link class="link" :to="{ name: 'sponsors' }">sponsors</router-link>
+
+        <a class="link" href="mailto:conference@mscc.mu?subject=Inquiry re. Developers Conference 2019">
+          contact us ✉
+        </a>
+
+        <router-link class="link" :to="{ name: 'press' }">press material</router-link>
+
+        <router-link class="link" :to="{ name: 'lifeatdevcon' }">past events</router-link>
+
+        <a class="link external" target="_blank" rel="noopener noreferrer" href="https://github.com/mscraftsman/devcon2019/raw/master/assets/DevCon2019-SponsorshipProposal.pdf">
+          become a sponsor
+        </a>
+
+        <!-- <a
           class="link external"
           target="_blank"
           rel="noopener noreferrer"
           href="https://www.meetup.com/MauritiusSoftwareCraftsmanshipCommunity/events/258586831/"
-        >register</a>
-        
-        <a
-          class="link external"
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.mscc.mu/code-of-conduct"
         >
-          code
-          of conduct
-        </a>
+          register
+        </a> -->
 
-        <router-link class="link" :to="{ name: 'sponsors' }">sponsors</router-link>
-
-        <a
-          class="link external"
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://github.com/mscraftsman/devcon2019/raw/master/assets/DevCon2019-SponsorshipProposal.pdf"
-        >
-          become
-          a sponsor
-        </a>
-
-        <!-- <a class="link external" target="_blank" rel="noopener noreferrer" href="#">
-          mcb
-          inovapp challenge
-        </a>-->
-        <router-link class="link" :to="{ name: 'press' }">press material</router-link>
-
-        <router-link class="link" :to="{ name: 'speakers' }">speakers</router-link>
-        <router-link class="link" :to="{ name: 'sessions' }">sessions</router-link>
         <!-- <a
           class="link external"
           target="_blank"
@@ -48,18 +42,15 @@
           become
           a speaker
         </a>-->
-        <router-link class="link" :to="{ name: 'lifeatdevcon' }">past events</router-link>
-
-        <a
-          class="link"
-          href="mailto:conference@mscc.mu?subject=Inquiry re. Developers Conference 2019"
-        >
-          contact
-          us ✉
-        </a>
 
         <!-- <router-link class="link" :to="{ name: 'jobs' }">jobs</router-link> -->
+
         <!-- <router-link class="link" :to="{ name: 'vote' }">vote</router-link> -->
+
+        <!-- <a class="link external" target="_blank" rel="noopener noreferrer" href="#">
+          mcb
+          inovapp challenge
+        </a>-->
       </div>
     </div>
   </div>

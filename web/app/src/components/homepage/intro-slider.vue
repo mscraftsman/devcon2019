@@ -70,6 +70,28 @@
 
 <style lang="scss" scoped>
 .intro-slider-wrapper {
+  background: url("/img/hashtag.png") no-repeat top center;
+  &:before {
+    content: 'Developers conference 2019';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 16px;
+    color: #ff5f38;
+    margin-top: 90px;
+    opacity: 0.4;
+  }
+
+  @media screen and (max-width: $mobile) {
+    background-size: 85% auto;
+    &:before {
+      letter-spacing: 4px;
+    }
+  }
+
 }
 
 .slider-wrapper {

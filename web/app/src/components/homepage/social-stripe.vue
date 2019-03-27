@@ -65,8 +65,8 @@ import LogoSvg from "@/components/shared/logo-svg.vue";
 export default {
   name: "home",
   components: {
-    LogoSvg
-  }
+    LogoSvg,
+  },
 };
 </script>
 
@@ -157,6 +157,13 @@ p {
   }
   .icon {
     width: 2rem;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .icon-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 </style>

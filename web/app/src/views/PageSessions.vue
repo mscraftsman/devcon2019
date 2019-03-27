@@ -2,36 +2,15 @@
   <div>
     <h1 class="mega-rainbow">Sessions</h1>
     <div class="loader" v-if="sessions == ''">
-      <svg
-        width="135"
-        height="135"
-        viewBox="0 0 135 135"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="#fff"
-      >
-        <path
-          d="M67.447 58c5.523 0 10-4.477 10-10s-4.477-10-10-10-10 4.477-10 10 4.477 10 10 10zm9.448 9.447c0 5.523 4.477 10 10 10 5.522 0 10-4.477 10-10s-4.478-10-10-10c-5.523 0-10 4.477-10 10zm-9.448 9.448c-5.523 0-10 4.477-10 10 0 5.522 4.477 10 10 10s10-4.478 10-10c0-5.523-4.477-10-10-10zM58 67.447c0-5.523-4.477-10-10-10s-10 4.477-10 10 4.477 10 10 10 10-4.477 10-10z"
-        >
-          <animateTransform
-            attributeName="transform"
-            type="rotate"
-            from="0 67 67"
-            to="-360 67 67"
-            dur="2.5s"
-            repeatCount="indefinite"
-          ></animateTransform>
+      <svg width="135" height="135" viewBox="0 0 135 135" xmlns="http://www.w3.org/2000/svg"
+        fill="#fff">
+        <path d="M67.447 58c5.523 0 10-4.477 10-10s-4.477-10-10-10-10 4.477-10 10 4.477 10 10 10zm9.448 9.447c0 5.523 4.477 10 10 10 5.522 0 10-4.477 10-10s-4.478-10-10-10c-5.523 0-10 4.477-10 10zm-9.448 9.448c-5.523 0-10 4.477-10 10 0 5.522 4.477 10 10 10s10-4.478 10-10c0-5.523-4.477-10-10-10zM58 67.447c0-5.523-4.477-10-10-10s-10 4.477-10 10 4.477 10 10 10 10-4.477 10-10z">
+          <animateTransform attributeName="transform" type="rotate" from="0 67 67"
+            to="-360 67 67" dur="2.5s" repeatCount="indefinite"></animateTransform>
         </path>
-        <path
-          d="M28.19 40.31c6.627 0 12-5.374 12-12 0-6.628-5.373-12-12-12-6.628 0-12 5.372-12 12 0 6.626 5.372 12 12 12zm30.72-19.825c4.686 4.687 12.284 4.687 16.97 0 4.686-4.686 4.686-12.284 0-16.97-4.686-4.687-12.284-4.687-16.97 0-4.687 4.686-4.687 12.284 0 16.97zm35.74 7.705c0 6.627 5.37 12 12 12 6.626 0 12-5.373 12-12 0-6.628-5.374-12-12-12-6.63 0-12 5.372-12 12zm19.822 30.72c-4.686 4.686-4.686 12.284 0 16.97 4.687 4.686 12.285 4.686 16.97 0 4.687-4.686 4.687-12.284 0-16.97-4.685-4.687-12.283-4.687-16.97 0zm-7.704 35.74c-6.627 0-12 5.37-12 12 0 6.626 5.373 12 12 12s12-5.374 12-12c0-6.63-5.373-12-12-12zm-30.72 19.822c-4.686-4.686-12.284-4.686-16.97 0-4.686 4.687-4.686 12.285 0 16.97 4.686 4.687 12.284 4.687 16.97 0 4.687-4.685 4.687-12.283 0-16.97zm-35.74-7.704c0-6.627-5.372-12-12-12-6.626 0-12 5.373-12 12s5.374 12 12 12c6.628 0 12-5.373 12-12zm-19.823-30.72c4.687-4.686 4.687-12.284 0-16.97-4.686-4.686-12.284-4.686-16.97 0-4.687 4.686-4.687 12.284 0 16.97 4.686 4.687 12.284 4.687 16.97 0z"
-        >
-          <animateTransform
-            attributeName="transform"
-            type="rotate"
-            from="0 67 67"
-            to="360 67 67"
-            dur="8s"
-            repeatCount="indefinite"
-          ></animateTransform>
+        <path d="M28.19 40.31c6.627 0 12-5.374 12-12 0-6.628-5.373-12-12-12-6.628 0-12 5.372-12 12 0 6.626 5.372 12 12 12zm30.72-19.825c4.686 4.687 12.284 4.687 16.97 0 4.686-4.686 4.686-12.284 0-16.97-4.686-4.687-12.284-4.687-16.97 0-4.687 4.686-4.687 12.284 0 16.97zm35.74 7.705c0 6.627 5.37 12 12 12 6.626 0 12-5.373 12-12 0-6.628-5.374-12-12-12-6.63 0-12 5.372-12 12zm19.822 30.72c-4.686 4.686-4.686 12.284 0 16.97 4.687 4.686 12.285 4.686 16.97 0 4.687-4.686 4.687-12.284 0-16.97-4.685-4.687-12.283-4.687-16.97 0zm-7.704 35.74c-6.627 0-12 5.37-12 12 0 6.626 5.373 12 12 12s12-5.374 12-12c0-6.63-5.373-12-12-12zm-30.72 19.822c-4.686-4.686-12.284-4.686-16.97 0-4.686 4.687-4.686 12.285 0 16.97 4.686 4.687 12.284 4.687 16.97 0 4.687-4.685 4.687-12.283 0-16.97zm-35.74-7.704c0-6.627-5.372-12-12-12-6.626 0-12 5.373-12 12s5.374 12 12 12c6.628 0 12-5.373 12-12zm-19.823-30.72c4.687-4.686 4.687-12.284 0-16.97-4.686-4.686-12.284-4.686-16.97 0-4.687 4.686-4.687 12.284 0 16.97 4.686 4.687 12.284 4.687 16.97 0z">
+          <animateTransform attributeName="transform" type="rotate" from="0 67 67"
+            to="360 67 67" dur="8s" repeatCount="indefinite"></animateTransform>
         </path>
       </svg>
     </div>
@@ -39,14 +18,9 @@
       <div class="tabs-wrapper">
         <div class="tabs-container">
           <div class="right-wrapper">
-            <div
-              class="tab-items"
-              :class="{active : getDay(group.groupName) === active}"
-              @click="setActive(group.groupName)"
-              v-for="group in sessions"
-              :key="group.groupId"
-              :label="getDay(group.groupName)"
-            >
+            <div class="tab-items" :class="{active : getDay(group.groupName) === active}"
+              @click="setActive(group.groupName)" v-for="group in sessions"
+              :key="group.groupId" :label="getDay(group.groupName)">
               <div class="tab-label">{{getDay(group.groupName)}}</div>
             </div>
           </div>
@@ -55,14 +29,9 @@
       <div class="scroll-wrapper">
         <div class="tabs-content">
           <transition name="fade" mode="out-in">
-            <div
-              class="tabs-panel-content"
-              v-if="getDay(group.groupName) === active"
-              ref="content"
-              v-for="(group, index, key) in sessions"
-              :key="group.groupId"
-            >
-              <div class="room-container">
+            <div class="tabs-panel-content" v-if="getDay(group.groupName) === active"
+              ref="content" v-for="(group, index, key) in sessions" :key="group.groupId">
+              <div class="room-container no-responsive">
                 <div class="time-bar">
                   <div class="time-value">&nbsp;</div>
                   <div class="time-value">
@@ -144,25 +113,122 @@
                   <div class="time-value"></div>
                   <div class="time-value"></div>
                 </div>
-                <div
-                  :class="'session-panes room-wrapper  ' + room.className"
-                  v-for="room in rooms"
-                  :key="'room_'+ room.className"
-                >
+                <div :class="'session-panes room-wrapper  ' + room.className"
+                  v-for="room in rooms" :key="'room_'+ room.className">
                   <div :class="'room-wrapper ' + room.className">
                     <div class="room-title">{{ room.label }}</div>
-                    <router-link
-                      @click.native="setScrollPosition()"
-                      :to="{ name: 'session',  params: { id: session.id }}"
-                      v-for="session in getSessionsFor(index, room.label)"
-                      :key="room + session.id"
+                    <router-link @click.native="setScrollPosition()" :to="{ name: 'session',  params: { id: session.id }}"
+                      v-for="session in getSessionsFor(index, room.label)" :key="room + session.id"
                       v-bind:style="{gridRow: timeToText(session.startsAt) + ' / span 2' }"
-                      class="session-card-wrapper"
-                    >
-                      <session-card :session="session"/>
+                      class="session-card-wrapper">
+                      <session-card :session="session" />
                     </router-link>
                   </div>
                 </div>
+              </div>
+              <div class="slider-responsive">
+                <div class="time-bar">
+                  <div class="time-value">&nbsp;</div>
+                  <div class="time-value">
+                    9:00
+                    <span>AM</span>
+                  </div>
+                  <div class="time-value">
+                    9:30
+                    <span>AM</span>
+                  </div>
+                  <div class="time-value">
+                    10:00
+                    <span>AM</span>
+                  </div>
+                  <div class="time-value">
+                    10:30
+                    <span>AM</span>
+                  </div>
+                  <div class="time-value">
+                    11:00
+                    <span>AM</span>
+                  </div>
+                  <div class="time-value">
+                    11:30
+                    <span>AM</span>
+                  </div>
+                  <div class="time-value">
+                    12:00
+                    <span>PM</span>
+                  </div>
+                  <div class="time-value">
+                    12:30
+                    <span>PM</span>
+                  </div>
+                  <div class="time-value">
+                    1:00
+                    <span>PM</span>
+                  </div>
+                  <div class="time-value">
+                    1:30
+                    <span>PM</span>
+                  </div>
+                  <div class="time-value">
+                    2:00
+                    <span>PM</span>
+                  </div>
+                  <div class="time-value">
+                    2:30
+                    <span>PM</span>
+                  </div>
+                  <div class="time-value">
+                    3:00
+                    <span>PM</span>
+                  </div>
+                  <div class="time-value">
+                    3:30
+                    <span>PM</span>
+                  </div>
+                  <div class="time-value">
+                    4:00
+                    <span>PM</span>
+                  </div>
+                  <div class="time-value">
+                    4:30
+                    <span>PM</span>
+                  </div>
+                  <div class="time-value">
+                    5:00
+                    <span>PM</span>
+                  </div>
+                  <div class="time-value">
+                    5:30
+                    <span>PM</span>
+                  </div>
+                  <div class="time-value">
+                    6:00
+                    <span>PM</span>
+                  </div>
+                  <div class="time-value"></div>
+                  <div class="time-value"></div>
+                </div>
+                <carousel :per-page="1" :loop="true" :autoplayTimeout="3000"
+                  :paginationActiveColor="'#ff4932'" :autoplayHoverPause="true"
+                  :mouse-drag="false" :navigationEnabled="true"
+                  :paginationColor="'#fff'" :paginationPadding="5"
+                  :paginationSize="20" :centerMode="true" :navigationNextLabel="'›'"
+                  :navigationPrevLabel="'‹'">
+                  <slide :class="'session-panes room-wrapper  ' + room.className"
+                    v-for="room in rooms" :key="'room_'+ room.className">
+                    <div :class="'room-wrapper ' + room.className">
+                      <div class="room-title">{{ room.label }}</div>
+                      <router-link @click.native="setScrollPosition()" :to="{ name: 'session',  params: { id: session.id }}"
+                        v-for="session in getSessionsFor(index, room.label)"
+                        :key="room + session.id" v-bind:style="{gridRow: timeToText(session.startsAt) + ' / span 2' }"
+                        class="session-card-wrapper">
+                        <session-card :session="session" />
+                      </router-link>
+                    </div>
+                  </slide>
+
+                </carousel>
+
               </div>
             </div>
           </transition>
@@ -176,6 +242,7 @@
 import { mapActions, mapGetters } from "vuex";
 import { time as timeHelper, timeSafe as timeToText } from "@/helpers";
 import SessionCard from "@/components/shared/session-card.vue";
+import { Carousel, Slide } from "vue-carousel";
 
 export default {
   mounted() {
@@ -235,11 +302,17 @@ export default {
   },
   components: {
     SessionCard,
+    Carousel,
+    Slide,
   },
 };
 </script>
 
 <style lang="scss" scoped>
+.slider-responsive {
+  display: none;
+}
+
 .bounce-enter-active {
   animation: bounce-in 0.2s;
 }
@@ -459,25 +532,54 @@ export default {
 }
 
 @media (max-width: $tablet) {
+  .tabs-wrapper {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .tabs-container {
+    transform: none;
+    .left-wrapper {
+      width: 20%;
+    }
+    .right-wrapper {
+      .tab-items {
+        .tab-label {
+          transform: none;
+        }
+      }
+    }
+  }
+  .no-responsive {
+    display: none;
+  }
+  .slider-responsive {
+    display: grid;
+    grid-template-columns: 50px 400px;
+    grid-gap: 20px;
+    justify-content: center;
+  }
   .tabs-panel-content {
     padding: 0 10px;
+    .session-panes {
+      a {
+        width: 400px;
+      }
+    }
   }
-
   .time-bar {
     grid-template-columns: 0.5fr;
   }
 
   .scroll-wrapper {
-    overflow-x: scroll;
     overflow-y: hidden;
   }
 
   .scroll-wrapper,
   .tabs-content {
-    /*Moves Scroll bar to top! */
-    transform: rotateX(180deg);
-    -ms-transform: rotateX(180deg); /* IE 9 */
-    -webkit-transform: rotateX(180deg); /* Safari and Chrome */
+    // /*Moves Scroll bar to top! */
+    // transform: rotateX(180deg);
+    // -ms-transform: rotateX(180deg); /* IE 9 */
+    // -webkit-transform: rotateX(180deg); /* Safari and Chrome */
   }
 
   .scroll-wrapper::-webkit-scrollbar {
@@ -510,14 +612,73 @@ export default {
     }
   }
 }
-@media (max-width: 768px) {
+@media (max-width: $mobile) {
   .tabs-container {
-    .left-wrapper {
-      width: 20%;
-    }
     .right-wrapper {
-      width: 80%;
+      .tab-items {
+        .tab-label {
+          font-size: 12px;
+          height: 40px;
+        }
+      }
     }
+  }
+  .slider-responsive {
+    grid-template-columns: 50px 250px;
+    justify-content: flex-start;
+  }
+  .tabs-panel-content {
+    .session-panes {
+      a {
+        width: 250px;
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .slider-responsive {
+    grid-template-columns: 40px 225px;
+  }
+  .tabs-panel-content {
+    .session-panes {
+      a {
+        width: 225px;
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+ 
+  .slider-responsive {
+    grid-template-columns: 40px 200px;
+  }
+  .tabs-panel-content {
+    .session-panes {
+      a {
+        width: 200px;
+      }
+    }
+  }
+}
+</style>
+
+<style lang="scss">
+.slider-responsive {
+  .VueCarousel-navigation-button {
+    padding: 0 !important;
+    margin: 0 !important;
+    color: var(--color-main) !important;
+    top: 35px;
+    background: var(--color-white) !important;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    align-items: center;
+    font-weight: 700;
   }
 }
 </style>

@@ -10,12 +10,8 @@
       <div class="session-title">{{ session.title }}</div>
 
       <div class="speakers-wrapper" v-if="session.speakers">
-        <router-link
-          class="speaker-wrapper"
-          v-for="speaker in session.speakers"
-          :key="speaker.id"
-          :to="{ name: 'speaker', params: { id: speaker.id } }"
-        >
+        <router-link class="speaker-wrapper" v-for="speaker in session.speakers"
+          :key="speaker.id" :to="{ name: 'speaker', params: { id: speaker.id } }">
           <div class="avatar">
             <img :src="getSpeakerPhoto(speaker.id)" alt>
           </div>
@@ -64,12 +60,10 @@
 
         <div class="des-wrap rate" v-if="user.status">
           <template v-if="checkSessionStatus">
-            <router-link
-              v-if="voted"
-              :to="{ name: 'feedback', params: { id: id } }"
-              class="rate rated"
-            >✅ Rated. Thanks!</router-link>
-            <router-link v-else :to="{ name: 'feedback', params: { id: id } }" class="rate">Rate</router-link>
+            <router-link v-if="voted" :to="{ name: 'feedback', params: { id: id } }"
+              class="rate rated">✅ Rated. Thanks!</router-link>
+            <router-link v-else :to="{ name: 'feedback', params: { id: id } }"
+              class="rate">Rate</router-link>
           </template>
           <template v-else>Session not started yet</template>
         </div>

@@ -1,7 +1,8 @@
 <template>
   <div class="session-card" :class="isWorkshop ? 'workshop' : ''">
     <div class="session-title">{{ session.title | truncate(80, '...') }}</div>
-    <div class="session-description">{{ session.description | truncate(120, '...') }}</div>
+    <div class="session-description">{{ session.description | truncate(120,
+      '...') }}</div>
     <div class="session-author">
       <div class="name-wrapper">
         <span class="name">{{ session.speakers[0].name }}</span>
@@ -14,22 +15,11 @@
         </div>
       </div>
       <div class="vote-button">
-        <svg
-          width="60"
-          height="44"
-          viewBox="0 0 60 44"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M11.8312 5.64209C12.8657 2.28799 15.9658 0 19.4758 0H49.1606C54.5453 0 58.3923 5.21239 56.8052 10.3579L48.1688 38.3579C47.1343 41.712 44.0342 44 40.5242 44H10.8394C5.4547 44 1.60772 38.7876 3.19481 33.6421L11.8312 5.64209Z"
-            fill="black"
-          ></path>
-          <path
-            d="M20 23.1053L25.2207 28.2985C25.6108 28.6865 26.2411 28.6865 26.6312 28.2985L40 15"
-            stroke="white"
-            stroke-width="2"
-          ></path>
+        <svg width="60" height="44" viewBox="0 0 60 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11.8312 5.64209C12.8657 2.28799 15.9658 0 19.4758 0H49.1606C54.5453 0 58.3923 5.21239 56.8052 10.3579L48.1688 38.3579C47.1343 41.712 44.0342 44 40.5242 44H10.8394C5.4547 44 1.60772 38.7876 3.19481 33.6421L11.8312 5.64209Z"
+            fill="black"></path>
+          <path d="M20 23.1053L25.2207 28.2985C25.6108 28.6865 26.2411 28.6865 26.6312 28.2985L40 15"
+            stroke="white" stroke-width="2"></path>
         </svg>
       </div>
     </div>
@@ -210,6 +200,12 @@ export default {
   }
   .session-description {
     font-size: 12px;
+  }
+  .session-author {
+    .name {
+      font-size: 9px;
+      letter-spacing: 0;
+    }
   }
 }
 </style>

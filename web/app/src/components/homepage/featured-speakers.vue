@@ -3,7 +3,12 @@
     <div class="container">
       <h2 class="mega-rainbow">Featured Speakers</h2>
       <div class="featured-speakers-container">
-        <SpeakerBox v-for="speaker in getFeaturedSpeakers" :key="speaker.id" :speaker="speaker"/>
+        <SpeakerBox v-for="speaker in getFeaturedSpeakers" :key="speaker.id" :speaker="speaker" />
+      </div>
+      <div class="button-center">
+        <button-waw :theme="'#97d0e1'" :size="'70px'" :link="'https://github.com/mscraftsman/devcon2019/raw/master/assets/DevCon2019-SponsorshipProposal.pdf'">
+          View all speakers
+        </button-waw>
       </div>
     </div>
   </div>
@@ -46,11 +51,8 @@ h2 {
 }
 
 @media screen and (max-width: $tablet) {
-  
   .featured-speakers-container {
-  
     justify-items: center;
   }
-
 }
 </style>

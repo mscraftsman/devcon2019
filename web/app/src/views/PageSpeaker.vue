@@ -1,9 +1,7 @@
 <template>
   <div class="page page-session">
     <div class="back-button-wrapper">
-      <a @click="$router.go(-1);" class="back">
-        <img src="../assets/back.svg" alt> Back
-      </a>
+      <a @click="$router.go(-1)" class="back"> <img src="../assets/back.svg" alt /> Back </a>
     </div>
     <div class="page-content">{{ speaker }}</div>
     <div class="page-content" v-if="speaker">
@@ -13,7 +11,7 @@
       <div class="speakers-wrapper" v-if="speakers">
         <div class="speaker-wrapper">
           <div class="avatar">
-            <img :src="speaker.profilePicture" alt>
+            <img :src="speaker.profilePicture" alt />
           </div>
         </div>
       </div>
@@ -33,16 +31,15 @@
           <p>Speaking about :</p>
         </div>
       </div>
-      <div class="session-title">
+      <!-- <div class="session-title">
         <a href="#">To be revealed soon... !</a>
-      </div>
+      </div> -->
 
-      <!-- <div class="session-title" v-for="session in speaker.sessions" :key="session.name">
+      <div class="session-title" v-for="session in speaker.sessions" :key="session.name">
         <router-link :to="{ name: 'session', params: { id: session.id } }">
-          {{
-          session.name }}
+          {{ session.name }}
         </router-link>
-      </div>-->
+      </div>
     </div>
     <div class="page-content" v-else>finding speaker details..</div>
   </div>

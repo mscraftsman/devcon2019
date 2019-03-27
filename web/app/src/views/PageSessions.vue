@@ -2,15 +2,14 @@
   <div>
     <h1 class="mega-rainbow">Sessions</h1>
     <div class="loader" v-if="sessions == ''">
-      <svg width="135" height="135" viewBox="0 0 135 135" xmlns="http://www.w3.org/2000/svg"
-        fill="#fff">
+      <svg width="135" height="135" viewBox="0 0 135 135" xmlns="http://www.w3.org/2000/svg" fill="#fff">
         <path d="M67.447 58c5.523 0 10-4.477 10-10s-4.477-10-10-10-10 4.477-10 10 4.477 10 10 10zm9.448 9.447c0 5.523 4.477 10 10 10 5.522 0 10-4.477 10-10s-4.478-10-10-10c-5.523 0-10 4.477-10 10zm-9.448 9.448c-5.523 0-10 4.477-10 10 0 5.522 4.477 10 10 10s10-4.478 10-10c0-5.523-4.477-10-10-10zM58 67.447c0-5.523-4.477-10-10-10s-10 4.477-10 10 4.477 10 10 10 10-4.477 10-10z">
-          <animateTransform attributeName="transform" type="rotate" from="0 67 67"
-            to="-360 67 67" dur="2.5s" repeatCount="indefinite"></animateTransform>
+          <animateTransform attributeName="transform" type="rotate" from="0 67 67" to="-360 67 67" dur="2.5s" repeatCount="indefinite"></animateTransform>
         </path>
-        <path d="M28.19 40.31c6.627 0 12-5.374 12-12 0-6.628-5.373-12-12-12-6.628 0-12 5.372-12 12 0 6.626 5.372 12 12 12zm30.72-19.825c4.686 4.687 12.284 4.687 16.97 0 4.686-4.686 4.686-12.284 0-16.97-4.686-4.687-12.284-4.687-16.97 0-4.687 4.686-4.687 12.284 0 16.97zm35.74 7.705c0 6.627 5.37 12 12 12 6.626 0 12-5.373 12-12 0-6.628-5.374-12-12-12-6.63 0-12 5.372-12 12zm19.822 30.72c-4.686 4.686-4.686 12.284 0 16.97 4.687 4.686 12.285 4.686 16.97 0 4.687-4.686 4.687-12.284 0-16.97-4.685-4.687-12.283-4.687-16.97 0zm-7.704 35.74c-6.627 0-12 5.37-12 12 0 6.626 5.373 12 12 12s12-5.374 12-12c0-6.63-5.373-12-12-12zm-30.72 19.822c-4.686-4.686-12.284-4.686-16.97 0-4.686 4.687-4.686 12.285 0 16.97 4.686 4.687 12.284 4.687 16.97 0 4.687-4.685 4.687-12.283 0-16.97zm-35.74-7.704c0-6.627-5.372-12-12-12-6.626 0-12 5.373-12 12s5.374 12 12 12c6.628 0 12-5.373 12-12zm-19.823-30.72c4.687-4.686 4.687-12.284 0-16.97-4.686-4.686-12.284-4.686-16.97 0-4.687 4.686-4.687 12.284 0 16.97 4.686 4.687 12.284 4.687 16.97 0z">
-          <animateTransform attributeName="transform" type="rotate" from="0 67 67"
-            to="360 67 67" dur="8s" repeatCount="indefinite"></animateTransform>
+        <path
+          d="M28.19 40.31c6.627 0 12-5.374 12-12 0-6.628-5.373-12-12-12-6.628 0-12 5.372-12 12 0 6.626 5.372 12 12 12zm30.72-19.825c4.686 4.687 12.284 4.687 16.97 0 4.686-4.686 4.686-12.284 0-16.97-4.686-4.687-12.284-4.687-16.97 0-4.687 4.686-4.687 12.284 0 16.97zm35.74 7.705c0 6.627 5.37 12 12 12 6.626 0 12-5.373 12-12 0-6.628-5.374-12-12-12-6.63 0-12 5.372-12 12zm19.822 30.72c-4.686 4.686-4.686 12.284 0 16.97 4.687 4.686 12.285 4.686 16.97 0 4.687-4.686 4.687-12.284 0-16.97-4.685-4.687-12.283-4.687-16.97 0zm-7.704 35.74c-6.627 0-12 5.37-12 12 0 6.626 5.373 12 12 12s12-5.374 12-12c0-6.63-5.373-12-12-12zm-30.72 19.822c-4.686-4.686-12.284-4.686-16.97 0-4.686 4.687-4.686 12.285 0 16.97 4.686 4.687 12.284 4.687 16.97 0 4.687-4.685 4.687-12.283 0-16.97zm-35.74-7.704c0-6.627-5.372-12-12-12-6.626 0-12 5.373-12 12s5.374 12 12 12c6.628 0 12-5.373 12-12zm-19.823-30.72c4.687-4.686 4.687-12.284 0-16.97-4.686-4.686-12.284-4.686-16.97 0-4.687 4.686-4.687 12.284 0 16.97 4.686 4.687 12.284 4.687 16.97 0z"
+        >
+          <animateTransform attributeName="transform" type="rotate" from="0 67 67" to="360 67 67" dur="8s" repeatCount="indefinite"></animateTransform>
         </path>
       </svg>
     </div>
@@ -18,10 +17,8 @@
       <div class="tabs-wrapper">
         <div class="tabs-container">
           <div class="right-wrapper">
-            <div class="tab-items" :class="{active : getDay(group.groupName) === active}"
-              @click="setActive(group.groupName)" v-for="group in sessions"
-              :key="group.groupId" :label="getDay(group.groupName)">
-              <div class="tab-label">{{getDay(group.groupName)}}</div>
+            <div class="tab-items" :class="{ active: getDay(group.groupName) === active }" @click="setActive(group.groupName)" v-for="group in sessions" :key="group.groupId" :label="getDay(group.groupName)">
+              <div class="tab-label">{{ getDay(group.groupName) }}</div>
             </div>
           </div>
         </div>
@@ -29,8 +26,7 @@
       <div class="scroll-wrapper">
         <div class="tabs-content">
           <transition name="fade" mode="out-in">
-            <div class="tabs-panel-content" v-if="getDay(group.groupName) === active"
-              ref="content" v-for="(group, index, key) in sessions" :key="group.groupId">
+            <div class="tabs-panel-content" v-if="getDay(group.groupName) === active" ref="content" v-for="(group, index, key) in sessions" :key="group.groupId">
               <div class="room-container no-responsive">
                 <div class="time-bar">
                   <div class="time-value">&nbsp;</div>
@@ -111,16 +107,11 @@
                     <span>PM</span>
                   </div>
                   <div class="time-value"></div>
-                  <div class="time-value"></div>
                 </div>
-                <div :class="'session-panes room-wrapper  ' + room.className"
-                  v-for="room in rooms" :key="'room_'+ room.className">
+                <div :class="'session-panes room-wrapper  ' + room.className" v-for="room in rooms" :key="'room_' + room.className">
                   <div :class="'room-wrapper ' + room.className">
                     <div class="room-title">{{ room.label }}</div>
-                    <router-link @click.native="setScrollPosition()" :to="{ name: 'session',  params: { id: session.id }}"
-                      v-for="session in getSessionsFor(index, room.label)" :key="room + session.id"
-                      v-bind:style="{gridRow: timeToText(session.startsAt) + ' / span 2' }"
-                      class="session-card-wrapper">
+                    <router-link @click.native="setScrollPosition()" :to="{ name: 'session', params: { id: session.id } }" v-for="session in getSessionsFor(index, room.label)" :key="room + session.id" v-bind:style="{ gridRow: timeToText(session.startsAt) + ' / span 2' }" class="session-card-wrapper">
                       <session-card :session="session" />
                     </router-link>
                   </div>
@@ -205,30 +196,17 @@
                     6:00
                     <span>PM</span>
                   </div>
-                  <div class="time-value"></div>
-                  <div class="time-value"></div>
                 </div>
-                <carousel :per-page="1" :loop="true" :autoplayTimeout="3000"
-                  :paginationActiveColor="'#ff4932'" :autoplayHoverPause="true"
-                  :mouse-drag="false" :navigationEnabled="true"
-                  :paginationColor="'#fff'" :paginationPadding="5"
-                  :paginationSize="20" :centerMode="true" :navigationNextLabel="'›'"
-                  :navigationPrevLabel="'‹'">
-                  <slide :class="'session-panes room-wrapper  ' + room.className"
-                    v-for="room in rooms" :key="'room_'+ room.className">
+                <carousel :per-page="1" :loop="true" :autoplayTimeout="3000" :paginationActiveColor="'#ff4932'" :autoplayHoverPause="true" :mouse-drag="false" :navigationEnabled="true" :paginationColor="'#fff'" :paginationPadding="5" :paginationSize="20" :centerMode="true" :navigationNextLabel="'›'" :navigationPrevLabel="'‹'">
+                  <slide :class="'session-panes room-wrapper  ' + room.className" v-for="room in rooms" :key="'room_' + room.className">
                     <div :class="'room-wrapper ' + room.className">
                       <div class="room-title">{{ room.label }}</div>
-                      <router-link @click.native="setScrollPosition()" :to="{ name: 'session',  params: { id: session.id }}"
-                        v-for="session in getSessionsFor(index, room.label)"
-                        :key="room + session.id" v-bind:style="{gridRow: timeToText(session.startsAt) + ' / span 2' }"
-                        class="session-card-wrapper">
+                      <router-link @click.native="setScrollPosition()" :to="{ name: 'session', params: { id: session.id } }" v-for="session in getSessionsFor(index, room.label)" :key="room + session.id" v-bind:style="{ gridRow: timeToText(session.startsAt) + ' / span 2' }" class="session-card-wrapper">
                         <session-card :session="session" />
                       </router-link>
                     </div>
                   </slide>
-
                 </carousel>
-
               </div>
             </div>
           </transition>
@@ -260,7 +238,7 @@ export default {
     };
   },
   filters: {
-    truncate: function(text, length, suffix) {
+    truncate: function (text, length, suffix) {
       return text.substring(0, length);
       // return text.substring(0, length) + suffix;
     },
@@ -270,21 +248,21 @@ export default {
 
     time: timeHelper,
     timeToText: timeToText,
-    sampleTime: function() {
+    sampleTime: function () {
       return "900AM";
     },
-    getDay: function(str) {
+    getDay: function (str) {
       return str.split(",")[0];
     },
-    setActive: function(str) {
+    setActive: function (str) {
       // Keep Track of previous Page Sessions activity in current Session
       this.$store.commit("SET_PAGESESSIONS_ACTIVE", str.split(",")[0]);
     },
-    setScrollPosition: function() {
+    setScrollPosition: function () {
       // Keep Track of previous scroll position
       this.$store.commit("SET_PAGESESSIONS_SCROLL_POSITION", this.$refs["content"][0].scrollTop);
     },
-    getSessionsFor: function(day, room) {
+    getSessionsFor: function (day, room) {
       // console.log(day + room);
       return this.sessions[day].sessions.filter(session => {
         if (session.room === room) {
@@ -488,10 +466,7 @@ export default {
     "PM430"
     "PM500"
     "PM530"
-    "PM600"
-    "-"
-    "-";
-
+    "PM600";
   // grid-template-rows: [title-start] 50px [title-end AM900-start] 50px [AM900-end AM930-start] 50px [AM930-end AM1000-start] 50px [AM1000-end AM1030-start] 50px [AM1030-end AM1100-start] 50px [AM1100-end AM1130-start] 50px [AM1130-end AM1200-start] 50px [AM1200-end AM1230-start] 50px [AM1230-end PM100-start] 50px [PM100-end PM130-start] 50px [PM130-end PM200-start] 50px [PM200-end PM230-start] 50px [PM230-end PM300-start] 50px [PM300-end PM330-start] 50px [PM330-end PM400-start] 50px [PM400-end PM430-start] 50px [PM430-end PM500-start] 50px [PM500-end];
   .room-title {
     color: white;
@@ -650,7 +625,6 @@ export default {
 }
 
 @media (max-width: 320px) {
- 
   .slider-responsive {
     grid-template-columns: 40px 200px;
   }

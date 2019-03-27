@@ -1,19 +1,16 @@
 <template>
   <div class="page page-session">
     <div class="back-button-wrapper">
-      <a @click="$router.go(-1);" class="back">
-        <img src="../assets/back.svg" alt> Back
-      </a>
+      <a @click="$router.go(-1)" class="back"> <img src="../assets/back.svg" alt /> Back </a>
     </div>
     <div class="page-content" v-if="session">
       <!-- <span>{{id}}</span> -->
       <div class="session-title">{{ session.title }}</div>
 
       <div class="speakers-wrapper" v-if="session.speakers">
-        <router-link class="speaker-wrapper" v-for="speaker in session.speakers"
-          :key="speaker.id" :to="{ name: 'speaker', params: { id: speaker.id } }">
+        <router-link class="speaker-wrapper" v-for="speaker in session.speakers" :key="speaker.id" :to="{ name: 'speaker', params: { id: speaker.id } }">
           <div class="avatar">
-            <img :src="getSpeakerPhoto(speaker.id)" alt>
+            <img :src="getSpeakerPhoto(speaker.id)" alt />
           </div>
           <p class="name">{{ speaker.name }}</p>
         </router-link>
@@ -22,28 +19,28 @@
       <div class="descriptions-row">
         <div class="des-wrap" v-if="session.format">
           <label>
-            <img src="../assets/icons/language.svg" alt>
+            <img src="../assets/icons/language.svg" alt />
           </label>
           <p>{{ session.format }}</p>
         </div>
 
         <div class="des-wrap" v-if="session.language">
           <label>
-            <img src="../assets/icons/language.svg" alt>
+            <img src="../assets/icons/language.svg" alt />
           </label>
           <p>{{ session.language }}</p>
         </div>
 
         <div class="des-wrap">
           <label>
-            <img src="../assets/icons/location.svg" alt>
+            <img src="../assets/icons/location.svg" alt />
           </label>
           <p>{{ session.room }}</p>
         </div>
 
         <div class="des-wrap">
           <label>
-            <img src="../assets/icons/time.svg" alt>
+            <img src="../assets/icons/time.svg" alt />
           </label>
           <p>
             {{ getDay(session.startsAt) }} {{ time(session.startsAt) }} -
@@ -53,19 +50,19 @@
 
         <div class="des-wrap" v-if="session.level">
           <label>
-            <img src="../assets/icons/level.svg" alt>
+            <img src="../assets/icons/level.svg" alt />
           </label>
           <p>{{ session.level }}</p>
         </div>
 
         <div class="des-wrap rate" v-if="user.status">
           <template v-if="checkSessionStatus">
-            <router-link v-if="voted" :to="{ name: 'feedback', params: { id: id } }"
-              class="rate rated">✅ Rated. Thanks!</router-link>
-            <router-link v-else :to="{ name: 'feedback', params: { id: id } }"
-              class="rate">Rate</router-link>
+            <router-link v-if="voted" :to="{ name: 'feedback', params: { id: id } }" class="rate rated">✅ Rated. Thanks!</router-link>
+            <router-link v-else :to="{ name: 'feedback', params: { id: id } }" class="rate">Rate</router-link>
           </template>
-          <template v-else>Session not started yet</template>
+          <template v-else
+            >Session not started yet</template
+          >
         </div>
 
         <div class="des-wrap rate meetup" v-else>
@@ -80,8 +77,7 @@
     <div class="page-content" v-else>
       <p>loading session...</p>
       <a href="javascript:location.reload()" title="i'm not proud of this code. please send PR">
-        is
-        this taking too long? click here
+        is this taking too long? click here
       </a>
     </div>
   </div>
@@ -93,10 +89,10 @@ import { time as timeHelper, getDay as getDayHelper } from "@/helpers";
 
 export default {
   props: ["id"],
-  mounted() {},
+  mounted() { },
   methods: {
     ...mapActions(["FETCH_SESSIONS", "FETCH_SPEAKERS", "fetchVotes"]),
-    getSpeakerPhoto: function(id) {
+    getSpeakerPhoto: function (id) {
       if (this.speakers.length === 0) {
         this.FETCH_SPEAKERS();
       } else {
@@ -123,13 +119,13 @@ export default {
       user: "getUser",
       getVotes: "getVotes",
     }),
-    session: function() {
+    session: function () {
       if (typeof this.sessions == "undefined") {
         this.FETCH_SESSIONS();
       }
       let sessions = this.sessions
         .map(groups => groups.sessions)
-        .reduce(function(acc, curr) {
+        .reduce(function (acc, curr) {
           return [...acc, ...curr];
         }, []);
 
@@ -138,7 +134,7 @@ export default {
       let session = sessions.find(sess => sess.id === this.id);
       return session;
     },
-    voted: function() {
+    voted: function () {
       //   let allVoted = _.map(this.getVotes, "session_id");
       //   if (allVoted.indexOf(this.id) !== -1) {
       //     return true;
@@ -199,6 +195,13 @@ a.back {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
+}
+
+.page-content {
+  text-align: center;
+  a {
+    color: var(--color-blue);
+  }
 }
 .back-button-wrapper {
   cursor: pointer;

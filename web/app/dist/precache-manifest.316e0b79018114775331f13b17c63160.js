@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "e61539c899adf941ff40",
-    "url": "/css/app.f9d37c0c.css"
+    "revision": "98bef1cb4d7f79a147fe",
+    "url": "/css/app.05e61c35.css"
   },
   {
-    "revision": "e61539c899adf941ff40",
-    "url": "/js/app.8950b6f1.js"
+    "revision": "98bef1cb4d7f79a147fe",
+    "url": "/js/app.93aebf78.js"
   },
   {
     "revision": "3abb434e98964db9d203",
@@ -144,7 +144,7 @@ self.__precacheManifest = [
     "url": "/img/level.895cd7e8.svg"
   },
   {
-    "revision": "eef228e38448ba8b430c6ec82bfec6d7",
+    "revision": "b0f6482c9195b469d714d75ffeec1816",
     "url": "/index.html"
   },
   {
@@ -152,12 +152,12 @@ self.__precacheManifest = [
     "url": "/BingSiteAuth.xml"
   },
   {
-    "revision": "5a7b3cf9c6a0d896cb102a726efb7f71",
-    "url": "/browserconfig.xml"
-  },
-  {
     "revision": "0e77d90a4afeaf4f6a3c6076701d7e86",
     "url": "/crossdomain.xml"
+  },
+  {
+    "revision": "5a7b3cf9c6a0d896cb102a726efb7f71",
+    "url": "/browserconfig.xml"
   },
   {
     "revision": "47ee867ad1fcfc2fc6471d43774cdc9e",
@@ -236,24 +236,24 @@ self.__precacheManifest = [
     "url": "/img/sponsors/Esokia_logo_RGB.png"
   },
   {
-    "revision": "d4770c27cee0f4f67872dff392331f61",
-    "url": "/img/sponsors/expat.png"
+    "revision": "ca99ef71d91e16f84503e9442b22307f",
+    "url": "/img/sponsors/Graphics_Temple.jpg"
   },
   {
     "revision": "33d073a28b17dd56e7e3d8a18936f91b",
     "url": "/img/sponsors/extension_interactive.png"
   },
   {
-    "revision": "10d8c759a251ab11bfdf55a9d4fb35f8",
-    "url": "/img/sponsors/expatblog.png"
-  },
-  {
-    "revision": "ca99ef71d91e16f84503e9442b22307f",
-    "url": "/img/sponsors/Graphics_Temple.jpg"
+    "revision": "d4770c27cee0f4f67872dff392331f61",
+    "url": "/img/sponsors/expat.png"
   },
   {
     "revision": "c8aee2e84a557295937825ab1552df41",
     "url": "/img/sponsors/ios.jpg"
+  },
+  {
+    "revision": "10d8c759a251ab11bfdf55a9d4fb35f8",
+    "url": "/img/sponsors/expatblog.png"
   },
   {
     "revision": "50ee4f3527b0ad5935aed870ac48691c",
@@ -308,12 +308,12 @@ self.__precacheManifest = [
     "url": "/img/sponsors/pluralsight-logo-black-500x155-v1.png"
   },
   {
-    "revision": "e3611487ea2f36226fbe09c867b364f4",
-    "url": "/img/sponsors/SpoonLogov4_0.png"
-  },
-  {
     "revision": "a8d11a246cf9350f9c4487903d5d399a",
     "url": "/img/sponsors/SIL-logo_takes-you-to-new-heights.png"
+  },
+  {
+    "revision": "e3611487ea2f36226fbe09c867b364f4",
+    "url": "/img/sponsors/SpoonLogov4_0.png"
   },
   {
     "revision": "f689fbf65367d73f985d3a854f0dc9c2",
@@ -340,6 +340,10 @@ self.__precacheManifest = [
     "url": "/img/sponsors/white_elastic.png"
   },
   {
+    "revision": "f43613442c085f16694c537b60919800",
+    "url": "/img/sponsors/white_Esokia_logo_RGB.png"
+  },
+  {
     "revision": "50941e74bbe481b23667856416faaf95",
     "url": "/img/sponsors/white_eventstore.svg"
   },
@@ -352,10 +356,6 @@ self.__precacheManifest = [
     "url": "/img/sponsors/white_expatblog.png"
   },
   {
-    "revision": "f43613442c085f16694c537b60919800",
-    "url": "/img/sponsors/white_Esokia_logo_RGB.png"
-  },
-  {
     "revision": "d4bb8794afb0a27b9d621cb6b1d44c27",
     "url": "/img/sponsors/white_extension_interactive.png"
   },
@@ -364,12 +364,12 @@ self.__precacheManifest = [
     "url": "/img/past-events/gwab2015.jpeg"
   },
   {
-    "revision": "8f01932c8d29093ec9cf7fe9fec2ff92",
-    "url": "/img/past-events/xamarin-2016.jpeg"
-  },
-  {
     "revision": "8ca05b80b0bd3bf68540f7087b0d6435",
     "url": "/img/past-events/gwab2016.jpeg"
+  },
+  {
+    "revision": "8f01932c8d29093ec9cf7fe9fec2ff92",
+    "url": "/img/past-events/xamarin-2016.jpeg"
   },
   {
     "revision": "23dcfa70400c86c175b5f0baeed28fb1",
@@ -424,16 +424,16 @@ self.__precacheManifest = [
     "url": "/img/sponsors/white_SpoonLogov4_0.png"
   },
   {
+    "revision": "d01e66ea5718f0f09bd0a11032d773ce",
+    "url": "/img/sponsors/white_teamonite.png"
+  },
+  {
     "revision": "87acc4d2615f190810a5e3b856738aa5",
     "url": "/img/sponsors/MariaDB.png"
   },
   {
     "revision": "f35d41df64d2ffdbc1cae792a29b6abe",
     "url": "/robots.txt"
-  },
-  {
-    "revision": "d01e66ea5718f0f09bd0a11032d773ce",
-    "url": "/img/sponsors/white_teamonite.png"
   },
   {
     "revision": "c2c87d02f9a68383835f98af934a8a5c",
@@ -444,16 +444,16 @@ self.__precacheManifest = [
     "url": "/img/sponsors/OReilly.jpg"
   },
   {
-    "revision": "5ba8ce3871f928b59e7d1254ccb0bfdd",
-    "url": "/img/sponsors/RossConsultingLogo.png"
-  },
-  {
     "revision": "5f1b3a3bd6af7cd4a7bc83c8e04124cf",
     "url": "/img/sponsors/redgate_logo_2016.png"
   },
   {
     "revision": "88b35a29f7f6f7d0a665839aac743c27",
     "url": "/img/sponsors/SDWLogo.png"
+  },
+  {
+    "revision": "5ba8ce3871f928b59e7d1254ccb0bfdd",
+    "url": "/img/sponsors/RossConsultingLogo.png"
   },
   {
     "revision": "d79eb25fde6def43f402466e62adc66e",
@@ -520,12 +520,12 @@ self.__precacheManifest = [
     "url": "/img/banners/409x280.png"
   },
   {
-    "revision": "76918ffb10d096a5748165d4a0fe8388",
-    "url": "/img/banners/twitter-cover.jpg"
-  },
-  {
     "revision": "ace0677116657cd0b3d28bff0cd2548a",
     "url": "/img/banners/MSCC-logo-coloured.png"
+  },
+  {
+    "revision": "76918ffb10d096a5748165d4a0fe8388",
+    "url": "/img/banners/twitter-cover.jpg"
   },
   {
     "revision": "cfa99d02b06e800731a2e4e2ec209eaf",

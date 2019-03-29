@@ -1,91 +1,99 @@
 self.__precacheManifest = [
   {
-    "revision": "0263abd22c959e809462",
-    "url": "/css/app.87456b1a.css"
+    "revision": "e61539c899adf941ff40",
+    "url": "/css/app.f9d37c0c.css"
   },
   {
-    "revision": "0263abd22c959e809462",
-    "url": "/js/app.ead01f36.js"
+    "revision": "e61539c899adf941ff40",
+    "url": "/js/app.8950b6f1.js"
   },
   {
-    "revision": "794ad7e30a053807278b",
-    "url": "/css/chunk-088b49bc.c80b0f0f.css"
+    "revision": "3abb434e98964db9d203",
+    "url": "/js/chunk-2d0b1647.e154907f.js"
   },
   {
-    "revision": "794ad7e30a053807278b",
-    "url": "/js/chunk-088b49bc.31771f95.js"
+    "revision": "06af402844a960bc0ccd",
+    "url": "/js/chunk-2d0be0de.66638548.js"
   },
   {
-    "revision": "2f81d72f266ddb029f9f",
-    "url": "/js/chunk-2d0b1647.af211d0a.js"
+    "revision": "e258f040e5f8f815c73c",
+    "url": "/js/chunk-2d0dd421.4c11b74b.js"
   },
   {
-    "revision": "e26c644947a9d0d6fe07",
-    "url": "/js/chunk-2d0be0de.6b9c32d4.js"
+    "revision": "fdad60aaf37f82e13611",
+    "url": "/js/chunk-2d0e4e7e.380730fd.js"
   },
   {
-    "revision": "2cb3da76d9d67006ba95",
-    "url": "/js/chunk-2d0dd421.9fc4cb1d.js"
+    "revision": "2894cd0c09ad466a3527",
+    "url": "/js/chunk-2d2214ec.d2aedbe9.js"
   },
   {
-    "revision": "86e6a097ce36fad000c8",
-    "url": "/js/chunk-2d0e4e7e.b2aefe0a.js"
+    "revision": "1925a5a9c3d23fc2a86e",
+    "url": "/css/chunk-3ca8e694.40a0dbb2.css"
   },
   {
-    "revision": "cf62a9df68aa8639d1ab",
-    "url": "/js/chunk-2d2214ec.aff3f6ef.js"
+    "revision": "1925a5a9c3d23fc2a86e",
+    "url": "/js/chunk-3ca8e694.bc20ad29.js"
   },
   {
-    "revision": "8c33cbb3a9e8224ad977",
-    "url": "/css/chunk-3ca8e694.e28ba2b8.css"
+    "revision": "272fa235dc09eea17860",
+    "url": "/css/chunk-42e22808.976d1c17.css"
   },
   {
-    "revision": "8c33cbb3a9e8224ad977",
-    "url": "/js/chunk-3ca8e694.2a3b7aa6.js"
+    "revision": "272fa235dc09eea17860",
+    "url": "/js/chunk-42e22808.ab7edcaa.js"
   },
   {
-    "revision": "84cf785827aa71db5fc0",
-    "url": "/css/chunk-4e58b1b2.46298c8c.css"
+    "revision": "da5a5a12dfda66f7d984",
+    "url": "/css/chunk-4e58b1b2.46e19921.css"
   },
   {
-    "revision": "84cf785827aa71db5fc0",
-    "url": "/js/chunk-4e58b1b2.d95d38d6.js"
+    "revision": "da5a5a12dfda66f7d984",
+    "url": "/js/chunk-4e58b1b2.97299ac2.js"
   },
   {
-    "revision": "87db237470202c66567f",
-    "url": "/css/chunk-57685dd2.6d0823ba.css"
+    "revision": "b654f4cde16d6b8911ed",
+    "url": "/css/chunk-57685dd2.da5e32c3.css"
   },
   {
-    "revision": "87db237470202c66567f",
-    "url": "/js/chunk-57685dd2.45ea363b.js"
+    "revision": "b654f4cde16d6b8911ed",
+    "url": "/js/chunk-57685dd2.a8aa5e37.js"
   },
   {
-    "revision": "ccdab80c244b14d04ada",
-    "url": "/css/chunk-722869b2.c7374053.css"
+    "revision": "a912d718ab06fd23bb62",
+    "url": "/css/chunk-722869b2.1244f894.css"
   },
   {
-    "revision": "ccdab80c244b14d04ada",
-    "url": "/js/chunk-722869b2.b93d61f6.js"
+    "revision": "a912d718ab06fd23bb62",
+    "url": "/js/chunk-722869b2.0060c4c0.js"
   },
   {
-    "revision": "4d8826e67531101a5d13",
-    "url": "/css/chunk-7b1c91bc.5127d65c.css"
+    "revision": "ec0734a6176df82c87ec",
+    "url": "/css/chunk-aa7ac6a6.1c8b38e6.css"
   },
   {
-    "revision": "4d8826e67531101a5d13",
-    "url": "/js/chunk-7b1c91bc.48e60362.js"
+    "revision": "ec0734a6176df82c87ec",
+    "url": "/js/chunk-aa7ac6a6.9025544b.js"
   },
   {
-    "revision": "fdc582c60ff6e214bbf6",
-    "url": "/css/chunk-982aa732.e711630f.css"
+    "revision": "caf509352f08c16c18d7",
+    "url": "/css/chunk-bf5ae07c.df24ff45.css"
   },
   {
-    "revision": "fdc582c60ff6e214bbf6",
-    "url": "/js/chunk-982aa732.d3b6cfcd.js"
+    "revision": "caf509352f08c16c18d7",
+    "url": "/js/chunk-bf5ae07c.aeb3883c.js"
   },
   {
-    "revision": "cdf142003a2946512c92",
-    "url": "/js/chunk-vendors.c45524c6.js"
+    "revision": "0774e6dc324c91bc91a0",
+    "url": "/css/chunk-e1c755e6.62201d63.css"
+  },
+  {
+    "revision": "0774e6dc324c91bc91a0",
+    "url": "/js/chunk-e1c755e6.61be3904.js"
+  },
+  {
+    "revision": "a42994433293f56428b4",
+    "url": "/js/chunk-vendors.373cabb3.js"
   },
   {
     "revision": "d33392a1cabdc852c86a7d4e094ca940",
@@ -104,16 +112,20 @@ self.__precacheManifest = [
     "url": "/img/time.14e3060f.svg"
   },
   {
+    "revision": "9d060afa4a6103451b01fe42a326ba65",
+    "url": "/img/menu-hover.9d060afa.svg"
+  },
+  {
+    "revision": "8524c962110d69bacc3609be3e14e1fd",
+    "url": "/img/card-author-frame.8524c962.svg"
+  },
+  {
     "revision": "114500ecf643adfdf15743583dbe62a0",
     "url": "/img/logo.114500ec.svg"
   },
   {
     "revision": "8d2ba006f4d4ccc6feb61a47b03f2d44",
     "url": "/img/language.8d2ba006.svg"
-  },
-  {
-    "revision": "9d060afa4a6103451b01fe42a326ba65",
-    "url": "/img/menu-hover.9d060afa.svg"
   },
   {
     "revision": "a6a8778281f7b75c8c5e6d38bab971bb",
@@ -132,7 +144,7 @@ self.__precacheManifest = [
     "url": "/img/level.895cd7e8.svg"
   },
   {
-    "revision": "021dc4ae47e0b26c027b6c3ddb6425a4",
+    "revision": "eef228e38448ba8b430c6ec82bfec6d7",
     "url": "/index.html"
   },
   {
@@ -228,12 +240,12 @@ self.__precacheManifest = [
     "url": "/img/sponsors/expat.png"
   },
   {
-    "revision": "10d8c759a251ab11bfdf55a9d4fb35f8",
-    "url": "/img/sponsors/expatblog.png"
-  },
-  {
     "revision": "33d073a28b17dd56e7e3d8a18936f91b",
     "url": "/img/sponsors/extension_interactive.png"
+  },
+  {
+    "revision": "10d8c759a251ab11bfdf55a9d4fb35f8",
+    "url": "/img/sponsors/expatblog.png"
   },
   {
     "revision": "ca99ef71d91e16f84503e9442b22307f",
@@ -280,6 +292,10 @@ self.__precacheManifest = [
     "url": "/img/sponsors/lsldigital.png"
   },
   {
+    "revision": "bf688499de81dea721f68d392092db48",
+    "url": "/img/sponsors/maureva.png"
+  },
+  {
     "revision": "171e80c3d50341a75b53d1574392c3b7",
     "url": "/img/sponsors/MSFT_logo_rgb_C-Gray.png"
   },
@@ -292,12 +308,12 @@ self.__precacheManifest = [
     "url": "/img/sponsors/pluralsight-logo-black-500x155-v1.png"
   },
   {
-    "revision": "a8d11a246cf9350f9c4487903d5d399a",
-    "url": "/img/sponsors/SIL-logo_takes-you-to-new-heights.png"
-  },
-  {
     "revision": "e3611487ea2f36226fbe09c867b364f4",
     "url": "/img/sponsors/SpoonLogov4_0.png"
+  },
+  {
+    "revision": "a8d11a246cf9350f9c4487903d5d399a",
+    "url": "/img/sponsors/SIL-logo_takes-you-to-new-heights.png"
   },
   {
     "revision": "f689fbf65367d73f985d3a854f0dc9c2",
@@ -328,6 +344,10 @@ self.__precacheManifest = [
     "url": "/img/sponsors/white_eventstore.svg"
   },
   {
+    "revision": "edb1ac364b305d6423e098622d365218",
+    "url": "/img/sponsors/white_expat.png"
+  },
+  {
     "revision": "3c0a2f499106df8d0627aedcea0fa292",
     "url": "/img/sponsors/white_expatblog.png"
   },
@@ -336,48 +356,48 @@ self.__precacheManifest = [
     "url": "/img/sponsors/white_Esokia_logo_RGB.png"
   },
   {
-    "revision": "edb1ac364b305d6423e098622d365218",
-    "url": "/img/sponsors/white_expat.png"
-  },
-  {
     "revision": "d4bb8794afb0a27b9d621cb6b1d44c27",
     "url": "/img/sponsors/white_extension_interactive.png"
-  },
-  {
-    "revision": "23dcfa70400c86c175b5f0baeed28fb1",
-    "url": "/img/sponsors/white_Graphics_Temple.png"
   },
   {
     "revision": "eac1362969217a4952e8f4b0969d0823",
     "url": "/img/past-events/gwab2015.jpeg"
   },
   {
-    "revision": "8ca05b80b0bd3bf68540f7087b0d6435",
-    "url": "/img/past-events/gwab2016.jpeg"
-  },
-  {
     "revision": "8f01932c8d29093ec9cf7fe9fec2ff92",
     "url": "/img/past-events/xamarin-2016.jpeg"
   },
   {
-    "revision": "7825cff118cfa1837f0bb044ed7b027d",
-    "url": "/img/sponsors/white_ios.png"
+    "revision": "8ca05b80b0bd3bf68540f7087b0d6435",
+    "url": "/img/past-events/gwab2016.jpeg"
+  },
+  {
+    "revision": "23dcfa70400c86c175b5f0baeed28fb1",
+    "url": "/img/sponsors/white_Graphics_Temple.png"
   },
   {
     "revision": "86a1e163b5e237e220e3cd7cc95f6e7d",
     "url": "/img/sponsors/white_iame.svg"
   },
   {
-    "revision": "005491f99dac320ac0a710db6557f8a2",
-    "url": "/img/sponsors/white_lsldigital.png"
+    "revision": "cc68c423c48ecb44df779f77952258fa",
+    "url": "/img/sponsors/white_ictio.png"
+  },
+  {
+    "revision": "7825cff118cfa1837f0bb044ed7b027d",
+    "url": "/img/sponsors/white_ios.png"
   },
   {
     "revision": "527eeb03be100f4a9c99e68c366fb4a2",
     "url": "/img/sponsors/white_jetbrains.svg"
   },
   {
-    "revision": "cc68c423c48ecb44df779f77952258fa",
-    "url": "/img/sponsors/white_ictio.png"
+    "revision": "005491f99dac320ac0a710db6557f8a2",
+    "url": "/img/sponsors/white_lsldigital.png"
+  },
+  {
+    "revision": "c21d48af07215e430d0409863dbc1e1d",
+    "url": "/img/sponsors/white_maureva.png"
   },
   {
     "revision": "dbfb702157cad8fd1512f00fb3207186",
@@ -386,14 +406,6 @@ self.__precacheManifest = [
   {
     "revision": "25fad3605e005ef0d760ae9f67ce1849",
     "url": "/img/sponsors/white_SDWLogo.png"
-  },
-  {
-    "revision": "cd6dfec27da2b776a8aef25b1e0b9f42",
-    "url": "/img/sponsors/white_SpoonLogov4_0.png"
-  },
-  {
-    "revision": "d01e66ea5718f0f09bd0a11032d773ce",
-    "url": "/img/sponsors/white_teamonite.png"
   },
   {
     "revision": "c9c2604633030f3010ec57ecf500975f",
@@ -408,12 +420,20 @@ self.__precacheManifest = [
     "url": "/img/sponsors/logo_lio.jpg"
   },
   {
-    "revision": "f35d41df64d2ffdbc1cae792a29b6abe",
-    "url": "/robots.txt"
+    "revision": "cd6dfec27da2b776a8aef25b1e0b9f42",
+    "url": "/img/sponsors/white_SpoonLogov4_0.png"
   },
   {
     "revision": "87acc4d2615f190810a5e3b856738aa5",
     "url": "/img/sponsors/MariaDB.png"
+  },
+  {
+    "revision": "f35d41df64d2ffdbc1cae792a29b6abe",
+    "url": "/robots.txt"
+  },
+  {
+    "revision": "d01e66ea5718f0f09bd0a11032d773ce",
+    "url": "/img/sponsors/white_teamonite.png"
   },
   {
     "revision": "c2c87d02f9a68383835f98af934a8a5c",
@@ -500,12 +520,12 @@ self.__precacheManifest = [
     "url": "/img/banners/409x280.png"
   },
   {
-    "revision": "ace0677116657cd0b3d28bff0cd2548a",
-    "url": "/img/banners/MSCC-logo-coloured.png"
-  },
-  {
     "revision": "76918ffb10d096a5748165d4a0fe8388",
     "url": "/img/banners/twitter-cover.jpg"
+  },
+  {
+    "revision": "ace0677116657cd0b3d28bff0cd2548a",
+    "url": "/img/banners/MSCC-logo-coloured.png"
   },
   {
     "revision": "cfa99d02b06e800731a2e4e2ec209eaf",

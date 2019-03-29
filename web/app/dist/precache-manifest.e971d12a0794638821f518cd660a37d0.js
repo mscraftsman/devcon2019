@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "98bef1cb4d7f79a147fe",
+    "revision": "c4eac6791cbf6c74a769",
     "url": "/css/app.05e61c35.css"
   },
   {
-    "revision": "98bef1cb4d7f79a147fe",
-    "url": "/js/app.93aebf78.js"
+    "revision": "c4eac6791cbf6c74a769",
+    "url": "/js/app.d01b9827.js"
   },
   {
     "revision": "3abb434e98964db9d203",
@@ -36,14 +36,6 @@ self.__precacheManifest = [
     "url": "/js/chunk-3ca8e694.bc20ad29.js"
   },
   {
-    "revision": "272fa235dc09eea17860",
-    "url": "/css/chunk-42e22808.976d1c17.css"
-  },
-  {
-    "revision": "272fa235dc09eea17860",
-    "url": "/js/chunk-42e22808.ab7edcaa.js"
-  },
-  {
     "revision": "da5a5a12dfda66f7d984",
     "url": "/css/chunk-4e58b1b2.46e19921.css"
   },
@@ -58,6 +50,14 @@ self.__precacheManifest = [
   {
     "revision": "b654f4cde16d6b8911ed",
     "url": "/js/chunk-57685dd2.a8aa5e37.js"
+  },
+  {
+    "revision": "8e96c0fb3cafa225cafd",
+    "url": "/css/chunk-66fb603f.8420580a.css"
+  },
+  {
+    "revision": "8e96c0fb3cafa225cafd",
+    "url": "/js/chunk-66fb603f.5b2c1273.js"
   },
   {
     "revision": "a912d718ab06fd23bb62",
@@ -144,7 +144,7 @@ self.__precacheManifest = [
     "url": "/img/level.895cd7e8.svg"
   },
   {
-    "revision": "b0f6482c9195b469d714d75ffeec1816",
+    "revision": "a8b9bafec99747fd48b175f10217360c",
     "url": "/index.html"
   },
   {
@@ -152,20 +152,20 @@ self.__precacheManifest = [
     "url": "/BingSiteAuth.xml"
   },
   {
-    "revision": "0e77d90a4afeaf4f6a3c6076701d7e86",
-    "url": "/crossdomain.xml"
-  },
-  {
     "revision": "5a7b3cf9c6a0d896cb102a726efb7f71",
     "url": "/browserconfig.xml"
   },
   {
-    "revision": "47ee867ad1fcfc2fc6471d43774cdc9e",
-    "url": "/googlefffaff65ccc044f0.html"
-  },
-  {
     "revision": "9e89f96748c1aefc2d394e31f88fd9e1",
     "url": "/humans.txt"
+  },
+  {
+    "revision": "0e77d90a4afeaf4f6a3c6076701d7e86",
+    "url": "/crossdomain.xml"
+  },
+  {
+    "revision": "47ee867ad1fcfc2fc6471d43774cdc9e",
+    "url": "/googlefffaff65ccc044f0.html"
   },
   {
     "revision": "46fbe06b1dbdf67f8b051dec38e2c8ae",
@@ -228,6 +228,10 @@ self.__precacheManifest = [
     "url": "/img/sponsors/castille.png"
   },
   {
+    "revision": "3da742cd4cd044cac2fd7658fb58d6b5",
+    "url": "/img/sponsors/Ceridian.png"
+  },
+  {
     "revision": "8b7b8ed2e42aaeab185a0a1ceadae4eb",
     "url": "/img/sponsors/elastic.png"
   },
@@ -236,28 +240,24 @@ self.__precacheManifest = [
     "url": "/img/sponsors/Esokia_logo_RGB.png"
   },
   {
-    "revision": "ca99ef71d91e16f84503e9442b22307f",
-    "url": "/img/sponsors/Graphics_Temple.jpg"
-  },
-  {
-    "revision": "33d073a28b17dd56e7e3d8a18936f91b",
-    "url": "/img/sponsors/extension_interactive.png"
-  },
-  {
     "revision": "d4770c27cee0f4f67872dff392331f61",
     "url": "/img/sponsors/expat.png"
-  },
-  {
-    "revision": "c8aee2e84a557295937825ab1552df41",
-    "url": "/img/sponsors/ios.jpg"
   },
   {
     "revision": "10d8c759a251ab11bfdf55a9d4fb35f8",
     "url": "/img/sponsors/expatblog.png"
   },
   {
-    "revision": "50ee4f3527b0ad5935aed870ac48691c",
-    "url": "/img/sponsors/ceridian.png"
+    "revision": "33d073a28b17dd56e7e3d8a18936f91b",
+    "url": "/img/sponsors/extension_interactive.png"
+  },
+  {
+    "revision": "ca99ef71d91e16f84503e9442b22307f",
+    "url": "/img/sponsors/Graphics_Temple.jpg"
+  },
+  {
+    "revision": "c8aee2e84a557295937825ab1552df41",
+    "url": "/img/sponsors/ios.jpg"
   },
   {
     "revision": "7d29af3d140a6c26edb20f665d510317",
@@ -308,12 +308,12 @@ self.__precacheManifest = [
     "url": "/img/sponsors/pluralsight-logo-black-500x155-v1.png"
   },
   {
-    "revision": "a8d11a246cf9350f9c4487903d5d399a",
-    "url": "/img/sponsors/SIL-logo_takes-you-to-new-heights.png"
+    "revision": "17e9556430c111b93d027ac17adaf8c3",
+    "url": "/img/sponsors/rogers.png"
   },
   {
-    "revision": "e3611487ea2f36226fbe09c867b364f4",
-    "url": "/img/sponsors/SpoonLogov4_0.png"
+    "revision": "a8d11a246cf9350f9c4487903d5d399a",
+    "url": "/img/sponsors/SIL-logo_takes-you-to-new-heights.png"
   },
   {
     "revision": "f689fbf65367d73f985d3a854f0dc9c2",
@@ -324,24 +324,28 @@ self.__precacheManifest = [
     "url": "/img/sponsors/white_aerow.png"
   },
   {
-    "revision": "689504b7c42eac0a61e0bf8d875005ea",
-    "url": "/img/sponsors/white_castille.png"
+    "revision": "e3611487ea2f36226fbe09c867b364f4",
+    "url": "/img/sponsors/SpoonLogov4_0.png"
   },
   {
     "revision": "df8176d749dc39cb0ede4100f73dfed7",
     "url": "/img/sponsors/white_ceridian.png"
   },
   {
+    "revision": "689504b7c42eac0a61e0bf8d875005ea",
+    "url": "/img/sponsors/white_castille.png"
+  },
+  {
     "revision": "d62406053623d977469e892f2942c5da",
     "url": "/img/sponsors/white_dsogroup.png"
   },
   {
-    "revision": "7ac22e872db615ef11199e26d548796b",
-    "url": "/img/sponsors/white_elastic.png"
-  },
-  {
     "revision": "f43613442c085f16694c537b60919800",
     "url": "/img/sponsors/white_Esokia_logo_RGB.png"
+  },
+  {
+    "revision": "7ac22e872db615ef11199e26d548796b",
+    "url": "/img/sponsors/white_elastic.png"
   },
   {
     "revision": "50941e74bbe481b23667856416faaf95",
@@ -356,20 +360,20 @@ self.__precacheManifest = [
     "url": "/img/sponsors/white_expatblog.png"
   },
   {
-    "revision": "d4bb8794afb0a27b9d621cb6b1d44c27",
-    "url": "/img/sponsors/white_extension_interactive.png"
-  },
-  {
     "revision": "eac1362969217a4952e8f4b0969d0823",
     "url": "/img/past-events/gwab2015.jpeg"
+  },
+  {
+    "revision": "8f01932c8d29093ec9cf7fe9fec2ff92",
+    "url": "/img/past-events/xamarin-2016.jpeg"
   },
   {
     "revision": "8ca05b80b0bd3bf68540f7087b0d6435",
     "url": "/img/past-events/gwab2016.jpeg"
   },
   {
-    "revision": "8f01932c8d29093ec9cf7fe9fec2ff92",
-    "url": "/img/past-events/xamarin-2016.jpeg"
+    "revision": "d4bb8794afb0a27b9d621cb6b1d44c27",
+    "url": "/img/sponsors/white_extension_interactive.png"
   },
   {
     "revision": "23dcfa70400c86c175b5f0baeed28fb1",
@@ -380,16 +384,16 @@ self.__precacheManifest = [
     "url": "/img/sponsors/white_iame.svg"
   },
   {
-    "revision": "cc68c423c48ecb44df779f77952258fa",
-    "url": "/img/sponsors/white_ictio.png"
-  },
-  {
     "revision": "7825cff118cfa1837f0bb044ed7b027d",
     "url": "/img/sponsors/white_ios.png"
   },
   {
     "revision": "527eeb03be100f4a9c99e68c366fb4a2",
     "url": "/img/sponsors/white_jetbrains.svg"
+  },
+  {
+    "revision": "cc68c423c48ecb44df779f77952258fa",
+    "url": "/img/sponsors/white_ictio.png"
   },
   {
     "revision": "005491f99dac320ac0a710db6557f8a2",
@@ -404,10 +408,6 @@ self.__precacheManifest = [
     "url": "/img/sponsors/white_MCB-Logo.png"
   },
   {
-    "revision": "25fad3605e005ef0d760ae9f67ce1849",
-    "url": "/img/sponsors/white_SDWLogo.png"
-  },
-  {
     "revision": "c9c2604633030f3010ec57ecf500975f",
     "url": "/img/sponsors/jetbrains.png"
   },
@@ -420,16 +420,24 @@ self.__precacheManifest = [
     "url": "/img/sponsors/logo_lio.jpg"
   },
   {
-    "revision": "cd6dfec27da2b776a8aef25b1e0b9f42",
-    "url": "/img/sponsors/white_SpoonLogov4_0.png"
+    "revision": "aa9ee6c1c0ffd2000c28d444350f4f49",
+    "url": "/img/sponsors/white_rogers.png"
+  },
+  {
+    "revision": "25fad3605e005ef0d760ae9f67ce1849",
+    "url": "/img/sponsors/white_SDWLogo.png"
+  },
+  {
+    "revision": "87acc4d2615f190810a5e3b856738aa5",
+    "url": "/img/sponsors/MariaDB.png"
   },
   {
     "revision": "d01e66ea5718f0f09bd0a11032d773ce",
     "url": "/img/sponsors/white_teamonite.png"
   },
   {
-    "revision": "87acc4d2615f190810a5e3b856738aa5",
-    "url": "/img/sponsors/MariaDB.png"
+    "revision": "cd6dfec27da2b776a8aef25b1e0b9f42",
+    "url": "/img/sponsors/white_SpoonLogov4_0.png"
   },
   {
     "revision": "f35d41df64d2ffdbc1cae792a29b6abe",
@@ -448,12 +456,12 @@ self.__precacheManifest = [
     "url": "/img/sponsors/redgate_logo_2016.png"
   },
   {
-    "revision": "88b35a29f7f6f7d0a665839aac743c27",
-    "url": "/img/sponsors/SDWLogo.png"
-  },
-  {
     "revision": "5ba8ce3871f928b59e7d1254ccb0bfdd",
     "url": "/img/sponsors/RossConsultingLogo.png"
+  },
+  {
+    "revision": "88b35a29f7f6f7d0a665839aac743c27",
+    "url": "/img/sponsors/SDWLogo.png"
   },
   {
     "revision": "d79eb25fde6def43f402466e62adc66e",

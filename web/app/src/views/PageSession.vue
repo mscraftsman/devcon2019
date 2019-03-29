@@ -123,16 +123,12 @@ export default {
       if (typeof this.sessions == "undefined") {
         this.FETCH_SESSIONS();
       }
-      let sessions = this.sessions
-        .map(groups => groups.sessions)
-        .reduce(function (acc, curr) {
-          return [...acc, ...curr];
-        }, []);
 
-      console.log(this.id);
-      console.log(sessions);
-      let session = sessions.find(sess => sess.id === this.id);
-      return session;
+      let sessions = Object.assign({}, this.sessions);
+      return Object.keys(sessions)
+                   .map(key => sessions[key].sessions)
+                   .flat()
+                   .find(session => parseInt(session.id) === parseInt(this.id));
     },
     voted: function () {
       //   let allVoted = _.map(this.getVotes, "session_id");

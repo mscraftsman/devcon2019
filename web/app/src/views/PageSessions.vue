@@ -234,7 +234,7 @@ export default {
   data() {
     return {
       // rooms: ["Educator 1", "Educator 2", "Accelerator", "Flying Dodo"]
-      rooms: [{ label: "Educator 1", className: "educatorone" }, { label: "Educator 2", className: "educatortwo" }, { label: "Accelarator", className: "accelarator" }, { label: "Flying Dodo", className: "flyingdodo" }],
+      rooms: [{ label: "Educator 1", className: "educatorone" }, { label: "Educator 2", className: "educatortwo" }, { label: "Accelerator", className: "accelerator" }, { label: "Flying Dodo", className: "flyingdodo" }],
     };
   },
   filters: {

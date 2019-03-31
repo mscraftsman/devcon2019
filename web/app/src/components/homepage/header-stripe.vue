@@ -2,14 +2,12 @@
   <div class="home-component header-stripe-wrapper">
     <div class="container header-stripe-container">
       <div class="logo-wrapper">
-        <LogoSvg />
+        <LogoSvg/>
       </div>
       <div class="menu-wrapper" :class="{ active }">
-        <MainMenu @click.native="resetMenu()" />
+        <MainMenu @click.native="resetMenu()"/>
       </div>
-      <div class="register-button">
-        <button-waw :theme="'#ff4932'" :target="'_blank'" :link="'https://www.meetup.com/MauritiusSoftwareCraftsmanshipCommunity/events/258586831/'">Register</button-waw>
-      </div>
+      <div class="register-button"></div>
       <button class="menu-button" @click="activateMenu()" :class="{ active }">
         <i></i>
       </button>

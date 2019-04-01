@@ -3,10 +3,10 @@
     <div class="back-button-wrapper">
       <a @click="$router.go(-1)" class="back"> <img src="../assets/back.svg" alt /> Back </a>
     </div>
-    <div class="page-content">{{ speaker }}</div>
     <div class="page-content" v-if="speaker">
       <!-- <span>{{id}}</span> -->
-      <div class="session-title">{{ speaker.fullName }}</div>
+      <!-- <div class="session-title">{{ speaker.fullName }}</div> -->
+      <h1 class="span mega-rainbow">{{ speaker.fullName }}</h1>
 
       <div class="speakers-wrapper" v-if="speakers">
         <div class="speaker-wrapper">
@@ -16,11 +16,11 @@
         </div>
       </div>
 
-      <div class="descriptions-row">
-        <div class="des-wrap" v-if="speaker.tagLine">
+      <h2 v-if="speaker.tagLine">
+        <div class="des-wrap">
           <p>{{ speaker.tagLine }}</p>
         </div>
-      </div>
+      </h2>
 
       <div class="description-text">
         <p>{{ speaker.bio }}</p>
@@ -35,10 +35,12 @@
         <a href="#">To be revealed soon... !</a>
       </div> -->
 
-      <div class="session-title" v-for="session in speaker.sessions" :key="session.name">
-        <router-link :to="{ name: 'session', params: { id: session.id } }">
-          {{ session.name }}
-        </router-link>
+      <div class="sessions-listing">
+        <div class="session-title" v-for="session in speaker.sessions" :key="session.name">
+          <router-link :to="{ name: 'session', params: { id: session.id } }">
+            {{ session.name }}
+          </router-link>
+        </div>
       </div>
     </div>
     <div class="page-content" v-else>finding speaker details..</div>
@@ -113,14 +115,13 @@ a.back {
 }
 
 .back-button-wrapper {
-  --backsize: 70px;
+  cursor: pointer;
+  --backsize: 60px;
   // grid-area: back;
   text-align: left;
   // margin-top: 5px;
-  transform: translateX(calc(var(--backsize) / 2 * -1)) translateY(var(--backsize));
+  transform: translateX(calc(var(--backsize) * -2)) translateY(calc(var(--backsize)));
   position: absolute;
-  cursor: pointer;
-
   a {
     display: flex;
     align-items: center;
@@ -128,20 +129,20 @@ a.back {
     width: var(--backsize);
     padding: calc(var(--backsize) / 4);
     // background: var(--color-blue);
-    color: var(--color-blue);
-    background: white;
-    border-radius: var(--backsize) 0 0 var(--backsize);
+    // color: var(--color-red);
+    color: white;
+    background: rgba($color-main, 0.5);
+    border-radius: 100%;
+    border: 3px solid #ff4932;
     padding-left: calc(var(--backsize) / 3.5);
     text-align: center;
     transition: transform 0.2s ease-in-out;
     // box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-
     img {
       height: 100%;
-      margin-right: 15px;
+      // margin-right: 15px;
     }
   }
-
   &:hover {
     a {
       transform: translateX(-5px);
@@ -166,8 +167,29 @@ a.back {
 
 .page-content {
   grid-area: session;
+  // background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+  border-radius: 15px;
+  background: no-repeat left top/auto cover url(../../src/assets/bg/bg-red.svg), rgba(0, 0, 0, 0.4);
+
+  h1 {
+    font-size: 50px;
+    line-height: 60px;
+    padding-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 20px;
+    padding: 0;
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.sessions-listing {
+  padding: 40px 0;
   background: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .session-title {
@@ -177,12 +199,19 @@ a.back {
   font-size: 40px;
   font-weight: 700;
   margin: 0 auto;
-  padding: 30px 5vw;
+  padding: 15px 5vw;
   text-align: center;
   a {
     text-decoration: none;
     color: var(--color-blue);
     font-size: 20px;
+    display: flex;
+    align-self: center;
+    // justify-content: left;
+
+    &:hover {
+      color: var(--color-orange);
+    }
   }
 }
 
@@ -217,6 +246,7 @@ a.back {
       border-radius: var(--width);
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
       overflow: hidden;
+      background: white;
 
       img {
         width: var(--width);
@@ -245,6 +275,7 @@ a.back {
   align-items: center;
   justify-content: center;
   font-size: 18px;
+  // background: white;
 
   .des-wrap {
     // width: 33.3%;
@@ -295,6 +326,7 @@ a.back {
 
 .description-text {
   padding: 20px;
+  color: white;
 
   .back {
   }

@@ -126,9 +126,9 @@ export default {
 
       let sessions = Object.assign({}, this.sessions);
       return Object.keys(sessions)
-                   .map(key => sessions[key].sessions)
-                   .flat()
-                   .find(session => parseInt(session.id) === parseInt(this.id));
+        .map(key => sessions[key].sessions)
+        .flat()
+        .find(session => parseInt(session.id) === parseInt(this.id));
     },
     voted: function () {
       //   let allVoted = _.map(this.getVotes, "session_id");
@@ -274,15 +274,17 @@ a.back {
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
+  flex-wrap: wrap;
+
   .speaker-wrapper {
     --width: 100px;
     display: grid;
-    width: 200px;
+    width: 300px;
     grid-template-areas: "avatar name";
     grid-template-columns: var(--width) 1fr;
     align-items: center;
     grid-gap: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-right: 20px;
     font-family: var(--font-shentox);
     font-weight: 500;

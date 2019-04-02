@@ -2,7 +2,7 @@
   <div class="session-card" :class="isWorkshop ? 'workshop' : ''">
     <div class="session-title">{{ session.title | truncate(80, "...") }}</div>
     <div class="session-description">{{ session.description | truncate(120, "...") }}</div>
-    <div class="session-author">
+    <div class="session-author" v-if="session.speakers.length > 0">
       <div class="name-wrapper">
         <span class="name">{{ session.speakers[0].name }}</span>
         <br />
@@ -59,7 +59,9 @@ export default {
   },
   filters: {
     truncate: function (text, length, suffix) {
-      return text.substring(0, length);
+      if (text !== null) {
+        return text.substring(0, length);
+      }
       // return text.substring(0, length) + suffix;
     },
   },

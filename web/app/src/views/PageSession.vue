@@ -4,7 +4,7 @@
       <a @click="$router.go(-1)" class="back"> <img src="../assets/back.svg" alt /> Back </a>
     </div>
     <div class="page-content" v-if="session">
-      <!-- <span>{{id}}</span> -->
+
       <div class="session-title">{{ session.title }}</div>
 
       <div class="speakers-wrapper" v-if="session.speakers">
@@ -55,19 +55,21 @@
           <p>{{ session.level }}</p>
         </div>
 
-        <div class="des-wrap rate" v-if="user.status">
-          <template v-if="checkSessionStatus">
-            <router-link v-if="voted" :to="{ name: 'feedback', params: { id: id } }" class="rate rated">✅ Rated. Thanks!</router-link>
-            <router-link v-else :to="{ name: 'feedback', params: { id: id } }" class="rate">Rate</router-link>
-          </template>
-          <template v-else
-            >Session not started yet</template
-          >
-        </div>
+        <template v-if="!session.isServiceSession"> 
+          <div class="des-wrap rate" v-if="user.status">
+            <template v-if="checkSessionStatus">
+              <router-link v-if="voted" :to="{ name: 'feedback', params: { id: id } }" class="rate rated">✅ Rated. Thanks!</router-link>
+              <router-link v-else :to="{ name: 'feedback', params: { id: id } }" class="rate">Rate</router-link>
+            </template>
+            <template v-else
+              >Session not started yet</template
+            >
+          </div>
 
-        <div class="des-wrap rate meetup" v-else>
-          <a href="/b/login" class="rate">Login with meetup to rate</a>
-        </div>
+          <div class="des-wrap rate meetup" v-else>
+            <a href="/b/login" class="rate">Login with meetup to rate</a>
+          </div>
+        </template>
       </div>
 
       <div class="description-text">
@@ -181,7 +183,7 @@ export default {
     "session session"
     "footer footer";
   grid-template-columns: 100px 1fr;
-  grid-template-rows: 70px auto;
+  grid-template-rows: 90px auto;
   grid-auto-rows: auto;
   max-width: 900px;
   margin: 0 auto;
@@ -195,6 +197,7 @@ a.back {
 
 .page-content {
   text-align: center;
+  background: white;
   a {
     color: var(--color-blue);
   }
@@ -235,22 +238,7 @@ a.back {
     }
   }
 }
-@media screen and (max-width: 1000px) {
-  .back-button-wrapper {
-    position: static;
-    grid-area: back;
-    transform: unset;
-    padding: unset;
-    a {
-      width: auto;
-      border-radius: unset;
-      // padding-left: ;
-      border: none;
-      background: white;
-      color: var(--color-blue);
-    }
-  }
-}
+
 .page-content {
   grid-area: session;
   background: rgba(255, 255, 255, 0.9);
@@ -404,14 +392,62 @@ a.back {
   align-self: center;
   padding: var(--gutter) 0;
 }
+
+
 @media (max-width: 1000px) {
+
+    .page-session{
+      grid-template-rows: 5px auto;
+    }
+
+    .page-content {
+      border-radius: 0;
+    }
+
   .back-button-wrapper {
+    display: none;
+    position: static;
+    grid-area: back;
+    transform: unset;
+    padding: unset;
+    a {
+      width: auto;
+      border-radius: unset;
+      // padding-left: ;
+      border: none;
+      background: white;
+      color: var(--color-blue);
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+
+   .back-button-wrapper {
+
+      .back {
+        border:none;
+      }
+      
+      a{ 
+        border:none;
+    }
     // padding: 0 10px;
   }
-  .session-title {
+
+  .page-content {
+    h1 {
+      font-size: 30px;
+      padding: 20px;
+      line-height: 35px;
+    }
+  }
+
+    .session-title {
     font-size: 30px;
   }
 }
+
 @media (max-width: 768px) {
   .descriptions-row {
     flex-wrap: wrap;

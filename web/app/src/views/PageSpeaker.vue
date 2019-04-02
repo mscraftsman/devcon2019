@@ -37,9 +37,7 @@
 
       <div class="sessions-listing">
         <div class="session-title" v-for="session in speaker.sessions" :key="session.name">
-          <router-link :to="{ name: 'session', params: { id: session.id } }">
-            {{ session.name }}
-          </router-link>
+          <router-link :to="{ name: 'session', params: { id: session.id } }" v-html="session.name"></router-link>
         </div>
       </div>
     </div>
@@ -101,7 +99,7 @@ export default {
     "session session"
     "footer footer";
   grid-template-columns: 100px 1fr;
-  grid-template-rows: 70px auto;
+  grid-template-rows: 90px auto;
   grid-auto-rows: auto;
   max-width: 900px;
   margin: 0 auto;
@@ -170,7 +168,7 @@ a.back {
   // background: rgba(255, 255, 255, 0.9);
   box-shadow: 0 0 20px rgba(0, 0, 0, 1);
   border-radius: 15px;
-  background: no-repeat left top/auto cover url(../../src/assets/bg/bg-red.svg), rgba(0, 0, 0, 0.4);
+  background: no-repeat left top/100% auto url(../../src/assets/bg/bg-red-small.svg), rgba(0, 0, 0, 0.4);
 
   h1 {
     font-size: 50px;
@@ -189,7 +187,6 @@ a.back {
 
 .sessions-listing {
   padding: 40px 0;
-  background: white;
 }
 
 .session-title {
@@ -200,17 +197,21 @@ a.back {
   font-weight: 700;
   margin: 0 auto;
   padding: 15px 5vw;
-  text-align: center;
+  // text-align: center;
   a {
     text-decoration: none;
-    color: var(--color-blue);
+    color: var(--color-red-light);
     font-size: 20px;
     display: flex;
     align-self: center;
     // justify-content: left;
 
+    &:after {
+      content: " →"
+    }
+
     &:hover {
-      color: var(--color-orange);
+      color: white;
     }
   }
 }
@@ -362,12 +363,34 @@ a.back {
 }
 
 @media (max-width: 1000px) {
-  .back-button-wrapper {
+
+    .page-session{
+      grid-template-rows: 5px auto;
+    }
+
+    .page-content {
+      border-radius: 0;
+    }
+
+   .back-button-wrapper {
+     display: none;
+      .back {
+        border:none;
+      }
+      
+      a{ 
+        border:none;
+    }
     // padding: 0 10px;
   }
 
-  .session-title {
-    font-size: 30px;
+  .page-content {
+     background: rgba(0, 0, 0, 0.4);
+    h1 {
+      font-size: 30px;
+      padding: 20px;
+      line-height: 35px;
+    }
   }
 }
 

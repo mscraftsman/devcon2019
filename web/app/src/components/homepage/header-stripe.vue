@@ -1,11 +1,17 @@
 <template>
   <div class="home-component header-stripe-wrapper">
     <div class="container header-stripe-container">
+      <template v-if="this.$route.name !== 'home'">
+        <div class="back-button-wrapper">
+          <a @click="$router.go(-1)" class="back"> <img src="../../assets/back.svg"
+              alt /> Back </a>
+        </div>
+      </template>
       <div class="logo-wrapper">
-        <LogoSvg/>
+        <LogoSvg />
       </div>
       <div class="menu-wrapper" :class="{ active }">
-        <MainMenu @click.native="resetMenu()"/>
+        <MainMenu @click.native="resetMenu()" />
       </div>
       <div class="register-button"></div>
       <button class="menu-button" @click="activateMenu()" :class="{ active }">
@@ -48,6 +54,37 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.back-button-wrapper {
+  display: none;
+  cursor: pointer;
+  --backsize: 50px;
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--backsize);
+    width: var(--backsize);
+    padding: calc(var(--backsize) / 4);
+    color: white;
+    background: rgba($color-main, 0.5);
+    border-radius: 100%;
+    border: 3px solid #ff4932;
+    padding-left: calc(var(--backsize) / 3.5);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    // box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    img {
+      height: 60%;
+      margin-right: 5px;
+    }
+  }
+  &:hover {
+    a {
+      transform: translateX(-5px);
+      transition: transform 0.2s ease-in-out;
+    }
+  }
+}
 .header-stripe-wrapper {
   padding: 50px 0 10px;
 }
@@ -67,7 +104,8 @@ export default {
   display: none;
   background: transparent;
   border: 0;
-  width: 100%;
+  width: 50px;
+  height: 50px;
   outline: none;
   cursor: pointer;
   padding: 0;
@@ -118,6 +156,9 @@ export default {
 }
 
 @media screen and (max-width: $tablet) {
+  .back-button-wrapper {
+    display: block;
+  }
   .menu-wrapper {
     position: absolute;
     width: 250px;
@@ -142,8 +183,8 @@ export default {
     align-items: center;
   }
   .header-stripe-container {
-    display: grid;
-    grid-template-columns: 1fr 40px;
+    display: flex;
+    justify-content: space-between;
   }
 }
 </style>

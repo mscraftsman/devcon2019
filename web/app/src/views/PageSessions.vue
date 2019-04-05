@@ -31,6 +31,14 @@
                 <div class="time-bar">
                   <div class="time-value">&nbsp;</div>
                   <div class="time-value">
+                    8:00
+                    <span>AM</span>
+                  </div>
+                  <div class="time-value">
+                    8:30
+                    <span>AM</span>
+                  </div>
+                  <div class="time-value">
                     9:00
                     <span>AM</span>
                   </div>
@@ -120,6 +128,14 @@
               <div class="slider-responsive">
                 <div class="time-bar">
                   <div class="time-value">&nbsp;</div>
+                  <div class="time-value">
+                    8:00
+                    <span>AM</span>
+                  </div>
+                  <div class="time-value">
+                    8:30
+                    <span>AM</span>
+                  </div>
                   <div class="time-value">
                     9:00
                     <span>AM</span>
@@ -445,9 +461,10 @@ export default {
   grid-template-columns: 1fr;
   grid-auto-rows: 110px;
   grid-row-gap: 30px;
-
   grid-template-areas:
     "title"
+    "AM800"
+    "AM830"
     "AM900"
     "AM930"
     "AM1000"
@@ -456,17 +473,41 @@ export default {
     "AM1130"
     "PM1200"
     "PM1230"
-    "PM100"
-    "PM130"
-    "PM200"
-    "PM230"
-    "PM300"
-    "PM330"
-    "PM400"
-    "PM430"
-    "PM500"
-    "PM530"
-    "PM600";
+    "PM1300"
+    "PM1330"
+    "PM1400"
+    "PM1430"
+    "PM1500"
+    "PM1530"
+    "PM1600"
+    "PM1630"
+    "PM1700"
+    "PM1730"
+    "PM1800";
+
+  // grid-template-areas:
+  //   "title"
+  //   "AM800"
+  //   "AM830"
+  //   "AM900"
+  //   "AM930"
+  //   "AM1000"
+  //   "AM1030"
+  //   "AM1100"
+  //   "AM1130"
+  //   "PM1200"
+  //   "PM1230"
+  //   "PM100"
+  //   "PM130"
+  //   "PM200"
+  //   "PM230"
+  //   "PM300"
+  //   "PM330"
+  //   "PM400"
+  //   "PM430"
+  //   "PM500"
+  //   "PM530"
+  //   "PM600";
   // grid-template-rows: [title-start] 50px [title-end AM900-start] 50px [AM900-end AM930-start] 50px [AM930-end AM1000-start] 50px [AM1000-end AM1030-start] 50px [AM1030-end AM1100-start] 50px [AM1100-end AM1130-start] 50px [AM1130-end AM1200-start] 50px [AM1200-end AM1230-start] 50px [AM1230-end PM100-start] 50px [PM100-end PM130-start] 50px [PM130-end PM200-start] 50px [PM200-end PM230-start] 50px [PM230-end PM300-start] 50px [PM300-end PM330-start] 50px [PM330-end PM400-start] 50px [PM400-end PM430-start] 50px [PM430-end PM500-start] 50px [PM500-end];
   .room-title {
     color: white;

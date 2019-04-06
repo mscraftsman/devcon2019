@@ -5,12 +5,12 @@
     <div class="session-author" v-if="session.speakers.length > 0">
       <div class="name-wrapper">
         <span class="name">{{ session.speakers[0].name }}</span>
-        <br />
+        <br>
         <!-- <span class="alias">{{ speakersById[session.speakers[0].id].tagLine }}</span> -->
       </div>
       <div class="speaker-photo-wrapper">
         <div class="skewer">
-          <img :src="getSpeakerPhoto(session.speakers[0].id)" alt />
+          <img :src="getSpeakerPhoto(session.speakers[0].id)" alt>
         </div>
       </div>
       <!-- <div class="vote-button">
@@ -18,7 +18,7 @@
           <path d="M11.8312 5.64209C12.8657 2.28799 15.9658 0 19.4758 0H49.1606C54.5453 0 58.3923 5.21239 56.8052 10.3579L48.1688 38.3579C47.1343 41.712 44.0342 44 40.5242 44H10.8394C5.4547 44 1.60772 38.7876 3.19481 33.6421L11.8312 5.64209Z" fill="black"></path>
           <path d="M20 23.1053L25.2207 28.2985C25.6108 28.6865 26.2411 28.6865 26.6312 28.2985L40 15" stroke="white" stroke-width="2"></path>
         </svg>
-      </div> -->
+      </div>-->
     </div>
   </div>
 </template>
@@ -45,7 +45,7 @@ export default {
     },
   },
   methods: {
-    getSpeakerPhoto: function (id) {
+    getSpeakerPhoto: function(id) {
       if (typeof id === "undefined") {
         return "";
       }
@@ -58,7 +58,7 @@ export default {
     },
   },
   filters: {
-    truncate: function (text, length, suffix) {
+    truncate: function(text, length, suffix) {
       if (text !== null) {
         return text.substring(0, length);
       }
@@ -79,6 +79,7 @@ export default {
   text-decoration: none;
   // grid-template-rows: 50px 100px 50px;
   transition: all 0.1s ease-in;
+  width: 100%;
 
   &:hover {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);

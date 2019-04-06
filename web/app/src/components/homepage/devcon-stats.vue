@@ -2,8 +2,7 @@
   <div class="home-component devcon-stats-wrapper">
     <div class="container">
       <div class="devcon-stats-container">
-        <div class="stat-wrapper" v-if="getStats" v-for="(stats, index) in getStats"
-          :key="index">
+        <div class="stat-wrapper" v-if="getStats" v-for="(stats, index) in getStats" :key="index">
           <div class="number">{{ stats.number }}</div>
           <div class="label">{{ stats.name }}</div>
         </div>
@@ -22,24 +21,27 @@ export default {
     this.FETCH_STATS();
   },
   computed: {
-    ...mapGetters(["getStats"])
+    ...mapGetters(["getStats"]),
   },
 
   methods: {
-    ...mapActions([FETCH_STATS])
-  }
+    ...mapActions([FETCH_STATS]),
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 .devcon-stats-wrapper {
   padding: 100px 0;
+  @media screen and (max-width: $tablet) {
+    padding: 30px 0;
+  }
 }
 .devcon-stats-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-row-gap: 100px;
-  justify-items:center;
+  justify-items: center;
 
   .stat-wrapper {
     position: relative;

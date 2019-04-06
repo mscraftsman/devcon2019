@@ -80,6 +80,10 @@ export default new Router({
       name: "feedback",
       component: () => import("./views/PageFeedback.vue"),
     },
+    {
+      path: "/index.html",
+      redirect: "/",
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
     if (to.name != "sessions") {

@@ -3,15 +3,16 @@
     <div class="container header-stripe-container">
       <template v-if="this.$route.name !== 'home'">
         <div class="back-button-wrapper">
-          <a @click="$router.go(-1)" class="back"> <img src="../../assets/back.svg"
-              alt /> Back </a>
+          <a @click="$router.go(-1)" class="back">
+            <img src="../../assets/back.svg" alt> Back
+          </a>
         </div>
       </template>
       <div class="logo-wrapper">
-        <LogoSvg />
+        <LogoSvg/>
       </div>
       <div class="menu-wrapper" :class="{ active }">
-        <MainMenu @click.native="resetMenu()" />
+        <MainMenu @click.native="resetMenu()"/>
       </div>
       <div class="register-button"></div>
       <button class="menu-button" @click="activateMenu()" :class="{ active }">
@@ -57,7 +58,7 @@ export default {
 .back-button-wrapper {
   display: none;
   cursor: pointer;
-  --backsize: 50px;
+  --backsize: 40px;
   a {
     display: flex;
     align-items: center;
@@ -73,6 +74,7 @@ export default {
     text-align: center;
     transition: transform 0.2s ease-in-out;
     // box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    font-size: 13px;
     img {
       height: 60%;
       margin-right: 5px;
@@ -156,6 +158,10 @@ export default {
 }
 
 @media screen and (max-width: $tablet) {
+  .header-stripe-wrapper {
+    padding: 20px 0 10px;
+  }
+
   .back-button-wrapper {
     display: block;
   }

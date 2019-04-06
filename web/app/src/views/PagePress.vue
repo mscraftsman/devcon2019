@@ -101,36 +101,36 @@ export default {
         name: "MSCC-logo-coloured",
         path: "/img/banners/MSCC-logo-coloured.svg",
         format: "SVG",
-        style: "Coloured"
+        style: "Coloured",
       },
       {
         name: "MSCC-logo-inverted",
         path: "/img/banners/MSCC-logo-inverted.svg",
         format: "SVG",
-        style: "Inverted"
+        style: "Inverted",
       },
       {
         name: "MSCC-logo-coloured",
         path: "/img/banners/MSCC-logo-coloured.png",
         format: "PNG",
-        style: "Inverted"
-      }
+        style: "Inverted",
+      },
     ];
     this.banners = [
       {
         name: "facebook-cover",
         path: "/img/banners/facebook-cover.jpg",
-        size: "820x462"
+        size: "820x462",
       },
       {
         name: "twitter-cover",
         path: "/img/banners/twitter-cover.jpg",
-        size: "1500x500"
+        size: "1500x500",
       },
       {
         name: "sticker",
         path: "/img/banners/sticker.png",
-        size: "vector"
+        size: "vector",
       },
       // {
       //   name: "720x200",
@@ -148,7 +148,7 @@ export default {
       //   size: "409x280"
       // }
     ];
-  }
+  },
 };
 </script>
 
@@ -170,7 +170,7 @@ export default {
 .logos-container {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   grid-auto-rows: auto;
   grid-column-gap: calc(var(--gutter) / 1);
 
@@ -292,6 +292,7 @@ export default {
         border-radius: 3px;
         color: white;
         font-weight: bold;
+        overflow-y: scroll;
       }
     }
   }

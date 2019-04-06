@@ -1,7 +1,9 @@
 <template>
   <div class="page page-session">
     <div class="back-button-wrapper">
-      <a @click="$router.go(-1)" class="back"> <img src="../assets/back.svg" alt /> Back </a>
+      <a @click="$router.go(-1)" class="back">
+        <img src="../assets/back.svg" alt> Back
+      </a>
     </div>
     <div class="page-content" v-if="speaker">
       <!-- <span>{{id}}</span> -->
@@ -11,16 +13,20 @@
       <div class="speakers-wrapper" v-if="speakers">
         <div class="speaker-wrapper">
           <div class="avatar">
-            <img :src="speaker.profilePicture" alt />
+            <img :src="speaker.profilePicture" alt>
           </div>
         </div>
       </div>
 
       <h2 v-if="speaker.tagLine">
-        <div class="des-wrap">
-          <p>{{ speaker.tagLine }}</p>
-        </div>
+        <p>{{ speaker.tagLine }}</p>
       </h2>
+
+      <div class="descriptions-row">
+        <div class="des-wrap">
+          <p>Bio</p>
+        </div>
+      </div>
 
       <div class="description-text">
         <p>{{ speaker.bio }}</p>
@@ -28,12 +34,12 @@
 
       <div class="descriptions-row">
         <div class="des-wrap">
-          <p>Speaking about :</p>
+          <p>Speaking about</p>
         </div>
       </div>
       <!-- <div class="session-title">
         <a href="#">To be revealed soon... !</a>
-      </div> -->
+      </div>-->
 
       <div class="sessions-listing">
         <div class="session-title" v-for="session in speaker.sessions" :key="session.name">
@@ -52,32 +58,32 @@ import { FETCH_SESSIONS, FETCH_SPEAKERS } from "@/store";
 
 export default {
   methods: {
-    ...mapActions([FETCH_SESSIONS, FETCH_SPEAKERS])
+    ...mapActions([FETCH_SESSIONS, FETCH_SPEAKERS]),
   },
   computed: {
     ...mapGetters({
       sessions: "getSessions",
-      speakers: "getSpeakers"
+      speakers: "getSpeakers",
     }),
-    id: function () {
+    id: function() {
       return this.$route.params.id;
     },
-    speaker: function () {
+    speaker: function() {
       if (this.speakers.length === 0) {
         this.FETCH_SPEAKERS();
       }
       let theSpeaker = this.speakers.find(speaker => speaker.id === this.id);
       return theSpeaker;
     },
-    session: function () {
+    session: function() {
       let sessions = this.sessions
         .map(groups => groups.sessions)
-        .reduce(function (acc, curr) {
+        .reduce(function(acc, curr) {
           return [...acc, ...curr];
         }, []);
       let session = sessions.find(sess => (sess.id = this.id));
       return session;
-    }
+    },
   },
   beforeMount() {
     if (this.$store.state.sessions.length === 0) {
@@ -87,7 +93,7 @@ export default {
     } else {
       // console.info("sessions found !");
     }
-  }
+  },
 };
 </script>
 
@@ -178,7 +184,7 @@ a.back {
 
   h2 {
     font-size: 20px;
-    padding: 0;
+    padding: 0 0 20px 0;
     p {
       margin: 0;
     }
@@ -186,7 +192,7 @@ a.back {
 }
 
 .sessions-listing {
-  padding: 40px 0;
+  padding: 20px 0 40px;
 }
 
 .session-title {
@@ -329,7 +335,7 @@ a.back {
 }
 
 .description-text {
-  padding: 20px;
+  padding: 10px 30px;
   color: white;
 
   .back {

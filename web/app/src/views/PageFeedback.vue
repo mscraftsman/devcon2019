@@ -1,10 +1,10 @@
 <template>
   <div class="page page-feedback">
     <div class="info" v-if="session">
-      <span class="title">currently rating {{ session.title }}</span>
+      <strong>currently rating</strong>
+      <span class="title">{{ session.title }}</span>
       <!-- <span>{{ getSessionCurrent.questionCurrent }}</span> -->
     </div>
-    <pre>{{ session }}</pre>
 
     <div class="questions-wrapper" v-if="!voted">
       <div class="virer-mam">
@@ -175,7 +175,7 @@ export default {
           return [...acc, ...curr];
         }, []);
 
-      console.log(sessions);
+      // console.log(sessions);
       let session = sessions.filter(sess => {
         if (sess.id === this.id) {
           return sess;
@@ -222,6 +222,10 @@ export default {
   padding: 5px 10px;
   align-self: center;
   justify-self: center;
+  strong {
+    text-transform: uppercase;
+    color: var(--color-red-light);
+  }
   span {
     display: block;
     text-align: center;
@@ -248,6 +252,12 @@ export default {
   grid-template-columns: 100px 1fr;
   grid-template-rows: 10vh 80vh;
   text-align: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--color-blue);
 }
 
 .questions-wrapper {
@@ -260,7 +270,7 @@ export default {
 
   .virer-mam {
     // transform: rotate(-5deg);
-    background: white;
+    background: no-repeat right top/200% auto url(../../src/assets/bg/bg-red-small.svg), rgba(0, 0, 0, 0.9);
     width: 120vw;
   }
 
@@ -275,7 +285,7 @@ export default {
     grid-template-columns: 10vw minmax(200px, 2fr) 10vw;
     // grid-template-rows: 40vh;
     //   width: 100vw;
-
+    color: white;
     .question-holder {
       grid-area: here;
 
@@ -314,7 +324,7 @@ export default {
 
 .buttons-wrapper {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1.5fr 3fr;
   grid-gap: 10px;
   // justify-content: center;
 }

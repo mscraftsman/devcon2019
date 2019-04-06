@@ -207,7 +207,7 @@ a.back {
     // justify-content: left;
 
     &:after {
-      content: " →"
+      content: " →";
     }
 
     &:hover {
@@ -270,18 +270,19 @@ a.back {
 }
 
 .descriptions-row {
-  background: var(--color-blue);
+  background: no-repeat center center/contain url(../../src/assets/bg/scribble.svg);
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 18px;
+  height: 60px;
   // background: white;
 
   .des-wrap {
     // width: 33.3%;
     margin-right: 10px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: var(--font-glacial);
     text-transform: uppercase;
     display: flex;
@@ -290,6 +291,8 @@ a.back {
     text-align: center;
     padding: 10px;
     // height: 50px;
+    font-weight: 900;
+    text-shadow: 0 0 10px #fff;
 
     &:last-child {
       margin-right: 0;
@@ -363,29 +366,28 @@ a.back {
 }
 
 @media (max-width: 1000px) {
+  .page-session {
+    grid-template-rows: 5px auto;
+  }
 
-    .page-session{
-      grid-template-rows: 5px auto;
+  .page-content {
+    border-radius: 0;
+  }
+
+  .back-button-wrapper {
+    display: none;
+    .back {
+      border: none;
     }
 
-    .page-content {
-      border-radius: 0;
-    }
-
-   .back-button-wrapper {
-     display: none;
-      .back {
-        border:none;
-      }
-      
-      a{ 
-        border:none;
+    a {
+      border: none;
     }
     // padding: 0 10px;
   }
 
   .page-content {
-     background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.4);
     h1 {
       font-size: 30px;
       padding: 20px;

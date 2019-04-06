@@ -34,7 +34,7 @@ export default new Vuex.Store({
     sessions: [],
     stats: [],
     user: {
-      status: false, // true or false
+      status: true, // true or false
       data: {
         id: "1234",
         name: "Sandeep Ramgolam",

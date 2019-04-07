@@ -2,7 +2,7 @@
   <div class="home-component top-bar-wrapper">
     <div class="container" v-view="viewHandler">
       <div class="top-bar-container">
-        <div class="rendez-vous-wrapper" v-if="user && user.status">
+        <div class="rendez-vous-wrapper" v-if="user">
           <span class="svgicon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -20,7 +20,7 @@
               <circle cx="12" cy="12" r="10"></circle>
             </svg>
           </span>
-          {{ user.data.name }}
+          {{ user.name }}
         </div>
         <div class="rendez-vous-wrapper" v-else>
           11
@@ -33,6 +33,9 @@
             <li>
               <router-link :to="{ name: 'lifeatdevcon' }">About</router-link>
             </li>
+            <li v-if="user">
+              <a @click="USER_LOGOUT()">Logout</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -43,12 +46,13 @@
 </template>
 
 <script>
-import { mapGetters } from "vuex";
+import { mapGetters, mapActions } from "vuex";
 export default {
   computed: {
     ...mapGetters({ user: "getUser" }),
   },
   methods: {
+    ...mapActions(["USER_LOGOUT"]),
     viewHandler(e) {
       let el = this.$refs.pageloader.$el;
       if (e.type == "enter") {
@@ -116,6 +120,7 @@ export default {
           color: white;
           text-decoration: none;
           padding-left: $gutter;
+          cursor: pointer;
 
           &:visited {
             color: white;

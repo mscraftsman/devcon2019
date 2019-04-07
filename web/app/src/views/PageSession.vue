@@ -43,7 +43,7 @@
             Bookmark for later
           </a>
         </div>
-        <div class="des-wrap rate" v-if="user.status">
+        <div class="des-wrap rate" v-if="user">
           <template v-if="checkSessionStatus">
             <router-link
               v-if="voted"

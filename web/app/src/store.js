@@ -30,6 +30,7 @@ export const FETCH_STATS = "FETCH_STATS";
 export const USER_STATUS = "USER_STATUS";
 export const SET_USER = "SET_USER";
 export const USER_LOGIN = "USER_LOGIN";
+export const USER_LOGOUT = "USER_LOGOUT";
 
 export const USER_BOOKMARK_ADD = "USER_BOOKMARK_ADD";
 export const USER_BOOKMARK_REMOVE = "USER_BOOKMARK_REMOVE";
@@ -54,14 +55,8 @@ export default new Vuex.Store({
     sessionsById: [],
     stats: [],
     myFeedbacks: [],
-    user: {
-      status: false, // true or false
-      data: {
-        id: "1234",
-        name: "Sandeep Ramgolam",
-        photo: "",
-      },
-    },
+
+    user: false,
   },
   getters: {
     getSpeakers: function(state) {
@@ -155,7 +150,8 @@ export default new Vuex.Store({
       feedback
         .Me()
         .then(response => {
-          console.log(response);
+          // console.log(response);
+          commit(SET_USER, response);
         })
         .catch(function() {
           console.log("me didnt work");
@@ -163,6 +159,10 @@ export default new Vuex.Store({
     },
     [USER_LOGIN]({ commit }) {
       feedback.Login();
+    },
+    [USER_LOGOUT]({ commit }) {
+      console.log("trying to logout now");
+      feedback.Logout();
     },
     [USER_BOOKMARK_FETCH]({ commit }) {
       feedback

@@ -35,6 +35,10 @@ export const USER_BOOKMARK_ADD = "USER_BOOKMARK_ADD";
 export const USER_BOOKMARK_REMOVE = "USER_BOOKMARK_REMOVE";
 export const USER_BOOKMARK_FETCH = "USER_BOOKMARK_FETCH";
 
+export const USER_FEEDBACK_ADD = "USER_FEEDBACK_ADD";
+export const USER_FEEDBACK_FETCH = "USER_FEEDBACK_FETCH";
+export const USER_FEEDBACK_SET = "USER_FEEDBACK_SET";
+
 export default new Vuex.Store({
   state: {
     pageSessions: {
@@ -49,8 +53,9 @@ export default new Vuex.Store({
     sessionsReady: false,
     sessionsById: [],
     stats: [],
+    myFeedbacks: [],
     user: {
-      status: true, // true or false
+      status: false, // true or false
       data: {
         id: "1234",
         name: "Sandeep Ramgolam",
@@ -99,6 +104,9 @@ export default new Vuex.Store({
     getPageSessionsScrollPosition: function(state) {
       return state.pageSessions.scrollPosition;
     },
+    getMyFeedbacks: function(state) {
+      return state.myFeedbacks;
+    },
   },
   mutations: {
     [SET_SPEAKERS](state, speakers) {
@@ -136,6 +144,9 @@ export default new Vuex.Store({
     },
     [SET_USER](state, payload) {
       state.user = payload;
+    },
+    [USER_FEEDBACK_SET](state, payload) {
+      state.myFeedbacks = payload;
     },
   },
   actions: {
@@ -183,6 +194,26 @@ export default new Vuex.Store({
     [USER_BOOKMARK_REMOVE]({ commit }, param) {
       feedback
         .RemoveBookmark(param)
+        .then(response => {
+          console.log(response);
+        })
+        .catch(function() {
+          console.log("bookmark didnt work");
+        });
+    },
+    [USER_FEEDBACK_ADD]({ commit }, param) {
+      feedback
+        .AddFeedback(param)
+        .then(response => {
+          console.log(response);
+        })
+        .catch(function() {
+          console.log("bookmark didnt work");
+        });
+    },
+    [USER_FEEDBACK_FETCH]({ commit }) {
+      feedback
+        .ListOwnFeedbacks()
         .then(response => {
           console.log(response);
         })

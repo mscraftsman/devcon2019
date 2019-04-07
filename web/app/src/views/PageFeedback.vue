@@ -74,6 +74,7 @@ export default {
   props: ["id"],
   data() {
     return {
+      dateNow: new Date().toISOString(),
       style: {
         dotSize: 50,
         height: 20,
@@ -124,30 +125,30 @@ export default {
     };
   },
   methods: {
-    ...mapActions(["submitVote", "fetchVotes"]),
+    ...mapActions(["USER_FEEDBACK_ADD", "USER_FEEDBACK_FETCH"]),
     next: function() {
       this.currentQuestion++;
     },
     submit: function() {
       console.log("submitting");
       console.log(this.reaction);
-      //   this.submitVote(this.reaction);
+      this.USER_FEEDBACK_ADD(this.reaction);
     },
     cancel: function() {
       this.$router.go(-1);
     },
   },
   computed: {
-    ...mapGetters(["getName", "getSessionCurrent", "getUser", "getVotes"]),
+    ...mapGetters(["getName", "getSessionCurrent", "getUser", "getMyFeedbacks"]),
     ...mapGetters({
       sessions: "getSessions",
       speakers: "getSpeakers",
     }),
     beforeMount() {
-      this.fetchVotes();
+      this.USER_FEEDBACK_FETCH();
     },
     voted: function() {
-      //   let allVoted = _.map(this.getVotes, "session_id");
+      //   let allVoted = _.map(this.getMyFeedbacks, "session_id");
       //   if (allVoted.indexOf(this.id) !== -1) {
       //     return true;
       //   }
@@ -165,6 +166,7 @@ export default {
         reaction_2: this.questions[1].value,
         reaction_3: this.questions[2].value,
         reaction_4: this.questions[3].value,
+        created_at: this.dateNow,
       };
       return reaction;
     },

@@ -1,46 +1,142 @@
 <template>
   <div class="page page-session">
     <div class="back-button-wrapper">
-      <a @click="$router.go(-1)" class="back"> <img src="../assets/back.svg" alt /> Back </a>
+      <a @click="$router.go(-1)" class="back">
+        <img src="../assets/back.svg" alt> Back
+      </a>
     </div>
     <div class="page-content" v-if="session">
-
       <div class="session-title">{{ session.title }}</div>
 
       <div class="speakers-wrapper" v-if="session.speakers">
-        <router-link class="speaker-wrapper" v-for="speaker in session.speakers" :key="speaker.id" :to="{ name: 'speaker', params: { id: speaker.id } }">
+        <router-link
+          class="speaker-wrapper"
+          v-for="speaker in session.speakers"
+          :key="speaker.id"
+          :to="{ name: 'speaker', params: { id: speaker.id } }"
+        >
           <div class="avatar">
-            <img :src="getSpeakerPhoto(speaker.id)" alt />
+            <img :src="getSpeakerPhoto(speaker.id)" alt>
           </div>
           <p class="name">{{ speaker.name }}</p>
         </router-link>
       </div>
 
+      <div class="actions-wrapper" v-if="!session.isServiceSession">
+        <div class="des-wrap rate bookmark">
+          <a href="/b/login" class="rate">
+            <span class="svgicon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#ffffff"
+                stroke-width="3"
+                stroke-linecap="square"
+                stroke-linejoin="arcs"
+              >
+                <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+              </svg>
+            </span>
+            Bookmark for later
+          </a>
+        </div>
+        <div class="des-wrap rate" v-if="user.status">
+          <template v-if="checkSessionStatus">
+            <router-link
+              v-if="voted"
+              :to="{ name: 'feedback', params: { id: id } }"
+              class="rate rated"
+            >
+              <span class="svgicon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#ffffff"
+                  stroke-width="3"
+                  stroke-linecap="square"
+                  stroke-linejoin="arcs"
+                >
+                  <path
+                    d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"
+                  ></path>
+                </svg>
+              </span> Rated. Thanks!
+            </router-link>
+            <router-link v-else :to="{ name: 'feedback', params: { id: id } }" class="rate">
+              <span class="svgicon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#000000"
+                  stroke-width="3"
+                  stroke-linecap="square"
+                  stroke-linejoin="arcs"
+                >
+                  <path
+                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+                  ></path>
+                </svg>
+              </span> Give feedback
+            </router-link>
+          </template>
+          <template v-else>Session not started yet</template>
+        </div>
+
+        <div class="des-wrap rate meetup" v-else>
+          <a href="/b/login" class="rate">
+            <span class="svgicon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#ffffff"
+                stroke-width="3"
+                stroke-linecap="square"
+                stroke-linejoin="arcs"
+              >
+                <path d="M15 3h6v18h-6M10 17l5-5-5-5M13.8 12H3"></path>
+              </svg>
+            </span>Login with meetup to rate
+          </a>
+        </div>
+      </div>
+
       <div class="descriptions-row">
         <div class="des-wrap" v-if="session.format">
           <label>
-            <img src="../assets/icons/language.svg" alt />
+            <img src="../assets/icons/language.svg" alt>
           </label>
           <p>{{ session.format }}</p>
         </div>
 
         <div class="des-wrap" v-if="session.language">
           <label>
-            <img src="../assets/icons/language.svg" alt />
+            <img src="../assets/icons/language.svg" alt>
           </label>
           <p>{{ session.language }}</p>
         </div>
 
         <div class="des-wrap">
           <label>
-            <img src="../assets/icons/location.svg" alt />
+            <img src="../assets/icons/location.svg" alt>
           </label>
           <p>{{ session.room }}</p>
         </div>
 
         <div class="des-wrap">
           <label>
-            <img src="../assets/icons/time.svg" alt />
+            <img src="../assets/icons/time.svg" alt>
           </label>
           <p>
             {{ getDay(session.startsAt) }} {{ time(session.startsAt) }} -
@@ -50,26 +146,10 @@
 
         <div class="des-wrap" v-if="session.level">
           <label>
-            <img src="../assets/icons/level.svg" alt />
+            <img src="../assets/icons/level.svg" alt>
           </label>
           <p>{{ session.level }}</p>
         </div>
-
-        <template v-if="!session.isServiceSession"> 
-          <div class="des-wrap rate" v-if="user.status">
-            <template v-if="checkSessionStatus">
-              <router-link v-if="voted" :to="{ name: 'feedback', params: { id: id } }" class="rate rated">✅ Rated. Thanks!</router-link>
-              <router-link v-else :to="{ name: 'feedback', params: { id: id } }" class="rate">Rate</router-link>
-            </template>
-            <template v-else
-              >Session not started yet</template
-            >
-          </div>
-
-          <div class="des-wrap rate meetup" v-else>
-            <a href="/b/login" class="rate">Login with meetup to rate</a>
-          </div>
-        </template>
       </div>
 
       <div class="description-text">
@@ -78,9 +158,10 @@
     </div>
     <div class="page-content" v-else>
       <p>loading session...</p>
-      <a href="javascript:location.reload()" title="i'm not proud of this code. please send PR">
-        is this taking too long? click here
-      </a>
+      <a
+        href="javascript:location.reload()"
+        title="i'm not proud of this code. please send PR"
+      >is this taking too long? click here</a>
     </div>
   </div>
 </template>
@@ -91,10 +172,10 @@ import { time as timeHelper, getDay as getDayHelper } from "@/helpers";
 
 export default {
   props: ["id"],
-  mounted() { },
+  mounted() {},
   methods: {
     ...mapActions(["FETCH_SESSIONS", "FETCH_SPEAKERS", "fetchVotes"]),
-    getSpeakerPhoto: function (id) {
+    getSpeakerPhoto: function(id) {
       if (this.speakers.length === 0) {
         this.FETCH_SPEAKERS();
       } else {
@@ -121,7 +202,7 @@ export default {
       user: "getUser",
       getVotes: "getVotes",
     }),
-    session: function () {
+    session: function() {
       if (typeof this.sessions == "undefined") {
         this.FETCH_SESSIONS();
       }
@@ -132,7 +213,7 @@ export default {
         .flat()
         .find(session => parseInt(session.id) === parseInt(this.id));
     },
-    voted: function () {
+    voted: function() {
       //   let allVoted = _.map(this.getVotes, "session_id");
       //   if (allVoted.indexOf(this.id) !== -1) {
       //     return true;
@@ -311,53 +392,72 @@ a.back {
   display: flex;
   align-items: center;
   font-size: 18px;
-  .des-wrap {
-    width: 33.3%;
+}
+
+.actions-wrapper {
+  margin-bottom: 20px;
+  display: flex;
+  // grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-content: center;
+  width: 100%;
+}
+
+.des-wrap {
+  // width: 30%;
+  margin-right: 10px;
+  color: white;
+  font-family: var(--font-glacial);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  height: 50px;
+  &:last-child {
+    margin-right: 0;
+  }
+  &.rate {
+    padding: 0;
+    a {
+      background: var(--color-green);
+      height: 50px;
+      width: 100%;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      // font-size: 20px;
+      color: black;
+    }
+  }
+  &.meetup {
+    a {
+      background: #f13a59;
+      font-size: 14px;
+      color: white;
+    }
+  }
+
+  &.bookmark {
+    a {
+      background: var(--color-red-light);
+      font-size: 14px;
+      color: white;
+    }
+  }
+
+  a.rated {
+    background: black;
+    color: var(--color-green);
+  }
+  label {
     margin-right: 10px;
-    color: white;
-    font-family: var(--font-glacial);
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    height: 50px;
-    &:last-child {
-      margin-right: 0;
+    img {
+      width: 20px;
     }
-    &.rate {
-      padding: 0;
-      a {
-        background: var(--color-green);
-        height: 50px;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-decoration: none;
-        font-size: 20px;
-        color: var(--color-blue);
-      }
-    }
-    &.meetup {
-      a {
-        background: var(--color-red-light);
-        font-size: 14px;
-        color: white;
-      }
-    }
-    a.rated {
-      background: black;
-      color: var(--color-green);
-    }
-    label {
-      margin-right: 10px;
-      img {
-        width: 20px;
-      }
-    }
-    p {
-      margin: 0;
-    }
+  }
+  p {
+    margin: 0;
   }
 }
 .description-text {
@@ -393,16 +493,14 @@ a.back {
   padding: var(--gutter) 0;
 }
 
-
 @media (max-width: 1000px) {
+  .page-session {
+    grid-template-rows: 5px auto;
+  }
 
-    .page-session{
-      grid-template-rows: 5px auto;
-    }
-
-    .page-content {
-      border-radius: 0;
-    }
+  .page-content {
+    border-radius: 0;
+  }
 
   .back-button-wrapper {
     display: none;
@@ -422,15 +520,13 @@ a.back {
 }
 
 @media (max-width: 1000px) {
+  .back-button-wrapper {
+    .back {
+      border: none;
+    }
 
-   .back-button-wrapper {
-
-      .back {
-        border:none;
-      }
-      
-      a{ 
-        border:none;
+    a {
+      border: none;
     }
     // padding: 0 10px;
   }
@@ -443,17 +539,28 @@ a.back {
     }
   }
 
-    .session-title {
+  .session-title {
     font-size: 30px;
   }
 }
 
 @media (max-width: 768px) {
-  .descriptions-row {
+  .descriptions-row,
+  .actions-wrapper {
     flex-wrap: wrap;
-    .des-wrap {
-      width: 100%;
+
+    .des-wrap.rate {
+      margin-bottom: 20px;
     }
+  }
+
+  .des-wrap {
+    width: 800%;
+    margin-right: 0;
+  }
+
+  .des-wrap.rate a {
+    justify-content: left;
   }
   .speakers-wrapper {
     flex-wrap: wrap;

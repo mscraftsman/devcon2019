@@ -1,11 +1,11 @@
 import Vue from "vue";
 import Vuex from "vuex";
 import { extractData } from "@/helpers";
-import Feedback from "@/feedback.js";
+import Feedback from "./feedback.js";
 
 Vue.use(Vuex);
 
-let feedback = new Feedback("https://sessions.conference.mscc.mu");
+let feedback = new Feedback("https://devcon2019.lsl.network");
 
 const sessionizeSessions = "https://sessionize.com/api/v2/rn3ak6vi/view/Sessions";
 const sessionizeSpeakers = "https://sessionize.com/api/v2/rn3ak6vi/view/Speakers";
@@ -31,6 +31,10 @@ export const USER_STATUS = "USER_STATUS";
 export const SET_USER = "SET_USER";
 export const USER_LOGIN = "USER_LOGIN";
 
+export const USER_BOOKMARK_ADD = "USER_BOOKMARK_ADD";
+export const USER_BOOKMARK_REMOVE = "USER_BOOKMARK_REMOVE";
+export const USER_BOOKMARK_FETCH = "USER_BOOKMARK_FETCH";
+
 export default new Vuex.Store({
   state: {
     pageSessions: {
@@ -46,7 +50,7 @@ export default new Vuex.Store({
     sessionsById: [],
     stats: [],
     user: {
-      status: false, // true or false
+      status: true, // true or false
       data: {
         id: "1234",
         name: "Sandeep Ramgolam",
@@ -101,13 +105,15 @@ export default new Vuex.Store({
       state.speakers = speakers;
     },
     [SET_SPEAKERS_READY](state, payload) {
-      state.speakersReady = payload;
+      // state.speakersReady = payload;
+      Vue.set(state, "speakersReady", payload);
     },
     [SET_SPEAKERS_BY_ID](state, speakers) {
       state.speakersById = speakers;
     },
     [SET_SESSIONS_BY_ID](state, sessions) {
       state.sessionsById = sessions;
+      // state.SET_SESSIONS_READY = true;
     },
     [SET_SPONSORS](state, sponsors) {
       state.sponsors = sponsors;
@@ -116,7 +122,8 @@ export default new Vuex.Store({
       state.sessions = sessions;
     },
     [SET_SESSIONS_READY](state, payload) {
-      state.sessionsReady = payload;
+      // state.sessionsReady = payload;
+      Vue.set(state, "sessionsReady", payload);
     },
     [SET_PAGESESSIONS_ACTIVE](state, active) {
       state.pageSessions.active = active;
@@ -153,6 +160,43 @@ export default new Vuex.Store({
           console.log("login didnt work");
         });
     },
+    [USER_BOOKMARK_FETCH]({ commit }) {
+      feedback
+        .ListOwnBookmarks()
+        .then(response => {
+          console.log(response);
+        })
+        .catch(function() {
+          console.log("bookmark didnt work");
+        });
+    },
+    [USER_BOOKMARK_ADD]({ commit }, param) {
+      feedback
+        .AddBookmark(param)
+        .then(response => {
+          console.log(response);
+        })
+        .catch(function() {
+          console.log("bookmark didnt work");
+        });
+    },
+    [USER_BOOKMARK_REMOVE]({ commit }, param) {
+      feedback
+        .RemoveBookmark(param)
+        .then(response => {
+          console.log(response);
+        })
+        .catch(function() {
+          console.log("bookmark didnt work");
+        });
+    },
+    [SET_SESSIONS_READY]({ commit }, payload) {
+      console.log("setting sessions to " + payload);
+      commit(SET_SESSIONS_READY, payload);
+    },
+    [SET_SPEAKERS_READY]({ commit }, payload) {
+      commit(SET_SPEAKERS_READY, payload);
+    },
     [FETCH_SESSIONS]({ commit }) {
       return fetch(sessionizeSessions)
         .then(response => response.json())
@@ -166,7 +210,9 @@ export default new Vuex.Store({
             return r;
           }, Object.create(null));
           commit(SET_SESSIONS_BY_ID, groupById);
-          commit(SET_SESSIONS_READY, true);
+        })
+        .then(() => {
+          console.log("sessions are now ready");
         })
         .catch(error => {
           throw new Error("Error should be caught by Vue global error handler." + error);

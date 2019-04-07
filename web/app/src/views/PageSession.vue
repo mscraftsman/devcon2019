@@ -24,7 +24,7 @@
 
       <div class="actions-wrapper" v-if="!session.isServiceSession">
         <div class="des-wrap rate bookmark">
-          <a href="/b/login" class="rate">
+          <a @click="USER_BOOKMARK_ADD(session.id)" class="rate">
             <span class="svgicon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -174,7 +174,7 @@ export default {
   props: ["id"],
   mounted() {},
   methods: {
-    ...mapActions(["FETCH_SESSIONS", "FETCH_SPEAKERS", "fetchVotes", "USER_LOGIN"]),
+    ...mapActions(["FETCH_SESSIONS", "FETCH_SPEAKERS", "fetchVotes", "USER_LOGIN", "USER_BOOKMARK_ADD", "USER_BOOKMARK_REMOVE"]),
     getSpeakerPhoto: function(id) {
       if (this.speakers.length === 0) {
         this.FETCH_SPEAKERS();

@@ -51,7 +51,7 @@ export default {
     ...mapActions({ userCheck: "USER_STATUS" }),
   },
   mounted() {
-    this.userCheck();
+    // this.userCheck();
   },
   data() {
     return {

@@ -55,7 +55,6 @@ export default new Vuex.Store({
     sessionsById: [],
     stats: [],
     myFeedbacks: [],
-
     user: false,
   },
   getters: {
@@ -154,7 +153,7 @@ export default new Vuex.Store({
           commit(SET_USER, response);
         })
         .catch(function() {
-          console.log("me didnt work");
+          console.log("status me didnt work");
         });
     },
     [USER_LOGIN]({ commit }) {
@@ -171,7 +170,7 @@ export default new Vuex.Store({
           console.log(response);
         })
         .catch(function() {
-          console.log("bookmark didnt work");
+          console.log("bookmark fetch didnt work");
         });
     },
     [USER_BOOKMARK_ADD]({ commit }, param) {
@@ -181,7 +180,7 @@ export default new Vuex.Store({
           console.log(response);
         })
         .catch(function() {
-          console.log("bookmark didnt work");
+          console.log("bookmark add didnt work");
         });
     },
     [USER_BOOKMARK_REMOVE]({ commit }, param) {
@@ -191,7 +190,7 @@ export default new Vuex.Store({
           console.log(response);
         })
         .catch(function() {
-          console.log("bookmark didnt work");
+          console.log("bookmark remove didnt work");
         });
     },
     [USER_FEEDBACK_ADD]({ commit }, param) {
@@ -201,7 +200,7 @@ export default new Vuex.Store({
           console.log(response);
         })
         .catch(function() {
-          console.log("bookmark didnt work");
+          console.log("feedback add didnt work");
         });
     },
     [USER_FEEDBACK_FETCH]({ commit }) {
@@ -211,11 +210,10 @@ export default new Vuex.Store({
           console.log(response);
         })
         .catch(function() {
-          console.log("bookmark didnt work");
+          console.log("feedback fetch didnt work");
         });
     },
     [SET_SESSIONS_READY]({ commit }, payload) {
-      console.log("setting sessions to " + payload);
       commit(SET_SESSIONS_READY, payload);
     },
     [SET_SPEAKERS_READY]({ commit }, payload) {

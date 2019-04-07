@@ -14,7 +14,9 @@
       <div class="menu-wrapper" :class="{ active }">
         <MainMenu @click.native="resetMenu()"/>
       </div>
-      <div class="register-button"></div>
+      <div class="register-button" v-if="!user">
+        <a class="login-button" @click="USER_LOGIN()">Login</a>
+      </div>
       <button class="menu-button" @click="activateMenu()" :class="{ active }">
         <i></i>
       </button>
@@ -25,6 +27,7 @@
 <script>
 import LogoSvg from "@/components/shared/logo-svg.vue";
 import MainMenu from "@/components/shared/main-menu.vue";
+import { mapActions, mapGetters } from "vuex";
 // import ButtonWaw from '@/components/shared/button-waw.vue'
 
 export default {
@@ -39,7 +42,11 @@ export default {
     MainMenu,
     // ButtonWaw
   },
+  computed: {
+    ...mapGetters({ user: "getUser" }),
+  },
   methods: {
+    ...mapActions(["USER_LOGIN"]),
     activateMenu() {
       if (this.active === "") {
         this.active = "active";

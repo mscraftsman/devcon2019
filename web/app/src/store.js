@@ -9,10 +9,13 @@ const sessionizeSessions = "https://sessionize.com/api/v2/rn3ak6vi/view/Sessions
 const sessionizeSpeakers = "https://sessionize.com/api/v2/rn3ak6vi/view/Speakers";
 // https://sessionize.com/api/v2/rn3ak6vi/view/sessions
 export const SET_SPEAKERS = "SET_SPEAKERS";
+export const SET_SPEAKERS_READY = "SET_SPEAKERS_READY";
 export const SET_SPEAKERS_BY_ID = "SET_SPEAKERS_BY_ID";
 export const SET_SPONSORS = "SET_SPONSORS";
 export const SET_STATS = "SET_STATS";
 export const SET_SESSIONS = "SET_SESSIONS";
+export const SET_SESSIONS_READY = "SET_SESSIONS_READY";
+export const SET_SESSIONS_BY_ID = "SET_SESSIONS_BY_ID";
 export const SET_PAGESESSIONS_ACTIVE = "SET_PAGESESSIONS_ACTIVE";
 export const SET_PAGESESSIONS_SCROLL_POSITION = "SET_PAGESESSIONS_SCROLL_POSITION";
 
@@ -29,9 +32,12 @@ export default new Vuex.Store({
       active: "Thursday",
     },
     speakers: [],
+    speakersReady: false,
     speakersById: [],
     sponsors: [],
     sessions: [],
+    sessionsReady: false,
+    sessionsById: [],
     stats: [],
     user: {
       status: true, // true or false
@@ -46,6 +52,9 @@ export default new Vuex.Store({
     getSpeakers: function(state) {
       return state.speakers;
     },
+    getSpeakersReady: function(state) {
+      return state.speakersReady;
+    },
     getSpeakersById: function(state) {
       return state.speakersById;
     },
@@ -54,6 +63,12 @@ export default new Vuex.Store({
     },
     getSessions: function(state) {
       return state.sessions;
+    },
+    getSessionsReady: function(state) {
+      return state.sessionsReady;
+    },
+    getSessionsById: function(state) {
+      return state.sessionsById;
     },
     getSessionsByRoom: function(state) {
       return state.sessions;
@@ -79,14 +94,23 @@ export default new Vuex.Store({
     [SET_SPEAKERS](state, speakers) {
       state.speakers = speakers;
     },
+    [SET_SPEAKERS_READY](state, payload) {
+      state.speakersReady = payload;
+    },
     [SET_SPEAKERS_BY_ID](state, speakers) {
       state.speakersById = speakers;
+    },
+    [SET_SESSIONS_BY_ID](state, sessions) {
+      state.sessionsById = sessions;
     },
     [SET_SPONSORS](state, sponsors) {
       state.sponsors = sponsors;
     },
     [SET_SESSIONS](state, sessions) {
       state.sessions = sessions;
+    },
+    [SET_SESSIONS_READY](state, payload) {
+      state.sessionsReady = payload;
     },
     [SET_PAGESESSIONS_ACTIVE](state, active) {
       state.pageSessions.active = active;
@@ -104,6 +128,15 @@ export default new Vuex.Store({
         .then(response => response.json())
         .then(payload => {
           commit(SET_SESSIONS, payload);
+
+          let smashSessions = [...payload[0].sessions, ...payload[1].sessions, ...payload[2].sessions];
+          let groupById = smashSessions.reduce(function(r, a) {
+            r[a.id] = r[a.id] || [];
+            r[a.id] = a;
+            return r;
+          }, Object.create(null));
+          commit(SET_SESSIONS_BY_ID, groupById);
+          commit(SET_SESSIONS_READY, true);
         })
         .catch(error => {
           throw new Error("Error should be caught by Vue global error handler." + error);
@@ -121,6 +154,7 @@ export default new Vuex.Store({
             return r;
           }, Object.create(null));
           commit(SET_SPEAKERS_BY_ID, groupById);
+          commit(SET_SPEAKERS_READY, true);
         })
         .catch(error => {
           throw new Error("Error should be caught by Vue global error handler." + error);

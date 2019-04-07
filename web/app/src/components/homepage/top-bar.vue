@@ -2,7 +2,27 @@
   <div class="home-component top-bar-wrapper">
     <div class="container" v-view="viewHandler">
       <div class="top-bar-container">
-        <div class="rendez-vous-wrapper">
+        <div class="rendez-vous-wrapper" v-if="user && user.status">
+          <span class="svgicon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#ffffff"
+              stroke-width="2"
+              stroke-linecap="square"
+              stroke-linejoin="arcs"
+            >
+              <path d="M5.52 19c.64-2.2 1.84-3 3.22-3h6.52c1.38 0 2.58.8 3.22 3"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+              <circle cx="12" cy="12" r="10"></circle>
+            </svg>
+          </span>
+          {{ user.data.name }}
+        </div>
+        <div class="rendez-vous-wrapper" v-else>
           11
           <sup>th</sup> - 13
           <sup>th</sup> April at Voila Bagatelle
@@ -23,7 +43,11 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
 export default {
+  computed: {
+    ...mapGetters({ user: "getUser" }),
+  },
   methods: {
     viewHandler(e) {
       let el = this.$refs.pageloader.$el;
@@ -32,21 +56,15 @@ export default {
       } else if (e.type == "exit") {
         el.style.position = "fixed";
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 .top-bar-wrapper {
   // height: 40px;
-  background: linear-gradient(
-      to right,
-      rgb(252, 218, 159) 0%,
-      rgb(255, 95, 56) 52%,
-      rgb(192, 37, 51) 100%
-    )
-    bottom transparent no-repeat;
+  background: linear-gradient(to right, rgb(252, 218, 159) 0%, rgb(255, 95, 56) 52%, rgb(192, 37, 51) 100%) bottom transparent no-repeat;
 
   background-size: 100% 1px;
   box-sizing: border-box;
@@ -70,9 +88,18 @@ export default {
     justify-content: flex-start;
     flex-grow: 1;
     font-weight: 900;
+    align-content: center;
 
     sup {
       text-transform: lowercase;
+    }
+
+    .svgicon {
+      padding-right: 5px;
+      svg {
+        top: 7px;
+        position: relative;
+      }
     }
   }
   .links-wrapper {

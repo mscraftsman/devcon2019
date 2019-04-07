@@ -81,6 +81,12 @@ export default new Router({
       component: () => import("./views/PageFeedback.vue"),
     },
     {
+      path: "/top",
+      props: true,
+      name: "top",
+      component: () => import("./views/PageTop.vue"),
+    },
+    {
       path: "/index.html",
       redirect: "/",
     },

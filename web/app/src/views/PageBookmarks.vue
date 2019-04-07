@@ -1,40 +1,20 @@
 <template>
   <div>
-    <h1 class="mega-rainbow">Top Speakers</h1>
-
-    <div class="page">
-      <div class="speakers-wrapper" v-if="speakerReady">
-        <div class="speaker-row header">
-          <div class="rank">#</div>
-          <div class="name">Name</div>
-          <div class="score">Score</div>
-        </div>
-        <div class="speaker-row" v-for="(id, index) in topSpeakerList" :key="index">
-          <div class="rank mega-rainbow">{{index + 1}}</div>
-          <div class="name">
-            <router-link
-              :to="{ name: 'speaker', params: { id: id } }"
-            >{{ allSpeakers[id].fullName }}</router-link>
-          </div>
-          <!-- <div class="score">{{ speaker.score }}</div> -->
-        </div>
-      </div>
-    </div>
-    <h1 class="mega-rainbow">Top Sessions</h1>
+    <h1 class="mega-rainbow">My Bookmarks</h1>
 
     <div class="page">
       <div class="speakers-wrapper" v-if="sessionsReady">
         <div class="speaker-row header">
-          <div class="rank">#</div>
+          <div class="time">Time</div>
           <div class="name">Topic</div>
-          <div class="score">Score</div>
+          <div class="score">Room</div>
         </div>
-        <div class="speaker-row" v-for="(id, index) in topSessionsList" :key="index">
-          <div class="rank mega-rainbow">{{index + 1}}</div>
+        <div class="speaker-row" v-for="(id, index) in bookmarksList" :key="index">
+          <div class="rank">Thursday 22:00</div>
           <div class="name">
             <router-link :to="{ name: 'session', params: { id: id } }">{{ allSessions[id].title }}</router-link>
           </div>
-          <!-- <div class="score">{{ speaker.score }}</div> -->
+          <div class="score">Educator 1</div>
         </div>
       </div>
     </div>
@@ -45,7 +25,7 @@
 import { mapGetters, mapActions } from "vuex";
 export default {
   computed: {
-    ...mapGetters({ speakerReady: "getSpeakersReady", allSpeakers: "getSpeakersById", allSessions: "getSessionsById", sessionsReady: "getSessionsReady" }),
+    ...mapGetters({ allSessions: "getSessionsById", sessionsReady: "getSessionsReady" }),
   },
   methods: {
     ...mapActions({ userCheck: "USER_STATUS" }),
@@ -55,8 +35,7 @@ export default {
   },
   data() {
     return {
-      topSpeakerList: ["6d92a0e5-248f-44d5-a35c-3eb5deecc559", "ce733ef3-e83e-4314-86dc-56e108e514df", "03699e05-2575-434d-821d-440d4f93877f"],
-      topSessionsList: ["29127119-63f8-4280-bc82-965f60731543", "115650", "80862"],
+      bookmarksList: ["29127119-63f8-4280-bc82-965f60731543", "115650", "80862"],
     };
   },
 };
@@ -74,28 +53,28 @@ export default {
   grid-row-gap: 10px;
   .speaker-row {
     display: grid;
-    grid-template-columns: 80px 1fr 100px;
+    grid-template-columns: 200px 1fr 100px;
     color: white;
     background: rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     line-height: 30px;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 40px;
 
     &.header {
       font-weight: bolder;
-      font-size: 30px;
+      font-size: 20px;s
     }
 
     .rank {
       font-style: oblique;
-      margin-left: 20px;
+      margin-left: 10px;
       // background: var(--color-red-light);
       display: flex;
       align-self: center;
       justify-content: center;
       height: 40px;
-      font-size: 40px;
+      font-size: 20px;
       transform: skewX(-15deg);
     }
 

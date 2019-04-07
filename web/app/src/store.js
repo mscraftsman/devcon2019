@@ -1,9 +1,11 @@
 import Vue from "vue";
 import Vuex from "vuex";
-
 import { extractData } from "@/helpers";
+import Feedback from "@/feedback.js";
 
 Vue.use(Vuex);
+
+let feedback = new Feedback("https://sessions.conference.mscc.mu");
 
 const sessionizeSessions = "https://sessionize.com/api/v2/rn3ak6vi/view/Sessions";
 const sessionizeSpeakers = "https://sessionize.com/api/v2/rn3ak6vi/view/Speakers";
@@ -25,6 +27,10 @@ export const FETCH_SPEAKERS = "FETCH_SPEAKERS";
 export const FETCH_SPONSORS = "FETCH_SPONSORS";
 export const FETCH_STATS = "FETCH_STATS";
 
+export const USER_STATUS = "USER_STATUS";
+export const SET_USER = "SET_USER";
+export const USER_LOGIN = "USER_LOGIN";
+
 export default new Vuex.Store({
   state: {
     pageSessions: {
@@ -40,7 +46,7 @@ export default new Vuex.Store({
     sessionsById: [],
     stats: [],
     user: {
-      status: true, // true or false
+      status: false, // true or false
       data: {
         id: "1234",
         name: "Sandeep Ramgolam",
@@ -121,8 +127,32 @@ export default new Vuex.Store({
     [SET_STATS](state, stats) {
       state.stats = stats;
     },
+    [SET_USER](state, payload) {
+      state.user = payload;
+    },
   },
   actions: {
+    [USER_STATUS]({ commit }) {
+      console.log("trying to get data");
+      feedback
+        .Me()
+        .then(response => {
+          console.log(response);
+        })
+        .catch(function() {
+          console.log("me didnt work");
+        });
+    },
+    [USER_LOGIN]({ commit }) {
+      feedback
+        .Login()
+        .then(response => {
+          console.log(response);
+        })
+        .catch(function() {
+          console.log("login didnt work");
+        });
+    },
     [FETCH_SESSIONS]({ commit }) {
       return fetch(sessionizeSessions)
         .then(response => response.json())
@@ -176,7 +206,6 @@ export default new Vuex.Store({
           throw new Error("Error should be caught by Vue global error handler." + error);
         });
     },
-
     [FETCH_STATS]({ commit }) {
       const URL = require("@/constants/urls.json")["devcon-stats"];
       return fetch(URL)

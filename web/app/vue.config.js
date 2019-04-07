@@ -11,9 +11,9 @@ module.exports = {
           @import "@/scss/_typography.scss";
           @import "@/scss/_generic.scss";
           @import "@/scss/_animations.scss";
-        `
-      }
-    }
+        `,
+      },
+    },
   },
   configureWebpack: {
     mode: "production",
@@ -27,14 +27,17 @@ module.exports = {
           removeScriptTypeAttributes: false,
           useShortDoctype: false,
           removeStyleLinkTypeAttributes: false,
-          removeAttributeQuotes: false
-        }
-      })
-    ]
+          removeAttributeQuotes: false,
+        },
+      }),
+    ],
+    devServer: {
+      disableHostCheck: true,
+    },
   },
   pwa: {
     name: "DevCon 2019",
     themeColor: "#F54923",
-    msTileColor: "#F54923"
-  }
+    msTileColor: "#F54923",
+  },
 };

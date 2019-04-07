@@ -87,6 +87,12 @@ export default new Router({
       component: () => import("./views/PageTop.vue"),
     },
     {
+      path: "/bookmarks",
+      props: true,
+      name: "bookmarks",
+      component: () => import("./views/PageBookmarks.vue"),
+    },
+    {
       path: "/index.html",
       redirect: "/",
     },

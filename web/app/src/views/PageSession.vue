@@ -92,7 +92,7 @@
         </div>
 
         <div class="des-wrap rate meetup" v-else>
-          <a href="/b/login" class="rate">
+          <a @click="USER_LOGIN()" class="rate">
             <span class="svgicon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -174,7 +174,7 @@ export default {
   props: ["id"],
   mounted() {},
   methods: {
-    ...mapActions(["FETCH_SESSIONS", "FETCH_SPEAKERS", "fetchVotes"]),
+    ...mapActions(["FETCH_SESSIONS", "FETCH_SPEAKERS", "fetchVotes", "USER_LOGIN"]),
     getSpeakerPhoto: function(id) {
       if (this.speakers.length === 0) {
         this.FETCH_SPEAKERS();
@@ -417,6 +417,7 @@ a.back {
   }
   &.rate {
     padding: 0;
+    cursor: pointer;
     a {
       background: var(--color-green);
       height: 50px;

@@ -1,6 +1,7 @@
 function Paths(baseURL) {
   return {
     Login: baseURL + "/login",
+    Logout: baseURL + "/logout",
     Me: baseURL + "/api/me",
     Bookmarks: baseURL + "/api/bookmarks",
     Feedbacks: baseURL + "/api/feedbacks",
@@ -48,7 +49,9 @@ class Feedback {
   /**
    * Log the user out
    */
-  Logout() {}
+  Logout() {
+    window.location = this.paths.Logout;
+  }
 
   /**
    * Returns information about currently logged in attendee
@@ -64,15 +67,9 @@ class Feedback {
    * @param {string} id
    */
   AddBookmark(id) {
-    return FetchWithCreds(this.paths.Bookmarks, {
-      method: "POST",
-      headers: {
-        "Content-type": "application/json",
-      },
-      body: `{"id": ${id}}`,
-    })
-      .then(rajni)
-      .then(status);
+    return FetchWithCreds(this.paths.Bookmarks + "/" + id, {
+      method: "PUT",
+    }).then(status);
   }
 
   /**

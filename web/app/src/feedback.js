@@ -8,16 +8,23 @@ function Paths(baseURL) {
   };
 }
 
-function Status(response) {
-  if (response.status >= 200 && response.status < 300) {
-    return Promise.resolve(response);
-  } else {
-    return Promise.reject(new Error(response.statusText));
-  }
+function status({ response, data }) {
+  return new Promise((resolve, reject) => {
+    if (response.status >= 200 && response.status < 300) {
+      resolve(data);
+    } else {
+      reject(data);
+    }
+  });
 }
 
-function JSON(response) {
-  return response.json();
+function rajni(response) {
+  return new Promise((resolve, reject) => {
+    response
+      .json()
+      .then(data => resolve({ response, data }))
+      .catch(reject);
+  });
 }
 
 function FetchWithCreds(url, opts) {
@@ -48,8 +55,8 @@ class Feedback {
    */
   Me() {
     return FetchWithCreds(this.paths.Me, { credentials: "include" })
-      .then(JSON)
-      .then(Status);
+      .then(rajni)
+      .then(status);
   }
 
   /**
@@ -64,8 +71,8 @@ class Feedback {
       },
       body: `{"id": ${id}}`,
     })
-      .then(JSON)
-      .then(Status);
+      .then(rajni)
+      .then(status);
   }
 
   /**
@@ -73,8 +80,8 @@ class Feedback {
    */
   ListOwnBookmarks() {
     return FetchWithCreds(this.paths.Bookmarks)
-      .then(JSON)
-      .then(Status);
+      .then(rajni)
+      .then(status);
   }
 
   /**
@@ -84,7 +91,7 @@ class Feedback {
   RemoveBookmark(id) {
     return FetchWithCreds(this.paths.Bookmarks + "/" + id, {
       method: "DELETE",
-    }).then(Status);
+    }).then(status);
   }
 
   /**
@@ -98,7 +105,7 @@ class Feedback {
         "Content-type": "application/json",
       },
       body: JSON.stringify(feedback),
-    }).then(Status);
+    }).then(status);
   }
 
   /**
@@ -106,8 +113,8 @@ class Feedback {
    */
   ListOwnFeedbacks() {
     return FetchWithCreds(this.paths.OwnFeedbacks)
-      .then(JSON)
-      .then(Status);
+      .then(rajni)
+      .then(status);
   }
 }
 

@@ -20,7 +20,7 @@ import HeaderStripe from "@/components/homepage/header-stripe.vue";
 import SocialStripe from "@/components/homepage/social-stripe.vue";
 import FooterSection from "@/components/homepage/footer-section.vue";
 import { mapActions } from "vuex";
-import { FETCH_SESSIONS, FETCH_SPEAKERS } from "@/store";
+import { FETCH_SESSIONS, FETCH_SPEAKERS, USER_STATUS } from "@/store";
 
 export default {
   components: {
@@ -31,6 +31,7 @@ export default {
   },
   beforeMount() {},
   mounted() {
+    this.USER_STATUS();
     this.$Progress.finish();
   },
   created() {
@@ -56,7 +57,7 @@ export default {
     });
   },
   methods: {
-    ...mapActions([FETCH_SESSIONS, FETCH_SPEAKERS]),
+    ...mapActions([FETCH_SESSIONS, FETCH_SPEAKERS, USER_STATUS]),
 
     handleDataFetched() {
       console.log("Data fetched!");

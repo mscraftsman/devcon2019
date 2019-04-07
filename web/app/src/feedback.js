@@ -1,10 +1,10 @@
 function Paths(baseURL) {
   return {
     Login: baseURL + "/login",
-    Me: baseURL + "/me",
-    Bookmarks: baseURL + "/bookmarks",
-    Feedbacks: baseURL + "/feedbacks",
-    OwnFeedbacks: baseURL + "/feedbacks/me",
+    Me: baseURL + "/api/me",
+    Bookmarks: baseURL + "/api/bookmarks",
+    Feedbacks: baseURL + "/api/feedbacks",
+    OwnFeedbacks: baseURL + "/api/feedbacks/me",
   };
 }
 

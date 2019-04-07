@@ -3,6 +3,7 @@
     <h1 class="mega-rainbow">My Bookmarks</h1>
 
     <div class="page">
+      <!-- <pre>{{ allSessions }} </pre> -->
       <div class="speakers-wrapper" v-if="sessionsReady">
         <div class="speaker-row header">
           <div class="time">Time</div>
@@ -13,6 +14,7 @@
           <div class="rank">Thursday 22:00</div>
           <div class="name">
             <router-link :to="{ name: 'session', params: { id: id } }">{{ allSessions[id].title }}</router-link>
+            <span v-for="speaker in allSessions[id].speakers" :key="speaker.id">{{ speaker.name }}</span>
           </div>
           <div class="score">Educator 1</div>
         </div>
@@ -55,7 +57,7 @@ export default {
     display: grid;
     grid-template-columns: 200px 1fr 100px;
     color: white;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.8);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     line-height: 30px;
     font-size: 20px;
@@ -67,15 +69,13 @@ export default {
     }
 
     .rank {
-      font-style: oblique;
-      margin-left: 10px;
+      //   margin-left: 10px;
       // background: var(--color-red-light);
       display: flex;
       align-self: center;
       justify-content: center;
       height: 40px;
       font-size: 20px;
-      transform: skewX(-15deg);
     }
 
     .score {
@@ -86,6 +86,11 @@ export default {
     .name {
       // padding: 10px 0;
       padding-left: 20px;
+
+      span {
+        font-size: 15px;
+        display: block;
+      }
     }
   }
 }
@@ -103,6 +108,10 @@ export default {
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
       font-size: 15px;
       line-height: 18px;
+
+      .rank {
+        font-size: 15px;
+      }
 
       &.header {
         font-weight: bolder;

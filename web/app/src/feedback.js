@@ -20,9 +20,15 @@ function JSON(response) {
   return response.json();
 }
 
+function FetchWithCreds(url, opts) {
+  opts = Object.assign({ credentials: "include" }, opts);
+  return fetch(url, opts);
+}
+
 class Feedback {
   constructor(baseURL) {
     this.paths = Paths(baseURL);
+    window.Feedback = this;
   }
 
   /**
@@ -41,7 +47,7 @@ class Feedback {
    * Returns information about currently logged in attendee
    */
   Me() {
-    return fetch(this.paths.Me)
+    return FetchWithCreds(this.paths.Me, { credentials: "include" })
       .then(JSON)
       .then(Status);
   }
@@ -51,7 +57,7 @@ class Feedback {
    * @param {string} id
    */
   AddBookmark(id) {
-    return fetch(this.paths.Bookmarks, {
+    return FetchWithCreds(this.paths.Bookmarks, {
       method: "POST",
       headers: {
         "Content-type": "application/json",
@@ -66,7 +72,7 @@ class Feedback {
    * Get a list of currently logged in attendee's bookmarks
    */
   ListOwnBookmarks() {
-    return fetch(this.paths.Bookmarks)
+    return FetchWithCreds(this.paths.Bookmarks)
       .then(JSON)
       .then(Status);
   }
@@ -76,7 +82,7 @@ class Feedback {
    * @param {string} id
    */
   RemoveBookmark(id) {
-    return fetch(this.paths.Bookmarks + "/" + id, {
+    return FetchWithCreds(this.paths.Bookmarks + "/" + id, {
       method: "DELETE",
     }).then(Status);
   }
@@ -86,7 +92,7 @@ class Feedback {
    * @param {object} feedback
    */
   AddFeedback(feedback) {
-    return fetch(this.paths.Feedbacks, {
+    return FetchWithCreds(this.paths.Feedbacks, {
       method: "POST",
       headers: {
         "Content-type": "application/json",
@@ -99,7 +105,7 @@ class Feedback {
    * List feedbacks added by currently logged in user
    */
   ListOwnFeedbacks() {
-    return fetch(this.paths.OwnFeedbacks)
+    return FetchWithCreds(this.paths.OwnFeedbacks)
       .then(JSON)
       .then(Status);
   }

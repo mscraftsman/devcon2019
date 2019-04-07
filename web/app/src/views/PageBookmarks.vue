@@ -63,7 +63,7 @@ export default {
 
     &.header {
       font-weight: bolder;
-      font-size: 20px;s
+      font-size: 20px;
     }
 
     .rank {

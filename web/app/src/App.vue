@@ -31,7 +31,7 @@ export default {
   },
   beforeMount() {},
   mounted() {
-    // this.USER_STATUS();
+    this.USER_STATUS();
     this.$Progress.finish();
   },
   created() {

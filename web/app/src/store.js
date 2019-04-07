@@ -162,14 +162,7 @@ export default new Vuex.Store({
         });
     },
     [USER_LOGIN]({ commit }) {
-      feedback
-        .Login()
-        .then(response => {
-          console.log(response);
-        })
-        .catch(function() {
-          console.log("login didnt work");
-        });
+      feedback.Login();
     },
     [USER_BOOKMARK_FETCH]({ commit }) {
       feedback

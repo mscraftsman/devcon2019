@@ -3,16 +3,14 @@
     <div class="container header-stripe-container">
       <template v-if="this.$route.name !== 'home'">
         <div class="back-button-wrapper">
-          <a @click="$router.go(-1)" class="back">
-            <img src="../../assets/back.svg" alt> Back
-          </a>
+          <a @click="$router.go(-1)" class="back"> <img src="../../assets/back.svg" alt /> Back </a>
         </div>
       </template>
       <div class="logo-wrapper">
-        <LogoSvg/>
+        <LogoSvg />
       </div>
       <div class="menu-wrapper" :class="{ active }">
-        <MainMenu @click.native="resetMenu()"/>
+        <MainMenu @click.native="resetMenu()" />
       </div>
       <div class="register-button" v-if="!user">
         <a class="login-button" @click="USER_LOGIN()">Login</a>
@@ -109,6 +107,20 @@ export default {
 .register-button {
 }
 
+.login-button {
+  padding: 5px 20px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: 1px solid var(--color-red-light);
+  background: var(--color-red-light);
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
 .menu-button {
   display: none;
   background: transparent;

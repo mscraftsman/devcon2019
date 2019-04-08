@@ -3,37 +3,26 @@
     <h1 class="mega-rainbow">My Bookmarks</h1>
 
     <div class="page">
-      <div class="speakers-wrapper" v-if="sessionsReady === true">
+      <div class="speakers-wrapper" v-if="sessionsReady">
         <!-- <div class="speaker-row header">
           <div class="time">Time</div>
           <div class="name">Topic</div>
           <div class="score">Room</div>
           <div class="score">Remove</div>
         </div>-->
-        <div class="speaker-row" v-for="(id, index) in bookmarksList" :key="index">
+        <!-- <pre>{{ sortedBookmarks() }}</pre> -->
+        <div class="speaker-row" v-for="(id, index) in getBookmarks" :key="index">
           <div class="rank">Thursday 22:00</div>
-          <div class="name" v-if="sessionsReady">
+          <div class="name">
             <router-link :to="{ name: 'session', params: { id: id } }">{{ sessionInfo(id).title }}</router-link>
             <span v-for="speaker in allSessions[id].speakers" :key="speaker.id">{{ speaker.name }}</span>
           </div>
           <div class="score">Educator 1</div>
           <div class="actions">
             <span class="svgicons" @click="USER_BOOKMARK_REMOVE(id)">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#ffffff"
-                stroke-width="2"
-                stroke-linecap="square"
-                stroke-linejoin="arcs"
-              >
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs">
                 <polyline points="3 6 5 6 21 6"></polyline>
-                <path
-                  d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
-                ></path>
+                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
                 <line x1="10" y1="11" x2="10" y2="17"></line>
                 <line x1="14" y1="11" x2="14" y2="17"></line>
               </svg>
@@ -52,7 +41,7 @@
 import { mapGetters, mapActions } from "vuex";
 export default {
   computed: {
-    ...mapGetters({ allSessions: "getSessionsById", sessionsReady: "getSessionsReady" }),
+    ...mapGetters({ allSessions: "getSessionsById", sessionsReady: "getSessionsReady", getBookmarks: "getBookmarks" })
   },
   methods: {
     ...mapActions({ userCheck: "USER_STATUS", fetchSessions: "FETCH_SESSIONS", USER_BOOKMARK_REMOVE: "USER_BOOKMARK_REMOVE" }),
@@ -65,6 +54,10 @@ export default {
         };
       }
     },
+    sortedBookmarks() {
+      let rawBookmarks = this.getBookmarks.reduce((p, c) => { p[c] = true; return p }, {});
+      return this.allSessions.filter(s => s.id in rawBookmarks).sort((a, b) => a.startsAt < b.startsAt ? -1 : 1);
+    }
   },
   created() {
     // this.fetchSessions();

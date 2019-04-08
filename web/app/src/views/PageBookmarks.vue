@@ -15,7 +15,7 @@
             <label for>Date/Time</label>
             <div class="value">
               <div class="day">{{ getDay(sessionInfo(id).startsAt) }}</div>
-              <div class="time">{{ time(sessionInfo(id).startsAt) }} - {{ time(sessionInfo(id).endsAt) }}</div>
+              <div class="time">{{ time(sessionInfo(id).startsAt) }}</div>
             </div>
           </div>
           <div class="name" v-if="sessionsReady">
@@ -137,7 +137,7 @@ export default {
 
   .speaker-row {
     display: grid;
-    grid-template-columns: 0.3fr 1fr 0.2fr 70px;
+    grid-template-columns: 0.5fr 1fr 0.2fr 70px;
     color: white;
     background: rgba(0, 0, 0, 0.7);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);

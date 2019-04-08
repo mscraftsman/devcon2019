@@ -3,7 +3,7 @@
     <ul>
       <div class="user-description-wrapper" v-if="user">
         <div class="user-image">
-          <img :src="user.photo_link" :alt="user.name">
+          <img :src="user.photo_link" :alt="user.name" />
         </div>
         <div class="user-name">
           <h4>{{ user.name }}</h4>
@@ -16,10 +16,10 @@
         <router-link :to="{ name: 'bookmarks' }">My bookmarks</router-link>
       </li>
       <li>
-        <router-link :to="{ name: 'speakers' }">Speakers</router-link>
+        <router-link :to="{ name: 'sessions' }">Sessions</router-link>
       </li>
       <li>
-        <router-link :to="{ name: 'sessions' }">Sessions</router-link>
+        <router-link :to="{ name: 'speakers' }">Speakers</router-link>
       </li>
       <li>
         <router-link :to="{ name: 'extras' }">Extras</router-link>

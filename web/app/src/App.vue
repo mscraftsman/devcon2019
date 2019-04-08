@@ -8,7 +8,7 @@
         <router-view />
       </transition>
     </div>
-
+    <!-- <NotificationSection /> -->
     <SocialStripe />
     <FooterSection />
   </div>
@@ -19,6 +19,7 @@ import TopBar from "@/components/homepage/top-bar.vue";
 import HeaderStripe from "@/components/homepage/header-stripe.vue";
 import SocialStripe from "@/components/homepage/social-stripe.vue";
 import FooterSection from "@/components/homepage/footer-section.vue";
+import NotificationSection from "@/components/homepage/notification-section.vue";
 import { mapActions } from "vuex";
 import { FETCH_SESSIONS, FETCH_SPEAKERS, USER_STATUS, SET_SESSIONS_READY, SET_SPEAKERS_READY, USER_FEEDBACK_FETCH, USER_BOOKMARK_FETCH } from "@/store";
 
@@ -28,6 +29,7 @@ export default {
     HeaderStripe,
     SocialStripe,
     FooterSection,
+    NotificationSection
   },
   beforeMount() { },
   mounted() {

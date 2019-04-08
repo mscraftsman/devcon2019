@@ -15,8 +15,8 @@
         </router-link>
       </div>
       <div class="actions-wrapper" v-if="!session.isServiceSession">
-        <div class="des-wrap rate bookmark">
-          <a @click="USER_BOOKMARK_ADD(session.id)" class="rate" v-if="!bookmarked">
+        <div class="des-wrap rate ">
+          <a @click="USER_BOOKMARK_ADD(session.id)" class="rate bookmark" v-if="!bookmarked">
             <span class="svgicon">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="square" stroke-linejoin="arcs">
                 <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
@@ -24,10 +24,11 @@
             </span>
             Add to bookmark
           </a>
-          <a @click="USER_BOOKMARK_REMOVE(session.id)" class="rate" v-else>
+          <a @click="USER_BOOKMARK_REMOVE(session.id)" class="done" v-else>
             <span class="svgicon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="square" stroke-linejoin="arcs">
-                <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
               </svg>
             </span>
             Bookmarked
@@ -35,21 +36,20 @@
         </div>
         <div class="des-wrap rate" v-if="user">
           <template v-if="checkSessionStatus">
-            <router-link v-if="voted" :to="{ name: 'feedback', params: { id: id } }" class="rate rated">
+            <router-link v-if="voted" :to="{ name: 'feedback', params: { id: id } }" class="done">
               <span class="svgicon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="square" stroke-linejoin="arcs">
-                  <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
                 </svg>
               </span>
               Rated. Thanks!
             </router-link>
             <router-link v-else :to="{ name: 'feedback', params: { id: id } }" class="rate">
               <span class="svgicon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="3" stroke-linecap="square" stroke-linejoin="arcs">
-                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
               </span>
-              Give feedback
+              Rate this session
             </router-link>
           </template>
           <span v-else>Session not started yet</span>
@@ -379,7 +379,7 @@ a.back {
     padding: 0;
     cursor: pointer;
     a {
-      background: var(--color-green);
+      background: var(--color-red-light);
       height: 50px;
       width: 100%;
       padding: 0 20px;
@@ -388,7 +388,11 @@ a.back {
       justify-content: center;
       text-decoration: none;
       // font-size: 20px;
-      color: black;
+      color: white;
+    }
+
+    a.done {
+      background: var(--color-green);
     }
   }
   &.meetup {
@@ -398,10 +402,9 @@ a.back {
       color: white;
     }
   }
-
   &.bookmark {
     a {
-      background: var(--color-red-light);
+      background: var(--color-blue);
       font-size: 14px;
       color: white;
     }

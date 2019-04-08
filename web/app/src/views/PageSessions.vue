@@ -119,9 +119,9 @@
                 <div :class="'session-panes room-wrapper  ' + room.className" v-for="room in rooms" :key="'room_' + room.className">
                   <div :class="'room-wrapper ' + room.className">
                     <div class="room-title">{{ room.label }}</div>
-                    <router-link @click.native="setScrollPosition()" :to="{ name: 'session', params: { id: session.id } }" v-for="session in getSessionsFor(index, room.label)" :key="room + session.id" v-bind:style="{ gridRow: timeToText(session.startsAt) + ' / span 2' }" class="session-card-wrapper">
+                    <div @click.native="setScrollPosition()" v-for="session in getSessionsFor(index, room.label)" :key="room + session.id" v-bind:style="{ gridRow: timeToText(session.startsAt) + ' / span 2' }" class="session-card-wrapper">
                       <session-card :session="session" />
-                    </router-link>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -217,9 +217,9 @@
                   <slide :class="'session-panes room-wrapper  ' + room.className" v-for="room in rooms" :key="'room_' + room.className">
                     <div :class="'room-wrapper ' + room.className">
                       <div class="room-title">{{ room.label }}</div>
-                      <router-link @click.native="setScrollPosition()" :to="{ name: 'session', params: { id: session.id } }" v-for="session in getSessionsFor(index, room.label)" :key="room + session.id" v-bind:style="{ gridRow: timeToText(session.startsAt) + ' / span 2' }" class="session-card-wrapper">
+                      <div @click.native="setScrollPosition()" v-for="session in getSessionsFor(index, room.label)" :key="room + session.id" v-bind:style="{ gridRow: timeToText(session.startsAt) + ' / span 2' }" class="session-card-wrapper">
                         <session-card :session="session" />
-                      </router-link>
+                      </div>
                     </div>
                   </slide>
                 </carousel>

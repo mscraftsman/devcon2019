@@ -1,39 +1,19 @@
 <template>
   <div class="home-component intro-slider-wrapper">
-    <carousel
-      class="slider-wrapper"
-      :per-page="1"
-      :loop="true"
-      :autoplay="true"
-      :autoplayTimeout="3000"
-      :paginationActiveColor="'#ff4932'"
-      :autoplayHoverPause="true"
-      :mouse-drag="false"
-      :navigationEnabled="true"
-      :paginationColor="'#fff'"
-      :paginationPadding="5"
-      :paginationSize="20"
-      :centerMode="true"
-      :navigationNextLabel="'›'"
-      :navigationPrevLabel="'‹'"
-    >
+    <carousel class="slider-wrapper" :per-page="1" :loop="true" :autoplay="true" :autoplayTimeout="3000" :paginationActiveColor="'#ff4932'" :autoplayHoverPause="true" :mouse-drag="false" :navigationEnabled="true" :paginationColor="'#fff'" :paginationPadding="5" :paginationSize="20" :centerMode="true" :navigationNextLabel="'›'" :navigationPrevLabel="'‹'">
       <slide class="slide">
         <div class="slide-item slide-quote">
           The
           <span class="mega-rainbow">most important</span> tech conference in Mauritius.
         </div>
         <div class="slide-item slide-button button">
-          <button-waw
-            :theme="'#97d0e1'"
-            :size="'70px'"
-            :link="'https://www.meetup.com/MauritiusSoftwareCraftsmanshipCommunity/events/258586831/'"
-          >Registration closed</button-waw>
+          <button-waw :theme="'#97d0e1'" :size="'50px'" :link="'https://www.meetup.com/MauritiusSoftwareCraftsmanshipCommunity/events/258586831/'">Registration closed</button-waw>
         </div>
       </slide>
       <slide class="slide">
         <div class="slide-item slide-quote">
           <span class="mega-rainbow">For</span> Developers
-          <br>
+          <br />
           <span class="mega-rainbow">by</span> Developers
         </div>
         <div class="slide-item slide-button button">
@@ -41,9 +21,7 @@
         </div>
       </slide>
       <slide class="slide">
-        <div class="slide-item slide-quote">
-          <span class="mega-rainbow">Networking</span> with Renown Speakers
-        </div>
+        <div class="slide-item slide-quote"><span class="mega-rainbow">Networking</span> with Renown Speakers</div>
         <div class="slide-item slide-button button">
           <button-waw :theme="'#97d0e1'" :size="'70px'" :link="'/speakers'">View all speakers</button-waw>
         </div>
@@ -55,11 +33,7 @@
           of Charge
         </div>
         <div class="slide-item slide-button button">
-          <button-waw
-            :theme="'#97d0e1'"
-            :size="'70px'"
-            :link="'https://www.meetup.com/MauritiusSoftwareCraftsmanshipCommunity/events/258586831/'"
-          >Registration closed</button-waw>
+          <button-waw :theme="'#97d0e1'" :size="'70px'" :link="'https://www.meetup.com/MauritiusSoftwareCraftsmanshipCommunity/events/258586831/'">Registration closed</button-waw>
         </div>
       </slide>
     </carousel>

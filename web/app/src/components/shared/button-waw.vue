@@ -49,6 +49,10 @@ export default {
   }
   padding: 0px 60px;
 
+  @media screen and (max-width: $tablet) {
+    padding: 0 20px;
+  }
+
   a,
   a span {
     color: var(--theme);

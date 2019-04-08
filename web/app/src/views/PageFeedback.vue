@@ -261,11 +261,13 @@ export default {
   align-content: center;
   display: grid;
   overflow: hidden;
+  grid-template-rows: 1fr;
 
   .virer-mam {
     // transform: rotate(-5deg);
     background: no-repeat right top/200% auto url(../../src/assets/bg/bg-red-small.svg), rgba(0, 0, 0, 0.9);
     width: 120vw;
+    height: 100%;
   }
 
   .devirer-mam {
@@ -280,6 +282,8 @@ export default {
     // grid-template-rows: 40vh;
     //   width: 100vw;
     color: white;
+    height: 80vh;
+
     .question-holder {
       grid-area: here;
 
@@ -371,6 +375,7 @@ export default {
 }
 
 .voted-wrapper {
+  grid-template-rows: auto;
   span.title {
     color: white;
     font-size: 16px;

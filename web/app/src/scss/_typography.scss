@@ -54,6 +54,10 @@ h1,
   @media screen and (max-width: $tablet) {
     font-size: 35px;
   }
+  
+  @media screen and (max-width: $mobile) {
+    font-size: 25px;
+  }
 }
 
 h1 {

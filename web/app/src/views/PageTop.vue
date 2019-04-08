@@ -54,7 +54,7 @@ export default {
   data() {
     return {
       topSpeakerList: ["6d92a0e5-248f-44d5-a35c-3eb5deecc559", "ce733ef3-e83e-4314-86dc-56e108e514df", "03699e05-2575-434d-821d-440d4f93877f"],
-      topSessionsList: ["29127119-63f8-4280-bc82-965f60731543", "115650", "80862"],
+      topSessionsList: ["115650", "80862"],
     };
   },
 };

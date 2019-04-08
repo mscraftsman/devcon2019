@@ -9,7 +9,7 @@ function Paths(baseURL) {
   };
 }
 
-function status({ response, data }) {
+function status(response, data) {
   return new Promise((resolve, reject) => {
     if (response.status >= 200 && response.status < 300) {
       resolve(data);
@@ -23,7 +23,7 @@ function rajni(response) {
   return new Promise((resolve, reject) => {
     response
       .json()
-      .then(data => resolve({ response, data }))
+      .then(data => resolve(response, data))
       .catch(reject);
   });
 }

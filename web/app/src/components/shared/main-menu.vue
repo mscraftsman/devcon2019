@@ -1,6 +1,20 @@
 <template>
   <div class="main-menu-wrapper">
     <ul>
+      <div class="user-description-wrapper" v-if="user">
+        <div class="user-image">
+          <img :src="user.photo_link" :alt="user.name">
+        </div>
+        <div class="user-name">
+          <h4>{{ user.name }}</h4>
+        </div>
+      </div>
+      <li class="responsive-display" v-else>
+        <a @click="USER_LOGIN()">Login</a>
+      </li>
+      <li class="responsive-display" v-if="user">
+        <router-link :to="{ name: 'bookmarks' }">My bookmarks</router-link>
+      </li>
       <li>
         <router-link :to="{ name: 'speakers' }">Speakers</router-link>
       </li>
@@ -16,14 +30,61 @@
       <li>
         <router-link :to="{ name: 'lifeatdevcon' }">Life at devcon</router-link>
       </li>
-      <!-- <li>
-        <a href="#">MCB Inovapp</a>
-      </li>-->
+      <li v-if="user" class="responsive-display">
+        <a @click="USER_LOGOUT">Logout</a>
+      </li>
     </ul>
   </div>
 </template>
 
+<script>
+import { mapActions, mapGetters } from "vuex";
+export default {
+  computed: {
+    ...mapGetters({ user: "getUser" }),
+  },
+  methods: {
+    ...mapActions(["USER_LOGIN"]),
+    ...mapActions(["USER_LOGOUT"]),
+  },
+};
+</script>
+
+
 <style lang="scss">
+.user-description-wrapper {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  grid-template-columns: 1fr 1fr;
+  .user-image {
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-right: 10px;
+    display: flex;
+    justify-self: center;
+
+    img {
+      width: 75px;
+      height: 75px;
+      object-fit: cover;
+    }
+  }
+  .user-name {
+    h4 {
+      color: var(--color-main);
+      text-transform: capitalize;
+    }
+  }
+}
+
+.responsive-display {
+  display: none;
+}
 .main-menu-wrapper {
   ul {
     padding: 0;
@@ -74,6 +135,12 @@
 }
 
 @media screen and (max-width: $tablet) {
+  .responsive-display {
+    display: block;
+  }
+  .user-description-wrapper {
+    display: grid;
+  }
   .main-menu-wrapper {
     ul {
       display: block;

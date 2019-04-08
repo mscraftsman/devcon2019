@@ -20,6 +20,9 @@
         <div class="links-wrapper">
           <ul>
             <li v-if="user">
+              <router-link :to="{ name: 'bookmarks' }">My Bookmarks</router-link>
+            </li>
+            <li v-if="user">
               <a @click="USER_LOGOUT()">Logout</a>
             </li>
             <li v-else>

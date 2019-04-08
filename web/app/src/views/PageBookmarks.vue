@@ -14,8 +14,8 @@
           <div class="rank">
             <label for>Date/Time</label>
             <div class="value">
-              <div class="day">{{ getDay(sessionInfo(id).startsAt) }}</div>
-              <div class="time">{{ time(sessionInfo(id).startsAt) }}</div>
+              <div class="day">{{ getDay(sessionInfo(id).startsAt) }} {{ time(sessionInfo(id).startsAt) }}</div>
+              <!-- <div class="time"></div> -->
             </div>
           </div>
           <div class="name" v-if="sessionsReady">
@@ -207,6 +207,7 @@ export default {
       display: flex;
       align-items: center;
       justify-content: center;
+      cursor: pointer;
 
       button {
         border: 0;

@@ -3,14 +3,14 @@
     <h1 class="mega-rainbow">My Bookmarks</h1>
 
     <div class="page">
-      <div class="speakers-wrapper" v-if="sessionsReady === true">
+      <div class="speakers-wrapper" v-if="sessionsReady">
         <!-- <div class="speaker-row header">
           <div class="time">Time</div>
           <div class="name">Topic</div>
           <div class="score">Room</div>
           <div class="score">Remove</div>
         </div>-->
-        <div class="speaker-row" v-for="(id, index) in bookmarksList" :key="index">
+        <div class="speaker-row" v-for="(id, index) in getBookmarks" :key="index">
           <div class="rank">
             <label for>Date/Time</label>
             <div class="value">
@@ -21,10 +21,7 @@
           <div class="name" v-if="sessionsReady">
             <label class="session-label">Session</label>
             <div class="value">
-              <router-link
-                class="title"
-                :to="{ name: 'session', params: { id: id } }"
-              >{{ sessionInfo(id).title }}</router-link>
+              <router-link class="title" :to="{ name: 'session', params: { id: id } }">{{ sessionInfo(id).title }}</router-link>
               <small>
                 <span v-for="(speaker, index) in allSessions[id].speakers" :key="speaker.id">
                   {{ speaker.name }}
@@ -40,21 +37,9 @@
           <div class="actions">
             <button @click="USER_BOOKMARK_REMOVE(id)">
               <span class="svgicons">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#ffffff"
-                  stroke-width="2"
-                  stroke-linecap="square"
-                  stroke-linejoin="arcs"
-                >
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs">
                   <polyline points="3 6 5 6 21 6"></polyline>
-                  <path
-                    d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
-                  ></path>
+                  <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
                   <line x1="10" y1="11" x2="10" y2="17"></line>
                   <line x1="14" y1="11" x2="14" y2="17"></line>
                 </svg>

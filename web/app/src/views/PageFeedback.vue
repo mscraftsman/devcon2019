@@ -142,7 +142,7 @@ export default {
     reaction: function () {
       let userid = "none";
       if (this.getUser.status) {
-        userid = this.getUser.data.id;
+        userid = this.getUser.id;
       }
       let reaction = {
         session_id: this.id,

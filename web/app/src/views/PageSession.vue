@@ -17,13 +17,21 @@
 
       <div class="actions-wrapper" v-if="!session.isServiceSession">
         <div class="des-wrap rate bookmark">
-          <a @click="USER_BOOKMARK_ADD(session.id)" class="rate">
+          <a @click="USER_BOOKMARK_ADD(session.id)" class="rate" v-if="!bookmarked">
             <span class="svgicon">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="square" stroke-linejoin="arcs">
                 <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
               </svg>
             </span>
-            Bookmark for later
+            Add to bookmark
+          </a>
+          <a @click="USER_BOOKMARK_REMOVE(session.id)" class="rate" v-else>
+            <span class="svgicon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="square" stroke-linejoin="arcs">
+                <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+              </svg>
+            </span>
+            Bookmarked
           </a>
         </div>
         <div class="des-wrap rate" v-if="user">
@@ -159,9 +167,17 @@ export default {
         .find(session => parseInt(session.id) === parseInt(this.id));
     },
     voted: function () {
+      return false;
+    },
+    bookmarked: function () {
       //   let allVoted = _.map(this.getVotes, "session_id");
       console.log(this.id);
       console.log(this.getBookmarks);
+      if (this.getBookmarks) {
+        return this.getBookmarks.includes(this.id);
+      }
+
+      return false;
       // if (allVoted.indexOf(this.id) !== -1) {
       //   return true;
       // }

@@ -35,6 +35,7 @@ export const USER_LOGOUT = "USER_LOGOUT";
 export const USER_BOOKMARK_ADD = "USER_BOOKMARK_ADD";
 export const USER_BOOKMARK_REMOVE = "USER_BOOKMARK_REMOVE";
 export const USER_BOOKMARK_FETCH = "USER_BOOKMARK_FETCH";
+export const USER_BOOKMARK_SET = "USER_BOOKMARK_SET";
 
 export const USER_FEEDBACK_ADD = "USER_FEEDBACK_ADD";
 export const USER_FEEDBACK_FETCH = "USER_FEEDBACK_FETCH";
@@ -55,6 +56,7 @@ export default new Vuex.Store({
     sessionsById: [],
     stats: [],
     myFeedbacks: [],
+    bookmarks: [],
     user: false,
   },
   getters: {
@@ -102,10 +104,11 @@ export default new Vuex.Store({
       return state.myFeedbacks;
     },
     getBookmarks: function(state) {
-      if (state.user) {
-        let bookmarksArray = state.user.bookmarks.split(";");
-        return bookmarksArray;
-      }
+      return state.bookmarks;
+      // if (state.user) {
+      //   let bookmarksArray = state.user.bookmarks.split(";");
+      //   return bookmarksArray;
+      // }
     },
   },
   mutations: {
@@ -148,6 +151,9 @@ export default new Vuex.Store({
     [USER_FEEDBACK_SET](state, payload) {
       state.myFeedbacks = payload;
     },
+    [USER_BOOKMARK_SET](state, payload) {
+      state.bookmarks = payload;
+    },
   },
   actions: {
     [USER_STATUS]({ commit }) {
@@ -174,29 +180,38 @@ export default new Vuex.Store({
         .ListOwnBookmarks()
         .then(response => {
           console.log(response);
+          commit(USER_BOOKMARK_SET, response.bookmarks);
         })
         .catch(function() {
           console.log("bookmark fetch didnt work");
         });
     },
-    [USER_BOOKMARK_ADD]({ commit }, param) {
+    [USER_BOOKMARK_ADD]({ state, commit, dispatch }, param) {
       feedback
         .AddBookmark(param)
         .then(response => {
           console.log(response);
+          console.log(state);
+          commit(USER_BOOKMARK_SET, [...state.bookmarks, param]);
         })
-        .catch(function() {
+        .catch(error => {
           console.log("bookmark add didnt work");
+          console.log(error);
         });
     },
-    [USER_BOOKMARK_REMOVE]({ commit }, param) {
+    [USER_BOOKMARK_REMOVE]({ state, commit, dispatch }, param) {
       feedback
         .RemoveBookmark(param)
         .then(response => {
           console.log(response);
+          console.log(state);
+          let newArray = state.bookmarks.filter(r => r !== param);
+          console.log(newArray);
+          commit(USER_BOOKMARK_SET, newArray);
         })
-        .catch(function() {
+        .catch(error => {
           console.log("bookmark remove didnt work");
+          console.log(error);
         });
     },
     [USER_FEEDBACK_ADD]({ commit }, param) {

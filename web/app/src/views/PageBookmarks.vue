@@ -77,7 +77,7 @@
 import { mapGetters, mapActions } from "vuex";
 export default {
   computed: {
-    ...mapGetters({ allSessions: "getSessionsById", sessionsReady: "getSessionsReady" }),
+    ...mapGetters({ allSessions: "getSessionsById", sessionsReady: "getSessionsReady", getBookmarks: "getBookmarks" }),
   },
   methods: {
     ...mapActions({ userCheck: "USER_STATUS", fetchSessions: "FETCH_SESSIONS", USER_BOOKMARK_REMOVE: "USER_BOOKMARK_REMOVE" }),
@@ -89,6 +89,13 @@ export default {
           title: "loading",
         };
       }
+    },
+    sortedBookmarks() {
+      let rawBookmarks = this.getBookmarks.reduce((p, c) => {
+        p[c] = true;
+        return p;
+      }, {});
+      return this.allSessions.filter(s => s.id in rawBookmarks).sort((a, b) => (a.startsAt < b.startsAt ? -1 : 1));
     },
   },
   created() {

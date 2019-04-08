@@ -101,6 +101,12 @@ export default new Vuex.Store({
     getMyFeedbacks: function(state) {
       return state.myFeedbacks;
     },
+    getBookmarks: function(state) {
+      if (state.user) {
+        let bookmarksArray = state.user.bookmarks.split(";");
+        return bookmarksArray;
+      }
+    },
   },
   mutations: {
     [SET_SPEAKERS](state, speakers) {

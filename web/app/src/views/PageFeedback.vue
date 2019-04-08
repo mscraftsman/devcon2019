@@ -15,30 +15,15 @@
               <template v-if="question.type === 'options'">
                 <div class="comment-wrapper">
                   <div class="reaction-wrapper">
-                    <Reactions v-model="question.value"/>
+                    <Reactions v-model="question.value" />
                   </div>
                 </div>
-                <vue-slider
-                  :height="style.height"
-                  :processStyle="style.processStyle"
-                  :bgStyle="style.bgStyle"
-                  :sliderStyle="style.sliderStyle"
-                  :dotSize="style.dotSize"
-                  :tooltip="false"
-                  :show="currentQuestion == index"
-                  :ref="'slider' + index"
-                  :data="question.options"
-                  v-model="question.value"
-                ></vue-slider>
+                <vue-slider :height="style.height" :processStyle="style.processStyle" :bgStyle="style.bgStyle" :sliderStyle="style.sliderStyle" :dotSize="style.dotSize" :tooltip="false" :show="currentQuestion == index" :ref="'slider' + index" :data="question.options" v-model="question.value"></vue-slider>
                 <span class="help-text">Slide that 👆 thing left or right to rate 👈 👉</span>
               </template>
               <div v-else class="comment-wrapper">
                 <div class="reaction-wrapper">
-                  <textarea
-                    class="textbox"
-                    v-model="question.value"
-                    placeholder="We would be grateful if you could leave some constructive critism."
-                  ></textarea>
+                  <textarea class="textbox" v-model="question.value" placeholder="We would be grateful if you could leave some constructive critism."></textarea>
                 </div>
               </div>
             </div>
@@ -126,15 +111,15 @@ export default {
   },
   methods: {
     ...mapActions(["USER_FEEDBACK_ADD", "USER_FEEDBACK_FETCH"]),
-    next: function() {
+    next: function () {
       this.currentQuestion++;
     },
-    submit: function() {
+    submit: function () {
       console.log("submitting");
       console.log(this.reaction);
       this.USER_FEEDBACK_ADD(this.reaction);
     },
-    cancel: function() {
+    cancel: function () {
       this.$router.go(-1);
     },
   },
@@ -147,14 +132,14 @@ export default {
     beforeMount() {
       this.USER_FEEDBACK_FETCH();
     },
-    voted: function() {
+    voted: function () {
       //   let allVoted = _.map(this.getMyFeedbacks, "session_id");
       //   if (allVoted.indexOf(this.id) !== -1) {
       //     return true;
       //   }
       return false;
     },
-    reaction: function() {
+    reaction: function () {
       let userid = "none";
       if (this.getUser.status) {
         userid = this.getUser.data.id;
@@ -170,10 +155,10 @@ export default {
       };
       return reaction;
     },
-    session: function() {
+    session: function () {
       let sessions = this.sessions
         .map(groups => groups.sessions)
-        .reduce(function(acc, curr) {
+        .reduce(function (acc, curr) {
           return [...acc, ...curr];
         }, []);
 
@@ -252,7 +237,7 @@ export default {
     "questions questions";
   // "footer footer";
   grid-template-columns: 100px 1fr;
-  grid-template-rows: 10vh 80vh;
+  grid-template-rows: 10vh 90vh;
   text-align: center;
   position: fixed;
   top: 0;

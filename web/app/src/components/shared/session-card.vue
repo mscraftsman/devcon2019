@@ -1,16 +1,16 @@
 <template>
   <div class="session-card" :class="isWorkshop ? 'workshop' : ''">
     <div class="session-title">{{ session.title | truncate(80, "...") }}</div>
-    <div class="session-description">{{ session.description | truncate(120, "...") }}</div>
+    <div class="session-description">{{ session.description | truncatePointPoint(120, "...") }}</div>
     <div class="session-author" v-if="session.speakers.length > 0">
       <div class="name-wrapper">
         <span class="name">{{ session.speakers[0].name }}</span>
-        <br>
+        <br />
         <!-- <span class="alias">{{ speakersById[session.speakers[0].id].tagLine }}</span> -->
       </div>
       <div class="speaker-photo-wrapper">
         <div class="skewer">
-          <img :src="getSpeakerPhoto(session.speakers[0].id)" alt>
+          <img :src="getSpeakerPhoto(session.speakers[0].id)" alt />
         </div>
       </div>
       <!-- <div class="vote-button">
@@ -45,7 +45,7 @@ export default {
     },
   },
   methods: {
-    getSpeakerPhoto: function(id) {
+    getSpeakerPhoto: function (id) {
       if (typeof id === "undefined") {
         return "";
       }
@@ -58,9 +58,15 @@ export default {
     },
   },
   filters: {
-    truncate: function(text, length, suffix) {
+    truncate: function (text, length, suffix) {
       if (text !== null) {
         return text.substring(0, length);
+      }
+      // return text.substring(0, length) + suffix;
+    },
+    truncatePointPoint: function (text, length, suffix) {
+      if (text !== null) {
+        return text.substring(0, length) + '...';
       }
       // return text.substring(0, length) + suffix;
     },

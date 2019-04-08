@@ -1,4 +1,4 @@
-function Paths(baseURL) {
+function paths(baseURL) {
   return {
     Login: baseURL + "/login",
     Logout: baseURL + "/logout",
@@ -9,9 +9,30 @@ function Paths(baseURL) {
   };
 }
 
-function status(response, data) {
+/**
+ * Container for a response that has been json decoded
+ */
+class JSONResponse {
+  constructor(response, data) {
+    this.response = response;
+    this.data = data;
+  }
+}
+
+function status(r) {
+  let status;
+  let data;
+
+  if (r instanceof JSONResponse) {
+    status = r.response.status;
+    data = r.data;
+  } else {
+    status = r.status;
+    data = {};
+  }
+
   return new Promise((resolve, reject) => {
-    if (response.status >= 200 && response.status < 300) {
+    if (status >= 200 && status < 300) {
       resolve(data);
     } else {
       reject(data);
@@ -23,7 +44,7 @@ function rajni(response) {
   return new Promise((resolve, reject) => {
     response
       .json()
-      .then(data => resolve(response, data))
+      .then(data => resolve(new JSONResponse(response, data)))
       .catch(reject);
   });
 }
@@ -35,7 +56,7 @@ function FetchWithCreds(url, opts) {
 
 class Feedback {
   constructor(baseURL) {
-    this.paths = Paths(baseURL);
+    this.paths = paths(baseURL);
     window.Feedback = this;
   }
 

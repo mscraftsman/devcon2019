@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <TopBar/>
-    <HeaderStripe/>
+    <TopBar />
+    <HeaderStripe />
 
     <div class="page-wrapper">
       <transition name="fade" mode="out-in">
-        <router-view/>
+        <router-view />
       </transition>
     </div>
 
-    <SocialStripe/>
-    <FooterSection/>
+    <SocialStripe />
+    <FooterSection />
   </div>
 </template>
 
@@ -20,7 +20,7 @@ import HeaderStripe from "@/components/homepage/header-stripe.vue";
 import SocialStripe from "@/components/homepage/social-stripe.vue";
 import FooterSection from "@/components/homepage/footer-section.vue";
 import { mapActions } from "vuex";
-import { FETCH_SESSIONS, FETCH_SPEAKERS, USER_STATUS, SET_SESSIONS_READY, SET_SPEAKERS_READY } from "@/store";
+import { FETCH_SESSIONS, FETCH_SPEAKERS, USER_STATUS, SET_SESSIONS_READY, SET_SPEAKERS_READY, USER_FEEDBACK_FETCH } from "@/store";
 
 export default {
   components: {
@@ -29,13 +29,13 @@ export default {
     SocialStripe,
     FooterSection,
   },
-  beforeMount() {},
+  beforeMount() { },
   mounted() {
     this.USER_STATUS();
     this.$Progress.finish();
   },
   created() {
-    const promises = [this.FETCH_SESSIONS(), this.FETCH_SPEAKERS()];
+    const promises = [this.FETCH_SESSIONS(), this.FETCH_SPEAKERS(), this.USER_FEEDBACK_FETCH()];
     Promise.all(promises).then(this.handleDataFetched);
 
     this.$Progress.start();
@@ -57,7 +57,7 @@ export default {
     });
   },
   methods: {
-    ...mapActions([FETCH_SESSIONS, FETCH_SPEAKERS, USER_STATUS, SET_SPEAKERS_READY, SET_SESSIONS_READY]),
+    ...mapActions([FETCH_SESSIONS, FETCH_SPEAKERS, USER_STATUS, SET_SPEAKERS_READY, SET_SESSIONS_READY, USER_FEEDBACK_FETCH]),
 
     handleDataFetched() {
       this.SET_SESSIONS_READY(true);

@@ -155,7 +155,7 @@ export default new Vuex.Store({
       feedback
         .Me()
         .then(response => {
-          // console.log(response);
+          console.log(response);
           commit(SET_USER, response);
         })
         .catch(function() {
@@ -214,6 +214,7 @@ export default new Vuex.Store({
         .ListOwnFeedbacks()
         .then(response => {
           console.log(response);
+          commit(USER_FEEDBACK_SET, response);
         })
         .catch(function() {
           console.log("feedback fetch didnt work");

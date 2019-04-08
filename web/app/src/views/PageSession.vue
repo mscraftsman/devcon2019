@@ -1,22 +1,15 @@
 <template>
   <div class="page page-session">
     <div class="back-button-wrapper">
-      <a @click="$router.go(-1)" class="back">
-        <img src="../assets/back.svg" alt> Back
-      </a>
+      <a @click="$router.go(-1)" class="back"> <img src="../assets/back.svg" alt /> Back </a>
     </div>
     <div class="page-content" v-if="session">
       <div class="session-title">{{ session.title }}</div>
 
       <div class="speakers-wrapper" v-if="session.speakers">
-        <router-link
-          class="speaker-wrapper"
-          v-for="speaker in session.speakers"
-          :key="speaker.id"
-          :to="{ name: 'speaker', params: { id: speaker.id } }"
-        >
+        <router-link class="speaker-wrapper" v-for="speaker in session.speakers" :key="speaker.id" :to="{ name: 'speaker', params: { id: speaker.id } }">
           <div class="avatar">
-            <img :src="getSpeakerPhoto(speaker.id)" alt>
+            <img :src="getSpeakerPhoto(speaker.id)" alt />
           </div>
           <p class="name">{{ speaker.name }}</p>
         </router-link>
@@ -26,17 +19,7 @@
         <div class="des-wrap rate bookmark">
           <a @click="USER_BOOKMARK_ADD(session.id)" class="rate">
             <span class="svgicon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#ffffff"
-                stroke-width="3"
-                stroke-linecap="square"
-                stroke-linejoin="arcs"
-              >
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="square" stroke-linejoin="arcs">
                 <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
               </svg>
             </span>
@@ -45,69 +28,34 @@
         </div>
         <div class="des-wrap rate" v-if="user">
           <template v-if="checkSessionStatus">
-            <router-link
-              v-if="voted"
-              :to="{ name: 'feedback', params: { id: id } }"
-              class="rate rated"
-            >
+            <router-link v-if="voted" :to="{ name: 'feedback', params: { id: id } }" class="rate rated">
               <span class="svgicon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#ffffff"
-                  stroke-width="3"
-                  stroke-linecap="square"
-                  stroke-linejoin="arcs"
-                >
-                  <path
-                    d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"
-                  ></path>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="square" stroke-linejoin="arcs">
+                  <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
                 </svg>
-              </span> Rated. Thanks!
+              </span>
+              Rated. Thanks!
             </router-link>
             <router-link v-else :to="{ name: 'feedback', params: { id: id } }" class="rate">
               <span class="svgicon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#000000"
-                  stroke-width="3"
-                  stroke-linecap="square"
-                  stroke-linejoin="arcs"
-                >
-                  <path
-                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
-                  ></path>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="3" stroke-linecap="square" stroke-linejoin="arcs">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
                 </svg>
-              </span> Give feedback
+              </span>
+              Give feedback
             </router-link>
           </template>
-          <template v-else>Session not started yet</template>
+          <span v-else>Session not started yet</span>
         </div>
 
         <div class="des-wrap rate meetup" v-else>
           <a @click="USER_LOGIN()" class="rate">
             <span class="svgicon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#ffffff"
-                stroke-width="3"
-                stroke-linecap="square"
-                stroke-linejoin="arcs"
-              >
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="square" stroke-linejoin="arcs">
                 <path d="M15 3h6v18h-6M10 17l5-5-5-5M13.8 12H3"></path>
               </svg>
-            </span>Login with meetup to rate
+            </span>
+            Login with meetup to rate
           </a>
         </div>
       </div>
@@ -115,28 +63,28 @@
       <div class="descriptions-row">
         <div class="des-wrap" v-if="session.format">
           <label>
-            <img src="../assets/icons/language.svg" alt>
+            <img src="../assets/icons/language.svg" alt />
           </label>
           <p>{{ session.format }}</p>
         </div>
 
         <div class="des-wrap" v-if="session.language">
           <label>
-            <img src="../assets/icons/language.svg" alt>
+            <img src="../assets/icons/language.svg" alt />
           </label>
           <p>{{ session.language }}</p>
         </div>
 
         <div class="des-wrap">
           <label>
-            <img src="../assets/icons/location.svg" alt>
+            <img src="../assets/icons/location.svg" alt />
           </label>
           <p>{{ session.room }}</p>
         </div>
 
         <div class="des-wrap">
           <label>
-            <img src="../assets/icons/time.svg" alt>
+            <img src="../assets/icons/time.svg" alt />
           </label>
           <p>
             {{ getDay(session.startsAt) }} {{ time(session.startsAt) }} -
@@ -146,7 +94,7 @@
 
         <div class="des-wrap" v-if="session.level">
           <label>
-            <img src="../assets/icons/level.svg" alt>
+            <img src="../assets/icons/level.svg" alt />
           </label>
           <p>{{ session.level }}</p>
         </div>
@@ -158,10 +106,7 @@
     </div>
     <div class="page-content" v-else>
       <p>loading session...</p>
-      <a
-        href="javascript:location.reload()"
-        title="i'm not proud of this code. please send PR"
-      >is this taking too long? click here</a>
+      <a href="javascript:location.reload()" title="i'm not proud of this code. please send PR">is this taking too long? click here</a>
     </div>
   </div>
 </template>
@@ -172,10 +117,10 @@ import { time as timeHelper, getDay as getDayHelper } from "@/helpers";
 
 export default {
   props: ["id"],
-  mounted() {},
+  mounted() { },
   methods: {
-    ...mapActions(["FETCH_SESSIONS", "FETCH_SPEAKERS", "fetchVotes", "USER_LOGIN", "USER_BOOKMARK_ADD", "USER_BOOKMARK_REMOVE"]),
-    getSpeakerPhoto: function(id) {
+    ...mapActions(["FETCH_SESSIONS", "FETCH_SPEAKERS", "USER_LOGIN", "USER_BOOKMARK_ADD", "USER_BOOKMARK_REMOVE"]),
+    getSpeakerPhoto: function (id) {
       if (this.speakers.length === 0) {
         this.FETCH_SPEAKERS();
       } else {
@@ -200,9 +145,9 @@ export default {
       sessions: "getSessions",
       speakers: "getSpeakers",
       user: "getUser",
-      getVotes: "getVotes",
+      getBookmarks: "getBookmarks"
     }),
-    session: function() {
+    session: function () {
       if (typeof this.sessions == "undefined") {
         this.FETCH_SESSIONS();
       }
@@ -213,12 +158,14 @@ export default {
         .flat()
         .find(session => parseInt(session.id) === parseInt(this.id));
     },
-    voted: function() {
+    voted: function () {
       //   let allVoted = _.map(this.getVotes, "session_id");
-      //   if (allVoted.indexOf(this.id) !== -1) {
-      //     return true;
-      //   }
-      return false;
+      console.log(this.id);
+      console.log(this.getBookmarks);
+      // if (allVoted.indexOf(this.id) !== -1) {
+      //   return true;
+      // }
+      // return false;
     },
     checkSessionStatus() {
       /**

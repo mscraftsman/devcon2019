@@ -86,14 +86,14 @@ export default {
         {
           text: "How would you rate the speaker?",
           type: "options",
-          options: ["-2", "-1", "1", "2", "3"],
-          value: "1",
+          options: ["1", "2", "3", "4", "5"],
+          value: "2",
         },
         {
           text: "How would you rate the session content?",
           type: "options",
-          options: ["-2", "-1", "1", "2", "3"],
-          value: "1",
+          options: ["1", "2", "3", "4", "5"],
+          value: "2",
         },
         {
           text: "Did you learn something new?",

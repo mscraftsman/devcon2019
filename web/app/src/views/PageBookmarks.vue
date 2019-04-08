@@ -10,13 +10,12 @@
           <div class="score">Room</div>
           <div class="score">Remove</div>
         </div>-->
-        {{ sortedBookmarks() }}
         <div class="speaker-row" v-for="(id, index) in getBookmarks" :key="index">
           <div class="rank">
             <label for>Date/Time</label>
             <div class="value">
-              <div class="day">Thursday</div>
-              <div class="time">10:00 AM - 10:45 AM</div>
+              <div class="day">{{ getDay(sessionInfo(id).startsAt) }}</div>
+              <div class="time">{{ time(sessionInfo(id).startsAt) }} - {{ time(sessionInfo(id).endsAt) }}</div>
             </div>
           </div>
           <div class="name" v-if="sessionsReady">
@@ -33,7 +32,7 @@
           </div>
           <div class="score">
             <label for>Room</label>
-            <div class="value">Educator 1</div>
+            <div class="value">{{ sessionInfo(id).room }}</div>
           </div>
           <div class="actions">
             <button @click="USER_BOOKMARK_REMOVE(id)">
@@ -61,6 +60,8 @@
 
 <script>
 import { mapGetters, mapActions } from "vuex";
+import { time as timeHelper, getDay as getDayHelper } from "@/helpers";
+
 export default {
   computed: {
     ...mapGetters({ allSessions: "getSessionsById", sessionsReady: "getSessionsReady", getBookmarks: "getBookmarks" }),
@@ -77,12 +78,18 @@ export default {
       }
     },
     sortedBookmarks() {
+      if (!(this.getBookmarks instanceof Array) || !(this.allSessions instanceof Array)) {
+        return []
+      }
       let rawBookmarks = this.getBookmarks.reduce((p, c) => {
         p[c] = true;
         return p;
       }, {});
+
       return this.allSessions.filter(s => s.id in rawBookmarks).sort((a, b) => (a.startsAt < b.startsAt ? -1 : 1));
     },
+    time: timeHelper,
+    getDay: getDayHelper,
   },
   created() {
     // this.fetchSessions();

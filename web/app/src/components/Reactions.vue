@@ -17,13 +17,6 @@
         <div class="emoji__mouth"></div>
       </div>
     </div>
-    <div class="emoji emoji--sad" v-else-if="value === '-1'">
-      <div class="emoji__face">
-        <div class="emoji__eyebrows"></div>
-        <div class="emoji__eyes"></div>
-        <div class="emoji__mouth"></div>
-      </div>
-    </div>
     <div class="emoji emoji--sad" v-else-if="value === 'no'">
       <div class="emoji__face">
         <div class="emoji__eyebrows"></div>
@@ -31,9 +24,22 @@
         <div class="emoji__mouth"></div>
       </div>
     </div>
-    <div class="emoji emoji--like" v-else-if="value === '1'">
+    <div class="emoji emoji--sad" v-else-if="value === '1'">
+      <div class="emoji__face">
+        <div class="emoji__eyebrows"></div>
+        <div class="emoji__eyes"></div>
+        <div class="emoji__mouth"></div>
+      </div>
+    </div>
+    <div class="emoji emoji--like" v-else-if="value === '2'">
       <div class="emoji__hand">
         <div class="emoji__thumb"></div>
+      </div>
+    </div>
+    <div class="emoji emoji--yay" v-else-if="value === '3'">
+      <div class="emoji__face">
+        <div class="emoji__eyebrows"></div>
+        <div class="emoji__mouth"></div>
       </div>
     </div>
     <div class="emoji emoji--yay" v-else-if="value === 'yes'">
@@ -42,7 +48,7 @@
         <div class="emoji__mouth"></div>
       </div>
     </div>
-    <div class="emoji emoji--love" v-else-if="value === '3'">
+    <div class="emoji emoji--love" v-else-if="value === '4'">
       <div class="emoji__heart"></div>
     </div>
     <!-- <div class="emoji  emoji--yay">
@@ -51,7 +57,7 @@
                 <div class="emoji__mouth"></div>
             </div>
     </div>-->
-    <div class="emoji emoji--wow" v-else-if="value === '2'">
+    <div class="emoji emoji--wow" v-else-if="value === '5'">
       <div class="emoji__face">
         <div class="emoji__eyebrows"></div>
         <div class="emoji__eyes"></div>

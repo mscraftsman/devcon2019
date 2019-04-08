@@ -161,7 +161,6 @@ export default new Vuex.Store({
       feedback
         .Me()
         .then(response => {
-          console.log(response);
           commit(SET_USER, response);
         })
         .catch(function() {
@@ -179,7 +178,6 @@ export default new Vuex.Store({
       feedback
         .ListOwnBookmarks()
         .then(response => {
-          console.log(response);
           commit(USER_BOOKMARK_SET, response.bookmarks);
         })
         .catch(function() {
@@ -190,8 +188,6 @@ export default new Vuex.Store({
       feedback
         .AddBookmark(param)
         .then(response => {
-          console.log(response);
-          console.log(state);
           commit(USER_BOOKMARK_SET, [...state.bookmarks, param]);
         })
         .catch(error => {
@@ -203,8 +199,6 @@ export default new Vuex.Store({
       feedback
         .RemoveBookmark(param)
         .then(response => {
-          console.log(response);
-          console.log(state);
           let newArray = state.bookmarks.filter(r => r !== param);
           console.log(newArray);
           commit(USER_BOOKMARK_SET, newArray);
@@ -214,11 +208,11 @@ export default new Vuex.Store({
           console.log(error);
         });
     },
-    [USER_FEEDBACK_ADD]({ commit }, param) {
+    [USER_FEEDBACK_ADD]({ commit, dispatch }, param) {
       feedback
         .AddFeedback(param)
         .then(response => {
-          console.log(response);
+          dispatch(USER_FEEDBACK_FETCH);
         })
         .catch(function() {
           console.log("feedback add didnt work");
@@ -228,8 +222,7 @@ export default new Vuex.Store({
       feedback
         .ListOwnFeedbacks()
         .then(response => {
-          console.log(response);
-          commit(USER_FEEDBACK_SET, response);
+          commit(USER_FEEDBACK_SET, response.feedbacks);
         })
         .catch(function() {
           console.log("feedback fetch didnt work");

@@ -10,6 +10,7 @@
           <div class="score">Room</div>
           <div class="score">Remove</div>
         </div>-->
+        {{ sortedBookmarks() }}
         <div class="speaker-row" v-for="(id, index) in getBookmarks" :key="index">
           <div class="rank">
             <label for>Date/Time</label>

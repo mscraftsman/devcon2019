@@ -1,7 +1,7 @@
 <template>
   <div class="page page-feedback">
     <div class="info" v-if="session">
-      <strong>currently rating</strong>
+      <strong>SESSION TITLE</strong>
       <span class="title">{{ session.title }}</span>
       <!-- <span>{{ getSessionCurrent.questionCurrent }}</span> -->
     </div>
@@ -124,19 +124,26 @@ export default {
     },
   },
   computed: {
-    ...mapGetters(["getName", "getSessionCurrent", "getUser", "getMyFeedbacks"]),
+    ...mapGetters(["getName", "getSessionCurrent", "getUser", "getBookmarks", "getMyFeedbacks"]),
     ...mapGetters({
       sessions: "getSessions",
       speakers: "getSpeakers",
     }),
     beforeMount() {
-      this.USER_FEEDBACK_FETCH();
+      // this.USER_FEEDBACK_FETCH();
     },
     voted: function () {
-      //   let allVoted = _.map(this.getMyFeedbacks, "session_id");
-      //   if (allVoted.indexOf(this.id) !== -1) {
-      //     return true;
-      //   }
+      if (this.getMyFeedbacks instanceof Array) {
+        return this.getMyFeedbacks.findIndex(f => f.session_id === this.id) !== -1;
+      }
+
+      return false;
+    },
+    bookmarked: function () {
+      if (this.getBookmarks) {
+        return this.getBookmarks.includes(this.id);
+      }
+
       return false;
     },
     reaction: function () {

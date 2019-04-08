@@ -14,7 +14,6 @@
           <p class="name">{{ speaker.name }}</p>
         </router-link>
       </div>
-
       <div class="actions-wrapper" v-if="!session.isServiceSession">
         <div class="des-wrap rate bookmark">
           <a @click="USER_BOOKMARK_ADD(session.id)" class="rate" v-if="!bookmarked">
@@ -153,7 +152,8 @@ export default {
       sessions: "getSessions",
       speakers: "getSpeakers",
       user: "getUser",
-      getBookmarks: "getBookmarks"
+      getBookmarks: "getBookmarks",
+      getMyFeedbacks: "getMyFeedbacks"
     }),
     session: function () {
       if (typeof this.sessions == "undefined") {
@@ -167,21 +167,18 @@ export default {
         .find(session => parseInt(session.id) === parseInt(this.id));
     },
     voted: function () {
+      if (this.getMyFeedbacks instanceof Array) {
+        return this.getMyFeedbacks.findIndex(f => f.session_id === this.id) !== -1;
+      }
+
       return false;
     },
     bookmarked: function () {
-      //   let allVoted = _.map(this.getVotes, "session_id");
-      console.log(this.id);
-      console.log(this.getBookmarks);
       if (this.getBookmarks) {
         return this.getBookmarks.includes(this.id);
       }
 
       return false;
-      // if (allVoted.indexOf(this.id) !== -1) {
-      //   return true;
-      // }
-      // return false;
     },
     checkSessionStatus() {
       /**

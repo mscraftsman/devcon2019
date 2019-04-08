@@ -4,17 +4,7 @@
       <div class="top-bar-container">
         <div class="rendez-vous-wrapper" v-if="user">
           <span class="svgicon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#ffffff"
-              stroke-width="2"
-              stroke-linecap="square"
-              stroke-linejoin="arcs"
-            >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs">
               <path d="M5.52 19c.64-2.2 1.84-3 3.22-3h6.52c1.38 0 2.58.8 3.22 3"></path>
               <circle cx="12" cy="10" r="3"></circle>
               <circle cx="12" cy="12" r="10"></circle>
@@ -24,17 +14,16 @@
         </div>
         <div class="rendez-vous-wrapper" v-else>
           11
-          <sup>th</sup> - 13
-          <sup>th</sup> April at Voila Bagatelle
+          <sup>th</sup> - 13 <sup>th</sup> April at Voila Bagatelle
         </div>
 
         <div class="links-wrapper">
           <ul>
-            <li>
-              <router-link :to="{ name: 'lifeatdevcon' }">About</router-link>
-            </li>
             <li v-if="user">
               <a @click="USER_LOGOUT()">Logout</a>
+            </li>
+            <li v-else>
+              <a @click="USER_LOGIN()">Login</a>
             </li>
           </ul>
         </div>
@@ -52,7 +41,7 @@ export default {
     ...mapGetters({ user: "getUser" }),
   },
   methods: {
-    ...mapActions(["USER_LOGOUT"]),
+    ...mapActions(["USER_LOGOUT", "USER_LOGIN"]),
     viewHandler(e) {
       let el = this.$refs.pageloader.$el;
       if (e.type == "enter") {

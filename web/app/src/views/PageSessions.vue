@@ -119,7 +119,7 @@
                 <div :class="'session-panes room-wrapper  ' + room.className" v-for="room in rooms" :key="'room_' + room.className">
                   <div :class="'room-wrapper ' + room.className">
                     <div class="room-title">{{ room.label }}</div>
-                    <div @click.native="setScrollPosition()" v-for="session in getSessionsFor(index, room.label)" :key="room + session.id" v-bind:style="{ gridRow: timeToText(session.startsAt) + ' / span 2' }" class="session-card-wrapper">
+                    <div v-for="session in getSessionsFor(index, room.label)" :key="room + session.id" v-bind:style="{ gridRow: timeToText(session.startsAt) + ' / span 2' }" class="session-card-wrapper" @click="setScrollPosition()">
                       <session-card :session="session" />
                     </div>
                   </div>
@@ -217,7 +217,7 @@
                   <slide :class="'session-panes room-wrapper  ' + room.className" v-for="room in rooms" :key="'room_' + room.className">
                     <div :class="'room-wrapper ' + room.className">
                       <div class="room-title">{{ room.label }}</div>
-                      <div @click.native="setScrollPosition()" v-for="session in getSessionsFor(index, room.label)" :key="room + session.id" v-bind:style="{ gridRow: timeToText(session.startsAt) + ' / span 2' }" class="session-card-wrapper">
+                      <div  v-for="session in getSessionsFor(index, room.label)" :key="room + session.id" v-bind:style="{ gridRow: timeToText(session.startsAt) + ' / span 2' }" class="session-card-wrapper" @click="setScrollPosition()">
                         <session-card :session="session" />
                       </div>
                     </div>
@@ -242,7 +242,7 @@ export default {
   mounted() {
     // Keep Track of Scroll Position
     if (this.sessions.length !== 0) {
-      this.$refs["content"][0].scrollTop = this.scrollPosition;
+      document.scrollingElement.scrollTop = this.scrollPosition;
     }
 
     this.FETCH_SPEAKERS();
@@ -276,7 +276,7 @@ export default {
     },
     setScrollPosition: function () {
       // Keep Track of previous scroll position
-      this.$store.commit("SET_PAGESESSIONS_SCROLL_POSITION", this.$refs["content"][0].scrollTop);
+      this.$store.commit("SET_PAGESESSIONS_SCROLL_POSITION", document.scrollingElement.scrollTop);
     },
     getSessionsFor: function (day, room) {
       // console.log(day + room);

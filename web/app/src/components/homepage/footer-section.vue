@@ -37,7 +37,7 @@
           a speaker
         </a>-->
 
-        <router-link class="link" :to="{ name: 'top' }">Top Speakers</router-link>
+        <!-- <router-link class="link" :to="{ name: 'top' }">Top Speakers</router-link> -->
         <router-link class="link" :to="{ name: 'bookmarks' }">My Bookmarks</router-link>
 
         <!-- <router-link class="link" :to="{ name: 'vote' }">vote</router-link> -->

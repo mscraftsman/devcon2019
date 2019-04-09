@@ -196,7 +196,7 @@ export default new Vuex.Store({
       Vue.set(state, "notifications", []);
     },
     [LEADERBOARD_SET](state, payload) {
-      console.log(payload);
+      // console.log(payload);
       state.leaderboards = payload;
       // Vuet.set(state, "leaderboards", payload);
     },
@@ -240,8 +240,9 @@ export default new Vuex.Store({
           commit(NOTIFICATION_ADD, "Bookmark added.");
         })
         .catch(error => {
-          console.log("bookmark add didnt work");
-          console.log(error);
+          commit(NOTIFICATION_ADD, "Cannot add bookmark. Are you logged in?");
+          // console.log("bookmark add didnt work");
+          // console.log(error);
         });
     },
     [USER_BOOKMARK_REMOVE]({ state, commit, dispatch }, param) {
@@ -367,7 +368,7 @@ export default new Vuex.Store({
       feedback
         .Leaderboards()
         .then(response => {
-          console.log(response);
+          // console.log(response);
           commit(LEADERBOARD_SET, response);
         })
         .catch(err => {

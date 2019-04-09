@@ -12,7 +12,8 @@
         <div class="speaker-row" v-for="(speaker, index) in getLeaderboardSpeakers" :key="index" v-if="speaker.id != '' && allSpeakers[speaker.id] !== 'undefined'">
           <div class="rank mega-rainbow">{{ index + 1 }}</div>
           <div class="name">
-            <router-link :to="{ name: 'speaker', params: { id: speaker.id } }">{{ allSpeakers[speaker.id].fullName }} {{ speaker.id }}</router-link>
+            <router-link :to="{ name: 'speaker', params: { id: speaker.id } }">{{ allSessions[speaker.id].title }} </router-link>
+            <div class="speak" v-for="speaker in allSessions[speaker.id].speakers">{{ speaker.name }}</div>
             <!--  -->
           </div>
           <div class="score">{{ speaker.score }}</div>
@@ -106,6 +107,10 @@ export default {
     .name {
       // padding: 10px 0;
       padding-left: 20px;
+
+      .speak {
+        font-size: 18px;
+      }
     }
   }
 }

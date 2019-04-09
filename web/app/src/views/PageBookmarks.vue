@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h1 class="mega-rainbow">My Bookmarks</h1>
+    <h1 class="mega-rainbow" v-if="getBookmarks.length === 0">No bookmarks found</h1>
+    <h1 class="mega-rainbow" v-else>My Bookmarks</h1>
 
     <div class="page">
       <div class="speakers-wrapper" v-if="sessionsReady">

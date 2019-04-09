@@ -6,6 +6,7 @@ function paths(baseURL) {
     Bookmarks: baseURL + "/api/bookmarks",
     Feedbacks: baseURL + "/api/feedbacks",
     OwnFeedbacks: baseURL + "/api/feedbacks/me",
+    Leaderboards: baseURL + "/api/leaderboards",
   };
 }
 
@@ -131,6 +132,15 @@ class Feedback {
    */
   ListOwnFeedbacks() {
     return FetchWithCreds(this.paths.OwnFeedbacks)
+      .then(rajni)
+      .then(status);
+  }
+
+  /**
+   * Get leaderboards - []{ID: "", Score: 0}
+   */
+  Leaderboards() {
+    return fetch(this.paths.Leaderboards)
       .then(rajni)
       .then(status);
   }

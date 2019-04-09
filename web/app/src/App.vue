@@ -21,7 +21,7 @@ import SocialStripe from "@/components/homepage/social-stripe.vue";
 import FooterSection from "@/components/homepage/footer-section.vue";
 import NotificationSection from "@/components/homepage/notification-section.vue";
 import { mapActions, mapGetters } from "vuex";
-import { FETCH_SESSIONS, FETCH_SPEAKERS, USER_STATUS, SET_SESSIONS_READY, SET_SPEAKERS_READY, USER_FEEDBACK_FETCH, USER_BOOKMARK_FETCH, NOTIFICATION_ADD } from "@/store";
+import { FETCH_SESSIONS, FETCH_SPEAKERS, USER_STATUS, SET_SESSIONS_READY, SET_SPEAKERS_READY, USER_FEEDBACK_FETCH, USER_BOOKMARK_FETCH, NOTIFICATION_ADD, LEADERBOARD_FETCH } from "@/store";
 
 export default {
   components: {
@@ -41,7 +41,7 @@ export default {
     this.$Progress.finish();
   },
   created() {
-    const promises = [this.FETCH_SESSIONS(), this.FETCH_SPEAKERS(), this.USER_STATUS(),];
+    const promises = [this.FETCH_SESSIONS(), this.FETCH_SPEAKERS(), this.USER_STATUS(), this.LEADERBOARD_FETCH()];
     Promise.all(promises).then(this.handleDataFetched);
 
     this.$Progress.start();
@@ -66,7 +66,7 @@ export default {
     ...mapGetters(['getUser'])
   },
   methods: {
-    ...mapActions([FETCH_SESSIONS, FETCH_SPEAKERS, USER_STATUS, SET_SPEAKERS_READY, SET_SESSIONS_READY, USER_FEEDBACK_FETCH, USER_BOOKMARK_FETCH, NOTIFICATION_ADD]),
+    ...mapActions([FETCH_SESSIONS, FETCH_SPEAKERS, USER_STATUS, SET_SPEAKERS_READY, SET_SESSIONS_READY, USER_FEEDBACK_FETCH, USER_BOOKMARK_FETCH, NOTIFICATION_ADD, LEADERBOARD_FETCH]),
 
     handleDataFetched() {
       this.SET_SESSIONS_READY(true);

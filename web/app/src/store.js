@@ -46,6 +46,9 @@ export const NOTIFICATION_REMOVE = "NOTIFICATION_REMOVE";
 export const NOTIFICATION_EXPIRE = "NOTIFICATION_EXPIRE";
 export const NOTIFICATION_CLEAR_ALL = "NOTIFICATION_CLEAR_ALL";
 
+export const LEADERBOARD_FETCH = "LEADERBOARD_FETCH";
+export const LEADERBOARD_SET = "LEADERBOARD_SET";
+
 export default new Vuex.Store({
   state: {
     pageSessions: {
@@ -64,6 +67,10 @@ export default new Vuex.Store({
     bookmarks: [],
     user: false,
     notifications: [],
+    leaderboards: {
+      sessions: [],
+      speakers: [],
+    },
   },
   getters: {
     getSpeakers: function(state) {
@@ -118,6 +125,12 @@ export default new Vuex.Store({
     },
     getNotifications: function(state) {
       return state.notifications;
+    },
+    getLeaderboardSessions: function(state) {
+      return state.leaderboards.sessions;
+    },
+    getLeaderboardSpeakers: function(state) {
+      return state.leaderboards.speakers;
     },
   },
   mutations: {
@@ -181,6 +194,11 @@ export default new Vuex.Store({
       // let newArray = state.notifications.shift();
       // console.log(newArray);
       Vue.set(state, "notifications", []);
+    },
+    [LEADERBOARD_SET](state, payload) {
+      console.log(payload);
+      state.leaderboards = payload;
+      // Vuet.set(state, "leaderboards", payload);
     },
   },
   actions: {
@@ -339,6 +357,17 @@ export default new Vuex.Store({
         .then(stats => commit(SET_STATS, stats))
         .catch(error => {
           throw new Error("Error should be caught by Vue global error handler." + error);
+        });
+    },
+    [LEADERBOARD_FETCH]({ commit }) {
+      feedback
+        .Leaderboards()
+        .then(response => {
+          console.log(response);
+          commit(LEADERBOARD_SET, response);
+        })
+        .catch(err => {
+          console.log("leaderboard fetch error");
         });
     },
   },

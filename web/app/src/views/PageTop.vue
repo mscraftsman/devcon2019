@@ -9,12 +9,13 @@
           <div class="name">Name</div>
           <div class="score">Score</div>
         </div>
-        <div class="speaker-row" v-for="(id, index) in topSpeakerList" :key="index">
+        <div class="speaker-row" v-for="(speaker, index) in getLeaderboardSpeakers" :key="index" v-if="speaker.id != '' && allSpeakers[speaker.id] !== 'undefined'">
           <div class="rank mega-rainbow">{{ index + 1 }}</div>
           <div class="name">
-            <router-link :to="{ name: 'speaker', params: { id: id } }">{{ allSpeakers[id].fullName }}</router-link>
+            <router-link :to="{ name: 'speaker', params: { id: speaker.id } }">{{ allSpeakers[speaker.id].fullName }} {{ speaker.id }}</router-link>
+            <!--  -->
           </div>
-          <!-- <div class="score">{{ speaker.score }}</div> -->
+          <div class="score">{{ speaker.score }}</div>
         </div>
       </div>
     </div>
@@ -27,10 +28,10 @@
           <div class="name">Topic</div>
           <div class="score">Score</div>
         </div>
-        <div class="speaker-row" v-for="(id, index) in topSessionsList" :key="index">
+        <div class="speaker-row" v-for="(session, index) in getLeaderboardSessions" :key="index">
           <div class="rank mega-rainbow">{{ index + 1 }}</div>
           <div class="name">
-            <router-link :to="{ name: 'session', params: { id: id } }">{{ allSessions[id].title }}</router-link>
+            <router-link :to="{ name: 'session', params: { id: session.id } }" v-if="allSessions[session.id] !== 'undefined'"> {{ allSessions[session.id].title }}</router-link>
           </div>
           <!-- <div class="score">{{ speaker.score }}</div> -->
         </div>
@@ -43,7 +44,7 @@
 import { mapGetters, mapActions } from "vuex";
 export default {
   computed: {
-    ...mapGetters({ speakerReady: "getSpeakersReady", allSpeakers: "getSpeakersById", allSessions: "getSessionsById", sessionsReady: "getSessionsReady" }),
+    ...mapGetters({ speakerReady: "getSpeakersReady", allSpeakers: "getSpeakersById", allSessions: "getSessionsById", sessionsReady: "getSessionsReady", getLeaderboardSessions: "getLeaderboardSessions", getLeaderboardSpeakers: "getLeaderboardSpeakers" }),
   },
   methods: {
     ...mapActions({ userCheck: "USER_STATUS" }),

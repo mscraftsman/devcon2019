@@ -8,7 +8,7 @@
         <router-view />
       </transition>
     </div>
-    <!-- <NotificationSection /> -->
+    <NotificationSection />
     <SocialStripe />
     <FooterSection />
   </div>
@@ -20,8 +20,8 @@ import HeaderStripe from "@/components/homepage/header-stripe.vue";
 import SocialStripe from "@/components/homepage/social-stripe.vue";
 import FooterSection from "@/components/homepage/footer-section.vue";
 import NotificationSection from "@/components/homepage/notification-section.vue";
-import { mapActions } from "vuex";
-import { FETCH_SESSIONS, FETCH_SPEAKERS, USER_STATUS, SET_SESSIONS_READY, SET_SPEAKERS_READY, USER_FEEDBACK_FETCH, USER_BOOKMARK_FETCH } from "@/store";
+import { mapActions, mapGetters } from "vuex";
+import { FETCH_SESSIONS, FETCH_SPEAKERS, USER_STATUS, SET_SESSIONS_READY, SET_SPEAKERS_READY, USER_FEEDBACK_FETCH, USER_BOOKMARK_FETCH, NOTIFICATION_ADD } from "@/store";
 
 export default {
   components: {
@@ -33,11 +33,15 @@ export default {
   },
   beforeMount() { },
   mounted() {
-    this.USER_STATUS();
+    if (this.getUser) {
+      // this.NOTIFICATION_ADD('getting feedback and bookmark')
+      // this.USER_FEEDBACK_FETCH();
+      // this.USER_BOOKMARK_FETCH();
+    }
     this.$Progress.finish();
   },
   created() {
-    const promises = [this.FETCH_SESSIONS(), this.FETCH_SPEAKERS(), this.USER_FEEDBACK_FETCH(), this.USER_BOOKMARK_FETCH()];
+    const promises = [this.FETCH_SESSIONS(), this.FETCH_SPEAKERS(), this.USER_STATUS(),];
     Promise.all(promises).then(this.handleDataFetched);
 
     this.$Progress.start();
@@ -58,8 +62,11 @@ export default {
       this.$Progress.finish();
     });
   },
+  computed: {
+    ...mapGetters(['getUser'])
+  },
   methods: {
-    ...mapActions([FETCH_SESSIONS, FETCH_SPEAKERS, USER_STATUS, SET_SPEAKERS_READY, SET_SESSIONS_READY, USER_FEEDBACK_FETCH, USER_BOOKMARK_FETCH]),
+    ...mapActions([FETCH_SESSIONS, FETCH_SPEAKERS, USER_STATUS, SET_SPEAKERS_READY, SET_SESSIONS_READY, USER_FEEDBACK_FETCH, USER_BOOKMARK_FETCH, NOTIFICATION_ADD]),
 
     handleDataFetched() {
       this.SET_SESSIONS_READY(true);

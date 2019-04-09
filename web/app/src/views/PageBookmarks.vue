@@ -67,7 +67,7 @@ export default {
     ...mapGetters({ allSessions: "getSessionsById", sessionsReady: "getSessionsReady", getBookmarks: "getBookmarks" }),
   },
   methods: {
-    ...mapActions({ userCheck: "USER_STATUS", fetchSessions: "FETCH_SESSIONS", USER_BOOKMARK_REMOVE: "USER_BOOKMARK_REMOVE" }),
+    ...mapActions({ fetchSessions: "FETCH_SESSIONS", USER_BOOKMARK_REMOVE: "USER_BOOKMARK_REMOVE" }),
     sessionInfo(id) {
       if (this.allSessions) {
         return this.allSessions[id];
@@ -95,7 +95,6 @@ export default {
     // this.fetchSessions();
   },
   mounted() {
-    this.userCheck();
   },
   data() {
     return {

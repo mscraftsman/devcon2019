@@ -41,6 +41,11 @@ export const USER_FEEDBACK_ADD = "USER_FEEDBACK_ADD";
 export const USER_FEEDBACK_FETCH = "USER_FEEDBACK_FETCH";
 export const USER_FEEDBACK_SET = "USER_FEEDBACK_SET";
 
+export const NOTIFICATION_ADD = "NOTIFICATION_ADD";
+export const NOTIFICATION_REMOVE = "NOTIFICATION_REMOVE";
+export const NOTIFICATION_EXPIRE = "NOTIFICATION_EXPIRE";
+export const NOTIFICATION_CLEAR_ALL = "NOTIFICATION_CLEAR_ALL";
+
 export default new Vuex.Store({
   state: {
     pageSessions: {
@@ -58,6 +63,7 @@ export default new Vuex.Store({
     myFeedbacks: [],
     bookmarks: [],
     user: false,
+    notifications: [],
   },
   getters: {
     getSpeakers: function(state) {
@@ -110,6 +116,9 @@ export default new Vuex.Store({
       //   return bookmarksArray;
       // }
     },
+    getNotifications: function(state) {
+      return state.notifications;
+    },
   },
   mutations: {
     [SET_SPEAKERS](state, speakers) {
@@ -154,16 +163,38 @@ export default new Vuex.Store({
     [USER_BOOKMARK_SET](state, payload) {
       state.bookmarks = payload;
     },
+    [NOTIFICATION_ADD](state, message) {
+      let date = new Date().getTime();
+
+      let notif = {
+        date,
+        message: message,
+      };
+
+      Vue.set(state, "notifications", [...state.notifications, notif]);
+    },
+    [NOTIFICATION_EXPIRE](state, payload) {
+      let newArray = state.notifications.shift();
+      // Vue.set(state, "notifications", state.notifications.shift());
+    },
+    [NOTIFICATION_CLEAR_ALL](state, payload) {
+      // let newArray = state.notifications.shift();
+      // console.log(newArray);
+      Vue.set(state, "notifications", []);
+    },
   },
   actions: {
-    [USER_STATUS]({ commit }) {
-      console.log("trying to get data");
+    [USER_STATUS]({ commit, dispatch }) {
       feedback
         .Me()
         .then(response => {
           commit(SET_USER, response);
+          commit(NOTIFICATION_ADD, "Logged in. Welcome " + response.name);
+          dispatch(USER_FEEDBACK_FETCH);
+          dispatch(USER_BOOKMARK_FETCH);
         })
         .catch(function() {
+          commit(NOTIFICATION_ADD, "You're not logged in.");
           console.log("status me didnt work");
         });
     },
@@ -179,6 +210,7 @@ export default new Vuex.Store({
         .ListOwnBookmarks()
         .then(response => {
           commit(USER_BOOKMARK_SET, response.bookmarks);
+          commit(NOTIFICATION_ADD, "Bookmarks retrieved.");
         })
         .catch(function() {
           console.log("bookmark fetch didnt work");
@@ -223,10 +255,20 @@ export default new Vuex.Store({
         .ListOwnFeedbacks()
         .then(response => {
           commit(USER_FEEDBACK_SET, response.feedbacks);
+          commit(NOTIFICATION_ADD, "Feedbacks retrieved");
         })
         .catch(function() {
           console.log("feedback fetch didnt work");
         });
+    },
+    [NOTIFICATION_CLEAR_ALL]({ commit }, payload) {
+      commit(NOTIFICATION_CLEAR_ALL);
+    },
+    [NOTIFICATION_EXPIRE]({ commit }, payload) {
+      commit(NOTIFICATION_EXPIRE);
+    },
+    [NOTIFICATION_ADD]({ commit }, payload) {
+      commit(NOTIFICATION_ADD, payload);
     },
     [SET_SESSIONS_READY]({ commit }, payload) {
       commit(SET_SESSIONS_READY, payload);
@@ -249,7 +291,7 @@ export default new Vuex.Store({
           commit(SET_SESSIONS_BY_ID, groupById);
         })
         .then(() => {
-          console.log("sessions are now ready");
+          commit(NOTIFICATION_ADD, "Sessions retrieved");
         })
         .catch(error => {
           throw new Error("Error should be caught by Vue global error handler." + error);

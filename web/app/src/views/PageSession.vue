@@ -16,7 +16,7 @@
       </div>
       <div class="actions-wrapper" v-if="!session.isServiceSession">
         <div class="des-wrap rate ">
-          <a @click="addBookmark()" class="rate bookmark" v-if="!bookmarked" :class="{ notallowed: !allow }">
+          <a @click="addBookmark()" class="rate bookmark" v-if="!bookmarked" :class="{ notallowed: !allowBookmark }">
             <span class="svgicon">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="square" stroke-linejoin="arcs">
                 <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
@@ -125,7 +125,7 @@ import { time as timeHelper, getDay as getDayHelper } from "@/helpers";
 export default {
   data() {
     return {
-      allow: true
+      allowBookmark: true
     }
   },
   props: ["id"],
@@ -150,8 +150,8 @@ export default {
       // }
     },
     addBookmark: function () {
-      if (this.allow) {
-        this.allow = false;
+      if (this.allowBookmark) {
+        this.allowBookmark = false;
         this.USER_BOOKMARK_ADD(this.session.id)
       }
     },

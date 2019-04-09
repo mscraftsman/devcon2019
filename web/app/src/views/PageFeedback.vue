@@ -175,7 +175,7 @@ export default {
           return sess;
         }
       });
-      console.log(session);
+      // console.log(session);
       return session[0];
     },
   },

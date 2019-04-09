@@ -91,7 +91,9 @@ class Feedback {
   AddBookmark(id) {
     return FetchWithCreds(this.paths.Bookmarks + "/" + id, {
       method: "PUT",
-    }).then(status);
+    })
+      .then(rajni)
+      .then(status);
   }
 
   /**
@@ -110,7 +112,9 @@ class Feedback {
   RemoveBookmark(id) {
     return FetchWithCreds(this.paths.Bookmarks + "/" + id, {
       method: "DELETE",
-    }).then(status);
+    })
+      .then(rajni)
+      .then(status);
   }
 
   /**
@@ -124,7 +128,9 @@ class Feedback {
         "Content-type": "application/json",
       },
       body: JSON.stringify(feedback),
-    }).then(status);
+    })
+      .then(rajni)
+      .then(status);
   }
 
   /**

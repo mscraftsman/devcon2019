@@ -259,6 +259,8 @@ export default new Vuex.Store({
         });
     },
     [USER_FEEDBACK_ADD]({ commit, dispatch }, param) {
+      commit(NOTIFICATION_ADD, "Submitting feedback, please wait...");
+
       feedback
         .AddFeedback(param)
         .then(response => {

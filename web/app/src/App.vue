@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <TopBar />
-    <HeaderStripe />
+    <TopBar/>
+    <HeaderStripe/>
 
     <div class="page-wrapper">
       <transition name="fade" mode="out-in">
-        <router-view />
+        <router-view/>
       </transition>
     </div>
-    <NotificationSection />
-    <SocialStripe />
-    <FooterSection />
+    <NotificationSection/>
+    <SocialStripe/>
+    <FooterSection/>
   </div>
 </template>
 
@@ -29,9 +29,9 @@ export default {
     HeaderStripe,
     SocialStripe,
     FooterSection,
-    NotificationSection
+    NotificationSection,
   },
-  beforeMount() { },
+  beforeMount() {},
   mounted() {
     if (this.getUser) {
       // this.NOTIFICATION_ADD('getting feedback and bookmark')
@@ -63,7 +63,7 @@ export default {
     });
   },
   computed: {
-    ...mapGetters(['getUser'])
+    ...mapGetters(["getUser"]),
   },
   methods: {
     ...mapActions([FETCH_SESSIONS, FETCH_SPEAKERS, USER_STATUS, SET_SPEAKERS_READY, SET_SESSIONS_READY, USER_FEEDBACK_FETCH, USER_BOOKMARK_FETCH, NOTIFICATION_ADD, LEADERBOARD_FETCH]),
@@ -71,7 +71,6 @@ export default {
     handleDataFetched() {
       this.SET_SESSIONS_READY(true);
       this.SET_SPEAKERS_READY(true);
-      console.log("Data fetched!");
     },
   },
 };

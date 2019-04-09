@@ -282,7 +282,7 @@ export default {
     // grid-template-rows: 40vh;
     //   width: 100vw;
     color: white;
-    height: 80vh;
+    // height: 80vh;
 
     .question-holder {
       grid-area: here;

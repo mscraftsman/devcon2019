@@ -213,14 +213,12 @@ export default new Vuex.Store({
         })
         .catch(function() {
           commit(NOTIFICATION_ADD, "You're not logged in.");
-          console.log("status me didnt work");
         });
     },
     [USER_LOGIN]({ commit }) {
       feedback.Login();
     },
     [USER_LOGOUT]({ commit }) {
-      console.log("trying to logout now");
       feedback.Logout();
     },
     [USER_BOOKMARK_FETCH]({ commit }) {
@@ -231,7 +229,7 @@ export default new Vuex.Store({
           commit(NOTIFICATION_ADD, "Bookmarks retrieved.");
         })
         .catch(function() {
-          console.log("bookmark fetch didnt work");
+          commit(NOTIFICATION_ADD, "Couldn't fetch bookmarks");
         });
     },
     [USER_BOOKMARK_ADD]({ state, commit, dispatch }, param) {
@@ -239,6 +237,7 @@ export default new Vuex.Store({
         .AddBookmark(param)
         .then(response => {
           commit(USER_BOOKMARK_SET, [...state.bookmarks, param]);
+          commit(NOTIFICATION_ADD, "Bookmark added.");
         })
         .catch(error => {
           console.log("bookmark add didnt work");
@@ -252,6 +251,7 @@ export default new Vuex.Store({
           let newArray = state.bookmarks.filter(r => r !== param);
           console.log(newArray);
           commit(USER_BOOKMARK_SET, newArray);
+          commit(NOTIFICATION_ADD, "Bookmark removed.");
         })
         .catch(error => {
           console.log("bookmark remove didnt work");
@@ -263,9 +263,11 @@ export default new Vuex.Store({
         .AddFeedback(param)
         .then(response => {
           dispatch(USER_FEEDBACK_FETCH);
+          commit(NOTIFICATION_ADD, "Feedback submitted.");
         })
-        .catch(function() {
-          console.log("feedback add didnt work");
+        .catch(function(error) {
+          commit(NOTIFICATION_ADD, error);
+          // console.log("feedback add didnt work");
         });
     },
     [USER_FEEDBACK_FETCH]({ commit }) {

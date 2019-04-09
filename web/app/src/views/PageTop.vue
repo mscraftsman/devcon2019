@@ -60,10 +60,10 @@ export default {
     ...mapGetters({ speakerReady: "getSpeakersReady", allSpeakers: "getSpeakersById", allSessions: "getSessionsById", sessionsReady: "getSessionsReady", getLeaderboardSessions: "getLeaderboardSessions", getLeaderboardSpeakers: "getLeaderboardSpeakers" }),
   },
   methods: {
-    ...mapActions({ userCheck: "USER_STATUS" }),
+    ...mapActions({ userCheck: "USER_STATUS", LEADERBOARD_FETCH: "LEADERBOARD_FETCH" }),
   },
   mounted() {
-    // this.userCheck();
+    setInterval(() => { this.LEADERBOARD_FETCH(); }, 30000);
   },
   data() {
     return {

@@ -124,9 +124,7 @@ class Feedback {
         "Content-type": "application/json",
       },
       body: JSON.stringify(feedback),
-    })
-      .then(rajni)
-      .then(status);
+    }).then(status);
   }
 
   /**

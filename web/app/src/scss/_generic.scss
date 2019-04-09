@@ -76,3 +76,47 @@
   margin: 0 auto;
   padding: 20px;
 }
+
+
+
+.loading__container {
+  text-align: center;
+
+  h1 {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+}
+
+.loader-spinner,
+.loader-spinner:after {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+.loader-spinner {
+  margin: 20px auto;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 7px solid rgba(255, 255, 255, 0.2);
+  border-right: 7px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 7px solid rgba(255, 255, 255, 0.2);
+  border-left: 7px solid #ffffff;
+  transform: translateZ(0);
+  animation: loader 0.6s infinite linear;
+  margin-bottom: 0;
+}
+
+@keyframes loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

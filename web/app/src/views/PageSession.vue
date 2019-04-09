@@ -45,14 +45,21 @@
               </span>
               Rated. Thanks!
             </router-link>
-            <router-link v-else :to="{ name: 'feedback', params: { id: id } }" class="rate">
+            <router-link v-else :to="{ name: 'feedback', params: { id: id } }" class="rate ">
               <span class="svgicon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
               </span>
               Rate this session
             </router-link>
           </template>
-          <span v-else>Session not started yet</span>
+          <a v-else class="rate notallowed countdown">
+            <!-- <span>Voting not yet open &nbsp;//&nbsp;</span> -->
+            <VueCountdown :time="new Date(session.startsAt).getTime() - new Date().getTime()">
+              <template slot-scope="props">
+                {{ props.days }}d {{ props.hours }}hr {{ props.minutes }}min {{ props.seconds }}s until votes open
+              </template>
+            </VueCountdown>
+          </a>
         </div>
 
         <div class="des-wrap rate meetup" v-else>
@@ -121,12 +128,16 @@
 <script>
 import { mapGetters, mapActions } from "vuex";
 import { time as timeHelper, getDay as getDayHelper } from "@/helpers";
+import VueCountdown from '@xkeshi/vue-countdown';
 
 export default {
   data() {
     return {
       allowBookmark: true
     }
+  },
+  components: {
+    VueCountdown
   },
   props: ["id"],
   mounted() { },
@@ -192,26 +203,22 @@ export default {
       return false;
     },
     checkSessionStatus() {
-      /**
-       * @TODO
-       * Alternative to moment
-       */
 
-      // let timeNow = moment()
-      //   .format()
-      //   .substr(0, 19);
-      // let timeStart = this.session.startsAt;
-      // let difference = moment(timeNow).diff(moment(timeStart), "minutes");
-      // console.log(timeNow);
-      // console.log(timeStart);
-      // console.log(difference);
-      // if (difference && difference > 0) {
-      //   return true;
-      // } else {
-      //   return false;
-      // }
+      const FIFTEEN_MINUTES = 15 * 60 * 1000;
+      const VOTE_CLOSED_AT = new Date("2019-04-13T17:30:00");
+      let now = new Date("2019-04-12T12:20:00");
+      // let now = new Date();
+
+      if (now > VOTE_CLOSED_AT) {
+        return false;
+      }
+
+      let open = new Date(this.session.startsAt);
+      open.setTime(open.getTime() + FIFTEEN_MINUTES);
+      return now > open;
+
       return true;
-    },
+    }
   },
   watch: {},
   beforeMount() {
@@ -409,6 +416,10 @@ a.back {
     a.notallowed {
       background: rgb(167, 167, 167);
       cursor: default;
+    }
+
+    a.countdown {
+      text-transform: none;
     }
   }
   &.meetup {

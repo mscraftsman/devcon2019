@@ -23,7 +23,7 @@
               </template>
               <div v-else class="comment-wrapper">
                 <div class="reaction-wrapper">
-                  <textarea class="textbox" v-model="question.value" placeholder="We would be grateful if you could leave some constructive critism."></textarea>
+                  <textarea class="textbox" v-model="question.value" placeholder="We would be grateful if you could leave some constructive criticism."></textarea>
                 </div>
               </div>
             </div>
@@ -175,7 +175,7 @@ export default {
           return sess;
         }
       });
-      console.log(session);
+      // console.log(session);
       return session[0];
     },
   },
@@ -282,7 +282,7 @@ export default {
     // grid-template-rows: 40vh;
     //   width: 100vw;
     color: white;
-    height: 80vh;
+    // height: 80vh;
 
     .question-holder {
       grid-area: here;

@@ -5,7 +5,7 @@
         <LogoSvg />
       </div>
       <div class="text-wrapper">
-        <p>Mauritius Software Crafmanship Community</p>
+        <p>Mauritius Software Craftsmanship Community</p>
       </div>
       <div class="icon-wrapper">
         <!-- Meetup -->

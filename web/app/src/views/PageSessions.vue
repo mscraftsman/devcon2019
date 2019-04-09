@@ -2,16 +2,10 @@
   <div>
     <h1 class="mega-rainbow">Sessions</h1>
     <div class="loader" v-if="sessions == ''">
-      <svg width="135" height="135" viewBox="0 0 135 135" xmlns="http://www.w3.org/2000/svg" fill="#fff">
-        <path d="M67.447 58c5.523 0 10-4.477 10-10s-4.477-10-10-10-10 4.477-10 10 4.477 10 10 10zm9.448 9.447c0 5.523 4.477 10 10 10 5.522 0 10-4.477 10-10s-4.478-10-10-10c-5.523 0-10 4.477-10 10zm-9.448 9.448c-5.523 0-10 4.477-10 10 0 5.522 4.477 10 10 10s10-4.478 10-10c0-5.523-4.477-10-10-10zM58 67.447c0-5.523-4.477-10-10-10s-10 4.477-10 10 4.477 10 10 10 10-4.477 10-10z">
-          <animateTransform attributeName="transform" type="rotate" from="0 67 67" to="-360 67 67" dur="2.5s" repeatCount="indefinite"></animateTransform>
-        </path>
-        <path
-          d="M28.19 40.31c6.627 0 12-5.374 12-12 0-6.628-5.373-12-12-12-6.628 0-12 5.372-12 12 0 6.626 5.372 12 12 12zm30.72-19.825c4.686 4.687 12.284 4.687 16.97 0 4.686-4.686 4.686-12.284 0-16.97-4.686-4.687-12.284-4.687-16.97 0-4.687 4.686-4.687 12.284 0 16.97zm35.74 7.705c0 6.627 5.37 12 12 12 6.626 0 12-5.373 12-12 0-6.628-5.374-12-12-12-6.63 0-12 5.372-12 12zm19.822 30.72c-4.686 4.686-4.686 12.284 0 16.97 4.687 4.686 12.285 4.686 16.97 0 4.687-4.686 4.687-12.284 0-16.97-4.685-4.687-12.283-4.687-16.97 0zm-7.704 35.74c-6.627 0-12 5.37-12 12 0 6.626 5.373 12 12 12s12-5.374 12-12c0-6.63-5.373-12-12-12zm-30.72 19.822c-4.686-4.686-12.284-4.686-16.97 0-4.686 4.687-4.686 12.285 0 16.97 4.686 4.687 12.284 4.687 16.97 0 4.687-4.685 4.687-12.283 0-16.97zm-35.74-7.704c0-6.627-5.372-12-12-12-6.626 0-12 5.373-12 12s5.374 12 12 12c6.628 0 12-5.373 12-12zm-19.823-30.72c4.687-4.686 4.687-12.284 0-16.97-4.686-4.686-12.284-4.686-16.97 0-4.687 4.686-4.687 12.284 0 16.97 4.686 4.687 12.284 4.687 16.97 0z"
-        >
-          <animateTransform attributeName="transform" type="rotate" from="0 67 67" to="360 67 67" dur="8s" repeatCount="indefinite"></animateTransform>
-        </path>
-      </svg>
+      <div class="loading__container">
+        <div class="loader-spinner"></div>
+        <h1>Loading</h1>
+      </div>
     </div>
     <div class="page-all-sessions">
       <div class="tabs-wrapper">
@@ -114,6 +108,14 @@
                     6:00
                     <span>PM</span>
                   </div>
+                  <div class="time-value">
+                    6:30
+                    <span>PM</span>
+                  </div>
+                  <div class="time-value">
+                    7:00
+                    <span>PM</span>
+                  </div>
                   <div class="time-value"></div>
                 </div>
                 <div :class="'session-panes room-wrapper  ' + room.className" v-for="room in rooms" :key="'room_' + room.className">
@@ -212,12 +214,20 @@
                     6:00
                     <span>PM</span>
                   </div>
+                  <div class="time-value">
+                    6:30
+                    <span>PM</span>
+                  </div>
+                  <div class="time-value">
+                    7:00
+                    <span>PM</span>
+                  </div>
                 </div>
                 <carousel :per-page="1" :loop="true" :autoplayTimeout="3000" :paginationActiveColor="'#ff4932'" :autoplayHoverPause="true" :mouse-drag="false" :navigationEnabled="true" :paginationColor="'#fff'" :paginationPadding="5" :paginationSize="20" :centerMode="true" :navigationNextLabel="'›'" :navigationPrevLabel="'‹'">
                   <slide :class="'session-panes room-wrapper  ' + room.className" v-for="room in rooms" :key="'room_' + room.className">
                     <div :class="'room-wrapper ' + room.className">
                       <div class="room-title">{{ room.label }}</div>
-                      <div  v-for="session in getSessionsFor(index, room.label)" :key="room + session.id" v-bind:style="{ gridRow: timeToText(session.startsAt) + ' / span 2' }" class="session-card-wrapper" @click="setScrollPosition()">
+                      <div v-for="session in getSessionsFor(index, room.label)" :key="room + session.id" v-bind:style="{ gridRow: timeToText(session.startsAt) + ' / span 2' }" class="session-card-wrapper" @click="setScrollPosition()">
                         <session-card :session="session" />
                       </div>
                     </div>
@@ -483,7 +493,9 @@ export default {
     "PM1630"
     "PM1700"
     "PM1730"
-    "PM1800";
+    "PM1800"
+    "PM1830"
+    "PM1900";
 
   // grid-template-areas:
   //   "title"
@@ -675,6 +687,48 @@ export default {
         width: 200px;
       }
     }
+  }
+}
+
+.loading__container {
+  text-align: center;
+
+  h1 {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+}
+
+.loader-spinner,
+.loader-spinner:after {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+.loader-spinner {
+  margin: 20px auto;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 7px solid rgba(255, 255, 255, 0.2);
+  border-right: 7px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 7px solid rgba(255, 255, 255, 0.2);
+  border-left: 7px solid #ffffff;
+  transform: translateZ(0);
+  animation: loader 0.6s infinite linear;
+  margin-bottom: 0;
+}
+
+@keyframes loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 </style>

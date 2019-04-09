@@ -12,10 +12,17 @@
         <div class="speaker-row" v-for="(speaker, index) in getLeaderboardSpeakers" :key="index" v-if="speaker.id != '' && allSpeakers[speaker.id] !== 'undefined'">
           <div class="rank mega-rainbow">{{ index + 1 }}</div>
           <div class="name">
-            <router-link :to="{ name: 'speaker', params: { id: speaker.id } }">{{ allSpeakers[speaker.id].fullName }} {{ speaker.id }}</router-link>
+            <div class="speak" v-for="speaker in allSessions[speaker.id].speakers">{{ speaker.name }}</div>
+            <router-link :to="{ name: 'session', params: { id: speaker.id } }">{{ allSessions[speaker.id].title }} </router-link>
             <!--  -->
           </div>
           <div class="score">{{ speaker.score }}</div>
+        </div>
+      </div>
+      <div v-else>
+        <div class="loading__container">
+          <div class="loader-spinner"></div>
+          <h1>Loading</h1>
         </div>
       </div>
     </div>
@@ -33,7 +40,13 @@
           <div class="name">
             <router-link :to="{ name: 'session', params: { id: session.id } }" v-if="allSessions[session.id] !== 'undefined'"> {{ allSessions[session.id].title }}</router-link>
           </div>
-          <!-- <div class="score">{{ speaker.score }}</div> -->
+          <div class="score">{{ session.score }}</div>
+        </div>
+      </div>
+      <div v-else>
+        <div class="loading__container">
+          <div class="loader-spinner"></div>
+          <h1>Loading</h1>
         </div>
       </div>
     </div>
@@ -47,10 +60,10 @@ export default {
     ...mapGetters({ speakerReady: "getSpeakersReady", allSpeakers: "getSpeakersById", allSessions: "getSessionsById", sessionsReady: "getSessionsReady", getLeaderboardSessions: "getLeaderboardSessions", getLeaderboardSpeakers: "getLeaderboardSpeakers" }),
   },
   methods: {
-    ...mapActions({ userCheck: "USER_STATUS" }),
+    ...mapActions({ userCheck: "USER_STATUS", LEADERBOARD_FETCH: "LEADERBOARD_FETCH" }),
   },
   mounted() {
-    // this.userCheck();
+    setInterval(() => { this.LEADERBOARD_FETCH(); }, 30000);
   },
   data() {
     return {
@@ -106,6 +119,11 @@ export default {
     .name {
       // padding: 10px 0;
       padding-left: 20px;
+      font-size: 18px;
+
+      .speak {
+        font-size: 25px;
+      }
     }
   }
 }

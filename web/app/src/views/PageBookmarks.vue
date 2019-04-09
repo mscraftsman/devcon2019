@@ -99,7 +99,7 @@ export default {
   },
   data() {
     return {
-      bookmarksList: ["115650", "80862"],
+      allow: true
     };
   },
 };

@@ -176,12 +176,19 @@ export default new Vuex.Store({
     [USER_BOOKMARK_SET](state, payload) {
       state.bookmarks = payload;
     },
-    [NOTIFICATION_ADD](state, message) {
+    [NOTIFICATION_ADD](state, payload) {
       let date = new Date().getTime();
+      let type = "info";
+      if (payload.type === "undefined") {
+        payload.type = "info";
+      } else {
+        type = payload.type;
+      }
 
       let notif = {
         date,
-        message: message,
+        message: payload.message,
+        type: type,
       };
 
       Vue.set(state, "notifications", [...state.notifications, notif]);
@@ -207,12 +214,12 @@ export default new Vuex.Store({
         .Me()
         .then(response => {
           commit(SET_USER, response);
-          commit(NOTIFICATION_ADD, "Logged in. Welcome " + response.name);
+          commit(NOTIFICATION_ADD, { message: "Logged in. Welcome " + response.name, type: "success" });
           dispatch(USER_FEEDBACK_FETCH);
           dispatch(USER_BOOKMARK_FETCH);
         })
         .catch(function() {
-          commit(NOTIFICATION_ADD, "You're not logged in.");
+          commit(NOTIFICATION_ADD, { message: "You're not logged in.", type: "error" });
         });
     },
     [USER_LOGIN]({ commit }) {
@@ -226,10 +233,10 @@ export default new Vuex.Store({
         .ListOwnBookmarks()
         .then(response => {
           commit(USER_BOOKMARK_SET, response.bookmarks);
-          commit(NOTIFICATION_ADD, "Bookmarks retrieved.");
+          commit(NOTIFICATION_ADD, { message: "Bookmarks retrieved." });
         })
         .catch(function() {
-          commit(NOTIFICATION_ADD, "Couldn't fetch bookmarks");
+          commit(NOTIFICATION_ADD, { message: "Couldn't fetch bookmarks", type: "error" });
         });
     },
     [USER_BOOKMARK_ADD]({ state, commit, dispatch }, param) {
@@ -237,10 +244,10 @@ export default new Vuex.Store({
         .AddBookmark(param)
         .then(response => {
           commit(USER_BOOKMARK_SET, [...state.bookmarks, param]);
-          commit(NOTIFICATION_ADD, "Bookmark added.");
+          commit(NOTIFICATION_ADD, { message: "Bookmark added.", type: "success" });
         })
         .catch(error => {
-          commit(NOTIFICATION_ADD, "Cannot add bookmark. Are you logged in?");
+          commit(NOTIFICATION_ADD, { message: "Cannot add bookmark. Are you logged in?", type: "error" });
           // console.log("bookmark add didnt work");
           // console.log(error);
         });
@@ -252,7 +259,7 @@ export default new Vuex.Store({
           let newArray = state.bookmarks.filter(r => r !== param);
           console.log(newArray);
           commit(USER_BOOKMARK_SET, newArray);
-          commit(NOTIFICATION_ADD, "Bookmark removed.");
+          commit(NOTIFICATION_ADD, { message: "Bookmark removed.", type: "success" });
         })
         .catch(error => {
           console.log("bookmark remove didnt work");
@@ -260,16 +267,17 @@ export default new Vuex.Store({
         });
     },
     [USER_FEEDBACK_ADD]({ commit, dispatch }, param) {
-      commit(NOTIFICATION_ADD, "Submitting feedback, please wait...");
+      commit(NOTIFICATION_ADD, { message: "Submitting feedback, please wait...", type: "success" });
 
       feedback
         .AddFeedback(param)
         .then(response => {
           dispatch(USER_FEEDBACK_FETCH);
-          commit(NOTIFICATION_ADD, "Feedback submitted.");
+          commit(NOTIFICATION_ADD, { message: "Feedback submitted.", type: "success" });
         })
         .catch(function(error) {
-          commit(NOTIFICATION_ADD, error);
+          console.log(error);
+          commit(NOTIFICATION_ADD, { message: error.error, type: "error" });
           // console.log("feedback add didnt work");
         });
     },
@@ -278,7 +286,7 @@ export default new Vuex.Store({
         .ListOwnFeedbacks()
         .then(response => {
           commit(USER_FEEDBACK_SET, response.feedbacks);
-          commit(NOTIFICATION_ADD, "Feedbacks retrieved");
+          commit(NOTIFICATION_ADD, { message: "Feedbacks retrieved" });
         })
         .catch(function() {
           console.log("feedback fetch didnt work");
@@ -314,7 +322,7 @@ export default new Vuex.Store({
           commit(SET_SESSIONS_BY_ID, groupById);
         })
         .then(() => {
-          commit(NOTIFICATION_ADD, "Sessions retrieved");
+          commit(NOTIFICATION_ADD, { message: "Sessions retrieved" });
         })
         .catch(error => {
           throw new Error("Error should be caught by Vue global error handler." + error);

@@ -16,7 +16,7 @@
       </div>
       <div class="actions-wrapper" v-if="!session.isServiceSession">
         <div class="des-wrap rate ">
-          <a @click="USER_BOOKMARK_ADD(session.id)" class="rate bookmark" v-if="!bookmarked">
+          <a @click="addBookmark()" class="rate bookmark" v-if="!bookmarked" :class="{ notallowed: !allow }">
             <span class="svgicon">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="square" stroke-linejoin="arcs">
                 <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
@@ -123,6 +123,11 @@ import { mapGetters, mapActions } from "vuex";
 import { time as timeHelper, getDay as getDayHelper } from "@/helpers";
 
 export default {
+  data() {
+    return {
+      allow: true
+    }
+  },
   props: ["id"],
   mounted() { },
   methods: {
@@ -143,6 +148,12 @@ export default {
       // } else {
       //   return '/img/sponsors/placeholder.png'
       // }
+    },
+    addBookmark: function () {
+      if (this.allow) {
+        this.allow = false;
+        this.USER_BOOKMARK_ADD(this.session.id)
+      }
     },
     time: timeHelper,
     getDay: getDayHelper,
@@ -393,6 +404,11 @@ a.back {
 
     a.done {
       background: var(--color-green);
+    }
+
+    a.notallowed {
+      background: rgb(167, 167, 167);
+      cursor: default;
     }
   }
   &.meetup {

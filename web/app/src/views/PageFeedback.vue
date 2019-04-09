@@ -23,7 +23,7 @@
               </template>
               <div v-else class="comment-wrapper">
                 <div class="reaction-wrapper">
-                  <textarea class="textbox" v-model="question.value" placeholder="We would be grateful if you could leave some constructive critism."></textarea>
+                  <textarea class="textbox" v-model="question.value" placeholder="We would be grateful if you could leave some constructive criticism."></textarea>
                 </div>
               </div>
             </div>

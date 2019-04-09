@@ -16,9 +16,27 @@
     </div>
     <transition-group name="slide-fade">
       <div class="notification" v-for="notif in getNotifications" :key="notif.date">
+        <div class="type" v-if="notif.type === 'success'">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7ed321" stroke-width="4" stroke-linecap="round" stroke-linejoin="bevel"><polyline points="20 6 9 17 4 12"></polyline></svg>
+        </div>
+        <div class="type" v-else-if="notif.type === 'error'">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#d0021b" stroke-width="3" stroke-linecap="round" stroke-linejoin="bevel">
+            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+            <line x1="12" y1="9" x2="12" y2="13"></line>
+            <line x1="12" y1="17" x2="12" y2="17"></line>
+          </svg>
+        </div>
+        <div class="type" v-else>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4a90e2" stroke-width="3" stroke-linecap="round" stroke-linejoin="bevel">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="16" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12" y2="8"></line>
+          </svg>
+        </div>
         <div class="message">
           {{ notif.message }}
         </div>
+        <div class="clear"></div>
       </div>
     </transition-group>
   </div>
@@ -76,7 +94,7 @@ export default {
     width: 100%;
 
     display: grid;
-    grid-template-columns: 1fr 30px;
+    grid-template-columns: 30px 1fr 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     margin: 0 auto 10px;
 
@@ -84,6 +102,10 @@ export default {
       padding: 10px;
     }
 
+    .type {
+      padding-top: 6px;
+      padding-left: 6px;
+    }
     .svgicon {
       padding-top: 6px;
       cursor: pointer;
@@ -97,6 +119,8 @@ export default {
     }
 
     &.clear {
+      grid-template-columns: 1fr 30px;
+
       width: 150px;
       border-radius: 40px;
       margin-right: 0px;

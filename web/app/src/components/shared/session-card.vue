@@ -35,6 +35,14 @@
         </svg>
       </div>
     </div>
+
+    <div class="bookmark-indicator" v-if="bookmarked">
+      <div class="svgicon">
+        <svg width="35" height="58" viewBox="0 0 35 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M32.5 52.3157L19.5041 43.2392C18.3003 42.3984 16.6997 42.3985 15.4959 43.2392L16.7437 45.0258L15.4959 43.2392L2.5 52.3157V2.5H32.5V52.3157Z" stroke="var(--color)" fill="var(--color-fill)" stroke-width="5" stroke-linecap="round" stroke-linejoin="bevel" />
+        </svg>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -122,6 +130,7 @@ export default {
   // grid-template-rows: 50px 100px 50px;
   transition: all 0.1s ease-in;
   width: 100%;
+  position: relative;
 
   &:hover {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
@@ -138,6 +147,8 @@ export default {
   grid-row: 1/2;
   padding-right: 10px;
   cursor: pointer;
+  z-index: 100;
+  text-shadow: 0 0 5px #fff;
 }
 
 .session-description {
@@ -146,6 +157,15 @@ export default {
   line-height: 18added px;
   padding-right: 10px;
   cursor: pointer;
+}
+
+.bookmark-indicator {
+  position: absolute;
+  z-index: 50;
+  right: 10px;
+  top: -6px;
+  --color: none;
+  --color-fill: var(--color-red-light);
 }
 
 .session-author {

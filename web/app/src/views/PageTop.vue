@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1 class="mega-rainbow">Top Sessions</h1>
-
+    <button @click="shuffle()">Shuffle</button>
     <div class="page">
       <div class="speakers-wrapper" v-if="sessionsReady">
         <div class="speaker-row header">
@@ -9,14 +9,24 @@
           <div class="topic-name">Topic</div>
           <div class="score">Score</div>
         </div>
-        <div class="speaker-row" v-for="(session, index) in getLeaderboardSessions" :key="index">
+      </div>
+
+      <transition-group name="flip-list" tag="div" class="speakers-wrapper" v-if="sessionsReady">
+        <div
+          class="speaker-row"
+          v-for="(session, index) in getLeaderboardSessions"
+          :key="session.id"
+        >
           <div class="rank mega-rainbow">{{ index + 1 }}</div>
           <div class="topic-content">
-            <router-link :to="{ name: 'session', params: { id: session.id } }" v-if="allSessions[session.id] !== 'undefined'">{{ allSessions[session.id].title }}</router-link>
+            <router-link
+              :to="{ name: 'session', params: { id: session.id } }"
+              v-if="allSessions[session.id] !== 'undefined'"
+            >{{ allSessions[session.id].title }}</router-link>
           </div>
           <div class="score value">{{ session.score }}</div>
         </div>
-      </div>
+      </transition-group>
       <div v-else>
         <div class="loading__container">
           <div class="loader-spinner"></div>
@@ -34,16 +44,28 @@
           <div class="speaker-name">Name</div>
           <div class="score">Score</div>
         </div>
-        <div class="speaker-row" v-for="(speaker, index) in getLeaderboardSpeakers" :key="index" v-if="speaker.id != '' && allSpeakers[speaker.id] !== 'undefined'">
+      </div>
+      <transition-group name="flip-list" tag="div" class="speakers-wrapper" v-if="sessionsReady">
+        <div
+          class="speaker-row"
+          v-for="(speaker, index) in getLeaderboardSpeakers"
+          :key="speaker.id"
+          v-if="speaker.id != '' && allSpeakers[speaker.id] !== 'undefined'"
+        >
           <div class="rank mega-rainbow">{{ index + 1 }}</div>
           <div class="name">
-            <div class="speak" v-for="speaker in allSessions[speaker.id].speakers">{{ speaker.name }}</div>
-            <router-link :to="{ name: 'session', params: { id: speaker.id } }">{{ allSessions[speaker.id].title }}</router-link>
+            <div
+              class="speak"
+              v-for="speaker in allSessions[speaker.id].speakers"
+            >{{ speaker.name }}</div>
+            <router-link
+              :to="{ name: 'session', params: { id: speaker.id } }"
+            >{{ allSessions[speaker.id].title }}</router-link>
             <!--  -->
           </div>
           <div class="score">{{ speaker.score }}</div>
         </div>
-      </div>
+      </transition-group>
       <div v-else>
         <div class="loading__container">
           <div class="loader-spinner"></div>
@@ -62,6 +84,9 @@ export default {
   },
   methods: {
     ...mapActions({ userCheck: "USER_STATUS", LEADERBOARD_FETCH: "LEADERBOARD_FETCH" }),
+    shuffle: function() {
+      this.getLeaderboardSessions = this.getLeaderboardSessions.sort(() => Math.random() - 0.5);
+    },
   },
   mounted() {
     setInterval(() => {
@@ -78,6 +103,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.flip-list-move {
+  transition: transform 5s;
+}
+
 .page {
   max-width: 800px;
   width: 100%;
@@ -87,6 +116,7 @@ export default {
   display: grid;
   grid-template-columns: 1fr;
   grid-row-gap: 10px;
+  margin-bottom: 10px;
 
   .speaker-row {
     display: grid;

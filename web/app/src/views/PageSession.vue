@@ -119,8 +119,11 @@
       </div>
     </div>
     <div class="page-content" v-else>
-      <p>loading session...</p>
-      <a href="javascript:location.reload()" title="i'm not proud of this code. please send PR">is this taking too long? click here</a>
+      <div class="loading__container">
+        <div class="loader-spinner"></div>
+        <h1>Loading</h1>
+      </div>
+      <!-- <a href="javascript:location.reload()" title="i'm not proud of this code. please send PR">is this taking too long? click here</a> -->
     </div>
   </div>
 </template>

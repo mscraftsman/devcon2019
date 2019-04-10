@@ -6,14 +6,24 @@
       <div class="speakers-wrapper" v-if="speakerReady">
         <div class="speaker-row header">
           <div class="rank">#</div>
-          <div class="name">Name</div>
+          <div class="speaker-name">Name</div>
           <div class="score">Score</div>
         </div>
-        <div class="speaker-row" v-for="(speaker, index) in getLeaderboardSpeakers" :key="index" v-if="speaker.id != '' && allSpeakers[speaker.id] !== 'undefined'">
+        <div
+          class="speaker-row"
+          v-for="(speaker, index) in getLeaderboardSpeakers"
+          :key="index"
+          v-if="speaker.id != '' && allSpeakers[speaker.id] !== 'undefined'"
+        >
           <div class="rank mega-rainbow">{{ index + 1 }}</div>
           <div class="name">
-            <div class="speak" v-for="speaker in allSessions[speaker.id].speakers">{{ speaker.name }}</div>
-            <router-link :to="{ name: 'session', params: { id: speaker.id } }">{{ allSessions[speaker.id].title }} </router-link>
+            <div
+              class="speak"
+              v-for="speaker in allSessions[speaker.id].speakers"
+            >{{ speaker.name }}</div>
+            <router-link
+              :to="{ name: 'session', params: { id: speaker.id } }"
+            >{{ allSessions[speaker.id].title }}</router-link>
             <!--  -->
           </div>
           <div class="score">{{ speaker.score }}</div>
@@ -32,15 +42,18 @@
       <div class="speakers-wrapper" v-if="sessionsReady">
         <div class="speaker-row header">
           <div class="rank">#</div>
-          <div class="name">Topic</div>
+          <div class="topic-name">Topic</div>
           <div class="score">Score</div>
         </div>
         <div class="speaker-row" v-for="(session, index) in getLeaderboardSessions" :key="index">
           <div class="rank mega-rainbow">{{ index + 1 }}</div>
-          <div class="name">
-            <router-link :to="{ name: 'session', params: { id: session.id } }" v-if="allSessions[session.id] !== 'undefined'"> {{ allSessions[session.id].title }}</router-link>
+          <div class="topic-content">
+            <router-link
+              :to="{ name: 'session', params: { id: session.id } }"
+              v-if="allSessions[session.id] !== 'undefined'"
+            >{{ allSessions[session.id].title }}</router-link>
           </div>
-          <div class="score">{{ session.score }}</div>
+          <div class="score value">{{ session.score }}</div>
         </div>
       </div>
       <div v-else>
@@ -63,7 +76,9 @@ export default {
     ...mapActions({ userCheck: "USER_STATUS", LEADERBOARD_FETCH: "LEADERBOARD_FETCH" }),
   },
   mounted() {
-    setInterval(() => { this.LEADERBOARD_FETCH(); }, 30000);
+    setInterval(() => {
+      this.LEADERBOARD_FETCH();
+    }, 30000);
   },
   data() {
     return {
@@ -84,19 +99,23 @@ export default {
   display: grid;
   grid-template-columns: 1fr;
   grid-row-gap: 10px;
+
   .speaker-row {
     display: grid;
     grid-template-columns: 80px 1fr 100px;
     color: white;
     background: rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    line-height: 30px;
-    font-size: 25px;
-    line-height: 40px;
+    font-size: 20px;
+    padding: 10px;
+    grid-gap: 10px;
 
     &.header {
       font-weight: bolder;
-      font-size: 30px;
+      font-size: 20px;
+      padding: 10px;
+      text-transform: uppercase;
+      color: $color-blue-light;
     }
 
     .rank {
@@ -107,22 +126,36 @@ export default {
       align-self: center;
       justify-content: center;
       height: 40px;
-      font-size: 40px;
+      font-size: 30px;
       transform: skewX(-15deg);
     }
 
-    .score {
+    .score,
+    .speaker-name,
+    .topic-name {
+      display: flex;
+      align-items: center;
+
+      &.value {
+        justify-content: center;
+      }
+    }
+
+    .topic-content {
+      font-size: 17px;
       display: flex;
       align-items: center;
     }
 
     .name {
       // padding: 10px 0;
-      padding-left: 20px;
-      font-size: 18px;
+      font-weight: 300;
+      margin-bottom: 5px;
+      font-size: 15px;
 
       .speak {
-        font-size: 25px;
+        font-weight: 700;
+        font-size: 18px;
       }
     }
   }

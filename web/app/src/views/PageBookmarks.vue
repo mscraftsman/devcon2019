@@ -4,19 +4,34 @@
     <h1 class="mega-rainbow" v-else>No Bookmarks Found</h1>
 
     <div class="page">
-      <transition-group name="slide-fade" class="speakers-wrapper" mode="out-in" v-if="sessionsReady">
-        <div class="speaker-row" v-for="(id, index) in getBookmarks" v-if="typeof sessionInfo(id) !== 'undefined'" :key="id">
+      <transition-group
+        name="slide-fade"
+        class="speakers-wrapper"
+        mode="out-in"
+        v-if="sessionsReady"
+      >
+        <div
+          class="speaker-row"
+          v-for="(id, index) in getBookmarks"
+          v-if="typeof sessionInfo(id) !== 'undefined'"
+          :key="id"
+        >
           <div class="rank">
             <label for>Date/Time</label>
             <div class="value">
-              <div class="day">{{ getDay(sessionInfo(id).startsAt) }} {{ time(sessionInfo(id).startsAt) }}</div>
+              <div
+                class="day"
+              >{{ getDay(sessionInfo(id).startsAt) }} {{ time(sessionInfo(id).startsAt) }}</div>
               <div class="time"></div>
             </div>
           </div>
           <div class="name">
             <label class="session-label">Session</label>
             <div class="value">
-              <router-link class="title" :to="{ name: 'session', params: { id: id } }">{{ sessionInfo(id).title }}</router-link>
+              <router-link
+                class="title"
+                :to="{ name: 'session', params: { id: id } }"
+              >{{ sessionInfo(id).title }}</router-link>
               <small>
                 <span v-for="(speaker, index) in allSessions[id].speakers" :key="speaker.id">
                   {{ speaker.name }}
@@ -30,11 +45,48 @@
             <div class="value">{{ sessionInfo(id).room }}</div>
           </div>
           <div class="actions">
-            <button @click="USER_BOOKMARK_REMOVE(id)">
+            <!-- <button @click="" :class="['rate', {'rated': checkRate}]"> -->
+            <button @click="RATE_SESSION(id)" class="rate">
               <span class="svgicons">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs">
+                <svg
+                  width="60"
+                  height="44"
+                  viewBox="0 0 60 44"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.5714 0H49.1606C54.5453 0 58.3923 5.21239 56.8052 10.3579L48.1688 38.3579C47.1343 41.712 44.0342 44 40.5242 44H0L13.5714 0Z"
+                    fill="var(--color-vote)"
+                  ></path>
+                  <path
+                    d="M25 32H22C21.4696 32 20.9609 31.7893 20.5858 31.4142C20.2107 31.0391 20 30.5304 20 30V23C20 22.4696 20.2107 21.9609 20.5858 21.5858C20.9609 21.2107 21.4696 21 22 21H25M32 19V15C32 14.2044 31.6839 13.4413 31.1213 12.8787C30.5587 12.3161 29.7956 12 29 12L25 21V32H36.28C36.7623 32.0055 37.2304 31.8364 37.5979 31.524C37.9654 31.2116 38.2077 30.7769 38.28 30.3L39.66 21.3C39.7035 21.0134 39.6842 20.7207 39.6033 20.4423C39.5225 20.1638 39.3821 19.9063 39.1919 19.6875C39.0016 19.4687 38.7661 19.2939 38.5016 19.1752C38.2371 19.0565 37.9499 18.9967 37.66 19H32Z"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                  ></path>
+                </svg>
+              </span>
+            </button>
+
+            <button @click="USER_BOOKMARK_REMOVE(id)" class="remove">
+              <span class="svgicons">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="square"
+                  stroke-linejoin="arcs"
+                >
                   <polyline points="3 6 5 6 21 6"></polyline>
-                  <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                  <path
+                    d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                  ></path>
                   <line x1="10" y1="11" x2="10" y2="17"></line>
                   <line x1="14" y1="11" x2="14" y2="17"></line>
                 </svg>
@@ -59,7 +111,12 @@ import { time as timeHelper, getDay as getDayHelper } from "@/helpers";
 
 export default {
   computed: {
-    ...mapGetters({ allSessions: "getSessionsById", sessionsReady: "getSessionsReady", getBookmarks: "getBookmarks" }),
+    ...mapGetters({
+      allSessions: "getSessionsById",
+      sessionsReady: "getSessionsReady",
+      getBookmarks: "getBookmarks",
+      getMyFeedbacks: "getMyFeedbacks",
+    }),
   },
   methods: {
     ...mapActions({ fetchSessions: "FETCH_SESSIONS", USER_BOOKMARK_REMOVE: "USER_BOOKMARK_REMOVE" }),
@@ -74,7 +131,7 @@ export default {
     },
     sortedBookmarks() {
       if (!(this.getBookmarks instanceof Array) || !(this.allSessions instanceof Array)) {
-        return []
+        return [];
       }
       let rawBookmarks = this.getBookmarks.reduce((p, c) => {
         p[c] = true;
@@ -97,7 +154,7 @@ export default {
   },
   data() {
     return {
-      allow: true
+      allow: true,
     };
   },
 };
@@ -135,7 +192,7 @@ export default {
 
   .speaker-row {
     display: grid;
-    grid-template-columns: 0.5fr 1fr 0.2fr 70px;
+    grid-template-columns: 0.5fr 1fr 100px 100px;
     color: white;
     background: rgba(0, 0, 0, 0.7);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -146,7 +203,7 @@ export default {
     transition: all 0.2s ease-in-out;
 
     &:hover {
-      transform: scale(1.01);
+      // transform: scale(1.01);
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
     }
 
@@ -220,11 +277,35 @@ export default {
         transition: all 0.2s ease-in-out;
         outline: none;
 
-        svg {
-          width: 30px;
+        &.delete {
+          background: $color-red;
+
+          svg {
+            width: 30px;
+          }
+        }
+
+        &.rate {
+          margin-right: 10px;
+          background: var(--color-main);
+
+          svg {
+            height: 37px;
+            top: -4px;
+            position: relative;
+          }
+        }
+
+        &.rated {
+          background: var(--color-green);
+
+          &:hover {
+            transform: scale(1);
+          }
         }
 
         &:hover {
+          cursor: pointer;
           transform: scale(1.2);
         }
       }

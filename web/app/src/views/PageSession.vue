@@ -1,24 +1,46 @@
 <template>
   <div class="page page-session">
     <div class="back-button-wrapper">
-      <a @click="$router.go(-1)" class="back"> <img src="../assets/back.svg" alt /> Back </a>
+      <a @click="$router.go(-1)" class="back">
+        <img src="../assets/back.svg" alt> Back
+      </a>
     </div>
     <div class="page-content" v-if="session">
       <div class="session-title">{{ session.title }}</div>
 
       <div class="speakers-wrapper" v-if="session.speakers">
-        <router-link class="speaker-wrapper" v-for="speaker in session.speakers" :key="speaker.id" :to="{ name: 'speaker', params: { id: speaker.id } }">
+        <router-link
+          class="speaker-wrapper"
+          v-for="speaker in session.speakers"
+          :key="speaker.id"
+          :to="{ name: 'speaker', params: { id: speaker.id } }"
+        >
           <div class="avatar">
-            <img :src="getSpeakerPhoto(speaker.id)" alt />
+            <img :src="getSpeakerPhoto(speaker.id)" alt>
           </div>
           <p class="name">{{ speaker.name }}</p>
         </router-link>
       </div>
       <div class="actions-wrapper" v-if="!session.isServiceSession">
-        <div class="des-wrap rate ">
-          <a @click="addBookmark()" class="rate bookmark" v-if="!bookmarked" :class="{ notallowed: !allowBookmark }">
+        <div class="des-wrap rate">
+          <a
+            @click="addBookmark()"
+            class="rate bookmark"
+            v-if="!bookmarked"
+            :class="{ notallowed: !allowBookmark }"
+          >
             <span class="svgicon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="square" stroke-linejoin="arcs">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#ffffff"
+                stroke-width="3"
+                stroke-linecap="square"
+                stroke-linejoin="arcs"
+              >
                 <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
               </svg>
             </span>
@@ -26,7 +48,17 @@
           </a>
           <a @click="USER_BOOKMARK_REMOVE(session.id)" class="done" v-else>
             <span class="svgicon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#ffffff"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="bevel"
+              >
                 <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                 <polyline points="22 4 12 14.01 9 11.01"></polyline>
               </svg>
@@ -38,16 +70,40 @@
           <template v-if="checkSessionStatus">
             <router-link v-if="voted" :to="{ name: 'feedback', params: { id: id } }" class="done">
               <span class="svgicon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="bevel"
+                >
                   <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                   <polyline points="22 4 12 14.01 9 11.01"></polyline>
                 </svg>
               </span>
               Rated. Thanks!
             </router-link>
-            <router-link v-else :to="{ name: 'feedback', params: { id: id } }" class="rate ">
+            <router-link v-else :to="{ name: 'feedback', params: { id: id } }" class="rate">
               <span class="svgicon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="bevel"
+                >
+                  <path
+                    d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"
+                  ></path>
+                </svg>
               </span>
               Rate this session
             </router-link>
@@ -55,9 +111,9 @@
           <a v-else class="rate notallowed countdown">
             <!-- <span>Voting not yet open &nbsp;//&nbsp;</span> -->
             <VueCountdown :time="new Date(session.startsAt).getTime() - new Date().getTime()">
-              <template slot-scope="props">
-                {{ props.days }}d {{ props.hours }}hr {{ props.minutes }}min {{ props.seconds }}s until votes open
-              </template>
+              <template
+                slot-scope="props"
+              >{{ props.days }}d {{ props.hours }}hr {{ props.minutes }}min {{ props.seconds }}s until votes open</template>
             </VueCountdown>
           </a>
         </div>
@@ -65,7 +121,17 @@
         <div class="des-wrap rate meetup" v-else>
           <a @click="USER_LOGIN()" class="rate">
             <span class="svgicon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="square" stroke-linejoin="arcs">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#ffffff"
+                stroke-width="3"
+                stroke-linecap="square"
+                stroke-linejoin="arcs"
+              >
                 <path d="M15 3h6v18h-6M10 17l5-5-5-5M13.8 12H3"></path>
               </svg>
             </span>
@@ -77,28 +143,28 @@
       <div class="descriptions-row">
         <div class="des-wrap" v-if="session.format">
           <label>
-            <img src="../assets/icons/language.svg" alt />
+            <img src="../assets/icons/language.svg" alt>
           </label>
           <p>{{ session.format }}</p>
         </div>
 
         <div class="des-wrap" v-if="session.language">
           <label>
-            <img src="../assets/icons/language.svg" alt />
+            <img src="../assets/icons/language.svg" alt>
           </label>
           <p>{{ session.language }}</p>
         </div>
 
         <div class="des-wrap">
           <label>
-            <img src="../assets/icons/location.svg" alt />
+            <img src="../assets/icons/location.svg" alt>
           </label>
           <p>{{ session.room }}</p>
         </div>
 
         <div class="des-wrap">
           <label>
-            <img src="../assets/icons/time.svg" alt />
+            <img src="../assets/icons/time.svg" alt>
           </label>
           <p>
             {{ getDay(session.startsAt) }} {{ time(session.startsAt) }} -
@@ -108,7 +174,7 @@
 
         <div class="des-wrap" v-if="session.level">
           <label>
-            <img src="../assets/icons/level.svg" alt />
+            <img src="../assets/icons/level.svg" alt>
           </label>
           <p>{{ session.level }}</p>
         </div>
@@ -131,22 +197,22 @@
 <script>
 import { mapGetters, mapActions } from "vuex";
 import { time as timeHelper, getDay as getDayHelper } from "@/helpers";
-import VueCountdown from '@xkeshi/vue-countdown';
+import VueCountdown from "@xkeshi/vue-countdown";
 
 export default {
   data() {
     return {
-      allowBookmark: true
-    }
+      allowBookmark: true,
+    };
   },
   components: {
-    VueCountdown
+    VueCountdown,
   },
   props: ["id"],
-  mounted() { },
+  mounted() {},
   methods: {
     ...mapActions(["FETCH_SESSIONS", "FETCH_SPEAKERS", "USER_LOGIN", "USER_BOOKMARK_ADD", "USER_BOOKMARK_REMOVE"]),
-    getSpeakerPhoto: function (id) {
+    getSpeakerPhoto: function(id) {
       if (this.speakers.length === 0) {
         this.FETCH_SPEAKERS();
       } else {
@@ -163,10 +229,10 @@ export default {
       //   return '/img/sponsors/placeholder.png'
       // }
     },
-    addBookmark: function () {
+    addBookmark: function() {
       if (this.allowBookmark) {
         this.allowBookmark = false;
-        this.USER_BOOKMARK_ADD(this.session.id)
+        this.USER_BOOKMARK_ADD(this.session.id);
       }
     },
     time: timeHelper,
@@ -178,9 +244,9 @@ export default {
       speakers: "getSpeakers",
       user: "getUser",
       getBookmarks: "getBookmarks",
-      getMyFeedbacks: "getMyFeedbacks"
+      getMyFeedbacks: "getMyFeedbacks",
     }),
-    session: function () {
+    session: function() {
       if (typeof this.sessions == "undefined") {
         this.FETCH_SESSIONS();
       }
@@ -191,14 +257,14 @@ export default {
         .flat()
         .find(session => parseInt(session.id) === parseInt(this.id));
     },
-    voted: function () {
+    voted: function() {
       if (this.getMyFeedbacks instanceof Array) {
         return this.getMyFeedbacks.findIndex(f => f.session_id === this.id) !== -1;
       }
 
       return false;
     },
-    bookmarked: function () {
+    bookmarked: function() {
       if (this.getBookmarks) {
         return this.getBookmarks.includes(this.id);
       }
@@ -206,11 +272,10 @@ export default {
       return false;
     },
     checkSessionStatus() {
-
       const FIFTEEN_MINUTES = 15 * 60 * 1000;
       const VOTE_CLOSED_AT = new Date("2019-04-13T17:30:00");
-      let now = new Date("2019-04-12T12:20:00");
-      // let now = new Date();
+      // let now = new Date("2019-04-12T12:20:00");
+      let now = new Date();
 
       if (now > VOTE_CLOSED_AT) {
         return false;
@@ -221,7 +286,7 @@ export default {
       return now > open;
 
       return true;
-    }
+    },
   },
   watch: {},
   beforeMount() {

@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "4886b85717cf9a9a3e27",
+    "revision": "a86cd1ca7c0a1648ba2a",
     "url": "/css/app.5baba0e1.css"
   },
   {
-    "revision": "4886b85717cf9a9a3e27",
-    "url": "/js/app.1ce92616.js"
+    "revision": "a86cd1ca7c0a1648ba2a",
+    "url": "/js/app.78ffc76a.js"
   },
   {
     "revision": "bca8ec580dac7adb96be",
@@ -14,6 +14,30 @@ self.__precacheManifest = [
   {
     "revision": "bca8ec580dac7adb96be",
     "url": "/js/chunk-0258206e.7fb3c611.js"
+  },
+  {
+    "revision": "317874c55e28540ea44f",
+    "url": "/css/chunk-074a3a57.47ba4a11.css"
+  },
+  {
+    "revision": "317874c55e28540ea44f",
+    "url": "/js/chunk-074a3a57.dba531f5.js"
+  },
+  {
+    "revision": "1dd82ead21cfa532da2e",
+    "url": "/css/chunk-111ad070.f9f116bc.css"
+  },
+  {
+    "revision": "1dd82ead21cfa532da2e",
+    "url": "/js/chunk-111ad070.46a9fa8f.js"
+  },
+  {
+    "revision": "81eef3bb881615776026",
+    "url": "/css/chunk-1eddfe18.0b04f0b0.css"
+  },
+  {
+    "revision": "81eef3bb881615776026",
+    "url": "/js/chunk-1eddfe18.54fc2d3d.js"
   },
   {
     "revision": "3d4508348603313020ce",
@@ -36,6 +60,14 @@ self.__precacheManifest = [
     "url": "/js/chunk-2d2214ec.56585c38.js"
   },
   {
+    "revision": "1924f116b02476384ffd",
+    "url": "/css/chunk-31974d0b.2aeedad7.css"
+  },
+  {
+    "revision": "1924f116b02476384ffd",
+    "url": "/js/chunk-31974d0b.2004ddac.js"
+  },
+  {
     "revision": "4aa3ff4d66083e3c8bff",
     "url": "/css/chunk-372026aa.8f90ebc7.css"
   },
@@ -44,28 +76,12 @@ self.__precacheManifest = [
     "url": "/js/chunk-372026aa.b801db5e.js"
   },
   {
-    "revision": "e06ed6f1be89c790f282",
-    "url": "/css/chunk-3b994858.77875612.css"
-  },
-  {
-    "revision": "e06ed6f1be89c790f282",
-    "url": "/js/chunk-3b994858.45667302.js"
-  },
-  {
     "revision": "022e3ff1456ea7c44a0d",
     "url": "/css/chunk-4e58b1b2.3a7c2187.css"
   },
   {
     "revision": "022e3ff1456ea7c44a0d",
     "url": "/js/chunk-4e58b1b2.d1c35118.js"
-  },
-  {
-    "revision": "9fb2e8a1cf948fb268c5",
-    "url": "/css/chunk-4ff0ec2d.40159efe.css"
-  },
-  {
-    "revision": "9fb2e8a1cf948fb268c5",
-    "url": "/js/chunk-4ff0ec2d.5e53381d.js"
   },
   {
     "revision": "8699dc7cb67a8a27fb68",
@@ -84,22 +100,6 @@ self.__precacheManifest = [
     "url": "/js/chunk-87754724.224a3f6e.js"
   },
   {
-    "revision": "4f55def9d108a46da8e8",
-    "url": "/css/chunk-964faa10.ead53993.css"
-  },
-  {
-    "revision": "4f55def9d108a46da8e8",
-    "url": "/js/chunk-964faa10.697d8553.js"
-  },
-  {
-    "revision": "c5e323f4f1ee01039433",
-    "url": "/css/chunk-f62b583a.efc372f0.css"
-  },
-  {
-    "revision": "c5e323f4f1ee01039433",
-    "url": "/js/chunk-f62b583a.b93ba31e.js"
-  },
-  {
     "revision": "7bfe3461da886db86e23",
     "url": "/css/chunk-ff570aa0.40d7c236.css"
   },
@@ -112,12 +112,12 @@ self.__precacheManifest = [
     "url": "/js/chunk-vendors.f6add8ff.js"
   },
   {
-    "revision": "d33392a1cabdc852c86a7d4e094ca940",
-    "url": "/img/5-years-devcon.d33392a1.png"
-  },
-  {
     "revision": "8524c962110d69bacc3609be3e14e1fd",
     "url": "/img/card-author-frame.8524c962.svg"
+  },
+  {
+    "revision": "d33392a1cabdc852c86a7d4e094ca940",
+    "url": "/img/5-years-devcon.d33392a1.png"
   },
   {
     "revision": "2b2c92579c4eb6d68b91faa19b81e6f2",
@@ -168,7 +168,7 @@ self.__precacheManifest = [
     "url": "/img/level.895cd7e8.svg"
   },
   {
-    "revision": "e4a87a643b851b47d1365e6a859e8c22",
+    "revision": "3f2f2798249b1641c52a69d5fd9790fa",
     "url": "/index.html"
   },
   {
@@ -252,12 +252,12 @@ self.__precacheManifest = [
     "url": "/img/sponsors/elastic.png"
   },
   {
-    "revision": "b94eeb67ea739ef4778d35d9b36319cd",
-    "url": "/img/sponsors/Esokia_logo_RGB.png"
-  },
-  {
     "revision": "7e06e4b06365d4e7ce1a6569d8f34710",
     "url": "/images/icons/icon-72x72.png"
+  },
+  {
+    "revision": "b94eeb67ea739ef4778d35d9b36319cd",
+    "url": "/img/sponsors/Esokia_logo_RGB.png"
   },
   {
     "revision": "94501689a7195ef5074c6a3183f08d23",
@@ -272,24 +272,28 @@ self.__precacheManifest = [
     "url": "/img/sponsors/africastalking.svg"
   },
   {
-    "revision": "7922fd9beb7b822e9bdc904f2b2c38ce",
-    "url": "/img/sponsors/dsogroup.jpg"
-  },
-  {
     "revision": "e2391a2124748e32af64a70eb31ea5cf",
     "url": "/img/sponsors/eventstore.svg"
+  },
+  {
+    "revision": "7922fd9beb7b822e9bdc904f2b2c38ce",
+    "url": "/img/sponsors/dsogroup.jpg"
   },
   {
     "revision": "709930520415045cbcdbb0dd9b0e0feb",
     "url": "/images/icons/icon-128x128.png"
   },
   {
+    "revision": "1ead179be0e9c3aab744119ec84655ca",
+    "url": "/img/sponsors/ictio.png"
+  },
+  {
     "revision": "758572d5ecd4dbf67773deaebacdcfcd",
     "url": "/img/sponsors/iame.svg"
   },
   {
-    "revision": "1ead179be0e9c3aab744119ec84655ca",
-    "url": "/img/sponsors/ictio.png"
+    "revision": "b546fc0fe685d41cebf2b781dc87125b",
+    "url": "/img/sponsors/logo-ceridian.png"
   },
   {
     "revision": "a709d0d55e09bd6a691822186bf2ed27",
@@ -298,10 +302,6 @@ self.__precacheManifest = [
   {
     "revision": "fcd324449f71f0aefc6622c1cfd1b4de",
     "url": "/img/sponsors/logoAEROW1.png"
-  },
-  {
-    "revision": "b546fc0fe685d41cebf2b781dc87125b",
-    "url": "/img/sponsors/logo-ceridian.png"
   },
   {
     "revision": "ed47d4510247602f0f1a72322c54c519",
@@ -316,12 +316,12 @@ self.__precacheManifest = [
     "url": "/img/sponsors/MSFT_logo_rgb_C-Gray.png"
   },
   {
-    "revision": "6eba10f91366e038072d5d29f46a12a3",
-    "url": "/img/sponsors/pluralsight-logo-black-500x155-v1.png"
-  },
-  {
     "revision": "44f4aaa33815c2d3abe0d93121f4b7e6",
     "url": "/img/sponsors/placeholder.png"
+  },
+  {
+    "revision": "6eba10f91366e038072d5d29f46a12a3",
+    "url": "/img/sponsors/pluralsight-logo-black-500x155-v1.png"
   },
   {
     "revision": "17e9556430c111b93d027ac17adaf8c3",
@@ -340,36 +340,36 @@ self.__precacheManifest = [
     "url": "/img/sponsors/SpoonLogov4_0.png"
   },
   {
-    "revision": "81285897fc73dd499deed699180d8845",
-    "url": "/img/sponsors/white_aerow.png"
+    "revision": "8ca05b80b0bd3bf68540f7087b0d6435",
+    "url": "/img/past-events/gwab2016.jpeg"
   },
   {
     "revision": "eac1362969217a4952e8f4b0969d0823",
     "url": "/img/past-events/gwab2015.jpeg"
   },
   {
-    "revision": "8ca05b80b0bd3bf68540f7087b0d6435",
-    "url": "/img/past-events/gwab2016.jpeg"
-  },
-  {
     "revision": "8f01932c8d29093ec9cf7fe9fec2ff92",
     "url": "/img/past-events/xamarin-2016.jpeg"
   },
   {
-    "revision": "689504b7c42eac0a61e0bf8d875005ea",
-    "url": "/img/sponsors/white_castille.png"
+    "revision": "81285897fc73dd499deed699180d8845",
+    "url": "/img/sponsors/white_aerow.png"
   },
   {
     "revision": "df8176d749dc39cb0ede4100f73dfed7",
     "url": "/img/sponsors/white_ceridian.png"
   },
   {
-    "revision": "d62406053623d977469e892f2942c5da",
-    "url": "/img/sponsors/white_dsogroup.png"
+    "revision": "689504b7c42eac0a61e0bf8d875005ea",
+    "url": "/img/sponsors/white_castille.png"
   },
   {
     "revision": "5f7471eeafd8c9d2fcc6bf0f967e9f10",
     "url": "/img/sponsors/white_chillisoft.png"
+  },
+  {
+    "revision": "d62406053623d977469e892f2942c5da",
+    "url": "/img/sponsors/white_dsogroup.png"
   },
   {
     "revision": "7ac22e872db615ef11199e26d548796b",
@@ -380,56 +380,56 @@ self.__precacheManifest = [
     "url": "/img/sponsors/white_Esokia_logo_RGB.png"
   },
   {
-    "revision": "d4770c27cee0f4f67872dff392331f61",
-    "url": "/img/sponsors/expat.png"
-  },
-  {
     "revision": "10d8c759a251ab11bfdf55a9d4fb35f8",
     "url": "/img/sponsors/expatblog.png"
   },
   {
-    "revision": "ca99ef71d91e16f84503e9442b22307f",
-    "url": "/img/sponsors/Graphics_Temple.jpg"
+    "revision": "d4770c27cee0f4f67872dff392331f61",
+    "url": "/img/sponsors/expat.png"
   },
   {
     "revision": "33d073a28b17dd56e7e3d8a18936f91b",
     "url": "/img/sponsors/extension_interactive.png"
   },
   {
-    "revision": "c8aee2e84a557295937825ab1552df41",
-    "url": "/img/sponsors/ios.jpg"
+    "revision": "ca99ef71d91e16f84503e9442b22307f",
+    "url": "/img/sponsors/Graphics_Temple.jpg"
   },
   {
     "revision": "50941e74bbe481b23667856416faaf95",
     "url": "/img/sponsors/white_eventstore.svg"
   },
   {
+    "revision": "c8aee2e84a557295937825ab1552df41",
+    "url": "/img/sponsors/ios.jpg"
+  },
+  {
     "revision": "3c0a2f499106df8d0627aedcea0fa292",
     "url": "/img/sponsors/white_expatblog.png"
   },
   {
-    "revision": "edb1ac364b305d6423e098622d365218",
-    "url": "/img/sponsors/white_expat.png"
-  },
-  {
-    "revision": "d4bb8794afb0a27b9d621cb6b1d44c27",
-    "url": "/img/sponsors/white_extension_interactive.png"
+    "revision": "604d9bc1ec9668097beb479b672ee67b",
+    "url": "/img/sponsors/lexpress.jpg"
   },
   {
     "revision": "c9c2604633030f3010ec57ecf500975f",
     "url": "/img/sponsors/jetbrains.png"
   },
   {
+    "revision": "d4bb8794afb0a27b9d621cb6b1d44c27",
+    "url": "/img/sponsors/white_extension_interactive.png"
+  },
+  {
     "revision": "23dcfa70400c86c175b5f0baeed28fb1",
     "url": "/img/sponsors/white_Graphics_Temple.png"
   },
   {
-    "revision": "86a1e163b5e237e220e3cd7cc95f6e7d",
-    "url": "/img/sponsors/white_iame.svg"
+    "revision": "edb1ac364b305d6423e098622d365218",
+    "url": "/img/sponsors/white_expat.png"
   },
   {
-    "revision": "604d9bc1ec9668097beb479b672ee67b",
-    "url": "/img/sponsors/lexpress.jpg"
+    "revision": "86a1e163b5e237e220e3cd7cc95f6e7d",
+    "url": "/img/sponsors/white_iame.svg"
   },
   {
     "revision": "75df37330bc10b7000914b3d0a35cd47",
@@ -440,20 +440,12 @@ self.__precacheManifest = [
     "url": "/img/sponsors/MariaDB.png"
   },
   {
-    "revision": "c2c87d02f9a68383835f98af934a8a5c",
-    "url": "/img/sponsors/MCB-Logo.png"
-  },
-  {
     "revision": "cc68c423c48ecb44df779f77952258fa",
     "url": "/img/sponsors/white_ictio.png"
   },
   {
-    "revision": "7825cff118cfa1837f0bb044ed7b027d",
-    "url": "/img/sponsors/white_ios.png"
-  },
-  {
-    "revision": "527eeb03be100f4a9c99e68c366fb4a2",
-    "url": "/img/sponsors/white_jetbrains.svg"
+    "revision": "c2c87d02f9a68383835f98af934a8a5c",
+    "url": "/img/sponsors/MCB-Logo.png"
   },
   {
     "revision": "e83a8f9df18d48611b0e27c3b7aa3120",
@@ -464,44 +456,36 @@ self.__precacheManifest = [
     "url": "/img/sponsors/redgate_logo_2016.png"
   },
   {
-    "revision": "5ba8ce3871f928b59e7d1254ccb0bfdd",
-    "url": "/img/sponsors/RossConsultingLogo.png"
-  },
-  {
     "revision": "88b35a29f7f6f7d0a665839aac743c27",
     "url": "/img/sponsors/SDWLogo.png"
   },
   {
-    "revision": "d79eb25fde6def43f402466e62adc66e",
-    "url": "/img/sponsors/Turbine_logo_quad.jpg"
+    "revision": "5ba8ce3871f928b59e7d1254ccb0bfdd",
+    "url": "/img/sponsors/RossConsultingLogo.png"
+  },
+  {
+    "revision": "7825cff118cfa1837f0bb044ed7b027d",
+    "url": "/img/sponsors/white_ios.png"
+  },
+  {
+    "revision": "527eeb03be100f4a9c99e68c366fb4a2",
+    "url": "/img/sponsors/white_jetbrains.svg"
   },
   {
     "revision": "005491f99dac320ac0a710db6557f8a2",
     "url": "/img/sponsors/white_lsldigital.png"
   },
   {
+    "revision": "d79eb25fde6def43f402466e62adc66e",
+    "url": "/img/sponsors/Turbine_logo_quad.jpg"
+  },
+  {
     "revision": "62ac7925e6a0f834d4ff8a88a954825a",
     "url": "/img/sponsors/white_africastalking.svg"
   },
   {
-    "revision": "dbfb702157cad8fd1512f00fb3207186",
-    "url": "/img/sponsors/white_MCB-Logo.png"
-  },
-  {
     "revision": "c21d48af07215e430d0409863dbc1e1d",
     "url": "/img/sponsors/white_maureva.png"
-  },
-  {
-    "revision": "aa9ee6c1c0ffd2000c28d444350f4f49",
-    "url": "/img/sponsors/white_rogers.png"
-  },
-  {
-    "revision": "25fad3605e005ef0d760ae9f67ce1849",
-    "url": "/img/sponsors/white_SDWLogo.png"
-  },
-  {
-    "revision": "cd6dfec27da2b776a8aef25b1e0b9f42",
-    "url": "/img/sponsors/white_SpoonLogov4_0.png"
   },
   {
     "revision": "21b4971ca5636249636f9bfbb5b5276e",
@@ -512,16 +496,28 @@ self.__precacheManifest = [
     "url": "/images/icons/icon-152x152.png"
   },
   {
-    "revision": "d01e66ea5718f0f09bd0a11032d773ce",
-    "url": "/img/sponsors/white_teamonite.png"
+    "revision": "aa9ee6c1c0ffd2000c28d444350f4f49",
+    "url": "/img/sponsors/white_rogers.png"
   },
   {
-    "revision": "f35d41df64d2ffdbc1cae792a29b6abe",
-    "url": "/robots.txt"
+    "revision": "25fad3605e005ef0d760ae9f67ce1849",
+    "url": "/img/sponsors/white_SDWLogo.png"
+  },
+  {
+    "revision": "dbfb702157cad8fd1512f00fb3207186",
+    "url": "/img/sponsors/white_MCB-Logo.png"
+  },
+  {
+    "revision": "cd6dfec27da2b776a8aef25b1e0b9f42",
+    "url": "/img/sponsors/white_SpoonLogov4_0.png"
   },
   {
     "revision": "4dfb0dc4864c50c5a1bd5c13206306b2",
     "url": "/img/sponsors/MaurevaBleu.png"
+  },
+  {
+    "revision": "d01e66ea5718f0f09bd0a11032d773ce",
+    "url": "/img/sponsors/white_teamonite.png"
   },
   {
     "revision": "93f04600c09b1b4b480b5075c6b5d28c",
@@ -534,6 +530,10 @@ self.__precacheManifest = [
   {
     "revision": "2faf29a1874650787d53dc9b5db9b770",
     "url": "/img/past-events/devcon_2016.jpg"
+  },
+  {
+    "revision": "f35d41df64d2ffdbc1cae792a29b6abe",
+    "url": "/robots.txt"
   },
   {
     "revision": "7201e53ecd26ea1c20ccf08e529963ef",
@@ -560,12 +560,12 @@ self.__precacheManifest = [
     "url": "/images/icons/icon-192x192.png"
   },
   {
-    "revision": "14188aa598c6ff2afc785b584bf340ce",
-    "url": "/img/bg/texture.png"
-  },
-  {
     "revision": "6aebe6ca73ccd7b224324cdfc6fdf68c",
     "url": "/img/sponsors/ios.png"
+  },
+  {
+    "revision": "14188aa598c6ff2afc785b584bf340ce",
+    "url": "/img/bg/texture.png"
   },
   {
     "revision": "bcee5d5e7637497fea5b89f9cbce42e4",
@@ -628,16 +628,16 @@ self.__precacheManifest = [
     "url": "/img/sponsors/PDF_Print_LogoBigBangERP_500x500.pdf"
   },
   {
+    "revision": "3b77c38b2ffceaebcf72801f3086e035",
+    "url": "/img/intro.jpg"
+  },
+  {
     "revision": "68397be335500b867fcb5a375c5df5b0",
     "url": "/img/sponsors/EPS_Web_LogoBigBangERP_500x500.eps"
   },
   {
     "revision": "b666c43e843061a8f6e760bf627971a6",
     "url": "/img/speakers/josh-long.jpg"
-  },
-  {
-    "revision": "3b77c38b2ffceaebcf72801f3086e035",
-    "url": "/img/intro.jpg"
   },
   {
     "revision": "fc1ac07c3027f285437eb4fb23aae033",

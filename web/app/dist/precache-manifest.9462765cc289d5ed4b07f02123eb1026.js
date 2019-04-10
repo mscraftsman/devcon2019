@@ -44,20 +44,20 @@ self.__precacheManifest = [
     "url": "/js/chunk-2d2214ec.6cf494be.js"
   },
   {
-    "revision": "55c1fdd7fe96853231a4",
-    "url": "/css/chunk-31974d0b.2aeedad7.css"
-  },
-  {
-    "revision": "55c1fdd7fe96853231a4",
-    "url": "/js/chunk-31974d0b.5f8cdbc3.js"
-  },
-  {
     "revision": "db4573f427188f229d2c",
     "url": "/css/chunk-372026aa.8f90ebc7.css"
   },
   {
     "revision": "db4573f427188f229d2c",
     "url": "/js/chunk-372026aa.a24bf739.js"
+  },
+  {
+    "revision": "c4aaf73a8d28495acf93",
+    "url": "/css/chunk-4a6e8dac.7b7bd991.css"
+  },
+  {
+    "revision": "c4aaf73a8d28495acf93",
+    "url": "/js/chunk-4a6e8dac.76647c5c.js"
   },
   {
     "revision": "139643d8c0276fc64a1f",
@@ -168,12 +168,8 @@ self.__precacheManifest = [
     "url": "/img/level.895cd7e8.svg"
   },
   {
-    "revision": "c9e79d0de8ae5d32eb1022783cd3f7b7",
+    "revision": "482e5db3dab77434756537bcb4488d80",
     "url": "/index.html"
-  },
-  {
-    "revision": "bbda0e770f1ab3bff62950d510934b69",
-    "url": "/img/sponsors/PDF_Print_LogoBigBangERP_500x500.pdf"
   },
   {
     "revision": "d01e66ea5718f0f09bd0a11032d773ce",
@@ -182,6 +178,10 @@ self.__precacheManifest = [
   {
     "revision": "cd6dfec27da2b776a8aef25b1e0b9f42",
     "url": "/img/sponsors/white_SpoonLogov4_0.png"
+  },
+  {
+    "revision": "25fad3605e005ef0d760ae9f67ce1849",
+    "url": "/img/sponsors/white_SDWLogo.png"
   },
   {
     "revision": "47ee867ad1fcfc2fc6471d43774cdc9e",
@@ -216,12 +216,16 @@ self.__precacheManifest = [
     "url": "/images/icons/icon-96x96.png"
   },
   {
+    "revision": "b6208863c9346c57f059b54bf8c7a955",
+    "url": "/images/icons/icon-384x384.png"
+  },
+  {
     "revision": "0657064c0f40aeacab0e345a358dc241",
     "url": "/img/banners/409x280.png"
   },
   {
-    "revision": "b6208863c9346c57f059b54bf8c7a955",
-    "url": "/images/icons/icon-384x384.png"
+    "revision": "763e8ac514e23cd485e3a854b9119846",
+    "url": "/images/icons/icon-512x512.png"
   },
   {
     "revision": "547b820b4ef67a0b33258b5c7c2033c1",
@@ -240,36 +244,32 @@ self.__precacheManifest = [
     "url": "/img/banners/MSCC-logo-inverted.svg"
   },
   {
-    "revision": "42e9acfa2ed9fd3cceaadd93e37a01c1",
-    "url": "/img/banners/sticker.png"
-  },
-  {
-    "revision": "763e8ac514e23cd485e3a854b9119846",
-    "url": "/images/icons/icon-512x512.png"
-  },
-  {
     "revision": "ace0677116657cd0b3d28bff0cd2548a",
     "url": "/img/banners/MSCC-logo-coloured.png"
   },
   {
-    "revision": "14188aa598c6ff2afc785b584bf340ce",
-    "url": "/img/bg/texture.png"
+    "revision": "e396d4bed0ba6c02755236044f5d3e52",
+    "url": "/img/banners/facebook-cover.jpg"
+  },
+  {
+    "revision": "42e9acfa2ed9fd3cceaadd93e37a01c1",
+    "url": "/img/banners/sticker.png"
   },
   {
     "revision": "365ece162151ade248adfcf54cface9a",
     "url": "/img/bg/team2018.jpg"
   },
   {
-    "revision": "733d2aebbf167053eee10b68a8940187",
-    "url": "/img/hashtag.png"
-  },
-  {
     "revision": "76918ffb10d096a5748165d4a0fe8388",
     "url": "/img/banners/twitter-cover.jpg"
   },
   {
-    "revision": "e396d4bed0ba6c02755236044f5d3e52",
-    "url": "/img/banners/facebook-cover.jpg"
+    "revision": "733d2aebbf167053eee10b68a8940187",
+    "url": "/img/hashtag.png"
+  },
+  {
+    "revision": "14188aa598c6ff2afc785b584bf340ce",
+    "url": "/img/bg/texture.png"
   },
   {
     "revision": "bcee5d5e7637497fea5b89f9cbce42e4",
@@ -292,24 +292,20 @@ self.__precacheManifest = [
     "url": "/img/past-events/gwab2015.jpeg"
   },
   {
-    "revision": "3b77c38b2ffceaebcf72801f3086e035",
-    "url": "/img/intro.jpg"
-  },
-  {
-    "revision": "03aa3347e87123a2dd85064f0640d079",
-    "url": "/img/past-events/devcon_2017.jpg"
-  },
-  {
     "revision": "8ca05b80b0bd3bf68540f7087b0d6435",
     "url": "/img/past-events/gwab2016.jpeg"
   },
   {
-    "revision": "8f01932c8d29093ec9cf7fe9fec2ff92",
-    "url": "/img/past-events/xamarin-2016.jpeg"
-  },
-  {
     "revision": "7201e53ecd26ea1c20ccf08e529963ef",
     "url": "/img/past-events/gwab2018.png"
+  },
+  {
+    "revision": "3b77c38b2ffceaebcf72801f3086e035",
+    "url": "/img/intro.jpg"
+  },
+  {
+    "revision": "8f01932c8d29093ec9cf7fe9fec2ff92",
+    "url": "/img/past-events/xamarin-2016.jpeg"
   },
   {
     "revision": "eebc8c2da043bfbe96b3238260fe0c64",
@@ -320,12 +316,16 @@ self.__precacheManifest = [
     "url": "/img/sponsors/africastalking.svg"
   },
   {
+    "revision": "03aa3347e87123a2dd85064f0640d079",
+    "url": "/img/past-events/devcon_2017.jpg"
+  },
+  {
     "revision": "ad46a10bb0b8ba2bd806b6b97cd01f33",
     "url": "/img/sponsors/bookeu.png"
   },
   {
-    "revision": "de0d9e5400466449ba34",
-    "url": "/js/app.7477c807.js"
+    "revision": "bb20ce880be8599125c5",
+    "url": "/js/app.623e708c.js"
   },
   {
     "revision": "ff8752c35f14e2c3a4e9",
@@ -356,20 +356,20 @@ self.__precacheManifest = [
     "url": "/img/sponsors/CsharpCornerSiteLogo.png"
   },
   {
-    "revision": "7922fd9beb7b822e9bdc904f2b2c38ce",
-    "url": "/img/sponsors/dsogroup.jpg"
+    "revision": "932ef1a6b215e387c9f06ef8d1abe491",
+    "url": "/img/past-events/devcon_2018.jpg"
   },
   {
     "revision": "9a9e7be6cdac8e4cc646e1f7aabb1c0e",
     "url": "/img/sponsors/dsogroup.png"
   },
   {
-    "revision": "8b7b8ed2e42aaeab185a0a1ceadae4eb",
-    "url": "/img/sponsors/elastic.png"
+    "revision": "7922fd9beb7b822e9bdc904f2b2c38ce",
+    "url": "/img/sponsors/dsogroup.jpg"
   },
   {
-    "revision": "932ef1a6b215e387c9f06ef8d1abe491",
-    "url": "/img/past-events/devcon_2018.jpg"
+    "revision": "8b7b8ed2e42aaeab185a0a1ceadae4eb",
+    "url": "/img/sponsors/elastic.png"
   },
   {
     "revision": "f37fd4b269a49cf60821aeb35a04a0db",
@@ -380,12 +380,12 @@ self.__precacheManifest = [
     "url": "/img/sponsors/ESET-01.png"
   },
   {
-    "revision": "68397be335500b867fcb5a375c5df5b0",
-    "url": "/img/sponsors/EPS_Web_LogoBigBangERP_500x500.eps"
-  },
-  {
     "revision": "b666c43e843061a8f6e760bf627971a6",
     "url": "/img/speakers/josh-long.jpg"
+  },
+  {
+    "revision": "68397be335500b867fcb5a375c5df5b0",
+    "url": "/img/sponsors/EPS_Web_LogoBigBangERP_500x500.eps"
   },
   {
     "revision": "fc1ac07c3027f285437eb4fb23aae033",
@@ -412,16 +412,16 @@ self.__precacheManifest = [
     "url": "/img/sponsors/extension_interactive.png"
   },
   {
+    "revision": "ca99ef71d91e16f84503e9442b22307f",
+    "url": "/img/sponsors/Graphics_Temple.jpg"
+  },
+  {
     "revision": "bd3bdbee59672c09d387f7c2d77edaa8",
     "url": "/img/sponsors/Graphics_Temple.png"
   },
   {
     "revision": "758572d5ecd4dbf67773deaebacdcfcd",
     "url": "/img/sponsors/iame.svg"
-  },
-  {
-    "revision": "ca99ef71d91e16f84503e9442b22307f",
-    "url": "/img/sponsors/Graphics_Temple.jpg"
   },
   {
     "revision": "1ead179be0e9c3aab744119ec84655ca",
@@ -432,24 +432,24 @@ self.__precacheManifest = [
     "url": "/img/sponsors/ios.jpg"
   },
   {
-    "revision": "c9c2604633030f3010ec57ecf500975f",
-    "url": "/img/sponsors/jetbrains.png"
-  },
-  {
     "revision": "6aebe6ca73ccd7b224324cdfc6fdf68c",
     "url": "/img/sponsors/ios.png"
+  },
+  {
+    "revision": "c9c2604633030f3010ec57ecf500975f",
+    "url": "/img/sponsors/jetbrains.png"
   },
   {
     "revision": "a709d0d55e09bd6a691822186bf2ed27",
     "url": "/img/sponsors/jetbrains.svg"
   },
   {
-    "revision": "604d9bc1ec9668097beb479b672ee67b",
-    "url": "/img/sponsors/lexpress.jpg"
-  },
-  {
     "revision": "75df37330bc10b7000914b3d0a35cd47",
     "url": "/img/sponsors/logo_lio.jpg"
+  },
+  {
+    "revision": "604d9bc1ec9668097beb479b672ee67b",
+    "url": "/img/sponsors/lexpress.jpg"
   },
   {
     "revision": "b546fc0fe685d41cebf2b781dc87125b",
@@ -460,12 +460,12 @@ self.__precacheManifest = [
     "url": "/img/sponsors/logoAEROW1.png"
   },
   {
-    "revision": "ed47d4510247602f0f1a72322c54c519",
-    "url": "/img/sponsors/lsldigital.png"
-  },
-  {
     "revision": "537eec35726b015db7c9b07bffb5c720",
     "url": "/img/sponsors/logoNvision.jpg"
+  },
+  {
+    "revision": "ed47d4510247602f0f1a72322c54c519",
+    "url": "/img/sponsors/lsldigital.png"
   },
   {
     "revision": "87acc4d2615f190810a5e3b856738aa5",
@@ -484,16 +484,16 @@ self.__precacheManifest = [
     "url": "/img/sponsors/MCB-Logo.png"
   },
   {
+    "revision": "ad6fc18369f64d2b1194434afe7e9370",
+    "url": "/img/sponsors/ndepend.png"
+  },
+  {
     "revision": "171e80c3d50341a75b53d1574392c3b7",
     "url": "/img/sponsors/MSFT_logo_rgb_C-Gray.png"
   },
   {
     "revision": "93f04600c09b1b4b480b5075c6b5d28c",
     "url": "/img/sponsors/nVisionIT.png"
-  },
-  {
-    "revision": "ad6fc18369f64d2b1194434afe7e9370",
-    "url": "/img/sponsors/ndepend.png"
   },
   {
     "revision": "e83a8f9df18d48611b0e27c3b7aa3120",
@@ -588,6 +588,10 @@ self.__precacheManifest = [
     "url": "/img/sponsors/white_expatblog.png"
   },
   {
+    "revision": "bbda0e770f1ab3bff62950d510934b69",
+    "url": "/img/sponsors/PDF_Print_LogoBigBangERP_500x500.pdf"
+  },
+  {
     "revision": "d4bb8794afb0a27b9d621cb6b1d44c27",
     "url": "/img/sponsors/white_extension_interactive.png"
   },
@@ -628,11 +632,7 @@ self.__precacheManifest = [
     "url": "/img/sponsors/white_rogers.png"
   },
   {
-    "revision": "25fad3605e005ef0d760ae9f67ce1849",
-    "url": "/img/sponsors/white_SDWLogo.png"
-  },
-  {
-    "revision": "de0d9e5400466449ba34",
+    "revision": "bb20ce880be8599125c5",
     "url": "/css/app.083e3788.css"
   },
   {

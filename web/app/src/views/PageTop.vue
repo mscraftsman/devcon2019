@@ -1,41 +1,5 @@
 <template>
   <div>
-    <h1 class="mega-rainbow">Top Speakers</h1>
-
-    <div class="page">
-      <div class="speakers-wrapper" v-if="speakerReady">
-        <div class="speaker-row header">
-          <div class="rank">#</div>
-          <div class="speaker-name">Name</div>
-          <div class="score">Score</div>
-        </div>
-        <div
-          class="speaker-row"
-          v-for="(speaker, index) in getLeaderboardSpeakers"
-          :key="index"
-          v-if="speaker.id != '' && allSpeakers[speaker.id] !== 'undefined'"
-        >
-          <div class="rank mega-rainbow">{{ index + 1 }}</div>
-          <div class="name">
-            <div
-              class="speak"
-              v-for="speaker in allSessions[speaker.id].speakers"
-            >{{ speaker.name }}</div>
-            <router-link
-              :to="{ name: 'session', params: { id: speaker.id } }"
-            >{{ allSessions[speaker.id].title }}</router-link>
-            <!--  -->
-          </div>
-          <div class="score">{{ speaker.score }}</div>
-        </div>
-      </div>
-      <div v-else>
-        <div class="loading__container">
-          <div class="loader-spinner"></div>
-          <h1>Loading</h1>
-        </div>
-      </div>
-    </div>
     <h1 class="mega-rainbow">Top Sessions</h1>
 
     <div class="page">
@@ -48,12 +12,36 @@
         <div class="speaker-row" v-for="(session, index) in getLeaderboardSessions" :key="index">
           <div class="rank mega-rainbow">{{ index + 1 }}</div>
           <div class="topic-content">
-            <router-link
-              :to="{ name: 'session', params: { id: session.id } }"
-              v-if="allSessions[session.id] !== 'undefined'"
-            >{{ allSessions[session.id].title }}</router-link>
+            <router-link :to="{ name: 'session', params: { id: session.id } }" v-if="allSessions[session.id] !== 'undefined'">{{ allSessions[session.id].title }}</router-link>
           </div>
           <div class="score value">{{ session.score }}</div>
+        </div>
+      </div>
+      <div v-else>
+        <div class="loading__container">
+          <div class="loader-spinner"></div>
+          <h1>Loading</h1>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="mega-rainbow">Top Speakers</h1>
+
+    <div class="page">
+      <div class="speakers-wrapper" v-if="speakerReady">
+        <div class="speaker-row header">
+          <div class="rank">#</div>
+          <div class="speaker-name">Name</div>
+          <div class="score">Score</div>
+        </div>
+        <div class="speaker-row" v-for="(speaker, index) in getLeaderboardSpeakers" :key="index" v-if="speaker.id != '' && allSpeakers[speaker.id] !== 'undefined'">
+          <div class="rank mega-rainbow">{{ index + 1 }}</div>
+          <div class="name">
+            <div class="speak" v-for="speaker in allSessions[speaker.id].speakers">{{ speaker.name }}</div>
+            <router-link :to="{ name: 'session', params: { id: speaker.id } }">{{ allSessions[speaker.id].title }}</router-link>
+            <!--  -->
+          </div>
+          <div class="score">{{ speaker.score }}</div>
         </div>
       </div>
       <div v-else>

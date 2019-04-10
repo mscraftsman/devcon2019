@@ -1,25 +1,19 @@
 <template>
   <div>
-    <h1 class="mega-rainbow" v-if="getBookmarks.length === 0">No bookmarks found</h1>
-    <h1 class="mega-rainbow" v-else>My Bookmarks</h1>
+    <h1 class="mega-rainbow" v-if="getBookmarks">My Bookmarks</h1>
+    <h1 class="mega-rainbow" v-else>No Bookmarks Found</h1>
 
     <div class="page">
-      <div class="speakers-wrapper" v-if="sessionsReady">
-        <!-- <div class="speaker-row header">
-          <div class="time">Time</div>
-          <div class="name">Topic</div>
-          <div class="score">Room</div>
-          <div class="score">Remove</div>
-        </div>-->
-        <div class="speaker-row" v-for="(id, index) in getBookmarks" :key="index">
+      <transition-group name="slide-fade speakers-wrapper" mode="out-in" v-if="sessionsReady">
+        <div class="speaker-row" v-for="(id, index) in getBookmarks" v-if="typeof sessionInfo(id) !== 'undefined'" :key="id">
           <div class="rank">
             <label for>Date/Time</label>
             <div class="value">
               <div class="day">{{ getDay(sessionInfo(id).startsAt) }} {{ time(sessionInfo(id).startsAt) }}</div>
-              <!-- <div class="time"></div> -->
+              <div class="time"></div>
             </div>
           </div>
-          <div class="name" v-if="sessionsReady">
+          <div class="name">
             <label class="session-label">Session</label>
             <div class="value">
               <router-link class="title" :to="{ name: 'session', params: { id: id } }">{{ sessionInfo(id).title }}</router-link>
@@ -48,7 +42,7 @@
             </button>
           </div>
         </div>
-      </div>
+      </transition-group>
       <div v-else>
         <div class="loading__container">
           <div class="loader-spinner"></div>
@@ -89,6 +83,9 @@ export default {
 
       return this.allSessions.filter(s => s.id in rawBookmarks).sort((a, b) => (a.startsAt < b.startsAt ? -1 : 1));
     },
+    showBoookmarks() {
+      console.log(this.getBookmarks);
+    },
     time: timeHelper,
     getDay: getDayHelper,
   },
@@ -96,6 +93,7 @@ export default {
     // this.fetchSessions();
   },
   mounted() {
+    // console.log(this.getBookmarks);
   },
   data() {
     return {

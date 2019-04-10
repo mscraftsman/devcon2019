@@ -16,13 +16,22 @@ Vue.use(VueProgressBar, {
   color: "#97D0E1",
   failedColor: "red",
   position: "relative",
-  height: "2px"
+  height: "2px",
 });
+
+// Vue.config.errorHandler = function(err, vm, info) {
+//   // console.log("error");
+//   // console.log(err);
+//   // console.log("vm");
+//   // console.log(vm);
+//   // console.log("info");
+//   // console.log(info);
+// };
 
 Vue.use(checkView);
 
 new Vue({
   router,
   store,
-  render: h => h(App)
+  render: h => h(App),
 }).$mount("#app");

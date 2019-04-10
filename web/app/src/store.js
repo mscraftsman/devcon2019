@@ -174,7 +174,8 @@ export default new Vuex.Store({
       state.myFeedbacks = payload;
     },
     [USER_BOOKMARK_SET](state, payload) {
-      state.bookmarks = payload;
+      Vue.set(state, "bookmarks", payload);
+      // state.bookmarks = payload;
     },
     [NOTIFICATION_ADD](state, payload) {
       let date = new Date().getTime();

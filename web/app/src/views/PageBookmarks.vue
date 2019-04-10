@@ -4,7 +4,7 @@
     <h1 class="mega-rainbow" v-else>No Bookmarks Found</h1>
 
     <div class="page">
-      <transition-group name="slide-fade speakers-wrapper" mode="out-in" v-if="sessionsReady">
+      <transition-group name="slide-fade" class="speakers-wrapper" mode="out-in" v-if="sessionsReady">
         <div class="speaker-row" v-for="(id, index) in getBookmarks" v-if="typeof sessionInfo(id) !== 'undefined'" :key="id">
           <div class="rank">
             <label for>Date/Time</label>

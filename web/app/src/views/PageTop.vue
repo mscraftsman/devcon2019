@@ -1,7 +1,6 @@
 <template>
   <div>
     <h1 class="mega-rainbow">Top Sessions</h1>
-    <button @click="shuffle()">Shuffle</button>
     <div class="page">
       <div class="speakers-wrapper" v-if="sessionsReady">
         <div class="speaker-row header">
@@ -84,9 +83,6 @@ export default {
   },
   methods: {
     ...mapActions({ userCheck: "USER_STATUS", LEADERBOARD_FETCH: "LEADERBOARD_FETCH" }),
-    shuffle: function() {
-      this.getLeaderboardSessions = this.getLeaderboardSessions.sort(() => Math.random() - 0.5);
-    },
   },
   mounted() {
     setInterval(() => {

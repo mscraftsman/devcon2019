@@ -52,6 +52,14 @@ self.__precacheManifest = [
     "url": "/js/chunk-372026aa.a24bf739.js"
   },
   {
+    "revision": "096a65ca6cd08746bae8",
+    "url": "/css/chunk-3a6b9775.0d61549c.css"
+  },
+  {
+    "revision": "096a65ca6cd08746bae8",
+    "url": "/js/chunk-3a6b9775.3ecceecc.js"
+  },
+  {
     "revision": "c4aaf73a8d28495acf93",
     "url": "/css/chunk-4a6e8dac.7b7bd991.css"
   },
@@ -74,14 +82,6 @@ self.__precacheManifest = [
   {
     "revision": "f83e5705ba77e2acfd5c",
     "url": "/js/chunk-722869b2.f01e4ccd.js"
-  },
-  {
-    "revision": "1cd05a30d492462c8b04",
-    "url": "/css/chunk-81462ad8.64ae2dc8.css"
-  },
-  {
-    "revision": "1cd05a30d492462c8b04",
-    "url": "/js/chunk-81462ad8.3ca7b489.js"
   },
   {
     "revision": "1a4ac915b807277efb3e",
@@ -168,7 +168,7 @@ self.__precacheManifest = [
     "url": "/img/level.895cd7e8.svg"
   },
   {
-    "revision": "482e5db3dab77434756537bcb4488d80",
+    "revision": "5347c06ad459074221b5f0a2ce2c4576",
     "url": "/index.html"
   },
   {
@@ -216,24 +216,20 @@ self.__precacheManifest = [
     "url": "/images/icons/icon-96x96.png"
   },
   {
-    "revision": "b6208863c9346c57f059b54bf8c7a955",
-    "url": "/images/icons/icon-384x384.png"
+    "revision": "547b820b4ef67a0b33258b5c7c2033c1",
+    "url": "/img/banners/970x90.png"
   },
   {
     "revision": "0657064c0f40aeacab0e345a358dc241",
     "url": "/img/banners/409x280.png"
   },
   {
-    "revision": "763e8ac514e23cd485e3a854b9119846",
-    "url": "/images/icons/icon-512x512.png"
+    "revision": "b6208863c9346c57f059b54bf8c7a955",
+    "url": "/images/icons/icon-384x384.png"
   },
   {
-    "revision": "547b820b4ef67a0b33258b5c7c2033c1",
-    "url": "/img/banners/970x90.png"
-  },
-  {
-    "revision": "cfa99d02b06e800731a2e4e2ec209eaf",
-    "url": "/img/banners/720x200.png"
+    "revision": "ace0677116657cd0b3d28bff0cd2548a",
+    "url": "/img/banners/MSCC-logo-coloured.png"
   },
   {
     "revision": "46fbe06b1dbdf67f8b051dec38e2c8ae",
@@ -244,16 +240,12 @@ self.__precacheManifest = [
     "url": "/img/banners/MSCC-logo-inverted.svg"
   },
   {
-    "revision": "ace0677116657cd0b3d28bff0cd2548a",
-    "url": "/img/banners/MSCC-logo-coloured.png"
-  },
-  {
-    "revision": "e396d4bed0ba6c02755236044f5d3e52",
-    "url": "/img/banners/facebook-cover.jpg"
-  },
-  {
     "revision": "42e9acfa2ed9fd3cceaadd93e37a01c1",
     "url": "/img/banners/sticker.png"
+  },
+  {
+    "revision": "763e8ac514e23cd485e3a854b9119846",
+    "url": "/images/icons/icon-512x512.png"
   },
   {
     "revision": "365ece162151ade248adfcf54cface9a",
@@ -268,8 +260,20 @@ self.__precacheManifest = [
     "url": "/img/hashtag.png"
   },
   {
+    "revision": "cfa99d02b06e800731a2e4e2ec209eaf",
+    "url": "/img/banners/720x200.png"
+  },
+  {
     "revision": "14188aa598c6ff2afc785b584bf340ce",
     "url": "/img/bg/texture.png"
+  },
+  {
+    "revision": "e396d4bed0ba6c02755236044f5d3e52",
+    "url": "/img/banners/facebook-cover.jpg"
+  },
+  {
+    "revision": "18c9e262597e29ec7ca3d995904f4679",
+    "url": "/img/og-image.jpg"
   },
   {
     "revision": "bcee5d5e7637497fea5b89f9cbce42e4",
@@ -278,10 +282,6 @@ self.__precacheManifest = [
   {
     "revision": "2faf29a1874650787d53dc9b5db9b770",
     "url": "/img/past-events/devcon_2016.jpg"
-  },
-  {
-    "revision": "18c9e262597e29ec7ca3d995904f4679",
-    "url": "/img/og-image.jpg"
   },
   {
     "revision": "599ecf430f7fff51a3f54ab7157e6e1d",
@@ -296,16 +296,16 @@ self.__precacheManifest = [
     "url": "/img/past-events/gwab2016.jpeg"
   },
   {
-    "revision": "7201e53ecd26ea1c20ccf08e529963ef",
-    "url": "/img/past-events/gwab2018.png"
-  },
-  {
-    "revision": "3b77c38b2ffceaebcf72801f3086e035",
-    "url": "/img/intro.jpg"
-  },
-  {
     "revision": "8f01932c8d29093ec9cf7fe9fec2ff92",
     "url": "/img/past-events/xamarin-2016.jpeg"
+  },
+  {
+    "revision": "932ef1a6b215e387c9f06ef8d1abe491",
+    "url": "/img/past-events/devcon_2018.jpg"
+  },
+  {
+    "revision": "7201e53ecd26ea1c20ccf08e529963ef",
+    "url": "/img/past-events/gwab2018.png"
   },
   {
     "revision": "eebc8c2da043bfbe96b3238260fe0c64",
@@ -316,20 +316,24 @@ self.__precacheManifest = [
     "url": "/img/sponsors/africastalking.svg"
   },
   {
-    "revision": "03aa3347e87123a2dd85064f0640d079",
-    "url": "/img/past-events/devcon_2017.jpg"
+    "revision": "3b77c38b2ffceaebcf72801f3086e035",
+    "url": "/img/intro.jpg"
   },
   {
     "revision": "ad46a10bb0b8ba2bd806b6b97cd01f33",
     "url": "/img/sponsors/bookeu.png"
   },
   {
-    "revision": "bb20ce880be8599125c5",
-    "url": "/js/app.623e708c.js"
+    "revision": "959971d6de2e73e7e378",
+    "url": "/js/app.00a65135.js"
   },
   {
     "revision": "ff8752c35f14e2c3a4e9",
     "url": "/js/chunk-0258206e.5c68d1bf.js"
+  },
+  {
+    "revision": "03aa3347e87123a2dd85064f0640d079",
+    "url": "/img/past-events/devcon_2017.jpg"
   },
   {
     "revision": "eaacf5db8aee30eab625958ba63c3e7e",
@@ -348,28 +352,24 @@ self.__precacheManifest = [
     "url": "/img/sponsors/Checkout_Large.png"
   },
   {
-    "revision": "4ee0a2f565717cc9de299f4a8d4e413a",
-    "url": "/img/sponsors/chillisoft.png"
-  },
-  {
     "revision": "462020c6dd8f8f6c31930a777ed9e86a",
     "url": "/img/sponsors/CsharpCornerSiteLogo.png"
   },
   {
-    "revision": "932ef1a6b215e387c9f06ef8d1abe491",
-    "url": "/img/past-events/devcon_2018.jpg"
+    "revision": "4ee0a2f565717cc9de299f4a8d4e413a",
+    "url": "/img/sponsors/chillisoft.png"
   },
   {
     "revision": "9a9e7be6cdac8e4cc646e1f7aabb1c0e",
     "url": "/img/sponsors/dsogroup.png"
   },
   {
-    "revision": "7922fd9beb7b822e9bdc904f2b2c38ce",
-    "url": "/img/sponsors/dsogroup.jpg"
-  },
-  {
     "revision": "8b7b8ed2e42aaeab185a0a1ceadae4eb",
     "url": "/img/sponsors/elastic.png"
+  },
+  {
+    "revision": "7922fd9beb7b822e9bdc904f2b2c38ce",
+    "url": "/img/sponsors/dsogroup.jpg"
   },
   {
     "revision": "f37fd4b269a49cf60821aeb35a04a0db",
@@ -380,16 +380,16 @@ self.__precacheManifest = [
     "url": "/img/sponsors/ESET-01.png"
   },
   {
-    "revision": "b666c43e843061a8f6e760bf627971a6",
-    "url": "/img/speakers/josh-long.jpg"
-  },
-  {
     "revision": "68397be335500b867fcb5a375c5df5b0",
     "url": "/img/sponsors/EPS_Web_LogoBigBangERP_500x500.eps"
   },
   {
     "revision": "fc1ac07c3027f285437eb4fb23aae033",
     "url": "/img/sponsors/EPS_Print_LogoBigBangERP_500x500.eps"
+  },
+  {
+    "revision": "b666c43e843061a8f6e760bf627971a6",
+    "url": "/img/speakers/josh-long.jpg"
   },
   {
     "revision": "b94eeb67ea739ef4778d35d9b36319cd",
@@ -444,12 +444,12 @@ self.__precacheManifest = [
     "url": "/img/sponsors/jetbrains.svg"
   },
   {
-    "revision": "75df37330bc10b7000914b3d0a35cd47",
-    "url": "/img/sponsors/logo_lio.jpg"
-  },
-  {
     "revision": "604d9bc1ec9668097beb479b672ee67b",
     "url": "/img/sponsors/lexpress.jpg"
+  },
+  {
+    "revision": "75df37330bc10b7000914b3d0a35cd47",
+    "url": "/img/sponsors/logo_lio.jpg"
   },
   {
     "revision": "b546fc0fe685d41cebf2b781dc87125b",
@@ -484,12 +484,12 @@ self.__precacheManifest = [
     "url": "/img/sponsors/MCB-Logo.png"
   },
   {
-    "revision": "ad6fc18369f64d2b1194434afe7e9370",
-    "url": "/img/sponsors/ndepend.png"
-  },
-  {
     "revision": "171e80c3d50341a75b53d1574392c3b7",
     "url": "/img/sponsors/MSFT_logo_rgb_C-Gray.png"
+  },
+  {
+    "revision": "ad6fc18369f64d2b1194434afe7e9370",
+    "url": "/img/sponsors/ndepend.png"
   },
   {
     "revision": "93f04600c09b1b4b480b5075c6b5d28c",
@@ -588,16 +588,16 @@ self.__precacheManifest = [
     "url": "/img/sponsors/white_expatblog.png"
   },
   {
-    "revision": "bbda0e770f1ab3bff62950d510934b69",
-    "url": "/img/sponsors/PDF_Print_LogoBigBangERP_500x500.pdf"
-  },
-  {
     "revision": "d4bb8794afb0a27b9d621cb6b1d44c27",
     "url": "/img/sponsors/white_extension_interactive.png"
   },
   {
     "revision": "23dcfa70400c86c175b5f0baeed28fb1",
     "url": "/img/sponsors/white_Graphics_Temple.png"
+  },
+  {
+    "revision": "bbda0e770f1ab3bff62950d510934b69",
+    "url": "/img/sponsors/PDF_Print_LogoBigBangERP_500x500.pdf"
   },
   {
     "revision": "86a1e163b5e237e220e3cd7cc95f6e7d",
@@ -632,7 +632,7 @@ self.__precacheManifest = [
     "url": "/img/sponsors/white_rogers.png"
   },
   {
-    "revision": "bb20ce880be8599125c5",
+    "revision": "959971d6de2e73e7e378",
     "url": "/css/app.083e3788.css"
   },
   {

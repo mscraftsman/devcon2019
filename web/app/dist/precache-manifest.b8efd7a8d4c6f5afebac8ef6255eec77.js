@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "4065af9e184a1adfb469",
+    "revision": "763952cf5c2ab4cfb760",
     "url": "/css/app.5baba0e1.css"
   },
   {
-    "revision": "4065af9e184a1adfb469",
-    "url": "/js/app.c7423571.js"
+    "revision": "763952cf5c2ab4cfb760",
+    "url": "/js/app.fd4ac9bb.js"
   },
   {
     "revision": "bca8ec580dac7adb96be",
@@ -14,6 +14,14 @@ self.__precacheManifest = [
   {
     "revision": "bca8ec580dac7adb96be",
     "url": "/js/chunk-0258206e.7fb3c611.js"
+  },
+  {
+    "revision": "988d25b1899de415749e",
+    "url": "/css/chunk-0639f5b4.073a8dbd.css"
+  },
+  {
+    "revision": "988d25b1899de415749e",
+    "url": "/js/chunk-0639f5b4.92097d3e.js"
   },
   {
     "revision": "81eef3bb881615776026",
@@ -66,14 +74,6 @@ self.__precacheManifest = [
   {
     "revision": "022e3ff1456ea7c44a0d",
     "url": "/js/chunk-4e58b1b2.d1c35118.js"
-  },
-  {
-    "revision": "8845baef6e26834c845c",
-    "url": "/css/chunk-6a0fe3c0.35374ddb.css"
-  },
-  {
-    "revision": "8845baef6e26834c845c",
-    "url": "/js/chunk-6a0fe3c0.64e8d435.js"
   },
   {
     "revision": "8699dc7cb67a8a27fb68",
@@ -168,16 +168,16 @@ self.__precacheManifest = [
     "url": "/img/level.895cd7e8.svg"
   },
   {
-    "revision": "f1c6339cf876dbd343fbd583369ebeff",
+    "revision": "d2f52b8453e79f56870ab7ad84e4722b",
     "url": "/index.html"
-  },
-  {
-    "revision": "5a7b3cf9c6a0d896cb102a726efb7f71",
-    "url": "/browserconfig.xml"
   },
   {
     "revision": "bd15a7b055463007de9b58c89d5740aa",
     "url": "/BingSiteAuth.xml"
+  },
+  {
+    "revision": "5a7b3cf9c6a0d896cb102a726efb7f71",
+    "url": "/browserconfig.xml"
   },
   {
     "revision": "0e77d90a4afeaf4f6a3c6076701d7e86",
@@ -364,12 +364,12 @@ self.__precacheManifest = [
     "url": "/img/sponsors/white_ceridian.png"
   },
   {
-    "revision": "d62406053623d977469e892f2942c5da",
-    "url": "/img/sponsors/white_dsogroup.png"
-  },
-  {
     "revision": "5f7471eeafd8c9d2fcc6bf0f967e9f10",
     "url": "/img/sponsors/white_chillisoft.png"
+  },
+  {
+    "revision": "d62406053623d977469e892f2942c5da",
+    "url": "/img/sponsors/white_dsogroup.png"
   },
   {
     "revision": "7ac22e872db615ef11199e26d548796b",
@@ -388,20 +388,20 @@ self.__precacheManifest = [
     "url": "/img/sponsors/expatblog.png"
   },
   {
-    "revision": "33d073a28b17dd56e7e3d8a18936f91b",
-    "url": "/img/sponsors/extension_interactive.png"
-  },
-  {
     "revision": "ca99ef71d91e16f84503e9442b22307f",
     "url": "/img/sponsors/Graphics_Temple.jpg"
   },
   {
-    "revision": "c8aee2e84a557295937825ab1552df41",
-    "url": "/img/sponsors/ios.jpg"
+    "revision": "33d073a28b17dd56e7e3d8a18936f91b",
+    "url": "/img/sponsors/extension_interactive.png"
   },
   {
     "revision": "50941e74bbe481b23667856416faaf95",
     "url": "/img/sponsors/white_eventstore.svg"
+  },
+  {
+    "revision": "c8aee2e84a557295937825ab1552df41",
+    "url": "/img/sponsors/ios.jpg"
   },
   {
     "revision": "edb1ac364b305d6423e098622d365218",
@@ -436,12 +436,12 @@ self.__precacheManifest = [
     "url": "/img/sponsors/logo_lio.jpg"
   },
   {
-    "revision": "87acc4d2615f190810a5e3b856738aa5",
-    "url": "/img/sponsors/MariaDB.png"
-  },
-  {
     "revision": "cc68c423c48ecb44df779f77952258fa",
     "url": "/img/sponsors/white_ictio.png"
+  },
+  {
+    "revision": "87acc4d2615f190810a5e3b856738aa5",
+    "url": "/img/sponsors/MariaDB.png"
   },
   {
     "revision": "c2c87d02f9a68383835f98af934a8a5c",
@@ -464,12 +464,12 @@ self.__precacheManifest = [
     "url": "/img/sponsors/redgate_logo_2016.png"
   },
   {
-    "revision": "88b35a29f7f6f7d0a665839aac743c27",
-    "url": "/img/sponsors/SDWLogo.png"
-  },
-  {
     "revision": "5ba8ce3871f928b59e7d1254ccb0bfdd",
     "url": "/img/sponsors/RossConsultingLogo.png"
+  },
+  {
+    "revision": "88b35a29f7f6f7d0a665839aac743c27",
+    "url": "/img/sponsors/SDWLogo.png"
   },
   {
     "revision": "d79eb25fde6def43f402466e62adc66e",
@@ -480,12 +480,12 @@ self.__precacheManifest = [
     "url": "/img/sponsors/white_lsldigital.png"
   },
   {
-    "revision": "c21d48af07215e430d0409863dbc1e1d",
-    "url": "/img/sponsors/white_maureva.png"
-  },
-  {
     "revision": "62ac7925e6a0f834d4ff8a88a954825a",
     "url": "/img/sponsors/white_africastalking.svg"
+  },
+  {
+    "revision": "c21d48af07215e430d0409863dbc1e1d",
+    "url": "/img/sponsors/white_maureva.png"
   },
   {
     "revision": "dbfb702157cad8fd1512f00fb3207186",
@@ -560,12 +560,12 @@ self.__precacheManifest = [
     "url": "/images/icons/icon-192x192.png"
   },
   {
-    "revision": "6aebe6ca73ccd7b224324cdfc6fdf68c",
-    "url": "/img/sponsors/ios.png"
-  },
-  {
     "revision": "14188aa598c6ff2afc785b584bf340ce",
     "url": "/img/bg/texture.png"
+  },
+  {
+    "revision": "6aebe6ca73ccd7b224324cdfc6fdf68c",
+    "url": "/img/sponsors/ios.png"
   },
   {
     "revision": "bcee5d5e7637497fea5b89f9cbce42e4",
@@ -584,12 +584,12 @@ self.__precacheManifest = [
     "url": "/img/banners/409x280.png"
   },
   {
-    "revision": "ace0677116657cd0b3d28bff0cd2548a",
-    "url": "/img/banners/MSCC-logo-coloured.png"
-  },
-  {
     "revision": "76918ffb10d096a5748165d4a0fe8388",
     "url": "/img/banners/twitter-cover.jpg"
+  },
+  {
+    "revision": "ace0677116657cd0b3d28bff0cd2548a",
+    "url": "/img/banners/MSCC-logo-coloured.png"
   },
   {
     "revision": "cfa99d02b06e800731a2e4e2ec209eaf",
@@ -612,12 +612,12 @@ self.__precacheManifest = [
     "url": "/images/icons/icon-512x512.png"
   },
   {
-    "revision": "03aa3347e87123a2dd85064f0640d079",
-    "url": "/img/past-events/devcon_2017.jpg"
-  },
-  {
     "revision": "599ecf430f7fff51a3f54ab7157e6e1d",
     "url": "/img/landing-bg.jpg"
+  },
+  {
+    "revision": "03aa3347e87123a2dd85064f0640d079",
+    "url": "/img/past-events/devcon_2017.jpg"
   },
   {
     "revision": "f37fd4b269a49cf60821aeb35a04a0db",

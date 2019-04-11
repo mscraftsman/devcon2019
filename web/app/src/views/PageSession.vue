@@ -211,6 +211,7 @@ export default {
       const FIFTEEN_MINUTES = 15 * 60 * 1000;
       const VOTE_CLOSED_AT = new Date("2019-04-13T17:30:00");
       let now = new Date().toLocaleString("en-US", { timeZone: "Indian/Mauritius" });
+      now = new Date(now)
       // let now = new Date();
 
       if (now > VOTE_CLOSED_AT) {

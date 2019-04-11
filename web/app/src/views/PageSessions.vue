@@ -230,7 +230,7 @@
                   </div>
                 </div>
                 <carousel :per-page="1" :autoplay="false" :loop="true"
-                  :paginationActiveColor="'#ff4932'" :autoplayHoverPause="true"
+                  :paginationActiveColor="'#ff4932'" :autoplayHoverPause="false"
                   :mouse-drag="false" :navigationEnabled="true"
                   :paginationColor="'#fff'" :paginationPadding="5"
                   :paginationSize="20" :centerMode="true" :navigationNextLabel="'›'"

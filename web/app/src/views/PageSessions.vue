@@ -11,7 +11,9 @@
       <div class="tabs-wrapper">
         <div class="tabs-container">
           <div class="right-wrapper">
-            <div class="tab-items" :class="{ active: getDay(group.groupName) === active }" @click="setActive(group.groupName)" v-for="group in sessions" :key="group.groupId" :label="getDay(group.groupName)">
+            <div class="tab-items" :class="{ active: getDay(group.groupName) === active }"
+              @click="setActive(group.groupName)" v-for="group in sessions"
+              :key="group.groupId" :label="getDay(group.groupName)">
               <div class="tab-label">{{ getDay(group.groupName) }}</div>
             </div>
           </div>
@@ -20,7 +22,8 @@
       <div class="scroll-wrapper">
         <div class="tabs-content">
           <transition name="fade" mode="out-in">
-            <div class="tabs-panel-content" v-if="getDay(group.groupName) === active" ref="content" v-for="(group, index, key) in sessions" :key="group.groupId">
+            <div class="tabs-panel-content" v-if="getDay(group.groupName) === active"
+              ref="content" v-for="(group, index, key) in sessions" :key="group.groupId">
               <div class="room-container no-responsive">
                 <div class="time-bar">
                   <div class="time-value">&nbsp;</div>
@@ -118,10 +121,13 @@
                   </div>
                   <div class="time-value"></div>
                 </div>
-                <div :class="'session-panes room-wrapper  ' + room.className" v-for="room in rooms" :key="'room_' + room.className">
+                <div :class="'session-panes room-wrapper  ' + room.className"
+                  v-for="room in rooms" :key="'room_' + room.className">
                   <div :class="'room-wrapper ' + room.className">
                     <div class="room-title">{{ room.label }}</div>
-                    <div v-for="session in getSessionsFor(index, room.label)" :key="room + session.id" v-bind:style="{ gridRow: timeToText(session.startsAt) + ' / span 2' }" class="session-card-wrapper" @click="setScrollPosition()">
+                    <div v-for="session in getSessionsFor(index, room.label)"
+                      :key="room + session.id" v-bind:style="{ gridRow: timeToText(session.startsAt) + ' / span 2' }"
+                      class="session-card-wrapper" @click="setScrollPosition()">
                       <session-card :session="session" />
                     </div>
                   </div>
@@ -223,11 +229,19 @@
                     <span>PM</span>
                   </div>
                 </div>
-                <carousel :per-page="1" :loop="true" :autoplayTimeout="3000" :paginationActiveColor="'#ff4932'" :autoplayHoverPause="true" :mouse-drag="false" :navigationEnabled="true" :paginationColor="'#fff'" :paginationPadding="5" :paginationSize="20" :centerMode="true" :navigationNextLabel="'›'" :navigationPrevLabel="'‹'">
-                  <slide :class="'session-panes room-wrapper  ' + room.className" v-for="room in rooms" :key="'room_' + room.className">
+                <carousel :per-page="1" :autoplay="false" :loop="true"
+                  :paginationActiveColor="'#ff4932'" :autoplayHoverPause="false"
+                  :mouse-drag="false" :navigationEnabled="true"
+                  :paginationColor="'#fff'" :paginationPadding="5"
+                  :paginationSize="20" :centerMode="true" :navigationNextLabel="'›'"
+                  :navigationPrevLabel="'‹'">
+                  <slide :class="'session-panes room-wrapper  ' + room.className"
+                    v-for="room in rooms" :key="'room_' + room.className">
                     <div :class="'room-wrapper ' + room.className">
                       <div class="room-title">{{ room.label }}</div>
-                      <div v-for="session in getSessionsFor(index, room.label)" :key="room + session.id" v-bind:style="{ gridRow: timeToText(session.startsAt) + ' / span 2' }" class="session-card-wrapper" @click="setScrollPosition()">
+                      <div v-for="session in getSessionsFor(index, room.label)"
+                        :key="room + session.id" v-bind:style="{ gridRow: timeToText(session.startsAt) + ' / span 2' }"
+                        class="session-card-wrapper" @click="setScrollPosition()">
                         <session-card :session="session" />
                       </div>
                     </div>
@@ -264,7 +278,7 @@ export default {
     };
   },
   filters: {
-    truncate: function (text, length, suffix) {
+    truncate: function(text, length, suffix) {
       return text.substring(0, length);
       // return text.substring(0, length) + suffix;
     },
@@ -274,21 +288,21 @@ export default {
 
     time: timeHelper,
     timeToText: timeToText,
-    sampleTime: function () {
+    sampleTime: function() {
       return "900AM";
     },
-    getDay: function (str) {
+    getDay: function(str) {
       return str.split(",")[0];
     },
-    setActive: function (str) {
+    setActive: function(str) {
       // Keep Track of previous Page Sessions activity in current Session
       this.$store.commit("SET_PAGESESSIONS_ACTIVE", str.split(",")[0]);
     },
-    setScrollPosition: function () {
+    setScrollPosition: function() {
       // Keep Track of previous scroll position
       this.$store.commit("SET_PAGESESSIONS_SCROLL_POSITION", document.scrollingElement.scrollTop);
     },
-    getSessionsFor: function (day, room) {
+    getSessionsFor: function(day, room) {
       // console.log(day + room);
       return this.sessions[day].sessions.filter(session => {
         if (session.room === room) {

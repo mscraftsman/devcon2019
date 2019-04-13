@@ -12,6 +12,9 @@
       <li class="responsive-display" v-else>
         <a @click="USER_LOGIN()">Login</a>
       </li>
+      <li>
+        <router-link :to="{ name: 'top' }">Leaderboard</router-link>
+      </li>
       <li class="responsive-display" v-if="user">
         <router-link :to="{ name: 'bookmarks' }">My bookmarks</router-link>
       </li>
@@ -27,9 +30,9 @@
       <li>
         <router-link :to="{ name: 'press' }">Press</router-link>
       </li>
-      <li>
-        <router-link :to="{ name: 'lifeatdevcon' }">Life at devcon</router-link>
-      </li>
+      <!-- <li> -->
+      <!-- <router-link :to="{ name: 'lifeatdevcon' }">Life at devcon</router-link> -->
+      <!-- </li> -->
       <li v-if="user" class="responsive-display">
         <a @click="USER_LOGOUT">Logout</a>
       </li>

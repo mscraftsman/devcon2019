@@ -208,6 +208,7 @@ export default {
       return false;
     },
     checkSessionStatus() {
+      return true;
       const FIFTEEN_MINUTES = 15 * 60 * 1000;
       const VOTE_CLOSED_AT = new Date("2019-04-13T17:30:00");
       let now = new Date().toLocaleString("en-US", { timeZone: "Indian/Mauritius" });

@@ -11,6 +11,12 @@
         </div>
       </slide>
       <slide class="slide">
+        <div class="slide-item slide-quote"><span class="mega-rainbow">leaderboard</span> of the conference.</div>
+        <div class="slide-item slide-button button">
+          <button-waw :theme="'#97d0e1'" :size="'50px'" :link="'/top'">Open Leaderboard</button-waw>
+        </div>
+      </slide>
+      <slide class="slide">
         <div class="slide-item slide-quote">
           <span class="mega-rainbow">For</span> Developers
           <br />

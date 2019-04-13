@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "d33ea608d6e4ae03f5e1",
-    "url": "/css/app.5baba0e1.css"
+    "revision": "c8709aa0132f4487b977",
+    "url": "/css/app.93c90fdb.css"
   },
   {
-    "revision": "d33ea608d6e4ae03f5e1",
-    "url": "/js/app.faa8d207.js"
+    "revision": "c8709aa0132f4487b977",
+    "url": "/js/app.7f92f523.js"
   },
   {
     "revision": "bca8ec580dac7adb96be",
@@ -14,14 +14,6 @@ self.__precacheManifest = [
   {
     "revision": "bca8ec580dac7adb96be",
     "url": "/js/chunk-0258206e.7fb3c611.js"
-  },
-  {
-    "revision": "988d25b1899de415749e",
-    "url": "/css/chunk-0639f5b4.073a8dbd.css"
-  },
-  {
-    "revision": "988d25b1899de415749e",
-    "url": "/js/chunk-0639f5b4.92097d3e.js"
   },
   {
     "revision": "62c8341c472fd495d51f",
@@ -74,6 +66,14 @@ self.__precacheManifest = [
   {
     "revision": "022e3ff1456ea7c44a0d",
     "url": "/js/chunk-4e58b1b2.d1c35118.js"
+  },
+  {
+    "revision": "ade8a65eae483a79426c",
+    "url": "/css/chunk-512eae40.919ab88e.css"
+  },
+  {
+    "revision": "ade8a65eae483a79426c",
+    "url": "/js/chunk-512eae40.6bf6ea1d.js"
   },
   {
     "revision": "8699dc7cb67a8a27fb68",
@@ -168,12 +168,8 @@ self.__precacheManifest = [
     "url": "/img/level.895cd7e8.svg"
   },
   {
-    "revision": "1ee14354529a020607d3e0e787fae727",
+    "revision": "649b0ae9a2cde9462f483e4daf8ba06b",
     "url": "/index.html"
-  },
-  {
-    "revision": "bd15a7b055463007de9b58c89d5740aa",
-    "url": "/BingSiteAuth.xml"
   },
   {
     "revision": "5a7b3cf9c6a0d896cb102a726efb7f71",
@@ -184,6 +180,10 @@ self.__precacheManifest = [
     "url": "/crossdomain.xml"
   },
   {
+    "revision": "bd15a7b055463007de9b58c89d5740aa",
+    "url": "/BingSiteAuth.xml"
+  },
+  {
     "revision": "47ee867ad1fcfc2fc6471d43774cdc9e",
     "url": "/googlefffaff65ccc044f0.html"
   },
@@ -192,12 +192,12 @@ self.__precacheManifest = [
     "url": "/humans.txt"
   },
   {
-    "revision": "46fbe06b1dbdf67f8b051dec38e2c8ae",
-    "url": "/img/banners/MSCC-logo-coloured.svg"
-  },
-  {
     "revision": "114500ecf643adfdf15743583dbe62a0",
     "url": "/img/banners/MSCC-logo-inverted.svg"
+  },
+  {
+    "revision": "46fbe06b1dbdf67f8b051dec38e2c8ae",
+    "url": "/img/banners/MSCC-logo-coloured.svg"
   },
   {
     "revision": "733d2aebbf167053eee10b68a8940187",
@@ -236,16 +236,16 @@ self.__precacheManifest = [
     "url": "/img/banners/sticker.png"
   },
   {
-    "revision": "ad46a10bb0b8ba2bd806b6b97cd01f33",
-    "url": "/img/sponsors/bookeu.png"
-  },
-  {
     "revision": "eaacf5db8aee30eab625958ba63c3e7e",
     "url": "/img/sponsors/castille.png"
   },
   {
     "revision": "f42558e781e022380108e3e7a2e8ae44",
     "url": "/img/sponsors/Ceridian.png"
+  },
+  {
+    "revision": "ad46a10bb0b8ba2bd806b6b97cd01f33",
+    "url": "/img/sponsors/bookeu.png"
   },
   {
     "revision": "8b7b8ed2e42aaeab185a0a1ceadae4eb",
@@ -300,12 +300,12 @@ self.__precacheManifest = [
     "url": "/img/sponsors/logo-ceridian.png"
   },
   {
-    "revision": "ed47d4510247602f0f1a72322c54c519",
-    "url": "/img/sponsors/lsldigital.png"
-  },
-  {
     "revision": "fcd324449f71f0aefc6622c1cfd1b4de",
     "url": "/img/sponsors/logoAEROW1.png"
+  },
+  {
+    "revision": "ed47d4510247602f0f1a72322c54c519",
+    "url": "/img/sponsors/lsldigital.png"
   },
   {
     "revision": "bf688499de81dea721f68d392092db48",
@@ -344,16 +344,16 @@ self.__precacheManifest = [
     "url": "/img/sponsors/white_aerow.png"
   },
   {
-    "revision": "8ca05b80b0bd3bf68540f7087b0d6435",
-    "url": "/img/past-events/gwab2016.jpeg"
-  },
-  {
     "revision": "eac1362969217a4952e8f4b0969d0823",
     "url": "/img/past-events/gwab2015.jpeg"
   },
   {
     "revision": "8f01932c8d29093ec9cf7fe9fec2ff92",
     "url": "/img/past-events/xamarin-2016.jpeg"
+  },
+  {
+    "revision": "8ca05b80b0bd3bf68540f7087b0d6435",
+    "url": "/img/past-events/gwab2016.jpeg"
   },
   {
     "revision": "689504b7c42eac0a61e0bf8d875005ea",
@@ -364,12 +364,12 @@ self.__precacheManifest = [
     "url": "/img/sponsors/white_ceridian.png"
   },
   {
-    "revision": "d62406053623d977469e892f2942c5da",
-    "url": "/img/sponsors/white_dsogroup.png"
-  },
-  {
     "revision": "5f7471eeafd8c9d2fcc6bf0f967e9f10",
     "url": "/img/sponsors/white_chillisoft.png"
+  },
+  {
+    "revision": "d62406053623d977469e892f2942c5da",
+    "url": "/img/sponsors/white_dsogroup.png"
   },
   {
     "revision": "7ac22e872db615ef11199e26d548796b",
@@ -388,12 +388,12 @@ self.__precacheManifest = [
     "url": "/img/sponsors/expatblog.png"
   },
   {
-    "revision": "ca99ef71d91e16f84503e9442b22307f",
-    "url": "/img/sponsors/Graphics_Temple.jpg"
-  },
-  {
     "revision": "33d073a28b17dd56e7e3d8a18936f91b",
     "url": "/img/sponsors/extension_interactive.png"
+  },
+  {
+    "revision": "ca99ef71d91e16f84503e9442b22307f",
+    "url": "/img/sponsors/Graphics_Temple.jpg"
   },
   {
     "revision": "50941e74bbe481b23667856416faaf95",
@@ -504,12 +504,12 @@ self.__precacheManifest = [
     "url": "/img/sponsors/white_SpoonLogov4_0.png"
   },
   {
-    "revision": "21b4971ca5636249636f9bfbb5b5276e",
-    "url": "/images/icons/icon-144x144.png"
-  },
-  {
     "revision": "583473675374f76c2a6a38c9a6a9e84e",
     "url": "/images/icons/icon-152x152.png"
+  },
+  {
+    "revision": "21b4971ca5636249636f9bfbb5b5276e",
+    "url": "/images/icons/icon-144x144.png"
   },
   {
     "revision": "d01e66ea5718f0f09bd0a11032d773ce",
@@ -596,12 +596,12 @@ self.__precacheManifest = [
     "url": "/img/banners/720x200.png"
   },
   {
-    "revision": "b6208863c9346c57f059b54bf8c7a955",
-    "url": "/images/icons/icon-384x384.png"
-  },
-  {
     "revision": "e396d4bed0ba6c02755236044f5d3e52",
     "url": "/img/banners/facebook-cover.jpg"
+  },
+  {
+    "revision": "b6208863c9346c57f059b54bf8c7a955",
+    "url": "/images/icons/icon-384x384.png"
   },
   {
     "revision": "932ef1a6b215e387c9f06ef8d1abe491",

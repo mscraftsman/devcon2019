@@ -57,9 +57,9 @@
           <a v-else class="rate notallowed countdown">
             <!-- <span>Voting not yet open &nbsp;//&nbsp;</span> -->
             <VueCountdown :time="new Date(session.startsAt).getTime() - new Date().getTime()">
-              <template slot-scope="props"
-                >{{ props.days }}d {{ props.hours }}hr {{ props.minutes }}min {{ props.seconds }}s until votes open</template
-              >
+              <template slot-scope="props">
+                {{ props.days }}d {{ props.hours }}hr {{ props.minutes }}min {{ props.seconds }}s until votes open
+              </template>
             </VueCountdown>
           </a>
         </div>
@@ -208,7 +208,6 @@ export default {
       return false;
     },
     checkSessionStatus() {
-      return true;
       const FIFTEEN_MINUTES = 15 * 60 * 1000;
       const VOTE_CLOSED_AT = new Date("2019-04-13T17:30:00");
       let now = new Date().toLocaleString("en-US", { timeZone: "Indian/Mauritius" });

@@ -35,35 +35,15 @@
           </a>
         </div>
         <div class="des-wrap rate" v-if="user">
-          <template v-if="checkSessionStatus">
-            <router-link v-if="voted" :to="{ name: 'feedback', params: { id: id } }" class="done">
-              <span class="svgicon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel">
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                </svg>
-              </span>
-              Rated. Thanks!
-            </router-link>
-            <router-link v-else :to="{ name: 'feedback', params: { id: id } }" class="rate">
+            <router-link :to="{ name: 'feedback', params: { id: id } }" class="rate">
               <span class="svgicon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel">
                   <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
                 </svg>
               </span>
               Rate this session
-            </router-link>
-          </template>
-          <a v-else class="rate notallowed countdown">
-            <!-- <span>Voting not yet open &nbsp;//&nbsp;</span> -->
-            <VueCountdown :time="new Date(session.startsAt).getTime() - new Date().getTime()">
-              <template slot-scope="props">
-                {{ props.days }}d {{ props.hours }}hr {{ props.minutes }}min {{ props.seconds }}s until votes open
-              </template>
-            </VueCountdown>
-          </a>
+            </router-link>          
         </div>
-
         <div class="des-wrap rate meetup" v-else>
           <a @click="USER_LOGIN()" class="rate">
             <span class="svgicon">

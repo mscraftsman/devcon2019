@@ -1,0 +1,1727 @@
+[
+  {
+    "groupId": 101,
+    "groupName": "Thursday, April 11, 2019",
+    "sessions": [
+      {
+        "questionAnswers": [],
+        "id": "540de6c5-a0f9-43d2-ae80-08808b38b02f",
+        "title": "Badge Pickup",
+        "description": "Pick up your Developers Conference 2019 badge...",
+        "startsAt": "2019-04-11T08:00:00",
+        "endsAt": "2019-04-11T09:30:00",
+        "isServiceSession": true,
+        "isPlenumSession": true,
+        "speakers": [],
+        "categories": [],
+        "roomId": 4090,
+        "room": "Educator 1"
+      },
+      {
+        "questionAnswers": [],
+        "id": "97596",
+        "title": "Cloud Study Jam",
+        "description": "Study Jams are community-run study groups for developers on Google Developers content, on various product topics. As a complement to DevCon, we will be running a Cloud Study jam side-event during the conference. \r\n\r\nAttendees should expect to learn the fundamentals of the Google Cloud Platform, how to run containers on it and how to use the platform for data engineering. \r\n\r\nYou will also get free access to the labs ($70+ value).  \r\n\r\nRequirements: Come with your laptops as sessions will be very hands-on.",
+        "startsAt": "2019-04-11T10:00:00",
+        "endsAt": "2019-04-11T14:00:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "54fe0f7c-f0f9-4ea2-aaf1-05e9d7e5fdc2",
+            "name": "Arreytambe Tabot"
+          }
+        ],
+        "categories": [],
+        "roomId": 4093,
+        "room": "Flying Dodo"
+      },
+      {
+        "questionAnswers": [],
+        "id": "36e155a1-e2ad-4e14-b30c-5d4c5bb2a1f4",
+        "title": "Opening Ceremony",
+        "description": "10:00 - Welcome address by Vanessa V.Chellen, CTO Extension Interactive\n\n10:15 - Address by Vincent Chatard, COO Mauritius Commercial Bank\n\n10:30  - Opening of Developer's conference 2019 by Jochen Kirstaetter, Founder MSCC",
+        "startsAt": "2019-04-11T10:00:00",
+        "endsAt": "2019-04-11T10:45:00",
+        "isServiceSession": true,
+        "isPlenumSession": true,
+        "speakers": [],
+        "categories": [],
+        "roomId": 4090,
+        "room": "Educator 1"
+      },
+      {
+        "questionAnswers": [],
+        "id": "115882",
+        "title": "Agile at MCB: From Vision to Reality",
+        "description": "Agile is now one of the most important buzzwords in the business and technology world thanks to its perceived benefits of delivering better value faster, by responding to Volatility, Uncertainty, Complexity and Ambiguity in the business environment.\r\n\r\nDespite this, the Banking sector has remained amongst the last strongholds of waterfall method. Switching from waterfall to agile isn’t an overnight change and requires a massive cultural shift. \r\n \r\nOne year after the set-up of its Digital Factory as an enabler towards its Digital Transformation, MCB is seeing some tangible early benefits of the adoption of agile. This new way of working is revitalizing the organization into a highly productive operating model centered around creating continuous customer value while fully engaging employees.\r\n",
+        "startsAt": "2019-04-11T11:00:00",
+        "endsAt": "2019-04-11T11:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "155ed8f6-a3ca-4bbe-9c90-1ffa7b93b1cb",
+            "name": "Vincent Chatard"
+          }
+        ],
+        "categories": [],
+        "roomId": 4091,
+        "room": "Educator 2"
+      },
+      {
+        "questionAnswers": [],
+        "id": "83749",
+        "title": "Spring and Kotlin",
+        "description": "Spring Boot, the convention-over-configuration centric framework from the Spring team at Pivotal, marries Spring's flexibility with conventional, common sense defaults to make application development on the JVM not just fly, but pleasant! Spring Boot aims to make address the common functional and non-functional requirements that gate quickly moving to production. The framework is as clean as it gets, wouldn't it be nice if the language matched its elegance?\r\n\r\nKotlin, the productivity-focused language from our friends at JetBrains, takes up the slack to make the experience leaner, cleaner and even more pleasant!\r\n\r\nThe Spring and Kotlin teams have worked hard to make sure that Kotlin and Spring Boot are a first-class experience for all developers trying to get to production, faster and safer. Come for the Spring and stay for the Bootiful Kotlin.\r\n\r\n",
+        "startsAt": "2019-04-11T11:00:00",
+        "endsAt": "2019-04-11T11:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "f2617bc2-d35e-4fd7-9cea-02060f3e1608",
+            "name": "Josh Long"
+          }
+        ],
+        "categories": [],
+        "roomId": 4090,
+        "room": "Educator 1"
+      },
+      {
+        "questionAnswers": [],
+        "id": "84065",
+        "title": "Web Components",
+        "description": "1.What are web components?\r\n2. Demo on how to create a web component using Stencil\r\n3. Demo on how to use the web component on frameworks or libraries.\r\n",
+        "startsAt": "2019-04-11T11:00:00",
+        "endsAt": "2019-04-11T11:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "a1afe56d-adc2-40fa-a6f2-7c66ae84a525",
+            "name": "Arvind Ballgobin"
+          }
+        ],
+        "categories": [],
+        "roomId": 4092,
+        "room": "Accelerator"
+      },
+      {
+        "questionAnswers": [],
+        "id": "85177",
+        "title": "A year with progressive web apps",
+        "description": "About a year ago we started using Progressive web apps. The idea behind PWA is to replace native mobile apps. In this talk, I will show you what is possible to build with PWA, what is the limitation and what we learn. And of course, you will see where PWA can be a good fit for your projects. \r\n\r\nProgressive Web Apps use modern web capabilities to deliver an app-like user experience. They evolve from pages in browser tabs to immersive, top-level apps, maintaining the web's low friction at every moment.\r\n\r\nThey are reliable, fast, engaging and delivering amazing UX to end users. And they are here! \r\n",
+        "startsAt": "2019-04-11T12:00:00",
+        "endsAt": "2019-04-11T12:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "c19d531b-5180-4946-9a95-1e06182aeb1b",
+            "name": "Antonio Peric-Mazar"
+          }
+        ],
+        "categories": [],
+        "roomId": 4092,
+        "room": "Accelerator"
+      },
+      {
+        "questionAnswers": [],
+        "id": "83748",
+        "title": "Bootiful Testing",
+        "description": "How would you feel if you knew that any pat of the code was at most a few minutes away from being shippable and delivered into production? How would you feel if you knew that any part of the code is a few ctrl+z's away from being shippable and delivered into production? Emboldened and confident? Test driven development (TDD) gives you that. TDD allows you to proceed with confidence that you're building the right thing. It provides you with imminent-horizons that you can meet and measure. TDD gives developers the confidence to go faster, secure in the knowledge that what they break they will fix and be able to improve. In this talk, join Spring Developer Advocate Josh Long (@starbuxman) as he looks at how to test Spring applications and services. We'll look at how to test basic components, mocks, how to take advantage of test slices, and how to test web applications. We'll also look at how to ensure that API producers and API consumers work well together using consumer driven contract testing (CDCT) without sacrificing the testing pyramid for end-to-end integration tests.\r\n\r\n",
+        "startsAt": "2019-04-11T12:00:00",
+        "endsAt": "2019-04-11T12:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "f2617bc2-d35e-4fd7-9cea-02060f3e1608",
+            "name": "Josh Long"
+          }
+        ],
+        "categories": [],
+        "roomId": 4090,
+        "room": "Educator 1"
+      },
+      {
+        "questionAnswers": [],
+        "id": "115353",
+        "title": "Working in Agile: Tips for techies creating awesome products",
+        "description": "Whether it’s Scrum, XP, Kanban (or whatever new thing exists), Agile is viewed as a way to deliver products to the market faster. However, what isn’t always emphasized is that Agile delivery methods actually make it easier for developers to build Awesome Products. In this talk, I’d like to share a few tips about how this is achieved along with a few practical examples. Come have fun and a few laughs.",
+        "startsAt": "2019-04-11T12:00:00",
+        "endsAt": "2019-04-11T12:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "ce733ef3-e83e-4314-86dc-56e108e514df",
+            "name": "Harold Campbell"
+          }
+        ],
+        "categories": [],
+        "roomId": 4091,
+        "room": "Educator 2"
+      },
+      {
+        "questionAnswers": [],
+        "id": "115413",
+        "title": "Doing Agile vs Being Agile",
+        "description": "Everybody seems to be 'doing' agile for the right reasons e.g. greater productivity, better products, faster time to market... what's the difference with 'being' agile ? ",
+        "startsAt": "2019-04-11T13:00:00",
+        "endsAt": "2019-04-11T13:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "462f2319-8811-4dbf-8c47-7e96f622865a",
+            "name": "Didier Bephage"
+          }
+        ],
+        "categories": [],
+        "roomId": 4091,
+        "room": "Educator 2"
+      },
+      {
+        "questionAnswers": [],
+        "id": "85105",
+        "title": "Now, Now-Now, or Just-Now: Building network-tolerant PWAs",
+        "description": "Web experiences are brittle. There are lots of things that break them: poor network coverage, over-subscribed access points, power interruptions and even cable theft. Historically, we have simply shrugged and given up, but now we can do better. The widespread availability of service worker, complemented with good tooling such as workbox, allow us to effectively address intermittent connectivity.\r\n\r\nThis code-oriented talk will show how to practically use workbox to create robust, network tolerant web experiences. It will cover the creation of service workers for preloading, caching, and even full offline support using the background sync API.",
+        "startsAt": "2019-04-11T13:00:00",
+        "endsAt": "2019-04-11T13:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "97cbb424-9994-42dd-a9b1-3de907fe3711",
+            "name": "Mike Geyser"
+          }
+        ],
+        "categories": [],
+        "roomId": 4092,
+        "room": "Accelerator"
+      },
+      {
+        "questionAnswers": [],
+        "id": "83747",
+        "title": "Reactive Spring",
+        "description": "Microservices and big-data increasingly confront us with the limitations of traditional input/output. In traditional IO, work that is IO-bound dominates threads. This wouldn't be such a big deal if we could add more threads cheaply, but threads are expensive on the JVM, and most other platforms. Even if threads were cheap and infinitely scalable, we'd still be confronted with the faulty nature of networks. Things break, and they often do so in subtle, but non-exceptional ways. Traditional approaches to integration bury the faulty nature of networks behind overly simplifying abstractions. We need something better.\r\n\r\nSpring Framework 5 is here ! It introduces the Spring developer to a growing world of support for reactive programming across the Spring portfolio, starting with a new Netty-based web runtime, component model and module called Spring WebFlux, and then continuing to Spring Data Kay, Spring Security 5.0, Spring Boot 2.0 and Spring Cloud Finchley. Sure, it sounds like a lot, but don't worry! Join me, your guide, Spring developer advocate Josh Long, and we'll explore the wacky, wonderful world of Reactive Spring together.\r\n\r\n",
+        "startsAt": "2019-04-11T13:00:00",
+        "endsAt": "2019-04-11T13:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "f2617bc2-d35e-4fd7-9cea-02060f3e1608",
+            "name": "Josh Long"
+          }
+        ],
+        "categories": [],
+        "roomId": 4090,
+        "room": "Educator 1"
+      },
+      {
+        "questionAnswers": [],
+        "id": "85112",
+        "title": "Build the Roof First",
+        "description": "The building metaphor that is so often applied to software development is broken. Why do we need to start with the foundations first? The roof we're building is virtual, it can float! So why not build it first? Or even better just the part that we need first.\r\n\r\nThe building metaphor that is so often applied to software development is broken. Why do we need to start with the foundations first? The roof we're building is virtual, it can float! So why not build it first? Or even better just the part that we need first.\r\n\r\nWe're so used to building software from the bottom up that we don't even realise that it involves an incredible amount of guess work and ultimately results in a lot of hidden waste.\r\n\r\nIn this talk I examine and challenge current thinking about the order in which we build software, thinking which I believe has been perpetuated by the building metaphor we use when we teach new software developers and when we communicate with non-developers in the industry.",
+        "startsAt": "2019-04-11T14:00:00",
+        "endsAt": "2019-04-11T14:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "f651b23c-5e1b-4420-b3ca-0b2adab84bf6",
+            "name": "Brendon Page"
+          }
+        ],
+        "categories": [],
+        "roomId": 4090,
+        "room": "Educator 1"
+      },
+      {
+        "questionAnswers": [],
+        "id": "72831",
+        "title": "Hands-on Vue.js",
+        "description": "Picking up a new framework can be a very daunting process specially for one who are just getting started. \r\n\r\nVue.js being my framework of choice for the last couple of years, I’d like to introduce it to an audience (beginners, curious people about Vue.js and those interested) and prove that a new JavaScript framework is easy to pick up and use. Nothing scary. \u2028\u2028The talk will cover how to easily create a simple Vue.js app and explain the folder structures, the two-way binding, components and so on. \r\n\r\nBasic knowledge of HTML, CSS and JavaScript are enough to grasp information from this talk. ",
+        "startsAt": "2019-04-11T14:00:00",
+        "endsAt": "2019-04-11T14:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "d1ed8271-abc3-4c25-bb7b-b9423c6ded49",
+            "name": "Humeira Diljore"
+          }
+        ],
+        "categories": [],
+        "roomId": 4092,
+        "room": "Accelerator"
+      },
+      {
+        "questionAnswers": [],
+        "id": "84178",
+        "title": "K2 Business process management",
+        "description": "How to build an mobile and web app in 15 min connected to SQL, Sharepoint and other third app",
+        "startsAt": "2019-04-11T14:00:00",
+        "endsAt": "2019-04-11T14:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "03699e05-2575-434d-821d-440d4f93877f",
+            "name": "Olivier MEYER"
+          }
+        ],
+        "categories": [],
+        "roomId": 4091,
+        "room": "Educator 2"
+      },
+      {
+        "questionAnswers": [],
+        "id": "b7eecf34-a49e-41c1-a435-cb65707dea96",
+        "title": "Event Store Meet and Greet",
+        "description": "Interested in new database technologies? Would you like to learn about distributed systems? \nCome and meet the Event Store team for a drink and nibbles and find out more!",
+        "startsAt": "2019-04-11T14:00:00",
+        "endsAt": "2019-04-11T17:00:00",
+        "isServiceSession": true,
+        "isPlenumSession": false,
+        "speakers": [],
+        "categories": [],
+        "roomId": 4093,
+        "room": "Flying Dodo"
+      },
+      {
+        "questionAnswers": [],
+        "id": "97126",
+        "title": "Build beautiful native apps on time record with Flutter",
+        "description": "This session would be an opportunity to introduce the mauritian developer community to the basics of flutter basics through a demo recreating the UI of the most downloaded Mauritian mobile app. \r\n\r\nBy the end of the session, attendees are expected to: \r\n\r\n- Understand the advantages of mobile app development with Flutter.\r\n- Be able to set up the different  tools required for Flutter development\r\n- Acquire a basic understanding of Flutter widgets functionalities.\r\n\r\nAgenda: \r\n\r\n* Introduction\r\n- The facilitators introduce themselves, the goals and the agenda of the session (5 min)\r\n\r\n*Brief history of the mobile development industry\r\n- Introducing the evolution of mobile development frameworks (android, react native, ect) along with the mobile dev community level of endorsement over time (15 min)\r\n\r\n* Comparing the different mobile development framework\r\n- Summarising the key element of each technology  such as their programming language, OS, native supports along with their main advantages and disadvantages (5 min)\r\n\r\n* Introducing Flutter and its game changing features.\r\n- This segment is meant to put Flutter in context by highlighting its advantages compared to other frameworks. Key differences such as the usages of the language Dart, native support and single coded base development for both IOS and Android would be put upfront.(10 min)\r\n\r\n* Familiarising with Flutter’s powerful widgets-based approach\r\n- This segment will be a technical explanation of the  functionalities that Flutter uses to render elements on the screen.  The most common widgets like the Row, the Column, the Container, the ListBuilder would be used as reference.(10 min)\r\n\r\n* Recreating MCB Juice UI with Flutter\r\n- This segment serves to highlight the ease of development and cross-platform deployment with Flutter. The Juice app is chosen example because the community is familiar with its functionalities (10 min)\r\n\r\n* Closing \r\n- Re-iterating on Flutter’s advantages and inviting the attendees to create a flutter community where people can collaborate on different projects and help each other learn faster and more efficiently (5 min)\r\n\r\n\r\n",
+        "startsAt": "2019-04-11T15:00:00",
+        "endsAt": "2019-04-11T15:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "4ae2c15b-2ec9-44f3-827d-ec04f7b074e1",
+            "name": "Olfa Fdhila"
+          }
+        ],
+        "categories": [],
+        "roomId": 4092,
+        "room": "Accelerator"
+      },
+      {
+        "questionAnswers": [],
+        "id": "97980",
+        "title": "Confirm your knowledge with a certification",
+        "description": "You probably graduated from university and you may hold some sort of degree in the field of IT or software engineering. Since then you working your daily job as a professional - either employed or freelancing. Over time you gain knowledge and valuable experience in the tools and programming languages you use. \r\n\r\nBut do you know whether your knowledge and experience is \"up to standards\"? Or how you would compare to other professionals in the same technology stack?\r\n\r\nCertifications in the industry can help with that. They are standardized world wide and give you an indicator about yourself. During the session you are going to hear about my experience with various certification exams over the past years, and why a constant, probably daily, learning attitude is essential for your career and personal growth in the field.\r\n\r\nLastly, you are going to learn how to stay motivated during the preparation for an exam and how to keep yourself accountable following the #100DaysOfExam approach.",
+        "startsAt": "2019-04-11T15:00:00",
+        "endsAt": "2019-04-11T15:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "4c563acb-7ae8-4b4d-9ddf-11c19a02b813",
+            "name": "Jochen Kirstätter"
+          }
+        ],
+        "categories": [],
+        "roomId": 4091,
+        "room": "Educator 2"
+      },
+      {
+        "questionAnswers": [],
+        "id": "99509",
+        "title": "Integrating Developer Experiences - Build Server Protocol and beyond",
+        "description": "IDEs - Integrated Development Environments - traditionally provide out of the box support for many of the tasks that go into making working software out of source code. But increasingly, developers expect to be able to use any one of a variety of special-purpose tools for each task. This shifts the focus of the IDE from \"Integrated\" to \"Integrating\" external tools into a coherent experience. \r\n\r\nEspecially in the Scala ecosystem, we have an increasing number of build tools to choose from. I have been focusing on integrating sbt and other new tools with the IntelliJ Scala plugin and will talk about challenges involved and how the Build Server Protocol makes it possible for IntelliJ to interface with any build tool.\r\n",
+        "startsAt": "2019-04-11T15:00:00",
+        "endsAt": "2019-04-11T15:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "37cfa614-39a0-4188-b0a7-3ad1c86b8294",
+            "name": "Justin Kaeser"
+          }
+        ],
+        "categories": [],
+        "roomId": 4090,
+        "room": "Educator 1"
+      },
+      {
+        "questionAnswers": [],
+        "id": "84055",
+        "title": "Boosting Custom Built Apps Capabilities With  Google APIs & GCP",
+        "description": "An Architectural overview and some demo of integration made with Google APIs and GCP to extend our in-house built business applications.",
+        "startsAt": "2019-04-11T16:00:00",
+        "endsAt": "2019-04-11T16:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "8abfdea3-a6cd-4436-8262-64c07ec13656",
+            "name": "Jean-Marc Desvaux"
+          }
+        ],
+        "categories": [],
+        "roomId": 4091,
+        "room": "Educator 2"
+      },
+      {
+        "questionAnswers": [],
+        "id": "85072",
+        "title": "How Deep Learning Works",
+        "description": "Everyone is talking of Artificial Intelligence today as the next Big Thing! This session explains, from the point of view of a programmer, what a Neuron is, how a Neural Network can be built and how to use frameworks such as TensorFlow and TFLearn to quickly experiment with Deep Learning.",
+        "startsAt": "2019-04-11T16:00:00",
+        "endsAt": "2019-04-11T16:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "98590667-81a3-47e6-9c58-42a2045a293c",
+            "name": "Avinash Meetoo"
+          }
+        ],
+        "categories": [],
+        "roomId": 4092,
+        "room": "Accelerator"
+      },
+      {
+        "questionAnswers": [],
+        "id": "85356",
+        "title": "What is Cloud integration? Cloud integration tools",
+        "description": "Today digital transformation is on the top of all companies’ agendas. Connection with applications, systems, data and even entire IT environments is one of the major needs of enterprises throughout their Cloud journey.\r\n\r\nWe chose ‘Cloud Integration ‘ as a topic to create awareness amongst developers.\r\n\r\nWe shall talk about the importance of integrating with cloud system. Communicating with different type of systems. How migration of on-premise database to the cloud is performed.\r\n\r\nWe will also talk about the different integration tools we have used inhouse such as Talend, Oracle Integration Cloud and Mulesoft.\r\n\r\nWe will show a live demo and implementation of a cloud integration tool.",
+        "startsAt": "2019-04-11T16:00:00",
+        "endsAt": "2019-04-11T16:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "e63f51cc-f8c0-4134-9926-2025f8044e60",
+            "name": "Irfaan Coonjbeeharry"
+          },
+          {
+            "id": "6d92a0e5-248f-44d5-a35c-3eb5deecc559",
+            "name": "Farhaana Balaky"
+          }
+        ],
+        "categories": [],
+        "roomId": 4090,
+        "room": "Educator 1"
+      },
+      {
+        "questionAnswers": [],
+        "id": "114768",
+        "title": "AWS User Meeting",
+        "description": "Presented by Benjamin Le Du, Faheem Ramjaun, Jasveer Jhummun and myself, Soodeshna Bappoo. \r\n\r\nMain topics:\r\n\r\nSoodeshna: Developing a serverless application from scratch using AWS Cognito for authentication with a REST API using API gateway and AWS Lambda. (30 mins)\r\n\r\nFaheem: Deploying a Java application in a secure Elastic Beanstalk environment. (30 mins)\r\n\r\nJasveer: Deploy AWS EC2 instance, Security Group and a RDS instance using Ansible. (30 mins)\r\n\r\n",
+        "startsAt": "2019-04-11T17:00:00",
+        "endsAt": "2019-04-11T18:00:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "5ca04941-04c9-4ad4-80f3-081108358418",
+            "name": "Soodeshna Bappoo"
+          }
+        ],
+        "categories": [],
+        "roomId": 4093,
+        "room": "Flying Dodo"
+      },
+      {
+        "questionAnswers": [],
+        "id": "85074",
+        "title": "Building a Chatbot using Deep Learning",
+        "description": "Smart devices of today, powered by e.g. Google Assistant, Apple Siri or Amazon Alexa, can chat with us in quite surprising ways. It is therefore interesting for a developer to understand how chatbots work. In this session, we will build a chatbot using Deep Learning techniques.",
+        "startsAt": "2019-04-11T17:00:00",
+        "endsAt": "2019-04-11T17:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "98590667-81a3-47e6-9c58-42a2045a293c",
+            "name": "Avinash Meetoo"
+          }
+        ],
+        "categories": [],
+        "roomId": 4092,
+        "room": "Accelerator"
+      },
+      {
+        "questionAnswers": [],
+        "id": "80170",
+        "title": "Rock Your Code: Code Performance for Microsoft .NET",
+        "description": "The performance of code is always something that is very important. Even more important if your back-end apps are processing tens of thousands of requests per second. In this session I will reveal the do’s and don’ts when it comes to improving code performance. Some code I will show can be up to 98% faster! Reducing memory that your app uses is also very important and will be discussed in detail. The demos in this session will work with the .NET Framework and .NET Core\r\n\r\nHere is what attendees are saying about this session:\r\n\r\nBob R. – David gave an excellent presentation on code performance. He showed us how, why, and to what degree various coding methods improved the performance of an application. Lots of tips and tricks!\r\n\r\nObjectives:\r\n*Learn how to use .NET Core or .NET Framework for high-performance websites and back-end services.\r\n*Learn how performance effects memory and memory effects performance.\r\n*Learn how to use third-party products to find and fix performance and memory issues.\r\n",
+        "startsAt": "2019-04-11T17:00:00",
+        "endsAt": "2019-04-11T17:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "9f65cf94-df17-447d-b1e0-6a0fb0eb92a5",
+            "name": "David McCarter"
+          }
+        ],
+        "categories": [],
+        "roomId": 4091,
+        "room": "Educator 2"
+      },
+      {
+        "questionAnswers": [],
+        "id": "84798",
+        "title": "TypeScript - Or, stop worrying and learn to trust the compiler",
+        "description": "This session will be a gentle introduction to TypeScript and the improvements it brings to the whole JavaScript ecosystem. \r\nI will cover TypeScript's support for the latest and evolving JavaScript features, including those from ECMAScript 2015 and future proposals, to help build robust components.\r\nWe will see some of the benefits of using TypeScript and why you should not be intimidated to use it as a tooling in your code base. ",
+        "startsAt": "2019-04-11T17:00:00",
+        "endsAt": "2019-04-11T17:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "dbc1be6b-eb43-4569-be8e-5c6cdabfc107",
+            "name": "Saamiyah Peerun"
+          }
+        ],
+        "categories": [],
+        "roomId": 4090,
+        "room": "Educator 1"
+      },
+      {
+        "questionAnswers": [],
+        "id": "0977cf9e-30c5-49f0-91e6-add345dba0a2",
+        "title": "Happy hour",
+        "description": "Come and enjoy our Happy hour with DJ Bedos!",
+        "startsAt": "2019-04-11T18:30:00",
+        "endsAt": "2019-04-11T21:55:00",
+        "isServiceSession": true,
+        "isPlenumSession": false,
+        "speakers": [],
+        "categories": [],
+        "roomId": 4093,
+        "room": "Flying Dodo"
+      }
+    ]
+  },
+  {
+    "groupId": 102,
+    "groupName": "Friday, April 12, 2019",
+    "sessions": [
+      {
+        "questionAnswers": [],
+        "id": "6a72b8f4-17f4-449b-97a3-31e51bbee81c",
+        "title": "Badge Pickup",
+        "description": "Pick up your Developers Conference 2019 badge...",
+        "startsAt": "2019-04-12T08:00:00",
+        "endsAt": "2019-04-12T09:30:00",
+        "isServiceSession": true,
+        "isPlenumSession": true,
+        "speakers": [],
+        "categories": [],
+        "roomId": 4090,
+        "room": "Educator 1"
+      },
+      {
+        "questionAnswers": [],
+        "id": "602f1274-de6d-414e-88c9-a37143da4e52",
+        "title": "Lean Coffee",
+        "description": null,
+        "startsAt": "2019-04-12T08:00:00",
+        "endsAt": "2019-04-12T08:45:00",
+        "isServiceSession": true,
+        "isPlenumSession": false,
+        "speakers": [],
+        "categories": [],
+        "roomId": 4091,
+        "room": "Educator 2"
+      },
+      {
+        "questionAnswers": [],
+        "id": "83372",
+        "title": "Angular Under the hood - RxJS",
+        "description": "Session prerequisites : \r\n - JavaScript functions and events\r\n - Asynchronous Javascript Patterns (Callbacks, Promises, etc)\r\n\r\nSession table of content :\r\n - What is RxJS ?\r\n - What is associated vocabulary ? (Stream, Observable, Observer, operators, etc)\r\n - What objective is resolve ?\r\n - What is RxJS paradigm ?\r\n - Where we can/have to use RxJS ?\r\n - Focus : Create Observable and Subscribe to stream\r\n - Focus : Operators\r\n \r\n\r\nThis Table of content is subject to evaluate. Base on the time restriction.",
+        "startsAt": "2019-04-12T09:00:00",
+        "endsAt": "2019-04-12T09:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "6f7fab3d-55ae-498c-bb0a-6f5857c32fb2",
+            "name": "Yanis Ghidouche"
+          }
+        ],
+        "categories": [],
+        "roomId": 4092,
+        "room": "Accelerator"
+      },
+      {
+        "questionAnswers": [],
+        "id": "85546",
+        "title": "Playing with Tensorflow and Computer Vision Algorithms",
+        "description": "The present session will offer a soft introduction to the out-of-the-box possibilities offered by the relatively new deep learning Frameworks such as Tensorflow, Keras, etc.. the aim is to show how those libraries, with its abstractions,  help developers to embed artificial intelligence (in its broadest term) into practically any application to enhance its business value from a customer's perspective. The session will also comprise of a demo of computer vision algorithms (Hough's Transform) to recognize shapes and objects through a Raspberry PI module (which paints the flexibility and interoperability of those libraries).",
+        "startsAt": "2019-04-12T09:00:00",
+        "endsAt": "2019-04-12T09:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "477c56a0-d60c-42c6-beef-fc009a020fb8",
+            "name": "Kherin Bundhoo"
+          }
+        ],
+        "categories": [],
+        "roomId": 4090,
+        "room": "Educator 1"
+      },
+      {
+        "questionAnswers": [],
+        "id": "80726",
+        "title": "Using LaTeX for writing academic papers/thesis",
+        "description": "This session is ideal for students and professionals who wish to write academic papers/thesis, research papers and reports in LaTeX. The session will cover the following:\r\n\r\n- LaTeX commands and tags\r\n- Overview of a cloud based solutions for LaTeX typesetting\r\n- Applying Harvard style reference\r\n- Using figures and tables\r\n- Using mathematical formulas\r\n\r\nThe session will also comprise of hands-on practice. Therefore, it will be useful if participants bring a laptop.",
+        "startsAt": "2019-04-12T09:00:00",
+        "endsAt": "2019-04-12T09:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "8ba3a5c9-6cc7-4625-aab7-23f5389b87ee",
+            "name": "Shelly Hermia Bhujun-Sookun"
+          }
+        ],
+        "categories": [],
+        "roomId": 4091,
+        "room": "Educator 2"
+      },
+      {
+        "questionAnswers": [],
+        "id": "72853",
+        "title": "Vue.js Workshop ",
+        "description": "This workshop is designed to help attendees get better acquainted with Vue.js. We will build a fully-functional single-page application with routing, API calls and state management. \r\n\r\nPre-requisite : HTML, CSS & JavaScript\r\n\r\nIdeally you'll need to bring your laptop to the workshop, but you can also follow along without one. ",
+        "startsAt": "2019-04-12T09:00:00",
+        "endsAt": "2019-04-12T13:00:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "d1ed8271-abc3-4c25-bb7b-b9423c6ded49",
+            "name": "Humeira Diljore"
+          }
+        ],
+        "categories": [],
+        "roomId": 4093,
+        "room": "Flying Dodo"
+      },
+      {
+        "questionAnswers": [],
+        "id": "84898",
+        "title": "BDD with Behat in Symfony",
+        "description": "Behat is an amazing library for Behaviour Driven Development (BDD). It lets us think about the features first before we start developing. In this introduction, we will do that and it will change the way you develop. Behat turns that written behaviour into functional tests against your application. Does your feature behave correctly? Just run the automated robots to find out! No forms to fill manually, no buttons to click, and all these can be repeated any number of times as required.\r\n\r\nThis introduction to Behat and BDD will be based on Symfony, but the principle is applicable to any framework.\r\n\r\nTopics:\r\n- Intro to BDD (features and scenarios)\r\n- Running scenarios in a real browser\r\n- Properly waiting for JavaScript events\r\n- Leveraging Behat hooks\r\n- Loading Database fixtures and clearing data\r\n- Bootstrapping your application (specifically Symfony)\r\n- Using the authenticated user\r\n- Tagging scenarios\r\n- How to put BDD into practice",
+        "startsAt": "2019-04-12T10:00:00",
+        "endsAt": "2019-04-12T10:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "cd7e4e2f-263b-4608-83bc-6e6e9d90e966",
+            "name": "Siven Sadiyan"
+          }
+        ],
+        "categories": [],
+        "roomId": 4091,
+        "room": "Educator 2"
+      },
+      {
+        "questionAnswers": [],
+        "id": "80862",
+        "title": "Concurrency - A glance at the techniques out there",
+        "description": "concurrency is becoming more and more prevalent in our industry, this is due to the multi core revolution and the need to use as much computation as possible.\r\n\r\nConcurrency is also the word that strikes fear in the heart of even the most seasoned of developers.\r\n\r\nThe main reason for that is education, most only know of shared memory concurrency (threads). \r\n\r\nThe aim of this talk to describe other techniques to tackle concurrency, as well as giving a brief on the  basics of concurrency.\r\n\r\nThe many paradigms to be describe in this talk are: \r\n- The actor model\r\n- Task / Future\r\n- Co-routines\r\n- Communicating Sequential Processes\r\n\r\nTake away is to incite the audience to go explore concurrency (a must nowadays) and not be afraid to tackle it. \r\n",
+        "startsAt": "2019-04-12T10:00:00",
+        "endsAt": "2019-04-12T10:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "146ba683-b905-46a9-bc61-108c46964ce8",
+            "name": "Renghen thanos"
+          }
+        ],
+        "categories": [],
+        "roomId": 4092,
+        "room": "Accelerator"
+      },
+      {
+        "questionAnswers": [],
+        "id": "81444",
+        "title": "Creating a High Availability Cloud Service with LXC/LXD and PeerVPN",
+        "description": "How is LXC/LXD different from Docker?\r\nCreating a VM on LXC\r\nMigrating VMs among hosts\r\nVMs snapshot\r\nStorage volume management\r\nSetting up PeerVPN and routing among hypervisors\r\nSetting up load balancer to accept requests from the web. ",
+        "startsAt": "2019-04-12T10:00:00",
+        "endsAt": "2019-04-12T10:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "330d0193-0f5f-4f9a-9df1-741448fa390d",
+            "name": "Nayar Joolfoo"
+          }
+        ],
+        "categories": [],
+        "roomId": 4090,
+        "room": "Educator 1"
+      },
+      {
+        "questionAnswers": [],
+        "id": "84579",
+        "title": "Architecture modulaire avec Laravel",
+        "description": "Laravel est un des Frameworks PHP les plus utilisés et dispose d'une communauté très active. Toutefois, lorsqu'on se lance dans le développement de projets moyennement ou hautement complexes, on peut vite être confronté à certaines contraintes concernant la structure et l'évolutivité. \r\n\r\nL'architecture modulaire permet de combler ces lacunes en facilitant l'amélioration progressive de l'application, la ré-utilisabilité et le partage du code ainsi que l'organisation du travail en équipe.\r\n",
+        "startsAt": "2019-04-12T11:00:00",
+        "endsAt": "2019-04-12T11:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "3fe1cf8c-d24b-45ea-9f5c-e50050cd21a9",
+            "name": "Valery Ambroise"
+          }
+        ],
+        "categories": [],
+        "roomId": 4091,
+        "room": "Educator 2"
+      },
+      {
+        "questionAnswers": [],
+        "id": "80475",
+        "title": "openSUSE Kubic - Let's talk about containers",
+        "description": "openSUSE Kubic is a Container as a Service Platform based on Kubernetes. In this presentation we will uncover CRI-O, a Container Runtime Interface, that follows the OCI standard, and is a replacement to docker. We will see how to run and manage containers using Podman and deploy a containerized app.",
+        "startsAt": "2019-04-12T11:00:00",
+        "endsAt": "2019-04-12T11:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "ef7633d0-46b2-4045-bbc3-3dc1fcd55596",
+            "name": "Ish Sookun"
+          }
+        ],
+        "categories": [],
+        "roomId": 4090,
+        "room": "Educator 1"
+      },
+      {
+        "questionAnswers": [],
+        "id": "103605",
+        "title": "Style US",
+        "description": "Stylus is a revolutionary new language, providing an efficient, dynamic, and expressive way to generate CSS. Supporting both an indented syntax and regular CSS style.\r\n\r\nThe aim of this session is to demonstrate the use of CSS preprocessor STYLUS as followed:\r\n1. Nesting - Selector nesting enables you to keep your styles DRY\r\n2. Syntax - Semi-colons, colons, and braces are optional\r\n3. Mixins - Stylus mixins allow you to define reusable functionality by defining in-language functions.\r\n4. Variables - Stylus variables behave as you would expect in any other language\r\n\r\nWe will carry out some live demos for the audience to enjoy the robustness of stylus.",
+        "startsAt": "2019-04-12T11:00:00",
+        "endsAt": "2019-04-12T11:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "c3496308-e8d9-48e6-b41f-ee43af9e94ad",
+            "name": "Youvraj Potheegadoo"
+          }
+        ],
+        "categories": [],
+        "roomId": 4092,
+        "room": "Accelerator"
+      },
+      {
+        "questionAnswers": [],
+        "id": "115650",
+        "title": "React Native Mobile : The Saga",
+        "description": "The session provides a deep dive into how React Native mobile applications are structured and operate. Let's peek at both the feature-packed functionalities offered by React Native, while it keeps it as simple as it gets to create beautiful interfaces.\r\n\r\nAGENDA:\r\n+ Cross Platform Mobile Development\r\n+ React vs React Native\r\n+ Flow and Life-cycle of React Native\r\n+ Your choice of weapons\r\n+ Building and Styling your UI\r\n+ Tackling State Management\r\n+ To Infinity and Beyond\r\n\r\nWalk away from this session with a solid know-how in the art of cross platform mobile application creation, and armed with a fine arsenal of React Native expertise.",
+        "startsAt": "2019-04-12T12:00:00",
+        "endsAt": "2019-04-12T12:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "cf415be6-0558-4411-aa4d-dee4f0648547",
+            "name": "Vidush H. Namah"
+          }
+        ],
+        "categories": [],
+        "roomId": 4092,
+        "room": "Accelerator"
+      },
+      {
+        "questionAnswers": [],
+        "id": "85172",
+        "title": "REST easy with API Platform",
+        "description": "The web has changed! Users spend more time on mobile than on desktops and they expect to have an amazing user experience on both platforms.  APIs are the heart of the new web as the central point of access data, encapsulating logic and providing the same data and same features for desktops and mobiles.\r\n\r\nIn this talk, I will show you how in only 45 minutes we can create full REST API, with documentation and admin application build with React.\r\n",
+        "startsAt": "2019-04-12T12:00:00",
+        "endsAt": "2019-04-12T12:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "c19d531b-5180-4946-9a95-1e06182aeb1b",
+            "name": "Antonio Peric-Mazar"
+          }
+        ],
+        "categories": [],
+        "roomId": 4091,
+        "room": "Educator 2"
+      },
+      {
+        "questionAnswers": [],
+        "id": "79681",
+        "title": "Ansible",
+        "description": "Ansible for system administrators. Introduction, Basic and Advanced demos.",
+        "startsAt": "2019-04-12T13:00:00",
+        "endsAt": "2019-04-12T13:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "e0e1b003-4f28-4e6d-8076-0f6aef665d8c",
+            "name": "Nitin J Mutkawoa"
+          }
+        ],
+        "categories": [],
+        "roomId": 4090,
+        "room": "Educator 1"
+      },
+      {
+        "questionAnswers": [],
+        "id": "85380",
+        "title": "How Business Angels and Venture capitalists can help me kick off my project?",
+        "description": "Developers possess great skills that can be used to solve important societal and economical challenges. But it is sometimes difficult to resign from a job and take that leap of faith.  Business Angels and Venture capitalists bring the funds, the strategic thinking and the business development methodology to help you succeed.  Compass will introduce the participant to this concept in an interactive session.",
+        "startsAt": "2019-04-12T13:00:00",
+        "endsAt": "2019-04-12T13:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "2bd6de43-9ea9-4076-8837-5fb6db414b24",
+            "name": "Fabrice Boullé"
+          }
+        ],
+        "categories": [],
+        "roomId": 4091,
+        "room": "Educator 2"
+      },
+      {
+        "questionAnswers": [],
+        "id": "701803d2-1cff-4f21-8aff-c8dc1048894e",
+        "title": "Afrinic - IPv6 workshop",
+        "description": "Pending",
+        "startsAt": "2019-04-12T13:00:00",
+        "endsAt": "2019-04-12T17:00:00",
+        "isServiceSession": true,
+        "isPlenumSession": false,
+        "speakers": [],
+        "categories": [],
+        "roomId": 4093,
+        "room": "Flying Dodo"
+      },
+      {
+        "questionAnswers": [],
+        "id": "85111",
+        "title": "A VUE with ASP.NET Core on a Raspberry PI.",
+        "description": "These are your takeaways from this session: You will be introduced to 3 technologies, VUE.js a frontend framework, ASP.NET Core used as the backend, and a Raspberry Pi for hosting. If you know at least one of them, you will get to know how to integrate it with the other. \r\n\r\nA brief of the agenda: \r\n1) Discuss on the choice of technologies. Why Vue and not React for instance? \r\n2) Live coding the frontend to the backend. \r\n3) Go through the configurations for the hosting, and discuss why choose our own host while there is an ocean of hosting providers out there. \r\n\r\nAt the end of this session, you will have the knowledge required to build and host your own webapp, and who knows, you get a cookie. ",
+        "startsAt": "2019-04-12T14:00:00",
+        "endsAt": "2019-04-12T14:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "97e6a112-bae2-45e4-b996-223b87597380",
+            "name": "Hansynee Thecka"
+          }
+        ],
+        "categories": [],
+        "roomId": 4092,
+        "room": "Accelerator"
+      },
+      {
+        "questionAnswers": [],
+        "id": "85395",
+        "title": "Asynchronous PHP, ReactPHP et oui ça existe !",
+        "description": "Overview d'asynchronous PHP avec la librarie ReactPHP.. ",
+        "startsAt": "2019-04-12T14:00:00",
+        "endsAt": "2019-04-12T14:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "1ad5cb40-0f33-4b33-ab8d-415a5febf690",
+            "name": "Vanessa V.Chellen "
+          }
+        ],
+        "categories": [],
+        "roomId": 4091,
+        "room": "Educator 2"
+      },
+      {
+        "questionAnswers": [],
+        "id": "117982",
+        "title": "Contract Tests in the Enterprise",
+        "description": "Is your legacy application talking to a service that is never up and running on your shared testing environment? Does your company waste a lot of time and money on regression testing only to see that, yet again, someone has created a typo in the API? Enough is enough. Time to fix this problem using contract tests!\r\n\r\nIn this presentation you’ll see how to migrate a legacy application to work with stubs of external applications. We’ll show different ways of increasing your test reliability by writing contract tests of your API. You’ll see the difference between producer and consumer driven contracts.",
+        "startsAt": "2019-04-12T14:00:00",
+        "endsAt": "2019-04-12T14:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "56d42679-a1a9-4f66-b5da-3f08df9c899c",
+            "name": "Marcin Grzejszczak"
+          }
+        ],
+        "categories": [],
+        "roomId": 4090,
+        "room": "Educator 1"
+      },
+      {
+        "questionAnswers": [],
+        "id": "85164",
+        "title": "Azure DevOps Pipeline with Automated Testing - CICD",
+        "description": "Introduction to Azure DevOps with Automated Testing\r\n\r\nWe currently want to present how we used the Azure DevOps within SDWorx and how we have gain time (turn around time & performance) out of it and also the following topics;\r\n\r\n•\tGeneral concept of Azure DevOps that we used (Key Vault, Variables, Custom task, Group Task)\r\n•\tAutomated build\r\n•\tAutomated unit test\r\n•\tPipeline Release (Including load balancer)\r\n•\tAutomated Test (Smoke + Regression + Integration)\r\n•\tStaging\r\n \r\nThe target audience would be beginer to Intermediate.\r\n \r\nIn case you need more details, do revert back.\r\n \r\n",
+        "startsAt": "2019-04-12T15:00:00",
+        "endsAt": "2019-04-12T15:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "07571a1f-3991-490d-9b0a-b4b8dede0079",
+            "name": "Akshay Ramluckhun"
+          },
+          {
+            "id": "51f713e3-f67b-4884-aed0-ef782fda8a6c",
+            "name": "Purdaseea Dhaneshwursingh"
+          }
+        ],
+        "categories": [],
+        "roomId": 4090,
+        "room": "Educator 1"
+      },
+      {
+        "questionAnswers": [],
+        "id": "76180",
+        "title": "Enrichir ses adresses postales avec la suite Elastic",
+        "description": "Souvent, les adresses postales de nos clients ou utilisateurs sont très mal formatées dans nos systèmes d'information. De fait, si on est un service client, un call center et que l'on souhaite retrouver un client par son adresse, cela devient assez compliqué. De même, comment répondre au service commercial qui souhaiterait présenter sur une carte où sont physiquement localisés les clients, où peut-on ouvrir une nouvelle boutique, ...\r\n\r\nPrenons un cas simple :\r\n\r\n```\r\n{\r\n  \"name\": \"Joe Smith\",\r\n  \"address\": {\r\n    \"number\": \"23\",\r\n    \"street_name\": \"r verdiere\",\r\n    \"city\": \"rochelle\",\r\n    \"country\": \"France\"\r\n  }\r\n}\r\n```\r\n\r\nOu l'inverse. J'ai des coordonnées, mais je ne peux pas dire à quelle adresse cela correspond :\r\n\r\n```\r\n{\r\n  \"name\": \"Joe Smith\",\r\n  \"location\": {\r\n    \"lat\": 46.15735,\r\n    \"lon\": -1.1551\r\n  }\r\n}\r\n```\r\n\r\nCette session, sans slides, vous fera découvrir comment résoudre ces problèmes en utilisant la suite Elastic et en particulier, Logstash et Elasticsearch.",
+        "startsAt": "2019-04-12T15:00:00",
+        "endsAt": "2019-04-12T15:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "374ceaaa-8010-4526-bba3-3ba0fefdd4b0",
+            "name": "David Pilato"
+          }
+        ],
+        "categories": [],
+        "roomId": 4091,
+        "room": "Educator 2"
+      },
+      {
+        "questionAnswers": [],
+        "id": "84460",
+        "title": "Rust: The programming language that empowers everyone",
+        "description": "Rust: fast, reliable, productive — pick three. Rust has been voted as the most loved programming language on Stack Overflow’s Survey for three years in a row. Don’t know any Rust or want to learn some more? Join this talk to get a glimpse of Rust and how people are using it from bare-metal microcontroller programming to making highly-scalable web apps.\r\n\r\nThis talk will introduce some concepts in Rust that are similar to other languages, talk about its unique features, the development environment, and the Rust community. Finally, we will see who is using Rust and how you can also get started!\r\n",
+        "startsAt": "2019-04-12T15:00:00",
+        "endsAt": "2019-04-12T15:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "28f2b4a4-2172-4413-87de-43dc20535646",
+            "name": "Rahul Thakoor"
+          }
+        ],
+        "categories": [],
+        "roomId": 4092,
+        "room": "Accelerator"
+      },
+      {
+        "questionAnswers": [],
+        "id": "80358",
+        "title": "Azure Pipelines : cloud CI/CD for any language & any platform.",
+        "description": "Azure DevOps, , launched September 10, 2018 is the evolution of VSTS and offers tools to build software from beginning to end.\r\n\r\nOne of the highlights of Azure DevOps is Azure Pipelines, a Continuous Integration/Continuous Deployment system that works with any programming language, targeting any platform and supports any cloud platform. It is highly extensible with over 500 extensions to integrate with your tools. The session will cover how to use Pipelines along with Azure Repos, and demonstrate how to deploy websites  to Azure & Amazon Web Services.\r\n",
+        "startsAt": "2019-04-12T16:00:00",
+        "endsAt": "2019-04-12T16:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "64bd9e33-e619-490b-aae1-b5c328d456f2",
+            "name": "Arwin Neil Baichoo"
+          }
+        ],
+        "categories": [],
+        "roomId": 4090,
+        "room": "Educator 1"
+      },
+      {
+        "questionAnswers": [],
+        "id": "99545",
+        "title": "Real Time Analytics for IoT",
+        "description": "We live in an increasingly interconnected world and IoT is a part of many devices now – from lightbulbs and human organ implants to cameras and self-driving vehicles. All these devices are constantly generating data.\r\nNow, imagine if you could collect all those data in real time, analyze, visualize and make real-time predictions. With modern cloud technologies, building such a system is now accessible to all organizations. In this session, the cloud IoT architecture, tools and implementation using Microsoft Azure and ESP8266 micro-controller shall be discussed.\r\n\r\nAgenda:\r\n-\tIntroduction to Azure IoT Tools\r\n-\tCloud IoT Architecture\r\n-\tMessage ingestion at scale using Event Hubs \r\n-\tAnalyzing streaming data in real time using stream analytics\r\n-\tUsing Power BI to visualize data from Stream Analytics\r\n",
+        "startsAt": "2019-04-12T16:00:00",
+        "endsAt": "2019-04-12T16:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "1fd572bd-a45d-497a-99ea-f2cec9d9b9ab",
+            "name": "Chervine Bhiwoo"
+          }
+        ],
+        "categories": [],
+        "roomId": 4091,
+        "room": "Educator 2"
+      },
+      {
+        "questionAnswers": [],
+        "id": "85392",
+        "title": "State Management with Vuejs (Vuex) and gRPC",
+        "description": "Abstract\r\nThe intent is to cover everything that one need to know about Vuex. One will learn how to build and design a Vuex Store, find out the differences between actions and mutations and some best practices. Using gRPC to fetch data from backend side. There will be live demo to show how use store, mutators and update any components that are reading data from the store.\r\n\r\nDiscussion\r\nDevelopers often need to alter a parent data/property from a child component. In Vue, we might need to use an accessor function such as this.$parent.data. We could also keep emitting events from the child component to the parent component. While this might be a simple way to alter a parent data, it becomes stressful as the code base evolves.  If we have 30 components it would mean us emitting 30 different events. Not only does this mean more chance for error, we would need to spend more time debugging and we end up repeating similar code 30 times.\r\n\r\nVuex makes it possible to use a centralized state management in your application. Vuex is a library which helps you to enforce a Flux-like application architecture in your Vue application.\r\nThe whole basics of Vuex from Vue originated from Flux Architecture which is a simple Pattern that guides the development of complex UI Applications. Facebook came up with this pattern to solve a problem they had with their application.\r\n\r\nMain topic\r\nManaging state in an application full of components can be difficult. Facebook discovered this the hard way and created the Flux pattern, which is what Vuex is based upon. \r\n\r\nSub topics\r\nVuex implements a centralized state management by implementing these core concepts\r\n\r\n1.  State tree\r\nCreating a store \r\nActivating of vuex in the vue application.\r\nCreating of initial state with in store\r\nInjecting store in our Vue application instance\r\n\r\n2.  Getters \r\nTo access the state, this can be done in two ways:\r\n      1. $state.object \r\n      2. Using getters \r\n\r\n3.  Mutations\r\nTo directly modify state properties, Mutations are used. \r\nMutations are passed the current state and an optional payload. Mutations must be synchronous.\r\n\r\n4.  Actions\r\nIn many cases it’s not sufficient to modify the state with a Mutation synchronously\r\nAsynchronous operations can be performed to retrieve values (using Actions) from a backend and then updating the state with that new value. \r\nTo handle more complex async flows, actions can handle Promise returned by the triggered action handler and it also returns a promise. \r\n\r\n\r\nConclusion\r\nAs  a vue application becomes more complex with multiple component that share data,  introducing a central state management might be the right approach for your project.  With this presentation, you have the basic overview of a centralised state management concept.\r\n",
+        "startsAt": "2019-04-12T16:00:00",
+        "endsAt": "2019-04-12T16:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "49af17a2-5b86-4b9b-aadc-07b99b08cc5d",
+            "name": "Jeshta Bhoyedhur"
+          },
+          {
+            "id": "79196cc1-32fa-4ce8-8204-7aba4c84e9ce",
+            "name": "Kushul Soomaree"
+          }
+        ],
+        "categories": [],
+        "roomId": 4092,
+        "room": "Accelerator"
+      },
+      {
+        "questionAnswers": [],
+        "id": "70625",
+        "title": "Infrastructure as TypeScript",
+        "description": "For almost a decade \"Infrastructure as Code\" has been a DevOps buzzword - but the myriad tools available share a dirty little secret... there's no actual code! Few people like \"programming\" YAML or JSON (even the human-friendly variants!), and even fewer like having to reverse-engineer ways to apply known good development practices to tools which resist it at all cost.\r\n\r\nSo, what if things were different,and programming infrastructure was more like real programming, with real programming languages like TypeScript? What if you defined Lambda functions by actually writing lambdas, created abstractions using complex types, and could take advantage of existing tools for modularity, linting, refactoring and testing?\r\n\r\nEnter Pulumi, an open-source deployment engine which enables all these things using TypeScript, Python or Go!\r\n\r\nIn this talk, we'll look at how you can write TypeScript code using Pulumi to provision traditional cloud infrastructure, manage Kubernetes and build portable \"serverless\" applications - all with minimal YAML in sight! We'll look at deploying to multiple regions of the same cloud, and how to build abstractions allowing multi-cloud to be a reality.",
+        "startsAt": "2019-04-12T17:00:00",
+        "endsAt": "2019-04-12T17:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "82242efa-dc48-4c4b-8e26-6b93bbe5623a",
+            "name": "James Nugent"
+          }
+        ],
+        "categories": [],
+        "roomId": 4090,
+        "room": "Educator 1"
+      },
+      {
+        "questionAnswers": [],
+        "id": "78605",
+        "title": "Redhat Enterprise Linux 8 and derivatives  have a new firewall: nftables.",
+        "description": "iptables has long been seen as the network packet filter of the Linux Operation System. Since 2013, a new packet filter has been in development. It's known as nftables. RHEL 8 and derivatives such as CentOS 8 will likely ship with nftables.\r\n\r\n\r\n-What is nftables ?\r\n-Why the need for nftables ?\r\n-How nftables differs from iptables.\r\n-Syntax and concepts.\r\n-Simple usage for servers/VMs with port 80,22 and port 443.\r\n-More complex use cases.\r\n-Hacking nftables.",
+        "startsAt": "2019-04-12T17:00:00",
+        "endsAt": "2019-04-12T17:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "e50f47f5-e674-44a1-9a3d-12b060239237",
+            "name": "Loganaden Velvindron"
+          }
+        ],
+        "categories": [],
+        "roomId": 4092,
+        "room": "Accelerator"
+      },
+      {
+        "questionAnswers": [],
+        "id": "84703",
+        "title": "Sécurité, accessibilité, privacy, eco-conception, comment prévenir les risques du projet Web",
+        "description": "Les technologies du Web sont partout, et leurs enjeux sont de plus en plus stratégiques. Les risques que doivent gérer les organisations qui les utilisent sont également de plus en plus critiques. Alors que les risques du projet Web étaient relativement anodins, ils deviennent de plus en plus importants. Face à cette montée en charge, la première réponse a été de constituer des centres de compétences distincts sur chaque sujet à risque. C'est ainsi que se forment des silos dédiés à l'accessibilité du Web, à la gestion des données personnelles et du RGPD ou encore à la sécurité. Mais la réponse n'est peut-être pas à trouver uniquement dans ces silos. Tôt ou tard il faudra faire émerger des approches transversales pour coordonner et gérer globalement les risques du Web. C'est l'un des objectifs de l'approche qualité Web.  Nous verrons l'intérêt de cette approche, les bonnes pratiques fondamentales et la façon de faire émerger des compétences dans ce domaine, notamment pour les développeurs qui sont au cœur de ces problématiques.",
+        "startsAt": "2019-04-12T17:00:00",
+        "endsAt": "2019-04-12T17:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "558e6e8e-5bc5-4dbe-917d-619eb3f20da2",
+            "name": "Elie Sloïm"
+          }
+        ],
+        "categories": [],
+        "roomId": 4091,
+        "room": "Educator 2"
+      },
+      {
+        "questionAnswers": [],
+        "id": "92fdb409-6f68-47f8-946d-54dedc9996b5",
+        "title": "Happy Hour",
+        "description": "Sega night with Denis Azor! Come and join us for the Happy hour",
+        "startsAt": "2019-04-12T18:30:00",
+        "endsAt": "2019-04-12T21:55:00",
+        "isServiceSession": true,
+        "isPlenumSession": false,
+        "speakers": [],
+        "categories": [],
+        "roomId": 4093,
+        "room": "Flying Dodo"
+      }
+    ]
+  },
+  {
+    "groupId": 103,
+    "groupName": "Saturday, April 13, 2019",
+    "sessions": [
+      {
+        "questionAnswers": [],
+        "id": "6a93ed39-5411-44b4-b6f9-54016a3fbfb4",
+        "title": "Lean Coffee",
+        "description": null,
+        "startsAt": "2019-04-13T08:00:00",
+        "endsAt": "2019-04-13T08:45:00",
+        "isServiceSession": true,
+        "isPlenumSession": false,
+        "speakers": [],
+        "categories": [],
+        "roomId": 4091,
+        "room": "Educator 2"
+      },
+      {
+        "questionAnswers": [],
+        "id": "5ad70a19-05ec-4041-8fb4-9bdb12b2aec5",
+        "title": "Badge Pickup",
+        "description": "Pick up your Developers Conference 2019 badge...",
+        "startsAt": "2019-04-13T08:00:00",
+        "endsAt": "2019-04-13T09:20:00",
+        "isServiceSession": true,
+        "isPlenumSession": true,
+        "speakers": [],
+        "categories": [],
+        "roomId": 4090,
+        "room": "Educator 1"
+      },
+      {
+        "questionAnswers": [],
+        "id": "98590",
+        "title": "3D Design using Autodesk Fusion 360",
+        "description": "Comment obtenir gratuitement Fusion 360 légalement pour trois ans.  Comment dessiner son premier objet.",
+        "startsAt": "2019-04-13T09:00:00",
+        "endsAt": "2019-04-13T09:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "c90af104-f892-480d-97b1-c59f9f670e56",
+            "name": "Eric Durant"
+          }
+        ],
+        "categories": [],
+        "roomId": 4093,
+        "room": "Flying Dodo"
+      },
+      {
+        "questionAnswers": [],
+        "id": "83322",
+        "title": "Enterprise Content Management – Enforced Security Solutions",
+        "description": "This session will explain the importance of security in an Enterprise Content Management Solution. \r\nThe different types of security mechanisms being used by big international enterprises will be presented, explained and made aware to our Mauritians Developers and Professionals so that they can incorporate them in the platform and development they are working on.\r\nAn example of such product will be given and it's security mechanisms and importance will be explained.\r\nExample of Industries and Enterprises using and trusting such products and it's security mechanisms will be given as well.\r\nWe will also preview questions and answers from our audience.",
+        "startsAt": "2019-04-13T09:00:00",
+        "endsAt": "2019-04-13T09:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "0d49ffb4-40ef-4a2f-ae26-a0b91400d656",
+            "name": "Saad ALLY MOHAMED"
+          }
+        ],
+        "categories": [],
+        "roomId": 4090,
+        "room": "Educator 1"
+      },
+      {
+        "questionAnswers": [],
+        "id": "118176",
+        "title": "From traditional to modern tech teams",
+        "description": "One year after the set-up of its Digital Factory as an enabler towards its Digital Transformation, MCB is seeing some tangible early benefits of the adoption of agile. This new way of working is revitalizing the organization into a highly productive operating model centered around creating continuous customer value while fully engaging employees.\r\n\r\nIn this talk, we are going to review some of the tech tools that improve the performance of teams such as Functional Programming, Automated Testing and DevOps.",
+        "startsAt": "2019-04-13T09:00:00",
+        "endsAt": "2019-04-13T09:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "146ba683-b905-46a9-bc61-108c46964ce8",
+            "name": "Renghen thanos"
+          },
+          {
+            "id": "1fd572bd-a45d-497a-99ea-f2cec9d9b9ab",
+            "name": "Chervine Bhiwoo"
+          }
+        ],
+        "categories": [],
+        "roomId": 4091,
+        "room": "Educator 2"
+      },
+      {
+        "questionAnswers": [],
+        "id": "85201",
+        "title": "Software Project Management, the thing you don’t want to hear",
+        "description": "Project management is one of the most vital practices in any sort of organisation but the least thing that is considered important in many. Hundreds of projects fail yearly and incur billion of monetary losses because of bad management at all levels of a company. In the Mauritian context, many companies enforce project management in their day-to-day business operations to comply with standards but few do it to optimise or gain something from it. Just like big corporations who spend millions of dollars to optimise their workflows and make their business processes more efficient, startups also can easily achieve that using the right set of tools. As an engineer and post graduate (MSc) student, I’ll be demystifying the different myths of project management in Mauritian context, how to integrate proper project management in a company, the shift and culture. The session shall be a highly interactive.\r\n\r\nSUB TOPICS\r\n\r\n- Project management for idiots\r\n- Why was project management invented?\r\n- What is Agile Project Management?\r\n----- Scrum\r\n-----  Kanban\r\n- Project management for simple developers\r\n- Why are developers bad “Estimators”?\r\n- Difference between Agile Software Project Management and  Agile Software Development\r\n- What to do and not to\r\n- Why don’t we like project management?\r\n- Efficient Tools\r\n- Project Management Institute\r\n- Major characteristics of a potential ScrumMaster/Project Manager\r\n----- Schedule Management\r\n----- Resource Management\r\n----- Cost Management\r\n----- Quality Management and SQF\r\n----- Risk Management\r\n- How to identify if you are a potential project manager/engineer\r\n\r\nThe goal of this session is to empower and foster the culture of project management in the young generation to avoid failure and bad thinking when they’ll work with large global projects.",
+        "startsAt": "2019-04-13T09:00:00",
+        "endsAt": "2019-04-13T09:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "84b950ee-81ab-4aea-a5f2-f8cda15a69e8",
+            "name": "Nirvan (Tejas) Pagooah"
+          }
+        ],
+        "categories": [],
+        "roomId": 4092,
+        "room": "Accelerator"
+      },
+      {
+        "questionAnswers": [],
+        "id": "83354",
+        "title": "Becoming an Automation artist",
+        "description": "The aim of this talk, is to get more people into the beautiful world of automation.\r\nWe'll be learning together the best tricks that you can add to your daily work routine.\r\nThese tips are all about efficiency and how not to waste a minute doing nothing.\r\n\r\nWelcome to this great adventure, where you will learn how we think, and what we do as automation artists.\r\nWe want you to be inspired and to jump into our kingdom.\r\nThis is the talk that will transform your mindset or at least attempt to.\r\n\r\nWhether you are just a random guy interested in IT or an automation guru, I can guarantee that you will learn something useful.\r\nCome and have fun automating stuff !!!",
+        "startsAt": "2019-04-13T10:00:00",
+        "endsAt": "2019-04-13T10:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "d540e65b-c961-4a70-9adc-4f49047a7c29",
+            "name": "Codarren Velvindron"
+          }
+        ],
+        "categories": [],
+        "roomId": 4090,
+        "room": "Educator 1"
+      },
+      {
+        "questionAnswers": [],
+        "id": "98157",
+        "title": "Making  a Robotic Arm with 3D Printed parts",
+        "description": "Making  a robotic arm with 3D Printed parts, 4 x Servo Motors,  1 x Arduino Nano.  I will walk you through the design , assembly of all electronics and mechanical parts.  I will talk about the functions of a servo motor and its limitation and also talk about the arduino nano micro controller. ",
+        "startsAt": "2019-04-13T10:00:00",
+        "endsAt": "2019-04-13T10:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "59e993c0-6414-422d-a843-805464c6ff4a",
+            "name": "Yovan Fowdar"
+          }
+        ],
+        "categories": [],
+        "roomId": 4093,
+        "room": "Flying Dodo"
+      },
+      {
+        "questionAnswers": [],
+        "id": "85354",
+        "title": "NGXS State Management: The power of reduced boilerplate",
+        "description": "\"State Management\" the phrase that can strike fear or invoke joy in the heart of a developer. After completing a massive project with NgRx in 2017 I found that most developers responded with fear at all the boilerplate and big paradigm shift. Then NGXS entered the scene and changed all that. Easy to learn and understand! But as I got deeper into the project I discovered the gold mine that lies beneath. Join me as I unveil the power that reduced boilerplate unleashes.\r\n[ I lead the core team for the NGXS library so you are welcome to ask me anything ]",
+        "startsAt": "2019-04-13T10:00:00",
+        "endsAt": "2019-04-13T10:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "ea83915e-5023-408f-8d5e-b8eabd3a53cb",
+            "name": "Mark Whitfeld"
+          }
+        ],
+        "categories": [],
+        "roomId": 4092,
+        "room": "Accelerator"
+      },
+      {
+        "questionAnswers": [],
+        "id": "80474",
+        "title": "PostgreSQL clustering in 5 mins.",
+        "description": "Database clustering is underexploited as it is barely used. If setup correctly it can be a powerful tool that provides both high availability and a redundant system. A full database cluster will be setup live during the presentation. Bringing your laptops is not neccessary but a plus as this will be a very interactive session.\r\n• Introduction to database clustering\r\n• Short crash course on postgreSQL (basic & common operations)\r\n• When is there a need for database clustering?\r\n• Setting up the cluster (using virtual machines and docker) \r\n• Q&A",
+        "startsAt": "2019-04-13T10:00:00",
+        "endsAt": "2019-04-13T10:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "a189d971-edd8-46d2-a69a-d561a20c681e",
+            "name": "Chittesh Sham "
+          }
+        ],
+        "categories": [],
+        "roomId": 4091,
+        "room": "Educator 2"
+      },
+      {
+        "questionAnswers": [],
+        "id": "84747",
+        "title": "Développer des sites accessibles - un peu, beaucoup, passionnément",
+        "description": "Lors de cette conférence, nous verrons comment vous pouvez développer des sites web utilisables par les personnes handicapées et conforme aux standards internationaux sur le sujet (WCAG). \r\nPour ce faire, nous étudierons ensemble des exemples techniques des plus simples au plus complexes, du site statique à la single page application et vous découvrirez les outils qui peuvent vous aider à vous lancer dans l'aventure. \r\n",
+        "startsAt": "2019-04-13T11:00:00",
+        "endsAt": "2019-04-13T11:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "5a67c2e7-25cc-48e6-8044-a394b1981c20",
+            "name": "aurelien levy"
+          }
+        ],
+        "categories": [],
+        "roomId": 4091,
+        "room": "Educator 2"
+      },
+      {
+        "questionAnswers": [],
+        "id": "85417",
+        "title": "How to enrich your career prospects with Contracting",
+        "description": "The contracting market is evolving rapidly in Mauritius. Working as a full-time employee is no longer the only option. The market is opening for Technical people to work as freelancers or contractors. Join this session to understand how to become an effective contractor and earn more than the typical IT employee.",
+        "startsAt": "2019-04-13T11:00:00",
+        "endsAt": "2019-04-13T11:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "f21018a7-7259-430e-a226-2b58f4cda77a",
+            "name": "Vikash Lalsing"
+          }
+        ],
+        "categories": [],
+        "roomId": 4092,
+        "room": "Accelerator"
+      },
+      {
+        "questionAnswers": [],
+        "id": "98226",
+        "title": "How to program a Robot Arm",
+        "description": "Giving life to the Robot Arm, programming and understanding the code. We will first explain how to drive each servo motor individually (waist, shoulder, elbow and hand). Finally, we will control all the servo motors to make the robot arm interact with an object.",
+        "startsAt": "2019-04-13T11:00:00",
+        "endsAt": "2019-04-13T11:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "38da18c7-eed7-46ec-9bac-ce60db8a1908",
+            "name": "Nisha Appanah"
+          }
+        ],
+        "categories": [],
+        "roomId": 4093,
+        "room": "Flying Dodo"
+      },
+      {
+        "questionAnswers": [],
+        "id": "76179",
+        "title": "Recherche avancée pour votre application \"legacy\"",
+        "description": "Comment mixer SQL et NoSQL sans faire la révolution ?\r\n\r\nCette \"live coding\" conférence vous montrera comment ajouter Elasticsearch à votre application existante sans changer vos habitudes. Vous aurez des fonctions de recherche avancées sans avoir à écrire du SQL complexe !\r\n\r\nDavid partira d'une application Spring Boot/Postgresql/MySQL et ajoutera Elasticsearch en live depuis la scène !",
+        "startsAt": "2019-04-13T11:00:00",
+        "endsAt": "2019-04-13T11:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "374ceaaa-8010-4526-bba3-3ba0fefdd4b0",
+            "name": "David Pilato"
+          }
+        ],
+        "categories": [],
+        "roomId": 4090,
+        "room": "Educator 1"
+      },
+      {
+        "questionAnswers": [],
+        "id": "84252",
+        "title": "Blockchain Consensus Algorithms",
+        "description": "The session will be about explaining the most popular blockchain consensus algorithms, with a particular focus on their differences and their uses.\r\nConsensus Algorithms determine the level of decentralization of a blockchain and has several implications in terms of energy use, community involvement and general acceptance.\r\n\r\n\r\nTarget Audience\r\n1.\tBlockchain enthusiasts\r\n2.\tBlockchain programmers (Ethereum, Bitcoin, PoA, etc.)\r\n3.\tPeople who want to start learning about Blockchain and know the real differences between blockchains\r\n\r\nObjectives\r\n1.\tIntroduction of basic concepts of Blockchain\r\n2.\tFocus on the different mechanisms that govern how Blockchains work (consensus algorithms)\r\n3.\tImpact of these consensus mechanisms on blockchains - popularity, security, adoption, mining, mining pools, etc.\r\n4.\tPush the idea of real decentralization and dispel the myths about 'false' decentralization\r\n\r\nTopic\r\n1.\tThe main topic will be introducing and differentiating about the different consensus algorithms, including Proof of Work, Proof of Stake, Proof of Authority\r\n2.\tBlockchain does not mean decentralization - decentralization is determined by its consensus algorithms\r\n\r\nTakeaways\r\n1.\tUnderstanding blockchain\r\n2.\tUnderstanding the way blockchains work - the essence of blockchains\r\n3.\tUnderstanding why blockchains are such a big deal\r\n4.\tUnderstanding decentralization via consensus mechanisms\r\n\r\n\r\n",
+        "startsAt": "2019-04-13T12:00:00",
+        "endsAt": "2019-04-13T12:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "9a95d0ba-6acd-47ba-af75-d0d2676d9276",
+            "name": "Suyash Sumaroo"
+          }
+        ],
+        "categories": [],
+        "roomId": 4092,
+        "room": "Accelerator"
+      },
+      {
+        "questionAnswers": [],
+        "id": "85559",
+        "title": "Introduction to IoT and Robotics with Micropython",
+        "description": "We are living in a connected world. From refrigerators to cars, the “Internet of Things” is shaping a new digital world and paired with the rapid drop in price for typical IoT components more and more people can brew innovative new designs and products at home. \r\n\r\nBut getting started can be intimidating. With all the jargon and the perceived complexity of the embedded world, one is usually left on the outside looking in.\r\n\r\nMicropython breaks the barriers to entry into IoT and robotics by abstracting away the complexities. It is a reimplementation of the Python programming language targeting microcontrollers and embedded systems.\r\n\r\nIn this workshop, we are going to dive into the basics of electronics and IoT. You will get hands-on experience programming a microcontroller to control the real physical world. You will learn how to wire in sensors, transmit data and handle user interactions. By the end, you will be able to use your skills learned prototyping to make more creative and fun projects and blaze your own trail. ",
+        "startsAt": "2019-04-13T12:00:00",
+        "endsAt": "2019-04-13T12:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "28f2b4a4-2172-4413-87de-43dc20535646",
+            "name": "Rahul Thakoor"
+          },
+          {
+            "id": "4007b5e5-984e-4a5d-920a-9be3ba6c283b",
+            "name": "Priyeshan Sreeneebus"
+          }
+        ],
+        "categories": [],
+        "roomId": 4093,
+        "room": "Flying Dodo"
+      },
+      {
+        "questionAnswers": [],
+        "id": "69460",
+        "title": "Microfrontends as a solution to legacy JavaScript",
+        "description": "The only certainty in JavaScript is change. There is a new, cool framework popping up seemingly every week. jQuery, Knockout, AngularJS: all were once the darlings of the web, now relegated to the scrapheap of legacy. One day you will abandon your current favourite framework too, as it slowly falls out of fashion. How then do you choose an appropriate JavaScript framework? How do you make sure that the next framework is the one? Better still, how can you work with your favourite framework today, while still working within your legacy application?\r\n\r\nWhat if you don’t have to choose the right framework? What if legacy never got in your way? Join me as I show you how you can take lessons from MicroServices and use them to let you work with new, exciting frameworks even in applications based on older, legacy, technology (no microservices required)",
+        "startsAt": "2019-04-13T12:00:00",
+        "endsAt": "2019-04-13T12:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "8bbe720c-a313-49a4-b6fd-f488669363eb",
+            "name": "William Brander"
+          }
+        ],
+        "categories": [],
+        "roomId": 4090,
+        "room": "Educator 1"
+      },
+      {
+        "questionAnswers": [],
+        "id": "70408",
+        "title": "Monitoring a Global Multitenant Service",
+        "description": "Monitoring, or handling and governing, your Service in the Cloud is not for the faint hearted. The Holy Grail is ever so elusive! Holy Grail meaning that Global Multitenant amazing Service that is going to take over the world and bring you lots of dough! Recent updates to Azure Monitoring create a clearer picture and providing for us more of a unified experience where all diagnosing, metrics, logs, alerting and more happens in one place. It’s like walking up to a “single pane of glass” where you can overview manage and act all in one place! Let us define the needs for monitoring a modern service hosted in the Cloud and walk through the landscape of services and features that makes this possible for us!",
+        "startsAt": "2019-04-13T12:00:00",
+        "endsAt": "2019-04-13T12:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "c173d7ee-e503-46dc-9392-d016ca0c39f8",
+            "name": "Magnus Mårtensson"
+          }
+        ],
+        "categories": [],
+        "roomId": 4091,
+        "room": "Educator 2"
+      },
+      {
+        "questionAnswers": [],
+        "id": "71044",
+        "title": "An introduction to The seL4 Microkernel",
+        "description": "A Microkernel would be nice when developing embedded Operating Systems especially when resources are scarce, limited and high resilience  is needed considering many IoT out there are microcontrollers or you want to build an autonomous vehicle, aircraft, zeppelin or maybe a drone(UAV).\r\n  \r\nseL4 is the world's first operating-system kernel with an end-to-end proof of implementation correctness and security enforcement is available as open source. More information found here http://sel4.systems/.",
+        "startsAt": "2019-04-13T13:00:00",
+        "endsAt": "2019-04-13T13:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "8730e9dc-e914-403b-80ef-87e0df730638",
+            "name": "Pritvi Jheengut"
+          }
+        ],
+        "categories": [],
+        "roomId": 4093,
+        "room": "Flying Dodo"
+      },
+      {
+        "questionAnswers": [],
+        "id": "103781",
+        "title": "Conflict detection and resolution in an event-sourced system.",
+        "description": "There are well established patterns for dealing with conflicting updates in traditional data stores (Relational, Key value) but how do you deal with conflicts when you have event streams? This talk will cover the existing patterns for conflict detection in traditional storage; how those patterns can be applied to an event sourced system; what requirements that places on your event store and how an event-sourced system can enhance the user experience when conflicts occur.",
+        "startsAt": "2019-04-13T13:00:00",
+        "endsAt": "2019-04-13T13:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "b63cadcd-621b-422e-946d-60281f0b2169",
+            "name": "James Geall"
+          }
+        ],
+        "categories": [],
+        "roomId": 4091,
+        "room": "Educator 2"
+      },
+      {
+        "questionAnswers": [],
+        "id": "85116",
+        "title": "The RxJs(6) patterns that will make you a better Angular developer",
+        "description": "Angular is now built on this hot RxJS Core and mastering all the RxJS Operators is a good challenge in itself. This session will explore in great practicality how being good at reactive programming simply makes you a better angular programmer. And you don't need to know all the operators to write good reactive code already and that are enterprise ready! \r\n\r\nWe will explore the most common RxJS mistakes and at the same time the most common Rxjs patterns which will make your Angular life a stream of good practices. \r\n\r\n1) We'll discover the number one reason for unpredictable behaviors in your angular service layer when consuming HTTP services  \r\n\r\n2) We'll bust the memory leak problems, and what bad practice causes them and what patterns help to never worry about that again\r\n\r\n3) We'll learn how isolation levels are important to keep your observables alive and to keep your app reactive from transient errors.\r\n\r\n4) We'll understand how can angular itself helps us towards good practices, something that we do not always consider.\r\n\r\n5) We'll explore the best resources and materials to help us navigate through the stream of operators and most importantly, how to know which operator to use and when to use them.\r\n",
+        "startsAt": "2019-04-13T13:00:00",
+        "endsAt": "2019-04-13T13:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "dd1aaf3b-c86a-4758-aa38-aaad2d7dd9e8",
+            "name": "Alexandre Bazile"
+          }
+        ],
+        "categories": [],
+        "roomId": 4092,
+        "room": "Accelerator"
+      },
+      {
+        "questionAnswers": [],
+        "id": "85115",
+        "title": "Why tests feel so expensive and how to fix them",
+        "description": "Regardless of how our automated tests come into existence, be it TDD, BDD, test first or test after, they always seem hard to maintain. Every refactor or change seems to cause a lot of tests to break.\r\n\r\nThrough years of suffering through this pain, I've come to realise that a large contributor to this is that our automated tests know too much about how we implemented the code we're testing.\r\n\r\nBy reducing implementation knowledge I've been able to reduce the cost of my tests by increasing their resiliency to changes in the system under test.\r\n\r\nIn this talk I go over \"The Implementation Knowledge Principle\" which is simply \"Test method bodies should have as little implementation knowledge as possible\" and the techniques I use to implement it:\r\n - Identifying implementation knowledge in your tests:\r\n   - Public API\r\n   - DTO shapes\r\n   - Dependencies\r\n   - Constructor signatures\r\n   - Behaviour based asserts\r\n   - Why DRY by itself is not good enough\r\n     - Implementation knowledge vs repetition\r\n - Removing implementation knowledge from your tests using:\r\n   - Test data builders\r\n   - Substitute builders\r\n   - Converting behaviour based asserts to state based asserts using snapshot functions\r\n   - Named asserts\r\n   - Deep equality asserts",
+        "startsAt": "2019-04-13T13:00:00",
+        "endsAt": "2019-04-13T13:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "f651b23c-5e1b-4420-b3ca-0b2adab84bf6",
+            "name": "Brendon Page"
+          }
+        ],
+        "categories": [],
+        "roomId": 4090,
+        "room": "Educator 1"
+      },
+      {
+        "questionAnswers": [],
+        "id": "80477",
+        "title": "A quick introduction to Btrfs",
+        "description": "We will cover some useful features of Btrfs such as compression and system snapshots. We will discuss about copy-on-write (COW) principle and how Btrfs leverages on that.\r\n\r\nThe presentation is suitable for system admins/engineers.\r\n\r\nhttps://btrfs.wiki.kernel.org/index.php/Main_Page",
+        "startsAt": "2019-04-13T14:00:00",
+        "endsAt": "2019-04-13T14:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "ef7633d0-46b2-4045-bbc3-3dc1fcd55596",
+            "name": "Ish Sookun"
+          }
+        ],
+        "categories": [],
+        "roomId": 4093,
+        "room": "Flying Dodo"
+      },
+      {
+        "questionAnswers": [],
+        "id": "115942",
+        "title": "Agile is the New Black - Preparing for the Revolutionized Career Path",
+        "description": "Agile, Scrum, Kanban\r\nCo-Located, Distributed collaboration\r\nGains, Efficiency...\r\n",
+        "startsAt": "2019-04-13T14:00:00",
+        "endsAt": "2019-04-13T14:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "247fdd77-2bff-4f42-ac49-a62e3fc7c5c1",
+            "name": "Pritee Dabeea"
+          }
+        ],
+        "categories": [],
+        "roomId": 4090,
+        "room": "Educator 1"
+      },
+      {
+        "questionAnswers": [],
+        "id": "70627",
+        "title": "Event Store Internals",
+        "description": "Event Store is an ACID-compliant stream database with just 24 bytes of mutable state. It is also open source on GitHub and largely written in managed code, making it an excellent code base to start investigating database internals.\r\n\r\nIn this talk we'll look at the SEDA architecture of Event Store, from the client protocol down to the storage engine and replication model, discuss some of the hard decisions and why we made them, and talk about some of the tradeoffs which must be considered when building large scale systems on a managed platform.\r\n\r\nFor those new to the concepts of SOA, Domain Driven Design, Event Sourcing and CQRS we'll also briefly recap these and look at where they fit into the big picture of software development in order to better explain the use cases of Event Store.",
+        "startsAt": "2019-04-13T14:00:00",
+        "endsAt": "2019-04-13T14:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "82242efa-dc48-4c4b-8e26-6b93bbe5623a",
+            "name": "James Nugent"
+          }
+        ],
+        "categories": [],
+        "roomId": 4091,
+        "room": "Educator 2"
+      },
+      {
+        "questionAnswers": [],
+        "id": "70407",
+        "title": "Practical Design Patterns in the Age of the Cloud",
+        "description": "So many are thinking about, going to or are in the Cloud. Moving my old stuff from here to there is not all that difficult. Running a Cloud based workload, unlocking the true power of the platform, taking full advantage, saving money and creating applications that reach the globe is a little more challenging. Let's talk about the Software Design Patterns that make sense in the Age of the Cloud and let's ask the critical question - when to use which?",
+        "startsAt": "2019-04-13T14:00:00",
+        "endsAt": "2019-04-13T14:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "c173d7ee-e503-46dc-9392-d016ca0c39f8",
+            "name": "Magnus Mårtensson"
+          }
+        ],
+        "categories": [],
+        "roomId": 4092,
+        "room": "Accelerator"
+      },
+      {
+        "questionAnswers": [],
+        "id": "85308",
+        "title": "Brownfield TDD: How to eat an elephant?",
+        "description": "I have heard so many developers say \"TDD is great in concept, but I can't use it in my current project. I'll wait for my next project to introduce it...\" and they never do.\r\nLet's be honest TDD is not easy, especially when you have a large legacy code base to deal with, and if you are waiting for the perfect situation to start it may never come around. You need to make it happen.\r\nThis talk will give you practical handles on how to introduce TDD as one of your development practices in your existing brownfields (legacy) project. When do we start? Well, there is no better time than the present!",
+        "startsAt": "2019-04-13T15:00:00",
+        "endsAt": "2019-04-13T15:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "ea83915e-5023-408f-8d5e-b8eabd3a53cb",
+            "name": "Mark Whitfeld"
+          }
+        ],
+        "categories": [],
+        "roomId": 4092,
+        "room": "Accelerator"
+      },
+      {
+        "questionAnswers": [],
+        "id": "71052",
+        "title": "Installation of Linux or a FLOSS Operating System on a persistent memory system",
+        "description": "Have you ever installed a Free version of a Unix Operating System?\r\nAfter this session, it should be possible to install an OS yourself without much ado after a demo.\r\nA basic knowledge of computers is expected.",
+        "startsAt": "2019-04-13T15:00:00",
+        "endsAt": "2019-04-13T15:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "8730e9dc-e914-403b-80ef-87e0df730638",
+            "name": "Pritvi Jheengut"
+          }
+        ],
+        "categories": [],
+        "roomId": 4093,
+        "room": "Flying Dodo"
+      },
+      {
+        "questionAnswers": [],
+        "id": "69463",
+        "title": "Keeping an eye on everything: Monitoring distributed systems",
+        "description": "Monitoring doesn’t work the same once a system becomes distributed. The types of things that are important to monitor changes as well as “how” you monitor those metrics. This talk expands on the differences and covers ways of bringing the monitoring of a distributed system back under control.\r\n\r\nMicroservices are a great way to design your system so that it can scale. But once those pieces are in production, how do you know if all the different pieces are working properly? Are some metrics more important than others, and what story can each of the metrics tell you? This talk shows you some tools and techniques to monitor distributed systems",
+        "startsAt": "2019-04-13T15:00:00",
+        "endsAt": "2019-04-13T15:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "8bbe720c-a313-49a4-b6fd-f488669363eb",
+            "name": "William Brander"
+          }
+        ],
+        "categories": [],
+        "roomId": 4091,
+        "room": "Educator 2"
+      },
+      {
+        "questionAnswers": [],
+        "id": "80174",
+        "title": "Rock Your Career: How 25 Years of Speaking has Helped My Career and More!",
+        "description": "2019 marks my 25th year of speaking at conferences, user groups, companies that also includes teaching at a university for almost 20 years. My motivation was to help others coming up in the software engineering world and now as I reflect back, I can see how much speaking and teaching has dramatically helped my career and personal life. Speaking has even lead to being recognized by the Microsoft MVP program as an expert in my field.\r\n\r\nIn this session I will discuss how I got started, how it lead to writing books and training videos and how it lead to speaking in multiple countries. Along the way I will share stories and discuss how you can get started speaking or improve your speaking skills.",
+        "startsAt": "2019-04-13T15:00:00",
+        "endsAt": "2019-04-13T15:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "9f65cf94-df17-447d-b1e0-6a0fb0eb92a5",
+            "name": "David McCarter"
+          }
+        ],
+        "categories": [],
+        "roomId": 4090,
+        "room": "Educator 1"
+      },
+      {
+        "questionAnswers": [],
+        "id": "79070",
+        "title": "Introduction to the STM32",
+        "description": "In this session I will be talking about how to get started with the STM32 which is a series of ARM based microcontrollers made by ST micro electronics and I will also talk about why you should start using it in your product or project. I will first talk about where is the STM32 is used in already available products and I will talk a bit on the architecture. I will then explain why it is more suitable for projects or products that require a fast microcontroller with great features at a low cost and compare it to other microcontrollers such as the ATMEGA328P ( the microcontroller used in the Arduino Uno ). Then I will give a quick demonstration like blinking an led and printing some text on a LCD display using two very common development boards that you can get on eBay or Aliexpress. A quick explanation on the different models and variants of the STM32 will also be given so as not to get you confused on which variant of the STM32 you should use for your project or product. Additionally I will also show you how to use the tools for programming the STM32 and provide some resources on where you can learn more about it.I might also give away an STM32 kit and some sensors to a random person that attends my session.",
+        "startsAt": "2019-04-13T16:00:00",
+        "endsAt": "2019-04-13T16:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "e4d51ad0-51f7-44bc-ade2-8c7250bb5400",
+            "name": "Nathan Mangar"
+          }
+        ],
+        "categories": [],
+        "roomId": 4092,
+        "room": "Accelerator"
+      },
+      {
+        "questionAnswers": [],
+        "id": "84829",
+        "title": "Lightning Talks",
+        "description": "Short and interesting presentations about a range of topics in quick successions. Each session will last 5 minutes. \r\n\r\nCome and learn some new things ! Maybe you'll like some and get curious enough to try it yourself!\r\n\r\nLightning Talk lineup : \r\n\r\nNetiquette - Ish Sookun\r\nCloud IDE - Humeira Diljore\r\nMashup: The Little Things - Jules Giovanni\r\nVariable Fonts - Saamiyah Peerun\r\nThe importance of Comments - Jeshta B\r\nMeme Review (EU Article 13) - Chittesh Sham\r\nHow to make your own T-Shirt - Shelly Bhujun\r\nRichard Stallman - Pritvi Jheenghut\r\n",
+        "startsAt": "2019-04-13T16:00:00",
+        "endsAt": "2019-04-13T16:45:00",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "d802c569-2764-4a8c-ac90-4dec8e3c3f41",
+            "name": "Sandeep Ramgolam"
+          },
+          {
+            "id": "49af17a2-5b86-4b9b-aadc-07b99b08cc5d",
+            "name": "Jeshta Bhoyedhur"
+          },
+          {
+            "id": "dbc1be6b-eb43-4569-be8e-5c6cdabfc107",
+            "name": "Saamiyah Peerun"
+          },
+          {
+            "id": "f6f35e84-03a1-4738-8a9d-f949acee0da3",
+            "name": "Jules Michael"
+          },
+          {
+            "id": "8ba3a5c9-6cc7-4625-aab7-23f5389b87ee",
+            "name": "Shelly Hermia Bhujun-Sookun"
+          },
+          {
+            "id": "ef7633d0-46b2-4045-bbc3-3dc1fcd55596",
+            "name": "Ish Sookun"
+          },
+          {
+            "id": "d1ed8271-abc3-4c25-bb7b-b9423c6ded49",
+            "name": "Humeira Diljore"
+          },
+          {
+            "id": "a189d971-edd8-46d2-a69a-d561a20c681e",
+            "name": "Chittesh Sham "
+          },
+          {
+            "id": "8730e9dc-e914-403b-80ef-87e0df730638",
+            "name": "Pritvi Jheengut"
+          }
+        ],
+        "categories": [],
+        "roomId": 4090,
+        "room": "Educator 1"
+      },
+      {
+        "questionAnswers": [],
+        "id": "64d04fda-5cb9-40b7-890e-3e92573f6aa6",
+        "title": "Closing Ceremony",
+        "description": null,
+        "startsAt": "2019-04-13T17:00:00",
+        "endsAt": "2019-04-13T18:30:00",
+        "isServiceSession": true,
+        "isPlenumSession": true,
+        "speakers": [],
+        "categories": [],
+        "roomId": 4090,
+        "room": "Educator 1"
+      }
+    ]
+  }
+]

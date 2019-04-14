@@ -2,11 +2,11 @@ function paths(baseURL) {
   return {
     Login: baseURL + "/login",
     Logout: baseURL + "/logout",
-    Me: baseURL + "/api/me",
+    Me: "/api/devcon2019.lsl.network/me.json",
     Bookmarks: baseURL + "/api/bookmarks",
     Feedbacks: baseURL + "/api/feedbacks",
     OwnFeedbacks: baseURL + "/api/feedbacks/me",
-    Leaderboards: baseURL + "/api/leaderboards",
+    Leaderboards: "/api/devcon2019.lsl.network/leaderboards.json",
   };
 }
 

@@ -1,0 +1,2004 @@
+[
+  {
+    "id": "ce733ef3-e83e-4314-86dc-56e108e514df",
+    "firstName": "Harold",
+    "lastName": "Campbell",
+    "fullName": "Harold Campbell",
+    "bio": "Harold Campbell likes being aligned with companies that use software solutions to connect and empower people, thus bridging social, cultural and demographic gaps. His interests include: DevOps, cloud-based infrastructure, the application of Agile methodologies for strategic enterprise transformation, the general application of knowledge management systems, the strategic use of social and other connected networks and, mobile application development for education, fun and profit.",
+    "tagLine": "Agile Coach, The Mauritius Commercial Bank Ltd",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagefb18ecf6e85f3057452bf0c43bacc6b57400400TrueFalsef3-e83e-4314-86dc-56e108e514df.4634204b-8a25-41ec-be27-1c60b814d21a.jpg",
+    "sessions": [
+      {
+        "id": 115353,
+        "name": "Working in Agile: Tips for techies creating awesome products"
+      }
+    ],
+    "isTopSpeaker": true,
+    "links": [
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/haroldcampbell/",
+        "linkType": "LinkedIn"
+      },
+      {
+        "title": "Github",
+        "url": "http://github.com/haroldcampbell",
+        "linkType": "Other"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "e63f51cc-f8c0-4134-9926-2025f8044e60",
+    "firstName": "Irfaan",
+    "lastName": "Coonjbeeharry",
+    "fullName": "Irfaan Coonjbeeharry",
+    "bio": "Passionate about programming and thirst to learn in the IT sector. Join Spoon Consulting since 2018 and working in the Integration Cluster.",
+    "tagLine": "Consultant at Spoon Consulting",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagef018fd6cfce8b095de012f32e019870aa400400TrueFalsecc-f8c0-4134-9926-2025f8044e60.4c95cc94-7cfb-45b4-b963-dcba0bc8012b.jpg",
+    "sessions": [
+      {
+        "id": 85356,
+        "name": "What is Cloud integration? Cloud integration tools"
+      }
+    ],
+    "isTopSpeaker": true,
+    "links": [],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "37cfa614-39a0-4188-b0a7-3ad1c86b8294",
+    "firstName": "Justin",
+    "lastName": "Kaeser",
+    "fullName": "Justin Kaeser",
+    "bio": "Justin believes in \"Tools before Rules\": \r\nautomating the development toolchain to remove the friction of dealing with manual processes. He works on this goal as part of the IntelliJ Scala plugin team.",
+    "tagLine": "JetBrains / IntelliJ Scala plugin",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagef982ea46e348505a4e2f30394074abe5a400400TrueFalse14-39a0-4188-b0a7-3ad1c86b8294.b53e6e82-8d61-4946-ae78-8230c39866ab.jpeg",
+    "sessions": [
+      {
+        "id": 99509,
+        "name": "Integrating Developer Experiences - Build Server Protocol and beyond"
+      }
+    ],
+    "isTopSpeaker": true,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/ebenwert",
+        "linkType": "Twitter"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "56d42679-a1a9-4f66-b5da-3f08df9c899c",
+    "firstName": "Marcin",
+    "lastName": "Grzejszczak",
+    "fullName": "Marcin Grzejszczak",
+    "bio": "Author of \"Mockito Instant\" and \"Mockito Cookbook\" books. Author of Hands-On Guide to Spring Cloud Contract: Creating Consumer-Driven Contracts to Leverage Contract Tests and Improve Your Code and co-author of Applied Continuous Delivery Live Lessons. Co-founder of the Warsaw Groovy User Group, Warsaw Cloud Native Meetup and the DiverseIT initiative.\r\n\r\nLead of Spring Cloud Sleuth, Spring Cloud Contract and Cloud Pipelines projects at Pivotal ",
+    "tagLine": "Principal Software Engineer, Pivotal",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagefe200deba735278f3b762563292cd8030400400TrueFalsea49929ca-9ad4-404c-9b61-6def876f66c5.jpg",
+    "sessions": [
+      {
+        "id": 117982,
+        "name": "Contract Tests in the Enterprise"
+      }
+    ],
+    "isTopSpeaker": true,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/MGrzejszczak",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "Blog",
+        "url": "http://toomuchcoding.com/",
+        "linkType": "Blog"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "d802c569-2764-4a8c-ac90-4dec8e3c3f41",
+    "firstName": "Sandeep",
+    "lastName": "Ramgolam",
+    "fullName": "Sandeep Ramgolam",
+    "bio": "Passionate about front-end & tech. I love learning and sharing new stuff every single day. ",
+    "tagLine": "Senior Front-End Developer, LSL Digital",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagefff391ef5d56af0c6b805191b3b832cc3400400TrueFalse69-2764-4a8c-ac90-4dec8e3c3f41.a10c0351-7345-4259-9902-6f712df27aec.JPG",
+    "sessions": [
+      {
+        "id": 84829,
+        "name": "Lightning Talks"
+      }
+    ],
+    "isTopSpeaker": true,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://www.twitter.com/__sun__",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "Blog",
+        "url": "https://twitter.com/__sun__",
+        "linkType": "Blog"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "1ad5cb40-0f33-4b33-ab8d-415a5febf690",
+    "firstName": "Vanessa",
+    "lastName": "V.Chellen ",
+    "fullName": "Vanessa V.Chellen ",
+    "bio": "Directeur technique chez Extension Interactive. J’habite l’univers PHP depuis 14 ans et l’ai suivi/soutenu dans son évolution de PHP 4 à maintenant...  Spécialisé sur Symfony, Drupal et Prestashop, j’adore partager ma passion du code autour de moi.",
+    "tagLine": "CTO, Extension Interactive",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagef3d203ab11670b4678511c75ca5a13881400400TrueFalse40-0f33-4b33-ab8d-415a5febf690.ff985baf-630e-40b8-860b-58f4648c1b86.jpg",
+    "sessions": [
+      {
+        "id": 85395,
+        "name": "Asynchronous PHP, ReactPHP et oui ça existe !"
+      }
+    ],
+    "isTopSpeaker": true,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/VanessaChellen",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "Blog",
+        "url": "https://twitter.com/VanessaChellen",
+        "linkType": "Blog"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "07571a1f-3991-490d-9b0a-b4b8dede0079",
+    "firstName": "Akshay",
+    "lastName": "Ramluckhun",
+    "fullName": "Akshay Ramluckhun",
+    "bio": "I am currently the test automation lead for SDWorx Mauritius and also working towards implementing CICD Pipeline within our projects with test Automation using Ranorex. ",
+    "tagLine": "SDWorx - Service Delivery Manager",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagefe5c893e7379533402d2a1a77e71fffe4400400TrueFalse21b6fab1-5e5a-4a3e-b456-4249f3f13c3d.jpg",
+    "sessions": [
+      {
+        "id": 85164,
+        "name": "Azure DevOps Pipeline with Automated Testing - CICD"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/akshay-ramluckhun-353b3232/",
+        "linkType": "LinkedIn"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "dd1aaf3b-c86a-4758-aa38-aaad2d7dd9e8",
+    "firstName": "Alexandre",
+    "lastName": "Bazile",
+    "fullName": "Alexandre Bazile",
+    "bio": "\r\nAlexandre Bazile is an hyperactive technology enthusiast who always like to feed his technology adventure thrills. From mobile apps to desktop apps to cloud scale apps, he never misses an opportunity to breathe into a new technology. Good Design patterns and app architecture are his hot topics, but when he is not talking about coding, he's wondering what would be the next great SaaS solution. ",
+    "tagLine": "Technology Enthusiast and Independent Consultant",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagef6a472612215ceb3cfc692d9424e68e84400400TrueFalse3b-c86a-4758-aa38-aaad2d7dd9e8.e708f15e-870e-4202-a319-5b0e50d5a90d.png",
+    "sessions": [
+      {
+        "id": 85116,
+        "name": "The RxJs(6) patterns that will make you a better Angular developer"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/alexbazile",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "Blog",
+        "url": "https://alexandrebazile.com",
+        "linkType": "Blog"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "c19d531b-5180-4946-9a95-1e06182aeb1b",
+    "firstName": "Antonio",
+    "lastName": "Peric-Mazar",
+    "fullName": "Antonio Peric-Mazar",
+    "bio": "Antonio Perić-Mažar is CEO at Locastic, an agency based in Split, Croatia. Its main focus is to build amazing mobile and web applications for their clients, which range from small startups to enterprise companies from all around the world. For the last 10+ years Antonio has dedicated his time to delivering high quality software solutions for his clients and in 2011 he founded Locastic. In a very short period of time the team grew up and they became very popular in the development world.\r\n\r\nIn 2012 Antonio co-founded SHIFT Conference, the biggest startup/business tech event in South-East Europe. SHIFT Conference hosted people like Tom Preston-Werner (Github), Steve HUffman (Reddit), Justin Kan (Twitch), Allan Grant (Hired), Des Traynor (Intercom), Tomaž Štolfa (Layer) and many others. More info: http://2015.shiftsplit.com/, http://2014.shiftsplit.com/).\r\n\r\nDuring the last few years Antonio also focused on sharing his business and development knowledge with Startups and other Entrepreneurs and he spoke on many conferences including:\r\n2011 - Why Symfony2 framework is good choice? (Web strategija Croatia)\r\n2012- Why Symfony2? - ZgPhp Group\r\n2013 - Symfony workshop - Croatia\r\n2013 - Sylius - PHP Conference Croatia\r\n2013 - Symfony workshop - eZSummer Camp (http://ezsummercamp.com/)\r\n2013 - few small talks in local user groups\r\n2014 - Building SIngle page application with Symfony2 And AngularJS, PHPDay Verona\r\n2014 - Sylius - PHPDay Verona, unconference track\r\n2014 - Sylius as Ecommerce solution - WebCampLjubljana, Slovenia\r\n2014 - Started Symfony User Group Croatia (www.symfony-croatia.org)\r\n2014 - Building Restful API with Symfony2, PHPSummerCamp Croatia\r\n2014 - Building Single page application with Symfony2 and AngularJS, ZgPhp Croatia\r\n2014 - Mentoring Startups at Shift Conference\r\n2015 - Croatia entrepreneurship conference 3P - how to build a successful company\r\n2015 - Mentoring Startups at Shift Conference\r\n2015 - eZpublish/Php Summer camp - Using Sylius as an eCommerce solution with eZ\r\n2015 - Better Software Italy - A recipe for effective leadership\r\n2015 - Building Real Time applications with PHP - Symfony Camp, Ukraine\r\n2016 - Croatia entrepreneurship conference 3P - why quality services are the most important thing\r\n2016 - Summer Jam Croatia - entrepreneurship conference - how we build and lead our company?\r\n2016 - Symfony Croatia - Using Sylius in production - our experince\r\n2016 - Symfony Camp Ukraine - Maintainable + Extensible = Clean ... yes, Code!\r\n2017 - PHPUK - Drupal8 for Symfony Developers\r\n2017 - Dump Days - Progressive web applications are here!\r\n2017 - Dump Days - Panel discussion: Developers - most wanted profession in the world\r\n2017 - PHPDay Verona - Drupal8 for Symfony Developers\r\n2017 - DEVit Greece - Symfony more in depth with events and services (workshop)\r\n2017 - Symfony/Sylius Croatia Meetup - Lessons learned while\r\ndeveloping with Sylius\r\n2017 - DutchPHP - Drupal8 for Symfony developers workshop\r\n2017 - DutchPHP - Drupal8 for Symfony developers\r\n2017 - WebSummerCamp - Building APIs in an easy way using API Platform (workshop)\r\n2018 - TNT Split (Tourism and Technology) - Go Mobile, or Go Home\r\n2018 - PHP day Verona - Real REST is easy with Api Platform (workshop)\r\n2018 - CodeID (Odessa, Ukraine) - Symfon 4: the new way of developing web application\r\n2018 - Digital Labin, Croatia - Panel discussion, state of Industry\r\n2018 - WebCampZg, croatia - Real REST is easy with Api Platform (workshop)\r\n2018 - Symfony Camp, Kiev - Progressive web apps are here!\r\n2019 - GrowiIT, Novi Sad, Serbia - Service workers are your best friends!\r\n\r\n\r\n\r\nIn his free time he is also working on his PhD in Computer Science.\r\n",
+    "tagLine": "CEO @ Locastic",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagef66ba4aed2178228d3602559c2ea22a72400400TrueFalse1b-5180-4946-9a95-1e06182aeb1b.df1d240a-fde1-4c6a-a410-fba6b40a7155.jpg",
+    "sessions": [
+      {
+        "id": 85177,
+        "name": "A year with progressive web apps"
+      },
+      {
+        "id": 85172,
+        "name": "REST easy with API Platform"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/antonioperic",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/antonioperic/",
+        "linkType": "LinkedIn"
+      },
+      {
+        "title": "Blog",
+        "url": "https://www.locastic.com/blog",
+        "linkType": "Blog"
+      },
+      {
+        "title": "Company Website",
+        "url": "https://www.locastic.com",
+        "linkType": "Company_Website"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "54fe0f7c-f0f9-4ea2-aaf1-05e9d7e5fdc2",
+    "firstName": "Arreytambe",
+    "lastName": "Tabot",
+    "fullName": "Arreytambe Tabot",
+    "bio": "Arreytambe Tabot is a core Faculty in the Computing Department at the African Leadership College and the GDG Co-Lead for Mauritius. An experienced Software Product Manager with special interest in E-learning, Mobile Computing and Artificial Intelligence. He holds a BSc in Physics, an MSc in Computer Science is currently rounding off his PhD in Computer Science. ",
+    "tagLine": "Co-Lead, GDG Mauritius",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imageffbe0e52b235b2d43120caaf7ae936753400400TrueFalse7c-f0f9-4ea2-aaf1-05e9d7e5fdc2.28feac11-c3bc-48a3-aa35-a6945dd394ee.jpg",
+    "sessions": [
+      {
+        "id": 97596,
+        "name": "Cloud Study Jam"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/afrotabot",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "Blog",
+        "url": "https://medium.com/mentor2impact",
+        "linkType": "Blog"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "a1afe56d-adc2-40fa-a6f2-7c66ae84a525",
+    "firstName": "Arvind",
+    "lastName": "Ballgobin",
+    "fullName": "Arvind Ballgobin",
+    "bio": "Software developer with 5+ years in web techno",
+    "tagLine": "Senior Frontend Engineer",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagefa5a0d832f28b2d28846ab5c45e08c6b2400400TrueFalse6d-adc2-40fa-a6f2-7c66ae84a525.1ef768fe-21a9-464f-a7b5-ea3eb67f62a7.jpg",
+    "sessions": [
+      {
+        "id": 84065,
+        "name": "Web Components"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "64bd9e33-e619-490b-aae1-b5c328d456f2",
+    "firstName": "Arwin Neil",
+    "lastName": "Baichoo",
+    "fullName": "Arwin Neil Baichoo",
+    "bio": "Software Engineering Student & tech geek, having experience in Cloud, AI & DevOps practices and passionate about problem solving and UI/UX design.",
+    "tagLine": "DevOps at LSL Digital",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagef36d92950609233b102bd34db3caebda7400400TrueFalse33-e619-490b-aae1-b5c328d456f2.6a97f07d-a6bc-47e9-b7be-300b044ce378.jpg",
+    "sessions": [
+      {
+        "id": 80358,
+        "name": "Azure Pipelines : cloud CI/CD for any language & any platform."
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/arwinneil",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "Blog",
+        "url": "https://arwinneil.xyz",
+        "linkType": "Blog"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://linkedin.com/in/arwinneil/",
+        "linkType": "LinkedIn"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "5a67c2e7-25cc-48e6-8044-a394b1981c20",
+    "firstName": "aurelien",
+    "lastName": "levy",
+    "fullName": "aurelien levy",
+    "bio": "Directeur général de temesis, expert accessibilité depuis plus de 15 ans et orateur international (Techdays, CSUN, Funka accessibility days, Paris-web, a11y Berlin...) \r\nAprès une formation de web designer, j'ai commencé à m'intéresser au sujet de l'accessibilité numérique en 2004 en travaillant pour l'association des paralysées de France. Depuis lors, je n'ai cessé de travailler sur le sujet et j'accompagne de nombreuses  administrations françaises (présidence de la république, service-public.fr, services du premier ministre) et entreprises internationales dans la mise en accessibilité de leur sites (secteur retail, luxe et bancaire notamment)",
+    "tagLine": "Directeur général Temesis",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imageffeb36675456711aeaf605fa14a626701400400TrueFalsee7-25cc-48e6-8044-a394b1981c20.9ee4c355-9f9b-4051-a210-7b98d293824d.jpg",
+    "sessions": [
+      {
+        "id": 84747,
+        "name": "Développer des sites accessibles - un peu, beaucoup, passionnément"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/goetsu?lang=fr",
+        "linkType": "Twitter"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "98590667-81a3-47e6-9c58-42a2045a293c",
+    "firstName": "Avinash",
+    "lastName": "Meetoo",
+    "fullName": "Avinash Meetoo",
+    "bio": "I am a Senior Adviser, Entrepreneur, Computer Scientist, Futurist, Husband & Dad living in Mauritius.",
+    "tagLine": "A geek from Mauritius",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagefa1cf997bbfb1f20aab414fb485258b26400400TrueFalse67-81a3-47e6-9c58-42a2045a293c.ccd84ec7-ca38-4804-b29a-ede85ecb4ac7.jpg",
+    "sessions": [
+      {
+        "id": 85072,
+        "name": "How Deep Learning Works"
+      },
+      {
+        "id": 85074,
+        "name": "Building a Chatbot using Deep Learning"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/AvinashMeetoo",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "Blog",
+        "url": "https://www.avinashmeetoo.com/",
+        "linkType": "Blog"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/avinashmeetoo",
+        "linkType": "LinkedIn"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "f651b23c-5e1b-4420-b3ca-0b2adab84bf6",
+    "firstName": "Brendon",
+    "lastName": "Page",
+    "fullName": "Brendon Page",
+    "bio": "Brendon is passionate about writing software, in a sustainable way, that solves real problems. He is an avid TDD'er, loves teaching and spends a lot of his spare time speaking at or running dev focused community events. Lately a lot of his thinking has been around how to be better at writing software with a primary focus on the thought process of the developers themselves.",
+    "tagLine": "Passionate TDD'er, developer and team lead at Chillisoft",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagefa2914141b2a82b9e0046656f375891aa400400TrueFalse39170e8f-5d54-4e89-a29e-2c4fbc4a3fdb.jpg",
+    "sessions": [
+      {
+        "id": 85112,
+        "name": "Build the Roof First"
+      },
+      {
+        "id": 85115,
+        "name": "Why tests feel so expensive and how to fix them"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "1fd572bd-a45d-497a-99ea-f2cec9d9b9ab",
+    "firstName": "Chervine",
+    "lastName": "Bhiwoo",
+    "fullName": "Chervine Bhiwoo",
+    "bio": "Chervine is a Microsoft MVP, Solution Architect and Software Developer.\r\nHe discovered the world of programming at the age of 15 and since then could not stop learning more about it. \r\n\r\nToday he uses this knowledge to design and build software solutions that helps to solve business problems and makes the life of people easier.\r\n\r\nChervine also actively contributes to several technical communities both online and offline.",
+    "tagLine": "Solution Architect | Microsoft MVP",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagef4d0417bc10cd63a9c17e6a01c85cc36e400400TrueFalsee18b6aee-ea5e-42be-97d2-1e5362ac1084.jpg",
+    "sessions": [
+      {
+        "id": 99545,
+        "name": "Real Time Analytics for IoT"
+      },
+      {
+        "id": 118176,
+        "name": "From traditional to modern tech teams"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/chervinebhiwoo",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/chervinebhiwoo/",
+        "linkType": "LinkedIn"
+      },
+      {
+        "title": "Blog",
+        "url": "https://chervine.net",
+        "linkType": "Blog"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "a189d971-edd8-46d2-a69a-d561a20c681e",
+    "firstName": "Chittesh",
+    "lastName": "Sham ",
+    "fullName": "Chittesh Sham ",
+    "bio": "Winner of MIT Global Startup Labs (GSL) and runner up in krakathon 2018. Experienced in setting up linux-based infrastructure services, maintaining and scaling. ",
+    "tagLine": "Systems Engineer - LSL Digital",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagef583523e56ced2a105e6f37a5515985a4400400TrueFalse71-edd8-46d2-a69a-d561a20c681e.2a9afa6d-9c60-4519-9c1c-2d7a927ed274.jpg",
+    "sessions": [
+      {
+        "id": 80474,
+        "name": "PostgreSQL clustering in 5 mins."
+      },
+      {
+        "id": 84829,
+        "name": "Lightning Talks"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/chitesham_",
+        "linkType": "Twitter"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "d540e65b-c961-4a70-9adc-4f49047a7c29",
+    "firstName": "Codarren",
+    "lastName": "Velvindron",
+    "fullName": "Codarren Velvindron",
+    "bio": "Leader at work, Creator at home, Automation artist as a way of life... ",
+    "tagLine": "Technical Team Lead and automation artist at Orange Business Services",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagef8393968c28b0b4cbab16d384f7e9e85d400400TrueFalse5b-c961-4a70-9adc-4f49047a7c29.4de2767b-e2c7-42c3-85e8-23cf904d4792.jpg",
+    "sessions": [
+      {
+        "id": 83354,
+        "name": "Becoming an Automation artist"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/devildron",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "Blog",
+        "url": "https://blog.codarren.com",
+        "linkType": "Blog"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "9f65cf94-df17-447d-b1e0-6a0fb0eb92a5",
+    "firstName": "David",
+    "lastName": "McCarter",
+    "fullName": "David McCarter",
+    "bio": "David McCarter is a C# Microsoft MVP Developer/ Architect/ Consultant & Professional Code Reviewer in San Diego, California. David is the creator of dotNetTips.com that has been helping programmers since 1994. David has written for programming magazines and has published many books and his latest self-published book is David McCarter’s .NET Coding Standards. He is one of the founders and the president of the almost 20-year-old San Diego .NET Developers Group. In 2008 David won the INETA Community Excellence Award for his involvement in the .NET community. David is also an inventor of a software printing system that was approved by the US Patient Office in May 2008.\r\n\r\nDavid gives lectures on software engineering at colleges, high schools, user groups and conferences such as Code Camp, VSLive, Microsoft DevDays. This year is his 17th year teaching at the University of California San Diego.\r\n\r\nIf that’s not enough David is also an award winning photographer and works for bands such as Queensryche, Buckcherry, Geoff Tate, Gary Hoey and too many other bands in the US to list. He is also working on his first non-geek book about tribute bands. David is also a guitarist and has had the honor to play with Carl Franklin and the lead guitarist from Lynyrd Skynyrd.",
+    "tagLine": "dotNetTips.com",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagefedd8a7d06ef258c204c235c4bff1ec85400400TrueFalse94-df17-447d-b1e0-6a0fb0eb92a5.c655e198-10ac-4ffb-bee8-eeceb4e3a9aa.jpg",
+    "sessions": [
+      {
+        "id": 80170,
+        "name": "Rock Your Code: Code Performance for Microsoft .NET"
+      },
+      {
+        "id": 80174,
+        "name": "Rock Your Career: How 25 Years of Speaking has Helped My Career and More!"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/RealDotNetDave",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "Blog",
+        "url": "http://dotnettips.com",
+        "linkType": "Blog"
+      },
+      {
+        "title": "Company Website",
+        "url": "http://dotnettips.com",
+        "linkType": "Company_Website"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "http://www.linkedin.com/in/davidmccarter",
+        "linkType": "LinkedIn"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "374ceaaa-8010-4526-bba3-3ba0fefdd4b0",
+    "firstName": "David",
+    "lastName": "Pilato",
+    "fullName": "David Pilato",
+    "bio": "Depuis 2013, David Pilato est développeur et évangéliste chez elastic.co, après avoir passé les deux années précédentes à promouvoir le projet open-source Elasticsearch. Il en anime la communauté française et organise des [BBLs](http://brownbaglunch.fr) au sein des entreprises.",
+    "tagLine": "Developer | Evangelist @ elastic",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagefb9732810b51fcf39ba857abd68e53173400400TrueFalsedef8ec1d-51e7-4467-bc73-093ccf2f3eba.jpg",
+    "sessions": [
+      {
+        "id": 76180,
+        "name": "Enrichir ses adresses postales avec la suite Elastic"
+      },
+      {
+        "id": 76179,
+        "name": "Recherche avancée pour votre application \"legacy\""
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/dadoonet",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/dadoonet/",
+        "linkType": "LinkedIn"
+      },
+      {
+        "title": "Blog",
+        "url": "http://david.pilato.fr/",
+        "linkType": "Blog"
+      },
+      {
+        "title": "Company Website",
+        "url": "https://elastic.co",
+        "linkType": "Company_Website"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "462f2319-8811-4dbf-8c47-7e96f622865a",
+    "firstName": "Didier",
+    "lastName": "Bephage",
+    "fullName": "Didier Bephage",
+    "bio": "Practician for 21 years in the Mauritius ICT industry\r\n",
+    "tagLine": "Technology Director @SD Worx Mauritius ",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imageffd9396ad0a9c854952bb506f5f5517af400400TrueFalse19-8811-4dbf-8c47-7e96f622865a.97cb5d87-e5ff-4222-854e-0efd1c703bd3.jpg",
+    "sessions": [
+      {
+        "id": 115413,
+        "name": "Doing Agile vs Being Agile"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "558e6e8e-5bc5-4dbe-917d-619eb3f20da2",
+    "firstName": "Elie",
+    "lastName": "Sloïm",
+    "fullName": "Elie Sloïm",
+    "bio": "Élie Sloïm est Président fondateur de la société Opquast, spécialisée sur la qualité et l'accessibilité des sites Internet. Il  dirige la société depuis sa création.\r\n\r\nÉlie Sloïm est consultant, formateur et conférencier. À ce titre, il intervient dans de nombreuses manifestations, entreprises et cursus de formation en France et à l'étranger (a11y Québec, Confoo Montreal, ParisWeb, Open Data on the Web, Flupa UX day, CSUN San Diego...). Il s'est spécialisé sur la création de check-lists et référentiels. Il est notamment co-rédacteur des deux premières versions du RGAA (Référentiel Général d'Accessibilité pour les Administrations), des bonnes pratiques Opquast, et de nombreux autres référentiels publics ou privés.\r\n\r\nAuteur de plus d'une centaine d'articles sur la qualité web, il est également l'auteur avec les contributeurs du projet Opquast du memento « Site Web : les bonnes pratiques », préfacier des ouvrages « CSS2 » par Raphaël Goetter, « Ergonomie Web » par Amélie Boucher et « Card Sorting » de Gautier Barrère et Eric Mazzone et «Intégration Web : les bonnes pratiques» de Corinne Schillinger, chez Eyrolles, «Bonnes pratiques Eco-conception» par Frédéric Bordage, Eyrolles, «60 questions pour réussir votre site Web » par Jean-Marc Hardy, Dunod, « Écrire pour le Web » par Muriel Gani, chez Dunod. Il est enfin le co-auteur de \"Qualité Web\", livre de référence sur l'amélioration des services en ligne. Mentor dans le cadre de startups launchpad Google, il est référencé par Google en tant qu'expert UX/UI.",
+    "tagLine": "Founder and CEO at Opquast",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagefa1f37f700a9530744e7fca42220cbf80400400TrueFalse8e-5bc5-4dbe-917d-619eb3f20da2.080f4fc3-b2e6-4684-a7e5-37337bd67be7.jpg",
+    "sessions": [
+      {
+        "id": 84703,
+        "name": "Sécurité, accessibilité, privacy, eco-conception, comment prévenir les risques du projet Web"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/eliesl",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "Blog",
+        "url": "https://www.opquast.com/",
+        "linkType": "Blog"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "c90af104-f892-480d-97b1-c59f9f670e56",
+    "firstName": "Eric",
+    "lastName": "Durant",
+    "fullName": "Eric Durant",
+    "bio": "Retraité de l'industrie des vêtements médicaux jetables.",
+    "tagLine": "Créateur et ancien dirigeant   d' Alltex.fr",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagef0a338af4c20b1f06dfc46ebda8d8bdec400400TrueFalse04-f892-480d-97b1-c59f9f670e56.a0973660-7424-44ba-b9b5-01fd898d2b9a.jpg",
+    "sessions": [
+      {
+        "id": 98590,
+        "name": "3D Design using Autodesk Fusion 360"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "2bd6de43-9ea9-4076-8837-5fb6db414b24",
+    "firstName": "Fabrice",
+    "lastName": "Boullé",
+    "fullName": "Fabrice Boullé",
+    "bio": "Fabrice is Mauritian. He worked in finance in Paris and Sydney at EY. He is currently leading the development of Compass and Turbine, Mauritius' first Venture capital fund and Incubator. He fiercely belive that Mauritians have the mindset, the skillset and the techset required to build great StartUps  and to collaboratively a competitive Innovation hub.",
+    "tagLine": "Managing Partner, Compass venture capital ",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imageff64137ecb31014c49d83510253d862c1400400TrueFalse43-9ea9-4076-8837-5fb6db414b24.87e88972-4181-45f3-94b0-134956da423e.jpg",
+    "sessions": [
+      {
+        "id": 85380,
+        "name": "How Business Angels and Venture capitalists can help me kick off my project?"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "6d92a0e5-248f-44d5-a35c-3eb5deecc559",
+    "firstName": "Farhaana",
+    "lastName": "Balaky",
+    "fullName": "Farhaana Balaky",
+    "bio": null,
+    "tagLine": null,
+    "profilePicture": "/api/sessionize.com/speaker_photos/imageffaea949f44ad07d16b0c38ce5f8d4aab400400TrueFalsefe5a0725-11b7-4627-8c24-884681ee29c6.jpg",
+    "sessions": [
+      {
+        "id": 85356,
+        "name": "What is Cloud integration? Cloud integration tools"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "97e6a112-bae2-45e4-b996-223b87597380",
+    "firstName": "Hansynee",
+    "lastName": "Thecka",
+    "fullName": "Hansynee Thecka",
+    "bio": "She started her career as a CRM developer, and then she got to a point where she wanted to explore more, and she told herself that -  well, change is the only constant thing in life and if I do not explore now, then when? - So she switched path and is currently working as a software engineer with a focus on backend. ",
+    "tagLine": "Let's share a cookie. ",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagef3d1a6ff9b347ad55771ada55c80de8dc400400TrueFalse12-bae2-45e4-b996-223b87597380.82c58e39-9f44-4b4d-a542-631f47b9b109.png",
+    "sessions": [
+      {
+        "id": 85111,
+        "name": "A VUE with ASP.NET Core on a Raspberry PI."
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/3ncryptedcookie",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "Blog",
+        "url": "http://encryptedcookie.azurewebsites.net/",
+        "linkType": "Blog"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/hthecka",
+        "linkType": "LinkedIn"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "d1ed8271-abc3-4c25-bb7b-b9423c6ded49",
+    "firstName": "Humeira",
+    "lastName": "Diljore",
+    "fullName": "Humeira Diljore",
+    "bio": "Humeira is a tech enthusiast based in Mauritius. She's currently working as a front-end engineer at Expat.com. ",
+    "tagLine": "Front-end Engineer, Expat.com",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagef7becaaad069bda4b34e11f7dc4484a27400400TrueFalse71-abc3-4c25-bb7b-b9423c6ded49.2dc7458a-115e-417c-b077-aa51fe3a5b38.jpg",
+    "sessions": [
+      {
+        "id": 72831,
+        "name": "Hands-on Vue.js"
+      },
+      {
+        "id": 72853,
+        "name": "Vue.js Workshop "
+      },
+      {
+        "id": 84829,
+        "name": "Lightning Talks"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "ef7633d0-46b2-4045-bbc3-3dc1fcd55596",
+    "firstName": "Ish",
+    "lastName": "Sookun",
+    "fullName": "Ish Sookun",
+    "bio": "I am a systems architect at LSL Digital, the R&D division of La Sentinelle Ltd. In my free time I test and experiment on openSUSE.",
+    "tagLine": "LSL Digital / openSUSE member",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagef7f6d7aff30cee1f56b9a1220133f92e3400400TrueFalsed0-46b2-4045-bbc3-3dc1fcd55596.2c59da5d-a445-4e26-9e98-17120912129d.jpg",
+    "sessions": [
+      {
+        "id": 80475,
+        "name": "openSUSE Kubic - Let's talk about containers"
+      },
+      {
+        "id": 80477,
+        "name": "A quick introduction to Btrfs"
+      },
+      {
+        "id": 84829,
+        "name": "Lightning Talks"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/IshSookun",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "Blog",
+        "url": "https://hacklog.mu",
+        "linkType": "Blog"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "b63cadcd-621b-422e-946d-60281f0b2169",
+    "firstName": "James",
+    "lastName": "Geall",
+    "fullName": "James Geall",
+    "bio": "James Geall has been an independent consultant based in Europe and has been developing distributed systems for over 19 years. In the last 4 years he has been working with Event Store, as a consultant and developer, as well as helping a number of clients build Event sourced applications in a variety of different markets.\r\nHe has gained a wealth of experience about the challenges teams face as they try to build and run their service based \r\narchitectures in the cloud. James teaches teams that buzzwords don't magically deliver success and helps them create \r\nthe necessary processes and evaluate their options to deliver their projects successfully",
+    "tagLine": "Eventstore",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imageff3202e84cdc9fb2450dfdca715b31a23400400TrueFalsecd-621b-422e-946d-60281f0b2169.7a7f3dc3-d50b-4662-bb5f-265a7b22a004.jpg",
+    "sessions": [
+      {
+        "id": 103781,
+        "name": "Conflict detection and resolution in an event-sourced system."
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "82242efa-dc48-4c4b-8e26-6b93bbe5623a",
+    "firstName": "James",
+    "lastName": "Nugent",
+    "fullName": "James Nugent",
+    "bio": "James is a software engineer from Bath, England. He is currently an engineer at Joyent, working on Samsung's cloud systems. Prior to that he was an engineer at HashiCorp, Boundary and Jet.com, and was a founding member of the Event Store team. He is a connoisseur of West Country cider and old guitars.",
+    "tagLine": "Engineering at Samsung Electronics",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagefd8ab04672aa06f2b2b9c02f264634ceb400400TrueFalsefa-dc48-4c4b-8e26-6b93bbe5623a.3efea6de-34dd-4ad1-bc4d-b00317b6cccb.png",
+    "sessions": [
+      {
+        "id": 70625,
+        "name": "Infrastructure as TypeScript"
+      },
+      {
+        "id": 70627,
+        "name": "Event Store Internals"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/jen20",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "Blog",
+        "url": "https://operator-error.com",
+        "linkType": "Blog"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "8abfdea3-a6cd-4436-8262-64c07ec13656",
+    "firstName": "Jean-Marc",
+    "lastName": "Desvaux",
+    "fullName": "Jean-Marc Desvaux",
+    "bio": "\"You can do a lot in a lifetime if you don't burn out too fast\" (Neil Peart - Rush Band).",
+    "tagLine": "Head of Information Systems - GENERAL CONSTRUCTION",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagef39b657abd8d4d553ade3b9318736a666400400TrueFalsea3-a6cd-4436-8262-64c07ec13656.9b24548f-eced-40f9-934a-56649af61e58.PNG",
+    "sessions": [
+      {
+        "id": 84055,
+        "name": "Boosting Custom Built Apps Capabilities With  Google APIs & GCP"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "49af17a2-5b86-4b9b-aadc-07b99b08cc5d",
+    "firstName": "Jeshta",
+    "lastName": "Bhoyedhur",
+    "fullName": "Jeshta Bhoyedhur",
+    "bio": "Back-End Developer at LSL Digital, La Sentinelle Ltd. I work primarily with GoLang and progressive JavaScript framework such as VueJS. Winner of WebCup 2018. \r\n",
+    "tagLine": "Back-End Developer, LSL Digital",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imageffb3acc296851de1cbe18833156a004d6400400TrueFalsea2-5b86-4b9b-aadc-07b99b08cc5d.b31695d5-292b-497c-821a-e55a805ccf5d.jpg",
+    "sessions": [
+      {
+        "id": 85392,
+        "name": "State Management with Vuejs (Vuex) and gRPC"
+      },
+      {
+        "id": 84829,
+        "name": "Lightning Talks"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/jjeshta",
+        "linkType": "Twitter"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "4c563acb-7ae8-4b4d-9ddf-11c19a02b813",
+    "firstName": "Jochen",
+    "lastName": "Kirstätter",
+    "fullName": "Jochen Kirstätter",
+    "bio": "Although living on a tropical island, Jochen Kirstätter is a business owner and entrepreneur in different industry sectors. Mainly operating in the development of tailor-made software solutions since more than 15 years, he is also venturing into the world of beauty and body care. You can either meet him at the weekly Code & Coffee meetups of the Mauritius Software Craftsmanship Community or reach him on Twitter: @JKirstaetter.",
+    "tagLine": "Sr. Software Craftsman | Microsoft MVP",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagef33ae72ac7fe8a41bd033a0857bcb2c79400400TrueFalsecb-7ae8-4b4d-9ddf-11c19a02b813.a4ded553-1792-4582-b6d0-66573f80a695.jpg",
+    "sessions": [
+      {
+        "id": 97980,
+        "name": "Confirm your knowledge with a certification"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/jkirstaetter",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/jochenkirstaetter/",
+        "linkType": "LinkedIn"
+      },
+      {
+        "title": "Blog",
+        "url": "https://jochen.kirstaetter.name/",
+        "linkType": "Blog"
+      },
+      {
+        "title": "Company Website",
+        "url": "http://www.ios.mu/",
+        "linkType": "Company_Website"
+      },
+      {
+        "title": "Community",
+        "url": "https://www.mscc.mu/",
+        "linkType": "Other"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "f2617bc2-d35e-4fd7-9cea-02060f3e1608",
+    "firstName": "Josh",
+    "lastName": "Long",
+    "fullName": "Josh Long",
+    "bio": "Josh (@starbuxman) is the Spring Developer Advocate at Pivotal. Josh is a Java Champion, author of 5 books (including O'Reilly's upcoming Cloud Native Java: Designing Resilient Systems with Spring Boot, Spring Cloud, and Cloud Foundry) and 3 best-selling video trainings (including Building Microservices with Spring Boot Livelessons with Spring Boot co-founder Phil Webb), and an open-source contributor (Spring Boot, Spring Integration, Spring Cloud, Activiti and Vaadin). He is a huge Kotlin-fan, too.",
+    "tagLine": "Spring Developer Advocate, Pivotal",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagef0980ac078fc25d56826957d8dabfb4fa400400TrueFalsecb-7ae8-4b4d-9ddf-11c19a02b813.22d98992-b807-43e5-af9c-8c411b7ed044.jpg",
+    "sessions": [
+      {
+        "id": 83749,
+        "name": "Spring and Kotlin"
+      },
+      {
+        "id": 83748,
+        "name": "Bootiful Testing"
+      },
+      {
+        "id": 83747,
+        "name": "Reactive Spring"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "http://twitter.com/starbuxman",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "Blog",
+        "url": "http://joshlong.com",
+        "linkType": "Blog"
+      },
+      {
+        "title": "Company Website",
+        "url": "http://spring.io/team/jlong",
+        "linkType": "Company_Website"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "f6f35e84-03a1-4738-8a9d-f949acee0da3",
+    "firstName": "Jules",
+    "lastName": "Michael",
+    "fullName": "Jules Michael",
+    "bio": "I'm a Gopher for fun!",
+    "tagLine": "Back-End Developer, LSL Digital",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagef2c907d638e0c65a7eb5382de62139b9a400400TrueFalseef1670a6-67fe-4174-b6f1-cfafd9e760df.jpg",
+    "sessions": [
+      {
+        "id": 84829,
+        "name": "Lightning Talks"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "477c56a0-d60c-42c6-beef-fc009a020fb8",
+    "firstName": "Kherin",
+    "lastName": "Bundhoo",
+    "fullName": "Kherin Bundhoo",
+    "bio": "A non-expert in the realm of computer vision and deep learning trying to offer others the little nuggets of knowledge gleaned on the journey to discover the different avenues revealed by current Machine Learning Frameworks.",
+    "tagLine": "Consultant at Spoon Consulting",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagefb68cecf351078a15ce78291da2d4bf98400400TrueFalsea0-d60c-42c6-beef-fc009a020fb8.3af14462-55dc-46f7-a544-d7fac8c03330.png",
+    "sessions": [
+      {
+        "id": 85546,
+        "name": "Playing with Tensorflow and Computer Vision Algorithms"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "79196cc1-32fa-4ce8-8204-7aba4c84e9ce",
+    "firstName": "Kushul",
+    "lastName": "Soomaree",
+    "fullName": "Kushul Soomaree",
+    "bio": "Front End Developer at LSL Digital, one of the leading tech companies in Mauritius. Winner of WebCup 2018. VueJS and UX Expert.",
+    "tagLine": "Front-end Developer, LSL Digital",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagef347d52fe0b2fceb95de785f71a6c5802400400TrueFalsec1-32fa-4ce8-8204-7aba4c84e9ce.2ce2982f-84a9-48a0-b1eb-827314c2e090.jpg",
+    "sessions": [
+      {
+        "id": 85392,
+        "name": "State Management with Vuejs (Vuex) and gRPC"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/kushul_soomaree",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/kushul-soomaree-515502147/",
+        "linkType": "LinkedIn"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "e50f47f5-e674-44a1-9a3d-12b060239237",
+    "firstName": "Loganaden",
+    "lastName": "Velvindron",
+    "fullName": "Loganaden Velvindron",
+    "bio": "Loganaden Velvindron works in a small company in Mauritius. AFRINIC is responsible for the allocation of IP resources in Africa & the Indian Ocean.\r\n\r\nHe is also part of cyberstorm.mu, a group of cybersecurity experts who are making the internet more secure. Together with the team, he has worked on standardization and implementation of IPv6, DNS, TLS 1.3, SSH, http451 and other protocols in the Internet Engineering Task Force (IETF) and Open Source projects such as nftables.",
+    "tagLine": "AFRINIC/Cyberstorm.mu",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagef579d2121b20ee9c629399685ba8c2e13400400TrueFalseba7ab8f4-d6c8-4b06-b9e1-1aacff9ca94d.jpg",
+    "sessions": [
+      {
+        "id": 78605,
+        "name": "Redhat Enterprise Linux 8 and derivatives  have a new firewall: nftables."
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/@loganaden_42",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "Blog",
+        "url": "https://medium.com/@loganaden",
+        "linkType": "Blog"
+      },
+      {
+        "title": "Company Website",
+        "url": "https://cyberstorm.mu/",
+        "linkType": "Company_Website"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "c173d7ee-e503-46dc-9392-d016ca0c39f8",
+    "firstName": "Magnus",
+    "lastName": "Mårtensson",
+    "fullName": "Magnus Mårtensson",
+    "bio": "Magnus is Founder/CEO of Loftysoft a Microsoft Regional Director and a Microsoft Azure Most Valuable Professional. He is a consultant, tutor, process coach, technical lead and an international speaker. Some of his passions include connecting with audiences and organizing online and global conferences such as CloudBurst and GlobalAzure Bootcamp. As the first Azure MVP in the Nordic countries in 2012 he was awarded MVP of the year. He is also an Azure Insider, an Azure Advisor and an ASP.NET Insider and is a go-to person for Microsoft regarding Enterprise Cloud Consulting. Magnus has been a consultant for over 1½ decade and has the maximum possible experience time consulting on the Azure Platform.",
+    "tagLine": "Global community enthusiast",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagefa16c9d794c357a31d738c02ca377327c400400TrueFalseee-e503-46dc-9392-d016ca0c39f8.e40a5009-afad-466b-a03f-d05051b484ae.jpg",
+    "sessions": [
+      {
+        "id": 70408,
+        "name": "Monitoring a Global Multitenant Service"
+      },
+      {
+        "id": 70407,
+        "name": "Practical Design Patterns in the Age of the Cloud"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "http://twitter.com/noopman",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/noopman/",
+        "linkType": "LinkedIn"
+      },
+      {
+        "title": "Company Website",
+        "url": "http://loftysoft.com/",
+        "linkType": "Company_Website"
+      },
+      {
+        "title": "Blog",
+        "url": "http://loftysoft.com",
+        "linkType": "Blog"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "ea83915e-5023-408f-8d5e-b8eabd3a53cb",
+    "firstName": "Mark",
+    "lastName": "Whitfeld",
+    "fullName": "Mark Whitfeld",
+    "bio": "I am a software developer hailing from Chillisoft in Durban, South Africa. I have been involved in professional application development for the past 17 years and I am passionate about Software Craftsmanship, TDD, Clean Code, Lean and Open Source.\r\n\r\nI have worked across many sectors from manufacturing to entertainment, from insurance to logistics. I been doing TDD for the majority of my career and have assisted many customers in successfully getting their failing software projects back on track. My current open source focus is in leading the core team for the NGXS Angular state management framework.",
+    "tagLine": "Software Developer, Consultant and Developer Coach at Chillisoft",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagefbc84f9f600a6dd673942f5f19d7686eb400400TrueFalse5e-5023-408f-8d5e-b8eabd3a53cb.6cdcace8-a565-42ba-acd9-82369f264343.jpg",
+    "sessions": [
+      {
+        "id": 85354,
+        "name": "NGXS State Management: The power of reduced boilerplate"
+      },
+      {
+        "id": 85308,
+        "name": "Brownfield TDD: How to eat an elephant?"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/MarkWhitfeld",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "Blog",
+        "url": "https://medium.com/@mark.whitfeld",
+        "linkType": "Blog"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "97cbb424-9994-42dd-a9b1-3de907fe3711",
+    "firstName": "Mike",
+    "lastName": "Geyser",
+    "fullName": "Mike Geyser",
+    "bio": "Mike Geyser is a Google Developer Expert in Web Technologies from South Africa, where he works in the R&D team at a company called BBD. He is a co-organiser of the Jozi.JS meetup group, and is a frequent technical speaker. He has been hacking on the web since Geocities was a 'thing', and has the keening wail of dialup modem etched into his subconscious. While he is fluent in several ‘golden hammer’ programming languages, he has a long-lived love affair with JavaScript, and cannot see its (many, obvious) flaws. He has worked on lots of interesting enterprise applications, but it is the challenges of the public web that really appeal to him - having spent his formative years building transactional websites. He is always eager to talk about the web platform, but be warned, he is prone to hyperbole.",
+    "tagLine": "Warning: prone to hyperbole!",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagef21ddd6c2cc3d26f84b0f10cb89f92f94400400TrueFalse194a06d4-fb35-4f4b-8686-bd4ae78c725c.jpg",
+    "sessions": [
+      {
+        "id": 85105,
+        "name": "Now, Now-Now, or Just-Now: Building network-tolerant PWAs"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/mikegeyser",
+        "linkType": "Twitter"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "e4d51ad0-51f7-44bc-ade2-8c7250bb5400",
+    "firstName": "Nathan",
+    "lastName": "Mangar",
+    "fullName": "Nathan Mangar",
+    "bio": "Nathan Mangar is a High School student, a maker and a member of the cyberstorm.mu team. He has been working with and embeded devices and electronics since 2017 and has participated in Google Code In 2017, 2018 and IETF hackathons. He also has an interest for IoT related stuff.",
+    "tagLine": "Maker, Member of Cyberstorm.mu, High School Student",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagef54fc62dcce0596b6c5865b91dc8b2798400400TrueFalsed0-51f7-44bc-ade2-8c7250bb5400.b2abe35a-9f8f-457a-ba7a-e47380aa13dd.jpg",
+    "sessions": [
+      {
+        "id": 79070,
+        "name": "Introduction to the STM32"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/atech5122",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "Blog",
+        "url": "https://medium.com/@chromicorek",
+        "linkType": "Blog"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "330d0193-0f5f-4f9a-9df1-741448fa390d",
+    "firstName": "Nayar",
+    "lastName": "Joolfoo",
+    "fullName": "Nayar Joolfoo",
+    "bio": "Who else loves Hiking?",
+    "tagLine": "Freelance Consultant / DevOps ",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagef9bb30e7ac61b27638a8cf69e61147d61400400TrueFalse93-0f5f-4f9a-9df1-741448fa390d.878b26b0-903d-4b4e-85b1-3545cccd8069.jpg",
+    "sessions": [
+      {
+        "id": 81444,
+        "name": "Creating a High Availability Cloud Service with LXC/LXD and PeerVPN"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Blog",
+        "url": "https://nayarweb.com/blog/",
+        "linkType": "Blog"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "84b950ee-81ab-4aea-a5f2-f8cda15a69e8",
+    "firstName": "Nirvan (Tejas)",
+    "lastName": "Pagooah",
+    "fullName": "Nirvan (Tejas) Pagooah",
+    "bio": "🇲🇺 24. I am award winning multi-disciplinary Engineer from Mauritius with 5+ years of experience in analysis, design, development, testing and implementation of various internet-based projects. Experienced in all stages of the development cycle for dynamic web projects & in building systems with compelling digital experience. Currently involved in Front end Development, Digital Arts, UI/UX, Project Management & Research and Development. \r\n\r\nI am also a MQA Registered Trainer. \r\n\r\n💻 Front End Engineer at La Sentinelle Digital (LSL Digital).\r\n⭐️ Vice President of Mauritius Open Source Society.\r\n⚡️Secretary of the Linux User Group of Mauritius.",
+    "tagLine": "Multi-disciplinary Engineer & Certified Trainer",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagef9a5610a351f330bb8f3c1c5110c44ab4400400TrueFalseee-81ab-4aea-a5f2-f8cda15a69e8.7c5d044e-8295-4feb-9f2a-7e304229cdd2.jpg",
+    "sessions": [
+      {
+        "id": 85201,
+        "name": "Software Project Management, the thing you don’t want to hear"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://www.twitter.com/nirvanpagooah",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "Blog",
+        "url": "http://blog.nirvan.pagooah.com",
+        "linkType": "Blog"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://linkedin.com/in/tejaspagooah/",
+        "linkType": "LinkedIn"
+      },
+      {
+        "title": "Company Website",
+        "url": "https://lsl.digital",
+        "linkType": "Company_Website"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "38da18c7-eed7-46ec-9bac-ce60db8a1908",
+    "firstName": "Nisha",
+    "lastName": "Appanah",
+    "fullName": "Nisha Appanah",
+    "bio": "Nisha has over 10 years experience in software development, realizing the dreams of customers in Europe and Africa. Holder of two Master's degrees in International Business and Computational Science and Engineering.",
+    "tagLine": "Founder of Aplica Ltd / Software Developer",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagef9889388b443b511a8d0392168d7e97d0400400TrueFalsec7-eed7-46ec-9bac-ce60db8a1908.0e21ed01-4d41-4097-9d71-2f07f18a2323.png",
+    "sessions": [
+      {
+        "id": 98226,
+        "name": "How to program a Robot Arm"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "e0e1b003-4f28-4e6d-8076-0f6aef665d8c",
+    "firstName": "Nitin J",
+    "lastName": "Mutkawoa",
+    "fullName": "Nitin J Mutkawoa",
+    "bio": "My name is Jaykishan Mutkawoa, though everyone knows me by Nitin. I have been participating in Open source and Linux meetups since years back. I am currently working as a DevOps Engineer at Orange Cloud for Business – Orange Business Services. I live in Mauritius, a little island in the Indian Ocean. I am also a member of cyberstorm.mu.\r\n\r\nI believed in collaborative work such as the IETF hackathons which I have been participating since 2015. I represented Mauritians at the IETF – Internet Engineering Task Force 102 Montreal Canada hackathon remotely from Mauritius. I was also invited by the ISOC – Internet Society to be a facilitator at the AIS – African Internet Summit 2018 Hackathon which took place in Dakar, Senegal. I was one of the facilitators for the NTP – Network Time Protocol hackathon.",
+    "tagLine": "cyberstorm.mu - Orange Business Services",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagef372ade99f236ce81510c4909b472b707400400TrueFalse786e26ae-092b-4fcc-9af8-f43ceee50def.jpg",
+    "sessions": [
+      {
+        "id": 79681,
+        "name": "Ansible"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/TheTunnelix",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "Blog",
+        "url": "https://tunnelix.com",
+        "linkType": "Blog"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "4ae2c15b-2ec9-44f3-827d-ec04f7b074e1",
+    "firstName": "Olfa",
+    "lastName": "Fdhila",
+    "fullName": "Olfa Fdhila",
+    "bio": "-",
+    "tagLine": "WTM Lead Mauritius ",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagef4833f68c5b28411a50e0d8d27836a8ee400400TrueFalse5538a186-4014-4563-90b3-7d2f731c7236.jpg",
+    "sessions": [
+      {
+        "id": 97126,
+        "name": "Build beautiful native apps on time record with Flutter"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "03699e05-2575-434d-821d-440d4f93877f",
+    "firstName": "Olivier",
+    "lastName": "MEYER",
+    "fullName": "Olivier MEYER",
+    "bio": "Eating mandarine, drinking coffee, debugging dirty code, managing complex projects and watching progress bar since 2000",
+    "tagLine": "Director at Aerow Ecm World ltd",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagef9b423e52f0ec9b0a26d2ab1ebed201f6400400TrueFalse05-2575-434d-821d-440d4f93877f.bf8bb0d6-7dca-47fd-89ab-d071fe07a2ed.jpg",
+    "sessions": [
+      {
+        "id": 84178,
+        "name": "K2 Business process management"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/omeyer/",
+        "linkType": "LinkedIn"
+      },
+      {
+        "title": "Company Website",
+        "url": "https://www.aerow.group/aerow-ecm-world-ltd/",
+        "linkType": "Company_Website"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "247fdd77-2bff-4f42-ac49-a62e3fc7c5c1",
+    "firstName": "Pritee",
+    "lastName": "Dabeea",
+    "fullName": "Pritee Dabeea",
+    "bio": "https://mu.linkedin.com/in/pritee-gungah-dabeea",
+    "tagLine": "SD Worx Mauritius, Agile Coach",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagef6f0ee378b6ec43e01ef59b479c65e1f7400400TrueFalse77-2bff-4f42-ac49-a62e3fc7c5c1.744fa8e9-beab-47c1-8478-e24fbed1538a.jpg",
+    "sessions": [
+      {
+        "id": 115942,
+        "name": "Agile is the New Black - Preparing for the Revolutionized Career Path"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Company Website",
+        "url": "http://www.sdworx.com",
+        "linkType": "Company_Website"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "8730e9dc-e914-403b-80ef-87e0df730638",
+    "firstName": "Pritvi",
+    "lastName": "Jheengut",
+    "fullName": "Pritvi Jheengut",
+    "bio": "geek@FLOSS.Slackware\r\n\r\nExperienced Telecommunications Technician with a demonstrated history of working in the computer hardware industry. Skilled in Linux System Administration, Storage, Bash, and Event Management. Strong professional with a Diploma In Physics from University of Mauritius. ",
+    "tagLine": "Let's get connected ",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagefcd9846b410ecd5b03d9f7194861f87fc400400TrueFalsedc-e914-403b-80ef-87e0df730638.8839af5b-fecf-42ab-af29-00a7272eba9f.jpg",
+    "sessions": [
+      {
+        "id": 71044,
+        "name": "An introduction to The seL4 Microkernel"
+      },
+      {
+        "id": 71052,
+        "name": "Installation of Linux or a FLOSS Operating System on a persistent memory system"
+      },
+      {
+        "id": 84829,
+        "name": "Lightning Talks"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/zcoldplayer",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "Blog",
+        "url": "http://zcoldplayer.blogspot.com",
+        "linkType": "Blog"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/pritvi-jheengut-15589213/",
+        "linkType": "LinkedIn"
+      },
+      {
+        "title": "Company Website",
+        "url": "http://metservice.intnet.mu/",
+        "linkType": "Company_Website"
+      },
+      {
+        "title": "Employer Website",
+        "url": "http://www.govmu.org/",
+        "linkType": "Other"
+      },
+      {
+        "title": "mscc_blog",
+        "url": "https://www.mscc.mu/author/zcoldplayer/",
+        "linkType": "Other"
+      },
+      {
+        "title": "linux_blog",
+        "url": "https://www.linuxquestions.org/questions/blog/jheengut-297212/",
+        "linkType": "Other"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "4007b5e5-984e-4a5d-920a-9be3ba6c283b",
+    "firstName": "Priyeshan",
+    "lastName": "Sreeneebus",
+    "fullName": "Priyeshan Sreeneebus",
+    "bio": "Tech enthusiast with a penchant for Game Development and Front-End Development.",
+    "tagLine": "Game Developer at Generative Arts",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagefe63cea79486cf9d1fb2462ea6cde8dc2400400TrueFalsee5-984e-4a5d-920a-9be3ba6c283b.683153be-47e8-4196-a47e-93c07c67c2bd.jpg",
+    "sessions": [
+      {
+        "id": 85559,
+        "name": "Introduction to IoT and Robotics with Micropython"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/BaphometPrichi",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/priyeshan-sreeneebus",
+        "linkType": "LinkedIn"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "51f713e3-f67b-4884-aed0-ef782fda8a6c",
+    "firstName": "Purdaseea",
+    "lastName": "Dhaneshwursingh",
+    "fullName": "Purdaseea Dhaneshwursingh",
+    "bio": "Currently working at SD Worx Ltd and having an specialization in Machine learning / Artificial intelligent development.",
+    "tagLine": "Software Developer / Devops @ SD Worx Mauritius",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagefff19ec440df8d72f0b69708fbf92c862400400TrueFalsee3-f67b-4884-aed0-ef782fda8a6c.ae98f8f2-a687-48d5-9c20-423101df4cbf.jpg",
+    "sessions": [
+      {
+        "id": 85164,
+        "name": "Azure DevOps Pipeline with Automated Testing - CICD"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "28f2b4a4-2172-4413-87de-43dc20535646",
+    "firstName": "Rahul",
+    "lastName": "Thakoor",
+    "fullName": "Rahul Thakoor",
+    "bio": "A medical graduate now turned developer! I enjoy problem solving and programming for the web and embedded systems. ",
+    "tagLine": "Lifelong Learner",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagef1ec031d0e970c9585b8bcd02b6bce6f1400400TrueFalsea4-2172-4413-87de-43dc20535646.26fe5732-f9eb-445d-b34d-69b7f5e38e25.jpg",
+    "sessions": [
+      {
+        "id": 84460,
+        "name": "Rust: The programming language that empowers everyone"
+      },
+      {
+        "id": 85559,
+        "name": "Introduction to IoT and Robotics with Micropython"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/rahulthakoor",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "Blog",
+        "url": "https://rahul-thakoor.github.io/",
+        "linkType": "Blog"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "146ba683-b905-46a9-bc61-108c46964ce8",
+    "firstName": "Renghen",
+    "lastName": "thanos",
+    "fullName": "Renghen thanos",
+    "bio": "Been doing software dev since 1990",
+    "tagLine": "I do not do tagline",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagefbb74bb08d09016e619f59b716830365d400400TrueFalse83-b905-46a9-bc61-108c46964ce8.e022da5e-d987-4f22-b410-f41bb86818e4.jpg",
+    "sessions": [
+      {
+        "id": 80862,
+        "name": "Concurrency - A glance at the techniques out there"
+      },
+      {
+        "id": 118176,
+        "name": "From traditional to modern tech teams"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "0d49ffb4-40ef-4a2f-ae26-a0b91400d656",
+    "firstName": "Saad",
+    "lastName": "ALLY MOHAMED",
+    "fullName": "Saad ALLY MOHAMED",
+    "bio": "I am an Associate Manager and Solution Expert Consultant in Enterprise Content Management for OpenText Products at AEROW ECM World Ltd. I have been working in Software Engineering fields and Enterprise Content Management Projects with 6 years of international experience mostly on client sites in Europe.\r\n\r\n\r\nI have done my education in Software Engineering at university level and certified with professional certifications as well, among which I am a certified OpenText Consultant.\r\n\r\n\r\nI started as a Software Engineer and Consultant evolving to Senior Consultant till an Expert Consultant in the OpenText Documentum field. During these phases I have done software developments, solutions design and architecture for big international enterprises, team leader, referent for clients, management tasks, project and team activities follow up, presentations and workshops, documentations, trainer and coaching activities.\r\n\r\n\r\nThis year I am joining back the Mauritian branch of AEROW group, AEROW ECM World Ltd where I initially started in 2013. After all these years of working in international companies projects on site and excelling in the challenges, one of my main objective alongside with AEROW is to bring back these acquired knowledge, competencies and strong work ethics to share with the local teams and contribute in our daily development activities for Big Enterprises and as well as contributing to increase the Mauritian market value and work qualities in the Software Development industry at worldwide level.",
+    "tagLine": "Associate Manager and Solution Expert Consultant - AEROW ECM World Ltd",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagefca0923b3b081a206ef68a5a384c53702400400TrueFalseb4-40ef-4a2f-ae26-a0b91400d656.eb782721-b562-4087-a303-958bc2845898.png",
+    "sessions": [
+      {
+        "id": 83322,
+        "name": "Enterprise Content Management – Enforced Security Solutions"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Blog",
+        "url": "https://www.linkedin.com/in/saad-allymohamed-40818839/",
+        "linkType": "Blog"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "dbc1be6b-eb43-4569-be8e-5c6cdabfc107",
+    "firstName": "Saamiyah",
+    "lastName": "Peerun",
+    "fullName": "Saamiyah Peerun",
+    "bio": "I code at Maureva ltd and I bake at The Broken Cauldron",
+    "tagLine": "Software developer",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagef1cc4155d5ab02ffeb742776f75e8fcda400400TrueFalse6b-eb43-4569-be8e-5c6cdabfc107.eca49d98-2e48-4f7d-a4ca-f351814bc42d.jpg",
+    "sessions": [
+      {
+        "id": 84798,
+        "name": "TypeScript - Or, stop worrying and learn to trust the compiler"
+      },
+      {
+        "id": 84829,
+        "name": "Lightning Talks"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/smearthelove",
+        "linkType": "Twitter"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "8ba3a5c9-6cc7-4625-aab7-23f5389b87ee",
+    "firstName": "Shelly Hermia",
+    "lastName": "Bhujun-Sookun",
+    "fullName": "Shelly Hermia Bhujun-Sookun",
+    "bio": "I am designer at Island Haze (Mauritius), a fashion geek with strong interest in technology and I randomly blog at littleshelly.me.",
+    "tagLine": "Designer at Island Haze (Mauritius)",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagef690a38bbb3456a67c6e6d9c5e77845ea400400TrueFalsec9-6cc7-4625-aab7-23f5389b87ee.c0d5c970-3d6f-4c87-9240-d330e7be9091.jpg",
+    "sessions": [
+      {
+        "id": 80726,
+        "name": "Using LaTeX for writing academic papers/thesis"
+      },
+      {
+        "id": 84829,
+        "name": "Lightning Talks"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/Shelly_Bhujun",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "Blog",
+        "url": "https://littleshelly.me/",
+        "linkType": "Blog"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "cd7e4e2f-263b-4608-83bc-6e6e9d90e966",
+    "firstName": "Siven",
+    "lastName": "Sadiyan",
+    "fullName": "Siven Sadiyan",
+    "bio": "Passionate about web development, with over 15 years of experience as a PHP programmer. Lead Programmer for one of the leading web agencies in Melbourne, Australia for several years. Specialised in e-commerce with Magento, OpenCart, and WooCommerce.",
+    "tagLine": "Technical Project Manager at Extension Interactive",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagefb40ac73d9b1bce8403839502ba46f387400400TrueFalse2f-263b-4608-83bc-6e6e9d90e966.cdb143cd-7dc7-424d-9d2f-ecbf941c58e0.png",
+    "sessions": [
+      {
+        "id": 84898,
+        "name": "BDD with Behat in Symfony"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Blog",
+        "url": "http://siven76.wordpress.com",
+        "linkType": "Blog"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "5ca04941-04c9-4ad4-80f3-081108358418",
+    "firstName": "Soodeshna",
+    "lastName": "Bappoo",
+    "fullName": "Soodeshna Bappoo",
+    "bio": "Software Developer at Maureva Ltd, currently diving in AWS services and serverless applications.",
+    "tagLine": "Software Developer at Maureva Ltd",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagef1e2787620cf3adc83344e517b5bdbd10400400TrueFalse41-04c9-4ad4-80f3-081108358418.d4bccb54-de91-4708-9cf5-23921bfcf4d3.jpg",
+    "sessions": [
+      {
+        "id": 114768,
+        "name": "AWS User Meeting"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "9a95d0ba-6acd-47ba-af75-d0d2676d9276",
+    "firstName": "Suyash",
+    "lastName": "Sumaroo",
+    "fullName": "Suyash Sumaroo",
+    "bio": "Suyash has over 10 years experience in the software development sector.\r\n\r\nBeing a full-stack developer, he helped develop and launch various cloud-based services based on the SAAS model.\r\n\r\nSince 2015, Suyash has been specializing in CryptoCurrency and blockchain technologies and has been among the first to launch blockchain-based commercial products and services in Mauritius and the Indian Ocean.",
+    "tagLine": "Founder and Director - Codevigor Ltd",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagef4420bbef6fa5d377eabe98c7cbec734f400400TrueFalseba-6acd-47ba-af75-d0d2676d9276.bbae7c0c-dc5b-4e39-b60a-e064cc07611c.jpg",
+    "sessions": [
+      {
+        "id": 84252,
+        "name": "Blockchain Consensus Algorithms"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/suyash515",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "Blog",
+        "url": "https://medium.com/@suyash_38073",
+        "linkType": "Blog"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/suyashsumaroo/",
+        "linkType": "LinkedIn"
+      },
+      {
+        "title": "Company Website",
+        "url": "http://www.codevigor.com",
+        "linkType": "Company_Website"
+      },
+      {
+        "title": "Quora",
+        "url": "https://www.quora.com/profile/Suyash-Sumaroo",
+        "linkType": "Other"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "3fe1cf8c-d24b-45ea-9f5c-e50050cd21a9",
+    "firstName": "Valery",
+    "lastName": "Ambroise",
+    "fullName": "Valery Ambroise",
+    "bio": "8+ ans d'expérience dans le développement de sites et applications Web. Passionné de technologie, de communication digitale et de musique.",
+    "tagLine": "Chef de Projet Technique, Extension Interactive",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagef56bcdf94e95d4def68a9b33f0795325a400400TrueFalse8c-d24b-45ea-9f5c-e50050cd21a9.40deebfe-5635-40a8-95e1-19b09f5ccfcb.JPG",
+    "sessions": [
+      {
+        "id": 84579,
+        "name": "Architecture modulaire avec Laravel"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "cf415be6-0558-4411-aa4d-dee4f0648547",
+    "firstName": "Vidush H.",
+    "lastName": "Namah",
+    "fullName": "Vidush H. Namah",
+    "bio": "He is a nomad of the geek world - traveling through various technologies yet never settling. He also writes really dramatic biographies.",
+    "tagLine": "Independent Consultant",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagef42dfba3c6869a56c2cedd519cf19a174400400TrueFalsee6-0558-4411-aa4d-dee4f0648547.64a21c75-8bb1-42dd-9a4e-c63529217c19.jpg",
+    "sessions": [
+      {
+        "id": 115650,
+        "name": "React Native Mobile : The Saga"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/VHNamah",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/vnamah/",
+        "linkType": "LinkedIn"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "f21018a7-7259-430e-a226-2b58f4cda77a",
+    "firstName": "Vikash",
+    "lastName": "Lalsing",
+    "fullName": "Vikash Lalsing",
+    "bio": "Vikash has an extensive experience in end-to-end Service Delivery, Process Improvement, IT Risk & Compliance and Information Security. He leads the Castille Labs Mauritius delivery center of excellence that provides high-quality services to clients in industries such as banking, telecoms, fintech, gaming and public sector. He advocates flexible partnership models that allow talents to work remotely and from cross locations.",
+    "tagLine": "Castille Labs - Delivery Centre Manager",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagef8f6a6533818ce47b4fd3426925fe5f3f400400TrueFalsea7-7259-430e-a226-2b58f4cda77a.ef7a4da1-e8a4-4445-bd7d-e0d72a35aa7a.jpg",
+    "sessions": [
+      {
+        "id": 85417,
+        "name": "How to enrich your career prospects with Contracting"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/viklalsing/",
+        "linkType": "LinkedIn"
+      },
+      {
+        "title": "Company Website",
+        "url": "https://www.castillelabs.com",
+        "linkType": "Company_Website"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "155ed8f6-a3ca-4bbe-9c90-1ffa7b93b1cb",
+    "firstName": "Vincent",
+    "lastName": "Chatard",
+    "fullName": "Vincent Chatard",
+    "bio": "Vincent Chatard is the Chief Operating Officer of the MCB Limited since September 2015, also steering the Digital Transformation. Vincent has accumulated wide-ranging experience in the banking sector, having occupied a number of senior executive positions in international banks. He acted as Chief Operating & Development Officer and Executive Director of Medirect and served as the Chief Operating Officer and Programme Director for the launch of BforBank (the direct bank from Credit Agricole) from 2008 to 2011. He served as Chief Information Officer and Senior Vice-President Business Development of ING Direct from 2000 to 2008 to establish the units both in France and the UK. Before that, he was Head of Information Technology & Organisation of Banque Robeco France and worked for KPMG Peat Marwick and Crédit Lyonnais International. He holds a Masters of Engineering from Agro ParisTech and an Executive MBA from HEC Paris",
+    "tagLine": "Chief Operating Officer, The Mauritius Commercial Bank Ltd",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagef8a5967f35808c1ea0c34e0bfb6bbf71c400400TrueFalsef6-a3ca-4bbe-9c90-1ffa7b93b1cb.468f26f2-117a-4ac0-b70c-adccf9d6577c.jpg",
+    "sessions": [
+      {
+        "id": 115882,
+        "name": "Agile at MCB: From Vision to Reality"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/vincent-chatard-8bb76/",
+        "linkType": "LinkedIn"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "8bbe720c-a313-49a4-b6fd-f488669363eb",
+    "firstName": "William",
+    "lastName": "Brander",
+    "fullName": "William Brander",
+    "bio": "\r\n\r\nA professional geek, William works for Particular Software writing amazing software like NServiceBus. Passionate about the web, he is engaged in a sordid love affair with JavaScript, and spends most of his free time trying to convince others of it’s beauty and elegance.\r\n\r\nWhen not behind his laptop hacking away, this amateur beer enthusiast can often be found playing boardgames or drinking cold-brew coffee.",
+    "tagLine": "Distributed Systems Bricklayer",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagef5060c4ca8cd7c58237c81f3195d3983b400400TrueFalsee67b33cd-cc35-4364-a8f6-41da90e796af.jpg",
+    "sessions": [
+      {
+        "id": 69460,
+        "name": "Microfrontends as a solution to legacy JavaScript"
+      },
+      {
+        "id": 69463,
+        "name": "Keeping an eye on everything: Monitoring distributed systems"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/WilliamBZA",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "Blog",
+        "url": "https://particular.net/blog",
+        "linkType": "Blog"
+      },
+      {
+        "title": "Company Website",
+        "url": "https://particular.net/",
+        "linkType": "Company_Website"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/william-brander-ba38b1117/",
+        "linkType": "LinkedIn"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "6f7fab3d-55ae-498c-bb0a-6f5857c32fb2",
+    "firstName": "Yanis",
+    "lastName": "Ghidouche",
+    "fullName": "Yanis Ghidouche",
+    "bio": "Having graduated with a MSC in Web and e-Business Engineering from France, I have always been passionate by new technologies especially the web. I keep myself up to date with the latest trends and I am keen to learn new concepts to adapt my skills to the highest standards.\r\n\r\nMy current job allows me to put in practice my knowledge for prestigious clients like Accor, Total, Technip etc.; which have high requirements concerning code quality and security. I am the leader of a team of developers, in charge of the planning and reviewing of the work for an excellent output.",
+    "tagLine": "Ipedis company - CTO",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagefa2ec378cd09afe6341b184f51d1c261e400400TrueFalse3d-55ae-498c-bb0a-6f5857c32fb2.47a530df-55fb-46c3-8238-ee925df11ed8.jpeg",
+    "sessions": [
+      {
+        "id": 83372,
+        "name": "Angular Under the hood - RxJS"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Blog",
+        "url": "https://stackoverflow.com/users/9483405/yanis-git",
+        "linkType": "Blog"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "c3496308-e8d9-48e6-b41f-ee43af9e94ad",
+    "firstName": "Youvraj",
+    "lastName": "Potheegadoo",
+    "fullName": "Youvraj Potheegadoo",
+    "bio": "Youvraj is a passionate and active contributor in the R&D team. He is considered as a UI expert and has held several exciting roles in Ceridian where he contributed in the development and maintenance of various products & feature for Ceridian US and Ceridian Canada.",
+    "tagLine": "Software Developer Lead",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagef927a9123334986befc44b18d7183522e400400TrueFalse08-e8d9-48e6-b41f-ee43af9e94ad.3661c6ce-bdb4-4966-a86e-399bec697a29.png",
+    "sessions": [
+      {
+        "id": 103605,
+        "name": "Style US"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "59e993c0-6414-422d-a843-805464c6ff4a",
+    "firstName": "Yovan",
+    "lastName": "Fowdar",
+    "fullName": "Yovan Fowdar",
+    "bio": "Yovan Fowdar is always at the forefront of the fastest moving technology trends. Since his early teenage he had been exposed to computers and programming. Always wanting to live his passion to the fullest, he in parallel with his secondary studies, followed a professional course in computer programming where he was the youngest trainee there. \r\nWith his inquisitive mind he started exploring electronics, learning about transistors, IC, microprocessors, etc. He built his first commercial alarm system at the age of 19 whilst also pursuing his studies in telecommunication electronics.  In 1993 has started exploring and experimenting with Open Source OS  Linux Slackware  which was then in its early stage. \r\nHis first employment was at Unisys Mauritius where he was responsible for the networking and technical implementation of IT servers for the supreme court of Mauritius. He then seized an opportunity to work at Mauritius Telecom where he joined the newly created Data Unit.  He shouldered many responsibilities and worked in various fields, public telephone switch, commissioning of international ISDN links, Mauritius Telecom as an ISP, he was also a trainer for local staffs and for African international telecom operators.  After 7.5 years he resigned from Mauritius Telecom to join BNP Parisbas where he was the assistant IT manager he was there for  almost 1 year.  He then joined a start-up company ‘Card Business System and Applitel Ltd’ where he was the Technical Director. The company Card Business System developed solutions around Gemalto Smart Cards  for payment. CBS was rebranded as Expand Technology Holding Mauritius and grew rapidly into a Pan African Company with regional presence in more than 11 countries where he acquired many more areas of expertise in both technical and management field.  He has more than ten years of experience in Smart Cards security, VPN infrastructure, IP Telephony, servers physical and virtualized. He was, the R&D and Technical Director, IT Manager, Software Development Manager and also a board director of Expand Technology Holding (Mauritius) and Expand Technology Kenya.  \r\nAfter 12 years at Expand Technology Holding Ltd he decided to embark on a new adventure to live his passion and created his own company ‘Generation Plus Ltd’. He wants to take innovations to the next level where people will now be able to interact with the real world where systems/devices would be intelligently autonomous.  He has developed solutions using System on Chip (Soc), with a multitude of sensors, running Linux which allow smart control of existing household, office  & industrial devices;  locally  remotely and in an autonomous manner, those products have been fully developed in-house, meaning that there is no limit to customization to suit any requirement.  Areas of application are various just to mention a few projects, Smart Home, Smart Building, Hydroponic Plant production automation.  \r\nIn 2015 Yovan also co-founded the 1st  Maker Community in Mauritius where he plays an active role in promoting  innovative technology oriented initiatives (AI, Robotics, IoT, 3D Printing, microcontrollers , Single Board Computer, etc..) . Together with the MSCC The Mauritius Maker Community have a big  annual meetup, the  Devcon , where we organise free workshops and training . \r\nIn August 2018 Yovan  created the 1st  Makerspace in Mauritius, because having the right infrastructure/equipment is not something that everyone can afford, yet ideas can emerge from any individual.  Generation Plus  MakerSpace  aim is to promote  knowledge sharing , provide required infrastructure/facility and a hangout place for makers, to discuss about great ideas/projects. \r\n",
+    "tagLine": "Mauritius Maker Community",
+    "profilePicture": "/api/sessionize.com/speaker_photos/imagef996c159612605fb63283eea83e5b7f0d400400TrueFalsec0-6414-422d-a843-805464c6ff4a.fa7356d2-db01-4e15-8313-add0fb6afa21.jpg",
+    "sessions": [
+      {
+        "id": 98157,
+        "name": "Making  a Robotic Arm with 3D Printed parts"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/yovanfowdar",
+        "linkType": "Twitter"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  }
+]

@@ -85,9 +85,9 @@ export default {
     ...mapActions({ userCheck: "USER_STATUS", LEADERBOARD_FETCH: "LEADERBOARD_FETCH" }),
   },
   mounted() {
-    setInterval(() => {
-      this.LEADERBOARD_FETCH();
-    }, 30000);
+    // setInterval(() => {
+    //   this.LEADERBOARD_FETCH();
+    // }, 30000);
   },
   data() {
     return {

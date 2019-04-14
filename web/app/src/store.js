@@ -7,8 +7,8 @@ Vue.use(Vuex);
 
 let feedback = new Feedback("https://devcon2019.lsl.network");
 
-const sessionizeSessions = "/api/sessionize/Sessions.json";
-const sessionizeSpeakers = "/api/sessionize/Speakers.json";
+const sessionizeSessions = "/api/sessionize.com/Sessions.json";
+const sessionizeSpeakers = "/api/sessionize.com/Speakers.json";
 // https://sessionize.com/api/v2/rn3ak6vi/view/sessions
 export const SET_SPEAKERS = "SET_SPEAKERS";
 export const SET_SPEAKERS_READY = "SET_SPEAKERS_READY";

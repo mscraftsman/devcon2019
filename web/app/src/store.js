@@ -192,7 +192,7 @@ export default new Vuex.Store({
         type: type,
       };
 
-      Vue.set(state, "notifications", [...state.notifications, notif]);
+      // Vue.set(state, "notifications", [...state.notifications, notif]);
     },
     [NOTIFICATION_EXPIRE](state, payload) {
       let newArray = state.notifications.shift();

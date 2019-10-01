@@ -5,7 +5,7 @@ import Feedback from "./feedback.js";
 
 Vue.use(Vuex);
 
-let feedback = new Feedback("https://devcon2019.lsl.network");
+let feedback = new Feedback("");
 
 const sessionizeSessions = "/api/sessionize.com/Sessions.json";
 const sessionizeSpeakers = "/api/sessionize.com/Speakers.json";
@@ -101,8 +101,7 @@ export default new Vuex.Store({
       return state.stats;
     },
     getFeaturedSpeakers: function(state) {
-      let featured = state.speakers.filter(speaker => speaker.isTopSpeaker);
-      return featured;
+      return state.speakers.filter(speaker => speaker.isTopSpeaker);
     },
     getUser: function(state) {
       return state.user;
@@ -344,7 +343,9 @@ export default new Vuex.Store({
           commit(SET_SPEAKERS_READY, true);
         })
         .catch(error => {
-          throw new Error("Error should be caught by Vue global error handler." + error);
+          console.log('Speakers not loaded')
+          // console.log(error)
+          // throw new Error("Error should be caught by Vue global error handler." + error);
         });
     },
 

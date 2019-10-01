@@ -3,9 +3,9 @@ function paths(baseURL) {
     Login: baseURL + "/login",
     Logout: baseURL + "/logout",
     Me: "/api/devcon2019.lsl.network/me.json",
-    Bookmarks: baseURL + "/api/bookmarks",
+    Bookmarks: baseURL + "/api/devcon2019.lsl.network/bookmarks.json",
     Feedbacks: baseURL + "/api/feedbacks",
-    OwnFeedbacks: baseURL + "/api/feedbacks/me",
+    OwnFeedbacks: baseURL + "/api/devcon2019.lsl.network/me.json",
     Leaderboards: "/api/devcon2019.lsl.network/leaderboards.json",
   };
 }

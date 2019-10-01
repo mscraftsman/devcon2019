@@ -32,25 +32,25 @@
   },
   "dependencies": {
     "@xkeshi/vue-countdown": "^1.0.1",
-    "register-service-worker": "^1.0.0",
-    "vue": "^2.5.22",
+    "register-service-worker": "^1.6.2",
+    "vue": "^2.6.10",
     "vue-carousel": "^0.16.2",
     "vue-check-view": "0.2.3",
     "vue-progressbar": "0.7.5",
-    "vue-router": "^3.0.2",
-    "vue-slider-component": "^2.8.14",
-    "vuex": "^3.1.0"
+    "vue-router": "^3.1.3",
+    "vue-slider-component": "^2.8.16",
+    "vuex": "^3.1.1"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.5.1",
-    "@vue/cli-plugin-eslint": "^3.5.1",
-    "@vue/cli-plugin-pwa": "^3.3.0",
-    "@vue/cli-service": "^3.5.2",
+    "@vue/cli-plugin-babel": "^3.11.0",
+    "@vue/cli-plugin-eslint": "^3.11.0",
+    "@vue/cli-plugin-pwa": "^3.11.0",
+    "@vue/cli-service": "^3.11.0",
     "@vue/eslint-config-prettier": "^3.0.5",
     "html-webpack-plugin": "^3.2.0",
-    "node-sass": "^4.11.0",
-    "sass-loader": "^7.0.1",
-    "vue-template-compiler": "^2.5.22"
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.3.1",
+    "vue-template-compiler": "^2.6.10"
   },
   "eslintConfig": {
     "root": true,

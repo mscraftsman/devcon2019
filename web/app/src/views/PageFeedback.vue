@@ -123,15 +123,15 @@ export default {
       this.$router.go(-1);
     },
   },
+  beforeMount() {
+    // this.USER_FEEDBACK_FETCH();
+  },
   computed: {
     ...mapGetters(["getName", "getSessionCurrent", "getUser", "getBookmarks", "getMyFeedbacks"]),
     ...mapGetters({
       sessions: "getSessions",
       speakers: "getSpeakers",
     }),
-    beforeMount() {
-      // this.USER_FEEDBACK_FETCH();
-    },
     voted: function () {
       if (this.getMyFeedbacks instanceof Array) {
         return this.getMyFeedbacks.findIndex(f => f.session_id === this.id) !== -1;

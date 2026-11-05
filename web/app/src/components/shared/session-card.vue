@@ -68,6 +68,7 @@ export default {
       if (this.session.room == "Flying Dodo") {
         return true;
       }
+      return false;
     },
     bookmarked: function () {
       if (this.getBookmarks) {

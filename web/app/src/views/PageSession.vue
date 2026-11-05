@@ -201,8 +201,6 @@ export default {
       let open = new Date(this.session.startsAt);
       open.setTime(open.getTime() + FIFTEEN_MINUTES);
       return now > open;
-
-      return true;
     },
   },
   watch: {},

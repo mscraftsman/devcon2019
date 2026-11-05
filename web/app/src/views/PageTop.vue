@@ -56,6 +56,7 @@
             <div
               class="speak"
               v-for="speaker in allSessions[speaker.id].speakers"
+              :key="speaker.id"
             >{{ speaker.name }}</div>
             <router-link
               :to="{ name: 'session', params: { id: speaker.id } }"

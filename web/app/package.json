@@ -32,6 +32,7 @@
   },
   "dependencies": {
     "@xkeshi/vue-countdown": "^1.0.1",
+    "core-js": "^3.38.1",
     "register-service-worker": "^1.6.2",
     "vue": "^2.6.10",
     "vue-carousel": "^0.16.2",
@@ -42,15 +43,31 @@
     "vuex": "^3.1.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/eslint-parser": "^7.25.9",
     "@vue/cli-plugin-babel": "^5.0.8",
     "@vue/cli-plugin-eslint": "^5.0.8",
     "@vue/cli-plugin-pwa": "^5.0.8",
     "@vue/cli-service": "^5.0.8",
     "@vue/eslint-config-prettier": "^3.0.5",
+    "eslint": "^7.32.0",
+    "eslint-plugin-prettier": "^3.4.1",
+    "eslint-plugin-vue": "^7.20.0",
     "html-webpack-plugin": "^5.5.0",
-    "node-sass": "^9.0.0",
+    "prettier": "^2.8.8",
+    "sass": "^1.77.6",
     "sass-loader": "^13.2.0",
     "vue-template-compiler": "^2.6.10"
+  },
+  "overrides": {
+    "cross-spawn": "^6.0.6",
+    "deepmerge": "4.0.0",
+    "minimatch": "^3.1.4",
+    "postcss": "^8.5.32",
+    "serialize-javascript": "^7.1.4",
+    "uuid": "^11.1.1",
+    "webpack-dev-middleware": "^7.4.5",
+    "ws": "^7.5.11"
   },
   "eslintConfig": {
     "root": true,
@@ -61,9 +78,15 @@
       "plugin:vue/essential",
       "@vue/prettier"
     ],
-    "rules": {},
+    "rules": {
+      "no-unused-vars": "warn",
+      "vue/no-unused-components": "warn",
+      "vue/no-unused-vars": "warn",
+      "vue/no-use-v-if-with-v-for": "warn"
+    },
     "parserOptions": {
-      "parser": "babel-eslint"
+      "parser": "@babel/eslint-parser",
+      "requireConfigFile": false
     }
   },
   "postcss": {

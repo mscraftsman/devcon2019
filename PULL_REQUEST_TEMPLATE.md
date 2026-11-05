@@ -15,4 +15,7 @@ Please delete options that are not relevant.
 
 # How Has This Been Tested?
 
-Please describe the tests that you ran to verify your changes. 
+Please describe the tests that you ran to verify your changes.
+
+## Commit Sign-Off Checklist
+- [ ] All commits are signed off with `git commit -s` (`Signed-off-by:` DCO trailer present)

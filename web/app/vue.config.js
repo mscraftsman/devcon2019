@@ -8,6 +8,15 @@ module.exports = {
         },
       },
       scss: {
+        sassOptions: {
+          silenceDeprecations: [
+            "import",
+            "global-builtin",
+            "color-functions",
+            "slash-div",
+            "legacy-js-api",
+          ],
+        },
         additionalData: `
           @import "@/scss/_normalize.scss";
           @import "@/scss/_setup.scss";
